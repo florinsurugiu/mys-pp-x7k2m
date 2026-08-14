@@ -651,8 +651,17 @@ function renderPnlPeriod(root) {
       '<td data-label="Rezultat net" class="' + (t.net >= 0 ? '' : 'roas-bad') + '">' + (t.net >= 0 ? '+' : '') + fmtMoney(t.net) + '</td>' +
     '</tr>';
 
-  const maxCat = Math.max(...data.categoryBreakdown.map((c) => c.val));
-  const catRows = data.categoryBreakdown.map((c) => (
+  const catSource = isSingleMonth
+    ? data.categoryBreakdown.map((c) => {
+        if (c.name.startsWith('COGS')) return { name: 'COGS (marfa/materiale, fara proiecte)', val: t.cogs };
+        if (c.name.startsWith('Taxe')) return { name: c.name, val: t.taxes };
+        if (c.name.startsWith('Salarii')) return { name: c.name, val: t.salaries };
+        if (c.name.startsWith('Marketing')) return { name: c.name, val: t.marketing };
+        return { name: c.name, val: c.val / data.rows.length };
+      })
+    : data.categoryBreakdown;
+  const maxCat = Math.max(...catSource.map((c) => c.val));
+  const catRows = catSource.map((c) => (
     '<div class="item" style="margin-bottom:10px">' +
       '<div style="flex:0 0 220px" class="item-sub">' + escapeHtml(c.name) + '</div>' +
       '<div style="flex:1;background:var(--border);border-radius:5px;height:8px;overflow:hidden;margin:0 12px">' +
@@ -704,10 +713,9 @@ function renderPnlPeriod(root) {
     '<div id="incoming-projects-section"></div>' +
     '<div class="section-title">Estimare luna curenta</div>' +
     '<div id="month-estimate-section"></div>' +
-    (isSingleMonth ? '' :
-      '<div class="section-title">Costuri pe categorii</div>' +
-      '<div class="card">' + catRows + '</div>'
-    ) +
+    '<div class="section-title">Costuri pe categorii</div>' +
+    (isSingleMonth ? '<div class="stat-sub" style="margin-bottom:12px">Medie pe ' + data.rows.length + ' luni (nu avem inca defalcare lunara reala pe aceste categorii) -- COGS fara costul proiectelor B2B.</div>' : '') +
+    '<div class="card">' + catRows + '</div>' +
     (isSingleMonth ? '' :
       '<div class="section-title">Bilanturi oficiale ANAF (2023 vs 2024)</div>' +
       '<div class="grid-two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">' + baselineCards + '</div>'
