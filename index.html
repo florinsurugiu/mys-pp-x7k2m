@@ -156,7 +156,7 @@
   table.trend tr:last-child td { border-bottom: none; }
   table.trend .roas-good { color: var(--good); }
   table.trend .roas-bad { color: var(--bad); }
-  table.trend .totals-row td { font-weight: 700; border-bottom: 2px solid var(--border); }
+  table.trend .totals-row td { font-weight: 700; border-bottom: none; }
   .table-scroll { overflow-x: auto; }
 </style>
 </head>
@@ -397,9 +397,13 @@ function renderProfitPeriod(root) {
   root.innerHTML =
     '<div class="period-filter">' + filterBtns + '</div>' +
     '<div class="stat-grid">' + stats + '</div>' +
+    '<div class="card table-scroll" style="margin-bottom:12px"><table class="trend">' +
+      '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
+      '<tbody>' + totalsRow + '</tbody>' +
+    '</table></div>' +
     '<div class="card table-scroll"><table class="trend">' +
       '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
-      '<tbody>' + totalsRow + rows + '</tbody>' +
+      '<tbody>' + rows + '</tbody>' +
     '</table></div>';
 }
 
