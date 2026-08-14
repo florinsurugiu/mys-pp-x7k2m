@@ -606,9 +606,11 @@ function renderPnlPeriod(root) {
     (sub ? '<div class="stat-sub">' + sub + '</div>' : '') + '</div>';
 
   const incomingB2BTotal = isSingleMonth ? loadIncomingProjects().reduce((s, p) => s + p.amount, 0) : 0;
+  const revenueWithIncoming = t.revenue + incomingB2BTotal;
   const netWithIncoming = t.net + incomingB2BTotal;
   const stats = isSingleMonth ?
     statCard('Venit mediu / luna (fara B2B)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B recurent ' + Math.round(t.b2bOther / 1000) + 'k') +
+    statCard('Venit estimat (cu B2B incoming)', fmtMoney(revenueWithIncoming), incomingB2BTotal > 0 ? 'baseline ' + fmtMoney(t.revenue) + ' + B2B incoming ' + fmtMoney(incomingB2BTotal) : 'niciun proiect B2B incoming adaugat inca') +
     statCard('Costuri medii / luna', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS (fara cost proiecte), marketing, salarii, taxe, altele') +
     statCard('Rezultat net mediu', (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming), incomingB2BTotal > 0 ? 'baseline + B2B incoming (' + fmtMoney(incomingB2BTotal) + ')' : 'baseline realist, fara proiecte B2B', netWithIncoming >= 0 ? 'good' : 'bad')
     :
