@@ -1,29 +1,30 @@
 {
-  "generatedAt": "2026-08-14T20:45:37.083Z",
-  "planDate": "2026-08-14",
+  "generatedAt": "2026-08-14T21:56:22.100Z",
+  "planDate": "2026-08-17",
+  "unmatchedProducts": [],
   "felicia": {
-    "hours": 7.33,
+    "hours": 7.25,
     "capacity": 7,
     "items": [
       {
-        "title": "Short Sleeve Shirt And Bermuda Set In Numbers Design - Recycled Fabric",
-        "category": "Camasa scurta",
-        "sizes": "M + L",
-        "hours": 1.42,
+        "title": "Long Sleeve Shirt In Dark Grey With Tigers Design - Recycled Fabric W",
+        "category": "Camasa lunga",
+        "sizes": "XS",
+        "hours": 1.75,
         "source": "real_order"
       },
       {
-        "title": "Fragmented Sleeves Shirt V2",
-        "category": "Camasa Unisex",
+        "title": "Dystopia White Oversized Sweater",
+        "category": "Bluza inimioara / obsidian",
+        "sizes": "L",
+        "hours": 1.5,
+        "source": "real_order"
+      },
+      {
+        "title": "Third Eye  Windbreaker",
+        "category": "Windbreaker",
         "sizes": "M",
-        "hours": 1.5,
-        "source": "real_order"
-      },
-      {
-        "title": "Bermuda Shorts Echoes",
-        "category": "Bermude",
-        "sizes": "M + S",
-        "hours": 1.5,
+        "hours": 2.5,
         "source": "real_order"
       }
     ]
@@ -33,17 +34,17 @@
     "capacity": 7,
     "items": [
       {
-        "title": "Short Sleeve Shirt And Bermuda Set In Numbers Design - Recycled Fabric",
-        "category": "Bermude",
-        "sizes": "M + L",
+        "title": "Fragmented Sleeves Shirt V2",
+        "category": "Camasa Unisex",
+        "sizes": "M",
         "hours": 1.5,
         "source": "real_order"
       },
       {
-        "title": "Third Eye  Windbreaker",
-        "category": "Windbreaker",
-        "sizes": "M",
-        "hours": 2.5,
+        "title": "Blue Stripes Oversized Shirt",
+        "category": "Camasa Unisex",
+        "sizes": "XL",
+        "hours": 1.5,
         "source": "real_order"
       },
       {
@@ -58,14 +59,20 @@
   "croit": [
     {
       "name": "09. C water M",
-      "orderName": null,
+      "orderName": "WB#3406435",
       "category": "Camasa scurta",
       "dueOn": "2026-08-14"
     },
     {
+      "name": "10. B water M",
+      "orderName": "WB#3406435",
+      "category": "Bermude",
+      "dueOn": "2026-08-14"
+    },
+    {
       "name": "11. C blue XS",
-      "orderName": null,
-      "category": "Camasa scurta",
+      "orderName": "WB#3405691",
+      "category": "Camasa Unisex",
       "dueOn": "2026-08-14"
     },
     {
@@ -76,55 +83,25 @@
     }
   ],
   "backlog": {
-    "hours": 15.58,
+    "hours": 2.33,
     "items": [
       {
-        "orderName": "WB#3406435",
-        "title": "Grey Camo Denim Jacket W",
-        "category": "Denim Jacket",
-        "hours": 4
+        "orderName": "#235386",
+        "title": "Spirit Grey Oversized T-Shirt",
+        "category": "Tricou simplu",
+        "hours": 0.67
       },
       {
-        "orderName": "WB#3406435",
-        "title": "Grey Camo Denim Jacket W",
-        "category": "Denim Jacket",
-        "hours": 4
-      },
-      {
-        "orderName": "#235381",
-        "title": "Dystopia White Oversized Sweater",
-        "category": "Bluza inimioara / obsidian",
-        "hours": 1.5
-      },
-      {
-        "orderName": "#235385",
-        "title": "Blue Stripes Oversized Shirt",
-        "category": "Camasa Unisex",
-        "hours": 1.5
-      },
-      {
-        "orderName": "WB#3406435",
-        "title": "Short Sleeve Shirt And Bermuda Set With Water Design - Recycled Fabric",
-        "category": "Bermude",
-        "hours": 1.5
-      },
-      {
-        "orderName": "WB#3406435",
-        "title": "Short Sleeve Shirt And Bermuda Set With Water Design - Recycled Fabric",
-        "category": "Camasa scurta",
-        "hours": 1.42
+        "orderName": "#235387",
+        "title": "Reality Grey Oversized T-Shirt",
+        "category": "Tricou simplu",
+        "hours": 0.67
       },
       {
         "orderName": "#235382",
         "title": "777 Mauve Oversized T-Shirt",
         "category": "Tricou raiat",
         "hours": 1
-      },
-      {
-        "orderName": "#235386",
-        "title": "Spirit Grey Oversized T-Shirt",
-        "category": "Tricou simplu",
-        "hours": 0.67
       }
     ]
   }
