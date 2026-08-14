@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Productie — plan zilnic</title>
+<title>Mysimplicated — Dashboard</title>
 <meta name="robots" content="noindex, nofollow">
 <style>
   :root {
@@ -118,31 +118,76 @@
   .empty { color: var(--text-faint); font-size: 0.85rem; padding: 6px 0; }
   .loading, .error { text-align: center; padding: 60px 20px; color: var(--text-faint); }
   .error { color: var(--bad); }
+
+  .section-title {
+    font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--text-faint); font-weight: 700; margin: 32px 0 12px;
+  }
+  .section-title:first-child { margin-top: 0; }
+
+  .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+  @media (max-width: 640px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
+  .stat-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .stat-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); font-weight: 700; margin-bottom: 6px; }
+  .stat-value { font-size: 1.35rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .stat-value.good { color: var(--good); }
+  .stat-value.bad { color: var(--bad); }
+  .stat-sub { font-size: 0.72rem; color: var(--text-faint); margin-top: 2px; font-variant-numeric: tabular-nums; }
+
+  table.trend { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+  table.trend th, table.trend td { text-align: right; padding: 8px 10px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  table.trend th:first-child, table.trend td:first-child { text-align: left; }
+  table.trend th { color: var(--text-faint); font-weight: 600; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 1px solid var(--border); }
+  table.trend td { border-bottom: 1px solid var(--border); }
+  table.trend tr:last-child td { border-bottom: none; }
+  table.trend .roas-good { color: var(--good); }
+  table.trend .roas-bad { color: var(--bad); }
+  .table-scroll { overflow-x: auto; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <h1>Plan productie</h1>
+    <h1>Mysimplicated Dashboard</h1>
     <div class="meta" id="meta">se incarca...</div>
   </header>
-  <div id="root">
+  <div class="section-title">Productie</div>
+  <div id="root-production">
+    <div class="loading">Se incarca datele...</div>
+  </div>
+  <div class="section-title">Profit &amp; ROAS</div>
+  <div id="root-profit">
     <div class="loading">Se incarca datele...</div>
   </div>
 </div>
 <script>
 async function load() {
-  const root = document.getElementById('root');
+  const rootProduction = document.getElementById('root-production');
+  const rootProfit = document.getElementById('root-profit');
   const meta = document.getElementById('meta');
+  const metaParts = [];
+
   try {
     const res = await fetch('dashboard-data.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('status ' + res.status);
     const data = await res.json();
-    render(data, root, meta);
+    renderProduction(data, rootProduction);
+    metaParts.push('productie: plan pt <strong>' + fmtDate(data.planDate) + '</strong>, generat ' + fmtDateTime(data.generatedAt));
   } catch (e) {
-    root.innerHTML = '<div class="error">Nu am putut incarca datele (' + e.message + ').</div>';
-    meta.textContent = '';
+    rootProduction.innerHTML = '<div class="error">Nu am putut incarca datele de productie (' + e.message + ').</div>';
   }
+
+  try {
+    const res = await fetch('profit-data.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('status ' + res.status);
+    const data = await res.json();
+    renderProfit(data, rootProfit);
+    metaParts.push('profit: generat ' + fmtDateTime(data.generatedAt));
+  } catch (e) {
+    rootProfit.innerHTML = '<div class="error">Nu am putut incarca datele de profit (' + e.message + ').</div>';
+  }
+
+  meta.innerHTML = metaParts.join(' &middot; ');
 }
 
 function fmtDate(iso) {
@@ -192,9 +237,7 @@ function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
-function render(data, root, meta) {
-  meta.innerHTML = 'Plan pt <strong>' + fmtDate(data.planDate) + '</strong> &middot; generat ' + fmtDateTime(data.generatedAt);
-
+function renderProduction(data, root) {
   const backlogItems = data.backlog.items.length
     ? data.backlog.items.map((it) => (
         '<div class="backlog-row"><span><span class="order-tag">' + escapeHtml(it.orderName) + '</span>' +
@@ -222,6 +265,55 @@ function render(data, root, meta) {
       '<div class="block-header"><h2>Stoc croit disponibil (' + data.croitStockRemaining.length + ')</h2></div>' +
       '<div class="stock-list">' + stockItems + '</div>' +
     '</section>';
+}
+
+function fmtMoney(n) {
+  return n.toLocaleString('ro-RO', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' RON';
+}
+
+function renderProfit(data, root) {
+  const days = data.days;
+  if (!days.length) {
+    root.innerHTML = '<div class="empty">Nicio zi cu date inca.</div>';
+    return;
+  }
+  const latest = days[days.length - 1];
+  const totalRevenue = days.reduce((s, d) => s + d.revenue, 0);
+  const totalSpend = days.reduce((s, d) => s + d.adSpend, 0);
+  const totalNetProfit = days.reduce((s, d) => s + d.netProfit, 0);
+  const avgRoas = totalSpend > 0 ? totalRevenue / totalSpend : null;
+
+  const statCard = (label, value, sub, cls) =>
+    '<div class="stat-card"><div class="stat-label">' + label + '</div>' +
+    '<div class="stat-value' + (cls ? ' ' + cls : '') + '">' + value + '</div>' +
+    (sub ? '<div class="stat-sub">' + sub + '</div>' : '') + '</div>';
+
+  const stats =
+    statCard('Profit net azi', fmtMoney(latest.netProfit), 'ROAS ' + (latest.roas ?? 'n/a'), latest.netProfit >= 0 ? 'good' : 'bad') +
+    statCard('ROAS azi', latest.roas != null ? latest.roas.toFixed(2) + '&times;' : 'n/a', 'venit ' + fmtMoney(latest.revenue) + ' / cheltuit ' + fmtMoney(latest.adSpend)) +
+    statCard('Profit net (' + days.length + ' zile)', fmtMoney(totalNetProfit), null, totalNetProfit >= 0 ? 'good' : 'bad') +
+    statCard('ROAS mediu (' + days.length + ' zile)', avgRoas != null ? avgRoas.toFixed(2) + '&times;' : 'n/a', 'venit total ' + fmtMoney(totalRevenue));
+
+  const rows = [...days].reverse().map((d) => {
+    const roasCls = d.roas == null ? '' : d.roas >= 4 ? 'roas-good' : d.roas < 2 ? 'roas-bad' : '';
+    return (
+      '<tr>' +
+        '<td>' + fmtDate(d.date) + '</td>' +
+        '<td>' + fmtMoney(d.revenue) + '</td>' +
+        '<td>' + fmtMoney(d.cogs) + '</td>' +
+        '<td>' + fmtMoney(d.adSpend) + '</td>' +
+        '<td class="' + (d.netProfit >= 0 ? '' : 'roas-bad') + '">' + fmtMoney(d.netProfit) + '</td>' +
+        '<td class="' + roasCls + '">' + (d.roas != null ? d.roas.toFixed(2) + '&times;' : 'n/a') + '</td>' +
+      '</tr>'
+    );
+  }).join('');
+
+  root.innerHTML =
+    '<div class="stat-grid">' + stats + '</div>' +
+    '<div class="card table-scroll"><table class="trend">' +
+      '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
+      '<tbody>' + rows + '</tbody>' +
+    '</table></div>';
 }
 
 load();
