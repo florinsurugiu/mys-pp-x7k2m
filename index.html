@@ -624,7 +624,12 @@ function computeBaselineAverage(data) {
   const knownTaxesPaid = Object.values(CURRENT_MONTH_TAXES_PAID).reduce((a, b) => a + b, 0);
   const taxRate = sum('taxes') / sum('revenue');
   const taxes = knownTaxesPaid > 0 ? knownTaxesPaid : revenue * taxRate;
-  const other = sumRecent('other') / rn;
+  // "Personal" (calatorii + cumparaturi card firma) nu e cost real de
+  // business -- scazut DOAR din baseline-ul Luna curenta, istoricul
+  // (Toate/3/6 luni) ramane neatins.
+  const personalCat = (data.categoryBreakdown || []).find((c) => c.name.startsWith('Personal'));
+  const personalMonthlyAvg = personalCat ? personalCat.val / n : 0;
+  const other = sumRecent('other') / rn - personalMonthlyAvg;
   const net = revenue - (cogs + marketing + salaries + taxes + other);
   return {
     label: 'Medie ' + n + ' luni (D2C, fara B2B)', d2c, b2bProject: 0, b2bOther: 0, revenue,
@@ -722,20 +727,26 @@ function renderPnlPeriod(root) {
     '</tr>';
 
   const mapped = ['COGS', 'Taxe', 'Salarii', 'Marketing'];
-  const leftoverRaw = data.categoryBreakdown.filter((c) => !mapped.some((m) => c.name.startsWith(m)));
+  // "Personal" (calatorii + cumparaturi card firma) nu e cost real de
+  // business -- exclus DOAR pt Luna curenta (estimare), istoricul
+  // (Toate/3/6 luni, facts din acte) il pastreaza neatins.
+  const excludedCurrentMonth = ['Personal'];
+  const leftoverRaw = data.categoryBreakdown.filter((c) => !mapped.some((m) => c.name.startsWith(m)) && !excludedCurrentMonth.some((m) => c.name.startsWith(m)));
   const leftoverRawSum = leftoverRaw.reduce((s, c) => s + c.val, 0);
   const catSource = isSingleMonth
-    ? data.categoryBreakdown.map((c) => {
-        if (c.name.startsWith('COGS')) return { name: 'COGS (marfa/materiale, fara proiecte)', val: t.cogs };
-        if (c.name.startsWith('Taxe')) return { name: c.name, val: t.taxes };
-        if (c.name.startsWith('Salarii')) return { name: c.name, val: t.salaries };
-        if (c.name.startsWith('Marketing')) return { name: c.name, val: t.marketing };
-        // scaled proportional la ponderea originala, ca suma exacta a
-        // acestor 5 subcategorii sa dea t.other (altfel nu coincide cu
-        // Costuri medii/luna -- categoryBreakdown are un total usor
-        // diferit fata de totals.other in datele sursa)
-        return { name: c.name, val: t.other * (c.val / leftoverRawSum) };
-      })
+    ? data.categoryBreakdown
+        .filter((c) => !excludedCurrentMonth.some((m) => c.name.startsWith(m)))
+        .map((c) => {
+          if (c.name.startsWith('COGS')) return { name: 'COGS (marfa/materiale, fara proiecte)', val: t.cogs };
+          if (c.name.startsWith('Taxe')) return { name: c.name, val: t.taxes };
+          if (c.name.startsWith('Salarii')) return { name: c.name, val: t.salaries };
+          if (c.name.startsWith('Marketing')) return { name: c.name, val: t.marketing };
+          // scaled proportional la ponderea originala, ca suma exacta a
+          // acestor subcategorii sa dea t.other (altfel nu coincide cu
+          // Costuri medii/luna -- categoryBreakdown are un total usor
+          // diferit fata de totals.other in datele sursa)
+          return { name: c.name, val: t.other * (c.val / leftoverRawSum) };
+        })
     : data.categoryBreakdown;
   const maxCat = Math.max(...catSource.map((c) => c.val));
   const catTotal = catSource.reduce((s, c) => s + c.val, 0);
