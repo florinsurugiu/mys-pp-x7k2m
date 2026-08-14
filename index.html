@@ -428,28 +428,13 @@ function renderProduction(data, root) {
 
   const planDate = new Date(data.planDate + 'T00:00:00');
   const now = new Date();
-  const ymd = (d) => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
-  // Nu se lucreaza in weekend (program 8:30-18:00, Luni-Vineri) -- planul
-  // relevant "acum" e cea mai apropiata zi lucratoare: azi, daca suntem
-  // intr-o zi lucratoare inainte de ora de inchidere; altfel urmatoarea
-  // zi lucratoare (sare weekend-ul).
-  const expected = new Date(now);
-  const isWeekend = (d) => d.getDay() === 0 || d.getDay() === 6;
-  if (isWeekend(expected) || now.getHours() >= 18) {
-    expected.setDate(expected.getDate() + 1);
-    while (isWeekend(expected)) expected.setDate(expected.getDate() + 1);
-  }
-  expected.setHours(0, 0, 0, 0);
-  const isExpected = data.planDate === ymd(expected);
   const fmtFull = (d) => d.toLocaleDateString('ro-RO', { weekday: 'long', day: 'numeric', month: 'long' });
   const fmtTime = (d) => d.toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit' });
 
   root.innerHTML =
     '<div class="card" style="margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">' +
       '<div><div class="item-sub">Plan pentru</div><div style="font-weight:700;font-size:1rem;text-transform:capitalize">' + fmtFull(planDate) + '</div></div>' +
-      '<div style="text-align:right"><div class="item-sub">Acum</div><div style="font-weight:700;font-size:1rem;text-transform:capitalize">' + fmtFull(now) + ', ' + fmtTime(now) + '</div>' +
-      (isExpected ? '' : '<div class="item-sub" style="color:var(--warn)">urmatoarea zi lucratoare e ' + fmtFull(expected) + ' -- planul afisat nu e pt ea</div>') +
-      '</div>' +
+      '<div style="text-align:right"><div class="item-sub">Acum</div><div style="font-weight:700;font-size:1rem;text-transform:capitalize">' + fmtFull(now) + ', ' + fmtTime(now) + '</div></div>' +
     '</div>' +
     (data.unmatchedProducts && data.unmatchedProducts.length
       ? '<div class="card" style="margin-bottom:16px;border-color:var(--warn)">' +
