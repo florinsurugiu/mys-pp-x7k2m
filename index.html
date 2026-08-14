@@ -156,6 +156,7 @@
   table.trend tr:last-child td { border-bottom: none; }
   table.trend .roas-good { color: var(--good); }
   table.trend .roas-bad { color: var(--bad); }
+  table.trend .totals-row td { font-weight: 700; border-top: 2px solid var(--border); border-bottom: none; }
   .table-scroll { overflow-x: auto; }
 </style>
 </head>
@@ -352,6 +353,7 @@ function renderProfitPeriod(root) {
   const days = allDays.slice(-profitPeriod);
   const latest = days[days.length - 1];
   const totalRevenue = days.reduce((s, d) => s + d.revenue, 0);
+  const totalCogs = days.reduce((s, d) => s + d.cogs, 0);
   const totalSpend = days.reduce((s, d) => s + d.adSpend, 0);
   const totalNetProfit = days.reduce((s, d) => s + d.netProfit, 0);
   const avgRoas = totalSpend > 0 ? totalRevenue / totalSpend : null;
@@ -381,11 +383,23 @@ function renderProfitPeriod(root) {
     );
   }).join('');
 
+  const totalRoasCls = avgRoas == null ? '' : avgRoas >= 4 ? 'roas-good' : avgRoas < 2 ? 'roas-bad' : '';
+  const totalsRow =
+    '<tr class="totals-row">' +
+      '<td>Total (' + days.length + ' zile)</td>' +
+      '<td>' + fmtMoney(totalRevenue) + '</td>' +
+      '<td>' + fmtMoney(totalCogs) + '</td>' +
+      '<td>' + fmtMoney(totalSpend) + '</td>' +
+      '<td class="' + (totalNetProfit >= 0 ? '' : 'roas-bad') + '">' + fmtMoney(totalNetProfit) + '</td>' +
+      '<td class="' + totalRoasCls + '">' + (avgRoas != null ? avgRoas.toFixed(2) + '&times;' : 'n/a') + '</td>' +
+    '</tr>';
+
   root.innerHTML =
     '<div class="period-filter">' + filterBtns + '</div>' +
     '<div class="stat-grid">' + stats + '</div>' +
     '<div class="card table-scroll"><table class="trend">' +
       '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
+      '<tfoot>' + totalsRow + '</tfoot>' +
       '<tbody>' + rows + '</tbody>' +
     '</table></div>';
 }
