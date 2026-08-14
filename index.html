@@ -130,6 +130,15 @@
   }
   .push-btn:hover { opacity: 0.85; }
 
+  .period-filter { display: flex; gap: 8px; margin-bottom: 16px; }
+  .period-btn {
+    appearance: none; border: 1px solid var(--border); background: var(--bg-elevated); color: var(--text-dim);
+    font: inherit; font-size: 0.78rem; font-weight: 600; padding: 6px 12px; border-radius: 999px;
+    cursor: pointer; transition: all .15s;
+  }
+  .period-btn:hover { color: var(--text); }
+  .period-btn.active { background: var(--accent-dim); border-color: var(--accent); color: var(--accent); }
+
   .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
   @media (max-width: 640px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
   .stat-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
@@ -316,12 +325,31 @@ function fmtMoney(n) {
   return n.toLocaleString('ro-RO', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' RON';
 }
 
+let profitDataCache = null;
+let profitPeriod = 14;
+
 function renderProfit(data, root) {
-  const days = data.days;
-  if (!days.length) {
+  profitDataCache = data;
+  renderProfitPeriod(root);
+}
+
+function setProfitPeriod(days, root) {
+  profitPeriod = days;
+  renderProfitPeriod(root || document.getElementById('root-profit'));
+}
+
+function renderProfitPeriod(root) {
+  const data = profitDataCache;
+  const allDays = data.days;
+  if (!allDays.length) {
     root.innerHTML = '<div class="empty">Nicio zi cu date inca.</div>';
     return;
   }
+  const periodOptions = [7, 14, 30];
+  const filterBtns = periodOptions.map((p) => (
+    '<button class="period-btn' + (p === profitPeriod ? ' active' : '') + '" onclick="setProfitPeriod(' + p + ')">' + p + ' zile</button>'
+  )).join('');
+  const days = allDays.slice(-profitPeriod);
   const latest = days[days.length - 1];
   const totalRevenue = days.reduce((s, d) => s + d.revenue, 0);
   const totalSpend = days.reduce((s, d) => s + d.adSpend, 0);
@@ -354,6 +382,7 @@ function renderProfit(data, root) {
   }).join('');
 
   root.innerHTML =
+    '<div class="period-filter">' + filterBtns + '</div>' +
     '<div class="stat-grid">' + stats + '</div>' +
     '<div class="card table-scroll"><table class="trend">' +
       '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
