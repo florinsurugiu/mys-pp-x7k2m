@@ -145,6 +145,30 @@
   .period-btn:hover { color: var(--text); }
   .period-btn.active { background: var(--accent-dim); border-color: var(--accent); color: var(--accent); }
 
+  .form-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .form-input, .form-select {
+    background: var(--bg); border: 1px solid var(--border); color: var(--text);
+    font: inherit; font-size: 0.85rem; padding: 8px 10px; border-radius: 6px;
+  }
+  .form-input:focus, .form-select:focus { outline: none; border-color: var(--accent); }
+  .proj-row {
+    display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.86rem;
+  }
+  .proj-row:last-child { border-bottom: none; }
+  .proj-remove {
+    appearance: none; border: none; background: none; color: var(--text-faint);
+    cursor: pointer; font-size: 0.9rem; padding: 2px 6px;
+  }
+  .proj-remove:hover { color: var(--bad); }
+  .status-chip { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.03em; padding: 1px 7px; border-radius: 20px; font-weight: 700; margin-left: 8px; }
+  .status-chip.confirmat { background: color-mix(in srgb, var(--good) 20%, transparent); color: var(--good); }
+  .status-chip.probabil { background: color-mix(in srgb, var(--warn) 20%, transparent); color: var(--warn); }
+  .estimate-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .estimate-field label { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint); font-weight: 700; margin-bottom: 6px; }
+  .estimate-field .form-input { width: 100%; }
+  .storage-note { font-size: 0.74rem; color: var(--text-faint); margin-top: 10px; }
+
   .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
   @media (max-width: 640px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
   .stat-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
@@ -213,13 +237,14 @@ async function load() {
   const rootReco = document.getElementById('root-reco');
   const meta = document.getElementById('meta');
   const metaParts = [];
+  let productionData = null, profitData = null, pnlData = null;
 
   try {
     const res = await fetch('dashboard-data.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('status ' + res.status);
-    const data = await res.json();
-    renderProduction(data, rootProduction);
-    metaParts.push('productie: plan pt <strong>' + fmtDate(data.planDate) + '</strong>, generat ' + fmtDateTime(data.generatedAt));
+    productionData = await res.json();
+    renderProduction(productionData, rootProduction);
+    metaParts.push('productie: plan pt <strong>' + fmtDate(productionData.planDate) + '</strong>, generat ' + fmtDateTime(productionData.generatedAt));
   } catch (e) {
     rootProduction.innerHTML = '<div class="error">Nu am putut incarca datele de productie (' + e.message + ').</div>';
   }
@@ -227,9 +252,9 @@ async function load() {
   try {
     const res = await fetch('profit-data.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('status ' + res.status);
-    const data = await res.json();
-    renderProfit(data, rootProfit);
-    metaParts.push('profit: generat ' + fmtDateTime(data.generatedAt));
+    profitData = await res.json();
+    renderProfit(profitData, rootProfit);
+    metaParts.push('profit: generat ' + fmtDateTime(profitData.generatedAt));
   } catch (e) {
     rootProfit.innerHTML = '<div class="error">Nu am putut incarca datele de profit (' + e.message + ').</div>';
   }
@@ -237,19 +262,16 @@ async function load() {
   try {
     const res = await fetch('pnl-data.json', { cache: 'no-store' });
     if (!res.ok) throw new Error('status ' + res.status);
-    const data = await res.json();
-    renderPnl(data, rootPnl);
+    pnlData = await res.json();
+    renderPnl(pnlData, rootPnl);
   } catch (e) {
     rootPnl.innerHTML = '<div class="error">Nu am putut incarca datele P&amp;L (' + e.message + ').</div>';
   }
 
   try {
-    const res = await fetch('recommendations.json', { cache: 'no-store' });
-    if (!res.ok) throw new Error('status ' + res.status);
-    const data = await res.json();
-    renderReco(data, rootReco);
+    renderReco(productionData, profitData, pnlData, rootReco);
   } catch (e) {
-    rootReco.innerHTML = '<div class="error">Nu am putut incarca recomandarile (' + e.message + ').</div>';
+    rootReco.innerHTML = '<div class="error">Nu am putut calcula recomandarile (' + e.message + ').</div>';
   }
 
   meta.innerHTML = metaParts.join(' &middot; ');
@@ -593,24 +615,244 @@ function renderPnlPeriod(root) {
       '<thead><tr><th>Luna</th><th>Venit D2C</th><th>Venit B2B</th><th>Venit total</th><th>COGS</th><th>Marketing</th><th>Salarii</th><th>Taxe</th><th>Altele</th><th>Rezultat net</th></tr></thead>' +
       '<tbody>' + rows + '</tbody>' +
     '</table></div>' +
-    '<div class="section-title">Proiecte B2B</div>' +
+    '<div class="section-title">Proiecte B2B (istoric)</div>' +
     '<div class="stat-grid">' + projectCards + '</div>' +
+    '<div class="section-title">Proiecte B2B incoming</div>' +
+    '<div id="incoming-projects-section"></div>' +
+    '<div class="section-title">Estimare luna curenta</div>' +
+    '<div id="month-estimate-section"></div>' +
     '<div class="section-title">Costuri pe categorii</div>' +
     '<div class="card">' + catRows + '</div>' +
     '<div class="section-title">Bilanturi oficiale ANAF (2023 vs 2024)</div>' +
     '<div class="grid-two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">' + baselineCards + '</div>';
+
+  renderIncomingProjectsSection();
+  renderMonthEstimateSection(data);
 }
 
-function renderReco(data, root) {
-  const items = data.items.map((it, i) => (
+/** Computes recommendations live from whatever tabs actually loaded,
+ * instead of a fixed static list -- each one only fires if the underlying
+ * condition is actually true right now, and reads straight off the same
+ * data the other tabs show (no separate/stale copy). Short by design: one
+ * sentence of "what's happening", one of "so what to do". */
+function computeRecommendations(prod, profit, pnl) {
+  const items = [];
+
+  if (profit && profit.days.length) {
+    const days = profit.days;
+    const rev = days.reduce((s, d) => s + d.revenue, 0);
+    const cogs = days.reduce((s, d) => s + d.cogs, 0);
+    const spend = days.reduce((s, d) => s + d.adSpend, 0);
+    const negDays = days.filter((d) => d.netProfit < 0).length;
+    const adPct = rev > 0 ? (spend / rev) * 100 : 0;
+    const cogsPct = rev > 0 ? (cogs / rev) * 100 : 0;
+    const avgRoas = spend > 0 ? rev / spend : null;
+
+    if (adPct > 25) {
+      items.push({
+        title: 'Ads consuma ' + adPct.toFixed(0) + '% din venit (ultimele ' + days.length + ' zile)',
+        body: 'Peste pragul sanatos de 15-20%. Verifica tab Profit &amp; ROAS -> Campanii si opreste campaniile cu ROAS sub 2x.',
+      });
+    }
+    if (avgRoas != null && avgRoas < 3) {
+      items.push({
+        title: 'ROAS mediu real: ' + avgRoas.toFixed(2) + '&times;',
+        body: 'Sub 3x e strans dupa ce scazi si costul de productie. Compara campaniile individual, nu doar media.',
+      });
+    }
+    if (negDays > 0) {
+      items.push({
+        title: negDays + ' din ' + days.length + ' zile au fost pe pierdere neta',
+        body: 'Vezi tab Profit &amp; ROAS pt zilele exacte -- cauta ce au avut diferit (spend mare, venit mic).',
+      });
+    }
+    if (cogsPct > 0 && cogsPct < 55) {
+      items.push({
+        title: 'Marja de productie e sanatoasa (~' + (100 - cogsPct).toFixed(0) + '%)',
+        body: 'Costul marfii nu e problema -- volumul de vanzari conteaza mai mult decat taierea COGS.',
+      });
+    }
+  }
+
+  if (prod) {
+    const backlogH = prod.backlog?.hours || 0;
+    const feliciaLoad = prod.felicia ? prod.felicia.hours / prod.felicia.capacity : 0;
+    const floriLoad = prod.flori ? prod.flori.hours / prod.flori.capacity : 0;
+    if (backlogH > 8) {
+      items.push({
+        title: backlogH.toFixed(1) + 'h de comenzi reale nu au incaput azi',
+        body: 'Presiune de capacitate in crestere -- vezi tab Productie -> Comenzi in asteptare.',
+      });
+    }
+    if (feliciaLoad >= 1 || floriLoad >= 1) {
+      items.push({
+        title: 'Felicia sau Flori sunt la capacitate maxima azi',
+        body: 'Orice comanda noua de azi risca sa treaca pe maine.',
+      });
+    }
+  }
+
+  if (pnl) {
+    items.push({
+      title: 'Fara proiecte B2B, magazinul e pe pierdere (P&amp;L ' + escapeHtml(pnl.period) + ')',
+      body: 'Rezultat fara B2B: ' + fmtMoney(pnl.withoutB2B) + '. Proiectele B2B raman singurul motor de profit constant -- vezi tab P&amp;L.',
+    });
+    const adPctPnl = pnl.totals.d2c > 0 ? (pnl.totals.marketing / pnl.totals.d2c) * 100 : 0;
+    if (adPctPnl > 25) {
+      items.push({
+        title: 'Marketing = ' + adPctPnl.toFixed(0) + '% din venitul D2C pe tot intervalul P&amp;L',
+        body: 'Consistent peste pragul sanatos -- confirma semnalul din datele recente de mai sus.',
+      });
+    }
+  }
+
+  return items;
+}
+
+function renderReco(prod, profit, pnl, root) {
+  const items = computeRecommendations(prod, profit, pnl);
+  if (!items.length) {
+    root.innerHTML = '<div class="empty">Nimic de semnalat momentan -- cifrele arata normal.</div>';
+    return;
+  }
+  const html = items.map((it, i) => (
     '<div class="reco">' +
       '<div class="reco-num">' + (i + 1) + '</div>' +
-      '<div class="reco-body"><h4>' + escapeHtml(it.title) + '</h4><p>' + escapeHtml(it.body) + '</p></div>' +
+      '<div class="reco-body"><h4>' + it.title + '</h4><p>' + it.body + '</p></div>' +
     '</div>'
   )).join('');
   root.innerHTML =
-    '<div class="meta" style="margin-bottom:16px">Concluzii bazate pe ' + escapeHtml(data.generatedFrom) + '</div>' +
-    '<div class="reco-list">' + items + '</div>';
+    '<div class="meta" style="margin-bottom:16px">Calculat live din tab-urile Productie, Profit &amp; ROAS si P&amp;L</div>' +
+    '<div class="reco-list">' + html + '</div>';
+}
+
+// ---- Proiecte B2B incoming (persistat local in browser -- pagina e statica,
+// fara backend/baza de date; datele raman doar pe acest device/browser). ----
+const LS_PROJECTS_KEY = 'mys_pnl_incoming_projects';
+const LS_ESTIMATE_KEY = 'mys_pnl_month_estimate';
+
+function loadIncomingProjects() {
+  try { return JSON.parse(localStorage.getItem(LS_PROJECTS_KEY)) || []; } catch (e) { return []; }
+}
+function saveIncomingProjects(list) {
+  localStorage.setItem(LS_PROJECTS_KEY, JSON.stringify(list));
+}
+function addIncomingProject() {
+  const name = document.getElementById('proj-name').value.trim();
+  const amount = Number(document.getElementById('proj-amount').value);
+  const month = document.getElementById('proj-month').value.trim();
+  const status = document.getElementById('proj-status').value;
+  if (!name || !amount) return;
+  const list = loadIncomingProjects();
+  list.push({ id: Date.now(), name, amount, month: month || '-', status });
+  saveIncomingProjects(list);
+  document.getElementById('proj-name').value = '';
+  document.getElementById('proj-amount').value = '';
+  document.getElementById('proj-month').value = '';
+  renderIncomingProjectsSection();
+  renderMonthEstimateSection(pnlDataCache);
+}
+function removeIncomingProject(id) {
+  saveIncomingProjects(loadIncomingProjects().filter((p) => p.id !== id));
+  renderIncomingProjectsSection();
+  renderMonthEstimateSection(pnlDataCache);
+}
+
+function renderIncomingProjectsSection() {
+  const el = document.getElementById('incoming-projects-section');
+  if (!el) return;
+  const list = loadIncomingProjects();
+  const total = list.reduce((s, p) => s + p.amount, 0);
+  const rows = list.length
+    ? list.map((p) => (
+        '<div class="proj-row"><span>' + escapeHtml(p.name) +
+          '<span class="status-chip ' + p.status + '">' + (p.status === 'confirmat' ? 'confirmat' : 'probabil') + '</span>' +
+          (p.month !== '-' ? '<div class="item-sub">' + escapeHtml(p.month) + '</div>' : '') +
+        '</span><span style="display:flex;align-items:center;gap:10px">' +
+          '<span class="item-hours">' + fmtMoney(p.amount) + '</span>' +
+          '<button class="proj-remove" onclick="removeIncomingProject(' + p.id + ')" title="Sterge">&times;</button>' +
+        '</span></div>'
+      )).join('')
+    : '<div class="empty">Niciun proiect adaugat inca.</div>';
+
+  el.innerHTML =
+    '<div class="card">' +
+      '<div class="block-header"><h2>Total incoming</h2><span class="total">' + fmtMoney(total) + '</span></div>' +
+      rows +
+      '<div class="form-row" style="margin-top:14px">' +
+        '<input class="form-input" id="proj-name" placeholder="Nume proiect" style="flex:1;min-width:140px">' +
+        '<input class="form-input" id="proj-amount" type="number" placeholder="Venit estimat (RON)" style="width:170px">' +
+        '<input class="form-input" id="proj-month" placeholder="Luna (ex: Sep 2026)" style="width:150px">' +
+        '<select class="form-select" id="proj-status"><option value="probabil">Probabil</option><option value="confirmat">Confirmat</option></select>' +
+        '<button class="push-btn" onclick="addIncomingProject()">Adauga</button>' +
+      '</div>' +
+      '<div class="storage-note">Salvat local, doar in acest browser -- nu e sincronizat intre device-uri.</div>' +
+    '</div>';
+}
+
+function loadEstimate(defaults) {
+  try {
+    const saved = JSON.parse(localStorage.getItem(LS_ESTIMATE_KEY));
+    if (saved) return saved;
+  } catch (e) {}
+  return defaults;
+}
+function saveEstimateAndRecalc() {
+  const fields = ['d2c', 'cogs', 'marketing', 'salaries', 'taxes', 'other'];
+  const est = {};
+  for (const f of fields) est[f] = Number(document.getElementById('est-' + f).value) || 0;
+  localStorage.setItem(LS_ESTIMATE_KEY, JSON.stringify(est));
+  updateEstimateNet(est);
+}
+function updateEstimateNet(est) {
+  const incomingTotal = loadIncomingProjects().reduce((s, p) => s + p.amount, 0);
+  const revenue = est.d2c + incomingTotal;
+  const costs = est.cogs + est.marketing + est.salaries + est.taxes + est.other;
+  const net = revenue - costs;
+  const netEl = document.getElementById('estimate-net-value');
+  if (netEl) {
+    netEl.textContent = (net >= 0 ? '+' : '') + fmtMoney(net);
+    netEl.className = 'stat-value ' + (net >= 0 ? 'good' : 'bad');
+  }
+  const revEl = document.getElementById('estimate-revenue-value');
+  if (revEl) revEl.textContent = fmtMoney(revenue) + ' (D2C ' + fmtMoney(est.d2c) + ' + B2B incoming ' + fmtMoney(incomingTotal) + ')';
+}
+
+function renderMonthEstimateSection(pnlData) {
+  const el = document.getElementById('month-estimate-section');
+  if (!el || !pnlData) return;
+  const lastMonth = pnlData.rows[pnlData.rows.length - 1];
+  const defaults = {
+    d2c: lastMonth.d2c, cogs: lastMonth.cogs, marketing: lastMonth.marketing,
+    salaries: lastMonth.salaries, taxes: lastMonth.taxes, other: lastMonth.other,
+  };
+  const est = loadEstimate(defaults);
+  const now = new Date();
+  const monthName = now.toLocaleDateString('ro-RO', { month: 'long', year: 'numeric' });
+
+  const field = (key, label) => (
+    '<div class="estimate-field"><label>' + label + '</label>' +
+    '<input class="form-input" id="est-' + key + '" type="number" value="' + est[key] + '" oninput="saveEstimateAndRecalc()"></div>'
+  );
+
+  el.innerHTML =
+    '<div class="card">' +
+      '<div class="stat-sub" style="margin-bottom:14px">' + monthName + ' -- editabil, valorile initiale sunt din ' + escapeHtml(lastMonth.label) + ' (ultima luna cu date reale). Venitul B2B incoming vine automat din lista de mai sus.</div>' +
+      '<div class="estimate-grid">' +
+        field('d2c', 'Venit D2C estimat') +
+        field('cogs', 'COGS estimat') +
+        field('marketing', 'Marketing estimat') +
+        field('salaries', 'Salarii estimate') +
+        field('taxes', 'Taxe estimate') +
+        field('other', 'Altele estimate') +
+      '</div>' +
+      '<div class="stat-grid">' +
+        '<div class="stat-card"><div class="stat-label">Venit total estimat</div><div class="stat-value" id="estimate-revenue-value" style="font-size:1rem"></div></div>' +
+        '<div class="stat-card"><div class="stat-label">Rezultat net estimat</div><div class="stat-value" id="estimate-net-value"></div></div>' +
+      '</div>' +
+      '<div class="storage-note">Salvat local, doar in acest browser.</div>' +
+    '</div>';
+  updateEstimateNet(est);
 }
 
 initTabs();
