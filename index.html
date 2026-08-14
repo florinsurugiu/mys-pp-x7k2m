@@ -522,11 +522,11 @@ function campaignsSection(campaigns, lookbackDays) {
 }
 
 let pnlDataCache = null;
-let pnlPeriod = null; // number of months, null = all
+let pnlPeriod = null; // number of months, null = not yet set (defaults to 1, "Luna curenta")
 
 function renderPnl(data, root) {
   pnlDataCache = data;
-  if (pnlPeriod === null) pnlPeriod = data.rows.length;
+  if (pnlPeriod === null) pnlPeriod = 1;
   renderPnlPeriod(root);
 }
 
