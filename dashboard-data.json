@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T23:30:35.272Z",
+  "generatedAt": "2026-08-14T23:38:30.612Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
@@ -12,29 +12,29 @@
         "source": "leftover"
       },
       {
-        "title": "01. T mov 2S",
+        "title": "01. T alb XS",
+        "hours": 0.67,
+        "source": "predicted"
+      },
+      {
+        "title": "02. T mov 2S",
         "hours": 1,
         "source": "shopify"
       },
       {
-        "title": "02. Bermude L numbers",
+        "title": "03. Bermude L numbers",
         "hours": 1.5,
         "source": "wb"
       },
       {
-        "title": "03. Bermude echoes S,M",
+        "title": "04. Bermude echoes S,M",
         "hours": 1.5,
         "source": "wb"
       },
       {
-        "title": "04. T gri 2M + XXL",
+        "title": "05. T gri 2M + XXL",
         "hours": 2,
         "source": "shopify"
-      },
-      {
-        "title": "05. T alb XS",
-        "hours": 0.67,
-        "source": "predicted"
       }
     ]
   },
@@ -48,19 +48,19 @@
         "source": "leftover"
       },
       {
-        "title": "01. C numbers M",
+        "title": "01. T offwhite XL",
+        "hours": 0.67,
+        "source": "predicted"
+      },
+      {
+        "title": "02. C numbers M",
         "hours": 1.42,
         "source": "wb"
       },
       {
-        "title": "02. W Third Eye M",
+        "title": "03. W Third Eye M",
         "hours": 2.5,
         "source": "shopify"
-      },
-      {
-        "title": "03. T offwhite XL",
-        "hours": 0.67,
-        "source": "predicted"
       }
     ]
   },
@@ -94,44 +94,7 @@
       "leftover": true
     }
   ],
-  "croitBuffer": [
-    {
-      "gid": "1217477119697931",
-      "name": "08. T mov 2S",
-      "orderName": "#235382",
-      "category": "Tricou raiat"
-    },
-    {
-      "gid": "1217482641756672",
-      "name": "01. T offwhite XL",
-      "orderName": null,
-      "category": "Tricou simplu"
-    },
-    {
-      "gid": "1217482641756678",
-      "name": "06. Bermude L numbers",
-      "orderName": null,
-      "category": "Bermude"
-    },
-    {
-      "gid": "1217482641756680",
-      "name": "08. C numbers M",
-      "orderName": null,
-      "category": "Camasa scurta"
-    },
-    {
-      "gid": "1217482641756676",
-      "name": "05. Bermude echoes S,M",
-      "orderName": null,
-      "category": "Bermude"
-    },
-    {
-      "gid": "1217482783813574",
-      "name": "01. T alb XS",
-      "orderName": null,
-      "category": "Tricou simplu"
-    }
-  ],
+  "croitBuffer": [],
   "backlog": {
     "hours": 10.5,
     "items": [
