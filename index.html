@@ -158,6 +158,12 @@
   table.trend .roas-bad { color: var(--bad); }
   table.trend .totals-row td { font-weight: 700; border-bottom: none; }
   .table-scroll { overflow-x: auto; }
+
+  .section-title {
+    font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--text-faint); font-weight: 700; margin: 28px 0 12px;
+  }
+  .section-title:first-child { margin-top: 0; }
 </style>
 </head>
 <body>
@@ -169,6 +175,7 @@
   <div class="tabs">
     <button class="tab-btn active" data-tab="production">Productie</button>
     <button class="tab-btn" data-tab="profit">Profit &amp; ROAS</button>
+    <button class="tab-btn" data-tab="pnl">P&amp;L</button>
   </div>
   <div class="tab-panel active" id="panel-production">
     <div id="root-production">
@@ -180,11 +187,17 @@
       <div class="loading">Se incarca datele...</div>
     </div>
   </div>
+  <div class="tab-panel" id="panel-pnl">
+    <div id="root-pnl">
+      <div class="loading">Se incarca datele...</div>
+    </div>
+  </div>
 </div>
 <script>
 async function load() {
   const rootProduction = document.getElementById('root-production');
   const rootProfit = document.getElementById('root-profit');
+  const rootPnl = document.getElementById('root-pnl');
   const meta = document.getElementById('meta');
   const metaParts = [];
 
@@ -206,6 +219,15 @@ async function load() {
     metaParts.push('profit: generat ' + fmtDateTime(data.generatedAt));
   } catch (e) {
     rootProfit.innerHTML = '<div class="error">Nu am putut incarca datele de profit (' + e.message + ').</div>';
+  }
+
+  try {
+    const res = await fetch('pnl-data.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('status ' + res.status);
+    const data = await res.json();
+    renderPnl(data, rootPnl);
+  } catch (e) {
+    rootPnl.innerHTML = '<div class="error">Nu am putut incarca datele P&amp;L (' + e.message + ').</div>';
   }
 
   meta.innerHTML = metaParts.join(' &middot; ');
@@ -405,6 +427,102 @@ function renderProfitPeriod(root) {
       '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
       '<tbody>' + rows + '</tbody>' +
     '</table></div>';
+}
+
+function renderPnl(data, root) {
+  const t = data.totals;
+  const statCard = (label, value, sub, cls) =>
+    '<div class="stat-card"><div class="stat-label">' + label + '</div>' +
+    '<div class="stat-value' + (cls ? ' ' + cls : '') + '">' + value + '</div>' +
+    (sub ? '<div class="stat-sub">' + sub + '</div>' : '') + '</div>';
+
+  const stats =
+    statCard('Venit total (' + data.rows.length + ' luni)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k') +
+    statCard('Costuri totale', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS, marketing, salarii, taxe, altele') +
+    statCard('Rezultat net', (t.net >= 0 ? '+' : '') + fmtMoney(t.net), 'profitabil doar datorita B2B', t.net >= 0 ? 'good' : 'bad') +
+    statCard('Rezultat fara proiecte B2B', fmtMoney(data.withoutB2B), 'venit minus costuri directe proiecte', 'bad');
+
+  const rows = data.rows.map((r) => {
+    const b2b = r.b2bProject + r.b2bOther;
+    return (
+      '<tr>' +
+        '<td>' + r.label + (r.klarnaMissing ? ' <span title="Klarna lipsa din arhiva" style="color:var(--warn)">&#9679;</span>' : '') + '</td>' +
+        '<td>' + fmtMoney(r.d2c) + '</td>' +
+        '<td>' + fmtMoney(b2b) + '</td>' +
+        '<td>' + fmtMoney(r.revenue) + '</td>' +
+        '<td>' + fmtMoney(r.cogs) + '</td>' +
+        '<td>' + fmtMoney(r.marketing) + '</td>' +
+        '<td>' + fmtMoney(r.salaries) + '</td>' +
+        '<td>' + fmtMoney(r.taxes) + '</td>' +
+        '<td>' + fmtMoney(r.other) + '</td>' +
+        '<td class="' + (r.net >= 0 ? '' : 'roas-bad') + '">' + (r.net >= 0 ? '+' : '') + fmtMoney(r.net) + '</td>' +
+      '</tr>'
+    );
+  }).join('');
+
+  const totalsRow =
+    '<tr class="totals-row">' +
+      '<td>Total ' + data.rows.length + ' luni</td>' +
+      '<td>' + fmtMoney(t.d2c) + '</td>' +
+      '<td>' + fmtMoney(t.b2bProject + t.b2bOther) + '</td>' +
+      '<td>' + fmtMoney(t.revenue) + '</td>' +
+      '<td>' + fmtMoney(t.cogs) + '</td>' +
+      '<td>' + fmtMoney(t.marketing) + '</td>' +
+      '<td>' + fmtMoney(t.salaries) + '</td>' +
+      '<td>' + fmtMoney(t.taxes) + '</td>' +
+      '<td>' + fmtMoney(t.other) + '</td>' +
+      '<td class="' + (t.net >= 0 ? '' : 'roas-bad') + '">' + (t.net >= 0 ? '+' : '') + fmtMoney(t.net) + '</td>' +
+    '</tr>';
+
+  const maxCat = Math.max(...data.categoryBreakdown.map((c) => c.val));
+  const catRows = data.categoryBreakdown.map((c) => (
+    '<div class="item" style="margin-bottom:10px">' +
+      '<div style="flex:0 0 220px" class="item-sub">' + escapeHtml(c.name) + '</div>' +
+      '<div style="flex:1;background:var(--border);border-radius:5px;height:8px;overflow:hidden;margin:0 12px">' +
+        '<div style="height:100%;border-radius:5px;background:var(--accent);width:' + (c.val / maxCat * 100).toFixed(1) + '%"></div>' +
+      '</div>' +
+      '<div class="item-hours">' + fmtMoney(c.val) + '</div>' +
+    '</div>'
+  )).join('');
+
+  const projects = data.projectCosts;
+  const projectCards = Object.entries(projects).map(([key, p]) => (
+    '<div class="stat-card">' +
+      '<div class="stat-label">' + escapeHtml(key) + '</div>' +
+      '<div class="stat-value good">+' + fmtMoney(p.net) + '</div>' +
+      '<div class="stat-sub">venit ' + fmtMoney(p.revenue) + ' &middot; cost ' + fmtMoney(p.cost) + '</div>' +
+    '</div>'
+  )).join('');
+
+  const baselineCards = data.baseline.map((b) => (
+    '<div class="card">' +
+      '<div class="person-name" style="font-size:0.9rem">' + escapeHtml(b.name) + '</div>' +
+      '<div class="item-sub" style="margin-bottom:10px">CIF ' + escapeHtml(b.cif) + '</div>' +
+      '<div class="item"><span>Venituri 2023</span><span class="item-hours">' + fmtMoney(b.rev2023) + '</span></div>' +
+      '<div class="item"><span>Rezultat 2023</span><span class="item-hours ' + (b.net2023 >= 0 ? '' : 'roas-bad') + '">' + (b.net2023 >= 0 ? '+' : '') + fmtMoney(b.net2023) + '</span></div>' +
+      '<div class="item"><span>Venituri 2024</span><span class="item-hours">' + fmtMoney(b.rev2024) + '</span></div>' +
+      '<div class="item"><span>Rezultat 2024</span><span class="item-hours ' + (b.net2024 >= 0 ? '' : 'roas-bad') + '">' + (b.net2024 >= 0 ? '+' : '') + fmtMoney(b.net2024) + '</span></div>' +
+    '</div>'
+  )).join('');
+
+  root.innerHTML =
+    '<div class="meta" style="margin-bottom:16px">' + escapeHtml(data.period) + ' &middot; ' + escapeHtml(data.entities) + '</div>' +
+    '<div class="stat-grid">' + stats + '</div>' +
+    '<div class="section-title" style="margin-top:24px">Detaliu lunar</div>' +
+    '<div class="card table-scroll" style="margin-bottom:12px"><table class="trend">' +
+      '<thead><tr><th>Luna</th><th>Venit D2C</th><th>Venit B2B</th><th>Venit total</th><th>COGS</th><th>Marketing</th><th>Salarii</th><th>Taxe</th><th>Altele</th><th>Rezultat net</th></tr></thead>' +
+      '<tbody>' + totalsRow + '</tbody>' +
+    '</table></div>' +
+    '<div class="card table-scroll"><table class="trend">' +
+      '<thead><tr><th>Luna</th><th>Venit D2C</th><th>Venit B2B</th><th>Venit total</th><th>COGS</th><th>Marketing</th><th>Salarii</th><th>Taxe</th><th>Altele</th><th>Rezultat net</th></tr></thead>' +
+      '<tbody>' + rows + '</tbody>' +
+    '</table></div>' +
+    '<div class="section-title">Proiecte B2B</div>' +
+    '<div class="stat-grid">' + projectCards + '</div>' +
+    '<div class="section-title">Costuri pe categorii</div>' +
+    '<div class="card">' + catRows + '</div>' +
+    '<div class="section-title">Bilanturi oficiale ANAF (2023 vs 2024)</div>' +
+    '<div class="grid-two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">' + baselineCards + '</div>';
 }
 
 initTabs();
