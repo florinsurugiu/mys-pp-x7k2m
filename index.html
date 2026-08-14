@@ -656,13 +656,20 @@ function renderPnlPeriod(root) {
       '<td data-label="Rezultat net" class="' + (t.net >= 0 ? '' : 'roas-bad') + '">' + (t.net >= 0 ? '+' : '') + fmtMoney(t.net) + '</td>' +
     '</tr>';
 
+  const mapped = ['COGS', 'Taxe', 'Salarii', 'Marketing'];
+  const leftoverRaw = data.categoryBreakdown.filter((c) => !mapped.some((m) => c.name.startsWith(m)));
+  const leftoverRawSum = leftoverRaw.reduce((s, c) => s + c.val, 0);
   const catSource = isSingleMonth
     ? data.categoryBreakdown.map((c) => {
         if (c.name.startsWith('COGS')) return { name: 'COGS (marfa/materiale, fara proiecte)', val: t.cogs };
         if (c.name.startsWith('Taxe')) return { name: c.name, val: t.taxes };
         if (c.name.startsWith('Salarii')) return { name: c.name, val: t.salaries };
         if (c.name.startsWith('Marketing')) return { name: c.name, val: t.marketing };
-        return { name: c.name, val: c.val / data.rows.length };
+        // scaled proportional la ponderea originala, ca suma exacta a
+        // acestor 5 subcategorii sa dea t.other (altfel nu coincide cu
+        // Costuri medii/luna -- categoryBreakdown are un total usor
+        // diferit fata de totals.other in datele sursa)
+        return { name: c.name, val: t.other * (c.val / leftoverRawSum) };
       })
     : data.categoryBreakdown;
   const maxCat = Math.max(...catSource.map((c) => c.val));
