@@ -647,20 +647,21 @@ function renderPnlPeriod(root) {
     t = avg;
     tableLabel = avg.label;
   } else {
-    filteredRows = data.rows.slice(-pnlPeriod);
+    const sliceCount = pnlPeriod === 'lastMonth' ? 1 : pnlPeriod;
+    filteredRows = data.rows.slice(-sliceCount);
     t = filteredRows.reduce((acc, r) => {
       acc.d2c += r.d2c; acc.b2bProject += r.b2bProject; acc.b2bOther += r.b2bOther;
       acc.revenue += r.revenue; acc.cogs += r.cogs; acc.marketing += r.marketing;
       acc.salaries += r.salaries; acc.taxes += r.taxes; acc.other += r.other; acc.net += r.net;
       return acc;
     }, { d2c: 0, b2bProject: 0, b2bOther: 0, revenue: 0, cogs: 0, marketing: 0, salaries: 0, taxes: 0, other: 0, net: 0 });
-    tableLabel = 'Total ' + filteredRows.length + ' luni';
+    tableLabel = pnlPeriod === 'lastMonth' ? filteredRows[0].label : 'Total ' + filteredRows.length + ' luni';
   }
 
-  const monthOptions = [1, 3, 6, data.rows.length];
+  const monthOptions = [1, 'lastMonth', 3, 6, data.rows.length];
   const filterBtns = [...new Set(monthOptions)].map((m) => (
-    '<button class="period-btn' + (m === pnlPeriod ? ' active' : '') + '" onclick="setPnlPeriod(' + m + ')">' +
-      (m === data.rows.length ? 'Toate' : m === 1 ? 'Luna curenta' : m + ' luni') +
+    '<button class="period-btn' + (m === pnlPeriod ? ' active' : '') + '" onclick="setPnlPeriod(' + (typeof m === 'string' ? "'" + m + "'" : m) + ')">' +
+      (m === data.rows.length ? 'Toate' : m === 1 ? 'Luna curenta' : m === 'lastMonth' ? 'Luna trecuta' : m + ' luni') +
     '</button>'
   )).join('');
 
@@ -691,8 +692,7 @@ function renderPnlPeriod(root) {
     :
     statCard('Venit total (' + filteredRows.length + ' luni)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k') +
     statCard('Costuri totale', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS, marketing, salarii, taxe, altele', null, costsTooltip()) +
-    statCard('Rezultat net', (t.net >= 0 ? '+' : '') + fmtMoney(t.net), 'profitabil doar datorita B2B', t.net >= 0 ? 'good' : 'bad') +
-    statCard('Rezultat fara proiecte B2B', filteredRows.length === data.rows.length ? fmtMoney(data.withoutB2B) : 'n/a (doar pt tot intervalul)', 'venit minus costuri directe proiecte', 'bad');
+    statCard('Rezultat net', (t.net >= 0 ? '+' : '') + fmtMoney(t.net), 'profitabil doar datorita B2B', t.net >= 0 ? 'good' : 'bad');
 
   const rows = filteredRows.map((r) => {
     const b2b = r.b2bProject + r.b2bOther;
