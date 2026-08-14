@@ -898,8 +898,7 @@ function saveEstimateAndRecalc() {
   updateEstimateNet(est);
 }
 function updateEstimateNet(est) {
-  const incomingTotal = loadIncomingProjects().reduce((s, p) => s + p.amount, 0);
-  const revenue = est.d2c + (est.b2bOther || 0) + incomingTotal;
+  const revenue = est.d2c + (est.b2bOther || 0);
   const costs = est.cogs + est.marketing + est.salaries + est.taxes + est.other;
   const net = revenue - costs;
   const netEl = document.getElementById('estimate-net-value');
@@ -908,7 +907,7 @@ function updateEstimateNet(est) {
     netEl.className = 'stat-value ' + (net >= 0 ? 'good' : 'bad');
   }
   const revEl = document.getElementById('estimate-revenue-value');
-  if (revEl) revEl.textContent = fmtMoney(revenue) + ' (D2C ' + fmtMoney(est.d2c) + ' + B2B recurent ' + fmtMoney(est.b2bOther || 0) + ' + B2B incoming ' + fmtMoney(incomingTotal) + ')';
+  if (revEl) revEl.textContent = fmtMoney(revenue) + ' (D2C ' + fmtMoney(est.d2c) + ' + B2B ' + fmtMoney(est.b2bOther || 0) + ')';
 }
 
 function renderMonthEstimateSection(pnlData) {
@@ -916,8 +915,9 @@ function renderMonthEstimateSection(pnlData) {
   if (!el || !pnlData) return;
   const round2 = (n) => Math.round(n * 100) / 100;
   const avg = computeBaselineAverage(pnlData);
+  const incomingTotal = loadIncomingProjects().reduce((s, p) => s + p.amount, 0);
   const defaults = {
-    d2c: round2(avg.d2c), b2bOther: round2(avg.b2bOther), cogs: round2(avg.cogs), marketing: round2(avg.marketing),
+    d2c: round2(avg.d2c), b2bOther: round2(incomingTotal), cogs: round2(avg.cogs), marketing: round2(avg.marketing),
     salaries: round2(avg.salaries), taxes: round2(avg.taxes), other: round2(avg.other),
   };
   const est = loadEstimate(defaults);
@@ -931,10 +931,10 @@ function renderMonthEstimateSection(pnlData) {
 
   el.innerHTML =
     '<div class="card">' +
-      '<div class="stat-sub" style="margin-bottom:14px">' + monthName + ' -- editabil, valorile initiale sunt media pe ' + pnlData.rows.length + ' luni (COGS fara costul proiectelor B2B). Venitul B2B incoming vine automat din lista de mai sus.</div>' +
+      '<div class="stat-sub" style="margin-bottom:14px">' + monthName + ' -- editabil, valorile initiale sunt media pe ' + pnlData.rows.length + ' luni (COGS fara costul proiectelor B2B). Venitul B2B porneste automat din totalul "Proiecte B2B incoming" de mai sus, dar poti suprascrie manual aici.</div>' +
       '<div class="estimate-grid">' +
         field('d2c', 'Venit D2C estimat') +
-        field('b2bOther', 'Venit B2B (recurent) estimat') +
+        field('b2bOther', 'Venit B2B estimat') +
         field('cogs', 'COGS estimat') +
         field('marketing', 'Marketing estimat') +
         field('salaries', 'Salarii estimate') +
