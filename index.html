@@ -400,7 +400,7 @@ function croitSection(croit) {
     ? croit.map((t) => (
         '<div class="backlog-row">' +
           '<span class="order-tag">' + (t.orderName ? escapeHtml(t.orderName) : '') + '</span>' +
-          '<span class="backlog-main">' + escapeHtml(t.name) + '</span>' +
+          '<span class="backlog-main">' + escapeHtml(t.name) + (t.leftover ? sourceBadge('leftover') : '') + '</span>' +
         '</div>'
       )).join('')
     : '<div class="empty">Nimic in coada -- Carl e la zi.</div>';
