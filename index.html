@@ -93,7 +93,6 @@
     vertical-align: middle;
   }
   .badge.predicted { background: var(--accent-dim); color: var(--accent); }
-  .badge.precut { background: color-mix(in srgb, var(--good) 22%, transparent); color: var(--good); }
 
   section.block { margin-bottom: 20px; }
   .block-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; }
@@ -108,22 +107,28 @@
   .backlog-row:last-child { border-bottom: none; }
   .order-tag { font-variant-numeric: tabular-nums; color: var(--text-faint); font-size: 0.76rem; margin-right: 6px; }
 
-  .stock-list { display: flex; flex-wrap: wrap; gap: 6px; }
-  .stock-chip {
-    font-size: 0.76rem; padding: 4px 9px; border-radius: 999px;
-    background: var(--bg); border: 1px solid var(--border); color: var(--text-dim);
-    white-space: nowrap;
-  }
-
   .empty { color: var(--text-faint); font-size: 0.85rem; padding: 6px 0; }
   .loading, .error { text-align: center; padding: 60px 20px; color: var(--text-faint); }
   .error { color: var(--bad); }
 
-  .section-title {
-    font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em;
-    color: var(--text-faint); font-weight: 700; margin: 32px 0 12px;
+  .tabs { display: flex; gap: 4px; margin-bottom: 24px; border-bottom: 1px solid var(--border); }
+  .tab-btn {
+    appearance: none; border: none; background: none; cursor: pointer;
+    font: inherit; font-weight: 600; font-size: 0.88rem; color: var(--text-faint);
+    padding: 10px 4px; margin-right: 20px; border-bottom: 2px solid transparent;
+    transition: color .15s, border-color .15s;
   }
-  .section-title:first-child { margin-top: 0; }
+  .tab-btn:hover { color: var(--text-dim); }
+  .tab-btn.active { color: var(--text); border-bottom-color: var(--accent); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  .push-btn {
+    appearance: none; border: 1px solid var(--accent); background: var(--accent-dim); color: var(--accent);
+    font: inherit; font-weight: 700; font-size: 0.8rem; padding: 8px 14px; border-radius: 8px;
+    cursor: pointer; transition: opacity .15s;
+  }
+  .push-btn:hover { opacity: 0.85; }
 
   .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
   @media (max-width: 640px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -151,13 +156,19 @@
     <h1>Mysimplicated Dashboard</h1>
     <div class="meta" id="meta">se incarca...</div>
   </header>
-  <div class="section-title">Productie</div>
-  <div id="root-production">
-    <div class="loading">Se incarca datele...</div>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="production">Productie</button>
+    <button class="tab-btn" data-tab="profit">Profit &amp; ROAS</button>
   </div>
-  <div class="section-title">Profit &amp; ROAS</div>
-  <div id="root-profit">
-    <div class="loading">Se incarca datele...</div>
+  <div class="tab-panel active" id="panel-production">
+    <div id="root-production">
+      <div class="loading">Se incarca datele...</div>
+    </div>
+  </div>
+  <div class="tab-panel" id="panel-profit">
+    <div id="root-profit">
+      <div class="loading">Se incarca datele...</div>
+    </div>
   </div>
 </div>
 <script>
@@ -190,6 +201,27 @@ async function load() {
   meta.innerHTML = metaParts.join(' &middot; ');
 }
 
+function initTabs() {
+  const buttons = document.querySelectorAll('.tab-btn');
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      buttons.forEach((b) => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach((p) => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+    });
+  });
+}
+
+function pushToAsana() {
+  const ok = window.confirm('Sigur vrei sa publici planul de azi pe Asana? Se vor crea task-uri reale pentru Carl, Felicia si Flori.');
+  if (!ok) return;
+  window.open(
+    'https://github.com/florinsurugiu/mysimplicated-theme/actions/workflows/production-planning.yml',
+    '_blank'
+  );
+}
+
 function fmtDate(iso) {
   const d = new Date(iso);
   return d.toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' });
@@ -206,7 +238,6 @@ function barClass(hours, capacity) {
 }
 function sourceBadge(source) {
   if (source === 'predicted') return '<span class="badge predicted">predictie</span>';
-  if (source === 'precut_stock') return '<span class="badge precut">stoc croit</span>';
   return '';
 }
 
@@ -241,17 +272,16 @@ function renderProduction(data, root) {
   const backlogItems = data.backlog.items.length
     ? data.backlog.items.map((it) => (
         '<div class="backlog-row"><span><span class="order-tag">' + escapeHtml(it.orderName) + '</span>' +
-        escapeHtml(it.title) + '</span><span class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</span></div>'
+        escapeHtml(it.title) +
+        (it.category ? '<div class="item-sub">' + escapeHtml(it.category) + '</div>' : '') +
+        '</span><span class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</span></div>'
       )).join('')
     : '<div class="empty">Nimic in asteptare -- toate comenzile reale au incaput azi.</div>';
 
-  const stockItems = data.croitStockRemaining.length
-    ? data.croitStockRemaining.map((s) => (
-        '<span class="stock-chip">' + escapeHtml(s.name.replace(/^\s*\d+\.\s*/, '')) + '</span>'
-      )).join('')
-    : '<div class="empty">Niciun stoc croit disponibil momentan.</div>';
-
   root.innerHTML =
+    '<div style="display:flex;justify-content:flex-end;margin-bottom:16px">' +
+      '<button class="push-btn" onclick="pushToAsana()">Publica pe Asana</button>' +
+    '</div>' +
     '<div class="grid-two">' +
       personCard('Felicia', data.felicia) +
       personCard('Flori', data.flori) +
@@ -260,10 +290,6 @@ function renderProduction(data, root) {
       '<div class="block-header"><h2>Comenzi in asteptare (nu au incaput azi)</h2>' +
       '<span class="total">' + data.backlog.hours.toFixed(2).replace('.', ',') + 'h</span></div>' +
       '<div class="backlog-list">' + backlogItems + '</div>' +
-    '</section>' +
-    '<section class="block card">' +
-      '<div class="block-header"><h2>Stoc croit disponibil (' + data.croitStockRemaining.length + ')</h2></div>' +
-      '<div class="stock-list">' + stockItems + '</div>' +
     '</section>';
 }
 
@@ -316,6 +342,7 @@ function renderProfit(data, root) {
     '</table></div>';
 }
 
+initTabs();
 load();
 </script>
 </body>
