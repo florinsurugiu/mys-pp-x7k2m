@@ -103,11 +103,12 @@
 
   .backlog-list { display: flex; flex-direction: column; gap: 0; }
   .backlog-row {
-    display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
+    display: flex; align-items: flex-start; gap: 10px;
     padding: 9px 0; border-bottom: 1px solid var(--border); font-size: 0.86rem;
   }
   .backlog-row:last-child { border-bottom: none; }
-  .order-tag { font-variant-numeric: tabular-nums; color: var(--text-faint); font-size: 0.76rem; margin-right: 6px; }
+  .order-tag { font-variant-numeric: tabular-nums; color: var(--text-faint); font-size: 0.76rem; flex: 0 0 76px; padding-top: 1px; }
+  .backlog-main { flex: 1; min-width: 0; }
 
   .empty { color: var(--text-faint); font-size: 0.85rem; padding: 6px 0; }
   .loading, .error { text-align: center; padding: 60px 20px; color: var(--text-faint); }
@@ -392,11 +393,12 @@ function personCard(name, person) {
 function croitSection(croit) {
   const rows = croit.length
     ? croit.map((t) => (
-        '<div class="backlog-row"><span>' +
-          (t.orderName ? '<span class="order-tag">' + escapeHtml(t.orderName) + '</span>' : '') +
-          escapeHtml(t.name) +
-          (t.category ? '<div class="item-sub">' + escapeHtml(t.category) + '</div>' : '') +
-        '</span></div>'
+        '<div class="backlog-row">' +
+          '<span class="order-tag">' + (t.orderName ? escapeHtml(t.orderName) : '') + '</span>' +
+          '<span class="backlog-main">' + escapeHtml(t.name) +
+            (t.category ? '<div class="item-sub">' + escapeHtml(t.category) + '</div>' : '') +
+          '</span>' +
+        '</div>'
       )).join('')
     : '<div class="empty">Nimic in coada -- Carl e la zi.</div>';
   return (
@@ -414,10 +416,13 @@ function escapeHtml(s) {
 function renderProduction(data, root) {
   const backlogItems = data.backlog.items.length
     ? data.backlog.items.map((it) => (
-        '<div class="backlog-row"><span><span class="order-tag">' + escapeHtml(it.orderName) + '</span>' +
-        escapeHtml(it.title) +
-        (it.category ? '<div class="item-sub">' + escapeHtml(it.category) + '</div>' : '') +
-        '</span><span class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</span></div>'
+        '<div class="backlog-row">' +
+          '<span class="order-tag">' + escapeHtml(it.orderName) + '</span>' +
+          '<span class="backlog-main">' + escapeHtml(it.title) +
+            (it.category ? '<div class="item-sub">' + escapeHtml(it.category) + '</div>' : '') +
+          '</span>' +
+          '<span class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</span>' +
+        '</div>'
       )).join('')
     : '<div class="empty">Nimic in asteptare -- toate comenzile reale au incaput azi.</div>';
 
