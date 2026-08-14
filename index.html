@@ -451,6 +451,12 @@ function renderProduction(data, root) {
       (isExpected ? '' : '<div class="item-sub" style="color:var(--warn)">urmatoarea zi lucratoare e ' + fmtFull(expected) + ' -- planul afisat nu e pt ea</div>') +
       '</div>' +
     '</div>' +
+    (data.unmatchedProducts && data.unmatchedProducts.length
+      ? '<div class="card" style="margin-bottom:16px;border-color:var(--warn)">' +
+          '<div class="item-sub" style="color:var(--warn);margin-bottom:8px">' + data.unmatchedProducts.length + ' produs(e) fara mapare -- lipsesc complet din plan pana se adauga in wb-product-map.json / category map</div>' +
+          data.unmatchedProducts.map((u) => '<div class="item-sub">' + escapeHtml(u) + '</div>').join('') +
+        '</div>'
+      : '') +
     '<div style="display:flex;justify-content:flex-end;margin-bottom:16px">' +
       '<button class="push-btn" onclick="pushToAsana()">Publica pe Asana</button>' +
     '</div>' +
