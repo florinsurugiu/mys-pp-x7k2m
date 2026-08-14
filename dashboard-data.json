@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T22:21:27.624Z",
+  "generatedAt": "2026-08-14T22:31:29.732Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
@@ -13,7 +13,7 @@
       },
       {
         "title": "01. T gri 2M",
-        "hours": 0.67,
+        "hours": 1.33,
         "source": "shopify"
       },
       {
@@ -64,35 +64,45 @@
       "name": "09. C water M",
       "orderName": "WB#3406435",
       "category": "Camasa scurta",
-      "dueOn": "2026-08-14"
+      "dueOn": "2026-08-14",
+      "leftover": true
     },
     {
       "name": "10. B water M",
       "orderName": "WB#3406435",
       "category": "Bermude",
-      "dueOn": "2026-08-14"
+      "dueOn": "2026-08-14",
+      "leftover": true
     },
     {
       "name": "11. C blue XS",
       "orderName": "WB#3405691",
       "category": "Camasa Unisex",
-      "dueOn": "2026-08-14"
+      "dueOn": "2026-08-14",
+      "leftover": true
     },
     {
       "name": "07. W Statue XL 2 buc",
       "orderName": "#235380",
       "category": "Windbreaker",
-      "dueOn": "2026-08-14"
+      "dueOn": "2026-08-14",
+      "leftover": true
     }
   ],
   "backlog": {
-    "hours": 1,
+    "hours": 1.67,
     "items": [
       {
         "orderName": "#235382",
         "title": "777 Mauve Oversized T-Shirt",
         "category": "Tricou raiat",
         "hours": 1
+      },
+      {
+        "orderName": "#235388",
+        "title": "Miau Miau Oversized Ivory T-shirt",
+        "category": "Tricou simplu",
+        "hours": 0.67
       }
     ]
   }
