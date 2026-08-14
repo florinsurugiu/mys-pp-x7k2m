@@ -557,11 +557,12 @@ function renderPnlPeriod(root) {
     '<div class="stat-value' + (cls ? ' ' + cls : '') + '">' + value + '</div>' +
     (sub ? '<div class="stat-sub">' + sub + '</div>' : '') + '</div>';
 
+  const isSingleMonth = pnlPeriod === 1;
   const stats =
     statCard('Venit total (' + filteredRows.length + ' luni)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k') +
     statCard('Costuri totale', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS, marketing, salarii, taxe, altele') +
     statCard('Rezultat net', (t.net >= 0 ? '+' : '') + fmtMoney(t.net), 'profitabil doar datorita B2B', t.net >= 0 ? 'good' : 'bad') +
-    statCard('Rezultat fara proiecte B2B', filteredRows.length === data.rows.length ? fmtMoney(data.withoutB2B) : 'n/a (doar pt tot intervalul)', 'venit minus costuri directe proiecte', 'bad');
+    (isSingleMonth ? '' : statCard('Rezultat fara proiecte B2B', filteredRows.length === data.rows.length ? fmtMoney(data.withoutB2B) : 'n/a (doar pt tot intervalul)', 'venit minus costuri directe proiecte', 'bad'));
 
   const rows = filteredRows.map((r) => {
     const b2b = r.b2bProject + r.b2bOther;
@@ -639,16 +640,20 @@ function renderPnlPeriod(root) {
       '<thead><tr><th>Luna</th><th>Venit D2C</th><th>Venit B2B</th><th>Venit total</th><th>COGS</th><th>Marketing</th><th>Salarii</th><th>Taxe</th><th>Altele</th><th>Rezultat net</th></tr></thead>' +
       '<tbody>' + rows + '</tbody>' +
     '</table></div>' +
-    '<div class="section-title">Proiecte B2B (istoric)</div>' +
-    '<div class="stat-grid">' + projectCards + '</div>' +
+    (isSingleMonth ? '' :
+      '<div class="section-title">Proiecte B2B (istoric)</div>' +
+      '<div class="stat-grid">' + projectCards + '</div>'
+    ) +
     '<div class="section-title">Proiecte B2B incoming</div>' +
     '<div id="incoming-projects-section"></div>' +
     '<div class="section-title">Estimare luna curenta</div>' +
     '<div id="month-estimate-section"></div>' +
     '<div class="section-title">Costuri pe categorii</div>' +
     '<div class="card">' + catRows + '</div>' +
-    '<div class="section-title">Bilanturi oficiale ANAF (2023 vs 2024)</div>' +
-    '<div class="grid-two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">' + baselineCards + '</div>';
+    (isSingleMonth ? '' :
+      '<div class="section-title">Bilanturi oficiale ANAF (2023 vs 2024)</div>' +
+      '<div class="grid-two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">' + baselineCards + '</div>'
+    );
 
   renderIncomingProjectsSection();
   renderMonthEstimateSection(data);
