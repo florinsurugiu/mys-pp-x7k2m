@@ -264,6 +264,24 @@ function personCard(name, person) {
   );
 }
 
+function croitSection(croit) {
+  const rows = croit.length
+    ? croit.map((t) => (
+        '<div class="backlog-row"><span>' +
+          (t.orderName ? '<span class="order-tag">' + escapeHtml(t.orderName) + '</span>' : '') +
+          escapeHtml(t.name) +
+          (t.category ? '<div class="item-sub">' + escapeHtml(t.category) + '</div>' : '') +
+        '</span></div>'
+      )).join('')
+    : '<div class="empty">Nimic in coada -- Carl e la zi.</div>';
+  return (
+    '<section class="block card">' +
+      '<div class="block-header"><h2>Croit (Carl) -- ' + croit.length + ' in asteptare</h2></div>' +
+      '<div class="backlog-list">' + rows + '</div>' +
+    '</section>'
+  );
+}
+
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
@@ -286,6 +304,7 @@ function renderProduction(data, root) {
       personCard('Felicia', data.felicia) +
       personCard('Flori', data.flori) +
     '</div>' +
+    croitSection(data.croit || []) +
     '<section class="block card">' +
       '<div class="block-header"><h2>Comenzi in asteptare (nu au incaput azi)</h2>' +
       '<span class="total">' + data.backlog.hours.toFixed(2).replace('.', ',') + 'h</span></div>' +
