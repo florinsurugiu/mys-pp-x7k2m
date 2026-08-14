@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T19:27:54.443Z",
+  "generatedAt": "2026-08-14T19:42:50.314Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -309,11 +309,67 @@
       "date": "2026-08-14",
       "revenue": 1533.69,
       "cogs": 729.32,
-      "adSpend": 473.78,
+      "adSpend": 483.32,
       "grossProfit": 804.37,
-      "netProfit": 330.59,
-      "roas": 3.24,
+      "netProfit": 321.05,
+      "roas": 3.17,
       "unknownCostUnits": 0
+    }
+  ],
+  "campaigns": [
+    {
+      "name": "RO 26  march",
+      "spend": 12994.77,
+      "purchases": 77,
+      "metaRoas": 2.545343
+    },
+    {
+      "name": "DE",
+      "spend": 2142.9,
+      "purchases": 14,
+      "metaRoas": 3.49474
+    },
+    {
+      "name": "RO 26  Jul",
+      "spend": 1949.71,
+      "purchases": 9,
+      "metaRoas": 1.620399
+    },
+    {
+      "name": "Retarget July",
+      "spend": 650.67,
+      "purchases": null,
+      "metaRoas": null
+    },
+    {
+      "name": "EU Jul",
+      "spend": 439.71,
+      "purchases": null,
+      "metaRoas": null
+    },
+    {
+      "name": "UK Jul",
+      "spend": 284.36,
+      "purchases": null,
+      "metaRoas": null
+    },
+    {
+      "name": "New Sales Campaign",
+      "spend": 167.82,
+      "purchases": null,
+      "metaRoas": null
+    },
+    {
+      "name": "RO JUL Uploads",
+      "spend": 150.52,
+      "purchases": null,
+      "metaRoas": null
+    },
+    {
+      "name": "Latvia",
+      "spend": 80.53,
+      "purchases": 2,
+      "metaRoas": 14.946615
     }
   ]
 }
