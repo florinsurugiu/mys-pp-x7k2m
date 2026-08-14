@@ -58,6 +58,8 @@
   header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; margin-bottom: 28px; }
   h1 { font-size: 1.3rem; font-weight: 700; margin: 0; letter-spacing: -0.01em; }
   .meta { font-size: 0.8rem; color: var(--text-faint); font-variant-numeric: tabular-nums; }
+  .meta-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+  .meta-pill { font-size: 0.72rem; color: var(--text-faint); font-variant-numeric: tabular-nums; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
   .meta strong { color: var(--text-dim); font-weight: 600; }
 
   .grid-two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
@@ -220,7 +222,7 @@
   <header>
     <h1>MY Dashboard</h1>
     <div style="display:flex;align-items:center;gap:14px">
-      <div class="meta" id="meta">se incarca...</div>
+      <div class="meta-pills" id="meta"><span class="meta-pill">se incarca...</span></div>
       <button class="settings-btn tab-btn" data-tab="settings" title="Setari">&#9881;</button>
     </div>
   </header>
@@ -313,7 +315,7 @@ async function load() {
     rootSettings.innerHTML = '<div class="error">Nu am putut incarca datele de setari (' + e.message + ').</div>';
   }
 
-  meta.innerHTML = metaParts.join(' &middot; ');
+  meta.innerHTML = metaParts.map((p) => '<span class="meta-pill">' + p + '</span>').join('');
 }
 
 function initTabs() {
@@ -351,7 +353,7 @@ function fmtDate(iso) {
 }
 function fmtDateTime(iso) {
   const d = new Date(iso);
-  return d.toLocaleString('ro-RO', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+  return d.toLocaleString('ro-RO', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).replace(/\./g, '');
 }
 function barClass(hours, capacity) {
   const ratio = hours / capacity;
