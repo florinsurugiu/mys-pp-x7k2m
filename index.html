@@ -307,7 +307,6 @@ async function load() {
     if (!res.ok) throw new Error('status ' + res.status);
     const data = await res.json();
     renderSettings(data, rootSettings);
-    metaParts.push('Costuri produse: actualizat ' + fmtDateTime(data.generatedAt));
   } catch (e) {
     rootSettings.innerHTML = '<div class="error">Nu am putut incarca datele de setari (' + e.message + ').</div>';
   }
@@ -637,25 +636,47 @@ function computeBaselineAverage(data) {
   };
 }
 
+/** Rand sintetic pt luna curenta (August), folosit doar cand se aduna la
+ * "Toate" -- ca istoricul + estimarea curenta sa dea un total realist, nu
+ * doar cele 8 luni cu date reale. Foloseste acelasi calcul ca stat cardurile
+ * de pe Luna curenta (D2C din rulaj real + B2B incoming). */
+function buildCurrentMonthEstimateRow(data) {
+  const avg = computeBaselineAverage(data);
+  const runRate = computeCurrentMonthRunRate();
+  const d2c = runRate ? runRate.projected : avg.revenue;
+  const incomingB2BTotal = loadIncomingProjects().reduce((s, p) => s + p.amount, 0);
+  const revenue = d2c + incomingB2BTotal;
+  const net = revenue - (avg.cogs + avg.marketing + avg.salaries + avg.taxes + avg.other);
+  const monthName = new Date().toLocaleDateString('ro-RO', { month: 'short', year: 'numeric' });
+  return {
+    month: 'estimat', label: monthName + ' (estimat)', d2c, b2bProject: 0, b2bOther: incomingB2BTotal,
+    revenue, cogs: avg.cogs, marketing: avg.marketing, salaries: avg.salaries, taxes: avg.taxes, other: avg.other,
+    net, klarnaMissing: false,
+  };
+}
+
 function renderPnlPeriod(root) {
   const data = pnlDataCache;
   const isSingleMonth = pnlPeriod === 1;
-  let filteredRows, t, tableLabel;
+  let filteredRows, t;
   if (isSingleMonth) {
     const avg = computeBaselineAverage(data);
     filteredRows = [avg];
     t = avg;
-    tableLabel = avg.label;
   } else {
     const sliceCount = pnlPeriod === 'lastMonth' ? 1 : pnlPeriod;
     filteredRows = data.rows.slice(-sliceCount);
+    if (pnlPeriod === data.rows.length) {
+      // "Toate" include si estimarea lunii curente, nu doar istoricul --
+      // altfel totalul pare incomplet fata de ce arata Luna curenta.
+      filteredRows = [...filteredRows, buildCurrentMonthEstimateRow(data)];
+    }
     t = filteredRows.reduce((acc, r) => {
       acc.d2c += r.d2c; acc.b2bProject += r.b2bProject; acc.b2bOther += r.b2bOther;
       acc.revenue += r.revenue; acc.cogs += r.cogs; acc.marketing += r.marketing;
       acc.salaries += r.salaries; acc.taxes += r.taxes; acc.other += r.other; acc.net += r.net;
       return acc;
     }, { d2c: 0, b2bProject: 0, b2bOther: 0, revenue: 0, cogs: 0, marketing: 0, salaries: 0, taxes: 0, other: 0, net: 0 });
-    tableLabel = pnlPeriod === 'lastMonth' ? filteredRows[0].label : 'Total ' + filteredRows.length + ' luni';
   }
 
   const monthOptions = [1, 'lastMonth', 3, 6, data.rows.length];
@@ -690,64 +711,32 @@ function renderPnlPeriod(root) {
     statCard('Costuri medii / luna', fmtMoney(costsTotal), 'COGS (medie 8 luni, fara cost proiecte) · restul (medie ultimele 4 luni)', null, costsTooltip(data.rows.length, 4)) +
     statCard('Rezultat net estimat', (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming), incomingB2BTotal > 0 ? 'D2C real + B2B incoming (' + fmtMoney(incomingB2BTotal) + ')' : 'pe baza vanzarilor D2C reale, fara proiecte B2B', netWithIncoming >= 0 ? 'good' : 'bad')
     :
-    statCard('Venit total (' + filteredRows.length + ' luni)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k') +
+    statCard('Venit total (' + filteredRows.length + ' luni)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k' + (pnlPeriod === data.rows.length ? ' &middot; include luna curenta (estimat)' : '')) +
     statCard('Costuri totale', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS, marketing, salarii, taxe, altele', null, costsTooltip()) +
     statCard('Rezultat net', (t.net >= 0 ? '+' : '') + fmtMoney(t.net), 'profitabil doar datorita B2B', t.net >= 0 ? 'good' : 'bad');
-
-  const rows = filteredRows.map((r) => {
-    const b2b = r.b2bProject + r.b2bOther;
-    return (
-      '<tr>' +
-        '<td data-label="Luna">' + r.label + (r.klarnaMissing ? ' <span title="Klarna lipsa din arhiva" style="color:var(--warn)">&#9679;</span>' : '') + '</td>' +
-        '<td data-label="Venit D2C">' + fmtMoney(r.d2c) + '</td>' +
-        '<td data-label="Venit B2B">' + fmtMoney(b2b) + '</td>' +
-        '<td data-label="Venit total">' + fmtMoney(r.revenue) + '</td>' +
-        '<td data-label="COGS">' + fmtMoney(r.cogs) + '</td>' +
-        '<td data-label="Marketing">' + fmtMoney(r.marketing) + '</td>' +
-        '<td data-label="Salarii">' + fmtMoney(r.salaries) + '</td>' +
-        '<td data-label="Taxe">' + fmtMoney(r.taxes) + '</td>' +
-        '<td data-label="Altele">' + fmtMoney(r.other) + '</td>' +
-        '<td data-label="Rezultat net" class="' + (r.net >= 0 ? '' : 'roas-bad') + '">' + (r.net >= 0 ? '+' : '') + fmtMoney(r.net) + '</td>' +
-      '</tr>'
-    );
-  }).join('');
-
-  const totalsRow =
-    '<tr class="totals-row">' +
-      '<td data-label="Luna">' + tableLabel + '</td>' +
-      '<td data-label="Venit D2C">' + fmtMoney(t.d2c) + '</td>' +
-      '<td data-label="Venit B2B">' + fmtMoney(t.b2bProject + t.b2bOther) + '</td>' +
-      '<td data-label="Venit total">' + fmtMoney(t.revenue) + '</td>' +
-      '<td data-label="COGS">' + fmtMoney(t.cogs) + '</td>' +
-      '<td data-label="Marketing">' + fmtMoney(t.marketing) + '</td>' +
-      '<td data-label="Salarii">' + fmtMoney(t.salaries) + '</td>' +
-      '<td data-label="Taxe">' + fmtMoney(t.taxes) + '</td>' +
-      '<td data-label="Altele">' + fmtMoney(t.other) + '</td>' +
-      '<td data-label="Rezultat net" class="' + (t.net >= 0 ? '' : 'roas-bad') + '">' + (t.net >= 0 ? '+' : '') + fmtMoney(t.net) + '</td>' +
-    '</tr>';
 
   const mapped = ['COGS', 'Taxe', 'Salarii', 'Marketing'];
   // "Personal" (calatorii + cumparaturi card firma) nu e cost real de
   // business -- exclus DOAR pt Luna curenta (estimare), istoricul
-  // (Toate/3/6 luni, facts din acte) il pastreaza neatins.
+  // (Toate/3/6 luni/Luna trecuta, facts din acte) il pastreaza neatins.
   const excludedCurrentMonth = ['Personal'];
-  const leftoverRaw = data.categoryBreakdown.filter((c) => !mapped.some((m) => c.name.startsWith(m)) && !excludedCurrentMonth.some((m) => c.name.startsWith(m)));
+  const leftoverRaw = data.categoryBreakdown.filter((c) => !mapped.some((m) => c.name.startsWith(m)) && !(isSingleMonth && excludedCurrentMonth.some((m) => c.name.startsWith(m))));
   const leftoverRawSum = leftoverRaw.reduce((s, c) => s + c.val, 0);
-  const catSource = isSingleMonth
-    ? data.categoryBreakdown
-        .filter((c) => !excludedCurrentMonth.some((m) => c.name.startsWith(m)))
-        .map((c) => {
-          if (c.name.startsWith('COGS')) return { name: 'COGS (marfa/materiale, fara proiecte)', val: t.cogs };
-          if (c.name.startsWith('Taxe')) return { name: c.name, val: t.taxes };
-          if (c.name.startsWith('Salarii')) return { name: c.name, val: t.salaries };
-          if (c.name.startsWith('Marketing')) return { name: c.name, val: t.marketing };
-          // scaled proportional la ponderea originala, ca suma exacta a
-          // acestor subcategorii sa dea t.other (altfel nu coincide cu
-          // Costuri medii/luna -- categoryBreakdown are un total usor
-          // diferit fata de totals.other in datele sursa)
-          return { name: c.name, val: t.other * (c.val / leftoverRawSum) };
-        })
-    : data.categoryBreakdown;
+  // catSource e mereu derivat din t (totalurile perioadei selectate), deci
+  // se actualizeaza cu orice filtru (Luna trecuta, 3/6 luni, Toate) --
+  // COGS/Taxe/Salarii/Marketing vin direct din t; restul categoriilor
+  // (Neclasificat, Chirie etc, care nu au defalcare lunara in date) sunt
+  // scalate proportional la ponderea lor originala pe tot intervalul, ca
+  // suma exacta sa dea t.other pt perioada selectata.
+  const catSource = data.categoryBreakdown
+    .filter((c) => !(isSingleMonth && excludedCurrentMonth.some((m) => c.name.startsWith(m))))
+    .map((c) => {
+      if (c.name.startsWith('COGS')) return { name: isSingleMonth ? 'COGS (marfa/materiale, fara proiecte)' : c.name, val: t.cogs };
+      if (c.name.startsWith('Taxe')) return { name: c.name, val: t.taxes };
+      if (c.name.startsWith('Salarii')) return { name: c.name, val: t.salaries };
+      if (c.name.startsWith('Marketing')) return { name: c.name, val: t.marketing };
+      return { name: c.name, val: t.other * (c.val / leftoverRawSum) };
+    });
   const maxCat = Math.max(...catSource.map((c) => c.val));
   const catTotal = catSource.reduce((s, c) => s + c.val, 0);
   const catTotalRow =
@@ -790,20 +779,11 @@ function renderPnlPeriod(root) {
     (isSingleMonth ? '' : '<div class="meta" style="margin-bottom:16px">' + escapeHtml(data.period) + ' &middot; ' + escapeHtml(data.entities) + '</div>') +
     '<div class="period-filter">' + filterBtns + '</div>' +
     '<div class="stat-grid">' + stats + '</div>' +
-    '<div class="section-title" style="margin-top:24px">' + (isSingleMonth ? 'Costuri pe categorii' : 'Detaliu lunar') + '</div>' +
-    (isSingleMonth ?
-      '<div class="stat-sub" style="margin-bottom:12px">COGS medie 8 luni (fara cost proiecte B2B) &middot; restul categoriilor medie ultimele 4 luni (nu avem defalcare lunara reala pe categorii).</div>' +
-      '<div class="card">' + catTotalRow + catRows + '</div>'
-    :
-    '<div class="card table-scroll" style="margin-bottom:12px"><table class="trend">' +
-      '<thead><tr><th>Luna</th><th>Venit D2C</th><th>Venit B2B</th><th>Venit total</th><th>COGS</th><th>Marketing</th><th>Salarii</th><th>Taxe</th><th>Altele</th><th>Rezultat net</th></tr></thead>' +
-      '<tbody>' + totalsRow + '</tbody>' +
-    '</table></div>') +
-    (isSingleMonth ? '' :
-    '<div class="card table-scroll"><table class="trend">' +
-      '<thead><tr><th>Luna</th><th>Venit D2C</th><th>Venit B2B</th><th>Venit total</th><th>COGS</th><th>Marketing</th><th>Salarii</th><th>Taxe</th><th>Altele</th><th>Rezultat net</th></tr></thead>' +
-      '<tbody>' + rows + '</tbody>' +
-    '</table></div>') +
+    '<div class="section-title" style="margin-top:24px">Costuri pe categorii</div>' +
+    (isSingleMonth
+      ? '<div class="stat-sub" style="margin-bottom:12px">COGS medie 8 luni (fara cost proiecte B2B) &middot; restul categoriilor medie ultimele 4 luni (nu avem defalcare lunara reala pe categorii).</div>'
+      : '<div class="stat-sub" style="margin-bottom:12px">Categoriile fara defalcare lunara reala (Neclasificat, Chirie etc) sunt scalate proportional cu ponderea lor pe tot intervalul.</div>') +
+    '<div class="card">' + catTotalRow + catRows + '</div>' +
     (isSingleMonth ? '' :
       '<div class="section-title">Proiecte B2B (istoric)</div>' +
       '<div class="stat-grid">' + projectCards + '</div>'
@@ -814,10 +794,6 @@ function renderPnlPeriod(root) {
       '<div class="section-title">Estimare luna curenta</div>' +
       '<div id="month-estimate-section"></div>'
     : '') +
-    (isSingleMonth ? '' :
-      '<div class="section-title">Costuri pe categorii</div>' +
-      '<div class="card">' + catTotalRow + catRows + '</div>'
-    ) +
     (isSingleMonth ? '' :
       '<div class="section-title">Bilanturi oficiale ANAF (2023 vs 2024)</div>' +
       '<div class="grid-two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">' + baselineCards + '</div>'
