@@ -123,6 +123,12 @@
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
 
+  .settings-btn {
+    margin-right: 0; padding: 6px; border: 1px solid var(--border); border-radius: 8px;
+    font-size: 1rem; line-height: 1; background: var(--bg-elevated); flex: 0 0 auto;
+  }
+  .settings-btn.active { background: var(--accent-dim); border-color: var(--accent); }
+
   .push-btn {
     appearance: none; border: 1px solid var(--accent); background: var(--accent-dim); color: var(--accent);
     font: inherit; font-weight: 700; font-size: 0.8rem; padding: 8px 14px; border-radius: 8px;
@@ -200,14 +206,16 @@
 <div class="wrap">
   <header>
     <h1>MY Dashboard</h1>
-    <div class="meta" id="meta">se incarca...</div>
+    <div style="display:flex;align-items:center;gap:14px">
+      <div class="meta" id="meta">se incarca...</div>
+      <button class="settings-btn tab-btn" data-tab="settings" title="Setari">&#9881;</button>
+    </div>
   </header>
   <div class="tabs">
     <button class="tab-btn active" data-tab="production">Productie</button>
     <button class="tab-btn" data-tab="profit">Profit &amp; ROAS</button>
     <button class="tab-btn" data-tab="pnl">P&amp;L</button>
     <button class="tab-btn" data-tab="reco">Imbunatatiri</button>
-    <button class="tab-btn" data-tab="settings">&#9881; Setari</button>
   </div>
   <div class="tab-panel active" id="panel-production">
     <div id="root-production">
