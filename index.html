@@ -592,6 +592,12 @@ function setPnlPeriod(months, root) {
 // decat orice medie istorica (de actualizat manual daca se schimba echipa)
 const CURRENT_TEAM_SALARIES = { Felicia: 5000, Flori: 5000, Carl: 4500, Alexio: 8000 };
 
+// taxe platite efectiv in luna curenta (August 2026) -- cifre reale din
+// ordinele de plata (Bad Copy: impozit pe profit 6.669 + TVA decont lunar
+// 7.103, pt obligatii din Iunie; Simplicated deja platit luna trecuta,
+// fara suma noua acum). De actualizat manual cand vine urmatorul decont.
+const CURRENT_MONTH_TAXES_PAID = { 'Bad Copy - impozit profit': 6669, 'Bad Copy - TVA': 7103 };
+
 function computeBaselineAverage(data) {
   const rows = data.rows;
   const n = rows.length;
@@ -605,17 +611,19 @@ function computeBaselineAverage(data) {
   const cogs = (sum('cogs') - totalProjectCost) / n;
   const marketing = sumRecent('marketing') / rn;
   const salaries = Object.values(CURRENT_TEAM_SALARIES).reduce((a, b) => a + b, 0);
-  // "Taxe" e un bucket mixt: TVA si CAS se platesc lunar (urmaresc direct
-  // veniturile/salariile lunii), dar impozitul pe profit/venitul
-  // microintreprinderilor se plateste trimestrial -- de-asta o luna poate
-  // arata taxe mari fara legatura cu propriul ei venit (ex. Iulie, desi
-  // n-a avut B2B, reflecta partial decontul trimestrial Q2 care include
-  // B2B-urile mari din Apr/Iun). Media pe luni individuale amplifica acest
-  // decalaj; raportul taxe/venit pe TOT intervalul (fiecare trimestru
-  // numarat o singura data) absoarbe atat componenta lunara cat si pe cea
-  // trimestriala si e un proxy mai fiabil, aplicat pe venitul D2C.
+  // Taxe: folosim suma reala platita deja luna asta (CURRENT_MONTH_TAXES_PAID)
+  // ca baza cunoscuta -- mai precisa decat orice estimare. "Taxe" e un bucket
+  // mixt: TVA si CAS se platesc lunar (urmaresc direct veniturile/salariile
+  // lunii), dar impozitul pe profit/venitul microintreprinderilor se
+  // plateste trimestrial -- de-asta o luna poate arata taxe mari fara
+  // legatura cu propriul ei venit (ex. Iulie, desi n-a avut B2B, reflecta
+  // partial decontul trimestrial Q2 care include B2B-urile mari din
+  // Apr/Iun). Raportul taxe/venit pe TOT intervalul (fiecare trimestru
+  // numarat o singura data) e folosit doar ca fallback cand nu avem o
+  // suma reala platita.
+  const knownTaxesPaid = Object.values(CURRENT_MONTH_TAXES_PAID).reduce((a, b) => a + b, 0);
   const taxRate = sum('taxes') / sum('revenue');
-  const taxes = revenue * taxRate;
+  const taxes = knownTaxesPaid > 0 ? knownTaxesPaid : revenue * taxRate;
   const other = sumRecent('other') / rn;
   const net = revenue - (cogs + marketing + salaries + taxes + other);
   return {
