@@ -914,10 +914,11 @@ function updateEstimateNet(est) {
 function renderMonthEstimateSection(pnlData) {
   const el = document.getElementById('month-estimate-section');
   if (!el || !pnlData) return;
-  const lastMonth = pnlData.rows[pnlData.rows.length - 1];
+  const round2 = (n) => Math.round(n * 100) / 100;
+  const avg = computeBaselineAverage(pnlData);
   const defaults = {
-    d2c: lastMonth.d2c, b2bOther: lastMonth.b2bOther, cogs: lastMonth.cogs, marketing: lastMonth.marketing,
-    salaries: lastMonth.salaries, taxes: lastMonth.taxes, other: lastMonth.other,
+    d2c: round2(avg.d2c), b2bOther: round2(avg.b2bOther), cogs: round2(avg.cogs), marketing: round2(avg.marketing),
+    salaries: round2(avg.salaries), taxes: round2(avg.taxes), other: round2(avg.other),
   };
   const est = loadEstimate(defaults);
   const now = new Date();
@@ -930,7 +931,7 @@ function renderMonthEstimateSection(pnlData) {
 
   el.innerHTML =
     '<div class="card">' +
-      '<div class="stat-sub" style="margin-bottom:14px">' + monthName + ' -- editabil, valorile initiale sunt din ' + escapeHtml(lastMonth.label) + ' (ultima luna cu date reale). Venitul B2B incoming vine automat din lista de mai sus.</div>' +
+      '<div class="stat-sub" style="margin-bottom:14px">' + monthName + ' -- editabil, valorile initiale sunt media pe ' + pnlData.rows.length + ' luni (COGS fara costul proiectelor B2B). Venitul B2B incoming vine automat din lista de mai sus.</div>' +
       '<div class="estimate-grid">' +
         field('d2c', 'Venit D2C estimat') +
         field('b2bOther', 'Venit B2B (recurent) estimat') +
