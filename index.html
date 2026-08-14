@@ -317,14 +317,22 @@ async function load() {
 
 function initTabs() {
   const buttons = document.querySelectorAll('.tab-btn');
+  const activateTab = (name, updateHash) => {
+    const btn = [...buttons].find((b) => b.dataset.tab === name);
+    if (!btn) return false;
+    buttons.forEach((b) => b.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach((p) => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-' + name).classList.add('active');
+    if (updateHash) history.replaceState(null, '', '#' + name);
+    return true;
+  };
   buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      buttons.forEach((b) => b.classList.remove('active'));
-      document.querySelectorAll('.tab-panel').forEach((p) => p.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
-    });
+    btn.addEventListener('click', () => activateTab(btn.dataset.tab, true));
   });
+  window.addEventListener('hashchange', () => activateTab(location.hash.slice(1), false));
+  const initial = location.hash.slice(1);
+  if (!initial || !activateTab(initial, false)) activateTab('production', false);
 }
 
 function pushToAsana() {
