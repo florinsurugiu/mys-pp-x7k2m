@@ -605,7 +605,17 @@ function computeBaselineAverage(data) {
   const cogs = (sum('cogs') - totalProjectCost) / n;
   const marketing = sumRecent('marketing') / rn;
   const salaries = Object.values(CURRENT_TEAM_SALARIES).reduce((a, b) => a + b, 0);
-  const taxes = sumRecent('taxes') / rn;
+  // "Taxe" e un bucket mixt: TVA si CAS se platesc lunar (urmaresc direct
+  // veniturile/salariile lunii), dar impozitul pe profit/venitul
+  // microintreprinderilor se plateste trimestrial -- de-asta o luna poate
+  // arata taxe mari fara legatura cu propriul ei venit (ex. Iulie, desi
+  // n-a avut B2B, reflecta partial decontul trimestrial Q2 care include
+  // B2B-urile mari din Apr/Iun). Media pe luni individuale amplifica acest
+  // decalaj; raportul taxe/venit pe TOT intervalul (fiecare trimestru
+  // numarat o singura data) absoarbe atat componenta lunara cat si pe cea
+  // trimestriala si e un proxy mai fiabil, aplicat pe venitul D2C.
+  const taxRate = sum('taxes') / sum('revenue');
+  const taxes = revenue * taxRate;
   const other = sumRecent('other') / rn;
   const net = revenue - (cogs + marketing + salaries + taxes + other);
   return {
