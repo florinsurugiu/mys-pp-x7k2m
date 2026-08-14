@@ -722,13 +722,15 @@ function renderPnlPeriod(root) {
     '<div class="card">' +
       '<div class="item"><span>Venit D2C</span><span class="item-hours">' + fmtMoney(t.d2c) + '</span></div>' +
       '<div class="item"><span>Venit B2B</span><span class="item-hours">' + fmtMoney(t.b2bProject + t.b2bOther) + '</span></div>' +
-      '<div class="item"><span>Venit total</span><span class="item-hours">' + fmtMoney(t.revenue) + '</span></div>' +
+      '<div class="item"><span>Venit total (baseline, fara B2B incoming)</span><span class="item-hours">' + fmtMoney(t.revenue) + '</span></div>' +
+      '<div class="item"><span>Venit total (cu B2B incoming)</span><span class="item-hours">' + fmtMoney(revenueWithIncoming) + '</span></div>' +
       '<div class="item"><span>COGS</span><span class="item-hours">' + fmtMoney(t.cogs) + '</span></div>' +
       '<div class="item"><span>Marketing</span><span class="item-hours">' + fmtMoney(t.marketing) + '</span></div>' +
       '<div class="item"><span>Salarii</span><span class="item-hours">' + fmtMoney(t.salaries) + '</span></div>' +
       '<div class="item"><span>Taxe</span><span class="item-hours">' + fmtMoney(t.taxes) + '</span></div>' +
       '<div class="item"><span>Altele</span><span class="item-hours">' + fmtMoney(t.other) + '</span></div>' +
-      '<div class="item"><span>Rezultat net</span><span class="item-hours ' + (t.net >= 0 ? '' : 'roas-bad') + '">' + (t.net >= 0 ? '+' : '') + fmtMoney(t.net) + '</span></div>' +
+      '<div class="item"><span>Rezultat net (baseline, fara B2B incoming)</span><span class="item-hours ' + (t.net >= 0 ? '' : 'roas-bad') + '">' + (t.net >= 0 ? '+' : '') + fmtMoney(t.net) + '</span></div>' +
+      '<div class="item"><span>Rezultat net (cu B2B incoming)</span><span class="item-hours ' + (netWithIncoming >= 0 ? '' : 'roas-bad') + '">' + (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming) + '</span></div>' +
     '</div>';
 
   root.innerHTML =
