@@ -881,6 +881,26 @@ function renderMonthEstimateSection(pnlData) {
 
 let settingsDataCache = null;
 
+function groupSettingsByCategory(products) {
+  const byCategory = new Map();
+  for (const p of products) {
+    const entry = byCategory.get(p.category) || { category: p.category, hours: p.hours, count: 0, costSum: 0, costCount: 0, actualCount: 0 };
+    entry.count += 1;
+    if (p.cost != null) { entry.costSum += p.cost; entry.costCount += 1; }
+    if (p.costSource === 'actual') entry.actualCount += 1;
+    byCategory.set(p.category, entry);
+  }
+  return [...byCategory.values()]
+    .map((e) => ({
+      category: e.category,
+      hours: e.hours,
+      count: e.count,
+      avgCost: e.costCount > 0 ? e.costSum / e.costCount : null,
+      allActual: e.actualCount === e.count,
+    }))
+    .sort((a, b) => a.category.localeCompare(b.category));
+}
+
 function renderSettings(data, root) {
   settingsDataCache = data;
   const unknownCount = data.products.filter((p) => p.costSource === 'unknown').length;
@@ -889,10 +909,10 @@ function renderSettings(data, root) {
       (unknownCount > 0 ? ' &middot; <span style="color:var(--warn)">' + unknownCount + ' fara cost cunoscut</span>' : '') +
     '</div>' +
     '<div class="form-row" style="margin-bottom:16px">' +
-      '<input class="form-input" id="settings-search" placeholder="Cauta produs sau categorie..." style="flex:1;min-width:220px" oninput="filterSettings()">' +
+      '<input class="form-input" id="settings-search" placeholder="Cauta categorie..." style="flex:1;min-width:220px" oninput="filterSettings()">' +
     '</div>' +
     '<div class="card table-scroll"><table class="trend" id="settings-table">' +
-      '<thead><tr><th>Produs</th><th>Categorie</th><th>Timp productie</th><th>Cost</th><th>Sursa</th></tr></thead>' +
+      '<thead><tr><th>Categorie</th><th>Produse</th><th>Timp productie</th><th>Cost mediu</th><th>Sursa cost</th></tr></thead>' +
       '<tbody id="settings-tbody"></tbody>' +
     '</table></div>';
   filterSettings();
@@ -902,22 +922,21 @@ function filterSettings() {
   const q = (document.getElementById('settings-search')?.value || '').toLowerCase();
   const tbody = document.getElementById('settings-tbody');
   if (!tbody || !settingsDataCache) return;
-  const filtered = settingsDataCache.products.filter((p) =>
-    !q || p.title.toLowerCase().includes(q) || p.category.toLowerCase().includes(q)
-  );
+  const categories = groupSettingsByCategory(settingsDataCache.products);
+  const filtered = categories.filter((c) => !q || c.category.toLowerCase().includes(q));
   tbody.innerHTML = filtered.length
-    ? filtered.map((p) => (
+    ? filtered.map((c) => (
         '<tr>' +
-          '<td style="text-align:left">' + escapeHtml(p.title) + '</td>' +
-          '<td>' + escapeHtml(p.category) + '</td>' +
-          '<td>' + (p.hours != null ? p.hours.toFixed(2) + 'h' : 'n/a') + '</td>' +
-          '<td>' + (p.cost != null ? fmtMoney(p.cost) : 'n/a') + '</td>' +
-          '<td><span class="status-chip ' + (p.costSource === 'actual' ? 'confirmat' : 'probabil') + '">' +
-            (p.costSource === 'actual' ? 'real' : p.costSource === 'estimated' ? 'estimat' : 'necunoscut') +
+          '<td style="text-align:left">' + escapeHtml(c.category) + '</td>' +
+          '<td>' + c.count + '</td>' +
+          '<td>' + (c.hours != null ? c.hours.toFixed(2) + 'h' : 'n/a') + '</td>' +
+          '<td>' + (c.avgCost != null ? fmtMoney(c.avgCost) : 'n/a') + '</td>' +
+          '<td><span class="status-chip ' + (c.allActual ? 'confirmat' : 'probabil') + '">' +
+            (c.allActual ? 'real' : 'partial estimat') +
           '</span></td>' +
         '</tr>'
       )).join('')
-    : '<tr><td colspan="5"><div class="empty">Niciun produs gasit.</div></td></tr>';
+    : '<tr><td colspan="5"><div class="empty">Nicio categorie gasita.</div></td></tr>';
 }
 
 initTabs();
