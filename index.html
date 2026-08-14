@@ -702,8 +702,10 @@ function renderPnlPeriod(root) {
     '<div id="incoming-projects-section"></div>' +
     '<div class="section-title">Estimare luna curenta</div>' +
     '<div id="month-estimate-section"></div>' +
-    '<div class="section-title">Costuri pe categorii</div>' +
-    '<div class="card">' + catRows + '</div>' +
+    (isSingleMonth ? '' :
+      '<div class="section-title">Costuri pe categorii</div>' +
+      '<div class="card">' + catRows + '</div>'
+    ) +
     (isSingleMonth ? '' :
       '<div class="section-title">Bilanturi oficiale ANAF (2023 vs 2024)</div>' +
       '<div class="grid-two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">' + baselineCards + '</div>'
