@@ -441,6 +441,25 @@ function fmtMoney(n) {
 let profitDataCache = null;
 let profitPeriod = 14;
 
+/** Proiectie de venit D2C pt luna calendaristica curenta, bazata pe
+ * vanzarile reale Shopify din profit-data.json (nu pe media istorica) --
+ * suma zilelor scurse din luna, extrapolata liniar pe restul zilelor. */
+function computeCurrentMonthRunRate() {
+  if (!profitDataCache || !profitDataCache.days || !profitDataCache.days.length) return null;
+  const now = new Date();
+  const y = now.getFullYear(), m = now.getMonth();
+  const daysInMonth = new Date(y, m + 1, 0).getDate();
+  const monthDays = profitDataCache.days.filter((d) => {
+    const dt = new Date(d.date + 'T00:00:00');
+    return dt.getFullYear() === y && dt.getMonth() === m;
+  });
+  if (!monthDays.length) return null;
+  const actual = monthDays.reduce((s, d) => s + d.revenue, 0);
+  const daysElapsed = monthDays.length;
+  const projected = (actual / daysElapsed) * daysInMonth;
+  return { actual, daysElapsed, daysInMonth, projected };
+}
+
 function renderProfit(data, root) {
   profitDataCache = data;
   renderProfitPeriod(root);
@@ -558,26 +577,32 @@ function setPnlPeriod(months, root) {
 }
 
 /** "Luna curenta" nu mai arata ultima luna reala (poate fi atipica), ci o
- * medie pe tot intervalul cu proiectele B2B scoase -- un baseline mai
- * realist. Costul de productie al proiectelor (cunoscut doar ca total
- * agregat, nu pe luna) e scazut din COGS-ul total inainte de mediere;
- * restul cheltuielilor (marketing/salarii/taxe/altele) nu sunt specifice
- * proiectelor, deci raman mediate normal. Venitul B2B recurent istoric
- * NU intra in baseline -- utilizatorul prefera sa se raporteze doar la
- * ce adauga manual in "Proiecte B2B incoming", nu la o medie auto-calculata
- * pe care nu o controleaza. */
+ * medie mai realista. COGS foloseste media pe tot intervalul (8 luni) cu
+ * costul proiectelor B2B scazut (e singura cifra de proiect verificata,
+ * doar ca total agregat pe tot intervalul -- nu se poate izola pe un
+ * subset de luni). Marketing/salarii/taxe/altele folosesc media doar pe
+ * ultimele 4 luni: Decembrie are salarii/taxe 0 (date lipsa, nu o luna
+ * reala fara costuri) si Martie are cifre neobisnuit de mici -- incluse
+ * in medie, trag artificial estimarea in jos fata de nivelul actual de
+ * echipa/cheltuieli. Venitul B2B recurent istoric NU intra in baseline --
+ * utilizatorul prefera sa se raporteze doar la ce adauga manual in
+ * "Proiecte B2B incoming", nu la o medie auto-calculata pe care nu o
+ * controleaza. */
 function computeBaselineAverage(data) {
   const rows = data.rows;
   const n = rows.length;
+  const recent = rows.slice(-4);
+  const rn = recent.length;
   const sum = (key) => rows.reduce((s, r) => s + r[key], 0);
+  const sumRecent = (key) => recent.reduce((s, r) => s + r[key], 0);
   const totalProjectCost = Object.values(data.projectCosts).reduce((s, p) => s + p.cost, 0);
   const d2c = sum('d2c') / n;
   const revenue = d2c;
   const cogs = (sum('cogs') - totalProjectCost) / n;
-  const marketing = sum('marketing') / n;
-  const salaries = sum('salaries') / n;
-  const taxes = sum('taxes') / n;
-  const other = sum('other') / n;
+  const marketing = sumRecent('marketing') / rn;
+  const salaries = sumRecent('salaries') / rn;
+  const taxes = sumRecent('taxes') / rn;
+  const other = sumRecent('other') / rn;
   const net = revenue - (cogs + marketing + salaries + taxes + other);
   return {
     label: 'Medie ' + n + ' luni (D2C, fara B2B)', d2c, b2bProject: 0, b2bOther: 0, revenue,
@@ -618,16 +643,24 @@ function renderPnlPeriod(root) {
     '<div class="stat-value' + (cls ? ' ' + cls : '') + '">' + value + '</div>' +
     (sub ? '<div class="stat-sub">' + sub + '</div>' : '') + '</div>';
 
-  const costsTooltip = (n) => 'COGS ' + fmtMoney(t.cogs) + ' · Marketing ' + fmtMoney(t.marketing) + ' · Salarii ' + fmtMoney(t.salaries) + ' · Taxe ' + fmtMoney(t.taxes) + ' · Altele ' + fmtMoney(t.other) + (n ? ' (medie pe ' + n + ' luni)' : '');
+  const costsTooltip = (n, recentN) => 'COGS ' + fmtMoney(t.cogs) + (n ? ' (medie ' + n + ' luni)' : '') +
+    ' · Marketing ' + fmtMoney(t.marketing) + ' · Salarii ' + fmtMoney(t.salaries) + ' · Taxe ' + fmtMoney(t.taxes) + ' · Altele ' + fmtMoney(t.other) +
+    (recentN ? ' (medie ultimele ' + recentN + ' luni)' : '');
 
   const incomingB2BTotal = isSingleMonth ? loadIncomingProjects().reduce((s, p) => s + p.amount, 0) : 0;
-  const revenueWithIncoming = t.revenue + incomingB2BTotal;
-  const netWithIncoming = t.net + incomingB2BTotal;
+  const runRate = isSingleMonth ? computeCurrentMonthRunRate() : null;
+  const d2cEstimate = runRate ? runRate.projected : t.revenue;
+  const costsTotal = t.cogs + t.marketing + t.salaries + t.taxes + t.other;
+  const netEstimate = d2cEstimate - costsTotal;
+  const revenueWithIncoming = d2cEstimate + incomingB2BTotal;
+  const netWithIncoming = netEstimate + incomingB2BTotal;
   const stats = isSingleMonth ?
-    statCard('Venit mediu / luna (D2C, fara B2B)', fmtMoney(t.revenue), 'medie D2C pe ' + data.rows.length + ' luni') +
-    statCard('Venit estimat (D2C + B2B incoming)', fmtMoney(revenueWithIncoming), incomingB2BTotal > 0 ? 'D2C ' + fmtMoney(t.revenue) + ' + B2B incoming ' + fmtMoney(incomingB2BTotal) : 'niciun proiect B2B incoming adaugat inca') +
-    statCard('Costuri medii / luna', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS (fara cost proiecte), marketing, salarii, taxe, altele', null, costsTooltip(data.rows.length)) +
-    statCard('Rezultat net mediu', (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming), incomingB2BTotal > 0 ? 'baseline + B2B incoming (' + fmtMoney(incomingB2BTotal) + ')' : 'baseline realist, fara proiecte B2B', netWithIncoming >= 0 ? 'good' : 'bad')
+    statCard('Venit D2C estimat (luna curenta)', fmtMoney(d2cEstimate), runRate
+      ? fmtMoney(runRate.actual) + ' in ' + runRate.daysElapsed + ' din ' + runRate.daysInMonth + ' zile -- proiectat pe rulaj real'
+      : 'medie D2C pe ' + data.rows.length + ' luni (inca nu avem vanzari reale pt luna asta)') +
+    statCard('Venit estimat (D2C + B2B incoming)', fmtMoney(revenueWithIncoming), incomingB2BTotal > 0 ? 'D2C ' + fmtMoney(d2cEstimate) + ' + B2B incoming ' + fmtMoney(incomingB2BTotal) : 'niciun proiect B2B incoming adaugat inca') +
+    statCard('Costuri medii / luna', fmtMoney(costsTotal), 'COGS (medie 8 luni, fara cost proiecte) · restul (medie ultimele 4 luni)', null, costsTooltip(data.rows.length, 4)) +
+    statCard('Rezultat net estimat', (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming), incomingB2BTotal > 0 ? 'D2C real + B2B incoming (' + fmtMoney(incomingB2BTotal) + ')' : 'pe baza vanzarilor D2C reale, fara proiecte B2B', netWithIncoming >= 0 ? 'good' : 'bad')
     :
     statCard('Venit total (' + filteredRows.length + ' luni)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k') +
     statCard('Costuri totale', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS, marketing, salarii, taxe, altele', null, costsTooltip()) +
@@ -720,26 +753,15 @@ function renderPnlPeriod(root) {
     '</div>'
   )).join('');
 
-  const baselineDetail =
-    '<div class="card">' +
-      '<div class="item"><span>Venit D2C (baseline)</span><span class="item-hours">' + fmtMoney(t.revenue) + '</span></div>' +
-      '<div class="item"><span>Venit B2B incoming</span><span class="item-hours">' + fmtMoney(incomingB2BTotal) + '</span></div>' +
-      '<div class="item"><span>Venit total (D2C + B2B incoming)</span><span class="item-hours">' + fmtMoney(revenueWithIncoming) + '</span></div>' +
-      '<div class="item"><span>COGS</span><span class="item-hours">' + fmtMoney(t.cogs) + '</span></div>' +
-      '<div class="item"><span>Marketing</span><span class="item-hours">' + fmtMoney(t.marketing) + '</span></div>' +
-      '<div class="item"><span>Salarii</span><span class="item-hours">' + fmtMoney(t.salaries) + '</span></div>' +
-      '<div class="item"><span>Taxe</span><span class="item-hours">' + fmtMoney(t.taxes) + '</span></div>' +
-      '<div class="item"><span>Altele</span><span class="item-hours">' + fmtMoney(t.other) + '</span></div>' +
-      '<div class="item"><span>Rezultat net (baseline, fara B2B incoming)</span><span class="item-hours ' + (t.net >= 0 ? '' : 'roas-bad') + '">' + (t.net >= 0 ? '+' : '') + fmtMoney(t.net) + '</span></div>' +
-      '<div class="item"><span>Rezultat net (cu B2B incoming)</span><span class="item-hours ' + (netWithIncoming >= 0 ? '' : 'roas-bad') + '">' + (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming) + '</span></div>' +
-    '</div>';
-
   root.innerHTML =
     (isSingleMonth ? '' : '<div class="meta" style="margin-bottom:16px">' + escapeHtml(data.period) + ' &middot; ' + escapeHtml(data.entities) + '</div>') +
     '<div class="period-filter">' + filterBtns + '</div>' +
     '<div class="stat-grid">' + stats + '</div>' +
-    '<div class="section-title" style="margin-top:24px">' + (isSingleMonth ? 'Medie fara proiecte B2B' : 'Detaliu lunar') + '</div>' +
-    (isSingleMonth ? baselineDetail :
+    '<div class="section-title" style="margin-top:24px">' + (isSingleMonth ? 'Costuri pe categorii' : 'Detaliu lunar') + '</div>' +
+    (isSingleMonth ?
+      '<div class="stat-sub" style="margin-bottom:12px">COGS medie 8 luni (fara cost proiecte B2B) &middot; restul categoriilor medie ultimele 4 luni (nu avem defalcare lunara reala pe categorii).</div>' +
+      '<div class="card">' + catTotalRow + catRows + '</div>'
+    :
     '<div class="card table-scroll" style="margin-bottom:12px"><table class="trend">' +
       '<thead><tr><th>Luna</th><th>Venit D2C</th><th>Venit B2B</th><th>Venit total</th><th>COGS</th><th>Marketing</th><th>Salarii</th><th>Taxe</th><th>Altele</th><th>Rezultat net</th></tr></thead>' +
       '<tbody>' + totalsRow + '</tbody>' +
@@ -753,13 +775,16 @@ function renderPnlPeriod(root) {
       '<div class="section-title">Proiecte B2B (istoric)</div>' +
       '<div class="stat-grid">' + projectCards + '</div>'
     ) +
-    '<div class="section-title">Proiecte B2B incoming</div>' +
-    '<div id="incoming-projects-section"></div>' +
-    '<div class="section-title">Estimare luna curenta</div>' +
-    '<div id="month-estimate-section"></div>' +
-    '<div class="section-title">Costuri pe categorii</div>' +
-    (isSingleMonth ? '<div class="stat-sub" style="margin-bottom:12px">Medie pe ' + data.rows.length + ' luni (nu avem inca defalcare lunara reala pe aceste categorii) -- COGS fara costul proiectelor B2B.</div>' : '') +
-    '<div class="card">' + catTotalRow + catRows + '</div>' +
+    (isSingleMonth ?
+      '<div class="section-title">Proiecte B2B incoming</div>' +
+      '<div id="incoming-projects-section"></div>' +
+      '<div class="section-title">Estimare luna curenta</div>' +
+      '<div id="month-estimate-section"></div>'
+    : '') +
+    (isSingleMonth ? '' :
+      '<div class="section-title">Costuri pe categorii</div>' +
+      '<div class="card">' + catTotalRow + catRows + '</div>'
+    ) +
     (isSingleMonth ? '' :
       '<div class="section-title">Bilanturi oficiale ANAF (2023 vs 2024)</div>' +
       '<div class="grid-two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">' + baselineCards + '</div>'
@@ -964,9 +989,10 @@ function renderMonthEstimateSection(pnlData) {
   if (!el || !pnlData) return;
   const round2 = (n) => Math.round(n * 100) / 100;
   const avg = computeBaselineAverage(pnlData);
+  const runRate = computeCurrentMonthRunRate();
   const incomingTotal = loadIncomingProjects().reduce((s, p) => s + p.amount, 0);
   const defaults = {
-    d2c: round2(avg.d2c), b2bOther: round2(incomingTotal), cogs: round2(avg.cogs), marketing: round2(avg.marketing),
+    d2c: round2(runRate ? runRate.projected : avg.d2c), b2bOther: round2(incomingTotal), cogs: round2(avg.cogs), marketing: round2(avg.marketing),
     salaries: round2(avg.salaries), taxes: round2(avg.taxes), other: round2(avg.other),
   };
   const est = loadEstimate(defaults);
@@ -981,7 +1007,7 @@ function renderMonthEstimateSection(pnlData) {
 
   el.innerHTML =
     '<div class="card">' +
-      '<div class="stat-sub" style="margin-bottom:14px">' + monthName + ' -- editabil, valorile initiale sunt media pe ' + pnlData.rows.length + ' luni (COGS fara costul proiectelor B2B). Venitul B2B porneste automat din totalul "Proiecte B2B incoming" de mai sus, dar poti suprascrie manual aici.</div>' +
+      '<div class="stat-sub" style="margin-bottom:14px">' + monthName + ' -- editabil. Venit D2C = vanzari reale de pana acum, proiectat pe luna intreaga. COGS = medie pe ' + pnlData.rows.length + ' luni (fara costul proiectelor B2B); restul costurilor = medie ultimele 4 luni. Venitul B2B porneste automat din totalul "Proiecte B2B incoming" de mai sus, dar poti suprascrie manual orice camp.</div>' +
       '<div class="estimate-grid">' +
         field('d2c', 'Venit D2C estimat') +
         field('b2bOther', 'Venit B2B estimat') +
