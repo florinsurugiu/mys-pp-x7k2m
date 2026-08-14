@@ -272,7 +272,7 @@ async function load() {
     if (!res.ok) throw new Error('status ' + res.status);
     productionData = await res.json();
     renderProduction(productionData, rootProduction);
-    metaParts.push('Asana (comenzi/productie): actualizat ' + fmtDateTime(productionData.generatedAt));
+    metaParts.push('Asana ' + fmtDateTime(productionData.generatedAt));
   } catch (e) {
     rootProduction.innerHTML = '<div class="error">Nu am putut incarca datele de productie (' + e.message + ').</div>';
   }
@@ -282,7 +282,8 @@ async function load() {
     if (!res.ok) throw new Error('status ' + res.status);
     profitData = await res.json();
     renderProfit(profitData, rootProfit);
-    metaParts.push('Ads &amp; Shopify: actualizat ' + fmtDateTime(profitData.generatedAt));
+    metaParts.push('Meta ' + fmtDateTime(profitData.generatedAt));
+    metaParts.push('Shopify ' + fmtDateTime(profitData.generatedAt));
   } catch (e) {
     rootProfit.innerHTML = '<div class="error">Nu am putut incarca datele de profit (' + e.message + ').</div>';
   }
