@@ -1,38 +1,28 @@
 {
-  "generatedAt": "2026-08-14T23:00:49.770Z",
+  "generatedAt": "2026-08-14T23:11:25.127Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.2427,
   "days": [
     {
-      "date": "2026-07-15",
-      "revenue": 299,
-      "cogs": 120.29,
-      "adSpend": 715.1,
-      "grossProfit": 178.71,
-      "netProfit": -536.39,
-      "roas": 0.42,
-      "unknownCostUnits": 0
-    },
-    {
       "date": "2026-07-16",
-      "revenue": 449,
-      "cogs": 168.14,
+      "revenue": 0,
+      "cogs": 0,
       "adSpend": 739.12,
-      "grossProfit": 280.86,
-      "netProfit": -458.26,
-      "roas": 0.61,
+      "grossProfit": 0,
+      "netProfit": -739.12,
+      "roas": 0,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-07-17",
-      "revenue": 0,
-      "cogs": 389.68,
+      "revenue": 449,
+      "cogs": 557.82,
       "adSpend": 603.12,
-      "grossProfit": -389.68,
-      "netProfit": -992.8,
-      "roas": 0,
+      "grossProfit": -108.82,
+      "netProfit": -711.94,
+      "roas": 0.74,
       "unknownCostUnits": 0
     },
     {
@@ -67,22 +57,22 @@
     },
     {
       "date": "2026-07-21",
-      "revenue": 4228.56,
-      "cogs": 1909.12,
+      "revenue": 3653.45,
+      "cogs": 1695.07,
       "adSpend": 596.46,
-      "grossProfit": 2319.44,
-      "netProfit": 1722.98,
-      "roas": 7.09,
+      "grossProfit": 1958.38,
+      "netProfit": 1361.92,
+      "roas": 6.13,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-07-22",
-      "revenue": 725.2,
-      "cogs": 411.5,
+      "revenue": 1300.31,
+      "cogs": 625.55,
       "adSpend": 673.95,
-      "grossProfit": 313.7,
-      "netProfit": -360.25,
-      "roas": 1.08,
+      "grossProfit": 674.76,
+      "netProfit": 0.81,
+      "roas": 1.93,
       "unknownCostUnits": 0
     },
     {
@@ -137,22 +127,22 @@
     },
     {
       "date": "2026-07-28",
-      "revenue": 3043.35,
-      "cogs": 1360.43,
+      "revenue": 2674.35,
+      "cogs": 1240.14,
       "adSpend": 708.66,
-      "grossProfit": 1682.92,
-      "netProfit": 974.26,
-      "roas": 4.29,
+      "grossProfit": 1434.21,
+      "netProfit": 725.55,
+      "roas": 3.77,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-07-29",
-      "revenue": 1666,
-      "cogs": 684.13,
+      "revenue": 2035,
+      "cogs": 804.42,
       "adSpend": 690.67,
-      "grossProfit": 981.87,
-      "netProfit": 291.2,
-      "roas": 2.41,
+      "grossProfit": 1230.58,
+      "netProfit": 539.91,
+      "roas": 2.95,
       "unknownCostUnits": 0
     },
     {
@@ -177,22 +167,22 @@
     },
     {
       "date": "2026-08-01",
-      "revenue": 1316,
-      "cogs": 788.29,
+      "revenue": 1057,
+      "cogs": 668,
       "adSpend": 570.41,
-      "grossProfit": 527.71,
-      "netProfit": -42.7,
-      "roas": 2.31,
+      "grossProfit": 389,
+      "netProfit": -181.41,
+      "roas": 1.85,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-08-02",
-      "revenue": 1286,
-      "cogs": 588,
+      "revenue": 1545,
+      "cogs": 708.29,
       "adSpend": 815.87,
-      "grossProfit": 698,
-      "netProfit": -117.87,
-      "roas": 1.58,
+      "grossProfit": 836.71,
+      "netProfit": 20.84,
+      "roas": 1.89,
       "unknownCostUnits": 0
     },
     {
@@ -207,22 +197,22 @@
     },
     {
       "date": "2026-08-04",
-      "revenue": 2666.4,
-      "cogs": 1232.95,
+      "revenue": 2187.25,
+      "cogs": 992.37,
       "adSpend": 561.6,
-      "grossProfit": 1433.45,
-      "netProfit": 871.85,
-      "roas": 4.75,
+      "grossProfit": 1194.88,
+      "netProfit": 633.28,
+      "roas": 3.89,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-08-05",
-      "revenue": 1723.95,
-      "cogs": 780.05,
+      "revenue": 2203.1,
+      "cogs": 1020.63,
       "adSpend": 589.02,
-      "grossProfit": 943.9,
-      "netProfit": 354.88,
-      "roas": 2.93,
+      "grossProfit": 1182.47,
+      "netProfit": 593.45,
+      "roas": 3.74,
       "unknownCostUnits": 0
     },
     {
@@ -237,22 +227,22 @@
     },
     {
       "date": "2026-08-07",
-      "revenue": 4280.85,
-      "cogs": 1675.41,
+      "revenue": 3705.89,
+      "cogs": 1434.83,
       "adSpend": 496.69,
-      "grossProfit": 2605.44,
-      "netProfit": 2108.75,
-      "roas": 8.62,
+      "grossProfit": 2271.06,
+      "netProfit": 1774.37,
+      "roas": 7.46,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-08-08",
-      "revenue": 1190.37,
-      "cogs": 464.64,
+      "revenue": 1765.33,
+      "cogs": 705.22,
       "adSpend": 562.38,
-      "grossProfit": 725.73,
-      "netProfit": 163.35,
-      "roas": 2.12,
+      "grossProfit": 1060.11,
+      "netProfit": 497.73,
+      "roas": 3.14,
       "unknownCostUnits": 0
     },
     {
@@ -267,73 +257,83 @@
     },
     {
       "date": "2026-08-10",
-      "revenue": 1455.11,
-      "cogs": 676.18,
+      "revenue": 959.3,
+      "cogs": 462.13,
       "adSpend": 494.07,
-      "grossProfit": 778.93,
-      "netProfit": 284.86,
-      "roas": 2.95,
+      "grossProfit": 497.17,
+      "netProfit": 3.1,
+      "roas": 1.94,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-08-11",
-      "revenue": 1943.95,
-      "cogs": 1058.67,
+      "revenue": 2439.76,
+      "cogs": 1272.72,
       "adSpend": 437.08,
-      "grossProfit": 885.28,
-      "netProfit": 448.2,
-      "roas": 4.45,
+      "grossProfit": 1167.04,
+      "netProfit": 729.96,
+      "roas": 5.58,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-08-12",
-      "revenue": 2648.71,
-      "cogs": 1150.43,
+      "revenue": 1710.98,
+      "cogs": 909.85,
       "adSpend": 526.21,
-      "grossProfit": 1498.28,
-      "netProfit": 972.07,
-      "roas": 5.03,
+      "grossProfit": 801.13,
+      "netProfit": 274.92,
+      "roas": 3.25,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-08-13",
-      "revenue": 2086.96,
-      "cogs": 905.82,
+      "revenue": 3024.69,
+      "cogs": 1146.4,
       "adSpend": 595.57,
-      "grossProfit": 1181.14,
-      "netProfit": 585.57,
-      "roas": 3.5,
+      "grossProfit": 1878.29,
+      "netProfit": 1282.72,
+      "roas": 5.08,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-08-14",
-      "revenue": 1980.09,
-      "cogs": 969.9,
-      "adSpend": 532.97,
-      "grossProfit": 1010.19,
-      "netProfit": 477.22,
-      "roas": 3.72,
+      "revenue": 1740.89,
+      "cogs": 849.61,
+      "adSpend": 533.13,
+      "grossProfit": 891.28,
+      "netProfit": 358.15,
+      "roas": 3.27,
+      "unknownCostUnits": 0
+    },
+    {
+      "date": "2026-08-15",
+      "revenue": 884.8,
+      "cogs": 582.42,
+      "adSpend": 43.46,
+      "grossProfit": 302.38,
+      "netProfit": 258.92,
+      "roas": 20.36,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 13016.89,
+      "spend": 13033.77,
       "purchases": 78,
-      "metaRoas": 2.556886
+      "metaRoas": 2.553574
     },
     {
       "name": "DE",
-      "spend": 2165.29,
+      "spend": 2189.93,
       "purchases": 14,
-      "metaRoas": 3.458609
+      "metaRoas": 3.419693
     },
     {
       "name": "Latvia",
-      "spend": 84.62,
+      "spend": 86.71,
       "purchases": 2,
-      "metaRoas": 14.224287
+      "metaRoas": 13.88029
     }
   ]
 }
