@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T22:57:34.182Z",
+  "generatedAt": "2026-08-14T23:04:19.918Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
@@ -12,29 +12,39 @@
         "source": "leftover"
       },
       {
-        "title": "01. T gri 2M",
-        "hours": 1.33,
-        "source": "shopify"
+        "title": "01. T alb XS",
+        "hours": 0.67,
+        "source": "buffer"
       },
       {
-        "title": "02. C Tigers XS",
-        "hours": 1.75,
-        "source": "wb"
+        "title": "02. T mov 2S",
+        "hours": 1,
+        "source": "buffer"
       },
       {
-        "title": "03. Bluza alb rupta L",
+        "title": "03. Bermude L numbers",
         "hours": 1.5,
+        "source": "buffer"
+      },
+      {
+        "title": "04. Bermude echoes S,M",
+        "hours": 1.5,
+        "source": "buffer"
+      },
+      {
+        "title": "05. Overcoat scurt alb balenci XL",
+        "hours": 1.75,
         "source": "shopify"
       },
       {
-        "title": "04. W Third Eye M",
-        "hours": 2.5,
+        "title": "06. T ivory S",
+        "hours": 0.67,
         "source": "shopify"
       }
     ]
   },
   "flori": {
-    "hours": 7.25,
+    "hours": 7.08,
     "capacity": 7,
     "items": [
       {
@@ -43,18 +53,18 @@
         "source": "leftover"
       },
       {
-        "title": "01. C maneci detasate M",
-        "hours": 1.5,
-        "source": "shopify"
+        "title": "01. T offwhite XL",
+        "hours": 0.67,
+        "source": "buffer"
       },
       {
-        "title": "02. C albastru Stripes XL",
-        "hours": 1.5,
-        "source": "shopify"
+        "title": "02. C numbers M",
+        "hours": 1.42,
+        "source": "buffer"
       },
       {
-        "title": "03. Overcoat scurt alb balenci XL",
-        "hours": 1.75,
+        "title": "03. W Third Eye M",
+        "hours": 2.5,
         "source": "shopify"
       }
     ]
@@ -91,48 +101,78 @@
   ],
   "croitBuffer": [
     {
+      "gid": "1217477119697931",
       "name": "08. T mov 2S",
       "orderName": "#235382",
       "category": "Tricou raiat"
     },
     {
+      "gid": "1217482641756672",
       "name": "01. T offwhite XL",
       "orderName": null,
       "category": "Tricou simplu"
     },
     {
+      "gid": "1217482641756678",
       "name": "06. Bermude L numbers",
       "orderName": null,
       "category": "Bermude"
     },
     {
+      "gid": "1217482641756680",
       "name": "08. C numbers M",
       "orderName": null,
       "category": "Camasa scurta"
     },
     {
+      "gid": "1217482641756676",
       "name": "05. Bermude echoes S,M",
       "orderName": null,
       "category": "Bermude"
     },
     {
+      "gid": "1217482783813574",
       "name": "01. T alb XS",
       "orderName": null,
       "category": "Tricou simplu"
     }
   ],
   "backlog": {
-    "hours": 1.67,
+    "hours": 7.58,
     "items": [
       {
-        "orderName": "#235382",
-        "title": "777 Mauve Oversized T-Shirt",
-        "category": "Tricou raiat",
-        "hours": 1
+        "orderName": "WB#3407557",
+        "title": "Long Sleeve Shirt In Dark Grey With Tigers Design - Recycled Fabric W",
+        "category": "Camasa lunga",
+        "hours": 1.75
       },
       {
-        "orderName": "#235388",
-        "title": "Miau Miau Oversized Ivory T-shirt",
+        "orderName": "#235381",
+        "title": "Fragmented Sleeves Shirt V2",
+        "category": "Camasa Unisex",
+        "hours": 1.5
+      },
+      {
+        "orderName": "#235381",
+        "title": "Dystopia White Oversized Sweater",
+        "category": "Bluza inimioara / obsidian",
+        "hours": 1.5
+      },
+      {
+        "orderName": "#235385",
+        "title": "Blue Stripes Oversized Shirt",
+        "category": "Camasa Unisex",
+        "hours": 1.5
+      },
+      {
+        "orderName": "#235386",
+        "title": "Spirit Grey Oversized T-Shirt",
+        "category": "Tricou simplu",
+        "hours": 0.67
+      },
+      {
+        "orderName": "#235387",
+        "title": "Reality Grey Oversized T-Shirt",
         "category": "Tricou simplu",
         "hours": 0.67
       }
