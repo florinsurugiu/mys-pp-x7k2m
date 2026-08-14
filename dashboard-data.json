@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-14T23:04:19.918Z",
+  "generatedAt": "2026-08-14T23:11:35.442Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
-    "hours": 7.38,
+    "hours": 6.97,
     "capacity": 7,
     "items": [
       {
@@ -14,31 +14,26 @@
       {
         "title": "01. T alb XS",
         "hours": 0.67,
-        "source": "buffer"
+        "source": "leftover"
       },
       {
         "title": "02. T mov 2S",
         "hours": 1,
-        "source": "buffer"
+        "source": "shopify"
       },
       {
         "title": "03. Bermude L numbers",
         "hours": 1.5,
-        "source": "buffer"
+        "source": "leftover"
       },
       {
         "title": "04. Bermude echoes S,M",
         "hours": 1.5,
-        "source": "buffer"
+        "source": "leftover"
       },
       {
-        "title": "05. Overcoat scurt alb balenci XL",
-        "hours": 1.75,
-        "source": "shopify"
-      },
-      {
-        "title": "06. T ivory S",
-        "hours": 0.67,
+        "title": "05. T gri 2M + XXL",
+        "hours": 2,
         "source": "shopify"
       }
     ]
@@ -55,12 +50,12 @@
       {
         "title": "01. T offwhite XL",
         "hours": 0.67,
-        "source": "buffer"
+        "source": "leftover"
       },
       {
         "title": "02. C numbers M",
         "hours": 1.42,
-        "source": "buffer"
+        "source": "leftover"
       },
       {
         "title": "03. W Third Eye M",
@@ -138,7 +133,7 @@
     }
   ],
   "backlog": {
-    "hours": 7.58,
+    "hours": 10.5,
     "items": [
       {
         "orderName": "WB#3407557",
@@ -165,14 +160,26 @@
         "hours": 1.5
       },
       {
-        "orderName": "#235386",
-        "title": "Spirit Grey Oversized T-Shirt",
+        "orderName": "#235389",
+        "title": "777 Mauve Oversized T-Shirt",
+        "category": "Camasa Unisex",
+        "hours": 1.5
+      },
+      {
+        "orderName": "#235385",
+        "title": "MYSIMPLICATED® Atelier Division Overshirt",
+        "category": "Camasa scurta",
+        "hours": 1.42
+      },
+      {
+        "orderName": "#235388",
+        "title": "Miau Miau Oversized Ivory T-shirt",
         "category": "Tricou simplu",
         "hours": 0.67
       },
       {
-        "orderName": "#235387",
-        "title": "Reality Grey Oversized T-Shirt",
+        "orderName": "#235389",
+        "title": "Dream State Oversized Off-White Tee",
         "category": "Tricou simplu",
         "hours": 0.67
       }
