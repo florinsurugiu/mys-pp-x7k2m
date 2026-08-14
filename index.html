@@ -588,6 +588,10 @@ function setPnlPeriod(months, root) {
  * utilizatorul prefera sa se raporteze doar la ce adauga manual in
  * "Proiecte B2B incoming", nu la o medie auto-calculata pe care nu o
  * controleaza. */
+// echipa curenta, RON/luna -- cifra reala data de utilizator, mai precisa
+// decat orice medie istorica (de actualizat manual daca se schimba echipa)
+const CURRENT_TEAM_SALARIES = { Felicia: 5000, Flori: 5000, Carl: 4500, Alexio: 8000 };
+
 function computeBaselineAverage(data) {
   const rows = data.rows;
   const n = rows.length;
@@ -600,7 +604,7 @@ function computeBaselineAverage(data) {
   const revenue = d2c;
   const cogs = (sum('cogs') - totalProjectCost) / n;
   const marketing = sumRecent('marketing') / rn;
-  const salaries = sumRecent('salaries') / rn;
+  const salaries = Object.values(CURRENT_TEAM_SALARIES).reduce((a, b) => a + b, 0);
   const taxes = sumRecent('taxes') / rn;
   const other = sumRecent('other') / rn;
   const net = revenue - (cogs + marketing + salaries + taxes + other);
