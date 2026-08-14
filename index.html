@@ -273,6 +273,7 @@ async function load() {
     productionData = await res.json();
     renderProduction(productionData, rootProduction);
     metaParts.push('Asana ' + fmtDateTime(productionData.generatedAt));
+    metaParts.push('W&amp;B ' + fmtDateTime(productionData.generatedAt));
   } catch (e) {
     rootProduction.innerHTML = '<div class="error">Nu am putut incarca datele de productie (' + e.message + ').</div>';
   }
