@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T23:57:07.558Z",
+  "generatedAt": "2026-08-14T23:59:18.491Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
@@ -32,9 +32,9 @@
         "source": "shopify"
       },
       {
-        "title": "05. T alb XS",
+        "title": "05. T ivory S",
         "hours": 0.67,
-        "source": "predicted"
+        "source": "shopify"
       }
     ]
   },
@@ -53,14 +53,14 @@
         "source": "wb"
       },
       {
-        "title": "02. W Third Eye M",
-        "hours": 2.5,
+        "title": "02. T alb XXL",
+        "hours": 0.67,
         "source": "shopify"
       },
       {
-        "title": "03. T offwhite XL",
-        "hours": 0.67,
-        "source": "predicted"
+        "title": "03. W Third Eye M",
+        "hours": 2.5,
+        "source": "shopify"
       }
     ]
   },
@@ -94,9 +94,22 @@
       "leftover": true
     }
   ],
-  "croitBuffer": [],
+  "croitBuffer": [
+    {
+      "gid": "1217482641756672",
+      "name": "01. T offwhite XL",
+      "orderName": null,
+      "category": "Tricou simplu"
+    },
+    {
+      "gid": "1217482783813574",
+      "name": "01. T alb XS",
+      "orderName": null,
+      "category": "Tricou simplu"
+    }
+  ],
   "backlog": {
-    "hours": 10.5,
+    "hours": 9.17,
     "items": [
       {
         "orderName": "WB#3407557",
@@ -133,18 +146,6 @@
         "title": "MYSIMPLICATED® Atelier Division Overshirt",
         "category": "Camasa scurta",
         "hours": 1.42
-      },
-      {
-        "orderName": "#235388",
-        "title": "Miau Miau Oversized Ivory T-shirt",
-        "category": "Tricou simplu",
-        "hours": 0.67
-      },
-      {
-        "orderName": "#235389",
-        "title": "Dream State Oversized Off-White Tee",
-        "category": "Tricou simplu",
-        "hours": 0.67
       }
     ]
   }
