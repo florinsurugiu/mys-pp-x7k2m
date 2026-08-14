@@ -178,6 +178,8 @@
   .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
   @media (max-width: 640px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
   .stat-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .stat-card[title] { cursor: help; }
+  .stat-card[title] .stat-label { text-decoration: underline dotted var(--text-faint); text-underline-offset: 3px; }
   .stat-label { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); font-weight: 700; margin-bottom: 6px; }
   .stat-value { font-size: 1.35rem; font-weight: 700; font-variant-numeric: tabular-nums; }
   .stat-value.good { color: var(--good); }
@@ -600,10 +602,13 @@ function renderPnlPeriod(root) {
     '</button>'
   )).join('');
 
-  const statCard = (label, value, sub, cls) =>
-    '<div class="stat-card"><div class="stat-label">' + label + '</div>' +
+  const statCard = (label, value, sub, cls, tooltip) =>
+    '<div class="stat-card"' + (tooltip ? ' title="' + tooltip.replace(/"/g, '&quot;') + '"' : '') + '>' +
+    '<div class="stat-label">' + label + '</div>' +
     '<div class="stat-value' + (cls ? ' ' + cls : '') + '">' + value + '</div>' +
     (sub ? '<div class="stat-sub">' + sub + '</div>' : '') + '</div>';
+
+  const costsTooltip = (n) => 'COGS ' + fmtMoney(t.cogs) + ' · Marketing ' + fmtMoney(t.marketing) + ' · Salarii ' + fmtMoney(t.salaries) + ' · Taxe ' + fmtMoney(t.taxes) + ' · Altele ' + fmtMoney(t.other) + (n ? ' (medie pe ' + n + ' luni)' : '');
 
   const incomingB2BTotal = isSingleMonth ? loadIncomingProjects().reduce((s, p) => s + p.amount, 0) : 0;
   const revenueWithIncoming = t.revenue + incomingB2BTotal;
@@ -611,11 +616,11 @@ function renderPnlPeriod(root) {
   const stats = isSingleMonth ?
     statCard('Venit mediu / luna (fara B2B)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B recurent ' + Math.round(t.b2bOther / 1000) + 'k') +
     statCard('Venit estimat (cu B2B incoming)', fmtMoney(revenueWithIncoming), incomingB2BTotal > 0 ? 'baseline ' + fmtMoney(t.revenue) + ' + B2B incoming ' + fmtMoney(incomingB2BTotal) : 'niciun proiect B2B incoming adaugat inca') +
-    statCard('Costuri medii / luna', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS (fara cost proiecte), marketing, salarii, taxe, altele') +
+    statCard('Costuri medii / luna', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS (fara cost proiecte), marketing, salarii, taxe, altele', null, costsTooltip(data.rows.length)) +
     statCard('Rezultat net mediu', (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming), incomingB2BTotal > 0 ? 'baseline + B2B incoming (' + fmtMoney(incomingB2BTotal) + ')' : 'baseline realist, fara proiecte B2B', netWithIncoming >= 0 ? 'good' : 'bad')
     :
     statCard('Venit total (' + filteredRows.length + ' luni)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k') +
-    statCard('Costuri totale', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS, marketing, salarii, taxe, altele') +
+    statCard('Costuri totale', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS, marketing, salarii, taxe, altele', null, costsTooltip()) +
     statCard('Rezultat net', (t.net >= 0 ? '+' : '') + fmtMoney(t.net), 'profitabil doar datorita B2B', t.net >= 0 ? 'good' : 'bad') +
     statCard('Rezultat fara proiecte B2B', filteredRows.length === data.rows.length ? fmtMoney(data.withoutB2B) : 'n/a (doar pt tot intervalul)', 'venit minus costuri directe proiecte', 'bad');
 
