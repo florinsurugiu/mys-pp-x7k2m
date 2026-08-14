@@ -96,6 +96,7 @@
   }
   .badge.predicted { background: var(--accent-dim); color: var(--accent); }
   .badge.leftover { background: rgba(240, 165, 90, 0.16); color: var(--warn); }
+  .badge.buffer { background: rgba(180, 220, 250, 0.16); color: #8fc8f0; }
   .badge.wb { background: rgba(120, 130, 250, 0.16); color: #9aa3ff; }
   .badge.shopify { background: rgba(120, 220, 150, 0.16); color: #7bd99a; }
 
@@ -368,6 +369,7 @@ function barClass(hours, capacity) {
 function sourceBadge(source) {
   if (source === 'predicted') return '<span class="badge predicted">PR</span>';
   if (source === 'leftover') return '<span class="badge leftover">ramas</span>';
+  if (source === 'buffer') return '<span class="badge buffer">taiat</span>';
   if (source === 'wb') return '<span class="badge wb">WB</span>';
   if (source === 'shopify') return '<span class="badge shopify">SH</span>';
   return '';
