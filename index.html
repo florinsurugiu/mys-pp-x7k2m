@@ -666,6 +666,13 @@ function renderPnlPeriod(root) {
       })
     : data.categoryBreakdown;
   const maxCat = Math.max(...catSource.map((c) => c.val));
+  const catTotal = catSource.reduce((s, c) => s + c.val, 0);
+  const catTotalRow =
+    '<div class="item" style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--border)">' +
+      '<div style="flex:0 0 220px;font-weight:700">Total</div>' +
+      '<div style="flex:1;margin:0 12px"></div>' +
+      '<div class="item-hours" style="font-weight:700">' + fmtMoney(catTotal) + '</div>' +
+    '</div>';
   const catRows = catSource.map((c) => (
     '<div class="item" style="margin-bottom:10px">' +
       '<div style="flex:0 0 220px" class="item-sub">' + escapeHtml(c.name) + '</div>' +
@@ -734,7 +741,7 @@ function renderPnlPeriod(root) {
     '<div id="month-estimate-section"></div>' +
     '<div class="section-title">Costuri pe categorii</div>' +
     (isSingleMonth ? '<div class="stat-sub" style="margin-bottom:12px">Medie pe ' + data.rows.length + ' luni (nu avem inca defalcare lunara reala pe aceste categorii) -- COGS fara costul proiectelor B2B.</div>' : '') +
-    '<div class="card">' + catRows + '</div>' +
+    '<div class="card">' + catTotalRow + catRows + '</div>' +
     (isSingleMonth ? '' :
       '<div class="section-title">Bilanturi oficiale ANAF (2023 vs 2024)</div>' +
       '<div class="grid-two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">' + baselineCards + '</div>'
@@ -910,10 +917,11 @@ function loadEstimate(defaults) {
   return defaults;
 }
 function saveEstimateAndRecalc() {
-  const fields = ['d2c', 'b2bOther', 'cogs', 'marketing', 'salaries', 'taxes', 'other'];
+  const fields = ['d2c', 'cogs', 'marketing', 'salaries', 'taxes', 'other'];
   const est = {};
   for (const f of fields) est[f] = Number(document.getElementById('est-' + f).value) || 0;
   localStorage.setItem(LS_ESTIMATE_KEY, JSON.stringify(est));
+  est.b2bOther = Number(document.getElementById('est-b2bOther').value) || 0;
   updateEstimateNet(est);
 }
 function updateEstimateNet(est) {
@@ -940,6 +948,7 @@ function renderMonthEstimateSection(pnlData) {
     salaries: round2(avg.salaries), taxes: round2(avg.taxes), other: round2(avg.other),
   };
   const est = loadEstimate(defaults);
+  est.b2bOther = round2(incomingTotal);
   const now = new Date();
   const monthName = now.toLocaleDateString('ro-RO', { month: 'long', year: 'numeric' });
 
