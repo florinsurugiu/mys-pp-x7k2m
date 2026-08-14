@@ -95,6 +95,9 @@
     vertical-align: middle;
   }
   .badge.predicted { background: var(--accent-dim); color: var(--accent); }
+  .badge.leftover { background: rgba(240, 165, 90, 0.16); color: var(--warn); }
+  .badge.wb { background: rgba(120, 130, 250, 0.16); color: #9aa3ff; }
+  .badge.shopify { background: rgba(120, 220, 150, 0.16); color: #7bd99a; }
 
   section.block { margin-bottom: 20px; }
   .block-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; }
@@ -363,7 +366,10 @@ function barClass(hours, capacity) {
   return '';
 }
 function sourceBadge(source) {
-  if (source === 'predicted') return '<span class="badge predicted">predictie</span>';
+  if (source === 'predicted') return '<span class="badge predicted">PR</span>';
+  if (source === 'leftover') return '<span class="badge leftover">ramas</span>';
+  if (source === 'wb') return '<span class="badge wb">WB</span>';
+  if (source === 'shopify') return '<span class="badge shopify">SH</span>';
   return '';
 }
 
@@ -394,9 +400,7 @@ function croitSection(croit) {
     ? croit.map((t) => (
         '<div class="backlog-row">' +
           '<span class="order-tag">' + (t.orderName ? escapeHtml(t.orderName) : '') + '</span>' +
-          '<span class="backlog-main">' + escapeHtml(t.name) +
-            (t.category ? '<div class="item-sub">' + escapeHtml(t.category) + '</div>' : '') +
-          '</span>' +
+          '<span class="backlog-main">' + escapeHtml(t.name) + '</span>' +
         '</div>'
       )).join('')
     : '<div class="empty">Nimic in coada -- Carl e la zi.</div>';
@@ -417,9 +421,7 @@ function renderProduction(data, root) {
     ? data.backlog.items.map((it) => (
         '<div class="backlog-row">' +
           '<span class="order-tag">' + escapeHtml(it.orderName) + '</span>' +
-          '<span class="backlog-main">' + escapeHtml(it.title) +
-            (it.category ? '<div class="item-sub">' + escapeHtml(it.category) + '</div>' : '') +
-          '</span>' +
+          '<span class="backlog-main">' + escapeHtml(it.title) + '</span>' +
           '<span class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</span>' +
         '</div>'
       )).join('')
