@@ -373,8 +373,7 @@ function personCard(name, person) {
   const items = person.items.length
     ? person.items.map((it) => (
         '<li class="item">' +
-          '<div><div class="item-title">' + escapeHtml(it.title) + sourceBadge(it.source) + '</div>' +
-          '<div class="item-sub">' + escapeHtml(it.category) + ' &middot; ' + escapeHtml(it.sizes) + '</div></div>' +
+          '<div class="item-title">' + escapeHtml(it.title) + sourceBadge(it.source) + '</div>' +
           '<div class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</div>' +
         '</li>'
       )).join('')
