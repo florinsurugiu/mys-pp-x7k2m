@@ -562,15 +562,17 @@ function setPnlPeriod(months, root) {
  * realist. Costul de productie al proiectelor (cunoscut doar ca total
  * agregat, nu pe luna) e scazut din COGS-ul total inainte de mediere;
  * restul cheltuielilor (marketing/salarii/taxe/altele) nu sunt specifice
- * proiectelor, deci raman mediate normal. */
+ * proiectelor, deci raman mediate normal. Venitul B2B recurent istoric
+ * NU intra in baseline -- utilizatorul prefera sa se raporteze doar la
+ * ce adauga manual in "Proiecte B2B incoming", nu la o medie auto-calculata
+ * pe care nu o controleaza. */
 function computeBaselineAverage(data) {
   const rows = data.rows;
   const n = rows.length;
   const sum = (key) => rows.reduce((s, r) => s + r[key], 0);
   const totalProjectCost = Object.values(data.projectCosts).reduce((s, p) => s + p.cost, 0);
   const d2c = sum('d2c') / n;
-  const b2bOther = sum('b2bOther') / n;
-  const revenue = d2c + b2bOther;
+  const revenue = d2c;
   const cogs = (sum('cogs') - totalProjectCost) / n;
   const marketing = sum('marketing') / n;
   const salaries = sum('salaries') / n;
@@ -578,7 +580,7 @@ function computeBaselineAverage(data) {
   const other = sum('other') / n;
   const net = revenue - (cogs + marketing + salaries + taxes + other);
   return {
-    label: 'Medie ' + n + ' luni (fara B2B)', d2c, b2bProject: 0, b2bOther, revenue,
+    label: 'Medie ' + n + ' luni (D2C, fara B2B)', d2c, b2bProject: 0, b2bOther: 0, revenue,
     cogs, marketing, salaries, taxes, other, net, klarnaMissing: false,
   };
 }
@@ -622,8 +624,8 @@ function renderPnlPeriod(root) {
   const revenueWithIncoming = t.revenue + incomingB2BTotal;
   const netWithIncoming = t.net + incomingB2BTotal;
   const stats = isSingleMonth ?
-    statCard('Venit mediu / luna (fara B2B)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B recurent ' + Math.round(t.b2bOther / 1000) + 'k') +
-    statCard('Venit estimat (cu B2B incoming)', fmtMoney(revenueWithIncoming), incomingB2BTotal > 0 ? 'baseline ' + fmtMoney(t.revenue) + ' + B2B incoming ' + fmtMoney(incomingB2BTotal) : 'niciun proiect B2B incoming adaugat inca') +
+    statCard('Venit mediu / luna (D2C, fara B2B)', fmtMoney(t.revenue), 'medie D2C pe ' + data.rows.length + ' luni') +
+    statCard('Venit estimat (D2C + B2B incoming)', fmtMoney(revenueWithIncoming), incomingB2BTotal > 0 ? 'D2C ' + fmtMoney(t.revenue) + ' + B2B incoming ' + fmtMoney(incomingB2BTotal) : 'niciun proiect B2B incoming adaugat inca') +
     statCard('Costuri medii / luna', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS (fara cost proiecte), marketing, salarii, taxe, altele', null, costsTooltip(data.rows.length)) +
     statCard('Rezultat net mediu', (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming), incomingB2BTotal > 0 ? 'baseline + B2B incoming (' + fmtMoney(incomingB2BTotal) + ')' : 'baseline realist, fara proiecte B2B', netWithIncoming >= 0 ? 'good' : 'bad')
     :
@@ -720,10 +722,9 @@ function renderPnlPeriod(root) {
 
   const baselineDetail =
     '<div class="card">' +
-      '<div class="item"><span>Venit D2C</span><span class="item-hours">' + fmtMoney(t.d2c) + '</span></div>' +
-      '<div class="item"><span>Venit B2B</span><span class="item-hours">' + fmtMoney(t.b2bProject + t.b2bOther) + '</span></div>' +
-      '<div class="item"><span>Venit total (baseline, fara B2B incoming)</span><span class="item-hours">' + fmtMoney(t.revenue) + '</span></div>' +
-      '<div class="item"><span>Venit total (cu B2B incoming)</span><span class="item-hours">' + fmtMoney(revenueWithIncoming) + '</span></div>' +
+      '<div class="item"><span>Venit D2C (baseline)</span><span class="item-hours">' + fmtMoney(t.revenue) + '</span></div>' +
+      '<div class="item"><span>Venit B2B incoming</span><span class="item-hours">' + fmtMoney(incomingB2BTotal) + '</span></div>' +
+      '<div class="item"><span>Venit total (D2C + B2B incoming)</span><span class="item-hours">' + fmtMoney(revenueWithIncoming) + '</span></div>' +
       '<div class="item"><span>COGS</span><span class="item-hours">' + fmtMoney(t.cogs) + '</span></div>' +
       '<div class="item"><span>Marketing</span><span class="item-hours">' + fmtMoney(t.marketing) + '</span></div>' +
       '<div class="item"><span>Salarii</span><span class="item-hours">' + fmtMoney(t.salaries) + '</span></div>' +
@@ -867,7 +868,7 @@ function renderReco(prod, profit, pnl, root) {
 // ---- Proiecte B2B incoming (persistat local in browser -- pagina e statica,
 // fara backend/baza de date; datele raman doar pe acest device/browser). ----
 const LS_PROJECTS_KEY = 'mys_pnl_incoming_projects';
-const LS_ESTIMATE_KEY = 'mys_pnl_month_estimate';
+const LS_ESTIMATE_KEY = 'mys_pnl_month_estimate_v2'; // v2: defaults au trecut de la "ultima luna" la "medie fara B2B" -- cheie noua ca sa nu ramana valori vechi persistente in localStorage nesincronizate
 
 function loadIncomingProjects() {
   try { return JSON.parse(localStorage.getItem(LS_PROJECTS_KEY)) || []; } catch (e) { return []; }
@@ -941,6 +942,10 @@ function saveEstimateAndRecalc() {
   est.b2bOther = Number(document.getElementById('est-b2bOther').value) || 0;
   updateEstimateNet(est);
 }
+function resetEstimate() {
+  localStorage.removeItem(LS_ESTIMATE_KEY);
+  renderMonthEstimateSection(pnlDataCache);
+}
 function updateEstimateNet(est) {
   const revenue = est.d2c + (est.b2bOther || 0);
   const costs = est.cogs + est.marketing + est.salaries + est.taxes + est.other;
@@ -990,7 +995,7 @@ function renderMonthEstimateSection(pnlData) {
         '<div class="stat-card"><div class="stat-label">Venit total estimat</div><div class="stat-value" id="estimate-revenue-value" style="font-size:1rem"></div></div>' +
         '<div class="stat-card"><div class="stat-label">Rezultat net estimat</div><div class="stat-value" id="estimate-net-value"></div></div>' +
       '</div>' +
-      '<div class="storage-note">Salvat local, doar in acest browser.</div>' +
+      '<div class="storage-note">Salvat local, doar in acest browser. <a href="#" onclick="resetEstimate();return false;" style="color:var(--accent)">Reseteaza la valorile implicite</a></div>' +
     '</div>';
   updateEstimateNet(est);
 }
