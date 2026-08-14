@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T18:05:54.321Z",
+  "generatedAt": "2026-08-14T19:01:08.688Z",
   "planDate": "2026-08-14",
   "felicia": {
     "hours": 7.33,
@@ -33,13 +33,6 @@
     "capacity": 7,
     "items": [
       {
-        "title": "Complex Minds Checkered Shirt",
-        "category": "Camasa lunga",
-        "sizes": "S",
-        "hours": 1.75,
-        "source": "real_order"
-      },
-      {
         "title": "Short Sleeve Shirt And Bermuda Set In Numbers Design - Recycled Fabric",
         "category": "Bermude",
         "sizes": "M + L",
@@ -52,69 +45,73 @@
         "sizes": "M",
         "hours": 2.5,
         "source": "real_order"
+      },
+      {
+        "title": "MYSIMPLICATED® Atelier Division Overshirt",
+        "category": "Overcoat scurt",
+        "sizes": "XL",
+        "hours": 1.75,
+        "source": "real_order"
       }
     ]
   },
-  "croitStockRemaining": [
-    { "name": "0. W retro L", "sizes": ["L"] },
-    { "name": "0. T offwhite M miau", "sizes": ["M"] },
-    { "name": "04. C pop mix XL", "sizes": ["XL"] },
-    { "name": "04. C mushroom XL", "sizes": ["XL"] },
-    { "name": "01. T Off white si Gri - 1XL fiecare", "sizes": ["XL"] },
-    { "name": "03. T alb split XL", "sizes": ["XL"] },
-    { "name": "0. T offwhite cu tiv 2L (fara buzunare) - Miau Miau", "sizes": ["L", "L"] },
-    { "name": "01. C 3 culori XL - daca nu e in stoc", "sizes": ["XL"] },
-    { "name": "0. Pop Cola Obey White Oversized T-shirt XL (daca nu e in stoc)", "sizes": ["XL"] },
-    { "name": "03. Maiou alb L", "sizes": ["L"] },
-    { "name": "02. C blug gaurit XL 2 buc", "sizes": ["XL"] },
-    { "name": "04. Bermude negre barbat L", "sizes": ["L"] },
-    { "name": "02. T negru superwoman XXL daca nu", "sizes": ["XXL"] },
-    { "name": "03. C pop roz XL - tb printata", "sizes": ["XL"] },
-    { "name": "05. Bermude ISR L", "sizes": ["L"] },
-    { "name": "02. T negru superwoman M,L", "sizes": ["M", "L"] },
-    { "name": "01. T negru + fundite XXL", "sizes": ["XXL"] },
-    { "name": "03. T Doer 2L", "sizes": ["L", "L"] },
-    { "name": "0. Bluza rupta 2L", "sizes": ["L", "L"] },
-    { "name": "0. Bluza alba rupta L", "sizes": ["L"] },
-    { "name": "01. C maneci detasate maro S", "sizes": ["S"] },
-    { "name": "02. C snake M", "sizes": ["M"] },
-    { "name": "03. W retro L", "sizes": ["L"] },
-    { "name": "03. T alb split M, L", "sizes": ["M", "L"] },
-    { "name": "02. C maro maneci detasate S", "sizes": ["S"] },
-    { "name": "04. Pant lung + cam snake S (tb printat)", "sizes": ["S"] },
-    { "name": "0. T gri M + 10 cm lungime", "sizes": ["M"] },
-    { "name": "02. T offwhite cu buzunar + patchuri M", "sizes": ["M"] },
-    { "name": "05. W pop cola S,XXL (capt alba)", "sizes": ["S", "XXL"] },
-    { "name": "01. Maiou negru M, L, XXL", "sizes": ["M", "L", "XXL"] },
-    { "name": "0. H layers cam rosie L", "sizes": ["L"] },
-    { "name": "01. H aria L", "sizes": ["L"] },
-    { "name": "01. T orange XL", "sizes": ["XL"] },
-    { "name": "02. T gri 2S,M,L", "sizes": ["S", "S", "M", "L"] },
-    { "name": "0. W pink S", "sizes": ["S"] },
-    { "name": "04. C 3 culori XXL - daca nu e in stoc", "sizes": ["XXL"] },
-    { "name": "01. C balenci maro XXL - daca nu e in stoc", "sizes": ["XXL"] },
-    { "name": "03. C blue XXL - tb printata", "sizes": ["XXL"] },
-    { "name": "01. C albastra XL (tb printat)", "sizes": ["XL"] },
-    { "name": "02. W pink M (tb printat)", "sizes": ["M"] },
-    { "name": "0. T offwhite cu tiv S,M", "sizes": ["S", "M"] },
-    { "name": "0. Bermude Pop M (tb printate)", "sizes": ["M"] },
-    { "name": "01. C lunga baneci gri XXL", "sizes": ["XXL"] },
-    { "name": "0. W 3rd eye L", "sizes": ["L"] },
-    { "name": "02. T negru pop mix L daca nu e in stoc", "sizes": ["L"] }
-  ],
   "backlog": {
-    "hours": 18.83,
+    "hours": 17.08,
     "items": [
-      { "orderName": "WB#3406435", "title": "Grey Camo Denim Jacket W", "hours": 4 },
-      { "orderName": "WB#3406435", "title": "Grey Camo Denim Jacket W", "hours": 4 },
-      { "orderName": "#235385", "title": "MYSIMPLICATED® Atelier Division Overshirt", "hours": 1.75 },
-      { "orderName": "#235381", "title": "Dystopia White Oversized Sweater", "hours": 1.5 },
-      { "orderName": "#235385", "title": "Blue Stripes Oversized Shirt", "hours": 1.5 },
-      { "orderName": "WB#3406435", "title": "Short Sleeve Shirt And Bermuda Set With Water Design - Recycled Fabric", "hours": 1.5 },
-      { "orderName": "WB#3405691", "title": "Blue Stripes Oversized Shirt W", "hours": 1.5 },
-      { "orderName": "WB#3406435", "title": "Short Sleeve Shirt And Bermuda Set With Water Design - Recycled Fabric", "hours": 1.42 },
-      { "orderName": "#235382", "title": "777 Mauve Oversized T-Shirt", "hours": 1 },
-      { "orderName": "#235386", "title": "Spirit Grey Oversized T-Shirt", "hours": 0.67 }
+      {
+        "orderName": "WB#3406435",
+        "title": "Grey Camo Denim Jacket W",
+        "category": "Denim Jacket",
+        "hours": 4
+      },
+      {
+        "orderName": "WB#3406435",
+        "title": "Grey Camo Denim Jacket W",
+        "category": "Denim Jacket",
+        "hours": 4
+      },
+      {
+        "orderName": "#235381",
+        "title": "Dystopia White Oversized Sweater",
+        "category": "Bluza inimioara / obsidian",
+        "hours": 1.5
+      },
+      {
+        "orderName": "#235385",
+        "title": "Blue Stripes Oversized Shirt",
+        "category": "Camasa Unisex",
+        "hours": 1.5
+      },
+      {
+        "orderName": "WB#3406435",
+        "title": "Short Sleeve Shirt And Bermuda Set With Water Design - Recycled Fabric",
+        "category": "Bermude",
+        "hours": 1.5
+      },
+      {
+        "orderName": "WB#3405691",
+        "title": "Blue Stripes Oversized Shirt W",
+        "category": "Camasa Unisex",
+        "hours": 1.5
+      },
+      {
+        "orderName": "WB#3406435",
+        "title": "Short Sleeve Shirt And Bermuda Set With Water Design - Recycled Fabric",
+        "category": "Camasa scurta",
+        "hours": 1.42
+      },
+      {
+        "orderName": "#235382",
+        "title": "777 Mauve Oversized T-Shirt",
+        "category": "Tricou raiat",
+        "hours": 1
+      },
+      {
+        "orderName": "#235386",
+        "title": "Spirit Grey Oversized T-Shirt",
+        "category": "Tricou simplu",
+        "hours": 0.67
+      }
     ]
   }
 }
