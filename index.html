@@ -397,10 +397,10 @@ function personCard(name, person) {
 
 function croitSection(croit) {
   const rows = croit.length
-    ? croit.map((t) => (
+    ? croit.map((t, i) => (
         '<div class="backlog-row">' +
           '<span class="order-tag">' + (t.orderName ? escapeHtml(t.orderName) : '') + '</span>' +
-          '<span class="backlog-main">' + escapeHtml(t.name) + (t.leftover ? sourceBadge('leftover') : '') + '</span>' +
+          '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(t.name.replace(/^\d+\.\s*/, '')) + (t.leftover ? sourceBadge('leftover') : '') + '</span>' +
         '</div>'
       )).join('')
     : '<div class="empty">Nimic in coada -- Carl e la zi.</div>';
@@ -414,10 +414,10 @@ function croitSection(croit) {
 
 function croitBufferSection(buffer) {
   const rows = buffer.length
-    ? buffer.map((t) => (
+    ? buffer.map((t, i) => (
         '<div class="backlog-row">' +
           '<span class="order-tag">' + (t.orderName ? escapeHtml(t.orderName) : '') + '</span>' +
-          '<span class="backlog-main">' + escapeHtml(t.name) + '</span>' +
+          '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(t.name.replace(/^\d+\.\s*/, '')) + '</span>' +
         '</div>'
       )).join('')
     : '<div class="empty">Fara buffer -- nimic deja taiat in stoc.</div>';
