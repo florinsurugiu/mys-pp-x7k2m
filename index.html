@@ -195,7 +195,7 @@
   table.trend .totals-row td { font-weight: 700; border-bottom: none; }
   .table-scroll { overflow-x: auto; }
 
-  @media (max-width: 640px) {
+  @media (max-width: 860px) {
     table.trend thead { display: none; }
     table.trend, table.trend tbody, table.trend tr, table.trend td { display: block; width: 100%; }
     table.trend tr { padding: 10px 0; border-bottom: 1px solid var(--border); }
@@ -605,10 +605,12 @@ function renderPnlPeriod(root) {
     '<div class="stat-value' + (cls ? ' ' + cls : '') + '">' + value + '</div>' +
     (sub ? '<div class="stat-sub">' + sub + '</div>' : '') + '</div>';
 
+  const incomingB2BTotal = isSingleMonth ? loadIncomingProjects().reduce((s, p) => s + p.amount, 0) : 0;
+  const netWithIncoming = t.net + incomingB2BTotal;
   const stats = isSingleMonth ?
     statCard('Venit mediu / luna (fara B2B)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B recurent ' + Math.round(t.b2bOther / 1000) + 'k') +
     statCard('Costuri medii / luna', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS (fara cost proiecte), marketing, salarii, taxe, altele') +
-    statCard('Rezultat net mediu', (t.net >= 0 ? '+' : '') + fmtMoney(t.net), 'baseline realist, fara proiecte B2B', t.net >= 0 ? 'good' : 'bad')
+    statCard('Rezultat net mediu', (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming), incomingB2BTotal > 0 ? 'baseline + B2B incoming (' + fmtMoney(incomingB2BTotal) + ')' : 'baseline realist, fara proiecte B2B', netWithIncoming >= 0 ? 'good' : 'bad')
     :
     statCard('Venit total (' + filteredRows.length + ' luni)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k') +
     statCard('Costuri totale', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS, marketing, salarii, taxe, altele') +
@@ -830,13 +832,11 @@ function addIncomingProject() {
   document.getElementById('proj-name').value = '';
   document.getElementById('proj-amount').value = '';
   document.getElementById('proj-month').value = '';
-  renderIncomingProjectsSection();
-  renderMonthEstimateSection(pnlDataCache);
+  renderPnlPeriod(document.getElementById('root-pnl'));
 }
 function removeIncomingProject(id) {
   saveIncomingProjects(loadIncomingProjects().filter((p) => p.id !== id));
-  renderIncomingProjectsSection();
-  renderMonthEstimateSection(pnlDataCache);
+  renderPnlPeriod(document.getElementById('root-pnl'));
 }
 
 function renderIncomingProjectsSection() {
