@@ -691,15 +691,29 @@ function renderPnlPeriod(root) {
     '</div>'
   )).join('');
 
+  const baselineDetail =
+    '<div class="card">' +
+      '<div class="item"><span>Venit D2C</span><span class="item-hours">' + fmtMoney(t.d2c) + '</span></div>' +
+      '<div class="item"><span>Venit B2B</span><span class="item-hours">' + fmtMoney(t.b2bProject + t.b2bOther) + '</span></div>' +
+      '<div class="item"><span>Venit total</span><span class="item-hours">' + fmtMoney(t.revenue) + '</span></div>' +
+      '<div class="item"><span>COGS</span><span class="item-hours">' + fmtMoney(t.cogs) + '</span></div>' +
+      '<div class="item"><span>Marketing</span><span class="item-hours">' + fmtMoney(t.marketing) + '</span></div>' +
+      '<div class="item"><span>Salarii</span><span class="item-hours">' + fmtMoney(t.salaries) + '</span></div>' +
+      '<div class="item"><span>Taxe</span><span class="item-hours">' + fmtMoney(t.taxes) + '</span></div>' +
+      '<div class="item"><span>Altele</span><span class="item-hours">' + fmtMoney(t.other) + '</span></div>' +
+      '<div class="item"><span>Rezultat net</span><span class="item-hours ' + (t.net >= 0 ? '' : 'roas-bad') + '">' + (t.net >= 0 ? '+' : '') + fmtMoney(t.net) + '</span></div>' +
+    '</div>';
+
   root.innerHTML =
     (isSingleMonth ? '' : '<div class="meta" style="margin-bottom:16px">' + escapeHtml(data.period) + ' &middot; ' + escapeHtml(data.entities) + '</div>') +
     '<div class="period-filter">' + filterBtns + '</div>' +
     '<div class="stat-grid">' + stats + '</div>' +
     '<div class="section-title" style="margin-top:24px">' + (isSingleMonth ? 'Medie fara proiecte B2B' : 'Detaliu lunar') + '</div>' +
+    (isSingleMonth ? baselineDetail :
     '<div class="card table-scroll" style="margin-bottom:12px"><table class="trend">' +
       '<thead><tr><th>Luna</th><th>Venit D2C</th><th>Venit B2B</th><th>Venit total</th><th>COGS</th><th>Marketing</th><th>Salarii</th><th>Taxe</th><th>Altele</th><th>Rezultat net</th></tr></thead>' +
       '<tbody>' + totalsRow + '</tbody>' +
-    '</table></div>' +
+    '</table></div>') +
     (isSingleMonth ? '' :
     '<div class="card table-scroll"><table class="trend">' +
       '<thead><tr><th>Luna</th><th>Venit D2C</th><th>Venit B2B</th><th>Venit total</th><th>COGS</th><th>Marketing</th><th>Salarii</th><th>Taxe</th><th>Altele</th><th>Rezultat net</th></tr></thead>' +
