@@ -827,6 +827,23 @@ function computeCurrentMonthRunRate() {
   return { actual, actualProfit, daysElapsed, daysInMonth, projected, projectedProfit };
 }
 
+/** Rezultatul net COMPLET estimat pt luna curenta (D2C real + B2B
+ * incoming - toate costurile: COGS/marketing/salarii/taxe/altele) --
+ * exact ce arata cardul "Rezultat net estimat" din P&L. Extras separat ca
+ * sa poata fi refolosit si de Overview, fara sa duplice logica (si sa nu
+ * ajunga sa arate 2 cifre diferite pt "profit"). baselineT = media pe 8
+ * luni fara B2B (computeBaselineAverage(pnlDataCache)). */
+function computeCurrentMonthPnlEstimate(baselineT) {
+  const incomingB2BTotal = loadIncomingProjects().reduce((s, p) => s + p.amount, 0);
+  const runRate = computeCurrentMonthRunRate();
+  const d2cEstimate = runRate ? runRate.projected : baselineT.revenue;
+  const costsTotal = baselineT.cogs + baselineT.marketing + baselineT.salaries + baselineT.taxes + baselineT.other;
+  const netEstimate = d2cEstimate - costsTotal;
+  const revenueWithIncoming = d2cEstimate + incomingB2BTotal;
+  const netWithIncoming = netEstimate + incomingB2BTotal;
+  return { incomingB2BTotal, d2cEstimate, costsTotal, netEstimate, revenueWithIncoming, netWithIncoming };
+}
+
 function renderProfit(data, root) {
   profitDataCache = data;
   renderProfitPeriod(root);
@@ -1067,13 +1084,13 @@ function renderPnlPeriod(root) {
     ' · Marketing ' + fmtMoney(t.marketing) + ' · Salarii ' + fmtMoney(t.salaries) + ' · Taxe ' + fmtMoney(t.taxes) + ' · Altele ' + fmtMoney(t.other) +
     (recentN ? ' (medie ultimele ' + recentN + ' luni)' : '');
 
-  const incomingB2BTotal = isSingleMonth ? loadIncomingProjects().reduce((s, p) => s + p.amount, 0) : 0;
   const runRate = isSingleMonth ? computeCurrentMonthRunRate() : null;
-  const d2cEstimate = runRate ? runRate.projected : t.revenue;
-  const costsTotal = t.cogs + t.marketing + t.salaries + t.taxes + t.other;
-  const netEstimate = d2cEstimate - costsTotal;
-  const revenueWithIncoming = d2cEstimate + incomingB2BTotal;
-  const netWithIncoming = netEstimate + incomingB2BTotal;
+  const pnlEstimate = isSingleMonth ? computeCurrentMonthPnlEstimate(t) : null;
+  const incomingB2BTotal = pnlEstimate ? pnlEstimate.incomingB2BTotal : 0;
+  const d2cEstimate = pnlEstimate ? pnlEstimate.d2cEstimate : t.revenue;
+  const costsTotal = pnlEstimate ? pnlEstimate.costsTotal : (t.cogs + t.marketing + t.salaries + t.taxes + t.other);
+  const revenueWithIncoming = pnlEstimate ? pnlEstimate.revenueWithIncoming : t.revenue;
+  const netWithIncoming = pnlEstimate ? pnlEstimate.netWithIncoming : t.net;
   const stats = isSingleMonth ?
     statCard('Venit D2C estimat (luna curenta)', fmtMoney(d2cEstimate), runRate
       ? fmtMoney(runRate.actual) + ' in ' + runRate.daysElapsed + ' din ' + runRate.daysInMonth + ' zile -- proiectat pe rulaj real'
@@ -1250,6 +1267,34 @@ function computeRecommendations(prod, profit, pnl) {
         body: 'Consistent peste pragul sanatos -- confirma semnalul din datele recente de mai sus.',
       });
     }
+    // Rezultatul lunii curente CU B2B incoming (proiectia reala, nu media
+    // istorica fara B2B de mai sus) -- semnal mult mai urgent daca iese
+    // negativ, pt ca reflecta chiar luna in curs, nu un tipar general.
+    if (pnlDataCache) {
+      const estimate = computeCurrentMonthPnlEstimate(computeBaselineAverage(pnlDataCache));
+      if (estimate.netWithIncoming < 0) {
+        items.push({
+          title: 'Luna curenta e proiectata pe pierdere: ' + fmtMoney(estimate.netWithIncoming),
+          body: 'D2C real + B2B incoming, minus toate costurile -- vezi tab P&amp;L (Luna curenta) sau adauga proiecte B2B noi daca sunt in discutie.',
+        });
+      }
+    }
+  }
+
+  // Trends: cate produse active n-au avut nicio vanzare in ultimele 30
+  // zile -- semnal direct actionabil (vezi tab Trends -> Losers, buton de
+  // unpublish), nu doar informativ.
+  if (trendsDataCache && trendsDataCache.periods && trendsDataCache.periods['30']) {
+    const period = trendsDataCache.periods['30'];
+    const zeroCount = aggregateByName(period.zeroSellers, []).length;
+    const totalCount = zeroCount + aggregateByName(period.topSellers, ['units', 'revenue']).length;
+    const zeroPct = totalCount > 0 ? (zeroCount / totalCount) * 100 : 0;
+    if (zeroCount > 0 && zeroPct > 40) {
+      items.push({
+        title: zeroCount + ' produse active fara nicio vanzare in 30 zile (' + zeroPct.toFixed(0) + '% din catalog)',
+        body: 'Vezi tab Trends -> Losers -- selecteaza ce nu mai are sens sa ramana activ si trimite-mi lista pt unpublish.',
+      });
+    }
   }
 
   return items;
@@ -1293,11 +1338,17 @@ function renderOverview(prod, profit, pnl, root) {
       fmtMoney(runRate.projected),
       fmtMoney(runRate.actual) + ' in ' + runRate.daysElapsed + ' din ' + runRate.daysInMonth + ' zile'
     ));
+  }
+  // Acelasi numar ca "Rezultat net estimat" din P&L (D2C real + B2B
+  // incoming - toate costurile) -- nu cifra ingusta D2C-only, ca sa nu
+  // arate dashboard-ul 2 "profituri" diferite pt aceeasi luna.
+  if (pnl && pnlDataCache) {
+    const pnlEstimate = computeCurrentMonthPnlEstimate(computeBaselineAverage(pnlDataCache));
     cards.push(statCard(
-      'Profit proiectat (luna curenta)',
-      fmtMoney(runRate.projectedProfit),
-      fmtMoney(runRate.actualProfit) + ' pana acum -- COGS/transport/ads, fara salarii/taxe',
-      runRate.projectedProfit >= 0 ? 'good' : 'bad'
+      'Rezultat net estimat (luna curenta)',
+      (pnlEstimate.netWithIncoming >= 0 ? '+' : '') + fmtMoney(pnlEstimate.netWithIncoming),
+      pnlEstimate.incomingB2BTotal > 0 ? 'D2C real + B2B incoming (' + fmtMoney(pnlEstimate.incomingB2BTotal) + ')' : 'pe baza vanzarilor D2C reale, fara proiecte B2B',
+      pnlEstimate.netWithIncoming >= 0 ? 'good' : 'bad'
     ));
   }
 
