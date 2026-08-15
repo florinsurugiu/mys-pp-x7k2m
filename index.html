@@ -820,9 +820,11 @@ function computeCurrentMonthRunRate() {
   });
   if (!monthDays.length) return null;
   const actual = monthDays.reduce((s, d) => s + d.revenue, 0);
+  const actualProfit = monthDays.reduce((s, d) => s + d.netProfit, 0);
   const daysElapsed = monthDays.length;
   const projected = (actual / daysElapsed) * daysInMonth;
-  return { actual, daysElapsed, daysInMonth, projected };
+  const projectedProfit = (actualProfit / daysElapsed) * daysInMonth;
+  return { actual, actualProfit, daysElapsed, daysInMonth, projected, projectedProfit };
 }
 
 function renderProfit(data, root) {
@@ -1290,6 +1292,12 @@ function renderOverview(prod, profit, pnl, root) {
       'Venit D2C proiectat (luna curenta)',
       fmtMoney(runRate.projected),
       fmtMoney(runRate.actual) + ' in ' + runRate.daysElapsed + ' din ' + runRate.daysInMonth + ' zile'
+    ));
+    cards.push(statCard(
+      'Profit proiectat (luna curenta)',
+      fmtMoney(runRate.projectedProfit),
+      fmtMoney(runRate.actualProfit) + ' pana acum -- COGS/transport/ads, fara salarii/taxe',
+      runRate.projectedProfit >= 0 ? 'good' : 'bad'
     ));
   }
 
