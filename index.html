@@ -762,7 +762,7 @@ function predictionIdeasSection(ideas) {
         '<div class="zero-row" style="cursor:default">' +
           prodThumb(p.image, p.title) +
           '<span style="flex:1">' + (i + 1) + '. ' + escapeHtml(p.title) + (p.size ? ' <span class="item-sub" style="display:inline">(' + escapeHtml(p.size) + ')</span>' : '') + '</span>' +
-          '<span class="item-hours">' + p.hours.toFixed(2).replace('.', ',') + 'h</span>' +
+          '<span class="item-hours">' + (typeof p.hours === 'number' ? p.hours.toFixed(2).replace('.', ',') + 'h' : '') + '</span>' +
         '</div>'
       )).join('')
     : '<div class="empty">Nicio idee de productie disponibila.</div>';
