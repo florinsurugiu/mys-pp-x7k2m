@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-15T01:41:56.538Z",
+  "generatedAt": "2026-08-15T01:48:43.331Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
-    "hours": 6.3,
+    "hours": 7.63,
     "capacity": 7,
     "items": [
       {
@@ -15,7 +15,15 @@
         ]
       },
       {
-        "title": "01. Bermude echoes S,M",
+        "title": "01. C numbers M",
+        "hours": 1.42,
+        "tags": [
+          "wb",
+          "buffer"
+        ]
+      },
+      {
+        "title": "02. Bermude echoes S,M",
         "hours": 3,
         "tags": [
           "wb",
@@ -23,15 +31,14 @@
         ]
       },
       {
-        "title": "02. Bermude L numbers",
-        "hours": 1.5,
+        "title": "03. C water M",
+        "hours": 1.42,
         "tags": [
-          "wb",
-          "buffer"
+          "wb"
         ]
       },
       {
-        "title": "03. B water M",
+        "title": "04. B water M",
         "hours": 1.5,
         "tags": [
           "wb"
@@ -40,7 +47,7 @@
     ]
   },
   "flori": {
-    "hours": 7.42,
+    "hours": 7.5,
     "capacity": 7,
     "items": [
       {
@@ -52,8 +59,8 @@
         ]
       },
       {
-        "title": "01. C numbers M",
-        "hours": 1.42,
+        "title": "01. Bermude L numbers",
+        "hours": 1.5,
         "tags": [
           "wb",
           "buffer"
@@ -248,14 +255,7 @@
     }
   ],
   "backlog": {
-    "hours": 1.42,
-    "items": [
-      {
-        "orderName": "WB#3406435",
-        "title": "C water M",
-        "category": "Camasa scurta",
-        "hours": 1.42
-      }
-    ]
+    "hours": 0,
+    "items": []
   }
 }
