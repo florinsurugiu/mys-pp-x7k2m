@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T00:53:24.307Z",
+  "generatedAt": "2026-08-15T01:04:47.394Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
@@ -11,6 +11,7 @@
         "hours": 1.5,
         "tags": [
           "leftover",
+          "buffer",
           "shopify"
         ]
       },
@@ -25,21 +26,24 @@
         "title": "03. Bermude L numbers",
         "hours": 1.5,
         "tags": [
-          "wb"
+          "wb",
+          "buffer"
         ]
       },
       {
         "title": "04. Bermude echoes S,M",
         "hours": 1.5,
         "tags": [
-          "wb"
+          "wb",
+          "buffer"
         ]
       },
       {
         "title": "05. T mov 2S",
         "hours": 1,
         "tags": [
-          "shopify"
+          "shopify",
+          "buffer"
         ]
       }
     ]
@@ -52,7 +56,8 @@
         "title": "01. W Statue XL",
         "hours": 2.5,
         "tags": [
-          "leftover"
+          "leftover",
+          "buffer"
         ]
       },
       {
@@ -73,7 +78,8 @@
         "title": "03. C numbers M",
         "hours": 1.42,
         "tags": [
-          "wb"
+          "wb",
+          "buffer"
         ]
       }
     ]
@@ -164,7 +170,7 @@
       ]
     },
     {
-      "name": "C alb balenci XL",
+      "name": "C gri balenci XL",
       "orderName": "#235385",
       "category": "Camasa scurta",
       "leftover": false,
@@ -234,13 +240,19 @@
       "gid": "1217482641756672",
       "name": "01. T offwhite XL",
       "orderName": null,
-      "category": "Tricou simplu"
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted"
+      ]
     },
     {
       "gid": "1217482783813574",
       "name": "01. T alb XS",
       "orderName": null,
-      "category": "Tricou simplu"
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted"
+      ]
     }
   ],
   "backlog": {
