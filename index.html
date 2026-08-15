@@ -435,16 +435,6 @@ function escapeHtml(s) {
 }
 
 function renderProduction(data, root) {
-  const backlogItems = data.backlog.items.length
-    ? data.backlog.items.map((it) => (
-        '<div class="backlog-row">' +
-          '<span class="order-tag">' + escapeHtml(it.orderName) + '</span>' +
-          '<span class="backlog-main">' + escapeHtml(it.title) + '</span>' +
-          '<span class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</span>' +
-        '</div>'
-      )).join('')
-    : '<div class="empty">Nimic in asteptare -- toate comenzile reale au incaput azi.</div>';
-
   const planDate = new Date(data.planDate + 'T00:00:00');
   const now = new Date();
   const fmtFull = (d) => d.toLocaleDateString('ro-RO', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -469,12 +459,7 @@ function renderProduction(data, root) {
       personCard('Flori', data.flori) +
     '</div>' +
     croitSection(data.croit || []) +
-    croitBufferSection(data.croitBuffer || []) +
-    '<section class="block card">' +
-      '<div class="block-header"><h2>Comenzi in asteptare (nu au incaput azi)</h2>' +
-      '<span class="total">' + data.backlog.hours.toFixed(2).replace('.', ',') + 'h</span></div>' +
-      '<div class="backlog-list">' + backlogItems + '</div>' +
-    '</section>';
+    croitBufferSection(data.croitBuffer || []);
 }
 
 function fmtMoney(n) {
@@ -901,7 +886,7 @@ function computeRecommendations(prod, profit, pnl) {
     if (backlogH > 8) {
       items.push({
         title: backlogH.toFixed(1) + 'h de comenzi reale nu au incaput azi',
-        body: 'Presiune de capacitate in crestere -- vezi tab Productie -> Comenzi in asteptare.',
+        body: 'Presiune de capacitate in crestere -- vezi tab Productie -> Carl (toate merg la taiat, doar cusutul le retine).',
       });
     }
     if (feliciaLoad >= 1 || floriLoad >= 1) {
