@@ -528,6 +528,7 @@ function renderProfitPeriod(root) {
   const latest = days[days.length - 1];
   const totalRevenue = days.reduce((s, d) => s + d.revenue, 0);
   const totalCogs = days.reduce((s, d) => s + d.cogs, 0);
+  const totalShipping = days.reduce((s, d) => s + (d.shipping || 0), 0);
   const totalSpend = days.reduce((s, d) => s + d.adSpend, 0);
   const totalNetProfit = days.reduce((s, d) => s + d.netProfit, 0);
   const avgRoas = totalSpend > 0 ? totalRevenue / totalSpend : null;
@@ -550,6 +551,7 @@ function renderProfitPeriod(root) {
         '<td data-label="Zi">' + fmtDate(d.date) + '</td>' +
         '<td data-label="Venit">' + fmtMoney(d.revenue) + '</td>' +
         '<td data-label="Cost productie">' + fmtMoney(d.cogs) + '</td>' +
+        '<td data-label="Transport">' + fmtMoney(d.shipping || 0) + '</td>' +
         '<td data-label="Cheltuit ads">' + fmtMoney(d.adSpend) + '</td>' +
         '<td data-label="Profit net" class="' + (d.netProfit >= 0 ? '' : 'roas-bad') + '">' + fmtMoney(d.netProfit) + '</td>' +
         '<td data-label="ROAS" class="' + roasCls + '">' + (d.roas != null ? d.roas.toFixed(2) + '&times;' : 'n/a') + '</td>' +
@@ -563,6 +565,7 @@ function renderProfitPeriod(root) {
       '<td data-label="Zi">Total (' + days.length + ' zile)</td>' +
       '<td data-label="Venit">' + fmtMoney(totalRevenue) + '</td>' +
       '<td data-label="Cost productie">' + fmtMoney(totalCogs) + '</td>' +
+      '<td data-label="Transport">' + fmtMoney(totalShipping) + '</td>' +
       '<td data-label="Cheltuit ads">' + fmtMoney(totalSpend) + '</td>' +
       '<td data-label="Profit net" class="' + (totalNetProfit >= 0 ? '' : 'roas-bad') + '">' + fmtMoney(totalNetProfit) + '</td>' +
       '<td data-label="ROAS" class="' + totalRoasCls + '">' + (avgRoas != null ? avgRoas.toFixed(2) + '&times;' : 'n/a') + '</td>' +
@@ -572,11 +575,11 @@ function renderProfitPeriod(root) {
     '<div class="period-filter">' + filterBtns + '</div>' +
     '<div class="stat-grid">' + stats + '</div>' +
     '<div class="card table-scroll" style="margin-bottom:12px"><table class="trend">' +
-      '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
+      '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Transport</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
       '<tbody>' + totalsRow + '</tbody>' +
     '</table></div>' +
     '<div class="card table-scroll"><table class="trend">' +
-      '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
+      '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Transport</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
       '<tbody>' + rows + '</tbody>' +
     '</table></div>' +
     campaignsSection(data.campaigns || [], data.lookbackDays);
