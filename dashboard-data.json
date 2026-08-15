@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T00:05:33.342Z",
+  "generatedAt": "2026-08-15T00:17:44.865Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
@@ -94,33 +94,15 @@
       "leftover": true
     },
     {
-      "name": "T gri 2M + XXL",
-      "orderName": "#235386, #235387, #235389",
-      "category": "Tricou simplu",
-      "leftover": false
-    },
-    {
-      "name": "T alb XXL",
-      "orderName": "#235389",
-      "category": "Tricou simplu",
-      "leftover": false
-    },
-    {
-      "name": "C alb balenci XL",
-      "orderName": "#235385",
-      "category": "Camasa scurta",
-      "leftover": false
-    },
-    {
-      "name": "C Tigers XS",
-      "orderName": "WB#3407557",
-      "category": "Camasa lunga",
-      "leftover": false
-    },
-    {
       "name": "C maneci detasate M",
       "orderName": "#235381",
       "category": "Camasa Unisex",
+      "leftover": false
+    },
+    {
+      "name": "Bluza alb rupta L",
+      "orderName": "#235381",
+      "category": "Bluza inimioara / obsidian",
       "leftover": false
     },
     {
@@ -130,9 +112,15 @@
       "leftover": false
     },
     {
-      "name": "Bluza alb rupta L",
-      "orderName": "#235381",
-      "category": "Bluza inimioara / obsidian",
+      "name": "C alb balenci XL",
+      "orderName": "#235385",
+      "category": "Camasa scurta",
+      "leftover": false
+    },
+    {
+      "name": "T gri 2M + XXL",
+      "orderName": "#235386, #235387, #235389",
+      "category": "Tricou simplu",
       "leftover": false
     },
     {
@@ -148,9 +136,21 @@
       "leftover": false
     },
     {
+      "name": "T alb XXL",
+      "orderName": "#235389",
+      "category": "Tricou simplu",
+      "leftover": false
+    },
+    {
       "name": "C mov 777 XXL",
       "orderName": "#235389",
       "category": "Camasa Unisex",
+      "leftover": false
+    },
+    {
+      "name": "C Tigers XS",
+      "orderName": "WB#3407557",
+      "category": "Camasa lunga",
       "leftover": false
     }
   ],
