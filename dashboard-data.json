@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T01:09:26.607Z",
+  "generatedAt": "2026-08-15T01:17:26.195Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
@@ -16,10 +16,11 @@
         ]
       },
       {
-        "title": "02. C blue XS",
-        "hours": 1.5,
+        "title": "02. T mov 2S",
+        "hours": 1,
         "tags": [
-          "wb"
+          "shopify",
+          "buffer"
         ]
       },
       {
@@ -39,11 +40,10 @@
         ]
       },
       {
-        "title": "05. T mov 2S",
-        "hours": 1,
+        "title": "05. C blue XS",
+        "hours": 1.5,
         "tags": [
-          "shopify",
-          "buffer"
+          "wb"
         ]
       }
     ]
@@ -61,25 +61,25 @@
         ]
       },
       {
-        "title": "01. C water M",
-        "hours": 1.42,
-        "tags": [
-          "wb"
-        ]
-      },
-      {
-        "title": "02. B water M",
-        "hours": 1.5,
-        "tags": [
-          "wb"
-        ]
-      },
-      {
-        "title": "03. C numbers M",
+        "title": "01. C numbers M",
         "hours": 1.42,
         "tags": [
           "wb",
           "buffer"
+        ]
+      },
+      {
+        "title": "02. C water M",
+        "hours": 1.42,
+        "tags": [
+          "wb"
+        ]
+      },
+      {
+        "title": "03. B water M",
+        "hours": 1.5,
+        "tags": [
+          "wb"
         ]
       }
     ]
