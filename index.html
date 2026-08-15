@@ -303,13 +303,19 @@
     <div class="meta-pills" id="meta"><span class="meta-pill">se incarca...</span></div>
   </header>
   <div class="tabs">
-    <button class="tab-btn active" data-tab="production">Production</button>
+    <button class="tab-btn active" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="production">Production</button>
     <button class="tab-btn" data-tab="profit">Marketing</button>
     <button class="tab-btn" data-tab="pnl">P&amp;L</button>
     <button class="tab-btn" data-tab="trends">Trends</button>
     <button class="tab-btn" data-tab="reco">Actions</button>
   </div>
-  <div class="tab-panel active" id="panel-production">
+  <div class="tab-panel active" id="panel-overview">
+    <div id="root-overview">
+      <div class="loading">Se incarca datele...</div>
+    </div>
+  </div>
+  <div class="tab-panel" id="panel-production">
     <div id="root-production">
       <div class="loading">Se incarca datele...</div>
     </div>
@@ -419,6 +425,12 @@ async function load() {
     document.getElementById('root-trends').innerHTML = '<div class="error">Nu am putut incarca datele de trends (' + e.message + ').</div>';
   }
 
+  try {
+    renderOverview(productionData, profitData, pnlData, document.getElementById('root-overview'));
+  } catch (e) {
+    document.getElementById('root-overview').innerHTML = '<div class="error">Nu am putut calcula overview (' + e.message + ').</div>';
+  }
+
   meta.innerHTML = metaParts.map((p) => {
     const ageMs = Date.now() - new Date(p.iso).getTime();
     const dotColor = ageMs < (p.freshMs || 60 * 60 * 1000) ? 'var(--good)' : 'var(--bad)';
@@ -443,7 +455,7 @@ function initTabs() {
   });
   window.addEventListener('hashchange', () => activateTab(location.hash.slice(1), false));
   const initial = location.hash.slice(1);
-  if (!initial || !activateTab(initial, false)) activateTab('production', false);
+  if (!initial || !activateTab(initial, false)) activateTab('overview', false);
 }
 
 function refreshDashboard() {
@@ -1239,6 +1251,69 @@ function computeRecommendations(prod, profit, pnl) {
   }
 
   return items;
+}
+
+/** Cate putin din toate tab-urile, pt o privire rapida fara sa navighezi
+ * prin fiecare -- foloseste ce e deja incarcat (nu face fetch separat).
+ * trendsDataCache/profitDataCache sunt globale, populate deja de
+ * renderTrends/renderProfit pana ruleaza asta (ultimul apel din load()). */
+function renderOverview(prod, profit, pnl, root) {
+  const statCard = (label, value, sub, cls) =>
+    '<div class="stat-card"><div class="stat-label">' + label + '</div>' +
+    '<div class="stat-value' + (cls ? ' ' + cls : '') + '">' + value + '</div>' +
+    (sub ? '<div class="stat-sub">' + sub + '</div>' : '') + '</div>';
+
+  const cards = [];
+
+  if (prod) {
+    const carlCount = (prod.croit || []).length;
+    cards.push(statCard(
+      'Productie azi',
+      prod.felicia.hours.toFixed(2).replace('.', ',') + 'h / ' + prod.flori.hours.toFixed(2).replace('.', ',') + 'h',
+      'Felicia / Flori &middot; Carl are ' + carlCount + ' in asteptare'
+    ));
+  }
+
+  if (profit && profit.days && profit.days.length) {
+    const latest = profit.days[profit.days.length - 1];
+    cards.push(statCard(
+      'Profit net azi',
+      fmtMoney(latest.netProfit),
+      'ROAS ' + (latest.roas ?? 'n/a') + ' &middot; venit ' + fmtMoney(latest.revenue),
+      latest.netProfit >= 0 ? 'good' : 'bad'
+    ));
+  }
+
+  const runRate = computeCurrentMonthRunRate();
+  if (runRate) {
+    cards.push(statCard(
+      'Venit D2C proiectat (luna curenta)',
+      fmtMoney(runRate.projected),
+      fmtMoney(runRate.actual) + ' in ' + runRate.daysElapsed + ' din ' + runRate.daysInMonth + ' zile'
+    ));
+  }
+
+  if (trendsDataCache && trendsDataCache.periods && trendsDataCache.periods['30']) {
+    const period = trendsDataCache.periods['30'];
+    const topList = aggregateByName(period.topSellers, ['units', 'revenue']).sort((a, b) => b.revenue - a.revenue);
+    if (topList.length) {
+      cards.push(statCard('Top vanzare (30 zile)', escapeHtml(topList[0].title), topList[0].units + ' buc &middot; ' + fmtMoney(topList[0].revenue)));
+    }
+    const zeroCount = aggregateByName(period.zeroSellers, []).length;
+    cards.push(statCard('Fara vanzari (30 zile)', String(zeroCount), 'produse active fara nicio comanda'));
+  }
+
+  const recoItems = computeRecommendations(prod, profit, pnl);
+  cards.push(statCard(
+    'Actiuni de urmarit',
+    String(recoItems.length),
+    recoItems.length ? recoItems[0].title : 'nimic de semnalat momentan',
+    recoItems.length ? 'bad' : 'good'
+  ));
+
+  root.innerHTML = cards.length
+    ? '<div class="stat-grid">' + cards.join('') + '</div>'
+    : '<div class="empty">Inca se incarca datele celorlalte tab-uri.</div>';
 }
 
 function renderReco(prod, profit, pnl, root) {
