@@ -129,7 +129,11 @@
     0% { background: var(--accent-dim); }
     100% { background: transparent; }
   }
-  .plan-toolbar { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 10px; flex-wrap: wrap; }
+  .plan-toolbar { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 10px; flex-wrap: nowrap; }
+  @media (max-width: 480px) {
+    .plan-toolbar { justify-content: space-between; }
+    .plan-toolbar .plan-btn, .plan-toolbar .push-btn { flex: 1 1 0; padding-left: 6px; padding-right: 6px; }
+  }
   .plan-btn {
     background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-dim);
     padding: 6px 12px; border-radius: 6px; font-size: 0.78rem; cursor: pointer;
@@ -166,10 +170,14 @@
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
 
-  .settings-btn {
-    margin-right: 0; padding: 6px; border: 1px solid var(--border); border-radius: 8px;
+  .icon-btn {
+    width: 30px; height: 30px; padding: 0; border: 1px solid var(--border); border-radius: 8px;
     font-size: 1rem; line-height: 1; background: var(--bg-elevated); flex: 0 0 auto;
+    display: flex; align-items: center; justify-content: center; color: var(--text-dim);
   }
+  .icon-btn:hover { color: var(--text); border-color: var(--accent); }
+  .icon-btn.spinning { animation: icon-spin .6s linear; }
+  @keyframes icon-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
   .settings-btn.active { background: var(--accent-dim); border-color: var(--accent); }
 
   .push-btn {
@@ -281,15 +289,16 @@
     <h1>MY Dashboard</h1>
     <div style="display:flex;align-items:center;gap:14px">
       <div class="meta-pills" id="meta"><span class="meta-pill">se incarca...</span></div>
-      <button class="settings-btn tab-btn" data-tab="settings" title="Setari">&#9881;</button>
+      <button class="icon-btn" id="refresh-btn" onclick="refreshDashboard()" title="Reincarca datele">&#8635;</button>
+      <button class="icon-btn settings-btn tab-btn" data-tab="settings" title="Setari">&#9881;</button>
     </div>
   </header>
   <div class="tabs">
-    <button class="tab-btn active" data-tab="production">Productie</button>
-    <button class="tab-btn" data-tab="profit">Profit &amp; ROAS</button>
+    <button class="tab-btn active" data-tab="production">Production</button>
+    <button class="tab-btn" data-tab="profit">Marketing</button>
     <button class="tab-btn" data-tab="pnl">P&amp;L</button>
-    <button class="tab-btn" data-tab="reco">Imbunatatiri</button>
     <button class="tab-btn" data-tab="trends">Trends</button>
+    <button class="tab-btn" data-tab="reco">Actions</button>
   </div>
   <div class="tab-panel active" id="panel-production">
     <div id="root-production">
@@ -306,6 +315,11 @@
       <div class="loading">Se incarca datele...</div>
     </div>
   </div>
+  <div class="tab-panel" id="panel-trends">
+    <div id="root-trends">
+      <div class="loading">Se incarca datele...</div>
+    </div>
+  </div>
   <div class="tab-panel" id="panel-reco">
     <div id="root-reco">
       <div class="loading">Se incarca datele...</div>
@@ -313,11 +327,6 @@
   </div>
   <div class="tab-panel" id="panel-settings">
     <div id="root-settings">
-      <div class="loading">Se incarca datele...</div>
-    </div>
-  </div>
-  <div class="tab-panel" id="panel-trends">
-    <div id="root-trends">
       <div class="loading">Se incarca datele...</div>
     </div>
   </div>
@@ -414,6 +423,16 @@ function initTabs() {
   window.addEventListener('hashchange', () => activateTab(location.hash.slice(1), false));
   const initial = location.hash.slice(1);
   if (!initial || !activateTab(initial, false)) activateTab('production', false);
+}
+
+function refreshDashboard() {
+  const btn = document.getElementById('refresh-btn');
+  btn.classList.add('spinning');
+  btn.disabled = true;
+  load().finally(() => {
+    btn.classList.remove('spinning');
+    btn.disabled = false;
+  });
 }
 
 function pushToAsana() {
@@ -656,28 +675,6 @@ function resetPlanOrder() {
   renderPlanBoard(document.getElementById('root-production'));
 }
 
-function promptFallback(json) {
-  window.prompt('Copiaza manual (Cmd/Ctrl+C):', json);
-}
-
-function copyPlanOverride() {
-  const payload = {
-    planDate: planDataCache.planDate,
-    felicia: planState.felicia.map((it) => it.text),
-    flori: planState.flori.map((it) => it.text),
-    carl: planState.carl.map((it) => it.text),
-  };
-  const json = JSON.stringify(payload, null, 2);
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(json).then(
-      () => alert('Ordine copiata in clipboard -- trimite-o ca sa devina permanenta.'),
-      () => promptFallback(json)
-    );
-  } else {
-    promptFallback(json);
-  }
-}
-
 function croitBufferSection(buffer) {
   const rows = buffer.length
     ? buffer.map((t, i) => (
@@ -730,7 +727,6 @@ function renderPlanBoard(root) {
       : '') +
     '<div class="plan-toolbar">' +
       '<button class="plan-btn" onclick="resetPlanOrder()">Reseteaza ordinea</button>' +
-      '<button class="plan-btn" onclick="copyPlanOverride()">Copiaza ordinea</button>' +
       '<button class="push-btn" onclick="pushToAsana()">Publica pe Asana</button>' +
     '</div>' +
     '<div class="grid-two">' +
