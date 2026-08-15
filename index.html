@@ -167,6 +167,9 @@
     padding: 10px 4px; margin-right: 20px; border-bottom: 2px solid transparent;
     transition: color .15s, border-color .15s;
   }
+  @media (max-width: 640px) {
+    .tab-btn { margin-right: 10px; font-size: 0.8rem; padding: 8px 2px; }
+  }
   .tab-btn:hover { color: var(--text-dim); }
   .tab-btn.active { color: var(--text); border-bottom-color: var(--accent); }
   .tab-panel { display: none; }
@@ -264,7 +267,8 @@
   .zero-row:last-child { border-bottom: none; }
   .zero-row input[type="checkbox"] { flex: 0 0 auto; width: 16px; height: 16px; accent-color: var(--accent); }
   @media (max-width: 860px) {
-    table.trend .prod-cell { justify-content: flex-end; }
+    table.trend td:first-child { justify-content: flex-start; }
+    table.trend .prod-cell { justify-content: flex-start; text-align: left; }
     table.trend .unit-bar { display: none; }
   }
 
@@ -379,6 +383,13 @@ async function load() {
     if (!res.ok) throw new Error('status ' + res.status);
     pnlData = await res.json();
     renderPnl(pnlData, rootPnl);
+    // pnl-data.json e curatat manual (nu la 15 min ca restul) -- nu are
+    // generatedAt propriu, Last-Modified de la server e singurul semnal de
+    // "cand a fost pusa ultima oara la zi". Prag de prospetime mult mai
+    // lung (45 zile) fata de celelalte pill-uri (1h), ca sa nu arate mereu
+    // rosu pt ceva actualizat lunar/trimestrial, nu live.
+    const pnlLastModified = res.headers.get('Last-Modified');
+    if (pnlLastModified) metaParts.push({ label: 'P&L', iso: new Date(pnlLastModified).toISOString(), freshMs: 45 * 24 * 60 * 60 * 1000 });
   } catch (e) {
     rootPnl.innerHTML = '<div class="error">Nu am putut incarca datele P&amp;L (' + e.message + ').</div>';
   }
@@ -410,7 +421,7 @@ async function load() {
 
   meta.innerHTML = metaParts.map((p) => {
     const ageMs = Date.now() - new Date(p.iso).getTime();
-    const dotColor = ageMs < 60 * 60 * 1000 ? 'var(--good)' : 'var(--bad)';
+    const dotColor = ageMs < (p.freshMs || 60 * 60 * 1000) ? 'var(--good)' : 'var(--bad)';
     return '<span class="meta-pill"><span class="meta-dot" style="background:' + dotColor + '"></span>' + p.label + ' ' + fmtDateTime(p.iso) + '</span>';
   }).join('');
 }
@@ -741,7 +752,27 @@ function renderPlanBoard(root) {
       personCardDraggable('Flori', 'flori', data.flori.capacity) +
     '</div>' +
     carlSectionDraggable() +
-    croitBufferSection(data.croitBuffer || []);
+    croitBufferSection(data.croitBuffer || []) +
+    predictionIdeasSection(data.predictionIdeas || []);
+}
+
+function predictionIdeasSection(ideas) {
+  const rows = ideas.length
+    ? ideas.map((p, i) => (
+        '<div class="zero-row" style="cursor:default">' +
+          prodThumb(p.image, p.title) +
+          '<span style="flex:1">' + (i + 1) + '. ' + escapeHtml(p.title) + (p.size ? ' <span class="item-sub" style="display:inline">(' + escapeHtml(p.size) + ')</span>' : '') + '</span>' +
+          '<span class="item-hours">' + p.hours.toFixed(2).replace('.', ',') + 'h</span>' +
+        '</div>'
+      )).join('')
+    : '<div class="empty">Nicio idee de productie disponibila.</div>';
+  return (
+    '<section class="block card">' +
+      '<div class="block-header"><h2>Idei de productie (predictii)</h2></div>' +
+      '<div class="item-sub" style="margin-bottom:12px">Ce sa produci daca nu ai destule comenzi reale -- top produse istorice, strict informativ, nu face parte din planul de azi.</div>' +
+      '<div class="zero-list">' + rows + '</div>' +
+    '</section>'
+  );
 }
 
 function fmtMoney(n) {
