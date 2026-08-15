@@ -60,6 +60,7 @@
   .meta { font-size: 0.8rem; color: var(--text-faint); font-variant-numeric: tabular-nums; }
   .meta-pills { display: flex; flex-wrap: wrap; gap: 6px; }
   .meta-pill { font-size: 0.72rem; color: var(--text-faint); font-variant-numeric: tabular-nums; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
+  .meta-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
   .meta strong { color: var(--text-dim); font-weight: 600; }
 
   .grid-two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
@@ -85,8 +86,8 @@
   .bar.over > span { background: var(--bad); }
 
   ul.items { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-  .item { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-size: 0.86rem; }
-  .item-title { color: var(--text); }
+  .item { display: flex; align-items: center; gap: 10px; font-size: 0.86rem; padding: 5px 0; }
+  .item-title { color: var(--text); flex: 1; text-align: left; }
   .item-sub { color: var(--text-faint); font-size: 0.76rem; }
   .item-hours { font-variant-numeric: tabular-nums; color: var(--text-dim); white-space: nowrap; }
   .badge {
@@ -109,7 +110,25 @@
   .drag-handle:hover { background: var(--bg-elevated); color: var(--text-dim); }
   .drag-handle:active { cursor: grabbing; }
   .item.dragging { opacity: 0.35; }
-  .items.drag-over { outline: 2px dashed var(--accent); outline-offset: 4px; border-radius: 8px; }
+  /* Doar linia (fara margin) -- schimbarea marginii randului peste care
+     esti ii schimba propriul getBoundingClientRect, care la randul lui
+     recalculeaza before/after la urmatorul dragover (fara sa se fi miscat
+     cursorul deloc) -- bucla asta cauza glitch-ul sus/jos. Linia, fiind
+     position:absolute, nu afecteaza deloc layout-ul/marimea randului. */
+  .item, .backlog-row.item { position: relative; }
+  .drop-before::before {
+    content: ''; position: absolute; top: -5px; left: 0; right: 0; height: 2px;
+    background: var(--accent); border-radius: 2px; box-shadow: 0 0 6px var(--accent);
+  }
+  .drop-after::after {
+    content: ''; position: absolute; bottom: -5px; left: 0; right: 0; height: 2px;
+    background: var(--accent); border-radius: 2px; box-shadow: 0 0 6px var(--accent);
+  }
+  .item-flash { animation: item-flash-kf .6s ease; border-radius: 6px; }
+  @keyframes item-flash-kf {
+    0% { background: var(--accent-dim); }
+    100% { background: transparent; }
+  }
   .plan-toolbar { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 10px; flex-wrap: wrap; }
   .plan-btn {
     background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-dim);
@@ -296,8 +315,8 @@ async function load() {
     if (!res.ok) throw new Error('status ' + res.status);
     productionData = await res.json();
     renderProduction(productionData, rootProduction);
-    metaParts.push('Asana ' + fmtDateTime(productionData.generatedAt));
-    metaParts.push('W&amp;B ' + fmtDateTime(productionData.generatedAt));
+    metaParts.push({ label: 'Asana', iso: productionData.generatedAt });
+    metaParts.push({ label: 'W&amp;B', iso: productionData.generatedAt });
   } catch (e) {
     rootProduction.innerHTML = '<div class="error">Nu am putut incarca datele de productie (' + e.message + ').</div>';
   }
@@ -307,8 +326,8 @@ async function load() {
     if (!res.ok) throw new Error('status ' + res.status);
     profitData = await res.json();
     renderProfit(profitData, rootProfit);
-    metaParts.push('Meta ' + fmtDateTime(profitData.generatedAt));
-    metaParts.push('Shopify ' + fmtDateTime(profitData.generatedAt));
+    metaParts.push({ label: 'Meta', iso: profitData.generatedAt });
+    metaParts.push({ label: 'Shopify', iso: profitData.generatedAt });
   } catch (e) {
     rootProfit.innerHTML = '<div class="error">Nu am putut incarca datele de profit (' + e.message + ').</div>';
   }
@@ -337,7 +356,11 @@ async function load() {
     rootSettings.innerHTML = '<div class="error">Nu am putut incarca datele de setari (' + e.message + ').</div>';
   }
 
-  meta.innerHTML = metaParts.map((p) => '<span class="meta-pill">' + p + '</span>').join('');
+  meta.innerHTML = metaParts.map((p) => {
+    const ageMs = Date.now() - new Date(p.iso).getTime();
+    const dotColor = ageMs < 60 * 60 * 1000 ? 'var(--good)' : 'var(--bad)';
+    return '<span class="meta-pill"><span class="meta-dot" style="background:' + dotColor + '"></span>' + p.label + ' ' + fmtDateTime(p.iso) + '</span>';
+  }).join('');
 }
 
 function initTabs() {
@@ -438,6 +461,50 @@ function findPlanItem(id) {
   return null;
 }
 
+// FLIP (First-Last-Invert-Play): retine pozitia curenta a fiecarui rand
+// inainte de re-randare, apoi dupa re-randare le "trage" vizual din
+// pozitia veche in cea noua -- randurile aluneca/se suprapun in tranzitie
+// in loc sa sara instant la noua ordine.
+function captureRects(root) {
+  const rects = {};
+  root.querySelectorAll('[data-id]').forEach((el) => { rects[el.dataset.id] = el.getBoundingClientRect(); });
+  return rects;
+}
+
+function playFlipAnimation(root, prevRects, movedId) {
+  root.querySelectorAll('[data-id]').forEach((el) => {
+    const id = el.dataset.id;
+    const prev = prevRects[id];
+    if (prev) {
+      const next = el.getBoundingClientRect();
+      const dx = prev.left - next.left;
+      const dy = prev.top - next.top;
+      if (dx || dy) {
+        el.style.transition = 'none';
+        el.style.transform = `translate(${dx}px,${dy}px)`;
+        el.getBoundingClientRect(); // forteaza reflow inainte de a porni tranzitia
+        requestAnimationFrame(() => {
+          el.style.transition = 'transform .28s ease';
+          el.style.transform = '';
+        });
+      }
+    }
+    if (id === movedId) {
+      el.classList.add('item-flash');
+      setTimeout(() => el.classList.remove('item-flash'), 600);
+    }
+  });
+}
+
+let hoverEl = null;
+let hoverPos = null;
+
+function clearHoverIndicator() {
+  if (hoverEl) hoverEl.classList.remove('drop-before', 'drop-after');
+  hoverEl = null;
+  hoverPos = null;
+}
+
 function attachDragHandlers(root) {
   root.addEventListener('dragstart', (e) => {
     const el = e.target.closest('[data-id]');
@@ -450,39 +517,53 @@ function attachDragHandlers(root) {
   root.addEventListener('dragend', (e) => {
     const el = e.target.closest('[data-id]');
     if (el) el.classList.remove('dragging');
-    root.querySelectorAll('.items.drag-over').forEach((n) => n.classList.remove('drag-over'));
+    clearHoverIndicator();
   });
   root.addEventListener('dragover', (e) => {
     const list = e.target.closest('[data-section]');
     if (!list) return;
     e.preventDefault();
     e.dataTransfer.dropEffect = 'move';
-    list.classList.add('drag-over');
-  });
-  root.addEventListener('dragleave', (e) => {
-    const list = e.target.closest('[data-section]');
-    if (list && !list.contains(e.relatedTarget)) list.classList.remove('drag-over');
+    // Randul peste care planeaza cursorul se "deschide" sus sau jos, dupa
+    // in ce jumatate a randului e cursorul -- arata live directia in care
+    // se va muta item-ul, inainte sa dai drop.
+    const rowEl = e.target.closest('[data-id]');
+    if (rowEl && rowEl.dataset.id !== dragId) {
+      const rect = rowEl.getBoundingClientRect();
+      const pos = (e.clientY - rect.top) < rect.height / 2 ? 'before' : 'after';
+      if (hoverEl !== rowEl || hoverPos !== pos) {
+        clearHoverIndicator();
+        rowEl.classList.add('drop-' + pos);
+        hoverEl = rowEl;
+        hoverPos = pos;
+      }
+    } else if (hoverEl) {
+      clearHoverIndicator();
+    }
   });
   root.addEventListener('drop', (e) => {
     const list = e.target.closest('[data-section]');
     if (!list) return;
     e.preventDefault();
-    list.classList.remove('drag-over');
     const id = dragId || e.dataTransfer.getData('text/plain');
     if (!id) return;
     const found = findPlanItem(id);
     if (!found) return;
+    const prevRects = captureRects(root);
     const targetSection = list.dataset.section;
     const [item] = planState[found.section].splice(found.idx, 1);
-    const overEl = e.target.closest('[data-id]');
+    const overEl = hoverEl;
+    const overPos = hoverPos;
     let insertAt = planState[targetSection].length;
     if (overEl && overEl.dataset.id !== id) {
-      insertAt = planState[targetSection].findIndex((it) => it._id === overEl.dataset.id);
-      if (insertAt === -1) insertAt = planState[targetSection].length;
+      const idx = planState[targetSection].findIndex((it) => it._id === overEl.dataset.id);
+      insertAt = idx === -1 ? planState[targetSection].length : (overPos === 'after' ? idx + 1 : idx);
     }
     planState[targetSection].splice(insertAt, 0, item);
     dragId = null;
+    clearHoverIndicator();
     renderPlanBoard(root);
+    playFlipAnimation(root, prevRects, id);
   });
 }
 
@@ -619,7 +700,6 @@ function renderPlanBoard(root) {
       '<button class="plan-btn" onclick="copyPlanOverride()">Copiaza ordinea</button>' +
       '<button class="push-btn" onclick="pushToAsana()">Publica pe Asana</button>' +
     '</div>' +
-    '<div class="item-sub" style="margin-bottom:12px">Poti trage randurile ca sa reordonezi sau sa le muti intre Felicia / Flori / Carl -- e doar un preview local (nu se salveaza singur, se suprascrie la urmatorul refresh). "Copiaza ordinea" iti da un JSON de trimis ca sa devina permanent.</div>' +
     '<div class="grid-two">' +
       personCardDraggable('Felicia', 'felicia', data.felicia.capacity) +
       personCardDraggable('Flori', 'flori', data.flori.capacity) +
@@ -1295,6 +1375,25 @@ function filterSettings() {
 
 initTabs();
 load();
+
+// Doar in dezvoltare locala (localhost / IP privat) -- verifica la 1.5s
+// daca fisierul s-a schimbat (Last-Modified de la server) si da reload
+// singur. Nu ruleaza pe site-ul live (github.io), ca sa nu faca polling
+// degeaba la vizitatori reali.
+(function () {
+  var isLocal = /^(localhost|127\.0\.0\.1|192\.168\.|10\.|172\.(1[6-9]|2\d|3[0-1])\.)/.test(location.hostname);
+  if (!isLocal) return;
+  var lastModified = null;
+  setInterval(function () {
+    fetch(location.pathname, { method: 'HEAD', cache: 'no-store' })
+      .then(function (res) {
+        var lm = res.headers.get('Last-Modified');
+        if (lastModified === null) { lastModified = lm; return; }
+        if (lm && lm !== lastModified) location.reload();
+      })
+      .catch(function () {});
+  }, 1500);
+})();
 </script>
 </body>
 </html>
