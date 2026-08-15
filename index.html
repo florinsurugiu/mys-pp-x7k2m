@@ -55,14 +55,12 @@
     -webkit-font-smoothing: antialiased;
   }
   .wrap { max-width: 880px; margin: 0 auto; padding: 28px 20px 80px; }
-  header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; margin-bottom: 28px; }
+  header { margin-bottom: 24px; }
+  .header-top { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 12px; }
+  .header-actions { display: flex; align-items: center; gap: 8px; flex: 0 0 auto; }
   h1 { font-size: 1.3rem; font-weight: 700; margin: 0; letter-spacing: -0.01em; }
   .meta { font-size: 0.8rem; color: var(--text-faint); font-variant-numeric: tabular-nums; }
-  .meta-pills { display: flex; flex-wrap: nowrap; gap: 6px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-  .meta-pills::-webkit-scrollbar { display: none; }
-  @media (max-width: 640px) {
-    .meta-pills { flex-wrap: wrap; overflow-x: visible; max-width: 220px; }
-  }
+  .meta-pills { display: flex; flex-wrap: wrap; gap: 6px; }
   .meta-pill { font-size: 0.72rem; color: var(--text-faint); font-variant-numeric: tabular-nums; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
   .meta-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
   .meta strong { color: var(--text-dim); font-weight: 600; }
@@ -258,12 +256,13 @@
   .unit-bar { display: inline-block; width: 80px; height: 6px; border-radius: 4px; background: var(--border); overflow: hidden; vertical-align: middle; margin-right: 8px; }
   .unit-bar > span { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
   .unit-bar-val { font-variant-numeric: tabular-nums; }
-  .zero-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
-  .zero-card {
-    display: flex; align-items: center; gap: 8px; padding: 8px; border-radius: 8px;
-    background: var(--bg-elevated); border: 1px solid var(--border); font-size: 0.8rem;
-    color: var(--text-dim);
+  .zero-list { display: flex; flex-direction: column; }
+  .zero-row {
+    display: flex; align-items: center; gap: 10px; padding: 9px 4px; border-bottom: 1px solid var(--border);
+    font-size: 0.86rem; cursor: pointer;
   }
+  .zero-row:last-child { border-bottom: none; }
+  .zero-row input[type="checkbox"] { flex: 0 0 auto; width: 16px; height: 16px; accent-color: var(--accent); }
   @media (max-width: 860px) {
     table.trend .prod-cell { justify-content: flex-end; }
     table.trend .unit-bar { display: none; }
@@ -290,12 +289,14 @@
 <body>
 <div class="wrap">
   <header>
-    <h1>MY Dashboard</h1>
-    <div style="display:flex;align-items:center;gap:14px">
-      <div class="meta-pills" id="meta"><span class="meta-pill">se incarca...</span></div>
-      <button class="icon-btn" id="refresh-btn" onclick="refreshDashboard()" title="Reincarca datele">&#8635;</button>
-      <button class="icon-btn settings-btn tab-btn" data-tab="settings" title="Setari">&#9881;</button>
+    <div class="header-top">
+      <h1>MY Dashboard</h1>
+      <div class="header-actions">
+        <button class="icon-btn" id="refresh-btn" onclick="refreshDashboard()" title="Reincarca datele">&#8635;</button>
+        <button class="icon-btn settings-btn tab-btn" data-tab="settings" title="Setari">&#9881;</button>
+      </div>
     </div>
+    <div class="meta-pills" id="meta"><span class="meta-pill">se incarca...</span></div>
   </header>
   <div class="tabs">
     <button class="tab-btn active" data-tab="production">Production</button>
@@ -1089,13 +1090,9 @@ function renderPnlPeriod(root) {
   )).join('');
 
   root.innerHTML =
-    (isSingleMonth ? '' : '<div class="meta" style="margin-bottom:16px">' + escapeHtml(data.period) + ' &middot; ' + escapeHtml(data.entities) + '</div>') +
     '<div class="period-filter">' + filterBtns + '</div>' +
     '<div class="stat-grid">' + stats + '</div>' +
     '<div class="section-title" style="margin-top:24px">Costuri pe categorii</div>' +
-    (isSingleMonth
-      ? '<div class="stat-sub" style="margin-bottom:12px">COGS medie 8 luni (fara cost proiecte B2B) &middot; restul categoriilor medie ultimele 4 luni (nu avem defalcare lunara reala pe categorii).</div>'
-      : '<div class="stat-sub" style="margin-bottom:12px">Categoriile fara defalcare lunara reala (Neclasificat, Chirie etc) sunt scalate proportional cu ponderea lor pe tot intervalul.</div>') +
     '<div class="card">' + catTotalRow + catRows + '</div>' +
     (isSingleMonth ? '' :
       '<div class="section-title">Proiecte B2B (istoric)</div>' +
@@ -1110,7 +1107,13 @@ function renderPnlPeriod(root) {
     (isSingleMonth ? '' :
       '<div class="section-title">Bilanturi oficiale ANAF (2023 vs 2024)</div>' +
       '<div class="grid-two" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">' + baselineCards + '</div>'
-    );
+    ) +
+    '<div class="stat-sub" style="margin-top:20px">' +
+      (isSingleMonth
+        ? 'COGS medie 8 luni (fara cost proiecte B2B) &middot; restul categoriilor medie ultimele 4 luni (nu avem defalcare lunara reala pe categorii).'
+        : 'Categoriile fara defalcare lunara reala (Neclasificat, Chirie etc) sunt scalate proportional cu ponderea lor pe tot intervalul.') +
+    '</div>' +
+    (isSingleMonth ? '' : '<div class="meta" style="margin-top:8px">' + escapeHtml(data.period) + ' &middot; ' + escapeHtml(data.entities) + '</div>');
 
   renderIncomingProjectsSection();
   renderMonthEstimateSection(data);
@@ -1461,6 +1464,26 @@ function setTrendsPeriod(days) {
   renderTrendsPeriod(document.getElementById('root-trends'));
 }
 
+// Nu putem scrie direct in Shopify din pagina publica (ar insemna un token
+// Admin API cu drept de scriere expus oricui) -- selectezi produsele,
+// copiezi lista, o trimiti in chat.
+function copyUnpublishList() {
+  const checked = [...document.querySelectorAll('.zero-check:checked')];
+  if (!checked.length) {
+    alert('Nu ai selectat niciun produs.');
+    return;
+  }
+  const text = 'Unpublish (draft) pe Shopify:\n' + checked.map((el) => '- ' + el.dataset.title + ' (' + el.dataset.id + ')').join('\n');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(
+      () => alert(checked.length + ' produs(e) copiate -- lipeste in chat cu Claude ca sa le treaca in draft.'),
+      () => window.prompt('Copiaza manual (Cmd/Ctrl+C):', text)
+    );
+  } else {
+    window.prompt('Copiaza manual (Cmd/Ctrl+C):', text);
+  }
+}
+
 function renderTrends(data, root) {
   trendsDataCache = data;
   const available = Object.keys(data.periods || {}).map(Number).sort((a, b) => a - b);
@@ -1504,9 +1527,13 @@ function renderTrendsPeriod(root) {
       )).join('')
     : '<tr><td colspan="3"><div class="empty">Nicio vanzare in perioada asta.</div></td></tr>';
 
-  const zeroCards = period.zeroSellers.length
+  const zeroRows = period.zeroSellers.length
     ? period.zeroSellers.map((p) => (
-        '<div class="zero-card">' + prodThumb(p.image, p.title) + '<span>' + escapeHtml(p.title) + '</span></div>'
+        '<label class="zero-row">' +
+          '<input type="checkbox" class="zero-check" data-title="' + escapeHtml(p.title) + '" data-id="' + escapeHtml(p.productId) + '">' +
+          prodThumb(p.image, p.title) +
+          '<span>' + escapeHtml(p.title) + '</span>' +
+        '</label>'
       )).join('')
     : '<div class="empty">Toate produsele active au avut cel putin o vanzare.</div>';
 
@@ -1517,8 +1544,11 @@ function renderTrendsPeriod(root) {
     '</table></div>';
   const losersPanel =
     '<div class="card">' +
-      '<div class="item-sub" style="margin-bottom:12px">Produse active fara nicio vanzare in perioada selectata.</div>' +
-      '<div class="zero-grid">' + zeroCards + '</div>' +
+      '<div class="block-header">' +
+        '<div class="item-sub">Produse active fara nicio vanzare in perioada selectata.</div>' +
+        (period.zeroSellers.length ? '<button class="plan-btn" onclick="copyUnpublishList()">Copiaza selectia (unpublish)</button>' : '') +
+      '</div>' +
+      '<div class="zero-list">' + zeroRows + '</div>' +
     '</div>';
 
   root.innerHTML =
