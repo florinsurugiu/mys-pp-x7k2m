@@ -1421,6 +1421,7 @@ function filterSettings() {
 
 let trendsDataCache = null;
 let trendsPeriod = 30;
+let trendsSubTab = 'winners';
 
 function prodThumb(image, title) {
   return image
@@ -1467,6 +1468,11 @@ function renderTrends(data, root) {
   renderTrendsPeriod(root);
 }
 
+function setTrendsSubTab(tab) {
+  trendsSubTab = tab;
+  renderTrendsPeriod(document.getElementById('root-trends'));
+}
+
 function renderTrendsPeriod(root) {
   const data = trendsDataCache;
   const periodKey = String(trendsPeriod);
@@ -1479,6 +1485,9 @@ function renderTrendsPeriod(root) {
   const filterBtns = available.map((p) => (
     '<button class="period-btn' + (p === trendsPeriod ? ' active' : '') + '" onclick="setTrendsPeriod(' + p + ')">' + p + ' zile</button>'
   )).join('');
+  const subTabBtns =
+    '<button class="period-btn' + (trendsSubTab === 'winners' ? ' active' : '') + '" onclick="setTrendsSubTab(\'winners\')">Winners &middot; ' + period.topSellers.length + '</button>' +
+    '<button class="period-btn' + (trendsSubTab === 'losers' ? ' active' : '') + '" onclick="setTrendsSubTab(\'losers\')">Losers &middot; ' + period.zeroSellers.length + '</button>';
 
   const maxUnits = Math.max(1, ...period.topSellers.map((p) => p.units));
   const topRows = period.topSellers.length
@@ -1501,19 +1510,24 @@ function renderTrendsPeriod(root) {
       )).join('')
     : '<div class="empty">Toate produsele active au avut cel putin o vanzare.</div>';
 
+  const winnersPanel =
+    '<div class="card table-scroll"><table class="trend">' +
+      '<thead><tr><th>Produs</th><th>Bucati vandute</th><th>Venit</th></tr></thead>' +
+      '<tbody>' + topRows + '</tbody>' +
+    '</table></div>';
+  const losersPanel =
+    '<div class="card">' +
+      '<div class="item-sub" style="margin-bottom:12px">Produse active fara nicio vanzare in perioada selectata.</div>' +
+      '<div class="zero-grid">' + zeroCards + '</div>' +
+    '</div>';
+
   root.innerHTML =
     '<div class="card" style="margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">' +
       '<div><div class="item-sub">Trends -- ce functioneaza si ce nu</div><div style="font-weight:700;font-size:1rem">' + period.topSellers.length + ' produse cu vanzari &middot; ' + period.zeroSellers.length + ' fara nicio vanzare</div></div>' +
       '<div class="period-filter">' + filterBtns + '</div>' +
     '</div>' +
-    '<div class="card table-scroll" style="margin-bottom:16px"><table class="trend">' +
-      '<thead><tr><th>Produs</th><th>Bucati vandute</th><th>Venit</th></tr></thead>' +
-      '<tbody>' + topRows + '</tbody>' +
-    '</table></div>' +
-    '<div class="card">' +
-      '<div class="block-header"><h2>Fara nicio vanzare -- ' + period.zeroSellers.length + '</h2></div>' +
-      '<div class="zero-grid">' + zeroCards + '</div>' +
-    '</div>';
+    '<div class="period-filter" style="margin-bottom:16px">' + subTabBtns + '</div>' +
+    (trendsSubTab === 'losers' ? losersPanel : winnersPanel);
 }
 
 initTabs();
