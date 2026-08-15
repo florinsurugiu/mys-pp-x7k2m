@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-15T01:33:54.890Z",
+  "generatedAt": "2026-08-15T01:41:56.538Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
-    "hours": 6.97,
+    "hours": 6.3,
     "capacity": 7,
     "items": [
       {
@@ -35,13 +35,6 @@
         "hours": 1.5,
         "tags": [
           "wb"
-        ]
-      },
-      {
-        "title": "04. T ivory miau S",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
         ]
       }
     ]
@@ -178,18 +171,18 @@
       ]
     },
     {
-      "name": "W Third Eye M",
-      "orderName": "#235386",
-      "category": "Windbreaker",
+      "name": "T gri 2M + XXL",
+      "orderName": "#235386, #235387, #235389",
+      "category": "Tricou simplu",
       "leftover": false,
       "tags": [
         "shopify"
       ]
     },
     {
-      "name": "T gri 2M + XXL",
-      "orderName": "#235386, #235387, #235389",
-      "category": "Tricou simplu",
+      "name": "W Third Eye M",
+      "orderName": "#235386",
+      "category": "Windbreaker",
       "leftover": false,
       "tags": [
         "shopify"
@@ -205,18 +198,18 @@
       ]
     },
     {
-      "name": "C mov 777 XXL",
+      "name": "T alb XXL",
       "orderName": "#235389",
-      "category": "Camasa Unisex",
+      "category": "Tricou simplu",
       "leftover": false,
       "tags": [
         "shopify"
       ]
     },
     {
-      "name": "T alb XXL",
+      "name": "C mov 777 XXL",
       "orderName": "#235389",
-      "category": "Tricou simplu",
+      "category": "Camasa Unisex",
       "leftover": false,
       "tags": [
         "shopify"
@@ -255,79 +248,13 @@
     }
   ],
   "backlog": {
-    "hours": 15.75,
+    "hours": 1.42,
     "items": [
       {
         "orderName": "WB#3406435",
         "title": "C water M",
         "category": "Camasa scurta",
         "hours": 1.42
-      },
-      {
-        "orderName": "#235386",
-        "title": "Third Eye  Windbreaker",
-        "category": "Windbreaker",
-        "hours": 2.5
-      },
-      {
-        "orderName": "#235386",
-        "title": "Spirit Grey Oversized T-Shirt",
-        "category": "Tricou simplu",
-        "hours": 0.67
-      },
-      {
-        "orderName": "#235387",
-        "title": "Reality Grey Oversized T-Shirt",
-        "category": "Tricou simplu",
-        "hours": 0.67
-      },
-      {
-        "orderName": "#235389",
-        "title": "Reality Grey Oversized T-Shirt",
-        "category": "Tricou simplu",
-        "hours": 0.67
-      },
-      {
-        "orderName": "WB#3407557",
-        "title": "Long Sleeve Shirt In Dark Grey With Tigers Design - Recycled Fabric W",
-        "category": "Camasa lunga",
-        "hours": 1.75
-      },
-      {
-        "orderName": "#235381",
-        "title": "Fragmented Sleeves Shirt V2",
-        "category": "Camasa Unisex",
-        "hours": 1.5
-      },
-      {
-        "orderName": "#235381",
-        "title": "Dystopia White Oversized Sweater",
-        "category": "Bluza inimioara / obsidian",
-        "hours": 1.5
-      },
-      {
-        "orderName": "#235385",
-        "title": "Blue Stripes Oversized Shirt",
-        "category": "Camasa Unisex",
-        "hours": 1.5
-      },
-      {
-        "orderName": "#235389",
-        "title": "777 Mauve Oversized T-Shirt",
-        "category": "Camasa Unisex",
-        "hours": 1.5
-      },
-      {
-        "orderName": "#235385",
-        "title": "MYSIMPLICATED® Atelier Division Overshirt",
-        "category": "Camasa scurta",
-        "hours": 1.42
-      },
-      {
-        "orderName": "#235389",
-        "title": "Dream State Oversized Off-White Tee",
-        "category": "Tricou simplu",
-        "hours": 0.67
       }
     ]
   }
