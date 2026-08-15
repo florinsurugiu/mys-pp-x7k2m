@@ -365,12 +365,15 @@ function barClass(hours, capacity) {
   if (ratio > 0.92) return 'warn';
   return '';
 }
-function sourceBadge(source) {
-  if (source === 'predicted') return '<span class="badge predicted">PR</span>';
-  if (source === 'leftover') return '<span class="badge leftover">ramas</span>';
-  if (source === 'wb') return '<span class="badge wb">WB</span>';
-  if (source === 'shopify') return '<span class="badge shopify">SH</span>';
+function badgeHtml(tag) {
+  if (tag === 'predicted') return '<span class="badge predicted">PR</span>';
+  if (tag === 'leftover') return '<span class="badge leftover">ramas</span>';
+  if (tag === 'wb') return '<span class="badge wb">WB</span>';
+  if (tag === 'shopify') return '<span class="badge shopify">SH</span>';
   return '';
+}
+function badgesFor(tags) {
+  return (tags || []).map(badgeHtml).join('');
 }
 
 function personCard(name, person) {
@@ -379,7 +382,7 @@ function personCard(name, person) {
   const items = person.items.length
     ? person.items.map((it) => (
         '<li class="item">' +
-          '<div class="item-title">' + escapeHtml(it.title) + sourceBadge(it.source) + '</div>' +
+          '<div class="item-title">' + escapeHtml(it.title) + badgesFor(it.tags) + '</div>' +
           '<div class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</div>' +
         '</li>'
       )).join('')
@@ -400,7 +403,7 @@ function croitSection(croit) {
     ? croit.map((t, i) => (
         '<div class="backlog-row">' +
           '<span class="order-tag">' + (t.orderName ? escapeHtml(t.orderName) : '') + '</span>' +
-          '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(t.name.replace(/^\d+\.\s*/, '')) + (t.leftover ? sourceBadge('leftover') : '') + '</span>' +
+          '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(t.name.replace(/^\d+\.\s*/, '')) + badgesFor(t.tags) + '</span>' +
         '</div>'
       )).join('')
     : '<div class="empty">Nimic in coada -- Carl e la zi.</div>';
