@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T00:51:33.766Z",
+  "generatedAt": "2026-08-15T00:53:24.307Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "felicia": {
@@ -128,14 +128,12 @@
       ]
     },
     {
-      "name": "06. W Statue XL buc",
-      "orderName": null,
-      "category": "Windbreaker",
-      "dueOn": null,
+      "name": "C Tigers XS",
+      "orderName": "WB#3407557",
+      "category": "Camasa lunga",
       "leftover": false,
-      "number": 6,
       "tags": [
-        "predicted"
+        "wb"
       ]
     },
     {
@@ -220,12 +218,14 @@
       ]
     },
     {
-      "name": "C Tigers XS",
-      "orderName": "WB#3407557",
-      "category": "Camasa lunga",
+      "name": "06. W Statue XL buc",
+      "orderName": null,
+      "category": "Windbreaker",
+      "dueOn": null,
       "leftover": false,
+      "number": 6,
       "tags": [
-        "wb"
+        "predicted"
       ]
     }
   ],
