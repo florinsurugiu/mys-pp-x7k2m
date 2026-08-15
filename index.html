@@ -240,6 +240,23 @@
   table.trend .totals-row td { font-weight: 700; border-bottom: none; }
   .table-scroll { overflow-x: auto; }
 
+  .prod-thumb { width: 32px; height: 32px; border-radius: 6px; object-fit: cover; background: var(--bg-elevated); flex: 0 0 auto; }
+  .prod-thumb-empty { display: inline-block; border: 1px dashed var(--border); }
+  .prod-cell { display: flex; align-items: center; gap: 10px; }
+  .unit-bar { display: inline-block; width: 80px; height: 6px; border-radius: 4px; background: var(--border); overflow: hidden; vertical-align: middle; margin-right: 8px; }
+  .unit-bar > span { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+  .unit-bar-val { font-variant-numeric: tabular-nums; }
+  .zero-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+  .zero-card {
+    display: flex; align-items: center; gap: 8px; padding: 8px; border-radius: 8px;
+    background: var(--bg-elevated); border: 1px solid var(--border); font-size: 0.8rem;
+    color: var(--text-dim);
+  }
+  @media (max-width: 860px) {
+    table.trend .prod-cell { justify-content: flex-end; }
+    table.trend .unit-bar { display: none; }
+  }
+
   @media (max-width: 860px) {
     table.trend thead { display: none; }
     table.trend, table.trend tbody, table.trend tr, table.trend td { display: block; width: 100%; }
@@ -272,6 +289,7 @@
     <button class="tab-btn" data-tab="profit">Profit &amp; ROAS</button>
     <button class="tab-btn" data-tab="pnl">P&amp;L</button>
     <button class="tab-btn" data-tab="reco">Imbunatatiri</button>
+    <button class="tab-btn" data-tab="trends">Trends</button>
   </div>
   <div class="tab-panel active" id="panel-production">
     <div id="root-production">
@@ -295,6 +313,11 @@
   </div>
   <div class="tab-panel" id="panel-settings">
     <div id="root-settings">
+      <div class="loading">Se incarca datele...</div>
+    </div>
+  </div>
+  <div class="tab-panel" id="panel-trends">
+    <div id="root-trends">
       <div class="loading">Se incarca datele...</div>
     </div>
   </div>
@@ -354,6 +377,16 @@ async function load() {
     renderSettings(data, rootSettings);
   } catch (e) {
     rootSettings.innerHTML = '<div class="error">Nu am putut incarca datele de setari (' + e.message + ').</div>';
+  }
+
+  try {
+    const res = await fetch('trends-data.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('status ' + res.status);
+    const data = await res.json();
+    renderTrends(data, document.getElementById('root-trends'));
+    metaParts.push({ label: 'Trends', iso: data.generatedAt });
+  } catch (e) {
+    document.getElementById('root-trends').innerHTML = '<div class="error">Nu am putut incarca datele de trends (' + e.message + ').</div>';
   }
 
   meta.innerHTML = metaParts.map((p) => {
@@ -1371,6 +1404,103 @@ function filterSettings() {
         '</tr>'
       )).join('')
     : '<tr><td colspan="5"><div class="empty">Nicio categorie gasita.</div></td></tr>';
+}
+
+let trendsDataCache = null;
+let trendsPeriod = 30;
+
+function prodThumb(image, title) {
+  return image
+    ? '<img class="prod-thumb" src="' + image + '" alt="" loading="lazy">'
+    : '<span class="prod-thumb prod-thumb-empty"></span>';
+}
+
+// Multe modele au listari separate Men/Women (produse Shopify diferite,
+// acelasi design) -- pt trends conteaza designul, nu genul, deci se
+// aduna sub acelasi nume in loc sa apara ca 2 randuri separate.
+function normalizeProductName(title) {
+  return title
+    .replace(/\s*[-–]?\s*\((?:men'?s?|women'?s?|man|woman)\)\s*$/i, '')
+    .replace(/\s+(?:men'?s?|women'?s?|man|woman)\s*$/i, '')
+    .replace(/\s+W\s*$/, '') // convenția W&B pt varianta de dama, vezi TITLE_OVERRIDES din backend
+    .trim();
+}
+
+function aggregateByName(items, sumFields) {
+  const map = new Map();
+  for (const p of items) {
+    const key = normalizeProductName(p.title).toLowerCase();
+    if (!map.has(key)) {
+      const entry = { ...p, title: normalizeProductName(p.title) };
+      for (const f of sumFields) entry[f] = 0;
+      map.set(key, entry);
+    }
+    const entry = map.get(key);
+    for (const f of sumFields) entry[f] += p[f] || 0;
+    if (!entry.image && p.image) entry.image = p.image;
+  }
+  return [...map.values()];
+}
+
+function setTrendsPeriod(days) {
+  trendsPeriod = days;
+  renderTrendsPeriod(document.getElementById('root-trends'));
+}
+
+function renderTrends(data, root) {
+  trendsDataCache = data;
+  const available = Object.keys(data.periods || {}).map(Number).sort((a, b) => a - b);
+  if (available.length && !available.includes(trendsPeriod)) trendsPeriod = available[available.length - 1];
+  renderTrendsPeriod(root);
+}
+
+function renderTrendsPeriod(root) {
+  const data = trendsDataCache;
+  const periodKey = String(trendsPeriod);
+  const rawPeriod = (data.periods && data.periods[periodKey]) || { topSellers: [], zeroSellers: [] };
+  const period = {
+    topSellers: aggregateByName(rawPeriod.topSellers, ['units', 'revenue']).sort((a, b) => b.revenue - a.revenue),
+    zeroSellers: aggregateByName(rawPeriod.zeroSellers, []),
+  };
+  const available = Object.keys(data.periods || {}).map(Number).sort((a, b) => a - b);
+  const filterBtns = available.map((p) => (
+    '<button class="period-btn' + (p === trendsPeriod ? ' active' : '') + '" onclick="setTrendsPeriod(' + p + ')">' + p + ' zile</button>'
+  )).join('');
+
+  const maxUnits = Math.max(1, ...period.topSellers.map((p) => p.units));
+  const topRows = period.topSellers.length
+    ? period.topSellers.map((p, i) => (
+        '<tr>' +
+          '<td data-label="Produs" style="text-align:left"><div class="prod-cell">' + prodThumb(p.image, p.title) +
+            '<span>' + (i + 1) + '. ' + escapeHtml(p.title) + '</span></div></td>' +
+          '<td data-label="Bucati">' +
+            '<div class="unit-bar"><span style="width:' + Math.round((p.units / maxUnits) * 100) + '%"></span></div>' +
+            '<span class="unit-bar-val">' + p.units + '</span>' +
+          '</td>' +
+          '<td data-label="Venit">' + fmtMoney(p.revenue) + '</td>' +
+        '</tr>'
+      )).join('')
+    : '<tr><td colspan="3"><div class="empty">Nicio vanzare in perioada asta.</div></td></tr>';
+
+  const zeroCards = period.zeroSellers.length
+    ? period.zeroSellers.map((p) => (
+        '<div class="zero-card">' + prodThumb(p.image, p.title) + '<span>' + escapeHtml(p.title) + '</span></div>'
+      )).join('')
+    : '<div class="empty">Toate produsele active au avut cel putin o vanzare.</div>';
+
+  root.innerHTML =
+    '<div class="card" style="margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">' +
+      '<div><div class="item-sub">Trends -- ce functioneaza si ce nu</div><div style="font-weight:700;font-size:1rem">' + period.topSellers.length + ' produse cu vanzari &middot; ' + period.zeroSellers.length + ' fara nicio vanzare</div></div>' +
+      '<div class="period-filter">' + filterBtns + '</div>' +
+    '</div>' +
+    '<div class="card table-scroll" style="margin-bottom:16px"><table class="trend">' +
+      '<thead><tr><th>Produs</th><th>Bucati vandute</th><th>Venit</th></tr></thead>' +
+      '<tbody>' + topRows + '</tbody>' +
+    '</table></div>' +
+    '<div class="card">' +
+      '<div class="block-header"><h2>Fara nicio vanzare -- ' + period.zeroSellers.length + '</h2></div>' +
+      '<div class="zero-grid">' + zeroCards + '</div>' +
+    '</div>';
 }
 
 initTabs();
