@@ -420,7 +420,7 @@ function croitBufferSection(buffer) {
     ? buffer.map((t, i) => (
         '<div class="backlog-row">' +
           '<span class="order-tag">' + (t.orderName ? escapeHtml(t.orderName) : '') + '</span>' +
-          '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(t.name.replace(/^\d+\.\s*/, '')) + '</span>' +
+          '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(t.name.replace(/^\d+\.\s*/, '')) + badgesFor(t.tags) + '</span>' +
         '</div>'
       )).join('')
     : '<div class="empty">Fara buffer -- nimic deja taiat in stoc.</div>';
