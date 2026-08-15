@@ -91,21 +91,23 @@
   .item-hours { font-variant-numeric: tabular-nums; color: var(--text-dim); white-space: nowrap; }
   .badge {
     display: inline-flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.03em;
-    text-transform: uppercase; padding: 1px 6px; border-radius: 4px; margin-left: 6px;
-    vertical-align: middle;
+    text-transform: uppercase; padding: 3px 6px; border-radius: 4px; margin-left: 6px;
+    vertical-align: middle; line-height: 1;
   }
-  .badge svg { display: block; }
+  .badge svg { display: block; width: 13px; height: 13px; overflow: visible; }
   .badge.predicted { background: var(--accent-dim); color: var(--accent); }
   .badge.leftover { background: rgba(240, 165, 90, 0.16); color: var(--warn); }
   .badge.wb { background: rgba(120, 130, 250, 0.16); color: #9aa3ff; }
   .badge.shopify { background: rgba(120, 220, 150, 0.16); color: #7bd99a; }
   .badge.buffer { background: rgba(160, 165, 175, 0.18); color: var(--text-dim); }
 
-  .item[draggable="true"], .backlog-row.item[draggable="true"] {
-    cursor: grab; padding: 4px 6px; margin: -4px -6px; border-radius: 6px; transition: background .15s, opacity .15s;
+  .drag-handle {
+    align-self: center; flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+    width: 18px; height: 20px; color: var(--text-faint); cursor: grab; border-radius: 4px;
+    transition: background .15s, color .15s;
   }
-  .item[draggable="true"]:hover { background: var(--bg-elevated); }
-  .item[draggable="true"]:active { cursor: grabbing; }
+  .drag-handle:hover { background: var(--bg-elevated); color: var(--text-dim); }
+  .drag-handle:active { cursor: grabbing; }
   .item.dragging { opacity: 0.35; }
   .items.drag-over { outline: 2px dashed var(--accent); outline-offset: 4px; border-radius: 8px; }
   .plan-toolbar { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 10px; flex-wrap: wrap; }
@@ -484,9 +486,13 @@ function attachDragHandlers(root) {
   });
 }
 
+const ICON_GRIP = '<svg width="10" height="14" viewBox="0 0 10 16" fill="currentColor"><circle cx="3" cy="2.5" r="1.3"/><circle cx="7" cy="2.5" r="1.3"/><circle cx="3" cy="8" r="1.3"/><circle cx="7" cy="8" r="1.3"/><circle cx="3" cy="13.5" r="1.3"/><circle cx="7" cy="13.5" r="1.3"/></svg>';
+const DRAG_HANDLE = '<span class="drag-handle" draggable="true" title="trage pt reordonare">' + ICON_GRIP + '</span>';
+
 function draggableItemHtml(it, numbered) {
   return (
-    '<li class="item" draggable="true" data-id="' + it._id + '">' +
+    '<li class="item" data-id="' + it._id + '">' +
+      DRAG_HANDLE +
       '<div class="item-title">' + escapeHtml(numbered) + badgesFor(it.tags) + '</div>' +
       (it.hours != null ? '<div class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</div>' : '') +
     '</li>'
@@ -516,7 +522,8 @@ function carlSectionDraggable() {
   const items = planState.carl;
   const rows = items.length
     ? items.map((it, i) => (
-        '<div class="backlog-row item" draggable="true" data-id="' + it._id + '">' +
+        '<div class="backlog-row item" data-id="' + it._id + '">' +
+          DRAG_HANDLE +
           '<span class="order-tag">' + (it.orderName ? escapeHtml(it.orderName) : '') + '</span>' +
           '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(it.text) + badgesFor(it.tags) + '</span>' +
         '</div>'
