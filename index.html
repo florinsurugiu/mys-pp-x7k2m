@@ -672,13 +672,25 @@ function personCardDraggable(name, section, capacity) {
   );
 }
 
+// Doar comenzile Shopify (#NNNNNN) au link direct -- nu stim URL-ul
+// portalului de admin Wolf & Badger (WB#...), ramane text simplu. Pt un
+// task legat de mai multe comenzi (lista separata prin virgula), leaga
+// doar prima -- Shopify nu cauta bine dupa mai multe numere deodata.
+function orderTagHtml(orderName) {
+  if (!orderName) return '';
+  const first = orderName.split(',')[0].trim();
+  if (!first.startsWith('#')) return escapeHtml(orderName);
+  const num = first.slice(1);
+  return '<a href="https://admin.shopify.com/store/simplicatedhh/orders?query=' + encodeURIComponent(num) + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">' + escapeHtml(orderName) + '</a>';
+}
+
 function carlSectionDraggable() {
   const items = planState.carl;
   const rows = items.length
     ? items.map((it, i) => (
         '<div class="backlog-row item" data-id="' + it._id + '">' +
           DRAG_HANDLE +
-          '<span class="order-tag">' + (it.orderName ? escapeHtml(it.orderName) : '') + '</span>' +
+          '<span class="order-tag">' + orderTagHtml(it.orderName) + '</span>' +
           '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(it.text) + badgesFor(it.tags) + '</span>' +
         '</div>'
       )).join('')
