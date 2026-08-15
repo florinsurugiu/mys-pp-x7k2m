@@ -90,14 +90,30 @@
   .item-sub { color: var(--text-faint); font-size: 0.76rem; }
   .item-hours { font-variant-numeric: tabular-nums; color: var(--text-dim); white-space: nowrap; }
   .badge {
-    display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.03em;
+    display: inline-flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.03em;
     text-transform: uppercase; padding: 1px 6px; border-radius: 4px; margin-left: 6px;
     vertical-align: middle;
   }
+  .badge svg { display: block; }
   .badge.predicted { background: var(--accent-dim); color: var(--accent); }
   .badge.leftover { background: rgba(240, 165, 90, 0.16); color: var(--warn); }
   .badge.wb { background: rgba(120, 130, 250, 0.16); color: #9aa3ff; }
   .badge.shopify { background: rgba(120, 220, 150, 0.16); color: #7bd99a; }
+  .badge.buffer { background: rgba(160, 165, 175, 0.18); color: var(--text-dim); }
+
+  .item[draggable="true"], .backlog-row.item[draggable="true"] {
+    cursor: grab; padding: 4px 6px; margin: -4px -6px; border-radius: 6px; transition: background .15s, opacity .15s;
+  }
+  .item[draggable="true"]:hover { background: var(--bg-elevated); }
+  .item[draggable="true"]:active { cursor: grabbing; }
+  .item.dragging { opacity: 0.35; }
+  .items.drag-over { outline: 2px dashed var(--accent); outline-offset: 4px; border-radius: 8px; }
+  .plan-toolbar { display: flex; gap: 8px; justify-content: flex-end; margin-bottom: 10px; flex-wrap: wrap; }
+  .plan-btn {
+    background: var(--bg-elevated); border: 1px solid var(--border); color: var(--text-dim);
+    padding: 6px 12px; border-radius: 6px; font-size: 0.78rem; cursor: pointer;
+  }
+  .plan-btn:hover { color: var(--text); border-color: var(--accent); }
 
   section.block { margin-bottom: 20px; }
   .block-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; }
@@ -365,9 +381,13 @@ function barClass(hours, capacity) {
   if (ratio > 0.92) return 'warn';
   return '';
 }
+const ICON_CLOCK = '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>';
+const ICON_SCISSORS = '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 8.5 19 19M8.5 15.5 19 5"/></svg>';
+
 function badgeHtml(tag) {
   if (tag === 'predicted') return '<span class="badge predicted">PR</span>';
-  if (tag === 'leftover') return '<span class="badge leftover">ramas</span>';
+  if (tag === 'leftover') return '<span class="badge leftover" title="ramas">' + ICON_CLOCK + '</span>';
+  if (tag === 'buffer') return '<span class="badge buffer" title="deja taiat, din buffer">' + ICON_SCISSORS + '</span>';
   if (tag === 'wb') return '<span class="badge wb">WB</span>';
   if (tag === 'shopify') return '<span class="badge shopify">SH</span>';
   return '';
@@ -376,43 +396,165 @@ function badgesFor(tags) {
   return (tags || []).map(badgeHtml).join('');
 }
 
-function personCard(name, person) {
-  const cls = barClass(person.hours, person.capacity);
-  const pct = Math.min(100, (person.hours / person.capacity) * 100);
-  const items = person.items.length
-    ? person.items.map((it) => (
-        '<li class="item">' +
-          '<div class="item-title">' + escapeHtml(it.title) + badgesFor(it.tags) + '</div>' +
-          '<div class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</div>' +
-        '</li>'
-      )).join('')
+// --- Plan editabil (drag & drop) ------------------------------------
+// Preview local, nu persista singur: dashboard-data.json e regenerat din
+// automat la 15 min si suprascrie orice reordonare facuta aici. "Copiaza
+// ordinea" exporta un JSON de trimis ca sa devina un override permanent
+// (aplicat si la task-urile reale create noaptea).
+let planState = null;
+let planDataCache = null;
+let dragId = null;
+
+function itemDisplayText(it) {
+  return (it.title || it.name || '').replace(/^\d+\.\s*/, '');
+}
+
+function buildPlanState(data) {
+  const mk = (list, section) => (list || []).map((it, i) => ({
+    _id: section + '-' + i,
+    text: itemDisplayText(it),
+    hours: typeof it.hours === 'number' ? it.hours : null,
+    tags: it.tags || [],
+    orderName: it.orderName || null,
+  }));
+  return {
+    felicia: mk(data.felicia.items, 'felicia'),
+    flori: mk(data.flori.items, 'flori'),
+    carl: mk(data.croit, 'carl'),
+  };
+}
+
+function planSectionHours(section) {
+  return planState[section].reduce((s, it) => s + (it.hours || 0), 0);
+}
+
+function findPlanItem(id) {
+  for (const section of ['felicia', 'flori', 'carl']) {
+    const idx = planState[section].findIndex((it) => it._id === id);
+    if (idx !== -1) return { section, idx };
+  }
+  return null;
+}
+
+function attachDragHandlers(root) {
+  root.addEventListener('dragstart', (e) => {
+    const el = e.target.closest('[data-id]');
+    if (!el) return;
+    dragId = el.dataset.id;
+    el.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', dragId);
+  });
+  root.addEventListener('dragend', (e) => {
+    const el = e.target.closest('[data-id]');
+    if (el) el.classList.remove('dragging');
+    root.querySelectorAll('.items.drag-over').forEach((n) => n.classList.remove('drag-over'));
+  });
+  root.addEventListener('dragover', (e) => {
+    const list = e.target.closest('[data-section]');
+    if (!list) return;
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    list.classList.add('drag-over');
+  });
+  root.addEventListener('dragleave', (e) => {
+    const list = e.target.closest('[data-section]');
+    if (list && !list.contains(e.relatedTarget)) list.classList.remove('drag-over');
+  });
+  root.addEventListener('drop', (e) => {
+    const list = e.target.closest('[data-section]');
+    if (!list) return;
+    e.preventDefault();
+    list.classList.remove('drag-over');
+    const id = dragId || e.dataTransfer.getData('text/plain');
+    if (!id) return;
+    const found = findPlanItem(id);
+    if (!found) return;
+    const targetSection = list.dataset.section;
+    const [item] = planState[found.section].splice(found.idx, 1);
+    const overEl = e.target.closest('[data-id]');
+    let insertAt = planState[targetSection].length;
+    if (overEl && overEl.dataset.id !== id) {
+      insertAt = planState[targetSection].findIndex((it) => it._id === overEl.dataset.id);
+      if (insertAt === -1) insertAt = planState[targetSection].length;
+    }
+    planState[targetSection].splice(insertAt, 0, item);
+    dragId = null;
+    renderPlanBoard(root);
+  });
+}
+
+function draggableItemHtml(it, numbered) {
+  return (
+    '<li class="item" draggable="true" data-id="' + it._id + '">' +
+      '<div class="item-title">' + escapeHtml(numbered) + badgesFor(it.tags) + '</div>' +
+      (it.hours != null ? '<div class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</div>' : '') +
+    '</li>'
+  );
+}
+
+function personCardDraggable(name, section, capacity) {
+  const items = planState[section];
+  const hours = planSectionHours(section);
+  const cls = barClass(hours, capacity);
+  const pct = Math.min(100, (hours / capacity) * 100);
+  const rows = items.length
+    ? items.map((it, i) => draggableItemHtml(it, (i + 1) + '. ' + it.text)).join('')
     : '<div class="empty">Fara task-uri.</div>';
   return (
     '<div class="card">' +
       '<div class="person-name">' + name + '</div>' +
-      '<div class="hours-row"><span class="hours-val">' + person.hours.toFixed(2).replace('.', ',') + 'h</span>' +
-      '<span class="hours-cap">/ ' + person.capacity + 'h</span></div>' +
+      '<div class="hours-row"><span class="hours-val">' + hours.toFixed(2).replace('.', ',') + 'h</span>' +
+      '<span class="hours-cap">/ ' + capacity + 'h</span></div>' +
       '<div class="bar ' + cls + '"><span style="width:' + pct + '%"></span></div>' +
-      '<ul class="items">' + items + '</ul>' +
+      '<ul class="items" data-section="' + section + '">' + rows + '</ul>' +
     '</div>'
   );
 }
 
-function croitSection(croit) {
-  const rows = croit.length
-    ? croit.map((t, i) => (
-        '<div class="backlog-row">' +
-          '<span class="order-tag">' + (t.orderName ? escapeHtml(t.orderName) : '') + '</span>' +
-          '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(t.name.replace(/^\d+\.\s*/, '')) + badgesFor(t.tags) + '</span>' +
+function carlSectionDraggable() {
+  const items = planState.carl;
+  const rows = items.length
+    ? items.map((it, i) => (
+        '<div class="backlog-row item" draggable="true" data-id="' + it._id + '">' +
+          '<span class="order-tag">' + (it.orderName ? escapeHtml(it.orderName) : '') + '</span>' +
+          '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(it.text) + badgesFor(it.tags) + '</span>' +
         '</div>'
       )).join('')
     : '<div class="empty">Nimic in coada -- Carl e la zi.</div>';
   return (
     '<section class="block card">' +
-      '<div class="block-header"><h2>Carl -- ' + croit.length + ' in asteptare</h2></div>' +
-      '<div class="backlog-list">' + rows + '</div>' +
+      '<div class="block-header"><h2>Carl -- ' + items.length + ' in asteptare</h2></div>' +
+      '<div class="backlog-list items" data-section="carl">' + rows + '</div>' +
     '</section>'
   );
+}
+
+function resetPlanOrder() {
+  planState = buildPlanState(planDataCache);
+  renderPlanBoard(document.getElementById('root-production'));
+}
+
+function promptFallback(json) {
+  window.prompt('Copiaza manual (Cmd/Ctrl+C):', json);
+}
+
+function copyPlanOverride() {
+  const payload = {
+    planDate: planDataCache.planDate,
+    felicia: planState.felicia.map((it) => it.text),
+    flori: planState.flori.map((it) => it.text),
+    carl: planState.carl.map((it) => it.text),
+  };
+  const json = JSON.stringify(payload, null, 2);
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(json).then(
+      () => alert('Ordine copiata in clipboard -- trimite-o ca sa devina permanenta.'),
+      () => promptFallback(json)
+    );
+  } else {
+    promptFallback(json);
+  }
 }
 
 function croitBufferSection(buffer) {
@@ -438,6 +580,17 @@ function escapeHtml(s) {
 }
 
 function renderProduction(data, root) {
+  planDataCache = data;
+  planState = buildPlanState(data);
+  if (!root.dataset.dragBound) {
+    attachDragHandlers(root);
+    root.dataset.dragBound = '1';
+  }
+  renderPlanBoard(root);
+}
+
+function renderPlanBoard(root) {
+  const data = planDataCache;
   const planDate = new Date(data.planDate + 'T00:00:00');
   const now = new Date();
   const fmtFull = (d) => d.toLocaleDateString('ro-RO', { weekday: 'long', day: 'numeric', month: 'long' });
@@ -454,14 +607,17 @@ function renderProduction(data, root) {
           data.unmatchedProducts.map((u) => '<div class="item-sub">' + escapeHtml(u) + '</div>').join('') +
         '</div>'
       : '') +
-    '<div style="display:flex;justify-content:flex-end;margin-bottom:16px">' +
+    '<div class="plan-toolbar">' +
+      '<button class="plan-btn" onclick="resetPlanOrder()">Reseteaza ordinea</button>' +
+      '<button class="plan-btn" onclick="copyPlanOverride()">Copiaza ordinea</button>' +
       '<button class="push-btn" onclick="pushToAsana()">Publica pe Asana</button>' +
     '</div>' +
+    '<div class="item-sub" style="margin-bottom:12px">Poti trage randurile ca sa reordonezi sau sa le muti intre Felicia / Flori / Carl -- e doar un preview local (nu se salveaza singur, se suprascrie la urmatorul refresh). "Copiaza ordinea" iti da un JSON de trimis ca sa devina permanent.</div>' +
     '<div class="grid-two">' +
-      personCard('Felicia', data.felicia) +
-      personCard('Flori', data.flori) +
+      personCardDraggable('Felicia', 'felicia', data.felicia.capacity) +
+      personCardDraggable('Flori', 'flori', data.flori.capacity) +
     '</div>' +
-    croitSection(data.croit || []) +
+    carlSectionDraggable() +
     croitBufferSection(data.croitBuffer || []);
 }
 
