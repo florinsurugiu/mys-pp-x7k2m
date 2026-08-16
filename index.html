@@ -92,6 +92,12 @@
   .item-title { color: var(--text); flex: 1; text-align: left; }
   .item-sub { color: var(--text-faint); font-size: 0.76rem; }
   .item-hours { font-variant-numeric: tabular-nums; color: var(--text-dim); white-space: nowrap; }
+  .delete-btn {
+    appearance: none; border: none; background: none; color: var(--text-faint);
+    font-size: 1.1rem; line-height: 1; cursor: pointer; padding: 2px 6px; flex: 0 0 auto;
+    border-radius: 6px;
+  }
+  .delete-btn:hover { color: var(--danger, #e05252); background: rgba(224,82,82,0.12); }
   .badge {
     display: inline-flex; align-items: center; justify-content: center; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.03em;
     text-transform: uppercase; padding: 3px 6px; border-radius: 4px; margin-left: 6px;
@@ -154,6 +160,7 @@
   }
   .backlog-row:last-child { border-bottom: none; }
   .order-tag { font-variant-numeric: tabular-nums; color: var(--text-faint); font-size: 0.76rem; flex: 0 0 76px; padding-top: 1px; }
+  .order-tag-popup { cursor: pointer; text-decoration: underline dotted; padding: 6px 4px; margin: -6px -4px; display: inline-block; }
   .backlog-main { flex: 1; min-width: 0; }
 
   .empty { color: var(--text-faint); font-size: 0.85rem; padding: 6px 0; }
@@ -184,6 +191,17 @@
   .icon-btn.spinning { animation: icon-spin .6s linear; }
   @keyframes icon-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
   .settings-btn.active { background: var(--accent-dim); border-color: var(--accent); }
+
+  .order-popup-backdrop {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 200;
+    display: flex; align-items: center; justify-content: center; padding: 24px;
+  }
+  .order-popup {
+    background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px 20px; min-width: 200px; max-width: 320px;
+  }
+  .order-popup-row { padding: 6px 0; font-size: 0.95rem; }
+  .order-popup-row + .order-popup-row { border-top: 1px solid var(--border); }
 
   .push-btn {
     appearance: none; border: 1px solid var(--accent); background: var(--accent-dim); color: var(--accent);
@@ -640,15 +658,31 @@ function attachDragHandlers(root) {
     if (!found) return;
     const prevRects = captureRects(root);
     const targetSection = list.dataset.section;
-    const [item] = planState[found.section].splice(found.idx, 1);
     const overEl = hoverEl;
     const overPos = hoverPos;
-    let insertAt = planState[targetSection].length;
-    if (overEl && overEl.dataset.id !== id) {
-      const idx = planState[targetSection].findIndex((it) => it._id === overEl.dataset.id);
-      insertAt = idx === -1 ? planState[targetSection].length : (overPos === 'after' ? idx + 1 : idx);
+    const computeInsertAt = () => {
+      let at = planState[targetSection].length;
+      if (overEl && overEl.dataset.id !== id) {
+        const idx = planState[targetSection].findIndex((it) => it._id === overEl.dataset.id);
+        at = idx === -1 ? planState[targetSection].length : (overPos === 'after' ? idx + 1 : idx);
+      }
+      return at;
+    };
+    // Carl inca nu a taiat bucata -- o tragere de la el la o fata e doar o
+    // avanpremiera a ce urmeaza (acelasi principiu ca umplerea automata la
+    // 7h din backend), nu o reasignare -- ramane si in coada lui pana o
+    // taie el efectiv. Intre fete, sau in interiorul aceleiasi liste
+    // (reordonare), ramane o mutare normala.
+    if (found.section === 'carl' && targetSection !== 'carl') {
+      const original = planState.carl[found.idx];
+      const insertAt = computeInsertAt();
+      const copy = { ...original, _id: targetSection + '-copy-' + Date.now() + '-' + Math.random().toString(36).slice(2) };
+      planState[targetSection].splice(insertAt, 0, copy);
+    } else {
+      const [item] = planState[found.section].splice(found.idx, 1);
+      const insertAt = computeInsertAt();
+      planState[targetSection].splice(insertAt, 0, item);
     }
-    planState[targetSection].splice(insertAt, 0, item);
     dragId = null;
     clearHoverIndicator();
     renderPlanBoard(root);
@@ -659,14 +693,57 @@ function attachDragHandlers(root) {
 const ICON_GRIP = '<svg width="10" height="14" viewBox="0 0 10 16" fill="currentColor"><circle cx="3" cy="2.5" r="1.3"/><circle cx="7" cy="2.5" r="1.3"/><circle cx="3" cy="8" r="1.3"/><circle cx="7" cy="8" r="1.3"/><circle cx="3" cy="13.5" r="1.3"/><circle cx="7" cy="13.5" r="1.3"/></svg>';
 const DRAG_HANDLE = '<span class="drag-handle" draggable="true" title="trage pt reordonare">' + ICON_GRIP + '</span>';
 
+// Numele task-ului e chiar link-ul catre comanda (nu un badge separat ca la
+// Carl) -- fetele dau click direct pe text. Cu O SINGURA comanda, link
+// direct pe nume. Cu MAI MULTE comenzi unite in acelasi task, un link
+// direct ar fi ambiguu (catre care din ele?) -- numele deschide in schimb
+// un popup cu fiecare numar de comanda, linkuit individual.
 function draggableItemHtml(it, numbered) {
+  const links = it.orderLinks || [];
+  const nameHtml = escapeHtml(numbered);
+  let linkedName = nameHtml;
+  if (links.length === 1) {
+    const color = links[0].cod ? '#e0b84a' : 'inherit';
+    linkedName = links[0].url
+      ? '<a href="' + links[0].url + '" target="_blank" rel="noopener" style="color:' + color + ';text-decoration:underline">' + nameHtml + '</a>'
+      : '<span style="color:' + color + '">' + nameHtml + '</span>';
+  } else if (links.length > 1) {
+    linkedName = '<span class="task-multi-order" data-id="' + it._id + '" onclick="showOrderPopupFor(this)" style="cursor:pointer;text-decoration:underline dotted">' + nameHtml + '</span>';
+  }
   return (
     '<li class="item" data-id="' + it._id + '">' +
       DRAG_HANDLE +
-      '<div class="item-title">' + escapeHtml(numbered) + badgesFor(it.tags) + '</div>' +
+      '<div class="item-title">' + linkedName + badgesFor(it.tags) + '</div>' +
       (it.hours != null ? '<div class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</div>' : '') +
+      '<button class="delete-btn" onclick="removePlanItem(\'' + it._id + '\')" title="Sterge din plan">&times;</button>' +
     '</li>'
   );
+}
+
+function removePlanItem(id) {
+  const found = findPlanItem(id);
+  if (!found) return;
+  const root = document.getElementById('root-production');
+  const prevRects = captureRects(root);
+  planState[found.section].splice(found.idx, 1);
+  renderPlanBoard(root);
+  playFlipAnimation(root, prevRects, null);
+}
+
+function showOrderPopupFor(el) {
+  const found = findPlanItem(el.dataset.id);
+  if (!found) return;
+  const links = planState[found.section][found.idx].orderLinks || [];
+  const rows = links.map(function (o) {
+    const color = o.cod ? '#e0b84a' : 'inherit';
+    const text = '<span style="color:' + color + '">' + escapeHtml(o.name) + '</span>';
+    return '<div class="order-popup-row">' + (o.url ? '<a href="' + o.url + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">' + text + '</a>' : text) + '</div>';
+  }).join('');
+  const backdrop = document.createElement('div');
+  backdrop.className = 'order-popup-backdrop';
+  backdrop.innerHTML = '<div class="order-popup">' + rows + '</div>';
+  backdrop.addEventListener('click', () => backdrop.remove());
+  document.body.appendChild(backdrop);
 }
 
 function personCardDraggable(name, section, capacity) {
@@ -714,6 +791,7 @@ function carlSectionDraggable() {
           '<span class="order-tag">' + orderTagHtml(it.orderLinks) + '</span>' +
           '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(it.text) + badgesFor(it.tags) + '</span>' +
           (it.hours != null ? '<span class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</span>' : '') +
+          '<button class="delete-btn" onclick="removePlanItem(\'' + it._id + '\')" title="Sterge din plan">&times;</button>' +
         '</div>'
       )).join('')
     : '<div class="empty">Nimic in coada -- Carl e la zi.</div>';
