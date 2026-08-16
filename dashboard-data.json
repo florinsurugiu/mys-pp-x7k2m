@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T18:54:22.596Z",
+  "generatedAt": "2026-08-16T19:03:55.457Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "name": "07. W Statue XL buc",
+      "name": "07. W Statue XL",
       "orderName": "#235380",
       "category": "Windbreaker",
       "dueOn": "2026-08-14",
@@ -299,8 +299,8 @@
       ]
     },
     {
-      "name": "T gri 2M + XXL",
-      "orderName": "#235386, #235387, #235389",
+      "name": "T gri 2M + XXL + S",
+      "orderName": "#235386, #235387, #235389, #235406",
       "orderLinks": [
         {
           "name": "#235386",
@@ -315,6 +315,11 @@
         {
           "name": "#235389",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063759405380",
+          "cod": false
+        },
+        {
+          "name": "#235406",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067067957572",
           "cod": false
         }
       ],
@@ -419,13 +424,18 @@
       ]
     },
     {
-      "name": "T negru L",
-      "orderName": "#235402",
+      "name": "T negru L + S",
+      "orderName": "#235402, #235406",
       "orderLinks": [
         {
           "name": "#235402",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066773569860",
           "cod": true
+        },
+        {
+          "name": "#235406",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067067957572",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
@@ -614,7 +624,23 @@
       ]
     },
     {
-      "name": "06. W Statue XL buc",
+      "name": "T alb Split S",
+      "orderName": "#235406",
+      "orderLinks": [
+        {
+          "name": "#235406",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067067957572",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "06. W Statue XL",
       "orderName": null,
       "category": "Windbreaker",
       "dueOn": null,
