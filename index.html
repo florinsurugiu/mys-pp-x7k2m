@@ -491,12 +491,15 @@ function barClass(hours, capacity) {
   if (ratio > 0.92) return 'warn';
   return '';
 }
-const ICON_CLOCK = '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>';
+// Fostul tag "ramas" (ceas) e de fapt un task deja creat pe Asana, nu doar
+// o restanta abstracta -- iconita logo-ului Asana (3 cercuri) marcheaza
+// asta mai clar decat un ceas.
+const ICON_ASANA = '<svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="6.3" r="4.2"/><circle cx="6.3" cy="16.4" r="4.2"/><circle cx="17.7" cy="16.4" r="4.2"/></svg>';
 const ICON_SCISSORS = '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 8.5 19 19M8.5 15.5 19 5"/></svg>';
 
 function badgeHtml(tag) {
   if (tag === 'predicted') return '<span class="badge predicted">PR</span>';
-  if (tag === 'leftover') return '<span class="badge leftover" title="ramas">' + ICON_CLOCK + '</span>';
+  if (tag === 'leftover') return '<span class="badge leftover" title="deja pe Asana">' + ICON_ASANA + '</span>';
   if (tag === 'buffer') return '<span class="badge buffer" title="deja taiat, din buffer">' + ICON_SCISSORS + '</span>';
   if (tag === 'wb') return '<span class="badge wb">WB</span>';
   if (tag === 'shopify') return '<span class="badge shopify">SH</span>';
