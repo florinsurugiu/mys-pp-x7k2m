@@ -102,7 +102,6 @@
   .badge.leftover { background: rgba(240, 165, 90, 0.16); color: var(--warn); }
   .badge.wb { background: rgba(120, 130, 250, 0.16); color: #9aa3ff; }
   .badge.shopify { background: rgba(120, 220, 150, 0.16); color: #7bd99a; }
-  .badge.shopify-cod { background: rgba(240, 200, 90, 0.18); color: #e0b84a; }
   .badge.buffer { background: rgba(160, 165, 175, 0.18); color: var(--text-dim); }
 
   .drag-handle {
@@ -501,7 +500,6 @@ function badgeHtml(tag) {
   if (tag === 'buffer') return '<span class="badge buffer" title="deja taiat, din buffer">' + ICON_SCISSORS + '</span>';
   if (tag === 'wb') return '<span class="badge wb">WB</span>';
   if (tag === 'shopify') return '<span class="badge shopify">SH</span>';
-  if (tag === 'shopify_cod') return '<span class="badge shopify-cod" title="ramburs">SH</span>';
   return '';
 }
 function badgesFor(tags) {
@@ -528,7 +526,7 @@ function buildPlanState(data) {
     hours: typeof it.hours === 'number' ? it.hours : null,
     tags: it.tags || [],
     orderName: it.orderName || null,
-    orderUrl: it.orderUrl || null,
+    orderLinks: it.orderLinks || null,
   }));
   return {
     felicia: mk(data.felicia.items, 'felicia'),
@@ -688,14 +686,20 @@ function personCardDraggable(name, section, capacity) {
 }
 
 // Doar comenzile Shopify (#NNNNNN) au link direct -- nu stim URL-ul
-// portalului de admin Wolf & Badger (WB#...), ramane text simplu.
-// orderUrl vine deja rezolvat din backend (ID-ul intern Shopify, pt link
-// DIRECT catre comanda, nu doar un rezultat de cautare) -- daca lipseste
-// (comanda nu s-a mai gasit, sau W&B), cade pe text simplu.
-function orderTagHtml(orderName, orderUrl) {
-  if (!orderName) return '';
-  if (!orderUrl) return escapeHtml(orderName);
-  return '<a href="' + orderUrl + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">' + escapeHtml(orderName) + '</a>';
+// portalului de admin Wolf & Badger (WB#...), ramane text simplu. Un rand
+// poate uni mai multe comenzi ("#235386, #235390, #235391" -- acelasi
+// model+marime cerute separat) -- fiecare numar e linkuit INDIVIDUAL catre
+// propria lui comanda (nu toate catre prima, cum era inainte), si colorat
+// galben daca acea comanda specifica e cu ramburs (restul raman verzi/gri,
+// nu tot rand-ul).
+function orderTagHtml(orderLinks) {
+  if (!orderLinks || !orderLinks.length) return '';
+  return orderLinks.map(function (o) {
+    var color = o.cod ? '#e0b84a' : 'inherit';
+    var text = '<span style="color:' + color + '">' + escapeHtml(o.name) + '</span>';
+    if (!o.url) return text;
+    return '<a href="' + o.url + '" target="_blank" rel="noopener" style="text-decoration:underline">' + text + '</a>';
+  }).join(', ');
 }
 
 function carlSectionDraggable() {
@@ -704,7 +708,7 @@ function carlSectionDraggable() {
     ? items.map((it, i) => (
         '<div class="backlog-row item" data-id="' + it._id + '">' +
           DRAG_HANDLE +
-          '<span class="order-tag">' + orderTagHtml(it.orderName, it.orderUrl) + '</span>' +
+          '<span class="order-tag">' + orderTagHtml(it.orderLinks) + '</span>' +
           '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(it.text) + badgesFor(it.tags) + '</span>' +
         '</div>'
       )).join('')
