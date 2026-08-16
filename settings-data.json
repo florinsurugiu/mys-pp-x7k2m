@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T20:21:27.734Z",
+  "generatedAt": "2026-08-16T20:48:20.491Z",
   "currency": "RON",
   "products": [
     {
@@ -328,6 +328,14 @@
       "category": "Camasa scurta",
       "hours": 1.4167,
       "cost": 170.92,
+      "costSource": "actual"
+    },
+    {
+      "productId": "gid://shopify/Product/15590401605956",
+      "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
+      "category": "Camasa scurta",
+      "hours": 1.4167,
+      "cost": 120.29,
       "costSource": "actual"
     },
     {
@@ -1789,14 +1797,6 @@
     {
       "productId": "gid://shopify/Product/15585688846660",
       "title": "MYSIMPLICATED® Atelier Division Sleeveless",
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "cost": 120.29,
-      "costSource": "actual"
-    },
-    {
-      "productId": "gid://shopify/Product/15590401605956",
-      "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
       "category": "Tricou simplu",
       "hours": 0.6667,
       "cost": 120.29,
