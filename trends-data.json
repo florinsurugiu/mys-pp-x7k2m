@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T14:10:44.848Z",
+  "generatedAt": "2026-08-16T16:09:43.688Z",
   "periods": {
     "7": {
       "topSellers": [
@@ -32,6 +32,13 @@
           "revenue": 1347
         },
         {
+          "productId": "gid://shopify/Product/15588974428484",
+          "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
+          "units": 3,
+          "revenue": 1107
+        },
+        {
           "productId": "gid://shopify/Product/15630103970116",
           "title": "777 Mauve Oversized T-Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260804_091046_eb491f35-b1c6-41bb-babc-a4f45c9e4cf5.jpg?v=1786555250",
@@ -51,13 +58,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
           "units": 2,
           "revenue": 778.58
-        },
-        {
-          "productId": "gid://shopify/Product/15588974428484",
-          "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-          "units": 2,
-          "revenue": 738
         },
         {
           "productId": "gid://shopify/Product/8555335450948",
@@ -151,13 +151,6 @@
           "revenue": 349
         },
         {
-          "productId": "gid://shopify/Product/9436029976900",
-          "title": "Oversized Cotton White T-shirt Kindness",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
-          "units": 1,
-          "revenue": 259
-        },
-        {
           "productId": "gid://shopify/Product/15614948868420",
           "title": "Reality Grey Oversized T-Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
@@ -196,6 +189,13 @@
           "productId": "gid://shopify/Product/15003405582660",
           "title": "Oversized White T-shirt Need Money for Porsche",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
+          "units": 1,
+          "revenue": 259
+        },
+        {
+          "productId": "gid://shopify/Product/8651638964548",
+          "title": "Oversized Cotton Black T-shirt Spirit",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-black-t-shirt-spirit-809961_4ac1a1a2-36cf-40c8-8674-e3ec268214bb.jpg?v=1770113094",
           "units": 1,
           "revenue": 259
         }
@@ -572,11 +572,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-t-shirt-double-eye-633014_433f8ad5-3a9e-48c5-9e65-f6e343155866.jpg?v=1770114609"
         },
         {
-          "productId": "gid://shopify/Product/8651638964548",
-          "title": "Oversized Cotton Black T-shirt Spirit",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-black-t-shirt-spirit-809961_4ac1a1a2-36cf-40c8-8674-e3ec268214bb.jpg?v=1770113094"
-        },
-        {
           "productId": "gid://shopify/Product/8651674190148",
           "title": "Black Hoodie Mushroom",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_mushrooms_hoodie.jpg?v=1769614342"
@@ -775,6 +770,11 @@
           "productId": "gid://shopify/Product/9436024078660",
           "title": "Oversized Cotton White T-shirt Creative Depart.",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_creative_depart_75565e6f-5544-4b09-983e-15b750604376.jpg?v=1770119338"
+        },
+        {
+          "productId": "gid://shopify/Product/9436029976900",
+          "title": "Oversized Cotton White T-shirt Kindness",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356"
         },
         {
           "productId": "gid://shopify/Product/9436033843524",
@@ -1677,18 +1677,18 @@
           "revenue": 2694
         },
         {
+          "productId": "gid://shopify/Product/15588974428484",
+          "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
+          "units": 7,
+          "revenue": 2583
+        },
+        {
           "productId": "gid://shopify/Product/15590250840388",
           "title": "MYSIMPLICATED® Duality Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
           "units": 4,
           "revenue": 2245.44
-        },
-        {
-          "productId": "gid://shopify/Product/15588974428484",
-          "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-          "units": 6,
-          "revenue": 2214
         },
         {
           "productId": "gid://shopify/Product/14982879248708",
@@ -1773,6 +1773,13 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
           "units": 3,
           "revenue": 837.51
+        },
+        {
+          "productId": "gid://shopify/Product/8651638964548",
+          "title": "Oversized Cotton Black T-shirt Spirit",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-black-t-shirt-spirit-809961_4ac1a1a2-36cf-40c8-8674-e3ec268214bb.jpg?v=1770113094",
+          "units": 3,
+          "revenue": 777
         },
         {
           "productId": "gid://shopify/Product/8649103278404",
@@ -1890,13 +1897,6 @@
           "productId": "gid://shopify/Product/15455588712772",
           "title": "Limited Series Pop Cola 330 Unisex Oversized T-shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4202.jpg?v=1769819654",
-          "units": 2,
-          "revenue": 518
-        },
-        {
-          "productId": "gid://shopify/Product/8651638964548",
-          "title": "Oversized Cotton Black T-shirt Spirit",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-black-t-shirt-spirit-809961_4ac1a1a2-36cf-40c8-8674-e3ec268214bb.jpg?v=1770113094",
           "units": 2,
           "revenue": 518
         },
@@ -3445,6 +3445,13 @@
           "revenue": 3806.48
         },
         {
+          "productId": "gid://shopify/Product/15588974428484",
+          "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
+          "units": 9,
+          "revenue": 3321
+        },
+        {
           "productId": "gid://shopify/Product/15419494531396",
           "title": "Aria Scarf Hoodie",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated784.jpg?v=1766876426",
@@ -3471,13 +3478,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Ivory_tshirt_2_6dfde0fb-9aa9-4429-b43f-e7e4c32c864f.jpg?v=1769606445",
           "units": 10,
           "revenue": 2956.97
-        },
-        {
-          "productId": "gid://shopify/Product/15588974428484",
-          "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-          "units": 8,
-          "revenue": 2952
         },
         {
           "productId": "gid://shopify/Product/15499249942852",
@@ -3585,6 +3585,13 @@
           "revenue": 1595.68
         },
         {
+          "productId": "gid://shopify/Product/8651638964548",
+          "title": "Oversized Cotton Black T-shirt Spirit",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-black-t-shirt-spirit-809961_4ac1a1a2-36cf-40c8-8674-e3ec268214bb.jpg?v=1770113094",
+          "units": 6,
+          "revenue": 1556.7
+        },
+        {
           "productId": "gid://shopify/Product/15585688846660",
           "title": "MYSIMPLICATED® Atelier Division Sleeveless",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260626_202757_9db4d8c4-18e0-4dac-8e48-02dc9f00e621-_1.jpg?v=1786556680",
@@ -3625,13 +3632,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-anxiety.jpg?v=1770118393",
           "units": 5,
           "revenue": 1336.55
-        },
-        {
-          "productId": "gid://shopify/Product/8651638964548",
-          "title": "Oversized Cotton Black T-shirt Spirit",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-black-t-shirt-spirit-809961_4ac1a1a2-36cf-40c8-8674-e3ec268214bb.jpg?v=1770113094",
-          "units": 5,
-          "revenue": 1297.7
         },
         {
           "productId": "gid://shopify/Product/8978697126212",
