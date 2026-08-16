@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T17:59:36.781Z",
+  "generatedAt": "2026-08-16T18:40:22.666Z",
   "currency": "RON",
   "products": [
     {
@@ -511,14 +511,6 @@
       "title": "Sunset Short Sleeve Shirt",
       "category": "Camasa scurta",
       "hours": 1.4167,
-      "cost": 170.92,
-      "costSource": "actual"
-    },
-    {
-      "productId": "gid://shopify/Product/15630103970116",
-      "title": "777 Mauve Oversized T-Shirt",
-      "category": "Camasa Unisex",
-      "hours": 1.5,
       "cost": 170.92,
       "costSource": "actual"
     },
@@ -1592,6 +1584,14 @@
       "category": "Tricou raiat",
       "hours": 1,
       "cost": 120.29,
+      "costSource": "actual"
+    },
+    {
+      "productId": "gid://shopify/Product/15630103970116",
+      "title": "777 Mauve Oversized T-Shirt",
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "cost": 170.92,
       "costSource": "actual"
     },
     {
