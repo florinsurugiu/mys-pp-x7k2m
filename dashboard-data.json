@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T22:09:02.611Z",
+  "generatedAt": "2026-08-16T22:34:31.330Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -349,12 +349,12 @@
       ]
     },
     {
-      "name": "16. W Third Eye 2M + S",
+      "name": "06. W Third Eye 2M + S",
       "orderName": "#235386, #235390, #235391",
       "category": "Windbreaker",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 16,
+      "number": 6,
       "orderLinks": [
         {
           "name": "#235386",
@@ -378,7 +378,7 @@
       ]
     },
     {
-      "name": "03. T ivory miau S + L",
+      "name": "03. T cu tiv miau S + L",
       "orderName": "#235388, #235392",
       "category": "Tricou simplu",
       "dueOn": "2026-08-17",
@@ -402,12 +402,12 @@
       ]
     },
     {
-      "name": "19. T mov XXL + L + XL",
+      "name": "04. T mov XXL + L + XL",
       "orderName": "#235389, #235395, #235398",
       "category": "Tricou simplu",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 19,
+      "number": 4,
       "orderLinks": [
         {
           "name": "#235389",
@@ -431,12 +431,12 @@
       ]
     },
     {
-      "name": "08. C maro balenci XL + XXL",
+      "name": "05. C maro balenci XL + XXL",
       "orderName": "#235398, #235402",
       "category": "Camasa scurta",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 8,
+      "number": 5,
       "orderLinks": [
         {
           "name": "#235398",
@@ -651,12 +651,12 @@
       ]
     },
     {
-      "name": "04. T alb XXL + S + L + M",
+      "name": "10. T alb XXL + S + L + M",
       "orderName": "#235389, #235394, #235399, #235401",
       "category": "Tricou simplu",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 4,
+      "number": 10,
       "orderLinks": [
         {
           "name": "#235389",
@@ -762,13 +762,12 @@
       "name": "X. W Statue XL 2 buc",
       "orderName": null,
       "category": "Windbreaker",
-      "dueOn": "2026-08-14",
-      "leftover": true,
+      "dueOn": null,
+      "leftover": false,
       "number": null,
       "orderLinks": [],
       "hours": 2.5,
       "tags": [
-        "leftover",
         "predicted"
       ]
     }
