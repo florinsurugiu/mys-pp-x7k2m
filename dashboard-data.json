@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T21:25:32.663Z",
+  "generatedAt": "2026-08-16T21:29:29.428Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.8,
+    "hours": 7.05,
     "capacity": 7,
     "items": [
       {
@@ -137,18 +137,18 @@
         ]
       },
       {
-        "title": "01. C water M",
-        "hours": 1.42,
+        "title": "01. B water M",
+        "hours": 1.5,
         "tags": [
           "wb",
           "buffer"
         ]
       },
       {
-        "title": "02. B water M",
-        "hours": 1.5,
+        "title": "02. T mov 2S",
+        "hours": 2,
         "tags": [
-          "wb",
+          "shopify",
           "buffer"
         ]
       },
@@ -160,14 +160,7 @@
         ]
       },
       {
-        "title": "04. T gri 2M",
-        "hours": 1.33,
-        "tags": [
-          "shopify"
-        ]
-      },
-      {
-        "title": "05. C Tigers XS",
+        "title": "04. C Tigers XS",
         "hours": 1.75,
         "tags": [
           "wb"
@@ -176,7 +169,7 @@
     ]
   },
   "flori": {
-    "hours": 7.92,
+    "hours": 7.33,
     "capacity": 7,
     "items": [
       {
@@ -188,7 +181,15 @@
         ]
       },
       {
-        "title": "02. Bermude echoes S,M",
+        "title": "02. C water M",
+        "hours": 1.42,
+        "tags": [
+          "wb",
+          "buffer"
+        ]
+      },
+      {
+        "title": "03. Bermude echoes S,M",
         "hours": 3,
         "tags": [
           "wb",
@@ -196,18 +197,10 @@
         ]
       },
       {
-        "title": "03. Bermude L numbers",
+        "title": "04. Bermude L numbers",
         "hours": 1.5,
         "tags": [
           "wb",
-          "buffer"
-        ]
-      },
-      {
-        "title": "04. T mov 2S",
-        "hours": 2,
-        "tags": [
-          "shopify",
           "buffer"
         ]
       }
