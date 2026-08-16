@@ -698,7 +698,7 @@ function orderTagHtml(orderLinks) {
     var color = o.cod ? '#e0b84a' : 'inherit';
     var text = '<span style="color:' + color + '">' + escapeHtml(o.name) + '</span>';
     if (!o.url) return text;
-    return '<a href="' + o.url + '" target="_blank" rel="noopener" style="text-decoration:underline">' + text + '</a>';
+    return '<a href="' + o.url + '" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">' + text + '</a>';
   }).join(', ');
 }
 
