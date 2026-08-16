@@ -1,16 +1,8 @@
 {
-  "generatedAt": "2026-08-16T10:37:32.682Z",
+  "generatedAt": "2026-08-16T10:56:56.874Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
-    {
-      "productId": "gid://shopify/Product/15588974428484",
-      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-      "category": "Camasa scurta",
-      "size": "XXL",
-      "hours": 1.4167
-    },
     {
       "productId": "gid://shopify/Product/7837843849453",
       "title": "Pink DOER  Windbreaker",
@@ -122,6 +114,14 @@
       "category": "SET: Camasa scurta + Bermude",
       "size": "M",
       "hours": 2.9167
+    },
+    {
+      "productId": "gid://shopify/Product/8978718327108",
+      "title": "Oversized Cotton White T-shirt Spirit",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicatet_tshirt_spirit.jpg?v=1769822867",
+      "category": "Tricou simplu",
+      "size": "S",
+      "hours": 0.6667
     }
   ],
   "felicia": {
@@ -349,8 +349,8 @@
       ]
     },
     {
-      "name": "C mov 777 XXL + L",
-      "orderName": "#235389, #235395",
+      "name": "C mov 777 XXL + L + XL",
+      "orderName": "#235389, #235395, #235398",
       "orderUrl": "https://admin.shopify.com/store/simplicatedhh/orders/11063759405380",
       "category": "Camasa Unisex",
       "leftover": false,
@@ -373,6 +373,16 @@
       "orderName": "#235397",
       "orderUrl": "https://admin.shopify.com/store/simplicatedhh/orders/11065817203012",
       "category": "Camasa Unisex",
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C maro balenci XL",
+      "orderName": "#235398",
+      "orderUrl": "https://admin.shopify.com/store/simplicatedhh/orders/11066230505796",
+      "category": "Camasa scurta",
       "leftover": false,
       "tags": [
         "shopify"
