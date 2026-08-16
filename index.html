@@ -713,6 +713,7 @@ function carlSectionDraggable() {
           DRAG_HANDLE +
           '<span class="order-tag">' + orderTagHtml(it.orderLinks) + '</span>' +
           '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(it.text) + badgesFor(it.tags) + '</span>' +
+          (it.hours != null ? '<span class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</span>' : '') +
         '</div>'
       )).join('')
     : '<div class="empty">Nimic in coada -- Carl e la zi.</div>';
