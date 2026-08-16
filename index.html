@@ -102,6 +102,7 @@
   .badge.leftover { background: rgba(240, 165, 90, 0.16); color: var(--warn); }
   .badge.wb { background: rgba(120, 130, 250, 0.16); color: #9aa3ff; }
   .badge.shopify { background: rgba(120, 220, 150, 0.16); color: #7bd99a; }
+  .badge.shopify-cod { background: rgba(240, 200, 90, 0.18); color: #e0b84a; }
   .badge.buffer { background: rgba(160, 165, 175, 0.18); color: var(--text-dim); }
 
   .drag-handle {
@@ -500,6 +501,7 @@ function badgeHtml(tag) {
   if (tag === 'buffer') return '<span class="badge buffer" title="deja taiat, din buffer">' + ICON_SCISSORS + '</span>';
   if (tag === 'wb') return '<span class="badge wb">WB</span>';
   if (tag === 'shopify') return '<span class="badge shopify">SH</span>';
+  if (tag === 'shopify_cod') return '<span class="badge shopify-cod" title="ramburs">SH</span>';
   return '';
 }
 function badgesFor(tags) {
