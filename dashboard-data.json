@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T21:22:29.595Z",
+  "generatedAt": "2026-08-16T21:25:32.663Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.47,
+    "hours": 7.8,
     "capacity": 7,
     "items": [
       {
@@ -153,18 +153,17 @@
         ]
       },
       {
-        "title": "03. T mov 2S",
-        "hours": 2,
-        "tags": [
-          "shopify",
-          "buffer"
-        ]
-      },
-      {
-        "title": "04. C blue XS",
+        "title": "03. C blue XS",
         "hours": 1.5,
         "tags": [
           "wb"
+        ]
+      },
+      {
+        "title": "04. T gri 2M",
+        "hours": 1.33,
+        "tags": [
+          "shopify"
         ]
       },
       {
@@ -177,7 +176,7 @@
     ]
   },
   "flori": {
-    "hours": 8.42,
+    "hours": 7.92,
     "capacity": 7,
     "items": [
       {
@@ -205,10 +204,11 @@
         ]
       },
       {
-        "title": "04. W Third Eye M",
-        "hours": 2.5,
+        "title": "04. T mov 2S",
+        "hours": 2,
         "tags": [
-          "shopify"
+          "shopify",
+          "buffer"
         ]
       }
     ]
