@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T21:53:51.121Z",
+  "generatedAt": "2026-08-16T22:00:34.357Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -344,73 +344,6 @@
       ]
     },
     {
-      "name": "05. T negru L + S",
-      "orderName": "#235402, #235406",
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 5,
-      "orderLinks": [
-        {
-          "name": "#235402",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066773569860",
-          "cod": true
-        },
-        {
-          "name": "#235406",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067067957572",
-          "cod": false
-        }
-      ],
-      "hours": 1.3334,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "08. C maro balenci XL + XXL",
-      "orderName": "#235398, #235402",
-      "category": "Camasa scurta",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 8,
-      "orderLinks": [
-        {
-          "name": "#235398",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066230505796",
-          "cod": true
-        },
-        {
-          "name": "#235402",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066773569860",
-          "cod": true
-        }
-      ],
-      "hours": 2.8334,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "10. C Complex Minds Checkered M",
-      "orderName": "#235404",
-      "category": "Camasa lunga",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 10,
-      "orderLinks": [
-        {
-          "name": "#235404",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066922271044",
-          "cod": true
-        }
-      ],
-      "hours": 1.75,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "16. W Third Eye 2M + S",
       "orderName": "#235386, #235390, #235391",
       "category": "Windbreaker",
@@ -493,92 +426,68 @@
       ]
     },
     {
-      "name": "01. Hanorac bumbac DEPT. GRAPHITE L",
-      "orderName": "#235403",
-      "category": "Hanorac bumbac",
+      "name": "08. C maro balenci XL + XXL",
+      "orderName": "#235398, #235402",
+      "category": "Camasa scurta",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 1,
+      "number": 8,
       "orderLinks": [
         {
-          "name": "#235403",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066903986500",
-          "cod": false
+          "name": "#235398",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066230505796",
+          "cod": true
+        },
+        {
+          "name": "#235402",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066773569860",
+          "cod": true
         }
       ],
-      "hours": 1,
+      "hours": 2.8334,
       "tags": [
         "shopify"
       ]
     },
     {
-      "name": "02. Hanorac bumbac negru Love XL",
-      "orderName": "#235407",
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 2,
-      "orderLinks": [
-        {
-          "name": "#235407",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
-          "cod": false
-        }
-      ],
-      "hours": 1,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "04. T alb XXL + S + L + M",
-      "orderName": "#235389, #235394, #235399, #235401",
+      "name": "05. T negru L + S",
+      "orderName": "#235402, #235406",
       "category": "Tricou simplu",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 4,
+      "number": 5,
       "orderLinks": [
         {
-          "name": "#235389",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063759405380",
-          "cod": false
+          "name": "#235402",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066773569860",
+          "cod": true
         },
-        {
-          "name": "#235394",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065553912132",
-          "cod": false
-        },
-        {
-          "name": "#235399",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066288144708",
-          "cod": false
-        },
-        {
-          "name": "#235401",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066425475396",
-          "cod": false
-        }
-      ],
-      "hours": 2.6668,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "06. T alb Split S",
-      "orderName": "#235406",
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 6,
-      "orderLinks": [
         {
           "name": "#235406",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067067957572",
           "cod": false
         }
       ],
-      "hours": 0.6667,
+      "hours": 1.3334,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "10. C Complex Minds Checkered M",
+      "orderName": "#235404",
+      "category": "Camasa lunga",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 10,
+      "orderLinks": [
+        {
+          "name": "#235404",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066922271044",
+          "cod": true
+        }
+      ],
+      "hours": 1.75,
       "tags": [
         "shopify"
       ]
@@ -622,6 +531,44 @@
       ]
     },
     {
+      "name": "17. Pant negru Numbers L",
+      "orderName": "#235396",
+      "category": "Pantaloni lungi full print",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 17,
+      "orderLinks": [
+        {
+          "name": "#235396",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065678594372",
+          "cod": false
+        }
+      ],
+      "hours": 1.25,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "02. Hanorac bumbac negru Love XL",
+      "orderName": "#235407",
+      "category": "Hanorac bumbac",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 2,
+      "orderLinks": [
+        {
+          "name": "#235407",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
+          "cod": false
+        }
+      ],
+      "hours": 1,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "12. C maneci detasate 3M + XS",
       "orderName": "#235381, #235392, #235393, #235399",
       "category": "Camasa Unisex",
@@ -656,44 +603,6 @@
       ]
     },
     {
-      "name": "13. C albastru Stripes XL",
-      "orderName": "#235385",
-      "category": "Camasa Unisex",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 13,
-      "orderLinks": [
-        {
-          "name": "#235385",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062478045508",
-          "cod": false
-        }
-      ],
-      "hours": 1.5,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "14. C 3 culori S",
-      "orderName": "#235397",
-      "category": "Camasa Unisex",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 14,
-      "orderLinks": [
-        {
-          "name": "#235397",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065817203012",
-          "cod": false
-        }
-      ],
-      "hours": 1.5,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "15. Bluza alb rupta L + S",
       "orderName": "#235381, #235400",
       "category": "Bluza inimioara / obsidian",
@@ -718,20 +627,111 @@
       ]
     },
     {
-      "name": "17. Pant negru Numbers L",
-      "orderName": "#235396",
-      "category": "Pantaloni lungi full print",
+      "name": "13. C albastru Stripes XL",
+      "orderName": "#235385",
+      "category": "Camasa Unisex",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 17,
+      "number": 13,
       "orderLinks": [
         {
-          "name": "#235396",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065678594372",
+          "name": "#235385",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062478045508",
           "cod": false
         }
       ],
-      "hours": 1.25,
+      "hours": 1.5,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "04. T alb XXL + S + L + M",
+      "orderName": "#235389, #235394, #235399, #235401",
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 4,
+      "orderLinks": [
+        {
+          "name": "#235389",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063759405380",
+          "cod": false
+        },
+        {
+          "name": "#235394",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065553912132",
+          "cod": false
+        },
+        {
+          "name": "#235399",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066288144708",
+          "cod": false
+        },
+        {
+          "name": "#235401",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066425475396",
+          "cod": false
+        }
+      ],
+      "hours": 2.6668,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "14. C 3 culori S",
+      "orderName": "#235397",
+      "category": "Camasa Unisex",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 14,
+      "orderLinks": [
+        {
+          "name": "#235397",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065817203012",
+          "cod": false
+        }
+      ],
+      "hours": 1.5,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "01. Hanorac bumbac DEPT. GRAPHITE L",
+      "orderName": "#235403",
+      "category": "Hanorac bumbac",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 1,
+      "orderLinks": [
+        {
+          "name": "#235403",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066903986500",
+          "cod": false
+        }
+      ],
+      "hours": 1,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "06. T alb Split S",
+      "orderName": "#235406",
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 6,
+      "orderLinks": [
+        {
+          "name": "#235406",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067067957572",
+          "cod": false
+        }
+      ],
+      "hours": 0.6667,
       "tags": [
         "shopify"
       ]
