@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T19:31:34.020Z",
+  "generatedAt": "2026-08-16T19:34:18.079Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 6.22,
+    "hours": 8.8,
     "capacity": 7,
     "items": [
       {
@@ -137,42 +137,7 @@
         ]
       },
       {
-        "title": "01. Bermude L numbers",
-        "hours": 1.5,
-        "tags": [
-          "wb",
-          "buffer"
-        ]
-      },
-      {
-        "title": "02. C water M",
-        "hours": 1.42,
-        "tags": [
-          "wb"
-        ]
-      },
-      {
-        "title": "03. B water M",
-        "hours": 1.5,
-        "tags": [
-          "wb"
-        ]
-      },
-      {
-        "title": "04. C blue XS",
-        "hours": 1.5,
-        "tags": [
-          "wb"
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 6.42,
-    "capacity": 7,
-    "items": [
-      {
-        "title": "01. C numbers M",
+        "title": "01. C water M",
         "hours": 1.42,
         "tags": [
           "wb",
@@ -180,8 +145,8 @@
         ]
       },
       {
-        "title": "02. Bermude echoes S,M",
-        "hours": 3,
+        "title": "02. C numbers M",
+        "hours": 1.42,
         "tags": [
           "wb",
           "buffer"
@@ -194,48 +159,68 @@
           "shopify",
           "buffer"
         ]
+      },
+      {
+        "title": "04. C blue XS",
+        "hours": 1.5,
+        "tags": [
+          "wb"
+        ]
+      },
+      {
+        "title": "05. T alb M",
+        "hours": 0.67,
+        "tags": [
+          "predicted"
+        ]
+      },
+      {
+        "title": "06. Bermude negru MYSIMPLICATED® L",
+        "hours": 1.5,
+        "tags": [
+          "predicted"
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 8.5,
+    "capacity": 7,
+    "items": [
+      {
+        "title": "01. Bermude echoes S,M",
+        "hours": 3,
+        "tags": [
+          "wb",
+          "buffer"
+        ]
+      },
+      {
+        "title": "02. Bermude L numbers",
+        "hours": 1.5,
+        "tags": [
+          "wb",
+          "buffer"
+        ]
+      },
+      {
+        "title": "03. B water M",
+        "hours": 1.5,
+        "tags": [
+          "wb",
+          "buffer"
+        ]
+      },
+      {
+        "title": "04. W Pink M",
+        "hours": 2.5,
+        "tags": [
+          "predicted"
+        ]
       }
     ]
   },
   "croit": [
-    {
-      "name": "09. C water M",
-      "orderName": "WB#3406435",
-      "category": "Camasa scurta",
-      "dueOn": "2026-08-14",
-      "leftover": true,
-      "number": 9,
-      "orderLinks": [
-        {
-          "name": "WB#3406435",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "tags": [
-        "leftover",
-        "wb"
-      ]
-    },
-    {
-      "name": "10. B water M",
-      "orderName": "WB#3406435",
-      "category": "Bermude",
-      "dueOn": "2026-08-14",
-      "leftover": true,
-      "number": 10,
-      "orderLinks": [
-        {
-          "name": "WB#3406435",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "tags": [
-        "leftover",
-        "wb"
-      ]
-    },
     {
       "name": "11. C blue XS",
       "orderName": "WB#3405691",
@@ -252,6 +237,70 @@
       ],
       "tags": [
         "leftover",
+        "wb"
+      ]
+    },
+    {
+      "name": "Denim Jacket Camo Denim M + L",
+      "orderName": "WB#3406435",
+      "orderLinks": [
+        {
+          "name": "WB#3406435",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Denim Jacket",
+      "leftover": false,
+      "tags": [
+        "wb"
+      ]
+    },
+    {
+      "name": "Bermude And Set Numbers L",
+      "orderName": "WB#3406435",
+      "orderLinks": [
+        {
+          "name": "WB#3406435",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Bermude",
+      "leftover": false,
+      "tags": [
+        "wb"
+      ]
+    },
+    {
+      "name": "C And Set Water M",
+      "orderName": "WB#3406435",
+      "orderLinks": [
+        {
+          "name": "WB#3406435",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Camasa scurta",
+      "leftover": false,
+      "tags": [
+        "wb"
+      ]
+    },
+    {
+      "name": "Bermude And Set Water M",
+      "orderName": "WB#3406435",
+      "orderLinks": [
+        {
+          "name": "WB#3406435",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Bermude",
+      "leftover": false,
+      "tags": [
         "wb"
       ]
     },
@@ -518,37 +567,6 @@
       ]
     },
     {
-      "name": "T alb XXL + S + L + M",
-      "orderName": "#235389, #235394, #235399, #235401",
-      "orderLinks": [
-        {
-          "name": "#235389",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063759405380",
-          "cod": false
-        },
-        {
-          "name": "#235394",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065553912132",
-          "cod": false
-        },
-        {
-          "name": "#235399",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066288144708",
-          "cod": false
-        },
-        {
-          "name": "#235401",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066425475396",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "Pant negru Numbers L",
       "orderName": "#235396",
       "orderLinks": [
@@ -614,20 +632,66 @@
     },
     {
       "name": "07. W Statue XL 2 buc",
-      "orderName": "#235380",
+      "orderName": null,
       "category": "Windbreaker",
       "dueOn": "2026-08-14",
       "leftover": true,
       "number": 7,
+      "orderLinks": [],
+      "tags": [
+        "leftover",
+        "predicted"
+      ]
+    },
+    {
+      "name": "T alb 2M + XXL + S + L 🔮",
+      "orderName": "#235389, #235394, #235399, #235401",
       "orderLinks": [
         {
-          "name": "#235380",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11060275478852",
+          "name": "#235389",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063759405380",
+          "cod": false
+        },
+        {
+          "name": "#235394",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065553912132",
+          "cod": false
+        },
+        {
+          "name": "#235399",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066288144708",
+          "cod": false
+        },
+        {
+          "name": "#235401",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066425475396",
           "cod": false
         }
       ],
+      "category": "Tricou simplu",
+      "leftover": false,
       "tags": [
-        "leftover",
+        "shopify",
+        "predicted"
+      ]
+    },
+    {
+      "name": "Bermude negru MYSIMPLICATED® L 🔮",
+      "orderName": null,
+      "orderLinks": [],
+      "category": "Bermude",
+      "leftover": false,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "W Pink M 🔮",
+      "orderName": null,
+      "orderLinks": [],
+      "category": "Windbreaker",
+      "leftover": false,
+      "tags": [
         "predicted"
       ]
     }
