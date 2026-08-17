@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T07:38:07.710Z",
+  "generatedAt": "2026-08-17T08:22:38.683Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 9,
+    "hours": 8.33,
     "capacity": 7.2,
     "items": [
       {
@@ -161,15 +161,15 @@
         ]
       },
       {
-        "title": "01. T cu tiv miau S + L",
-        "hours": 1.33,
+        "title": "01. Bermude Echoes M + S",
+        "hours": 3,
         "tags": [
-          "shopify"
+          "wb"
         ]
       },
       {
-        "title": "02. Bermude Echoes M + S",
-        "hours": 3,
+        "title": "02. T L",
+        "hours": 0.67,
         "tags": [
           "wb"
         ]
@@ -314,66 +314,20 @@
       ]
     },
     {
-      "name": "02. T gri 2M + XXL + S",
-      "orderName": "#235386, #235387, #235389, #235406",
+      "name": "T L",
+      "orderName": "WB#3411461",
+      "orderLinks": [
+        {
+          "name": "WB#3411461",
+          "url": null,
+          "cod": false
+        }
+      ],
       "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
+      "hours": 0.6667,
       "leftover": false,
-      "number": 2,
-      "orderLinks": [
-        {
-          "name": "#235386",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062857957700",
-          "cod": true
-        },
-        {
-          "name": "#235387",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063481467204",
-          "cod": false
-        },
-        {
-          "name": "#235389",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063759405380",
-          "cod": false
-        },
-        {
-          "name": "#235406",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067067957572",
-          "cod": false
-        }
-      ],
-      "hours": 2.6668,
       "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "06. W Third Eye 2M + S",
-      "orderName": "#235386, #235390, #235391",
-      "category": "Windbreaker",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 6,
-      "orderLinks": [
-        {
-          "name": "#235386",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062857957700",
-          "cod": true
-        },
-        {
-          "name": "#235390",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11064652202308",
-          "cod": false
-        },
-        {
-          "name": "#235391",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065354420548",
-          "cod": false
-        }
-      ],
-      "hours": 7.5,
-      "tags": [
-        "shopify"
+        "wb"
       ]
     },
     {
@@ -766,6 +720,32 @@
       "number": null,
       "orderLinks": [],
       "hours": 2.5,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "02. T gri 2M + XXL + S",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 2,
+      "orderLinks": [],
+      "hours": 2.6668,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "06. W Third Eye 2M + S",
+      "orderName": null,
+      "category": "Windbreaker",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 6,
+      "orderLinks": [],
+      "hours": 7.5,
       "tags": [
         "predicted"
       ]
