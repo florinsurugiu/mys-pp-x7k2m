@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T14:50:59.513Z",
+  "generatedAt": "2026-08-17T15:09:34.076Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.75,
+    "hours": 8.92,
     "capacity": 7.2,
     "items": [
       {
@@ -133,6 +133,7 @@
         "hours": 0.67,
         "tags": [
           "leftover",
+          "asana",
           "buffer"
         ]
       },
@@ -141,6 +142,7 @@
         "hours": 1.5,
         "tags": [
           "leftover",
+          "asana",
           "buffer"
         ]
       },
@@ -149,6 +151,7 @@
         "hours": 0.67,
         "tags": [
           "leftover",
+          "asana",
           "buffer"
         ]
       },
@@ -174,51 +177,6 @@
         ]
       },
       {
-        "title": "04. X. Maiou alb 2L",
-        "hours": 2,
-        "tags": [
-          "wb",
-          "predicted"
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 10.3,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "02. H layers M",
-        "hours": 1,
-        "tags": [
-          "leftover",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. Bermude Echoes 2M + S",
-        "hours": 0.9,
-        "tags": [
-          "leftover",
-          "buffer",
-          "wb"
-        ]
-      },
-      {
-        "title": "02. C Tigers XS",
-        "hours": 1.75,
-        "tags": [
-          "wb"
-        ]
-      },
-      {
-        "title": "03. T ivory miau S",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ]
-      },
-      {
         "title": "04. Bermude negru MYSIMPLICATED® L",
         "hours": 1.5,
         "tags": [
@@ -231,12 +189,53 @@
         "tags": [
           "shopify"
         ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 10.55,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "02. H layers M",
+        "hours": 1,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
       },
       {
-        "title": "06. X. C gri balenci XL",
+        "title": "01. Bermude Echoes 2M + S",
+        "hours": 0.9,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer",
+          "wb"
+        ]
+      },
+      {
+        "title": "02. C albastru Stripes XL",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ]
+      },
+      {
+        "title": "03. X. C gri balenci XL",
         "hours": 1.42,
         "tags": [
           "shopify"
+        ]
+      },
+      {
+        "title": "04. T mauve XXL + L",
+        "hours": 3.33,
+        "tags": [
+          "wb",
+          "buffer",
+          "predicted"
         ]
       }
     ]
@@ -294,23 +293,6 @@
       ]
     },
     {
-      "name": "C Tigers XS",
-      "orderName": "WB#3407557",
-      "orderLinks": [
-        {
-          "name": "WB#3407557",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Camasa lunga",
-      "hours": 1.75,
-      "leftover": false,
-      "tags": [
-        "wb"
-      ]
-    },
-    {
       "name": "T L",
       "orderName": "WB#3411461",
       "orderLinks": [
@@ -325,23 +307,6 @@
       "leftover": false,
       "tags": [
         "wb"
-      ]
-    },
-    {
-      "name": "T ivory miau S",
-      "orderName": "#235388",
-      "orderLinks": [
-        {
-          "name": "#235388",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063687086404",
-          "cod": true
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
       ]
     },
     {
@@ -411,6 +376,7 @@
       ],
       "hours": 1.4167,
       "tags": [
+        "asana",
         "shopify"
       ]
     },
@@ -430,6 +396,7 @@
       ],
       "hours": 1.4167,
       "tags": [
+        "asana",
         "shopify"
       ]
     },
@@ -449,6 +416,7 @@
       ],
       "hours": 1.25,
       "tags": [
+        "asana",
         "shopify"
       ]
     },
@@ -468,6 +436,7 @@
       ],
       "hours": 1,
       "tags": [
+        "asana",
         "shopify"
       ]
     },
@@ -487,6 +456,7 @@
       ],
       "hours": 1.5,
       "tags": [
+        "asana",
         "shopify"
       ]
     },
@@ -506,6 +476,7 @@
       ],
       "hours": 1.5,
       "tags": [
+        "asana",
         "shopify"
       ]
     },
@@ -524,6 +495,24 @@
         }
       ],
       "hours": 0.6667,
+      "tags": [
+        "asana",
+        "shopify"
+      ]
+    },
+    {
+      "name": "T mov L",
+      "orderName": "#235395",
+      "orderLinks": [
+        {
+          "name": "#235395",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
       "tags": [
         "shopify"
       ]
@@ -555,6 +544,7 @@
       "orderLinks": [],
       "hours": 2.5,
       "tags": [
+        "asana",
         "predicted"
       ]
     },
@@ -568,6 +558,7 @@
       "orderLinks": [],
       "hours": 1.3334,
       "tags": [
+        "asana",
         "predicted"
       ]
     },
@@ -581,6 +572,7 @@
       "orderLinks": [],
       "hours": 1.3334,
       "tags": [
+        "asana",
         "predicted"
       ]
     },
@@ -594,19 +586,7 @@
       "orderLinks": [],
       "hours": 7.5,
       "tags": [
-        "predicted"
-      ]
-    },
-    {
-      "name": "04. T mauve XXL + L",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 4,
-      "orderLinks": [],
-      "hours": 1.3334,
-      "tags": [
+        "asana",
         "predicted"
       ]
     },
@@ -620,6 +600,7 @@
       "orderLinks": [],
       "hours": 2.8334,
       "tags": [
+        "asana",
         "predicted"
       ]
     },
@@ -633,6 +614,7 @@
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "asana",
         "predicted"
       ]
     },
@@ -646,6 +628,7 @@
       "orderLinks": [],
       "hours": 3,
       "tags": [
+        "asana",
         "predicted"
       ]
     },
@@ -659,6 +642,7 @@
       "orderLinks": [],
       "hours": 2.6668,
       "tags": [
+        "asana",
         "predicted"
       ]
     },
@@ -672,6 +656,7 @@
       "orderLinks": [],
       "hours": 1,
       "tags": [
+        "asana",
         "predicted"
       ]
     }
@@ -683,7 +668,8 @@
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
-        "predicted"
+        "predicted",
+        "asana"
       ]
     },
     {
@@ -692,7 +678,8 @@
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
-        "predicted"
+        "predicted",
+        "asana"
       ]
     },
     {
@@ -701,7 +688,8 @@
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
-        "predicted"
+        "predicted",
+        "asana"
       ]
     },
     {
@@ -710,7 +698,8 @@
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
-        "predicted"
+        "predicted",
+        "asana"
       ]
     }
   ],
