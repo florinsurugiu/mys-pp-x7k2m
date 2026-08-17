@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T10:20:09.273Z",
+  "generatedAt": "2026-08-17T10:54:15.282Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -422,40 +422,6 @@
       ]
     },
     {
-      "name": "10. T alb XXL + S + L + M",
-      "orderName": "#235389, #235394, #235399, #235401",
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 10,
-      "orderLinks": [
-        {
-          "name": "#235389",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063759405380",
-          "cod": false
-        },
-        {
-          "name": "#235394",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065553912132",
-          "cod": false
-        },
-        {
-          "name": "#235399",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066288144708",
-          "cod": false
-        },
-        {
-          "name": "#235401",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066425475396",
-          "cod": false
-        }
-      ],
-      "hours": 2.6668,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "14. C 3 culori S",
       "orderName": "#235397",
       "category": "Camasa Unisex",
@@ -470,25 +436,6 @@
         }
       ],
       "hours": 1.5,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "17. Hanorac bumbac DEPT. GRAPHITE L",
-      "orderName": "#235403",
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 17,
-      "orderLinks": [
-        {
-          "name": "#235403",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066903986500",
-          "cod": false
-        }
-      ],
-      "hours": 1,
       "tags": [
         "shopify"
       ]
@@ -660,6 +607,32 @@
       "number": 15,
       "orderLinks": [],
       "hours": 3,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "10. T alb XXL + S + L + M",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 10,
+      "orderLinks": [],
+      "hours": 2.6668,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "17. Hanorac bumbac DEPT. GRAPHITE L",
+      "orderName": null,
+      "category": "Hanorac bumbac",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 17,
+      "orderLinks": [],
+      "hours": 1,
       "tags": [
         "predicted"
       ]
