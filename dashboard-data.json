@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T09:06:07.233Z",
+  "generatedAt": "2026-08-17T09:54:44.906Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,12 +125,20 @@
     }
   ],
   "felicia": {
-    "hours": 7.92,
+    "hours": 8.58,
     "capacity": 7.2,
     "items": [
       {
-        "title": "03. T mov 2S",
+        "title": "0. T mov 2S",
         "hours": 1,
+        "tags": [
+          "leftover",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. Maiou alb L",
+        "hours": 0.67,
         "tags": [
           "leftover",
           "buffer"
@@ -153,15 +161,15 @@
         ]
       },
       {
-        "title": "01. C Tigers XS",
-        "hours": 1.75,
+        "title": "01. Bermude Echoes M + S",
+        "hours": 3,
         "tags": [
           "wb"
         ]
       },
       {
-        "title": "02. Bermude Echoes M + S",
-        "hours": 3,
+        "title": "02. C Tigers XS",
+        "hours": 1.75,
         "tags": [
           "wb"
         ]
@@ -216,45 +224,6 @@
   },
   "croit": [
     {
-      "name": "0. C blue XS",
-      "orderName": "WB#3405691",
-      "category": "Camasa Unisex",
-      "dueOn": "2026-08-14",
-      "leftover": true,
-      "number": 0,
-      "orderLinks": [
-        {
-          "name": "WB#3405691",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "hours": 1.5,
-      "tags": [
-        "leftover",
-        "wb"
-      ]
-    },
-    {
-      "name": "11. C Tigers XS",
-      "orderName": "WB#3407557",
-      "category": "Camasa lunga",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 11,
-      "orderLinks": [
-        {
-          "name": "WB#3407557",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "hours": 1.75,
-      "tags": [
-        "wb"
-      ]
-    },
-    {
       "name": "Bermude Echoes M + S",
       "orderName": "WB#3406435",
       "orderLinks": [
@@ -300,6 +269,23 @@
       ],
       "category": "Bermude",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "wb"
+      ]
+    },
+    {
+      "name": "C Tigers XS",
+      "orderName": "WB#3407557",
+      "orderLinks": [
+        {
+          "name": "WB#3407557",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Camasa lunga",
+      "hours": 1.75,
       "leftover": false,
       "tags": [
         "wb"
@@ -395,7 +381,7 @@
       ]
     },
     {
-      "name": "09. C maro MYSIMPLICATED® Atelier Division Sleeveless XL",
+      "name": "09. C maro Sleeveless XL",
       "orderName": "#235405",
       "category": "Camasa scurta",
       "dueOn": "2026-08-17",
@@ -557,6 +543,45 @@
         }
       ],
       "hours": 0.6667,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Pant albastru Faces XL",
+      "orderName": "#235409",
+      "orderLinks": [
+        {
+          "name": "#235409",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067893973316",
+          "cod": false
+        }
+      ],
+      "category": "Pantaloni lungi full print",
+      "hours": 1.25,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T alb L + XL",
+      "orderName": "#235410, #235411",
+      "orderLinks": [
+        {
+          "name": "#235410",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067909931332",
+          "cod": false
+        },
+        {
+          "name": "#235411",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067944370500",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 1.3334,
+      "leftover": false,
       "tags": [
         "shopify"
       ]
