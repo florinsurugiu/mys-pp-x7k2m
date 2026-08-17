@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T23:17:03.457Z",
+  "generatedAt": "2026-08-17T23:29:07.127Z",
   "planDate": "2026-08-18",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -332,57 +332,6 @@
       ]
     },
     {
-      "name": "Bermude BBC negru L",
-      "orderName": "#235412",
-      "orderLinks": [
-        {
-          "name": "#235412",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068211265860",
-          "cod": true
-        }
-      ],
-      "category": "Bermude",
-      "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H Layers V2 M",
-      "orderName": "#235412",
-      "orderLinks": [
-        {
-          "name": "#235412",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068211265860",
-          "cod": true
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Negru Superwoman L",
-      "orderName": "#235414",
-      "orderLinks": [
-        {
-          "name": "#235414",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068437856580",
-          "cod": true
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "X. C gri balenci XL",
       "orderName": "#235385",
       "category": "Camasa scurta",
@@ -399,91 +348,6 @@
       "hours": 1.4167,
       "tags": [
         "asana",
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Mov L",
-      "orderName": "#235395",
-      "orderLinks": [
-        {
-          "name": "#235395",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Alb XL",
-      "orderName": "#235411",
-      "orderLinks": [
-        {
-          "name": "#235411",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067944370500",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Maro S",
-      "orderName": "#235415",
-      "orderLinks": [
-        {
-          "name": "#235415",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Mov S",
-      "orderName": "#235415",
-      "orderLinks": [
-        {
-          "name": "#235415",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-          "cod": false
-        }
-      ],
-      "category": "Tricou raiat",
-      "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "W 3rd eye S",
-      "orderName": "#235415",
-      "orderLinks": [
-        {
-          "name": "#235415",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
         "shopify"
       ]
     },
@@ -614,6 +478,142 @@
       "tags": [
         "asana",
         "predicted"
+      ]
+    },
+    {
+      "name": "Bermude BBC negru L",
+      "orderName": "#235412",
+      "orderLinks": [
+        {
+          "name": "#235412",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068211265860",
+          "cod": true
+        }
+      ],
+      "category": "Bermude",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H Layers V2 M",
+      "orderName": "#235412",
+      "orderLinks": [
+        {
+          "name": "#235412",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068211265860",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru Superwoman L",
+      "orderName": "#235414",
+      "orderLinks": [
+        {
+          "name": "#235414",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068437856580",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Mov L",
+      "orderName": "#235395",
+      "orderLinks": [
+        {
+          "name": "#235395",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Alb XL",
+      "orderName": "#235411",
+      "orderLinks": [
+        {
+          "name": "#235411",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067944370500",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Maro S",
+      "orderName": "#235415",
+      "orderLinks": [
+        {
+          "name": "#235415",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Mov S",
+      "orderName": "#235415",
+      "orderLinks": [
+        {
+          "name": "#235415",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+          "cod": false
+        }
+      ],
+      "category": "Tricou raiat",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W 3rd eye S",
+      "orderName": "#235415",
+      "orderLinks": [
+        {
+          "name": "#235415",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
       ]
     }
   ],
