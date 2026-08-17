@@ -104,6 +104,10 @@
     vertical-align: middle; line-height: 1;
   }
   .badge svg { display: block; width: 13px; height: 13px; overflow: visible; }
+  /* asanaPrefixBadge places this badge before the task number instead of
+     after the name -- margin-left (for the normal trailing position)
+     leaves no gap before the number that follows it, so flip the gap. */
+  .badge-prefix { margin-left: 0; margin-right: 6px; }
   .badge.predicted { background: var(--accent-dim); color: var(--accent); }
   .badge.leftover { background: none; }
   .badge.wb { background: rgba(120, 130, 250, 0.16); color: #9aa3ff; }
@@ -529,7 +533,13 @@ function badgeHtml(tag) {
   return '';
 }
 function badgesFor(tags) {
-  return (tags || []).map(badgeHtml).join('');
+  return (tags || []).filter((t) => t !== 'asana').map(badgeHtml).join('');
+}
+// The "already on Asana" marker reads better as a prefix right before the
+// task, not buried after the name alongside the other status badges.
+function asanaPrefixBadge(tags) {
+  if (!(tags || []).includes('asana')) return '';
+  return badgeHtml('asana').replace('class="badge leftover"', 'class="badge leftover badge-prefix"');
 }
 
 // --- Plan editabil (drag & drop) ------------------------------------
@@ -718,7 +728,7 @@ function draggableItemHtml(it, numbered) {
   return (
     '<li class="item" data-id="' + it._id + '">' +
       DRAG_HANDLE +
-      '<div class="item-title">' + linkedName + badgesFor(it.tags) + '</div>' +
+      '<div class="item-title">' + asanaPrefixBadge(it.tags) + linkedName + badgesFor(it.tags) + '</div>' +
       (it.hours != null ? '<div class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</div>' : '') +
       '<button class="delete-btn" onclick="removePlanItem(\'' + it._id + '\')" title="Sterge din plan">&times;</button>' +
     '</li>'
@@ -794,7 +804,7 @@ function carlSectionDraggable() {
         '<div class="backlog-row item" data-id="' + it._id + '">' +
           DRAG_HANDLE +
           '<span class="order-tag">' + orderTagHtml(it.orderLinks) + '</span>' +
-          '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(it.text) + badgesFor(it.tags) + '</span>' +
+          '<span class="backlog-main">' + asanaPrefixBadge(it.tags) + (i + 1) + '. ' + escapeHtml(it.text) + badgesFor(it.tags) + '</span>' +
           (it.hours != null ? '<span class="item-hours">' + it.hours.toFixed(2).replace('.', ',') + 'h</span>' : '') +
           '<button class="delete-btn" onclick="removePlanItem(\'' + it._id + '\')" title="Sterge din plan">&times;</button>' +
         '</div>'
@@ -818,7 +828,7 @@ function croitBufferSection(buffer) {
     ? buffer.map((t, i) => (
         '<div class="backlog-row">' +
           '<span class="order-tag">' + (t.orderName ? escapeHtml(t.orderName) : '') + '</span>' +
-          '<span class="backlog-main">' + (i + 1) + '. ' + escapeHtml(t.name.replace(/^\d+\.\s*/, '')) + badgesFor(t.tags) + '</span>' +
+          '<span class="backlog-main">' + asanaPrefixBadge(t.tags) + (i + 1) + '. ' + escapeHtml(t.name.replace(/^\d+\.\s*/, '')) + badgesFor(t.tags) + '</span>' +
         '</div>'
       )).join('')
     : '<div class="empty">Fara buffer -- nimic deja taiat in stoc.</div>';
