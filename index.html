@@ -284,11 +284,6 @@
   }
   .zero-row:last-child { border-bottom: none; }
   .zero-row input[type="checkbox"] { flex: 0 0 auto; width: 16px; height: 16px; accent-color: var(--accent); }
-  .future-items { border-top: 1px dashed var(--border); margin-top: 10px; padding-top: 4px; }
-  .future-item {
-    display: flex; justify-content: space-between; align-items: baseline; gap: 10px;
-    padding: 6px 0; font-size: 0.84rem; color: var(--text-dim);
-  }
   @media (max-width: 860px) {
     table.trend td:first-child { justify-content: flex-start; }
     table.trend .prod-cell { justify-content: flex-start; text-align: left; }
@@ -756,27 +751,7 @@ function showOrderPopupFor(el) {
   document.body.appendChild(backdrop);
 }
 
-function futureItemsHtml(futureItems) {
-  if (!futureItems || !futureItems.length) return '';
-  // Deja task-uri reale pe Asana (incomplete), doar ca due_on e in viitor
-  // -- nu conteaza in orele/bara de azi (motiv corect), dar merchantul
-  // trebuie sa le vada TOT undeva, altfel arata ca si cum nu exista deloc
-  // desi le vede pe Asana. Read-only (nu se pot trage), separat vizual de
-  // planul de azi.
-  return (
-    '<div class="future-items">' +
-      '<div class="item-sub" style="margin:10px 0 6px">Deja pe Asana, pt alta zi</div>' +
-      futureItems.map((f) => (
-        '<div class="future-item">' +
-          '<span>' + escapeHtml(f.title) + '</span>' +
-          '<span class="item-sub">' + fmtDate(f.dueOn + 'T00:00:00') + (f.hours != null ? ' &middot; ' + f.hours.toFixed(2).replace('.', ',') + 'h' : '') + '</span>' +
-        '</div>'
-      )).join('') +
-    '</div>'
-  );
-}
-
-function personCardDraggable(name, section, capacity, futureItems) {
+function personCardDraggable(name, section, capacity) {
   const items = planState[section];
   const hours = planSectionHours(section);
   const cls = barClass(hours, capacity);
@@ -791,7 +766,6 @@ function personCardDraggable(name, section, capacity, futureItems) {
       '<span class="hours-cap">/ ' + capacity + 'h</span></div>' +
       '<div class="bar ' + cls + '"><span style="width:' + pct + '%"></span></div>' +
       '<ul class="items" data-section="' + section + '">' + rows + '</ul>' +
-      futureItemsHtml(futureItems) +
     '</div>'
   );
 }
@@ -891,8 +865,8 @@ function renderPlanBoard(root) {
       '<button class="push-btn" onclick="pushToAsana()">Publica pe Asana</button>' +
     '</div>' +
     '<div class="grid-two">' +
-      personCardDraggable('Felicia', 'felicia', data.felicia.capacity, data.felicia.futureItems) +
-      personCardDraggable('Flori', 'flori', data.flori.capacity, data.flori.futureItems) +
+      personCardDraggable('Felicia', 'felicia', data.felicia.capacity) +
+      personCardDraggable('Flori', 'flori', data.flori.capacity) +
     '</div>' +
     carlSectionDraggable() +
     croitBufferSection(data.croitBuffer || []) +
@@ -1756,30 +1730,56 @@ function loadAtelierNames() {
   }
 }
 
-function saveAtelierName(productId, value) {
+// Cheia e TITLUL Shopify, nu productId -- config.mjs's TITLE_OVERRIDES
+// (unde ajunge in final) e el insusi keyed pe titlu, deci un M/F cu titlu
+// IDENTIC (acelasi design, doar 2 listari separate) se aplica automat la
+// amandoua cu o singura intrare, fara nicio grupare separata de tinut minte.
+function saveAtelierName(title, value) {
   const names = loadAtelierNames();
   if (value.trim()) {
-    names[productId] = value;
+    names[title] = value;
   } else {
-    delete names[productId];
+    delete names[title];
   }
   localStorage.setItem(LS_ATELIER_NAMES_KEY, JSON.stringify(names));
   updateAtelierProgress();
+}
+
+// Titlul vine dintr-un data-attribute (HTML-decodat de browser automat),
+// nu interpolat direct intr-un string JS in markup -- sigur chiar daca
+// titlul contine apostrof sau ghilimele.
+function saveAtelierNameFromInput(el) {
+  saveAtelierName(el.dataset.title, el.value);
+}
+
+// "(customisable)" nu e un produs propriu-zis de croit/cusut (e optiunea
+// de personalizare generica), nu are sens sa apara in lista de denumit.
+function atelierEditableProducts() {
+  const seen = new Set();
+  const out = [];
+  for (const p of settingsDataCache?.products || []) {
+    if (/\(customisable\)/i.test(p.title)) continue;
+    if (seen.has(p.title)) continue;
+    seen.add(p.title);
+    out.push(p);
+  }
+  return out;
 }
 
 function updateAtelierProgress() {
   const el = document.getElementById('atelier-progress');
   if (!el || !settingsDataCache) return;
   const names = loadAtelierNames();
-  const filled = settingsDataCache.products.filter((p) => (names[p.productId] || '').trim()).length;
-  el.textContent = filled + ' / ' + settingsDataCache.products.length + ' completate';
+  const products = atelierEditableProducts();
+  const filled = products.filter((p) => (names[p.title] || '').trim()).length;
+  el.textContent = filled + ' / ' + products.length + ' completate';
 }
 
 function exportAtelierNames() {
   const names = loadAtelierNames();
-  const rows = (settingsDataCache?.products || [])
-    .filter((p) => (names[p.productId] || '').trim())
-    .map((p) => ({ productId: p.productId, shopifyTitle: p.title, atelierName: names[p.productId].trim() }));
+  const rows = atelierEditableProducts()
+    .filter((p) => (names[p.title] || '').trim())
+    .map((p) => ({ shopifyTitle: p.title, atelierName: names[p.title].trim() }));
   if (!rows.length) {
     alert('Nimic de exportat -- completeaza cel putin o denumire mai intai.');
     return;
@@ -1806,7 +1806,7 @@ function importAtelierNamesFile(input) {
       const rows = JSON.parse(reader.result);
       const names = loadAtelierNames();
       for (const row of rows) {
-        if (row.productId && row.atelierName) names[row.productId] = row.atelierName;
+        if (row.shopifyTitle && row.atelierName) names[row.shopifyTitle] = row.atelierName;
       }
       localStorage.setItem(LS_ATELIER_NAMES_KEY, JSON.stringify(names));
       renderSettingsAtelier(settingsDataCache, document.getElementById('settings-subpanel'));
@@ -1844,7 +1844,7 @@ function filterSettingsAtelier() {
   const list = document.getElementById('atelier-list');
   if (!list || !settingsDataCache) return;
   const names = loadAtelierNames();
-  const filtered = settingsDataCache.products.filter(
+  const filtered = atelierEditableProducts().filter(
     (p) => !q || p.title.toLowerCase().includes(q) || p.category.toLowerCase().includes(q)
   );
   list.innerHTML = filtered.length
@@ -1855,8 +1855,8 @@ function filterSettingsAtelier() {
             '<div style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + escapeHtml(p.title) + '</div>' +
             '<div class="item-sub">' + escapeHtml(p.category) + '</div>' +
           '</div>' +
-          '<input class="form-input" style="max-width:220px" placeholder="denumire atelier..." value="' + escapeHtml(names[p.productId] || '') + '" ' +
-            'oninput="saveAtelierName(\'' + p.productId + '\', this.value)">' +
+          '<input class="form-input" style="max-width:220px" placeholder="denumire atelier..." value="' + escapeHtml(names[p.title] || '') + '" ' +
+            'data-title="' + escapeHtml(p.title) + '" oninput="saveAtelierNameFromInput(this)">' +
         '</div>'
       )).join('')
     : '<div class="empty">Niciun produs gasit.</div>';
