@@ -1664,7 +1664,7 @@ function setSettingsSubTab(tab) {
 function renderSettings(data, root) {
   settingsDataCache = data;
   const subTabBtns =
-    '<button class="period-btn' + (settingsSubTab === 'categorii' ? ' active' : '') + '" onclick="setSettingsSubTab(\'categorii\')">Categorii</button>' +
+    '<button class="period-btn' + (settingsSubTab === 'categorii' ? ' active' : '') + '" onclick="setSettingsSubTab(\'categorii\')">Cost &amp; Time</button>' +
     '<button class="period-btn' + (settingsSubTab === 'atelier' ? ' active' : '') + '" onclick="setSettingsSubTab(\'atelier\')">Denumiri atelier</button>';
   root.innerHTML =
     '<div class="period-filter" style="margin-bottom:16px">' + subTabBtns + '</div>' +
@@ -1676,11 +1676,98 @@ function renderSettings(data, root) {
   }
 }
 
+// --- Cost & Time (ore/cost pe categorie, editabile) --------------------
+// Valorile afisate vin din config.mjs (CATEGORY_HOURS) si din costul mediu
+// calculat -- comerciantul poate propune o valoare noua aici (editare
+// locala, ca la denumiri atelier), apoi exporta un fisier de trimis
+// inapoi ca sa fie aplicata efectiv in cod. Nu schimba nimic live singur.
+const LS_CATEGORY_OVERRIDES_KEY = 'mys_category_overrides_v1';
+
+function loadCategoryOverrides() {
+  try {
+    return JSON.parse(localStorage.getItem(LS_CATEGORY_OVERRIDES_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function saveCategoryOverride(category, field, value) {
+  const overrides = loadCategoryOverrides();
+  const num = value.trim() === '' ? null : Number(value);
+  if (num == null || Number.isNaN(num)) {
+    if (overrides[category]) delete overrides[category][field];
+    if (overrides[category] && !Object.keys(overrides[category]).length) delete overrides[category];
+  } else {
+    overrides[category] = overrides[category] || {};
+    overrides[category][field] = num;
+  }
+  localStorage.setItem(LS_CATEGORY_OVERRIDES_KEY, JSON.stringify(overrides));
+  updateCategoryOverrideProgress();
+}
+
+function updateCategoryOverrideProgress() {
+  const el = document.getElementById('category-override-progress');
+  if (!el) return;
+  const count = Object.keys(loadCategoryOverrides()).length;
+  el.textContent = count + ' categorii modificate';
+}
+
+function exportCategoryOverrides() {
+  const overrides = loadCategoryOverrides();
+  const rows = Object.entries(overrides).map(([category, fields]) => ({ category, ...fields }));
+  if (!rows.length) {
+    alert('Nimic de exportat -- modifica cel putin o valoare mai intai.');
+    return;
+  }
+  const blob = new Blob([JSON.stringify(rows, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'cost-time-' + new Date().toISOString().slice(0, 10) + '.json';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function importCategoryOverridesFile(input) {
+  const file = input.files?.[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const rows = JSON.parse(reader.result);
+      const overrides = loadCategoryOverrides();
+      for (const row of rows) {
+        if (!row.category) continue;
+        overrides[row.category] = overrides[row.category] || {};
+        if (row.hours != null) overrides[row.category].hours = Number(row.hours);
+        if (row.cost != null) overrides[row.category].cost = Number(row.cost);
+      }
+      localStorage.setItem(LS_CATEGORY_OVERRIDES_KEY, JSON.stringify(overrides));
+      renderSettingsCategorii(settingsDataCache, document.getElementById('settings-subpanel'));
+    } catch (e) {
+      alert('Fisier invalid: ' + e.message);
+    }
+  };
+  reader.readAsText(file);
+  input.value = '';
+}
+
 function renderSettingsCategorii(data, root) {
   const unknownCount = data.products.filter((p) => p.costSource === 'unknown').length;
   root.innerHTML =
-    '<div class="meta" style="margin-bottom:12px">' + data.products.length + ' produse active &middot; generat ' + fmtDateTime(data.generatedAt) +
-      (unknownCount > 0 ? ' &middot; <span style="color:var(--warn)">' + unknownCount + ' fara cost cunoscut</span>' : '') +
+    '<div class="card" style="margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">' +
+      '<div>' +
+        '<div class="meta">' + data.products.length + ' produse active &middot; generat ' + fmtDateTime(data.generatedAt) +
+          (unknownCount > 0 ? ' &middot; <span style="color:var(--warn)">' + unknownCount + ' fara cost cunoscut</span>' : '') +
+        '</div>' +
+        '<div style="font-weight:700;font-size:1rem" id="category-override-progress"></div>' +
+      '</div>' +
+      '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+        '<label class="plan-btn" style="cursor:pointer">Importa<input type="file" accept="application/json" style="display:none" onchange="importCategoryOverridesFile(this)"></label>' +
+        '<button class="push-btn" onclick="exportCategoryOverrides()">Exporta fisier</button>' +
+      '</div>' +
     '</div>' +
     '<div class="form-row" style="margin-bottom:16px">' +
       '<input class="form-input" id="settings-search" placeholder="Cauta categorie..." style="flex:1;min-width:220px" oninput="filterSettings()">' +
@@ -1689,6 +1776,7 @@ function renderSettingsCategorii(data, root) {
       '<thead><tr><th>Categorie</th><th>Produse</th><th>Timp productie</th><th>Cost mediu</th><th>Sursa cost</th></tr></thead>' +
       '<tbody id="settings-tbody"></tbody>' +
     '</table></div>';
+  updateCategoryOverrideProgress();
   filterSettings();
 }
 
@@ -1698,19 +1786,37 @@ function filterSettings() {
   if (!tbody || !settingsDataCache) return;
   const categories = groupSettingsByCategory(settingsDataCache.products);
   const filtered = categories.filter((c) => !q || c.category.toLowerCase().includes(q));
+  const overrides = loadCategoryOverrides();
   tbody.innerHTML = filtered.length
-    ? filtered.map((c) => (
-        '<tr>' +
-          '<td data-label="Categorie" style="text-align:left">' + escapeHtml(c.category) + '</td>' +
-          '<td data-label="Produse">' + c.count + '</td>' +
-          '<td data-label="Timp productie">' + (c.hours != null ? c.hours.toFixed(2) + 'h' : 'n/a') + '</td>' +
-          '<td data-label="Cost mediu">' + (c.avgCost != null ? fmtMoney(c.avgCost) : 'n/a') + '</td>' +
-          '<td data-label="Sursa cost"><span class="status-chip ' + (c.allActual ? 'confirmat' : 'probabil') + '">' +
-            (c.allActual ? 'real' : 'partial estimat') +
-          '</span></td>' +
-        '</tr>'
-      )).join('')
+    ? filtered.map((c) => {
+        const override = overrides[c.category] || {};
+        const hoursVal = override.hours != null ? override.hours : c.hours;
+        const costVal = override.cost != null ? override.cost : c.avgCost;
+        return (
+          '<tr>' +
+            '<td data-label="Categorie" style="text-align:left">' + escapeHtml(c.category) + '</td>' +
+            '<td data-label="Produse">' + c.count + '</td>' +
+            '<td data-label="Timp productie">' +
+              '<input class="form-input" type="number" step="0.01" min="0" style="width:90px;text-align:right" ' +
+                'value="' + (hoursVal != null ? hoursVal : '') + '" placeholder="n/a" ' +
+                'data-category="' + escapeHtml(c.category) + '" data-field="hours" onchange="saveCategoryOverrideFromInput(this)">h' +
+            '</td>' +
+            '<td data-label="Cost mediu">' +
+              '<input class="form-input" type="number" step="0.01" min="0" style="width:100px;text-align:right" ' +
+                'value="' + (costVal != null ? costVal.toFixed(2) : '') + '" placeholder="n/a" ' +
+                'data-category="' + escapeHtml(c.category) + '" data-field="cost" onchange="saveCategoryOverrideFromInput(this)"> RON' +
+            '</td>' +
+            '<td data-label="Sursa cost"><span class="status-chip ' + (override.cost != null ? 'confirmat' : c.allActual ? 'confirmat' : 'probabil') + '">' +
+              (override.cost != null ? 'modificat' : c.allActual ? 'real' : 'partial estimat') +
+            '</span></td>' +
+          '</tr>'
+        );
+      }).join('')
     : '<tr><td colspan="5"><div class="empty">Nicio categorie gasita.</div></td></tr>';
+}
+
+function saveCategoryOverrideFromInput(el) {
+  saveCategoryOverride(el.dataset.category, el.dataset.field, el.value);
 }
 
 // --- Denumiri atelier -------------------------------------------------
