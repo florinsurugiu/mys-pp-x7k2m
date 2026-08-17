@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T12:31:57.975Z",
+  "generatedAt": "2026-08-17T13:24:51.031Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.75,
+    "hours": 8.42,
     "capacity": 7.2,
     "items": [
       {
@@ -175,8 +175,8 @@
         ]
       },
       {
-        "title": "03. Hanorac bumbac gri 3--1 Layered V2 M",
-        "hours": 1,
+        "title": "03. T ivory miau S",
+        "hours": 0.67,
         "tags": [
           "shopify"
         ]
@@ -184,12 +184,20 @@
     ]
   },
   "flori": {
-    "hours": 8.92,
+    "hours": 7.92,
     "capacity": 7.2,
     "items": [
       {
-        "title": "02. Maiou alb L",
+        "title": "01. T negru L",
         "hours": 0.67,
+        "tags": [
+          "leftover",
+          "buffer"
+        ]
+      },
+      {
+        "title": "02. H layers M",
+        "hours": 1,
         "tags": [
           "leftover",
           "buffer"
@@ -209,14 +217,6 @@
         "hours": 1.75,
         "tags": [
           "wb"
-        ]
-      },
-      {
-        "title": "03. X. Maiou alb 2L",
-        "hours": 2,
-        "tags": [
-          "wb",
-          "predicted"
         ]
       }
     ]
@@ -308,6 +308,23 @@
       ]
     },
     {
+      "name": "T ivory miau S",
+      "orderName": "#235388",
+      "orderLinks": [
+        {
+          "name": "#235388",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063687086404",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "Bermude negru MYSIMPLICATED® L",
       "orderName": "#235412",
       "orderLinks": [
@@ -361,12 +378,12 @@
       ]
     },
     {
-      "name": "04. C maro Sleeveless XL",
+      "name": "05. C maro Sleeveless XL",
       "orderName": "#235405",
       "category": "Camasa scurta",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 4,
+      "number": 5,
       "orderLinks": [
         {
           "name": "#235405",
@@ -557,7 +574,7 @@
       ]
     },
     {
-      "name": "04. T cu tiv miau S + L",
+      "name": "04. T mauve XXL + L",
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-17",
@@ -565,19 +582,6 @@
       "number": 4,
       "orderLinks": [],
       "hours": 1.3334,
-      "tags": [
-        "predicted"
-      ]
-    },
-    {
-      "name": "04. T mov XXL + L + XL",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 4,
-      "orderLinks": [],
-      "hours": 2.0000999999999998,
       "tags": [
         "predicted"
       ]
@@ -596,12 +600,12 @@
       ]
     },
     {
-      "name": "05. T negru L + S",
+      "name": "02. T negru 2L",
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 5,
+      "number": 2,
       "orderLinks": [],
       "hours": 1.3334,
       "tags": [
