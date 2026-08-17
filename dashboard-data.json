@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T23:43:10.352Z",
+  "generatedAt": "2026-08-17T23:51:17.653Z",
   "planDate": "2026-08-18",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.5,
+    "hours": 8.83,
     "capacity": 7.2,
     "items": [
       {
@@ -165,36 +165,37 @@
         ]
       },
       {
-        "title": "01. C 3 culori S",
-        "hours": 1.5,
+        "title": "01. Pant Numbers L",
+        "hours": 1.25,
+        "tags": [
+          "shopify",
+          "buffer"
+        ]
+      },
+      {
+        "title": "02. H Layers V2 M",
+        "hours": 1,
         "tags": [
           "shopify"
         ]
       },
       {
-        "title": "02. Bermude BBC negru L",
-        "hours": 1.5,
-        "tags": [
-          "shopify"
-        ]
-      },
-      {
-        "title": "03. T Negru Superwoman L",
+        "title": "03. T Alb XL",
         "hours": 0.67,
         "tags": [
           "shopify"
         ]
       },
       {
-        "title": "04. T Mov L",
-        "hours": 0.67,
+        "title": "04. T Mov S",
+        "hours": 1,
         "tags": [
           "shopify"
         ]
       },
       {
-        "title": "05. T Maro S",
-        "hours": 0.67,
+        "title": "05. X. C gri balenci XL",
+        "hours": 1.42,
         "tags": [
           "shopify"
         ]
@@ -202,9 +203,18 @@
     ]
   },
   "flori": {
-    "hours": 8.25,
+    "hours": 8.92,
     "capacity": 7.2,
     "items": [
+      {
+        "title": "02. H layers V2 M",
+        "hours": 1,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
       {
         "title": "03. Maiou Alb L",
         "hours": 0.5,
@@ -215,17 +225,8 @@
         ]
       },
       {
-        "title": "C fara maneci maro XL",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. H Layers V2 2M",
-        "hours": 2,
+        "title": "01. T Maro S + XL",
+        "hours": 2.08,
         "tags": [
           "leftover",
           "asana",
@@ -234,11 +235,10 @@
         ]
       },
       {
-        "title": "02. Pant Numbers L",
-        "hours": 1.25,
+        "title": "02. C 3 culori S",
+        "hours": 1.5,
         "tags": [
-          "shopify",
-          "buffer"
+          "shopify"
         ]
       },
       {
@@ -249,15 +249,22 @@
         ]
       },
       {
-        "title": "04. T Alb XL",
+        "title": "04. Bermude BBC negru L",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ]
+      },
+      {
+        "title": "05. T Negru Superwoman L",
         "hours": 0.67,
         "tags": [
           "shopify"
         ]
       },
       {
-        "title": "05. X. C gri balenci XL",
-        "hours": 1.42,
+        "title": "06. T Mov L",
+        "hours": 0.67,
         "tags": [
           "shopify"
         ]
