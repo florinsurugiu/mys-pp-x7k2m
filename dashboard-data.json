@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-08-17T09:54:44.906Z",
+  "generatedAt": "2026-08-17T10:20:09.273Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
+    {
+      "productId": "gid://shopify/Product/15588974428484",
+      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
+      "category": "Camasa scurta",
+      "size": "XXL",
+      "hours": 1.4167
+    },
     {
       "productId": "gid://shopify/Product/7837843849453",
       "title": "Pink DOER  Windbreaker",
@@ -42,6 +50,14 @@
       "category": "Tricou raiat",
       "size": "S",
       "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/15588974428484",
+      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
+      "category": "Camasa scurta",
+      "size": "XL",
+      "hours": 1.4167
     },
     {
       "productId": "gid://shopify/Product/8612489199940",
@@ -106,26 +122,10 @@
       "category": "Tricou simplu",
       "size": "XL",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/9074625380676",
-      "title": "Pop Cola Mix Trousers Ribbed Fabric",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/popcola5443_016c563b-0c2b-4537-a245-4da06ae8ae77.jpg?v=1770335453",
-      "category": "Pantaloni lungi full print",
-      "size": "XL",
-      "hours": 1.25
-    },
-    {
-      "productId": "gid://shopify/Product/15585688846660",
-      "title": "MYSIMPLICATED® Atelier Division Sleeveless",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260626_202757_9db4d8c4-18e0-4dac-8e48-02dc9f00e621-_1.jpg?v=1786556680",
-      "category": "Tricou simplu",
-      "size": "XXL",
-      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 8.58,
+    "hours": 8.25,
     "capacity": 7.2,
     "items": [
       {
@@ -139,6 +139,22 @@
       {
         "title": "01. Maiou alb L",
         "hours": 0.67,
+        "tags": [
+          "leftover",
+          "buffer"
+        ]
+      },
+      {
+        "title": "02. T mov XL + L + XXL",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "buffer"
+        ]
+      },
+      {
+        "title": "0. Elastic XL pant lung + eticheta XXL ",
+        "hours": 2,
         "tags": [
           "leftover",
           "buffer"
@@ -161,14 +177,7 @@
         ]
       },
       {
-        "title": "01. Bermude Echoes M + S",
-        "hours": 3,
-        "tags": [
-          "wb"
-        ]
-      },
-      {
-        "title": "02. C Tigers XS",
+        "title": "01. C Tigers XS",
         "hours": 1.75,
         "tags": [
           "wb"
@@ -177,25 +186,9 @@
     ]
   },
   "flori": {
-    "hours": 8.67,
+    "hours": 8.83,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "04. Bermude echoes S,M",
-        "hours": 1.5,
-        "tags": [
-          "leftover",
-          "buffer"
-        ]
-      },
-      {
-        "title": "02. Bermude L numbers",
-        "hours": 1.5,
-        "tags": [
-          "leftover",
-          "buffer"
-        ]
-      },
       {
         "title": "01. C Water 2M",
         "hours": 2.83,
@@ -213,11 +206,12 @@
         ]
       },
       {
-        "title": "03. Maiou alb L",
-        "hours": 1.33,
+        "title": "03. Bermude Echoes 2M + S",
+        "hours": 4.5,
         "tags": [
-          "wb",
-          "predicted"
+          "leftover",
+          "buffer",
+          "wb"
         ]
       }
     ]
@@ -328,35 +322,6 @@
         }
       ],
       "hours": 1.3334,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "04. T mov XXL + L + XL",
-      "orderName": "#235389, #235395, #235398",
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 4,
-      "orderLinks": [
-        {
-          "name": "#235389",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063759405380",
-          "cod": false
-        },
-        {
-          "name": "#235395",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
-          "cod": false
-        },
-        {
-          "name": "#235398",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066230505796",
-          "cod": true
-        }
-      ],
-      "hours": 2.0000999999999998,
       "tags": [
         "shopify"
       ]
@@ -548,23 +513,6 @@
       ]
     },
     {
-      "name": "Pant albastru Faces XL",
-      "orderName": "#235409",
-      "orderLinks": [
-        {
-          "name": "#235409",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067893973316",
-          "cod": false
-        }
-      ],
-      "category": "Pantaloni lungi full print",
-      "hours": 1.25,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T alb L + XL",
       "orderName": "#235410, #235411",
       "orderLinks": [
@@ -634,6 +582,19 @@
       "number": 6,
       "orderLinks": [],
       "hours": 7.5,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "04. T mov XXL + L + XL",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 4,
+      "orderLinks": [],
+      "hours": 2.0000999999999998,
       "tags": [
         "predicted"
       ]
