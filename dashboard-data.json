@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T15:24:09.789Z",
+  "generatedAt": "2026-08-17T15:47:07.323Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -103,9 +103,9 @@
       "productId": "gid://shopify/Product/15586981314884",
       "title": "MYSIMPLICATED® Oversized White Sleeveless Tee",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_133900-_1_23c0fef5-8daf-4b50-a80e-18de863d3966.jpg?v=1786556503",
-      "category": "Tricou simplu",
+      "category": "Maiou",
       "size": "L",
-      "hours": 0.6667
+      "hours": 0.5
     },
     {
       "productId": "gid://shopify/Product/9436029976900",
@@ -125,46 +125,53 @@
     }
   ],
   "felicia": {
-    "hours": 8.92,
+    "hours": 7.83,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. T mov L + XXL",
-        "hours": 0.67,
+        "title": "01. C maro Sleeveless XL",
+        "hours": 1.42,
         "tags": [
-          "leftover",
-          "asana",
+          "shopify",
           "buffer"
         ]
       },
       {
-        "title": "04. C blue XS",
+        "title": "02. C 3 culori S",
         "hours": 1.5,
         "tags": [
-          "leftover",
-          "asana",
-          "buffer"
+          "shopify"
         ]
       },
       {
-        "title": "05. T gri 2M + XXL + S",
-        "hours": 0.67,
+        "title": "03. Hanorac bumbac gri 3--1 Layered V2 M",
+        "hours": 1,
         "tags": [
-          "leftover",
-          "asana",
-          "buffer"
+          "shopify"
         ]
       },
       {
-        "title": "01. T mauve XXL + L",
-        "hours": 1.33,
+        "title": "04. X. C gri balenci XL",
+        "hours": 1.42,
         "tags": [
-          "wb",
-          "buffer"
+          "shopify"
         ]
       },
       {
-        "title": "02. Pant Numbers L",
+        "title": "05. X. W Statue XL 2 buc",
+        "hours": 2.5,
+        "tags": [
+          "predicted"
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 8.08,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "01. Pant Numbers L",
         "hours": 1.25,
         "tags": [
           "shopify",
@@ -172,7 +179,14 @@
         ]
       },
       {
-        "title": "03. C 3 culori S",
+        "title": "02. Bluza Love XL",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ]
+      },
+      {
+        "title": "03. Bermude negru MYSIMPLICATED® L",
         "hours": 1.5,
         "tags": [
           "shopify"
@@ -198,77 +212,24 @@
         "tags": [
           "shopify"
         ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8.83,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "01. C albastru Stripes XL",
-        "hours": 1.5,
-        "tags": [
-          "wb",
-          "buffer"
-        ]
       },
       {
-        "title": "02. C maro Sleeveless XL",
-        "hours": 1.42,
-        "tags": [
-          "shopify"
-        ]
-      },
-      {
-        "title": "03. Hanorac bumbac gri 3--1 Layered V2 M",
+        "title": "07. X. Hanorac bumbac DEPT. GRAPHITE L",
         "hours": 1,
         "tags": [
-          "shopify"
+          "predicted"
         ]
       },
       {
-        "title": "04. Bermude negru MYSIMPLICATED® L",
-        "hours": 1.5,
+        "title": "08. X. Maiou alb 2L",
+        "hours": 1.33,
         "tags": [
-          "shopify"
-        ]
-      },
-      {
-        "title": "05. X. C gri balenci XL",
-        "hours": 1.42,
-        "tags": [
-          "shopify"
-        ]
-      },
-      {
-        "title": "06. X. Maiou alb 2L",
-        "hours": 2,
-        "tags": [
-          "wb",
           "predicted"
         ]
       }
     ]
   },
   "croit": [
-    {
-      "name": "T alb L",
-      "orderName": "WB#3411461",
-      "orderLinks": [
-        {
-          "name": "WB#3411461",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "wb"
-      ]
-    },
     {
       "name": "Bermude negru MYSIMPLICATED® L",
       "orderName": "#235412",
@@ -331,26 +292,6 @@
         {
           "name": "#235385",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062478045508",
-          "cod": false
-        }
-      ],
-      "hours": 1.4167,
-      "tags": [
-        "asana",
-        "shopify"
-      ]
-    },
-    {
-      "name": "05. C maro Sleeveless XL",
-      "orderName": "#235405",
-      "category": "Camasa scurta",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 5,
-      "orderLinks": [
-        {
-          "name": "#235405",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066989674820",
           "cod": false
         }
       ],
@@ -582,6 +523,16 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1217519679818456",
+      "name": "T mauve XXL + L",
+      "orderName": "#235389, #235395, #235398",
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1217537855028712",
       "name": "T gri 2M",
