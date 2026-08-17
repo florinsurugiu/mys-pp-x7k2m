@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T06:34:23.632Z",
+  "generatedAt": "2026-08-17T07:38:07.710Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.97,
+    "hours": 9,
     "capacity": 7.2,
     "items": [
       {
@@ -139,14 +139,6 @@
       {
         "title": "02. B water M",
         "hours": 1.5,
-        "tags": [
-          "leftover",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. C maneci detasate 2M (80%)",
-        "hours": 0.3,
         "tags": [
           "leftover",
           "buffer"
@@ -169,7 +161,14 @@
         ]
       },
       {
-        "title": "01. Bermude Echoes M + S",
+        "title": "01. T cu tiv miau S + L",
+        "hours": 1.33,
+        "tags": [
+          "shopify"
+        ]
+      },
+      {
+        "title": "02. Bermude Echoes M + S",
         "hours": 3,
         "tags": [
           "wb"
