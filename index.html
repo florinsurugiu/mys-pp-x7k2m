@@ -282,6 +282,8 @@
   .trend--funnel .prod-cell span { max-width: 220px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .sortable-th { cursor: pointer; user-select: none; }
   .sortable-th:hover { color: var(--text); }
+  .trend--funnel .funnel-problem-row td { background: color-mix(in srgb, var(--bad) 10%, transparent); }
+  .funnel-problem-flag { flex: 0 0 auto; color: var(--bad); font-size: 0.9rem; }
 
   .prod-thumb { width: 40px; height: 56px; border-radius: 6px; object-fit: cover; object-position: top; background: var(--bg-elevated); flex: 0 0 auto; }
   .prod-thumb-empty { display: inline-block; border: 1px dashed var(--border); }
@@ -2164,10 +2166,20 @@ function renderTrendsPeriod(root) {
     const getter = funnelSortKeys[funnelSort.key] || funnelSortKeys.views;
     return funnelSort.dir === 'desc' ? getter(b) - getter(a) : getter(a) - getter(b);
   });
+  // Auto-flag: enough real traffic (not just 1-2 stray views) but almost
+  // nobody converts -- that's a pricing/description/photo problem, not a
+  // traffic problem, worth a merchant's eye. Thresholds are deliberately
+  // simple/explainable rather than statistically fancy.
+  const FUNNEL_PROBLEM_MIN_VIEWS = 50;
+  const FUNNEL_PROBLEM_MAX_CONVERSION = 1; // percent
+  const isFunnelProblem = (p) => p.views >= FUNNEL_PROBLEM_MIN_VIEWS && funnelConversion(p) < FUNNEL_PROBLEM_MAX_CONVERSION;
+  const funnelProblemCount = sortedFunnelItems.filter(isFunnelProblem).length;
   const funnelRows = sortedFunnelItems.length
     ? sortedFunnelItems.map((p, i) => (
-        '<tr>' +
-          '<td data-label="Produs" style="text-align:left"><div class="prod-cell">' + prodThumb(p.image, p.title) +
+        '<tr class="' + (isFunnelProblem(p) ? 'funnel-problem-row' : '') + '">' +
+          '<td data-label="Produs" style="text-align:left"><div class="prod-cell">' +
+            (isFunnelProblem(p) ? '<span class="funnel-problem-flag" title="Trafic real, aproape nicio conversie">⚠</span>' : '') +
+            prodThumb(p.image, p.title) +
             '<span title="' + escapeHtml(p.title) + '">' + (i + 1) + '. ' + escapeHtml(p.title) + '</span></div></td>' +
           '<td data-label="Vizualiz.">' + p.views + '</td>' +
           '<td data-label="In cos">' + p.addToCart + '</td>' +
@@ -2181,6 +2193,9 @@ function renderTrendsPeriod(root) {
   const funnelPanel =
     '<div class="card" style="margin-bottom:16px">' +
       '<div class="item-sub">Vizualizari (view_item) si adaugari in cos (add_to_cart) din GA4, cumparari din comenzile Shopify reale -- un produs cu multe vizualizari dar putine cumparari arata o problema de pret/descriere, nu lipsa de trafic. Click pe o coloana ca sa sortezi.</div>' +
+      (funnelProblemCount
+        ? '<div style="margin-top:8px;color:var(--bad)">⚠ ' + funnelProblemCount + ' produs(e) cu trafic real (' + FUNNEL_PROBLEM_MIN_VIEWS + '+ vizualizari) dar sub ' + FUNNEL_PROBLEM_MAX_CONVERSION + '% conversie -- marcate mai jos.</div>'
+        : '') +
     '</div>' +
     '<div class="card"><table class="trend trend--funnel">' +
       '<thead><tr><th>Produs</th>' + funnelTh('views', 'Vizualiz.') + funnelTh('addToCart', 'In cos') + funnelTh('purchases', 'Cumparat') + funnelTh('conversion', 'Conv.') + '</tr></thead>' +
