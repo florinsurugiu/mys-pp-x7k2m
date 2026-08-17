@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T11:14:57.860Z",
+  "generatedAt": "2026-08-17T11:41:08.253Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,17 +125,9 @@
     }
   ],
   "felicia": {
-    "hours": 8.25,
+    "hours": 8.33,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "0. T mov 2S",
-        "hours": 1,
-        "tags": [
-          "leftover",
-          "buffer"
-        ]
-      },
       {
         "title": "01. Maiou alb L",
         "hours": 0.67,
@@ -153,7 +145,7 @@
         ]
       },
       {
-        "title": "0. Elastic XL pant lung + eticheta XXL ",
+        "title": "0. Elastic XL pant lung",
         "hours": 2,
         "tags": [
           "leftover",
@@ -177,21 +169,28 @@
         ]
       },
       {
-        "title": "01. C Tigers XS",
-        "hours": 1.75,
+        "title": "01. C Water M",
+        "hours": 1.42,
         "tags": [
           "wb"
+        ]
+      },
+      {
+        "title": "02. X. C gri balenci XL",
+        "hours": 1.42,
+        "tags": [
+          "shopify"
         ]
       }
     ]
   },
   "flori": {
-    "hours": 8.83,
+    "hours": 7.75,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. C Water 2M",
-        "hours": 2.83,
+        "title": "01. Bermude Echoes 2M + S",
+        "hours": 4.5,
         "tags": [
           "leftover",
           "buffer",
@@ -206,11 +205,9 @@
         ]
       },
       {
-        "title": "03. Bermude Echoes 2M + S",
-        "hours": 4.5,
+        "title": "03. C Tigers XS",
+        "hours": 1.75,
         "tags": [
-          "leftover",
-          "buffer",
           "wb"
         ]
       }
@@ -303,12 +300,12 @@
       ]
     },
     {
-      "name": "07. C gri balenci XL",
+      "name": "X. C gri balenci XL",
       "orderName": "#235385",
       "category": "Camasa scurta",
-      "dueOn": "2026-08-17",
+      "dueOn": null,
       "leftover": false,
-      "number": 7,
+      "number": null,
       "orderLinks": [
         {
           "name": "#235385",
@@ -322,12 +319,12 @@
       ]
     },
     {
-      "name": "09. C maro Sleeveless XL",
+      "name": "04. C maro Sleeveless XL",
       "orderName": "#235405",
       "category": "Camasa scurta",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 9,
+      "number": 4,
       "orderLinks": [
         {
           "name": "#235405",
@@ -379,12 +376,12 @@
       ]
     },
     {
-      "name": "13. C albastru Stripes XL",
+      "name": "03. C albastru Stripes XL",
       "orderName": "#235385",
       "category": "Camasa Unisex",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 13,
+      "number": 3,
       "orderLinks": [
         {
           "name": "#235385",
@@ -466,25 +463,25 @@
       ]
     },
     {
-      "name": "01. Maiou alb L",
+      "name": "X. Maiou alb 2L",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
+      "dueOn": null,
       "leftover": false,
-      "number": 1,
+      "number": null,
       "orderLinks": [],
-      "hours": 0.6667,
+      "hours": 1.3334,
       "tags": [
         "predicted"
       ]
     },
     {
-      "name": "02. T gri 2M + XXL + S",
+      "name": "01. T gri 2M + XXL + S",
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 2,
+      "number": 1,
       "orderLinks": [],
       "hours": 2.6668,
       "tags": [
@@ -518,12 +515,12 @@
       ]
     },
     {
-      "name": "03. T offwhite fara tiv XXL",
+      "name": "02. T offwhite fara tiv XXL",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": null,
+      "dueOn": "2026-08-17",
       "leftover": false,
-      "number": 3,
+      "number": 2,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
@@ -544,12 +541,12 @@
       ]
     },
     {
-      "name": "05. C maro balenci XL + XXL",
+      "name": "X. C maro balenci XL + XXL",
       "orderName": null,
       "category": "Camasa scurta",
-      "dueOn": "2026-08-17",
+      "dueOn": null,
       "leftover": false,
-      "number": 5,
+      "number": null,
       "orderLinks": [],
       "hours": 2.8334,
       "tags": [
@@ -570,38 +567,12 @@
       ]
     },
     {
-      "name": "10. C Complex Minds Checkered M",
-      "orderName": null,
-      "category": "Camasa lunga",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 10,
-      "orderLinks": [],
-      "hours": 1.75,
-      "tags": [
-        "predicted"
-      ]
-    },
-    {
-      "name": "12. C maneci detasate 3M + XS",
-      "orderName": null,
-      "category": "Camasa Unisex",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 12,
-      "orderLinks": [],
-      "hours": 6,
-      "tags": [
-        "predicted"
-      ]
-    },
-    {
-      "name": "15. Bluza alb rupta L + S",
+      "name": "X. Bluza alb rupta L + S",
       "orderName": null,
       "category": "Bluza inimioara / obsidian",
-      "dueOn": "2026-08-17",
+      "dueOn": null,
       "leftover": false,
-      "number": 15,
+      "number": null,
       "orderLinks": [],
       "hours": 3,
       "tags": [
@@ -622,12 +593,12 @@
       ]
     },
     {
-      "name": "17. Hanorac bumbac DEPT. GRAPHITE L",
+      "name": "X. Hanorac bumbac DEPT. GRAPHITE L",
       "orderName": null,
       "category": "Hanorac bumbac",
-      "dueOn": "2026-08-17",
+      "dueOn": null,
       "leftover": false,
-      "number": 17,
+      "number": null,
       "orderLinks": [],
       "hours": 1,
       "tags": [
