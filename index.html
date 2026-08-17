@@ -284,6 +284,11 @@
   }
   .zero-row:last-child { border-bottom: none; }
   .zero-row input[type="checkbox"] { flex: 0 0 auto; width: 16px; height: 16px; accent-color: var(--accent); }
+  .future-items { border-top: 1px dashed var(--border); margin-top: 10px; padding-top: 4px; }
+  .future-item {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 10px;
+    padding: 6px 0; font-size: 0.84rem; color: var(--text-dim);
+  }
   @media (max-width: 860px) {
     table.trend td:first-child { justify-content: flex-start; }
     table.trend .prod-cell { justify-content: flex-start; text-align: left; }
@@ -751,7 +756,27 @@ function showOrderPopupFor(el) {
   document.body.appendChild(backdrop);
 }
 
-function personCardDraggable(name, section, capacity) {
+function futureItemsHtml(futureItems) {
+  if (!futureItems || !futureItems.length) return '';
+  // Deja task-uri reale pe Asana (incomplete), doar ca due_on e in viitor
+  // -- nu conteaza in orele/bara de azi (motiv corect), dar merchantul
+  // trebuie sa le vada TOT undeva, altfel arata ca si cum nu exista deloc
+  // desi le vede pe Asana. Read-only (nu se pot trage), separat vizual de
+  // planul de azi.
+  return (
+    '<div class="future-items">' +
+      '<div class="item-sub" style="margin:10px 0 6px">Deja pe Asana, pt alta zi</div>' +
+      futureItems.map((f) => (
+        '<div class="future-item">' +
+          '<span>' + escapeHtml(f.title) + '</span>' +
+          '<span class="item-sub">' + fmtDate(f.dueOn + 'T00:00:00') + (f.hours != null ? ' &middot; ' + f.hours.toFixed(2).replace('.', ',') + 'h' : '') + '</span>' +
+        '</div>'
+      )).join('') +
+    '</div>'
+  );
+}
+
+function personCardDraggable(name, section, capacity, futureItems) {
   const items = planState[section];
   const hours = planSectionHours(section);
   const cls = barClass(hours, capacity);
@@ -766,6 +791,7 @@ function personCardDraggable(name, section, capacity) {
       '<span class="hours-cap">/ ' + capacity + 'h</span></div>' +
       '<div class="bar ' + cls + '"><span style="width:' + pct + '%"></span></div>' +
       '<ul class="items" data-section="' + section + '">' + rows + '</ul>' +
+      futureItemsHtml(futureItems) +
     '</div>'
   );
 }
@@ -865,8 +891,8 @@ function renderPlanBoard(root) {
       '<button class="push-btn" onclick="pushToAsana()">Publica pe Asana</button>' +
     '</div>' +
     '<div class="grid-two">' +
-      personCardDraggable('Felicia', 'felicia', data.felicia.capacity) +
-      personCardDraggable('Flori', 'flori', data.flori.capacity) +
+      personCardDraggable('Felicia', 'felicia', data.felicia.capacity, data.felicia.futureItems) +
+      personCardDraggable('Flori', 'flori', data.flori.capacity, data.flori.futureItems) +
     '</div>' +
     carlSectionDraggable() +
     croitBufferSection(data.croitBuffer || []) +
