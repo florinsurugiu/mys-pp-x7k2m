@@ -1654,8 +1654,29 @@ function groupSettingsByCategory(products) {
     .sort((a, b) => a.category.localeCompare(b.category));
 }
 
+let settingsSubTab = 'categorii';
+
+function setSettingsSubTab(tab) {
+  settingsSubTab = tab;
+  renderSettings(settingsDataCache, document.getElementById('root-settings'));
+}
+
 function renderSettings(data, root) {
   settingsDataCache = data;
+  const subTabBtns =
+    '<button class="period-btn' + (settingsSubTab === 'categorii' ? ' active' : '') + '" onclick="setSettingsSubTab(\'categorii\')">Categorii</button>' +
+    '<button class="period-btn' + (settingsSubTab === 'atelier' ? ' active' : '') + '" onclick="setSettingsSubTab(\'atelier\')">Denumiri atelier</button>';
+  root.innerHTML =
+    '<div class="period-filter" style="margin-bottom:16px">' + subTabBtns + '</div>' +
+    '<div id="settings-subpanel"></div>';
+  if (settingsSubTab === 'atelier') {
+    renderSettingsAtelier(data, document.getElementById('settings-subpanel'));
+  } else {
+    renderSettingsCategorii(data, document.getElementById('settings-subpanel'));
+  }
+}
+
+function renderSettingsCategorii(data, root) {
   const unknownCount = data.products.filter((p) => p.costSource === 'unknown').length;
   root.innerHTML =
     '<div class="meta" style="margin-bottom:12px">' + data.products.length + ' produse active &middot; generat ' + fmtDateTime(data.generatedAt) +
@@ -1690,6 +1711,129 @@ function filterSettings() {
         '</tr>'
       )).join('')
     : '<tr><td colspan="5"><div class="empty">Nicio categorie gasita.</div></td></tr>';
+}
+
+// --- Denumiri atelier -------------------------------------------------
+// Numele scurt "de atelier" (ce citesc de fapt Carl/Felicia/Flori pe task,
+// nu titlul complet Shopify) e momentan hardcodat in config.mjs
+// (TITLE_OVERRIDES) -- nu exista inca un formular ca sa completeze
+// comerciantul toate produsele deodata. Editare locala (persistata in
+// localStorage, ca sa nu se piarda intre reincarcari), apoi export ca
+// fisier JSON de trimis inapoi ca sa fie aplicat in cod.
+const LS_ATELIER_NAMES_KEY = 'mys_atelier_names_v1';
+
+function loadAtelierNames() {
+  try {
+    return JSON.parse(localStorage.getItem(LS_ATELIER_NAMES_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function saveAtelierName(productId, value) {
+  const names = loadAtelierNames();
+  if (value.trim()) {
+    names[productId] = value;
+  } else {
+    delete names[productId];
+  }
+  localStorage.setItem(LS_ATELIER_NAMES_KEY, JSON.stringify(names));
+  updateAtelierProgress();
+}
+
+function updateAtelierProgress() {
+  const el = document.getElementById('atelier-progress');
+  if (!el || !settingsDataCache) return;
+  const names = loadAtelierNames();
+  const filled = settingsDataCache.products.filter((p) => (names[p.productId] || '').trim()).length;
+  el.textContent = filled + ' / ' + settingsDataCache.products.length + ' completate';
+}
+
+function exportAtelierNames() {
+  const names = loadAtelierNames();
+  const rows = (settingsDataCache?.products || [])
+    .filter((p) => (names[p.productId] || '').trim())
+    .map((p) => ({ productId: p.productId, shopifyTitle: p.title, atelierName: names[p.productId].trim() }));
+  if (!rows.length) {
+    alert('Nimic de exportat -- completeaza cel putin o denumire mai intai.');
+    return;
+  }
+  const blob = new Blob([JSON.stringify(rows, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'denumiri-atelier-' + new Date().toISOString().slice(0, 10) + '.json';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+// Reimport -- ca sa poti continua editarea pe alt dispozitiv/browser sau
+// dupa ce localStorage s-a golit, fara sa iei totul de la capat.
+function importAtelierNamesFile(input) {
+  const file = input.files?.[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const rows = JSON.parse(reader.result);
+      const names = loadAtelierNames();
+      for (const row of rows) {
+        if (row.productId && row.atelierName) names[row.productId] = row.atelierName;
+      }
+      localStorage.setItem(LS_ATELIER_NAMES_KEY, JSON.stringify(names));
+      renderSettingsAtelier(settingsDataCache, document.getElementById('settings-subpanel'));
+    } catch (e) {
+      alert('Fisier invalid: ' + e.message);
+    }
+  };
+  reader.readAsText(file);
+  input.value = '';
+}
+
+function renderSettingsAtelier(data, root) {
+  const names = loadAtelierNames();
+  root.innerHTML =
+    '<div class="card" style="margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">' +
+      '<div>' +
+        '<div class="item-sub">Denumirea scurta pe care o citesc Carl/Felicia/Flori pe task, nu titlul complet Shopify</div>' +
+        '<div style="font-weight:700;font-size:1rem" id="atelier-progress"></div>' +
+      '</div>' +
+      '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+        '<label class="plan-btn" style="cursor:pointer">Importa<input type="file" accept="application/json" style="display:none" onchange="importAtelierNamesFile(this)"></label>' +
+        '<button class="push-btn" onclick="exportAtelierNames()">Exporta fisier</button>' +
+      '</div>' +
+    '</div>' +
+    '<div class="form-row" style="margin-bottom:16px">' +
+      '<input class="form-input" id="atelier-search" placeholder="Cauta produs sau categorie..." style="flex:1;min-width:220px" oninput="filterSettingsAtelier()">' +
+    '</div>' +
+    '<div class="card"><div class="zero-list" id="atelier-list"></div></div>';
+  updateAtelierProgress();
+  filterSettingsAtelier();
+}
+
+function filterSettingsAtelier() {
+  const q = (document.getElementById('atelier-search')?.value || '').toLowerCase();
+  const list = document.getElementById('atelier-list');
+  if (!list || !settingsDataCache) return;
+  const names = loadAtelierNames();
+  const filtered = settingsDataCache.products.filter(
+    (p) => !q || p.title.toLowerCase().includes(q) || p.category.toLowerCase().includes(q)
+  );
+  list.innerHTML = filtered.length
+    ? filtered.map((p) => (
+        '<div class="zero-row" style="cursor:default">' +
+          prodThumb(p.image, p.title) +
+          '<div style="flex:1;min-width:0">' +
+            '<div style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + escapeHtml(p.title) + '</div>' +
+            '<div class="item-sub">' + escapeHtml(p.category) + '</div>' +
+          '</div>' +
+          '<input class="form-input" style="max-width:220px" placeholder="denumire atelier..." value="' + escapeHtml(names[p.productId] || '') + '" ' +
+            'oninput="saveAtelierName(\'' + p.productId + '\', this.value)">' +
+        '</div>'
+      )).join('')
+    : '<div class="empty">Niciun produs gasit.</div>';
 }
 
 let trendsDataCache = null;
