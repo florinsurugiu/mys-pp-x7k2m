@@ -2059,16 +2059,20 @@ function renderTrendsPeriod(root) {
   const period = {
     topSellers: aggregateByName(rawPeriod.topSellers, ['units', 'revenue']).sort((a, b) => b.revenue - a.revenue),
     zeroSellers: aggregateByName(rawPeriod.zeroSellers, []),
+    saved: rawPeriod.saved || null,
+    funnel: rawPeriod.funnel || null,
   };
   const available = Object.keys(data.periods || {}).map(Number).sort((a, b) => a - b);
   const filterBtns = available.map((p) => (
     '<button class="period-btn' + (p === trendsPeriod ? ' active' : '') + '" onclick="setTrendsPeriod(' + p + ')">' + p + ' zile</button>'
   )).join('');
   const saved = period.saved || { items: [], totalSaves: 0, totalUsers: 0 };
+  const funnel = period.funnel || { items: [] };
   const subTabBtns =
     '<button class="period-btn' + (trendsSubTab === 'winners' ? ' active' : '') + '" onclick="setTrendsSubTab(\'winners\')">Winners &middot; ' + period.topSellers.length + '</button>' +
     '<button class="period-btn' + (trendsSubTab === 'losers' ? ' active' : '') + '" onclick="setTrendsSubTab(\'losers\')">Losers &middot; ' + period.zeroSellers.length + '</button>' +
-    (period.saved ? '<button class="period-btn' + (trendsSubTab === 'saved' ? ' active' : '') + '" onclick="setTrendsSubTab(\'saved\')">Saved &middot; ' + saved.totalSaves + '</button>' : '');
+    (period.saved ? '<button class="period-btn' + (trendsSubTab === 'saved' ? ' active' : '') + '" onclick="setTrendsSubTab(\'saved\')">Saved &middot; ' + saved.totalSaves + '</button>' : '') +
+    (period.funnel ? '<button class="period-btn' + (trendsSubTab === 'funnel' ? ' active' : '') + '" onclick="setTrendsSubTab(\'funnel\')">Funnel &middot; ' + funnel.items.length + '</button>' : '');
 
   const maxUnits = Math.max(1, ...period.topSellers.map((p) => p.units));
   const topRows = period.topSellers.length
@@ -2131,7 +2135,36 @@ function renderTrendsPeriod(root) {
       '<tbody>' + savedRows + '</tbody>' +
     '</table></div>';
 
-  const activePanel = trendsSubTab === 'losers' ? losersPanel : trendsSubTab === 'saved' ? savedPanel : winnersPanel;
+  const maxViews = Math.max(1, ...funnel.items.map((p) => p.views));
+  const funnelRows = funnel.items.length
+    ? funnel.items.map((p, i) => (
+        '<tr>' +
+          '<td data-label="Produs" style="text-align:left"><div class="prod-cell">' + prodThumb(p.image, p.title) +
+            '<span>' + (i + 1) + '. ' + escapeHtml(p.title) + '</span></div></td>' +
+          '<td data-label="Vizualizari">' +
+            '<div class="unit-bar"><span style="width:' + Math.round((p.views / maxViews) * 100) + '%"></span></div>' +
+            '<span class="unit-bar-val">' + p.views + '</span>' +
+          '</td>' +
+          '<td data-label="In cos">' + p.addToCart + '</td>' +
+          '<td data-label="Cumparat">' + p.purchases + '</td>' +
+          '<td data-label="Vizualizari -> Cumparat">' + (p.views ? Math.round((p.purchases / p.views) * 1000) / 10 + '%' : '-') + '</td>' +
+        '</tr>'
+      )).join('')
+    : '<tr><td colspan="5"><div class="empty">Nicio vizualizare/adaugare in cos in perioada asta.</div></td></tr>';
+  const funnelPanel =
+    '<div class="card" style="margin-bottom:16px">' +
+      '<div class="item-sub">Vizualizari (view_item) si adaugari in cos (add_to_cart) din GA4, cumparari din comenzile Shopify reale -- un produs cu multe vizualizari dar putine cumparari arata o problema de pret/descriere, nu lipsa de trafic.</div>' +
+    '</div>' +
+    '<div class="card table-scroll"><table class="trend">' +
+      '<thead><tr><th>Produs</th><th>Vizualizari</th><th>In cos</th><th>Cumparat</th><th>Conversie</th></tr></thead>' +
+      '<tbody>' + funnelRows + '</tbody>' +
+    '</table></div>';
+
+  const activePanel =
+    trendsSubTab === 'losers' ? losersPanel :
+    trendsSubTab === 'saved' ? savedPanel :
+    trendsSubTab === 'funnel' ? funnelPanel :
+    winnersPanel;
 
   root.innerHTML =
     '<div class="card" style="margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">' +
