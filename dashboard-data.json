@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T15:57:18.389Z",
+  "generatedAt": "2026-08-17T15:59:00.541Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -164,6 +164,32 @@
           "predicted"
         ]
       }
+    ],
+    "futureItems": [
+      {
+        "title": "01. T mov L + XXL",
+        "hours": 0.67,
+        "dueOn": "2026-08-18",
+        "tags": [
+          "asana"
+        ]
+      },
+      {
+        "title": "04. C blue XS + XL (DHL)",
+        "hours": 1.5,
+        "dueOn": "2026-08-18",
+        "tags": [
+          "asana"
+        ]
+      },
+      {
+        "title": "05. T gri 2M + XXL + S",
+        "hours": 0.67,
+        "dueOn": "2026-08-18",
+        "tags": [
+          "asana"
+        ]
+      }
     ]
   },
   "flori": {
@@ -225,6 +251,32 @@
         "hours": 1,
         "tags": [
           "predicted"
+        ]
+      }
+    ],
+    "futureItems": [
+      {
+        "title": "03. Maiou alb L",
+        "hours": 0.5,
+        "dueOn": "2026-08-18",
+        "tags": [
+          "asana"
+        ]
+      },
+      {
+        "title": "01. Bermude echoes M (80%)",
+        "hours": 0.3,
+        "dueOn": "2026-08-18",
+        "tags": [
+          "asana"
+        ]
+      },
+      {
+        "title": "02. H layers M",
+        "hours": 1,
+        "dueOn": "2026-08-18",
+        "tags": [
+          "asana"
         ]
       }
     ]
@@ -494,12 +546,12 @@
       ]
     },
     {
-      "name": "10. T alb XXL + S + L + M",
+      "name": "X. T alb XXL + S + L + M",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
+      "dueOn": null,
       "leftover": false,
-      "number": 10,
+      "number": null,
       "orderLinks": [],
       "hours": 2.6668,
       "tags": [
