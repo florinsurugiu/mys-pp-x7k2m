@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T10:54:15.282Z",
+  "generatedAt": "2026-08-17T11:14:57.860Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -12,12 +12,28 @@
       "hours": 1.4167
     },
     {
+      "productId": "gid://shopify/Product/15499252695364",
+      "title": "Fragmented Sleeves Shirt V2",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
+      "category": "Camasa Unisex",
+      "size": "M",
+      "hours": 1.5
+    },
+    {
       "productId": "gid://shopify/Product/7837843849453",
       "title": "Pink DOER  Windbreaker",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
       "category": "Windbreaker",
       "size": "M",
       "hours": 2.5
+    },
+    {
+      "productId": "gid://shopify/Product/15499252695364",
+      "title": "Fragmented Sleeves Shirt V2",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
+      "category": "Camasa Unisex",
+      "size": "S",
+      "hours": 1.5
     },
     {
       "productId": "gid://shopify/Product/15588121084228",
@@ -76,6 +92,14 @@
       "hours": 0.6667
     },
     {
+      "productId": "gid://shopify/Product/15499252695364",
+      "title": "Fragmented Sleeves Shirt V2",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
+      "category": "Camasa Unisex",
+      "size": "L",
+      "hours": 1.5
+    },
+    {
       "productId": "gid://shopify/Product/15499249942852",
       "title": "Split White Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
@@ -97,30 +121,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
       "category": "Tricou simplu",
       "size": "L",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15629712687428",
-      "title": "777 Mauve Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-      "category": "Tricou raiat",
-      "size": "S",
-      "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/8978718327108",
-      "title": "Oversized Cotton White T-shirt Spirit",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicatet_tshirt_spirit.jpg?v=1769822867",
-      "category": "Tricou simplu",
-      "size": "S",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/8979258147140",
-      "title": "Oversized Cotton White T-shirt 777",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-777-273152_3c48b29e-e37e-4756-9723-a71f63ca51b7.jpg?v=1770115155",
-      "category": "Tricou simplu",
-      "size": "XL",
       "hours": 0.6667
     }
   ],
@@ -303,30 +303,6 @@
       ]
     },
     {
-      "name": "03. T cu tiv miau S + L",
-      "orderName": "#235388, #235392",
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [
-        {
-          "name": "#235388",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11063687086404",
-          "cod": true
-        },
-        {
-          "name": "#235392",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065472581956",
-          "cod": false
-        }
-      ],
-      "hours": 1.3334,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "07. C gri balenci XL",
       "orderName": "#235385",
       "category": "Camasa scurta",
@@ -460,14 +436,9 @@
       ]
     },
     {
-      "name": "T alb L + XL",
-      "orderName": "#235410, #235411",
+      "name": "T alb XL",
+      "orderName": "#235411",
       "orderLinks": [
-        {
-          "name": "#235410",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067909931332",
-          "cod": false
-        },
         {
           "name": "#235411",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067944370500",
@@ -475,7 +446,7 @@
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
@@ -529,6 +500,32 @@
       "number": 6,
       "orderLinks": [],
       "hours": 7.5,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "04. T cu tiv miau S + L",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 4,
+      "orderLinks": [],
+      "hours": 1.3334,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "03. T offwhite fara tiv XXL",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": null,
+      "leftover": false,
+      "number": 3,
+      "orderLinks": [],
+      "hours": 0.6667,
       "tags": [
         "predicted"
       ]
