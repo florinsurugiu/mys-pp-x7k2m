@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T17:16:23.749Z",
+  "generatedAt": "2026-08-17T19:05:45.804Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -116,16 +116,16 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/15629712687428",
-      "title": "777 Mauve Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-      "category": "Tricou raiat",
-      "size": "S",
-      "hours": 1
+      "productId": "gid://shopify/Product/15499252695364",
+      "title": "Fragmented Sleeves Shirt V2",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
+      "category": "Camasa Unisex",
+      "size": "XS",
+      "hours": 1.5
     }
   ],
   "felicia": {
-    "hours": 8.25,
+    "hours": 8.5,
     "capacity": 7.2,
     "items": [
       {
@@ -165,36 +165,35 @@
         ]
       },
       {
-        "title": "01. Pant Numbers L",
-        "hours": 1.25,
-        "tags": [
-          "shopify",
-          "buffer"
-        ]
-      },
-      {
-        "title": "02. C 3 culori S",
+        "title": "01. C 3 culori S",
         "hours": 1.5,
         "tags": [
           "shopify"
         ]
       },
       {
-        "title": "03. T negru L",
+        "title": "02. Bermude BBC negru L",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ]
+      },
+      {
+        "title": "03. T Negru Superwoman L",
         "hours": 0.67,
         "tags": [
           "shopify"
         ]
       },
       {
-        "title": "04. T mov L",
+        "title": "04. T Mov fermoar L",
         "hours": 0.67,
         "tags": [
           "shopify"
         ]
       },
       {
-        "title": "05. T alb XL",
+        "title": "05. T alb Porsche XL",
         "hours": 0.67,
         "tags": [
           "shopify"
@@ -203,7 +202,7 @@
     ]
   },
   "flori": {
-    "hours": 8.13,
+    "hours": 8.55,
     "capacity": 7.2,
     "items": [
       {
@@ -225,16 +224,17 @@
         ]
       },
       {
-        "title": "02. H layers M",
-        "hours": 1,
+        "title": "01. H Layers V2 2M",
+        "hours": 2,
         "tags": [
           "leftover",
           "asana",
-          "buffer"
+          "buffer",
+          "shopify"
         ]
       },
       {
-        "title": "01. C maro Sleeveless XL",
+        "title": "02. C maro Sleeveless XL",
         "hours": 1.42,
         "tags": [
           "shopify",
@@ -242,28 +242,29 @@
         ]
       },
       {
-        "title": "02. Bluza Love XL",
+        "title": "03. T Maro Overthing S",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ]
+      },
+      {
+        "title": "04. Pant Numbers L",
+        "hours": 1.25,
+        "tags": [
+          "shopify",
+          "buffer"
+        ]
+      },
+      {
+        "title": "05. Bluza Love XL",
         "hours": 1,
         "tags": [
           "shopify"
         ]
       },
       {
-        "title": "03. Hanorac bumbac gri 3--1 Layered V2 M",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ]
-      },
-      {
-        "title": "04. Bermude negru MYSIMPLICATED® L",
-        "hours": 1.5,
-        "tags": [
-          "shopify"
-        ]
-      },
-      {
-        "title": "05. X. C gri balenci XL",
+        "title": "06. X. C gri balenci XL",
         "hours": 1.42,
         "tags": [
           "shopify"
@@ -273,7 +274,7 @@
   },
   "croit": [
     {
-      "name": "Bermude negru MYSIMPLICATED® L",
+      "name": "Bermude BBC negru L",
       "orderName": "#235412",
       "orderLinks": [
         {
@@ -290,7 +291,7 @@
       ]
     },
     {
-      "name": "Hanorac bumbac gri 3--1 Layered V2 M",
+      "name": "H Layers V2 M",
       "orderName": "#235412",
       "orderLinks": [
         {
@@ -307,7 +308,7 @@
       ]
     },
     {
-      "name": "T negru L",
+      "name": "T Negru Superwoman L",
       "orderName": "#235414",
       "orderLinks": [
         {
@@ -404,7 +405,7 @@
       ]
     },
     {
-      "name": "T mov L",
+      "name": "T Mov fermoar L",
       "orderName": "#235395",
       "orderLinks": [
         {
@@ -421,7 +422,7 @@
       ]
     },
     {
-      "name": "T alb XL",
+      "name": "T alb Porsche XL",
       "orderName": "#235411",
       "orderLinks": [
         {
@@ -432,6 +433,57 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Maro Overthing S",
+      "orderName": "#235415",
+      "orderLinks": [
+        {
+          "name": "#235415",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Mov fermoar S",
+      "orderName": "#235415",
+      "orderLinks": [
+        {
+          "name": "#235415",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+          "cod": false
+        }
+      ],
+      "category": "Tricou raiat",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W 3rd eye S",
+      "orderName": "#235415",
+      "orderLinks": [
+        {
+          "name": "#235415",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
