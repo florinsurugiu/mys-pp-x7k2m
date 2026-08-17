@@ -2054,9 +2054,11 @@ function renderTrendsPeriod(root) {
   const filterBtns = available.map((p) => (
     '<button class="period-btn' + (p === trendsPeriod ? ' active' : '') + '" onclick="setTrendsPeriod(' + p + ')">' + p + ' zile</button>'
   )).join('');
+  const saved = period.saved || { items: [], totalSaves: 0, totalUsers: 0 };
   const subTabBtns =
     '<button class="period-btn' + (trendsSubTab === 'winners' ? ' active' : '') + '" onclick="setTrendsSubTab(\'winners\')">Winners &middot; ' + period.topSellers.length + '</button>' +
-    '<button class="period-btn' + (trendsSubTab === 'losers' ? ' active' : '') + '" onclick="setTrendsSubTab(\'losers\')">Losers &middot; ' + period.zeroSellers.length + '</button>';
+    '<button class="period-btn' + (trendsSubTab === 'losers' ? ' active' : '') + '" onclick="setTrendsSubTab(\'losers\')">Losers &middot; ' + period.zeroSellers.length + '</button>' +
+    (period.saved ? '<button class="period-btn' + (trendsSubTab === 'saved' ? ' active' : '') + '" onclick="setTrendsSubTab(\'saved\')">Saved &middot; ' + saved.totalSaves + '</button>' : '');
 
   const maxUnits = Math.max(1, ...period.topSellers.map((p) => p.units));
   const topRows = period.topSellers.length
@@ -2097,13 +2099,37 @@ function renderTrendsPeriod(root) {
       '<div class="zero-list">' + zeroRows + '</div>' +
     '</div>';
 
+  const maxSaves = Math.max(1, ...saved.items.map((p) => p.saves));
+  const savedRows = saved.items.length
+    ? saved.items.map((p, i) => (
+        '<tr>' +
+          '<td data-label="Produs" style="text-align:left"><div class="prod-cell">' + prodThumb(p.image, p.title) +
+            '<span>' + (i + 1) + '. ' + escapeHtml(p.title) + '</span></div></td>' +
+          '<td data-label="Saves">' +
+            '<div class="unit-bar"><span style="width:' + Math.round((p.saves / maxSaves) * 100) + '%"></span></div>' +
+            '<span class="unit-bar-val">' + p.saves + '</span>' +
+          '</td>' +
+        '</tr>'
+      )).join('')
+    : '<tr><td colspan="2"><div class="empty">Niciun produs salvat in perioada asta.</div></td></tr>';
+  const savedPanel =
+    '<div class="card" style="margin-bottom:16px">' +
+      '<div class="item-sub">' + saved.totalSaves + ' salvari totale &middot; ' + saved.totalUsers + ' utilizatori distincti care au salvat ceva (date din GA4, evenimentul add_to_wishlist)</div>' +
+    '</div>' +
+    '<div class="card table-scroll"><table class="trend">' +
+      '<thead><tr><th>Produs</th><th>Saves</th></tr></thead>' +
+      '<tbody>' + savedRows + '</tbody>' +
+    '</table></div>';
+
+  const activePanel = trendsSubTab === 'losers' ? losersPanel : trendsSubTab === 'saved' ? savedPanel : winnersPanel;
+
   root.innerHTML =
     '<div class="card" style="margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">' +
       '<div><div class="item-sub">Trends -- ce functioneaza si ce nu</div><div style="font-weight:700;font-size:1rem">' + period.topSellers.length + ' produse cu vanzari &middot; ' + period.zeroSellers.length + ' fara nicio vanzare</div></div>' +
       '<div class="period-filter">' + filterBtns + '</div>' +
     '</div>' +
     '<div class="period-filter" style="margin-bottom:16px">' + subTabBtns + '</div>' +
-    (trendsSubTab === 'losers' ? losersPanel : winnersPanel);
+    activePanel;
 }
 
 initTabs();
