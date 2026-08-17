@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T08:22:38.683Z",
+  "generatedAt": "2026-08-17T09:06:07.233Z",
   "planDate": "2026-08-17",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -84,6 +84,14 @@
       "hours": 0.6667
     },
     {
+      "productId": "gid://shopify/Product/15629712687428",
+      "title": "777 Mauve Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
+      "category": "Tricou raiat",
+      "size": "S",
+      "hours": 1
+    },
+    {
       "productId": "gid://shopify/Product/8978718327108",
       "title": "Oversized Cotton White T-shirt Spirit",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicatet_tshirt_spirit.jpg?v=1769822867",
@@ -114,31 +122,15 @@
       "category": "Tricou simplu",
       "size": "XXL",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15416074961220",
-      "title": "Vitamin Club Orange T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated418.jpg?v=1766508538",
-      "category": "Tricou simplu",
-      "size": "XXL",
-      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 8.33,
+    "hours": 7.92,
     "capacity": 7.2,
     "items": [
       {
         "title": "03. T mov 2S",
         "hours": 1,
-        "tags": [
-          "leftover",
-          "buffer"
-        ]
-      },
-      {
-        "title": "02. B water M",
-        "hours": 1.5,
         "tags": [
           "leftover",
           "buffer"
@@ -161,15 +153,15 @@
         ]
       },
       {
-        "title": "01. Bermude Echoes M + S",
-        "hours": 3,
+        "title": "01. C Tigers XS",
+        "hours": 1.75,
         "tags": [
           "wb"
         ]
       },
       {
-        "title": "02. T L",
-        "hours": 0.67,
+        "title": "02. Bermude Echoes M + S",
+        "hours": 3,
         "tags": [
           "wb"
         ]
@@ -177,7 +169,7 @@
     ]
   },
   "flori": {
-    "hours": 8.75,
+    "hours": 8.67,
     "capacity": 7.2,
     "items": [
       {
@@ -191,14 +183,6 @@
       {
         "title": "02. Bermude L numbers",
         "hours": 1.5,
-        "tags": [
-          "leftover",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. C numbers M",
-        "hours": 1.42,
         "tags": [
           "leftover",
           "buffer"
@@ -219,17 +203,25 @@
         "tags": [
           "wb"
         ]
+      },
+      {
+        "title": "03. Maiou alb L",
+        "hours": 1.33,
+        "tags": [
+          "wb",
+          "predicted"
+        ]
       }
     ]
   },
   "croit": [
     {
-      "name": "01. C blue XS",
+      "name": "0. C blue XS",
       "orderName": "WB#3405691",
       "category": "Camasa Unisex",
       "dueOn": "2026-08-14",
       "leftover": true,
-      "number": 1,
+      "number": 0,
       "orderLinks": [
         {
           "name": "WB#3405691",
@@ -384,73 +376,6 @@
       ]
     },
     {
-      "name": "05. C maro balenci XL + XXL",
-      "orderName": "#235398, #235402",
-      "category": "Camasa scurta",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 5,
-      "orderLinks": [
-        {
-          "name": "#235398",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066230505796",
-          "cod": true
-        },
-        {
-          "name": "#235402",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066773569860",
-          "cod": true
-        }
-      ],
-      "hours": 2.8334,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "05. T negru L + S",
-      "orderName": "#235402, #235406",
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 5,
-      "orderLinks": [
-        {
-          "name": "#235402",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066773569860",
-          "cod": true
-        },
-        {
-          "name": "#235406",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067067957572",
-          "cod": false
-        }
-      ],
-      "hours": 1.3334,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "10. C Complex Minds Checkered M",
-      "orderName": "#235404",
-      "category": "Camasa lunga",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 10,
-      "orderLinks": [
-        {
-          "name": "#235404",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066922271044",
-          "cod": true
-        }
-      ],
-      "hours": 1.75,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "07. C gri balenci XL",
       "orderName": "#235385",
       "category": "Camasa scurta",
@@ -522,64 +447,6 @@
         }
       ],
       "hours": 1,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "12. C maneci detasate 3M + XS",
-      "orderName": "#235381, #235392, #235393, #235399",
-      "category": "Camasa Unisex",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 12,
-      "orderLinks": [
-        {
-          "name": "#235381",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11060422050116",
-          "cod": false
-        },
-        {
-          "name": "#235392",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065472581956",
-          "cod": false
-        },
-        {
-          "name": "#235393",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065526059332",
-          "cod": false
-        },
-        {
-          "name": "#235399",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066288144708",
-          "cod": false
-        }
-      ],
-      "hours": 6,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "15. Bluza alb rupta L + S",
-      "orderName": "#235381, #235400",
-      "category": "Bluza inimioara / obsidian",
-      "dueOn": "2026-08-17",
-      "leftover": false,
-      "number": 15,
-      "orderLinks": [
-        {
-          "name": "#235381",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11060422050116",
-          "cod": false
-        },
-        {
-          "name": "#235400",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066308067652",
-          "cod": false
-        }
-      ],
-      "hours": 3,
       "tags": [
         "shopify"
       ]
@@ -695,23 +562,6 @@
       ]
     },
     {
-      "name": "T mov S",
-      "orderName": "#235382",
-      "orderLinks": [
-        {
-          "name": "#235382",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11060454785348",
-          "cod": false
-        }
-      ],
-      "category": "Tricou raiat",
-      "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "X. W Statue XL 2 buc",
       "orderName": null,
       "category": "Windbreaker",
@@ -720,6 +570,19 @@
       "number": null,
       "orderLinks": [],
       "hours": 2.5,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "01. Maiou alb L",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 1,
+      "orderLinks": [],
+      "hours": 0.6667,
       "tags": [
         "predicted"
       ]
@@ -746,6 +609,71 @@
       "number": 6,
       "orderLinks": [],
       "hours": 7.5,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "05. C maro balenci XL + XXL",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 5,
+      "orderLinks": [],
+      "hours": 2.8334,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "05. T negru L + S",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 5,
+      "orderLinks": [],
+      "hours": 1.3334,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "10. C Complex Minds Checkered M",
+      "orderName": null,
+      "category": "Camasa lunga",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 10,
+      "orderLinks": [],
+      "hours": 1.75,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "12. C maneci detasate 3M + XS",
+      "orderName": null,
+      "category": "Camasa Unisex",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 12,
+      "orderLinks": [],
+      "hours": 6,
+      "tags": [
+        "predicted"
+      ]
+    },
+    {
+      "name": "15. Bluza alb rupta L + S",
+      "orderName": null,
+      "category": "Bluza inimioara / obsidian",
+      "dueOn": "2026-08-17",
+      "leftover": false,
+      "number": 15,
+      "orderLinks": [],
+      "hours": 3,
       "tags": [
         "predicted"
       ]
