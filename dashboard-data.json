@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T11:02:50.942Z",
+  "generatedAt": "2026-08-18T11:37:24.467Z",
   "planDate": "2026-08-18",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.33,
+    "hours": 8.17,
     "capacity": 7.2,
     "items": [
       {
@@ -186,23 +186,8 @@
         ]
       },
       {
-        "title": "03. T Mov L",
+        "title": "03. T Maro S",
         "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235395",
-        "orderLinks": [
-          {
-            "name": "#235395",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. T Mov S",
-        "hours": 1,
         "tags": [
           "shopify"
         ],
@@ -216,31 +201,37 @@
         ]
       },
       {
-        "title": "05. T alb S Superwoman",
-        "hours": 0.67,
+        "title": "04. W 3rd eye S",
+        "hours": 2.5,
         "tags": [
-          "predicted"
+          "shopify"
         ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "06. X. Maiou alb 2L",
-        "hours": 1,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
+        "orderName": "#235415",
+        "orderLinks": [
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "cod": false
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.33,
+    "hours": 7.75,
     "capacity": 7.2,
     "items": [
       {
-        "title": "02. T negru L superwoman",
+        "title": "01. C fara maneci maro XL",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "03. T gri 2M",
         "hours": 0.67,
         "tags": [
           "leftover",
@@ -249,22 +240,16 @@
         ]
       },
       {
-        "title": "01. T Maro S + XL",
-        "hours": 2.08,
+        "title": "01. T alb S Superwoman",
+        "hours": 1.33,
         "tags": [
           "leftover",
           "asana",
           "buffer",
-          "shopify"
+          "predicted"
         ],
-        "orderName": "#235415",
-        "orderLinks": [
-          {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-            "cod": false
-          }
-        ]
+        "orderName": null,
+        "orderLinks": []
       },
       {
         "title": "02. Bluza Love XL",
@@ -297,8 +282,23 @@
         ]
       },
       {
-        "title": "04. W 3rd eye S",
-        "hours": 2.5,
+        "title": "04. T Mov L",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235395",
+        "orderLinks": [
+          {
+            "name": "#235395",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "05. T Mov S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
@@ -312,8 +312,8 @@
         ]
       },
       {
-        "title": "05. C blue XL",
-        "hours": 1.42,
+        "title": "06. X. Maiou alb 2L",
+        "hours": 1,
         "tags": [
           "predicted"
         ],
@@ -381,20 +381,6 @@
       "tags": [
         "asana",
         "shopify"
-      ]
-    },
-    {
-      "name": "0. T negru 2L",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-18",
-      "leftover": false,
-      "number": 0,
-      "orderLinks": [],
-      "hours": 1.3334,
-      "tags": [
-        "asana",
-        "predicted"
       ]
     },
     {
@@ -656,8 +642,28 @@
   ],
   "croitBuffer": [
     {
+      "gid": "1210393351047716",
+      "name": "T negru L",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
       "gid": "1217482641756672",
       "name": "T offwhite XL",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1217552123874414",
+      "name": "T negru L",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
