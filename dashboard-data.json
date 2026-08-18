@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T15:54:02.837Z",
+  "generatedAt": "2026-08-18T16:18:03.741Z",
   "planDate": "2026-08-18",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -147,38 +147,28 @@
         ]
       },
       {
-        "title": "01. C 3 culori S",
-        "hours": 1.5,
+        "title": "01. W 3rd eye M + S",
+        "hours": 5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235397",
+        "orderName": "#235390, #235415",
         "orderLinks": [
           {
-            "name": "#235397",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065817203012",
+            "name": "#235390",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11064652202308",
+            "cod": false
+          },
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
             "cod": false
           }
         ]
       },
       {
-        "title": "02. T Mov L",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235395",
-        "orderLinks": [
-          {
-            "name": "#235395",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. T Maro S",
-        "hours": 0.67,
+        "title": "02. T Mov S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
@@ -190,35 +180,11 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "04. W 3rd eye S",
-        "hours": 2.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235415",
-        "orderLinks": [
-          {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "05. tricou offwhite M - schimb comanda #235410",
-        "hours": 0.67,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
       }
     ]
   },
   "flori": {
-    "hours": 7.25,
+    "hours": 7.33,
     "capacity": 7.2,
     "items": [
       {
@@ -240,7 +206,22 @@
         ]
       },
       {
-        "title": "01. Bluza Love XL",
+        "title": "01. C 3 culori S",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235397",
+        "orderLinks": [
+          {
+            "name": "#235397",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065817203012",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. Bluza Love XL",
         "hours": 1,
         "tags": [
           "shopify"
@@ -255,7 +236,7 @@
         ]
       },
       {
-        "title": "02. C Blue XL",
+        "title": "03. C Blue XL",
         "hours": 1.5,
         "tags": [
           "wb"
@@ -270,17 +251,23 @@
         ]
       },
       {
-        "title": "03. C blue XL",
-        "hours": 1.42,
+        "title": "04. T Mov L",
+        "hours": 0.67,
         "tags": [
-          "predicted"
+          "shopify"
         ],
-        "orderName": null,
-        "orderLinks": []
+        "orderName": "#235395",
+        "orderLinks": [
+          {
+            "name": "#235395",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
+            "cod": false
+          }
+        ]
       },
       {
-        "title": "04. T Mov S",
-        "hours": 1,
+        "title": "05. T Maro S",
+        "hours": 0.67,
         "tags": [
           "shopify"
         ],
@@ -294,8 +281,8 @@
         ]
       },
       {
-        "title": "05. X. Maiou alb 2L",
-        "hours": 1,
+        "title": "06. tricou offwhite M - schimb comanda #235410",
+        "hours": 0.67,
         "tags": [
           "predicted"
         ],
@@ -368,20 +355,6 @@
       "number": 1,
       "orderLinks": [],
       "hours": 2.6668,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "03. W Third Eye 2M + S",
-      "orderName": null,
-      "category": "Windbreaker",
-      "dueOn": "2026-08-18",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 7.5,
       "tags": [
         "asana",
         "predicted"
@@ -517,6 +490,28 @@
       ]
     },
     {
+      "name": "W 3rd eye M + S",
+      "orderName": "#235390, #235415",
+      "orderLinks": [
+        {
+          "name": "#235390",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11064652202308",
+          "cod": false
+        },
+        {
+          "name": "#235415",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Mov L",
       "orderName": "#235395",
       "orderLinks": [
@@ -566,26 +561,19 @@
       "tags": [
         "shopify"
       ]
-    },
-    {
-      "name": "W 3rd eye S",
-      "orderName": "#235415",
-      "orderLinks": [
-        {
-          "name": "#235415",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1217519612824104",
+      "name": "03. W Third Eye 2M + 2S",
+      "orderName": "#235386, #235390, #235391",
+      "category": "Windbreaker",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1210393351047716",
       "name": "T negru L",
@@ -628,7 +616,14 @@
     }
   ],
   "backlog": {
-    "hours": 0,
-    "items": []
+    "hours": 10,
+    "items": [
+      {
+        "orderName": "#235386, #235390, #235391",
+        "title": "W Third Eye 2M + 2S",
+        "category": "Windbreaker",
+        "hours": 10
+      }
+    ]
   }
 }
