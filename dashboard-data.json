@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T12:38:12.329Z",
+  "generatedAt": "2026-08-18T13:27:49.707Z",
   "planDate": "2026-08-18",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,11 +125,11 @@
     }
   ],
   "felicia": {
-    "hours": 7.58,
+    "hours": 7.25,
     "capacity": 7.2,
     "items": [
       {
-        "title": "02. T offwhite XXL",
+        "title": "01. T alb Superwoman S",
         "hours": 0.67,
         "tags": [
           "leftover",
@@ -138,7 +138,16 @@
         ]
       },
       {
-        "title": "03. T gri 2M + XXL + S",
+        "title": "02. T alb Split - S",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "03. T gri XXL + S",
         "hours": 0.67,
         "tags": [
           "leftover",
@@ -194,15 +203,6 @@
       {
         "title": "04. C blue XL",
         "hours": 1.42,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "05. X. Maiou alb 2L",
-        "hours": 1,
         "tags": [
           "predicted"
         ],
@@ -294,7 +294,7 @@
         ]
       },
       {
-        "title": "05. Dremel H layers",
+        "title": "05. X. Maiou alb 2L",
         "hours": 1,
         "tags": [
           "predicted"
@@ -346,28 +346,14 @@
       ]
     },
     {
-      "name": "0. Dremel H layers",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-08-18",
-      "leftover": false,
-      "number": 0,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "01. T gri XXL + S",
+      "name": "01. T gri 2M + XXL + S",
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-18",
       "leftover": false,
       "number": 1,
       "orderLinks": [],
-      "hours": 1.3334,
+      "hours": 2.6668,
       "tags": [
         "asana",
         "predicted"
@@ -588,7 +574,7 @@
   "croitBuffer": [
     {
       "gid": "1217519612782926",
-      "name": "01. T alb Split S",
+      "name": "T alb Split S",
       "orderName": "#235406",
       "category": "Tricou simplu",
       "tags": [
