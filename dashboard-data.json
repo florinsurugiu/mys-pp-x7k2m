@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T10:02:57.093Z",
+  "generatedAt": "2026-08-18T10:44:12.417Z",
   "planDate": "2026-08-18",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,18 +125,9 @@
     }
   ],
   "felicia": {
-    "hours": 8.25,
+    "hours": 8.92,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "0. C blue XS + XL (DHL)",
-        "hours": 1.5,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "01. T mov L + XXL",
         "hours": 0.67,
@@ -156,7 +147,7 @@
         ]
       },
       {
-        "title": "05. T gri 2M + XXL + S",
+        "title": "03. T gri 2M + XXL + S",
         "hours": 0.67,
         "tags": [
           "leftover",
@@ -165,32 +156,32 @@
         ]
       },
       {
-        "title": "01. Bluza Love XL",
-        "hours": 1,
+        "title": "01. C 3 culori S",
+        "hours": 1.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235407",
+        "orderName": "#235397",
         "orderLinks": [
           {
-            "name": "#235407",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
+            "name": "#235397",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065817203012",
             "cod": false
           }
         ]
       },
       {
-        "title": "02. T Mov L",
+        "title": "02. T Gri M",
         "hours": 0.67,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235395",
+        "orderName": "#235416",
         "orderLinks": [
           {
-            "name": "#235395",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
-            "cod": false
+            "name": "#235416",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11069875290436",
+            "cod": true
           }
         ]
       },
@@ -225,8 +216,32 @@
         ]
       },
       {
-        "title": "05. C blue XL",
+        "title": "05. X. C gri balenci XL",
         "hours": 1.42,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235385",
+        "orderLinks": [
+          {
+            "name": "#235385",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062478045508",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "06. T alb S Superwoman",
+        "hours": 0.67,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      },
+      {
+        "title": "07. X. Maiou alb 2L",
+        "hours": 1,
         "tags": [
           "predicted"
         ],
@@ -236,12 +251,21 @@
     ]
   },
   "flori": {
-    "hours": 8.33,
+    "hours": 8.92,
     "capacity": 7.2,
     "items": [
       {
         "title": "0. Maiou Alb L",
         "hours": 0.5,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "02. T negru L superwoman",
+        "hours": 0.67,
         "tags": [
           "leftover",
           "asana",
@@ -267,34 +291,22 @@
         ]
       },
       {
-        "title": "02. T alb S Superwoman",
-        "hours": 1.33,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer",
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "03. C 3 culori S",
-        "hours": 1.5,
+        "title": "02. Bluza Love XL",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235397",
+        "orderName": "#235407",
         "orderLinks": [
           {
-            "name": "#235397",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065817203012",
+            "name": "#235407",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
             "cod": false
           }
         ]
       },
       {
-        "title": "04. C Blue XL",
+        "title": "03. C Blue XL",
         "hours": 1.5,
         "tags": [
           "wb"
@@ -309,16 +321,31 @@
         ]
       },
       {
-        "title": "05. X. C gri balenci XL",
-        "hours": 1.42,
+        "title": "04. T Mov L",
+        "hours": 0.67,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235385",
+        "orderName": "#235395",
         "orderLinks": [
           {
-            "name": "#235385",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062478045508",
+            "name": "#235395",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "05. W 3rd eye S",
+        "hours": 2.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235415",
+        "orderLinks": [
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
             "cod": false
           }
         ]
@@ -578,6 +605,23 @@
       ]
     },
     {
+      "name": "T Gri M",
+      "orderName": "#235416",
+      "orderLinks": [
+        {
+          "name": "#235416",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11069875290436",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Mov L",
       "orderName": "#235395",
       "orderLinks": [
@@ -666,7 +710,7 @@
   "croitBuffer": [
     {
       "gid": "1217482641756672",
-      "name": "01. T offwhite XL",
+      "name": "T offwhite XL",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
@@ -676,7 +720,7 @@
     },
     {
       "gid": "1217519722939668",
-      "name": "15. Pant Numbers L",
+      "name": "Pant Numbers L",
       "orderName": "#235396",
       "category": "Pantaloni lungi full print",
       "tags": [
@@ -686,7 +730,7 @@
     },
     {
       "gid": "1217482783813574",
-      "name": "01. T alb XS",
+      "name": "T alb XS",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
