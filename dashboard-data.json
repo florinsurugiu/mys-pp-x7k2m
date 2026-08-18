@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T10:44:12.417Z",
+  "generatedAt": "2026-08-18T11:02:50.942Z",
   "planDate": "2026-08-18",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -108,24 +108,24 @@
       "hours": 1.5
     },
     {
+      "productId": "gid://shopify/Product/15616900333892",
+      "title": "Blue Stripes Oversized Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
+      "category": "Camasa Unisex",
+      "size": "XL",
+      "hours": 1.5
+    },
+    {
       "productId": "gid://shopify/Product/15590401605956",
       "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_120446_12b5b28c-d728-4ca8-bdb2-a4b21e5fe9c7.jpg?v=1786555960",
       "category": "Camasa scurta",
       "size": "XL",
       "hours": 1.4167
-    },
-    {
-      "productId": "gid://shopify/Product/15499249942852",
-      "title": "Split White Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 8.92,
+    "hours": 8.33,
     "capacity": 7.2,
     "items": [
       {
@@ -171,31 +171,31 @@
         ]
       },
       {
-        "title": "02. T Gri M",
-        "hours": 0.67,
+        "title": "02. C Blue XL",
+        "hours": 1.5,
         "tags": [
-          "shopify"
+          "wb"
         ],
-        "orderName": "#235416",
+        "orderName": "WB#3412729",
         "orderLinks": [
           {
-            "name": "#235416",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11069875290436",
-            "cod": true
+            "name": "WB#3412729",
+            "url": null,
+            "cod": false
           }
         ]
       },
       {
-        "title": "03. T Alb XL",
+        "title": "03. T Mov L",
         "hours": 0.67,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235411",
+        "orderName": "#235395",
         "orderLinks": [
           {
-            "name": "#235411",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067944370500",
+            "name": "#235395",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
             "cod": false
           }
         ]
@@ -216,22 +216,7 @@
         ]
       },
       {
-        "title": "05. X. C gri balenci XL",
-        "hours": 1.42,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235385",
-        "orderLinks": [
-          {
-            "name": "#235385",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062478045508",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "06. T alb S Superwoman",
+        "title": "05. T alb S Superwoman",
         "hours": 0.67,
         "tags": [
           "predicted"
@@ -240,7 +225,7 @@
         "orderLinks": []
       },
       {
-        "title": "07. X. Maiou alb 2L",
+        "title": "06. X. Maiou alb 2L",
         "hours": 1,
         "tags": [
           "predicted"
@@ -251,18 +236,9 @@
     ]
   },
   "flori": {
-    "hours": 8.92,
+    "hours": 8.33,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "0. Maiou Alb L",
-        "hours": 0.5,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "02. T negru L superwoman",
         "hours": 0.67,
@@ -306,37 +282,22 @@
         ]
       },
       {
-        "title": "03. C Blue XL",
-        "hours": 1.5,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3412729",
-        "orderLinks": [
-          {
-            "name": "WB#3412729",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. T Mov L",
+        "title": "03. T Gri M",
         "hours": 0.67,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235395",
+        "orderName": "#235416",
         "orderLinks": [
           {
-            "name": "#235395",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
-            "cod": false
+            "name": "#235416",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11069875290436",
+            "cod": true
           }
         ]
       },
       {
-        "title": "05. W 3rd eye S",
+        "title": "04. W 3rd eye S",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -349,6 +310,15 @@
             "cod": false
           }
         ]
+      },
+      {
+        "title": "05. C blue XL",
+        "hours": 1.42,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
@@ -408,26 +378,6 @@
         }
       ],
       "hours": 1,
-      "tags": [
-        "asana",
-        "shopify"
-      ]
-    },
-    {
-      "name": "X. C gri balenci XL",
-      "orderName": "#235385",
-      "category": "Camasa scurta",
-      "dueOn": null,
-      "leftover": false,
-      "number": null,
-      "orderLinks": [
-        {
-          "name": "#235385",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062478045508",
-          "cod": false
-        }
-      ],
-      "hours": 1.4167,
       "tags": [
         "asana",
         "shopify"
@@ -546,6 +496,20 @@
       ]
     },
     {
+      "name": "X. C gri balenci XL",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "dueOn": null,
+      "leftover": false,
+      "number": null,
+      "orderLinks": [],
+      "hours": 1.4167,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
       "name": "X. Bluza alb rupta L + S",
       "orderName": null,
       "category": "Bluza inimioara / obsidian",
@@ -628,23 +592,6 @@
         {
           "name": "#235395",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Alb XL",
-      "orderName": "#235411",
-      "orderLinks": [
-        {
-          "name": "#235411",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067944370500",
           "cod": false
         }
       ],
