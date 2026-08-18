@@ -1,7 +1,9 @@
 {
-  "generatedAt": "2026-08-18T16:18:03.741Z",
+  "generatedAt": "2026-08-18T16:54:33.807Z",
   "planDate": "2026-08-18",
-  "unmatchedProducts": [],
+  "unmatchedProducts": [
+    "Oversized White T-Shirt - Way Through Quote W"
+  ],
   "predictionIdeas": [
     {
       "productId": "gid://shopify/Product/14982879248708",
@@ -125,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.33,
+    "hours": 7.83,
     "capacity": 7.2,
     "items": [
       {
@@ -139,65 +141,6 @@
       },
       {
         "title": "02. T gri XXL + S",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. W 3rd eye M + S",
-        "hours": 5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235390, #235415",
-        "orderLinks": [
-          {
-            "name": "#235390",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11064652202308",
-            "cod": false
-          },
-          {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. T Mov S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235415",
-        "orderLinks": [
-          {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 7.33,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "01. T alb S Superwoman",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "02. T alb XS",
         "hours": 0.67,
         "tags": [
           "leftover",
@@ -236,22 +179,7 @@
         ]
       },
       {
-        "title": "03. C Blue XL",
-        "hours": 1.5,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3412729",
-        "orderLinks": [
-          {
-            "name": "WB#3412729",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. T Mov L",
+        "title": "03. T Mov L",
         "hours": 0.67,
         "tags": [
           "shopify"
@@ -266,8 +194,23 @@
         ]
       },
       {
-        "title": "05. T Maro S",
+        "title": "04. T Maro S",
         "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235415",
+        "orderLinks": [
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "05. T Mov S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
@@ -283,6 +226,68 @@
       {
         "title": "06. tricou offwhite M - schimb comanda #235410",
         "hours": 0.67,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      },
+      {
+        "title": "07. X. Maiou alb 2L",
+        "hours": 1,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      }
+    ]
+  },
+  "flori": {
+    "hours": 7.75,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "01. T alb S Superwoman",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "02. T alb XS",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. W 3rd eye M + S",
+        "hours": 5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235390, #235415",
+        "orderLinks": [
+          {
+            "name": "#235390",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11064652202308",
+            "cod": false
+          },
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. C blue XL",
+        "hours": 1.42,
         "tags": [
           "predicted"
         ],
@@ -470,23 +475,6 @@
       "tags": [
         "asana",
         "predicted"
-      ]
-    },
-    {
-      "name": "C Blue XL",
-      "orderName": "WB#3412729",
-      "orderLinks": [
-        {
-          "name": "WB#3412729",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "wb"
       ]
     },
     {
