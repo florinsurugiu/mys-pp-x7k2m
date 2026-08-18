@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T06:19:54.196Z",
+  "generatedAt": "2026-08-18T08:20:07.266Z",
   "periods": {
     "7": {
       "topSellers": [
@@ -1879,18 +1879,10 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/14969291276612",
-            "title": "Not My Circus White T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
-            "views": 46,
-            "addToCart": 4,
-            "purchases": 3
-          },
-          {
             "productId": "gid://shopify/Product/15056634904900",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated203.jpg?v=1766270039",
-            "views": 46,
+            "views": 47,
             "addToCart": 4,
             "purchases": 0
           },
@@ -1898,9 +1890,17 @@
             "productId": "gid://shopify/Product/15416222613828",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
-            "views": 46,
+            "views": 47,
             "addToCart": 4,
             "purchases": 2
+          },
+          {
+            "productId": "gid://shopify/Product/14969291276612",
+            "title": "Not My Circus White T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
+            "views": 46,
+            "addToCart": 4,
+            "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/15455598313796",
@@ -2535,6 +2535,14 @@
             "purchases": 1
           },
           {
+            "productId": "gid://shopify/Product/15003405582660",
+            "title": "Oversized White T-shirt Need Money for Porsche",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
+            "views": 13,
+            "addToCart": 2,
+            "purchases": 2
+          },
+          {
             "productId": "gid://shopify/Product/15412309295428",
             "title": "Pop Cola Pink Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated135.jpg?v=1766259806",
@@ -2661,14 +2669,6 @@
             "views": 11,
             "addToCart": 1,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15003405582660",
-            "title": "Oversized White T-shirt Need Money for Porsche",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
-            "views": 11,
-            "addToCart": 2,
-            "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/15587076374852",
@@ -4278,13 +4278,6 @@
           "revenue": 666.04
         },
         {
-          "productId": "gid://shopify/Product/15416074961220",
-          "title": "Vitamin Club Orange T-Shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated418.jpg?v=1766508538",
-          "units": 2,
-          "revenue": 646.14
-        },
-        {
           "productId": "gid://shopify/Product/15417912623428",
           "title": "Overthink Club Brown T-Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Overthink-Club-Brown-T-Shirt1.jpg?v=1779920882",
@@ -4514,6 +4507,13 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4227.jpg?v=1770331547",
           "units": 1,
           "revenue": 359
+        },
+        {
+          "productId": "gid://shopify/Product/15416074961220",
+          "title": "Vitamin Club Orange T-Shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated418.jpg?v=1766508538",
+          "units": 1,
+          "revenue": 357.14
         },
         {
           "productId": "gid://shopify/Product/15415461740868",
@@ -6272,7 +6272,7 @@
             "productId": "gid://shopify/Product/15056634904900",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated203.jpg?v=1766270039",
-            "views": 296,
+            "views": 297,
             "addToCart": 15,
             "purchases": 1
           },
@@ -6280,7 +6280,7 @@
             "productId": "gid://shopify/Product/15416222613828",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
-            "views": 296,
+            "views": 297,
             "addToCart": 15,
             "purchases": 3
           },
@@ -6674,7 +6674,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated418.jpg?v=1766508538",
             "views": 134,
             "addToCart": 8,
-            "purchases": 2
+            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15572095795524",
@@ -6885,6 +6885,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15003405582660",
+            "title": "Oversized White T-shirt Need Money for Porsche",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
+            "views": 83,
+            "addToCart": 6,
+            "purchases": 4
+          },
+          {
             "productId": "gid://shopify/Product/15412296745284",
             "title": "Offset Black Sweatpants",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
@@ -6899,14 +6907,6 @@
             "views": 83,
             "addToCart": 5,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15003405582660",
-            "title": "Oversized White T-shirt Need Money for Porsche",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
-            "views": 81,
-            "addToCart": 6,
-            "purchases": 4
           },
           {
             "productId": "gid://shopify/Product/15586896642372",
@@ -8749,13 +8749,6 @@
           "revenue": 890.88
         },
         {
-          "productId": "gid://shopify/Product/15417782665540",
-          "title": "Complex Minds Shirt V2",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Complex-Minds-Checkered-V2_1.jpg?v=1769432262",
-          "units": 2,
-          "revenue": 890.3
-        },
-        {
           "productId": "gid://shopify/Product/15499251745092",
           "title": "Fracture Oversized Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated125_3009d002-7de1-4eea-8b0d-60a5bb7538e0.jpg?v=1773565936",
@@ -9048,6 +9041,13 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated488.jpg?v=1766530654",
           "units": 1,
           "revenue": 492.17
+        },
+        {
+          "productId": "gid://shopify/Product/15417782665540",
+          "title": "Complex Minds Shirt V2",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Complex-Minds-Checkered-V2_1.jpg?v=1769432262",
+          "units": 1,
+          "revenue": 491.3
         },
         {
           "productId": "gid://shopify/Product/14841676988740",
@@ -9482,13 +9482,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_lucky_tshirt.jpg?v=1769824246",
           "units": 1,
           "revenue": 259
-        },
-        {
-          "productId": "gid://shopify/Product/15434510926148",
-          "title": "Pop Cola Classic Socks (3 pairs)",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Socks-PopCola-White.jpg?v=1768502649",
-          "units": 1,
-          "revenue": 131
         },
         {
           "productId": "gid://shopify/Product/9074800099652",
@@ -10135,6 +10128,11 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated872_8452b2f9-fc80-4d42-a40e-162729933fa7.jpg?v=1786998718"
         },
         {
+          "productId": "gid://shopify/Product/15434510926148",
+          "title": "Pop Cola Classic Socks (3 pairs)",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Socks-PopCola-White.jpg?v=1768502649"
+        },
+        {
           "productId": "gid://shopify/Product/15434512499012",
           "title": "Vitamin Aqua Cotton Socks (4 pcs)",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Vitamin-Aqua-4-pack-socks.jpg?v=1769510566"
@@ -10600,7 +10598,7 @@
             "productId": "gid://shopify/Product/15056634904900",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated203.jpg?v=1766270039",
-            "views": 1444,
+            "views": 1445,
             "addToCart": 65,
             "purchases": 2
           },
@@ -10608,7 +10606,7 @@
             "productId": "gid://shopify/Product/15416222613828",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
-            "views": 1444,
+            "views": 1445,
             "addToCart": 65,
             "purchases": 9
           },
@@ -11082,7 +11080,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Complex-Minds-Checkered-V2_1.jpg?v=1769432262",
             "views": 379,
             "addToCart": 13,
-            "purchases": 2
+            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/7820389974253",
@@ -11133,6 +11131,14 @@
             "purchases": 1
           },
           {
+            "productId": "gid://shopify/Product/15003405582660",
+            "title": "Oversized White T-shirt Need Money for Porsche",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
+            "views": 358,
+            "addToCart": 18,
+            "purchases": 8
+          },
+          {
             "productId": "gid://shopify/Product/8649103278404",
             "title": "Oversized Cotton White T-shirt Lucky",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-lucky-464516_5884cb80-ba5e-4029-b86c-3744026db1cc.jpg?v=1770112974",
@@ -11147,14 +11153,6 @@
             "views": 357,
             "addToCart": 24,
             "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/15003405582660",
-            "title": "Oversized White T-shirt Need Money for Porsche",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
-            "views": 356,
-            "addToCart": 18,
-            "purchases": 8
           },
           {
             "productId": "gid://shopify/Product/15421171990852",
