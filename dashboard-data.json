@@ -1,8 +1,16 @@
 {
-  "generatedAt": "2026-08-18T09:35:02.271Z",
+  "generatedAt": "2026-08-18T10:02:57.093Z",
   "planDate": "2026-08-18",
   "unmatchedProducts": [],
   "predictionIdeas": [
+    {
+      "productId": "gid://shopify/Product/14982879248708",
+      "title": "Dystopia White Oversized Sweater",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dystopia-White-Oversized-Sweater1.jpg?v=1769817561",
+      "category": "Bluza inimioara / obsidian",
+      "size": "L",
+      "hours": 1.5
+    },
     {
       "productId": "gid://shopify/Product/15588974428484",
       "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
@@ -100,32 +108,24 @@
       "hours": 1.5
     },
     {
+      "productId": "gid://shopify/Product/15590401605956",
+      "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_120446_12b5b28c-d728-4ca8-bdb2-a4b21e5fe9c7.jpg?v=1786555960",
+      "category": "Camasa scurta",
+      "size": "XL",
+      "hours": 1.4167
+    },
+    {
       "productId": "gid://shopify/Product/15499249942852",
       "title": "Split White Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
       "category": "Tricou simplu",
       "size": "M",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15586981314884",
-      "title": "MYSIMPLICATED® Oversized White Sleeveless Tee",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_133900-_1_23c0fef5-8daf-4b50-a80e-18de863d3966.jpg?v=1786556503",
-      "category": "Maiou",
-      "size": "L",
-      "hours": 0.5
-    },
-    {
-      "productId": "gid://shopify/Product/9436029976900",
-      "title": "Oversized Cotton White T-shirt Kindness",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
-      "category": "Tricou simplu",
-      "size": "L",
-      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 8.08,
+    "hours": 8.25,
     "capacity": 7.2,
     "items": [
       {
@@ -165,22 +165,37 @@
         ]
       },
       {
-        "title": "01. C Blue XL",
-        "hours": 1.5,
+        "title": "01. Bluza Love XL",
+        "hours": 1,
         "tags": [
-          "wb"
+          "shopify"
         ],
-        "orderName": "WB#3412729",
+        "orderName": "#235407",
         "orderLinks": [
           {
-            "name": "WB#3412729",
-            "url": null,
+            "name": "#235407",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
             "cod": false
           }
         ]
       },
       {
-        "title": "02. T Alb XL",
+        "title": "02. T Mov L",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235395",
+        "orderLinks": [
+          {
+            "name": "#235395",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. T Alb XL",
         "hours": 0.67,
         "tags": [
           "shopify"
@@ -195,7 +210,7 @@
         ]
       },
       {
-        "title": "03. T Mov S",
+        "title": "04. T Mov S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -210,26 +225,29 @@
         ]
       },
       {
-        "title": "04. X. C gri balenci XL",
+        "title": "05. C blue XL",
         "hours": 1.42,
         "tags": [
-          "shopify"
+          "predicted"
         ],
-        "orderName": "#235385",
-        "orderLinks": [
-          {
-            "name": "#235385",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062478045508",
-            "cod": false
-          }
-        ]
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
   "flori": {
-    "hours": 8.08,
+    "hours": 8.33,
     "capacity": 7.2,
     "items": [
+      {
+        "title": "0. Maiou Alb L",
+        "hours": 0.5,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
       {
         "title": "01. T Maro S + XL",
         "hours": 2.08,
@@ -261,19 +279,7 @@
         "orderLinks": []
       },
       {
-        "title": "03. X. Maiou alb 2L",
-        "hours": 1.5,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer",
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "04. C 3 culori S",
+        "title": "03. C 3 culori S",
         "hours": 1.5,
         "tags": [
           "shopify"
@@ -288,31 +294,31 @@
         ]
       },
       {
-        "title": "05. Bluza Love XL",
-        "hours": 1,
+        "title": "04. C Blue XL",
+        "hours": 1.5,
         "tags": [
-          "shopify"
+          "wb"
         ],
-        "orderName": "#235407",
+        "orderName": "WB#3412729",
         "orderLinks": [
           {
-            "name": "#235407",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
+            "name": "WB#3412729",
+            "url": null,
             "cod": false
           }
         ]
       },
       {
-        "title": "06. T Mov L",
-        "hours": 0.67,
+        "title": "05. X. C gri balenci XL",
+        "hours": 1.42,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235395",
+        "orderName": "#235385",
         "orderLinks": [
           {
-            "name": "#235395",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
+            "name": "#235385",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062478045508",
             "cod": false
           }
         ]
@@ -324,8 +330,8 @@
       "name": "01. T alb Split S",
       "orderName": "#235406",
       "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": true,
+      "dueOn": "2026-08-18",
+      "leftover": false,
       "number": 1,
       "orderLinks": [
         {
@@ -336,7 +342,6 @@
       ],
       "hours": 0.6667,
       "tags": [
-        "leftover",
         "asana",
         "shopify"
       ]
@@ -345,8 +350,8 @@
       "name": "04. C 3 culori S",
       "orderName": "#235397",
       "category": "Camasa Unisex",
-      "dueOn": "2026-08-17",
-      "leftover": true,
+      "dueOn": "2026-08-18",
+      "leftover": false,
       "number": 4,
       "orderLinks": [
         {
@@ -357,7 +362,6 @@
       ],
       "hours": 1.5,
       "tags": [
-        "leftover",
         "asana",
         "shopify"
       ]
@@ -366,8 +370,8 @@
       "name": "05. Bluza Love XL",
       "orderName": "#235407",
       "category": "Hanorac bumbac",
-      "dueOn": "2026-08-17",
-      "leftover": true,
+      "dueOn": "2026-08-18",
+      "leftover": false,
       "number": 5,
       "orderLinks": [
         {
@@ -378,7 +382,6 @@
       ],
       "hours": 1,
       "tags": [
-        "leftover",
         "asana",
         "shopify"
       ]
@@ -404,16 +407,15 @@
       ]
     },
     {
-      "name": "0. T negru L",
+      "name": "0. T negru 2L",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": true,
+      "dueOn": "2026-08-18",
+      "leftover": false,
       "number": 0,
       "orderLinks": [],
-      "hours": 0.6667,
+      "hours": 1.3334,
       "tags": [
-        "leftover",
         "asana",
         "predicted"
       ]
@@ -422,13 +424,12 @@
       "name": "01. T gri XXL + S",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-17",
-      "leftover": true,
+      "dueOn": "2026-08-18",
+      "leftover": false,
       "number": 1,
       "orderLinks": [],
       "hours": 1.3334,
       "tags": [
-        "leftover",
         "asana",
         "predicted"
       ]
@@ -437,7 +438,7 @@
       "name": "01. T alb S Superwoman",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": null,
+      "dueOn": "2026-08-18",
       "leftover": false,
       "number": 1,
       "orderLinks": [],
@@ -451,13 +452,26 @@
       "name": "03. W Third Eye 2M + S",
       "orderName": null,
       "category": "Windbreaker",
-      "dueOn": "2026-08-17",
-      "leftover": true,
+      "dueOn": "2026-08-18",
+      "leftover": false,
       "number": 3,
       "orderLinks": [],
       "hours": 7.5,
       "tags": [
-        "leftover",
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "06. C blue XL",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "dueOn": "2026-08-18",
+      "leftover": false,
+      "number": 6,
+      "orderLinks": [],
+      "hours": 1.4167,
+      "tags": [
         "asana",
         "predicted"
       ]
