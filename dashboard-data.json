@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T13:27:49.707Z",
+  "generatedAt": "2026-08-18T14:05:26.368Z",
   "planDate": "2026-08-18",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.25,
+    "hours": 7.5,
     "capacity": 7.2,
     "items": [
       {
@@ -201,8 +201,17 @@
         ]
       },
       {
-        "title": "04. C blue XL",
-        "hours": 1.42,
+        "title": "04. tricou offwhite M - schimb comanda #235410",
+        "hours": 0.67,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      },
+      {
+        "title": "05. X. Maiou alb 2L",
+        "hours": 1,
         "tags": [
           "predicted"
         ],
@@ -212,7 +221,7 @@
     ]
   },
   "flori": {
-    "hours": 7.33,
+    "hours": 7.75,
     "capacity": 7.2,
     "items": [
       {
@@ -279,7 +288,16 @@
         ]
       },
       {
-        "title": "04. T Mov S",
+        "title": "04. C blue XL",
+        "hours": 1.42,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      },
+      {
+        "title": "05. T Mov S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -292,15 +310,6 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "05. X. Maiou alb 2L",
-        "hours": 1,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
       }
     ]
   },
@@ -343,6 +352,20 @@
       "tags": [
         "asana",
         "shopify"
+      ]
+    },
+    {
+      "name": "00. tricou offwhite M - schimb comanda #235410",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-18",
+      "leftover": false,
+      "number": 0,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "asana",
+        "predicted"
       ]
     },
     {
