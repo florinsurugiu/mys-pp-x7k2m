@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-18T20:58:10.410Z",
-  "planDate": "2026-08-18",
+  "generatedAt": "2026-08-18T21:18:50.124Z",
+  "planDate": "2026-08-19",
   "unmatchedProducts": [
     "Oversized White T-Shirt - Way Through Quote W"
   ],
@@ -302,7 +302,7 @@
       "orderName": "#235397",
       "category": "Camasa Unisex",
       "dueOn": "2026-08-18",
-      "leftover": false,
+      "leftover": true,
       "number": 4,
       "orderLinks": [
         {
@@ -313,6 +313,7 @@
       ],
       "hours": 1.5,
       "tags": [
+        "leftover",
         "asana",
         "shopify"
       ]
@@ -322,7 +323,7 @@
       "orderName": "#235407",
       "category": "Hanorac bumbac",
       "dueOn": "2026-08-18",
-      "leftover": false,
+      "leftover": true,
       "number": 5,
       "orderLinks": [
         {
@@ -333,6 +334,7 @@
       ],
       "hours": 1,
       "tags": [
+        "leftover",
         "asana",
         "shopify"
       ]
@@ -342,11 +344,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-18",
-      "leftover": false,
+      "leftover": true,
       "number": 0,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -356,11 +359,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-18",
-      "leftover": false,
+      "leftover": true,
       "number": 1,
       "orderLinks": [],
       "hours": 2.6668,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -370,11 +374,12 @@
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-08-18",
-      "leftover": false,
+      "leftover": true,
       "number": 6,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
