@@ -1,15 +1,8 @@
 {
-  "generatedAt": "2026-08-19T04:23:51.452Z",
+  "generatedAt": "2026-08-19T06:20:57.171Z",
   "periods": {
     "7": {
       "topSellers": [
-        {
-          "productId": "gid://shopify/Product/15499252695364",
-          "title": "Fragmented Sleeves Shirt V2",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-          "units": 7,
-          "revenue": 2171.45
-        },
         {
           "productId": "gid://shopify/Product/7837829071085",
           "title": "Third Eye  Windbreaker",
@@ -18,11 +11,11 @@
           "revenue": 1897.06
         },
         {
-          "productId": "gid://shopify/Product/14982879248708",
-          "title": "Dystopia White Oversized Sweater",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dystopia-White-Oversized-Sweater1.jpg?v=1769817561",
-          "units": 4,
-          "revenue": 1564.43
+          "productId": "gid://shopify/Product/15499252695364",
+          "title": "Fragmented Sleeves Shirt V2",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
+          "units": 5,
+          "revenue": 1571.45
         },
         {
           "productId": "gid://shopify/Product/15590250840388",
@@ -30,6 +23,13 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
           "units": 2,
           "revenue": 1507.44
+        },
+        {
+          "productId": "gid://shopify/Product/14982879248708",
+          "title": "Dystopia White Oversized Sweater",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dystopia-White-Oversized-Sweater1.jpg?v=1769817561",
+          "units": 3,
+          "revenue": 1235.43
         },
         {
           "productId": "gid://shopify/Product/15630103970116",
@@ -1745,21 +1745,21 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dystopia-White-Oversized-Sweater1.jpg?v=1769817561",
             "views": 367,
             "addToCart": 20,
-            "purchases": 4
+            "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/15499252695364",
             "title": "Fragmented Sleeves Shirt V2",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-            "views": 271,
+            "views": 272,
             "addToCart": 20,
-            "purchases": 7
+            "purchases": 5
           },
           {
             "productId": "gid://shopify/Product/15629712687428",
             "title": "777 Mauve Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-            "views": 172,
+            "views": 173,
             "addToCart": 14,
             "purchases": 2
           },
@@ -1767,7 +1767,7 @@
             "productId": "gid://shopify/Product/15630103970116",
             "title": "777 Mauve Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260804_091046_eb491f35-b1c6-41bb-babc-a4f45c9e4cf5.jpg?v=1786555250",
-            "views": 172,
+            "views": 173,
             "addToCart": 14,
             "purchases": 3
           },
@@ -2396,6 +2396,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15003405582660",
+            "title": "Oversized White T-shirt Need Money for Porsche",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
+            "views": 16,
+            "addToCart": 2,
+            "purchases": 2
+          },
+          {
             "productId": "gid://shopify/Product/15577328255300",
             "title": "MYSIMPLICATED® Atelier Division Overshirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260618_211444_1_4cc0bd3d-98d3-4852-86ef-eb82079d49b9.jpg?v=1786594829",
@@ -2442,14 +2450,6 @@
             "views": 15,
             "addToCart": 0,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15003405582660",
-            "title": "Oversized White T-shirt Need Money for Porsche",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
-            "views": 15,
-            "addToCart": 2,
-            "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/15584665108804",
@@ -4071,13 +4071,6 @@
           "revenue": 3101.45
         },
         {
-          "productId": "gid://shopify/Product/15614948868420",
-          "title": "Reality Grey Oversized T-Shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
-          "units": 10,
-          "revenue": 2737.62
-        },
-        {
           "productId": "gid://shopify/Product/14982879248708",
           "title": "Dystopia White Oversized Sweater",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dystopia-White-Oversized-Sweater1.jpg?v=1769817561",
@@ -4090,6 +4083,13 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
           "units": 7,
           "revenue": 2583
+        },
+        {
+          "productId": "gid://shopify/Product/15614948868420",
+          "title": "Reality Grey Oversized T-Shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+          "units": 9,
+          "revenue": 2478.62
         },
         {
           "productId": "gid://shopify/Product/15590250840388",
@@ -4328,13 +4328,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_beige_tshirt_42e4b226-e1ad-4dfb-9d33-79f00fc76502.jpg?v=1769644607",
           "units": 2,
           "revenue": 543.9
-        },
-        {
-          "productId": "gid://shopify/Product/15455588712772",
-          "title": "Limited Series Pop Cola 330 Unisex Oversized T-shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4202.jpg?v=1769819654",
-          "units": 2,
-          "revenue": 518
         },
         {
           "productId": "gid://shopify/Product/15614923342148",
@@ -4627,6 +4620,13 @@
           "productId": "gid://shopify/Product/7987360563437",
           "title": "Black Oversized T-Shirt Angel and Devil",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-angel-and-devil-683837_b2521efe-4237-4eb4-8eec-ab2912c56e34.jpg?v=1770114979",
+          "units": 1,
+          "revenue": 259
+        },
+        {
+          "productId": "gid://shopify/Product/15455588712772",
+          "title": "Limited Series Pop Cola 330 Unisex Oversized T-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4202.jpg?v=1769819654",
           "units": 1,
           "revenue": 259
         },
@@ -6086,7 +6086,7 @@
             "productId": "gid://shopify/Product/15499252695364",
             "title": "Fragmented Sleeves Shirt V2",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-            "views": 1115,
+            "views": 1116,
             "addToCart": 76,
             "purchases": 10
           },
@@ -6112,7 +6112,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
             "views": 846,
             "addToCart": 65,
-            "purchases": 10
+            "purchases": 9
           },
           {
             "productId": "gid://shopify/Product/15499163468100",
@@ -6195,6 +6195,22 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15629712687428",
+            "title": "777 Mauve Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
+            "views": 336,
+            "addToCart": 21,
+            "purchases": 2
+          },
+          {
+            "productId": "gid://shopify/Product/15630103970116",
+            "title": "777 Mauve Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260804_091046_eb491f35-b1c6-41bb-babc-a4f45c9e4cf5.jpg?v=1786555250",
+            "views": 336,
+            "addToCart": 21,
+            "purchases": 3
+          },
+          {
             "productId": "gid://shopify/Product/15414933061956",
             "title": "DEPT. GRAPHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated317.jpg?v=1766412528",
@@ -6209,22 +6225,6 @@
             "views": 335,
             "addToCart": 12,
             "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/15629712687428",
-            "title": "777 Mauve Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-            "views": 335,
-            "addToCart": 21,
-            "purchases": 2
-          },
-          {
-            "productId": "gid://shopify/Product/15630103970116",
-            "title": "777 Mauve Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260804_091046_eb491f35-b1c6-41bb-babc-a4f45c9e4cf5.jpg?v=1786555250",
-            "views": 335,
-            "addToCart": 21,
-            "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/8649104851268",
@@ -6854,7 +6854,7 @@
             "productId": "gid://shopify/Product/15003405582660",
             "title": "Oversized White T-shirt Need Money for Porsche",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
-            "views": 82,
+            "views": 83,
             "addToCart": 6,
             "purchases": 4
           },
@@ -7272,7 +7272,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4202.jpg?v=1769819654",
             "views": 37,
             "addToCart": 1,
-            "purchases": 2
+            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/7837810458861",
@@ -10569,7 +10569,7 @@
             "productId": "gid://shopify/Product/15499252695364",
             "title": "Fragmented Sleeves Shirt V2",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-            "views": 1674,
+            "views": 1675,
             "addToCart": 98,
             "purchases": 13
           },
@@ -11113,7 +11113,7 @@
             "productId": "gid://shopify/Product/15003405582660",
             "title": "Oversized White T-shirt Need Money for Porsche",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
-            "views": 360,
+            "views": 361,
             "addToCart": 18,
             "purchases": 8
           },
@@ -11201,7 +11201,7 @@
             "productId": "gid://shopify/Product/15629712687428",
             "title": "777 Mauve Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-            "views": 335,
+            "views": 336,
             "addToCart": 21,
             "purchases": 2
           },
@@ -11209,7 +11209,7 @@
             "productId": "gid://shopify/Product/15630103970116",
             "title": "777 Mauve Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260804_091046_eb491f35-b1c6-41bb-babc-a4f45c9e4cf5.jpg?v=1786555250",
-            "views": 335,
+            "views": 336,
             "addToCart": 21,
             "purchases": 3
           },
