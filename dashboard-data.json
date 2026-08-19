@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T08:22:17.547Z",
+  "generatedAt": "2026-08-19T09:01:41.431Z",
   "planDate": "2026-08-19",
   "unmatchedProducts": [
     "Oversized White T-Shirt - Way Through Quote W"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.5,
+    "hours": 9.67,
     "capacity": 7.2,
     "items": [
       {
@@ -140,32 +140,7 @@
         ]
       },
       {
-        "title": "02. W Third Eye M",
-        "hours": 2.5,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T offwhite XL",
-        "hours": 0.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235418",
-        "orderLinks": [
-          {
-            "name": "#235418",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071237456196",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. C 3 culori S",
+        "title": "01. C 3 culori S",
         "hours": 1.5,
         "tags": [
           "shopify"
@@ -175,6 +150,21 @@
           {
             "name": "#235397",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065817203012",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. Bluza Love XL",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235407",
+        "orderLinks": [
+          {
+            "name": "#235407",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
             "cod": false
           }
         ]
@@ -195,16 +185,21 @@
         ]
       },
       {
-        "title": "04. T Mov L",
-        "hours": 0.67,
+        "title": "04. W 3rd eye M + S",
+        "hours": 5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235395",
+        "orderName": "#235390, #235415",
         "orderLinks": [
           {
-            "name": "#235395",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
+            "name": "#235390",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11064652202308",
+            "cod": false
+          },
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
             "cod": false
           }
         ]
@@ -212,7 +207,7 @@
     ]
   },
   "flori": {
-    "hours": 10.5,
+    "hours": 7.5,
     "capacity": 7.2,
     "items": [
       {
@@ -252,33 +247,59 @@
         ]
       },
       {
-        "title": "01. Bluza Love XL",
-        "hours": 1,
+        "title": "01. T offwhite XL",
+        "hours": 0.67,
         "tags": [
-          "shopify"
+          "shopify",
+          "buffer"
         ],
-        "orderName": "#235407",
+        "orderName": "#235418",
         "orderLinks": [
           {
-            "name": "#235407",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
+            "name": "#235418",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071237456196",
             "cod": false
           }
         ]
       },
       {
-        "title": "02. W 3rd eye M + S",
-        "hours": 5,
+        "title": "02. T Mov L",
+        "hours": 0.67,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235390, #235415",
+        "orderName": "#235395",
         "orderLinks": [
           {
-            "name": "#235390",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11064652202308",
+            "name": "#235395",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
             "cod": false
-          },
+          }
+        ]
+      },
+      {
+        "title": "03. T Maro S",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235415",
+        "orderLinks": [
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. T Mov S",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235415",
+        "orderLinks": [
           {
             "name": "#235415",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
