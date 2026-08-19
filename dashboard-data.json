@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-19T20:45:02.461Z",
-  "planDate": "2026-08-19",
+  "generatedAt": "2026-08-19T21:03:59.887Z",
+  "planDate": "2026-08-20",
   "unmatchedProducts": [
     "Fanny Pack Dust"
   ],
@@ -278,11 +278,12 @@
       "orderName": null,
       "category": "Bluza inimioara / obsidian",
       "dueOn": "2026-08-19",
-      "leftover": false,
+      "leftover": true,
       "number": 3,
       "orderLinks": [],
       "hours": 3,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -292,11 +293,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-19",
-      "leftover": false,
+      "leftover": true,
       "number": 4,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
