@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T20:14:25.709Z",
+  "generatedAt": "2026-08-19T20:45:02.461Z",
   "planDate": "2026-08-19",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.87,
+    "hours": 8.53,
     "capacity": 7.2,
     "items": [
       {
@@ -176,15 +176,30 @@
             "cod": true
           }
         ]
+      },
+      {
+        "title": "02. T Maro S",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235415",
+        "orderLinks": [
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "cod": false
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.33,
+    "hours": 8.67,
     "capacity": 7.2,
     "items": [
       {
-        "title": "04. T offwhite 2M + XL ",
+        "title": "02. T offwhite 2M + XL ",
         "hours": 0.67,
         "tags": [
           "leftover",
@@ -193,33 +208,16 @@
         ]
       },
       {
-        "title": "01. W Third Eye M + S",
-        "hours": 5,
+        "title": "03. W Third Eye M + S",
+        "hours": 2.5,
         "tags": [
-          "wb",
+          "leftover",
+          "asana",
           "buffer"
-        ],
-        "orderName": "#235386, #235390, #235391",
-        "orderLinks": [
-          {
-            "name": "#235386",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11062857957700",
-            "cod": false
-          },
-          {
-            "name": "#235390",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11064652202308",
-            "cod": false
-          },
-          {
-            "name": "#235391",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065354420548",
-            "cod": false
-          }
         ]
       },
       {
-        "title": "02. Bluza rupta roz S",
+        "title": "01. Bluza rupta roz S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -234,8 +232,8 @@
         ]
       },
       {
-        "title": "03. T Maro S",
-        "hours": 0.67,
+        "title": "02. T Mov S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
@@ -249,19 +247,28 @@
         ]
       },
       {
-        "title": "04. T Mov S",
-        "hours": 1,
+        "title": "03. W Statue L",
+        "hours": 2.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235415",
+        "orderName": "#235419",
         "orderLinks": [
           {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "name": "#235419",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
             "cod": false
           }
         ]
+      },
+      {
+        "title": "04. X. Maiou alb 2L",
+        "hours": 1,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
