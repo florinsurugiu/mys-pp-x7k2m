@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T13:29:42.332Z",
+  "generatedAt": "2026-08-19T14:06:40.277Z",
   "planDate": "2026-08-19",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,12 +127,12 @@
     }
   ],
   "felicia": {
-    "hours": 8.33,
+    "hours": 8.7,
     "capacity": 7.2,
     "items": [
       {
-        "title": "02. C 3 culori S",
-        "hours": 1.5,
+        "title": "02. C 3 culori S (20%)",
+        "hours": 1.2,
         "tags": [
           "leftover",
           "asana",
@@ -164,7 +164,22 @@
         ]
       },
       {
-        "title": "02. W 3rd eye S",
+        "title": "02. T Maro S",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235415",
+        "orderLinks": [
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. W 3rd eye S",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -179,7 +194,7 @@
         ]
       },
       {
-        "title": "03. T Mov S",
+        "title": "04. T Mov S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -194,7 +209,7 @@
         ]
       },
       {
-        "title": "04. Dremel T miau",
+        "title": "05. tricou offwhite M - schimb comanda #235410",
         "hours": 0.67,
         "tags": [
           "predicted"
@@ -203,7 +218,7 @@
         "orderLinks": []
       },
       {
-        "title": "05. X. Maiou alb 2L",
+        "title": "06. X. Maiou alb 2L",
         "hours": 1,
         "tags": [
           "predicted"
@@ -214,18 +229,9 @@
     ]
   },
   "flori": {
-    "hours": 8.42,
+    "hours": 8.17,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "02. C maneci detasate XS",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "04. T offwhite M",
         "hours": 0.67,
@@ -262,28 +268,19 @@
         ]
       },
       {
-        "title": "02. T Maro S",
-        "hours": 0.67,
+        "title": "02. W Statue L",
+        "hours": 2.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235415",
+        "orderName": "#235419",
         "orderLinks": [
           {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "name": "#235419",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
             "cod": false
           }
         ]
-      },
-      {
-        "title": "03. tricou offwhite M - schimb comanda #235410",
-        "hours": 0.67,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
       }
     ]
   },
@@ -315,20 +312,6 @@
       "dueOn": "2026-08-19",
       "leftover": false,
       "number": 0,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "01. Dremel T miau",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-19",
-      "leftover": false,
-      "number": 1,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
@@ -475,6 +458,23 @@
         {
           "name": "#235415",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Statue L",
+      "orderName": "#235419",
+      "orderLinks": [
+        {
+          "name": "#235419",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
           "cod": false
         }
       ],
