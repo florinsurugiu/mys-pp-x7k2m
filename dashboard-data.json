@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T10:52:17.744Z",
+  "generatedAt": "2026-08-19T11:14:34.557Z",
   "planDate": "2026-08-19",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -78,6 +78,14 @@
       "hours": 1.5
     },
     {
+      "productId": "gid://shopify/Product/15499245715780",
+      "title": "Split White Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated129_74ef1e9a-d248-426a-9368-311404a90956.jpg?v=1773567724",
+      "category": "Tricou simplu",
+      "size": "S",
+      "hours": 0.6667
+    },
+    {
       "productId": "gid://shopify/Product/15419494531396",
       "title": "Aria Scarf Hoodie",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated784.jpg?v=1766876426",
@@ -116,29 +124,12 @@
       "category": "Tricou simplu",
       "size": "L",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/7820252315885",
-      "title": "Oversized Full Print T-shirt Beige",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_beige_tshirt_42e4b226-e1ad-4dfb-9d33-79f00fc76502.jpg?v=1769644607",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
     }
   ],
   "felicia": {
     "hours": 8.08,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "01. T gri XXL + S",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "02. C albastra XL (DHL)",
         "hours": 1.42,
@@ -175,19 +166,28 @@
         ]
       },
       {
-        "title": "02. T Mov S",
+        "title": "02. Bluza Love XL",
         "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235415",
+        "orderName": "#235407",
         "orderLinks": [
           {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "name": "#235407",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
             "cod": false
           }
         ]
+      },
+      {
+        "title": "03. tricou offwhite M - schimb comanda #235410",
+        "hours": 0.67,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
@@ -223,7 +223,23 @@
         ]
       },
       {
-        "title": "01. C 3 culori S",
+        "title": "01. T offwhite XL",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235418",
+        "orderLinks": [
+          {
+            "name": "#235418",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071237456196",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. C 3 culori S",
         "hours": 1.5,
         "tags": [
           "shopify",
@@ -234,21 +250,6 @@
           {
             "name": "#235397",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065817203012",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. Bluza Love XL",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235407",
-        "orderLinks": [
-          {
-            "name": "#235407",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
             "cod": false
           }
         ]
@@ -269,21 +270,28 @@
         ]
       },
       {
-        "title": "04. T offwhite XL",
-        "hours": 1.33,
+        "title": "04. T Mov S",
+        "hours": 1,
         "tags": [
-          "shopify",
-          "buffer",
-          "predicted"
+          "shopify"
         ],
-        "orderName": "#235418",
+        "orderName": "#235415",
         "orderLinks": [
           {
-            "name": "#235418",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071237456196",
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
             "cod": false
           }
         ]
+      },
+      {
+        "title": "05. Dremel T miau",
+        "hours": 0.67,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
