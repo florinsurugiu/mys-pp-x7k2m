@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T02:06:46.291Z",
+  "generatedAt": "2026-08-19T03:09:02.556Z",
   "planDate": "2026-08-19",
   "unmatchedProducts": [
     "Oversized White T-Shirt - Way Through Quote W"
@@ -22,14 +22,6 @@
       "hours": 1.4167
     },
     {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "M",
-      "hours": 1.5
-    },
-    {
       "productId": "gid://shopify/Product/15588121084228",
       "title": "MYSIMPLICATED® Black Bermuda",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_215741_52ec5e88-77af-464d-8f2e-aa316d1f58db.jpg?v=1786556343",
@@ -44,14 +36,6 @@
       "category": "Windbreaker",
       "size": "M",
       "hours": 2.5
-    },
-    {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "S",
-      "hours": 1.5
     },
     {
       "productId": "gid://shopify/Product/15419494531396",
@@ -102,14 +86,6 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "L",
-      "hours": 1.5
-    },
-    {
       "productId": "gid://shopify/Product/15616900333892",
       "title": "Blue Stripes Oversized Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
@@ -124,10 +100,34 @@
       "category": "Camasa scurta",
       "size": "XL",
       "hours": 1.4167
+    },
+    {
+      "productId": "gid://shopify/Product/15499249942852",
+      "title": "Split White Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
+      "category": "Tricou simplu",
+      "size": "M",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15586981314884",
+      "title": "MYSIMPLICATED® Oversized White Sleeveless Tee",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_133900-_1_23c0fef5-8daf-4b50-a80e-18de863d3966.jpg?v=1786556503",
+      "category": "Maiou",
+      "size": "L",
+      "hours": 0.5
+    },
+    {
+      "productId": "gid://shopify/Product/9436029976900",
+      "title": "Oversized Cotton White T-shirt Kindness",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
+      "category": "Tricou simplu",
+      "size": "L",
+      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 9.67,
+    "hours": 7.5,
     "capacity": 7.2,
     "items": [
       {
@@ -164,18 +164,43 @@
         ]
       },
       {
-        "title": "02. W 3rd eye M + S",
-        "hours": 5,
+        "title": "02. C maneci detasate XS",
+        "hours": 1.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235390, #235415",
+        "orderName": "#235417",
         "orderLinks": [
           {
-            "name": "#235390",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11064652202308",
+            "name": "#235417",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071094849860",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. T Mov L",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235395",
+        "orderLinks": [
+          {
+            "name": "#235395",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
             "cod": false
-          },
+          }
+        ]
+      },
+      {
+        "title": "04. T Maro S",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235415",
+        "orderLinks": [
           {
             "name": "#235415",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
@@ -186,7 +211,7 @@
     ]
   },
   "flori": {
-    "hours": 7.83,
+    "hours": 10.5,
     "capacity": 7.2,
     "items": [
       {
@@ -241,43 +266,18 @@
         ]
       },
       {
-        "title": "02. T Mov L",
-        "hours": 0.67,
+        "title": "02. W 3rd eye M + S",
+        "hours": 5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235395",
+        "orderName": "#235390, #235415",
         "orderLinks": [
           {
-            "name": "#235395",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065559941444",
+            "name": "#235390",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11064652202308",
             "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. T Maro S",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235415",
-        "orderLinks": [
-          {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. T Mov S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235415",
-        "orderLinks": [
+          },
           {
             "name": "#235415",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
@@ -471,6 +471,23 @@
       "tags": [
         "asana",
         "predicted"
+      ]
+    },
+    {
+      "name": "C maneci detasate XS",
+      "orderName": "#235417",
+      "orderLinks": [
+        {
+          "name": "#235417",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071094849860",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
       ]
     },
     {
