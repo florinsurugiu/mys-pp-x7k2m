@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T16:18:10.025Z",
+  "generatedAt": "2026-08-19T16:53:21.387Z",
   "planDate": "2026-08-19",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.03,
+    "hours": 7.87,
     "capacity": 7.2,
     "items": [
       {
@@ -158,63 +158,29 @@
         ]
       },
       {
-        "title": "01. T Maro S",
-        "hours": 0.67,
+        "title": "01. W 3rd eye S + M",
+        "hours": 5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235415",
+        "orderName": "#235415, #235420",
         "orderLinks": [
           {
             "name": "#235415",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
             "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. W 3rd eye S",
-        "hours": 2.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235415",
-        "orderLinks": [
+          },
           {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-            "cod": false
+            "name": "#235420",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072283410756",
+            "cod": true
           }
         ]
-      },
-      {
-        "title": "03. T Mov S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235415",
-        "orderLinks": [
-          {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. X. Maiou alb 2L",
-        "hours": 1,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
       }
     ]
   },
   "flori": {
-    "hours": 8.17,
+    "hours": 8.33,
     "capacity": 7.2,
     "items": [
       {
@@ -253,16 +219,46 @@
         ]
       },
       {
-        "title": "02. W Statue L",
-        "hours": 2.5,
+        "title": "02. Bluza rupta roz S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235419",
+        "orderName": "#235420",
         "orderLinks": [
           {
-            "name": "#235419",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
+            "name": "#235420",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072283410756",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. T Maro S",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235415",
+        "orderLinks": [
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. T Mov S",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235415",
+        "orderLinks": [
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
             "cod": false
           }
         ]
@@ -369,6 +365,45 @@
       ]
     },
     {
+      "name": "W 3rd eye S + M",
+      "orderName": "#235415, #235420",
+      "orderLinks": [
+        {
+          "name": "#235415",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+          "cod": false
+        },
+        {
+          "name": "#235420",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072283410756",
+          "cod": true
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Bluza rupta roz S",
+      "orderName": "#235420",
+      "orderLinks": [
+        {
+          "name": "#235420",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072283410756",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Maro S",
       "orderName": "#235415",
       "orderLinks": [
@@ -397,23 +432,6 @@
       ],
       "category": "Tricou raiat",
       "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "W 3rd eye S",
-      "orderName": "#235415",
-      "orderLinks": [
-        {
-          "name": "#235415",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
