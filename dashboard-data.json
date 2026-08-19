@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T10:17:07.216Z",
+  "generatedAt": "2026-08-19T10:52:17.744Z",
   "planDate": "2026-08-19",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.42,
+    "hours": 8.08,
     "capacity": 7.2,
     "items": [
       {
@@ -175,24 +175,8 @@
         ]
       },
       {
-        "title": "02. T offwhite XL",
-        "hours": 0.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235418",
-        "orderLinks": [
-          {
-            "name": "#235418",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071237456196",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. T Maro S",
-        "hours": 0.67,
+        "title": "02. T Mov S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
@@ -208,7 +192,7 @@
     ]
   },
   "flori": {
-    "hours": 8.25,
+    "hours": 7.83,
     "capacity": 7.2,
     "items": [
       {
@@ -239,20 +223,11 @@
         ]
       },
       {
-        "title": "01. C blue XL",
-        "hours": 1.42,
-        "tags": [
-          "wb",
-          "buffer"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "02. C 3 culori S",
+        "title": "01. C 3 culori S",
         "hours": 1.5,
         "tags": [
-          "shopify"
+          "shopify",
+          "buffer"
         ],
         "orderName": "#235397",
         "orderLinks": [
@@ -264,7 +239,7 @@
         ]
       },
       {
-        "title": "03. Bluza Love XL",
+        "title": "02. Bluza Love XL",
         "hours": 1,
         "tags": [
           "shopify"
@@ -279,8 +254,8 @@
         ]
       },
       {
-        "title": "04. T Mov S",
-        "hours": 1,
+        "title": "03. T Maro S",
+        "hours": 0.67,
         "tags": [
           "shopify"
         ],
@@ -292,30 +267,27 @@
             "cod": false
           }
         ]
+      },
+      {
+        "title": "04. T offwhite XL",
+        "hours": 1.33,
+        "tags": [
+          "shopify",
+          "buffer",
+          "predicted"
+        ],
+        "orderName": "#235418",
+        "orderLinks": [
+          {
+            "name": "#235418",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071237456196",
+            "cod": false
+          }
+        ]
       }
     ]
   },
   "croit": [
-    {
-      "name": "04. C 3 culori S",
-      "orderName": "#235397",
-      "category": "Camasa Unisex",
-      "dueOn": "2026-08-19",
-      "leftover": false,
-      "number": 4,
-      "orderLinks": [
-        {
-          "name": "#235397",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11065817203012",
-          "cod": false
-        }
-      ],
-      "hours": 1.5,
-      "tags": [
-        "asana",
-        "shopify"
-      ]
-    },
     {
       "name": "05. Bluza Love XL",
       "orderName": "#235407",
