@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T14:51:01.856Z",
+  "generatedAt": "2026-08-19T15:19:48.703Z",
   "planDate": "2026-08-19",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -131,8 +131,17 @@
     "capacity": 7.2,
     "items": [
       {
-        "title": "02. C 3 culori S (20%)",
+        "title": "01. C 3 culori S (20%)",
         "hours": 1.2,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "02. Bluza Love XL",
+        "hours": 1,
         "tags": [
           "leftover",
           "asana",
@@ -149,23 +158,7 @@
         ]
       },
       {
-        "title": "01. Bluza Love XL",
-        "hours": 1,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235407",
-        "orderLinks": [
-          {
-            "name": "#235407",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11067280884036",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. T Maro S",
+        "title": "01. T Maro S",
         "hours": 0.67,
         "tags": [
           "shopify"
@@ -180,7 +173,7 @@
         ]
       },
       {
-        "title": "03. W 3rd eye S",
+        "title": "02. W 3rd eye S",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -195,7 +188,7 @@
         ]
       },
       {
-        "title": "04. T Mov S",
+        "title": "03. T Mov S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -210,7 +203,7 @@
         ]
       },
       {
-        "title": "05. X. Maiou alb 2L",
+        "title": "04. X. Maiou alb 2L",
         "hours": 1,
         "tags": [
           "predicted"
@@ -225,7 +218,7 @@
     "capacity": 7.2,
     "items": [
       {
-        "title": "04. T offwhite M",
+        "title": "04. T offwhite 2M + XL ",
         "hours": 0.67,
         "tags": [
           "leftover",
@@ -444,38 +437,7 @@
       ]
     }
   ],
-  "croitBuffer": [
-    {
-      "gid": "1217639357251471",
-      "name": "tricou offwhite M (am facut 1 extra)",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1217603317160037",
-      "name": "00. tricou offwhite M - schimb comanda #235410",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1217482641756672",
-      "name": "T offwhite XL",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    }
-  ],
+  "croitBuffer": [],
   "backlog": {
     "hours": 0,
     "items": []
