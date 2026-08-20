@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T07:54:05.919Z",
+  "generatedAt": "2026-08-20T08:23:25.465Z",
   "planDate": "2026-08-20",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -62,6 +62,14 @@
       "hours": 1.5
     },
     {
+      "productId": "gid://shopify/Product/15629712687428",
+      "title": "777 Mauve Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
+      "category": "Tricou raiat",
+      "size": "S",
+      "hours": 1
+    },
+    {
       "productId": "gid://shopify/Product/15499252695364",
       "title": "Fragmented Sleeves Shirt V2",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
@@ -116,22 +124,23 @@
       "category": "Tricou simplu",
       "size": "L",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/7820252315885",
-      "title": "Oversized Full Print T-shirt Beige",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_beige_tshirt_42e4b226-e1ad-4dfb-9d33-79f00fc76502.jpg?v=1769644607",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 8.25,
+    "hours": 9,
     "capacity": 7.2,
     "items": [
       {
-        "title": "03. T negru 2L",
+        "title": "02. Bluza Love XL",
+        "hours": 1,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "03. T grey 2M",
         "hours": 0.67,
         "tags": [
           "leftover",
@@ -158,12 +167,9 @@
         ]
       },
       {
-        "title": "01. Bluza rupta roz S + XL",
-        "hours": 2,
+        "title": "01. W 3rd eye M",
+        "hours": 2.5,
         "tags": [
-          "leftover",
-          "asana",
-          "buffer",
           "shopify"
         ],
         "orderName": "#235420",
@@ -176,39 +182,33 @@
         ]
       },
       {
-        "title": "02. T Mov S",
-        "hours": 1,
+        "title": "02. C Complex Rosu XXL",
+        "hours": 1.75,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235415",
+        "orderName": "#235421",
         "orderLinks": [
           {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "name": "#235421",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072978223428",
             "cod": false
           }
         ]
       },
       {
-        "title": "03. W Statue L",
-        "hours": 2.5,
+        "title": "03. X. Maiou alb 2L",
+        "hours": 1,
         "tags": [
-          "shopify"
+          "predicted"
         ],
-        "orderName": "#235419",
-        "orderLinks": [
-          {
-            "name": "#235419",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
-            "cod": false
-          }
-        ]
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
   "flori": {
-    "hours": 8.83,
+    "hours": 8.75,
     "capacity": 7.2,
     "items": [
       {
@@ -230,18 +230,13 @@
         ]
       },
       {
-        "title": "01. W 3rd eye S + M",
-        "hours": 5,
+        "title": "01. Bluza rupta roz S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235415, #235420",
+        "orderName": "#235420",
         "orderLinks": [
-          {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-            "cod": false
-          },
           {
             "name": "#235420",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072283410756",
@@ -250,19 +245,43 @@
         ]
       },
       {
-        "title": "02. T Maro S",
+        "title": "02. T Gri M",
         "hours": 0.67,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235415",
+        "orderName": "#235422",
         "orderLinks": [
           {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "name": "#235422",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073117847876",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. W Statue L",
+        "hours": 2.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235419",
+        "orderLinks": [
+          {
+            "name": "#235419",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
             "cod": false
           }
         ]
+      },
+      {
+        "title": "04. camasa carouri XXL",
+        "hours": 1.42,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
@@ -276,34 +295,6 @@
       "number": 1,
       "orderLinks": [],
       "hours": 1.4167,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "02. bluza rupta roz XS-S",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-20",
-      "leftover": false,
-      "number": 2,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "03. Bluza alb rupta L + S",
-      "orderName": null,
-      "category": "Bluza inimioara / obsidian",
-      "dueOn": "2026-08-20",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 3,
       "tags": [
         "asana",
         "predicted"
@@ -324,12 +315,12 @@
       ]
     },
     {
-      "name": "X. W Statue XL 2 buc",
+      "name": "05. W Statue XL 2 buc",
       "orderName": null,
       "category": "Windbreaker",
-      "dueOn": null,
+      "dueOn": "2026-08-20",
       "leftover": false,
-      "number": null,
+      "number": 5,
       "orderLinks": [],
       "hours": 2.5,
       "tags": [
@@ -394,28 +385,6 @@
       ]
     },
     {
-      "name": "W 3rd eye S + M",
-      "orderName": "#235415, #235420",
-      "orderLinks": [
-        {
-          "name": "#235415",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-          "cod": false
-        },
-        {
-          "name": "#235420",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072283410756",
-          "cod": true
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "Bluza rupta roz S",
       "orderName": "#235420",
       "orderLinks": [
@@ -433,34 +402,34 @@
       ]
     },
     {
-      "name": "T Maro S",
-      "orderName": "#235415",
+      "name": "W 3rd eye M",
+      "orderName": "#235420",
       "orderLinks": [
         {
-          "name": "#235415",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-          "cod": false
+          "name": "#235420",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072283410756",
+          "cod": true
         }
       ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
+      "category": "Windbreaker",
+      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
       ]
     },
     {
-      "name": "T Mov S",
-      "orderName": "#235415",
+      "name": "T Gri M",
+      "orderName": "#235422",
       "orderLinks": [
         {
-          "name": "#235415",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-          "cod": false
+          "name": "#235422",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073117847876",
+          "cod": true
         }
       ],
-      "category": "Tricou raiat",
-      "hours": 1,
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
@@ -501,7 +470,28 @@
       ]
     }
   ],
-  "croitBuffer": [],
+  "croitBuffer": [
+    {
+      "gid": "1210393351047716",
+      "name": "03. T negru 2L",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1217519679241704",
+      "name": "03. Bluza alb rupta 2L",
+      "orderName": "#235381, #235400",
+      "category": "Bluza inimioara / obsidian",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    }
+  ],
   "backlog": {
     "hours": 0,
     "items": []
