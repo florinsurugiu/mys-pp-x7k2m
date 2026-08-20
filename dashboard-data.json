@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T09:02:54.214Z",
+  "generatedAt": "2026-08-20T09:48:26.793Z",
   "planDate": "2026-08-20",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -20,14 +20,6 @@
       "category": "Camasa scurta",
       "size": "XXL",
       "hours": 1.4167
-    },
-    {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "M",
-      "hours": 1.5
     },
     {
       "productId": "gid://shopify/Product/15614810030404",
@@ -54,28 +46,12 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "S",
-      "hours": 1.5
-    },
-    {
       "productId": "gid://shopify/Product/15629712687428",
       "title": "777 Mauve Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
       "category": "Tricou raiat",
       "size": "S",
       "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "XS",
-      "hours": 1.5
     },
     {
       "productId": "gid://shopify/Product/15499245715780",
@@ -124,21 +100,36 @@
       "category": "Tricou simplu",
       "size": "L",
       "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/7820252315885",
+      "title": "Oversized Full Print T-shirt Beige",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_beige_tshirt_42e4b226-e1ad-4dfb-9d33-79f00fc76502.jpg?v=1769644607",
+      "category": "Tricou simplu",
+      "size": "M",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15616900333892",
+      "title": "Blue Stripes Oversized Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
+      "category": "Camasa Unisex",
+      "size": "XL",
+      "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15590401605956",
+      "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_120446_12b5b28c-d728-4ca8-bdb2-a4b21e5fe9c7.jpg?v=1786555960",
+      "category": "Camasa scurta",
+      "size": "XL",
+      "hours": 1.4167
     }
   ],
   "felicia": {
-    "hours": 9,
+    "hours": 8.67,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "02. Bluza Love XL",
-        "hours": 1,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "03. T grey 2M",
         "hours": 0.67,
@@ -149,16 +140,7 @@
         ]
       },
       {
-        "title": "04. Bluza rupta roz S",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "05. C carouri rosii XXL",
+        "title": "05. C carouri rosii XXL (0.5 cu 3)",
         "hours": 1.42,
         "tags": [
           "leftover",
@@ -167,72 +149,12 @@
         ]
       },
       {
-        "title": "01. W 3rd eye M",
-        "hours": 2.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235420",
-        "orderLinks": [
-          {
-            "name": "#235420",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072283410756",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "02. C Complex Rosu XXL",
-        "hours": 1.75,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235421",
-        "orderLinks": [
-          {
-            "name": "#235421",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072978223428",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. X. Maiou alb 2L",
-        "hours": 1,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8.75,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "02. T offwhite 2M + XL ",
-        "hours": 0.67,
+        "title": "01. Bluza rupta roz 2S",
+        "hours": 1.67,
         "tags": [
           "leftover",
           "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "03. W Third Eye M + S",
-        "hours": 2.5,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. Bluza rupta roz S",
-        "hours": 1,
-        "tags": [
+          "buffer",
           "shopify"
         ],
         "orderName": "#235420",
@@ -275,7 +197,76 @@
         ]
       },
       {
-        "title": "04. camasa carouri XXL",
+        "title": "04. C Complex Rosu XXL",
+        "hours": 1.75,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235421",
+        "orderLinks": [
+          {
+            "name": "#235421",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072978223428",
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 8.58,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "02. T offwhite 2M + XL ",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "03. W Third Eye M + S",
+        "hours": 2.5,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. W 3rd eye M",
+        "hours": 2.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235420",
+        "orderLinks": [
+          {
+            "name": "#235420",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072283410756",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "02. C maneci detasate XS",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235423",
+        "orderLinks": [
+          {
+            "name": "#235423",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073218576708",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. camasa carouri XXL",
         "hours": 1.42,
         "tags": [
           "predicted"
@@ -464,6 +455,23 @@
       ],
       "category": "Camasa lunga",
       "hours": 1.75,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C maneci detasate XS",
+      "orderName": "#235423",
+      "orderLinks": [
+        {
+          "name": "#235423",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073218576708",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
