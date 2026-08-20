@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T20:02:15.712Z",
+  "generatedAt": "2026-08-20T20:43:21.197Z",
   "planDate": "2026-08-20",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.46,
+    "hours": 7.63,
     "capacity": 7.2,
     "items": [
       {
@@ -156,7 +156,22 @@
         ]
       },
       {
-        "title": "02. C Complex Rosu XXL",
+        "title": "02. T Negru M",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235427",
+        "orderLinks": [
+          {
+            "name": "#235427",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. C Complex Rosu XXL",
         "hours": 1.75,
         "tags": [
           "shopify"
@@ -166,21 +181,6 @@
           {
             "name": "#235421",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072978223428",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. Double Sleeve Negru MG Vitamin M",
-        "hours": 1.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235425",
-        "orderLinks": [
-          {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
             "cod": false
           }
         ]
@@ -203,7 +203,7 @@
     ]
   },
   "flori": {
-    "hours": 11.47,
+    "hours": 7.97,
     "capacity": 7.2,
     "items": [
       {
@@ -237,12 +237,12 @@
         ]
       },
       {
-        "title": "02. C maneci detasate XS + S",
-        "hours": 3,
+        "title": "02. C maneci detasate XS + S + M",
+        "hours": 4.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235423, #235424",
+        "orderName": "#235423, #235424, #235427",
         "orderLinks": [
           {
             "name": "#235423",
@@ -253,26 +253,11 @@
             "name": "#235424",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073608483140",
             "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. W Pink XS + M",
-        "hours": 5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235425, #235426",
-        "orderLinks": [
-          {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-            "cod": false
           },
           {
-            "name": "#235426",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074306048324",
-            "cod": false
+            "name": "#235427",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
+            "cod": true
           }
         ]
       }
@@ -364,8 +349,8 @@
       ]
     },
     {
-      "name": "C maneci detasate XS + S",
-      "orderName": "#235423, #235424",
+      "name": "C maneci detasate XS + S + M",
+      "orderName": "#235423, #235424, #235427",
       "orderLinks": [
         {
           "name": "#235423",
@@ -376,10 +361,32 @@
           "name": "#235424",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073608483140",
           "cod": true
+        },
+        {
+          "name": "#235427",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
+          "cod": true
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 3,
+      "hours": 4.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru M",
+      "orderName": "#235427",
+      "orderLinks": [
+        {
+          "name": "#235427",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
