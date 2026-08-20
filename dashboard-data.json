@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T06:03:04.057Z",
+  "generatedAt": "2026-08-20T07:04:04.763Z",
   "planDate": "2026-08-20",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.53,
+    "hours": 7.87,
     "capacity": 7.2,
     "items": [
       {
@@ -176,26 +176,11 @@
             "cod": true
           }
         ]
-      },
-      {
-        "title": "02. T Maro S",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235415",
-        "orderLinks": [
-          {
-            "name": "#235415",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
-            "cod": false
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.67,
+    "hours": 8.33,
     "capacity": 7.2,
     "items": [
       {
@@ -232,7 +217,22 @@
         ]
       },
       {
-        "title": "02. T Mov S",
+        "title": "02. T Maro S",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235415",
+        "orderLinks": [
+          {
+            "name": "#235415",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11068832776516",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. T Mov S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -247,7 +247,7 @@
         ]
       },
       {
-        "title": "03. W Statue L",
+        "title": "04. W Statue L",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -260,30 +260,48 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "04. X. Maiou alb 2L",
-        "hours": 1,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
       }
     ]
   },
   "croit": [
     {
+      "name": "01. camasa carouri XXL",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "dueOn": "2026-08-20",
+      "leftover": false,
+      "number": 1,
+      "orderLinks": [],
+      "hours": 1.4167,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "02. bluza rupta roz XS-S",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-20",
+      "leftover": false,
+      "number": 2,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
       "name": "03. Bluza alb rupta L + S",
       "orderName": null,
       "category": "Bluza inimioara / obsidian",
-      "dueOn": "2026-08-19",
-      "leftover": true,
+      "dueOn": "2026-08-20",
+      "leftover": false,
       "number": 3,
       "orderLinks": [],
       "hours": 3,
       "tags": [
-        "leftover",
         "asana",
         "predicted"
       ]
@@ -292,13 +310,12 @@
       "name": "04. T alb XXL + S + L + M (sau ce crezi ca lipseste)",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-19",
-      "leftover": true,
+      "dueOn": "2026-08-20",
+      "leftover": false,
       "number": 4,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
-        "leftover",
         "asana",
         "predicted"
       ]
@@ -458,6 +475,23 @@
       ],
       "category": "Windbreaker",
       "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Complex Rosu XXL",
+      "orderName": "#235421",
+      "orderLinks": [
+        {
+          "name": "#235421",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072978223428",
+          "cod": false
+        }
+      ],
+      "category": "Camasa lunga",
+      "hours": 1.75,
       "leftover": false,
       "tags": [
         "shopify"
