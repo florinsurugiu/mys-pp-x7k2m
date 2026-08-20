@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T06:21:58.113Z",
+  "generatedAt": "2026-08-20T08:22:09.546Z",
   "periods": {
     "7": {
       "topSellers": [
@@ -105,6 +105,13 @@
           "productId": "gid://shopify/Product/15614810030404",
           "title": "Dream State Oversized Off-White Tee",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
+          "units": 2,
+          "revenue": 518
+        },
+        {
+          "productId": "gid://shopify/Product/15614948868420",
+          "title": "Reality Grey Oversized T-Shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
           "units": 2,
           "revenue": 518
         },
@@ -231,13 +238,6 @@
           "productId": "gid://shopify/Product/7820223250669",
           "title": "Oversized Black T-shirt Superwoman",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_oversizedtshirt_superwoman_c8bc9810-f5c7-4365-913c-cce6077b7547.jpg?v=1769599859",
-          "units": 1,
-          "revenue": 259
-        },
-        {
-          "productId": "gid://shopify/Product/15614948868420",
-          "title": "Reality Grey Oversized T-Shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
           "units": 1,
           "revenue": 259
         }
@@ -1771,7 +1771,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
             "views": 124,
             "addToCart": 10,
-            "purchases": 1
+            "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/15421171990852",
@@ -1793,7 +1793,7 @@
             "productId": "gid://shopify/Product/8825186812228",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
-            "views": 100,
+            "views": 101,
             "addToCart": 3,
             "purchases": 0
           },
@@ -1801,7 +1801,7 @@
             "productId": "gid://shopify/Product/15421163340100",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated806.jpg?v=1767032584",
-            "views": 100,
+            "views": 101,
             "addToCart": 3,
             "purchases": 0
           },
@@ -1937,7 +1937,7 @@
             "productId": "gid://shopify/Product/9074771755332",
             "title": "Pop Cola Mix Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-mix-black-oversized-t-shirt-493598_a8863545-1201-422a-8ec2-dcd417b8fa0a.jpg?v=1770115372",
-            "views": 47,
+            "views": 48,
             "addToCart": 1,
             "purchases": 0
           },
@@ -1945,7 +1945,7 @@
             "productId": "gid://shopify/Product/9074773885252",
             "title": "Pop Cola Mix Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_popcola_mix.jpg?v=1769682410",
-            "views": 47,
+            "views": 48,
             "addToCart": 1,
             "purchases": 0
           },
@@ -2025,7 +2025,7 @@
             "productId": "gid://shopify/Product/15590250840388",
             "title": "MYSIMPLICATED® Duality Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
-            "views": 36,
+            "views": 37,
             "addToCart": 6,
             "purchases": 1
           },
@@ -2830,6 +2830,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15323911979332",
+            "title": "Oversized Black T-shirt Anxiety",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-anxiety.jpg?v=1770118393",
+            "views": 9,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15414105440580",
             "title": "Pop Cola Signature Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated280.jpg?v=1766358777",
@@ -2966,14 +2974,6 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15323911979332",
-            "title": "Oversized Black T-shirt Anxiety",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-anxiety.jpg?v=1770118393",
-            "views": 8,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/15573330395460",
             "title": "Workwear Ecru Oversized Pocket T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260611_231302_83eeb7e7-c091-402e-8371-bf1dd1b7c613.jpg?v=1786558114",
@@ -3102,6 +3102,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/8649032270148",
+            "title": "Oversized Cotton White T-shirt Double Eye",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
+            "views": 6,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/8651674190148",
             "title": "Black Hoodie Mushroom",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_mushrooms_hoodie.jpg?v=1769614342",
@@ -3169,6 +3177,14 @@
             "productId": "gid://shopify/Product/14811015479620",
             "title": "Obsidian Phantom Crewneck",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_obsidian_m2.jpg?v=1769717013",
+            "views": 6,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/14980709417284",
+            "title": "Pink Abyss Frayed Crewneck",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_abys_pink1.jpg?v=1769862797",
             "views": 6,
             "addToCart": 0,
             "purchases": 0
@@ -3270,14 +3286,6 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/8649032270148",
-            "title": "Oversized Cotton White T-shirt Double Eye",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
-            "views": 5,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/9074297012548",
             "title": "Limited Series Pop Cola 330 Unisex Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4200.jpg?v=1769819731",
@@ -3355,14 +3363,6 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_abys_w1.jpg?v=1769730701",
             "views": 5,
             "addToCart": 1,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/14980709417284",
-            "title": "Pink Abyss Frayed Crewneck",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_abys_pink1.jpg?v=1769862797",
-            "views": 5,
-            "addToCart": 0,
             "purchases": 0
           },
           {
@@ -3758,6 +3758,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15636885799236",
+            "title": "Broken Stripes Top",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/broken-top.jpg?v=1786523248",
+            "views": 3,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/7714299183341",
             "title": "Short Sleeve Shirt (customisable)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/short-sleeve-shirt-customisable-666833.jpg?v=1740948874",
@@ -3894,6 +3902,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15417710117188",
+            "title": "Denim Dual Layered Sweater",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated513.jpg?v=1766692472",
+            "views": 2,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15419270693188",
             "title": "Blue Camo Denim Jacket",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated680.jpg?v=1766872579",
@@ -3921,14 +3937,6 @@
             "productId": "gid://shopify/Product/15620095672644",
             "title": "Blush Cropped Set",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260721_090938_e4b5e386-0ab1-439d-83d4-c2bb26a8f61d.jpg?v=1786555609",
-            "views": 2,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15636885799236",
-            "title": "Broken Stripes Top",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/broken-top.jpg?v=1786523248",
             "views": 2,
             "addToCart": 0,
             "purchases": 0
@@ -4030,14 +4038,6 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15417710117188",
-            "title": "Denim Dual Layered Sweater",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated513.jpg?v=1766692472",
-            "views": 1,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/15417881035076",
             "title": "Frequency Earth Brown T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated757.jpg?v=1766873423",
@@ -4089,6 +4089,13 @@
           "revenue": 3101.45
         },
         {
+          "productId": "gid://shopify/Product/15614948868420",
+          "title": "Reality Grey Oversized T-Shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+          "units": 10,
+          "revenue": 2737.62
+        },
+        {
           "productId": "gid://shopify/Product/14982879248708",
           "title": "Dystopia White Oversized Sweater",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dystopia-White-Oversized-Sweater1.jpg?v=1769817561",
@@ -4101,13 +4108,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
           "units": 7,
           "revenue": 2583
-        },
-        {
-          "productId": "gid://shopify/Product/15614948868420",
-          "title": "Reality Grey Oversized T-Shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
-          "units": 9,
-          "revenue": 2478.62
         },
         {
           "productId": "gid://shopify/Product/15590250840388",
@@ -6130,7 +6130,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
             "views": 848,
             "addToCart": 62,
-            "purchases": 9
+            "purchases": 10
           },
           {
             "productId": "gid://shopify/Product/7837829071085",
@@ -6152,7 +6152,7 @@
             "productId": "gid://shopify/Product/8825186812228",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
-            "views": 460,
+            "views": 461,
             "addToCart": 18,
             "purchases": 0
           },
@@ -6160,7 +6160,7 @@
             "productId": "gid://shopify/Product/15421163340100",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated806.jpg?v=1767032584",
-            "views": 460,
+            "views": 461,
             "addToCart": 18,
             "purchases": 0
           },
@@ -6384,7 +6384,7 @@
             "productId": "gid://shopify/Product/9074771755332",
             "title": "Pop Cola Mix Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-mix-black-oversized-t-shirt-493598_a8863545-1201-422a-8ec2-dcd417b8fa0a.jpg?v=1770115372",
-            "views": 227,
+            "views": 228,
             "addToCart": 6,
             "purchases": 1
           },
@@ -6392,7 +6392,7 @@
             "productId": "gid://shopify/Product/9074773885252",
             "title": "Pop Cola Mix Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_popcola_mix.jpg?v=1769682410",
-            "views": 227,
+            "views": 228,
             "addToCart": 6,
             "purchases": 0
           },
@@ -6581,20 +6581,20 @@
             "purchases": 2
           },
           {
+            "productId": "gid://shopify/Product/15590250840388",
+            "title": "MYSIMPLICATED® Duality Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
+            "views": 148,
+            "addToCart": 21,
+            "purchases": 4
+          },
+          {
             "productId": "gid://shopify/Product/8871129416004",
             "title": "Oversized White Ribbon T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Pink-Ribbons-T-shirt1-mysimplicated.jpg?v=1769595237",
             "views": 147,
             "addToCart": 10,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15590250840388",
-            "title": "MYSIMPLICATED® Duality Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
-            "views": 147,
-            "addToCart": 21,
-            "purchases": 4
           },
           {
             "productId": "gid://shopify/Product/15572089995588",
@@ -7192,7 +7192,7 @@
             "productId": "gid://shopify/Product/15323911979332",
             "title": "Oversized Black T-shirt Anxiety",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-anxiety.jpg?v=1770118393",
-            "views": 46,
+            "views": 47,
             "addToCart": 3,
             "purchases": 1
           },
@@ -7541,6 +7541,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/8649032270148",
+            "title": "Oversized Cotton White T-shirt Double Eye",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
+            "views": 29,
+            "addToCart": 2,
+            "purchases": 1
+          },
+          {
             "productId": "gid://shopify/Product/9435977810244",
             "title": "Oversized Cotton Black T-shirt Circus",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_circus_tshirt1_38a6adc7-48fb-40f3-8305-270dc107f047.jpg?v=1769687674",
@@ -7587,14 +7595,6 @@
             "views": 28,
             "addToCart": 1,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/8649032270148",
-            "title": "Oversized Cotton White T-shirt Double Eye",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
-            "views": 28,
-            "addToCart": 2,
-            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15412309295428",
@@ -8101,6 +8101,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/14980709417284",
+            "title": "Pink Abyss Frayed Crewneck",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_abys_pink1.jpg?v=1769862797",
+            "views": 15,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15157312946500",
             "title": "Pop Cola Ciao Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated224.jpg?v=1766272689",
@@ -8226,14 +8234,6 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_abys_w1.jpg?v=1769730701",
             "views": 14,
             "addToCart": 1,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/14980709417284",
-            "title": "Pink Abyss Frayed Crewneck",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_abys_pink1.jpg?v=1769862797",
-            "views": 14,
-            "addToCart": 0,
             "purchases": 0
           },
           {
@@ -8429,18 +8429,18 @@
           "revenue": 3285.83
         },
         {
+          "productId": "gid://shopify/Product/15614948868420",
+          "title": "Reality Grey Oversized T-Shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+          "units": 12,
+          "revenue": 3255.62
+        },
+        {
           "productId": "gid://shopify/Product/15419494531396",
           "title": "Aria Scarf Hoodie",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated784.jpg?v=1766876426",
           "units": 6,
           "revenue": 3193.36
-        },
-        {
-          "productId": "gid://shopify/Product/15614948868420",
-          "title": "Reality Grey Oversized T-Shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
-          "units": 11,
-          "revenue": 2996.62
         },
         {
           "productId": "gid://shopify/Product/15590250840388",
@@ -10625,7 +10625,7 @@
             "productId": "gid://shopify/Product/8825186812228",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
-            "views": 1360,
+            "views": 1361,
             "addToCart": 48,
             "purchases": 1
           },
@@ -10633,7 +10633,7 @@
             "productId": "gid://shopify/Product/15421163340100",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated806.jpg?v=1767032584",
-            "views": 1360,
+            "views": 1361,
             "addToCart": 48,
             "purchases": 1
           },
@@ -10678,6 +10678,22 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/9074771755332",
+            "title": "Pop Cola Mix Black Oversized T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-mix-black-oversized-t-shirt-493598_a8863545-1201-422a-8ec2-dcd417b8fa0a.jpg?v=1770115372",
+            "views": 976,
+            "addToCart": 36,
+            "purchases": 2
+          },
+          {
+            "productId": "gid://shopify/Product/9074773885252",
+            "title": "Pop Cola Mix Black Oversized T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_popcola_mix.jpg?v=1769682410",
+            "views": 976,
+            "addToCart": 36,
+            "purchases": 3
+          },
+          {
             "productId": "gid://shopify/Product/15573327249732",
             "title": "Reality Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
@@ -10691,23 +10707,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
             "views": 976,
             "addToCart": 66,
-            "purchases": 11
-          },
-          {
-            "productId": "gid://shopify/Product/9074771755332",
-            "title": "Pop Cola Mix Black Oversized T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-mix-black-oversized-t-shirt-493598_a8863545-1201-422a-8ec2-dcd417b8fa0a.jpg?v=1770115372",
-            "views": 975,
-            "addToCart": 36,
-            "purchases": 2
-          },
-          {
-            "productId": "gid://shopify/Product/9074773885252",
-            "title": "Pop Cola Mix Black Oversized T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_popcola_mix.jpg?v=1769682410",
-            "views": 975,
-            "addToCart": 36,
-            "purchases": 3
+            "purchases": 12
           },
           {
             "productId": "gid://shopify/Product/7837843849453",
@@ -11265,7 +11265,7 @@
             "productId": "gid://shopify/Product/15590250840388",
             "title": "MYSIMPLICATED® Duality Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
-            "views": 296,
+            "views": 297,
             "addToCart": 35,
             "purchases": 5
           },
@@ -11662,6 +11662,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15323911979332",
+            "title": "Oversized Black T-shirt Anxiety",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-anxiety.jpg?v=1770118393",
+            "views": 189,
+            "addToCart": 21,
+            "purchases": 5
+          },
+          {
             "productId": "gid://shopify/Product/9435991736644",
             "title": "Oversized Cotton White T-shirt Kindness",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_kindness2.jpg?v=1769821274",
@@ -11675,14 +11683,6 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
             "views": 188,
             "addToCart": 14,
-            "purchases": 5
-          },
-          {
-            "productId": "gid://shopify/Product/15323911979332",
-            "title": "Oversized Black T-shirt Anxiety",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-anxiety.jpg?v=1770118393",
-            "views": 188,
-            "addToCart": 21,
             "purchases": 5
           },
           {
@@ -12409,7 +12409,7 @@
             "productId": "gid://shopify/Product/8649032270148",
             "title": "Oversized Cotton White T-shirt Double Eye",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
-            "views": 71,
+            "views": 72,
             "addToCart": 6,
             "purchases": 3
           },
