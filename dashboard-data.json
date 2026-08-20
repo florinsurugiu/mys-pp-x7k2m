@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T19:42:59.873Z",
+  "generatedAt": "2026-08-20T20:02:15.712Z",
   "planDate": "2026-08-20",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.96,
+    "hours": 8.46,
     "capacity": 7.2,
     "items": [
       {
@@ -140,22 +140,17 @@
         ]
       },
       {
-        "title": "01. Bluza alb rupta 2L",
-        "hours": 3,
+        "title": "01. W Statue XL ",
+        "hours": 2.5,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235381, #235400",
+        "orderName": "#235419",
         "orderLinks": [
           {
-            "name": "#235381",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11060422050116",
-            "cod": false
-          },
-          {
-            "name": "#235400",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066308067652",
+            "name": "#235419",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
             "cod": false
           }
         ]
@@ -208,7 +203,7 @@
     ]
   },
   "flori": {
-    "hours": 8.47,
+    "hours": 11.47,
     "capacity": 7.2,
     "items": [
       {
@@ -221,17 +216,22 @@
         ]
       },
       {
-        "title": "01. W Statue XL ",
-        "hours": 2.5,
+        "title": "01. Bluza alb rupta 2L",
+        "hours": 3,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235419",
+        "orderName": "#235381, #235400",
         "orderLinks": [
           {
-            "name": "#235419",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
+            "name": "#235381",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11060422050116",
+            "cod": false
+          },
+          {
+            "name": "#235400",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066308067652",
             "cod": false
           }
         ]
@@ -257,16 +257,21 @@
         ]
       },
       {
-        "title": "03. W Pink XS",
-        "hours": 2.5,
+        "title": "03. W Pink XS + M",
+        "hours": 5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235425",
+        "orderName": "#235425, #235426",
         "orderLinks": [
           {
             "name": "#235425",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
+            "cod": false
+          },
+          {
+            "name": "#235426",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074306048324",
             "cod": false
           }
         ]
@@ -415,17 +420,22 @@
       ]
     },
     {
-      "name": "W Pink XS",
-      "orderName": "#235425",
+      "name": "W Pink XS + M",
+      "orderName": "#235425, #235426",
       "orderLinks": [
         {
           "name": "#235425",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
           "cod": false
+        },
+        {
+          "name": "#235426",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074306048324",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -443,6 +453,23 @@
       ],
       "category": "Double sleeve",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Statue L",
+      "orderName": "#235426",
+      "orderLinks": [
+        {
+          "name": "#235426",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074306048324",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
