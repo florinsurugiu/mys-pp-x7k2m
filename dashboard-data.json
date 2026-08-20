@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T13:24:47.281Z",
+  "generatedAt": "2026-08-20T14:06:09.585Z",
   "planDate": "2026-08-20",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,12 +127,58 @@
     }
   ],
   "felicia": {
-    "hours": 6.17,
+    "hours": 4.46,
     "capacity": 7.2,
     "items": [
       {
-        "title": "05. C carouri rosii XXL (0.5 cu 3)",
-        "hours": 1.42,
+        "title": "05. C carouri rosii XXL (85%))",
+        "hours": 0.21,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. W Statue XL ",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235419",
+        "orderLinks": [
+          {
+            "name": "#235419",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. C Complex Rosu XXL",
+        "hours": 1.75,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235421",
+        "orderLinks": [
+          {
+            "name": "#235421",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072978223428",
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 4.47,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "02. T negru L (30%)",
+        "hours": 0.47,
         "tags": [
           "leftover",
           "asana",
@@ -160,60 +206,6 @@
         ]
       },
       {
-        "title": "02. C Complex Rosu XXL",
-        "hours": 1.75,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235421",
-        "orderLinks": [
-          {
-            "name": "#235421",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11072978223428",
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 6.67,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "01. W Third Eye M + S",
-        "hours": 2.5,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "02. T negru L",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. W Statue L",
-        "hours": 2.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235419",
-        "orderLinks": [
-          {
-            "name": "#235419",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
-            "cod": false
-          }
-        ]
-      },
-      {
         "title": "02. X. Maiou alb 2L",
         "hours": 1,
         "tags": [
@@ -229,7 +221,7 @@
       "name": "04. T alb XXL + S + L + M (sau ce crezi ca lipseste)",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-20",
+      "dueOn": "2026-08-24",
       "leftover": false,
       "number": 4,
       "orderLinks": [],
@@ -240,10 +232,10 @@
       ]
     },
     {
-      "name": "05. W Statue XL 2 buc",
+      "name": "05. W Statue XL ",
       "orderName": null,
       "category": "Windbreaker",
-      "dueOn": "2026-08-20",
+      "dueOn": "2026-08-24",
       "leftover": false,
       "number": 5,
       "orderLinks": [],
@@ -332,23 +324,6 @@
       ]
     },
     {
-      "name": "W Statue L",
-      "orderName": "#235419",
-      "orderLinks": [
-        {
-          "name": "#235419",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "C Complex Rosu XXL",
       "orderName": "#235421",
       "orderLinks": [
@@ -367,6 +342,16 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1217669130084966",
+      "name": "T. offwhite cu tiv - L",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1217669130084960",
       "name": "06. camasa maneci rupte maro - XS",
