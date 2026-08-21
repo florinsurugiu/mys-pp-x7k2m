@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T10:55:02.025Z",
+  "generatedAt": "2026-08-21T11:15:49.477Z",
   "planDate": "2026-08-21",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.25,
+    "hours": 7.42,
     "capacity": 7.2,
     "items": [
       {
@@ -179,22 +179,7 @@
         ]
       },
       {
-        "title": "03. Bluza roz MYstudios S",
-        "hours": 0.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235428",
-        "orderLinks": [
-          {
-            "name": "#235428",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074493972804",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. C Bal scurta gri XL",
+        "title": "03. C Bal scurta gri XL",
         "hours": 1.42,
         "tags": [
           "shopify"
@@ -209,8 +194,8 @@
         ]
       },
       {
-        "title": "05. X. Maiou alb 2L",
-        "hours": 1,
+        "title": "04. T alb M",
+        "hours": 0.67,
         "tags": [
           "predicted"
         ],
@@ -220,7 +205,7 @@
     ]
   },
   "flori": {
-    "hours": 8.08,
+    "hours": 7.58,
     "capacity": 7.2,
     "items": [
       {
@@ -257,7 +242,22 @@
         ]
       },
       {
-        "title": "02. W Pink XS",
+        "title": "02. Bluza roz MYstudios S",
+        "hours": 0.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235428",
+        "orderLinks": [
+          {
+            "name": "#235428",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074493972804",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. W Pink XS",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -272,8 +272,8 @@
         ]
       },
       {
-        "title": "03. T alb 2L + M",
-        "hours": 2,
+        "title": "04. X. Maiou alb 2L",
+        "hours": 1,
         "tags": [
           "predicted"
         ],
@@ -284,14 +284,14 @@
   },
   "croit": [
     {
-      "name": "0. T alb 2L + M",
+      "name": "0. T alb M",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": null,
+      "dueOn": "2026-08-21",
       "leftover": false,
       "number": 0,
       "orderLinks": [],
-      "hours": 2.0000999999999998,
+      "hours": 0.6667,
       "tags": [
         "asana",
         "predicted"
