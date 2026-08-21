@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T07:14:55.975Z",
+  "generatedAt": "2026-08-21T07:57:49.200Z",
   "planDate": "2026-08-21",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -30,12 +30,36 @@
       "hours": 0.6667
     },
     {
+      "productId": "gid://shopify/Product/15499252695364",
+      "title": "Fragmented Sleeves Shirt V2",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
+      "category": "Camasa Unisex",
+      "size": "M",
+      "hours": 1.5
+    },
+    {
       "productId": "gid://shopify/Product/7837829071085",
       "title": "Third Eye  Windbreaker",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
       "category": "Windbreaker",
       "size": "M",
       "hours": 2.5
+    },
+    {
+      "productId": "gid://shopify/Product/15499252695364",
+      "title": "Fragmented Sleeves Shirt V2",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
+      "category": "Camasa Unisex",
+      "size": "S",
+      "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15499252695364",
+      "title": "Fragmented Sleeves Shirt V2",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
+      "category": "Camasa Unisex",
+      "size": "XS",
+      "hours": 1.5
     },
     {
       "productId": "gid://shopify/Product/15614810030404",
@@ -100,39 +124,24 @@
       "category": "Tricou Doer",
       "size": "L",
       "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/8888098619716",
-      "title": "Ivory T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Ivory_tshirt_2_6dfde0fb-9aa9-4429-b43f-e7e4c32c864f.jpg?v=1769606445",
-      "category": "Tricou raiat",
-      "size": "S",
-      "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/15614948868420",
-      "title": "Reality Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
-      "category": "Tricou simplu",
-      "size": "XL",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15588974428484",
-      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-      "category": "Camasa scurta",
-      "size": "XL",
-      "hours": 1.4167
     }
   ],
   "felicia": {
-    "hours": 8.58,
+    "hours": 8.67,
     "capacity": 7.2,
     "items": [
       {
         "title": "02. bluza alba L - 2 buc",
         "hours": 1.5,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "03. T roz 2M",
+        "hours": 0.67,
         "tags": [
           "leftover",
           "asana",
@@ -156,22 +165,7 @@
         ]
       },
       {
-        "title": "02. T Negru M",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235427",
-        "orderLinks": [
-          {
-            "name": "#235427",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. Double Sleeve Negru MG Vitamin M",
+        "title": "02. Double Sleeve Negru MG Vitamin M",
         "hours": 1.5,
         "tags": [
           "shopify"
@@ -186,22 +180,46 @@
         ]
       },
       {
-        "title": "04. T Roz M",
-        "hours": 0.67,
+        "title": "03. W Mauve XS",
+        "hours": 2.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235431",
+        "orderName": "#235425",
         "orderLinks": [
           {
-            "name": "#235431",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074667086148",
-            "cod": true
+            "name": "#235425",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
+            "cod": false
           }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 8.42,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "02. camasa maro maneci rupte XS",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
         ]
       },
       {
-        "title": "05. C Complex Rosu XXL",
+        "title": "03. camasa maro M",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. C Complex Rosu XXL",
         "hours": 1.75,
         "tags": [
           "shopify"
@@ -214,47 +232,9 @@
             "cod": false
           }
         ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8.33,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "03. camasa maro M",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
       },
       {
-        "title": "01. C maneci detasate 2XS + M",
-        "hours": 4.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer",
-          "shopify"
-        ],
-        "orderName": "#235423, #235427",
-        "orderLinks": [
-          {
-            "name": "#235423",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073218576708",
-            "cod": false
-          },
-          {
-            "name": "#235427",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "02. W Mauve XS",
+        "title": "02. W Pink XS",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -265,6 +245,22 @@
             "name": "#235425",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
             "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. T roz M 2 buc",
+        "hours": 1.33,
+        "tags": [
+          "shopify",
+          "predicted"
+        ],
+        "orderName": "#235431",
+        "orderLinks": [
+          {
+            "name": "#235431",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074667086148",
+            "cod": true
           }
         ]
       }
@@ -294,6 +290,20 @@
       "number": 5,
       "orderLinks": [],
       "hours": 2.5,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "T roz M 2 buc",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-21",
+      "leftover": false,
+      "number": null,
+      "orderLinks": [],
+      "hours": 0.6667,
       "tags": [
         "asana",
         "predicted"
@@ -353,45 +363,6 @@
       "tags": [
         "asana",
         "predicted"
-      ]
-    },
-    {
-      "name": "C maneci detasate XS + M",
-      "orderName": "#235423, #235427",
-      "orderLinks": [
-        {
-          "name": "#235423",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073218576708",
-          "cod": false
-        },
-        {
-          "name": "#235427",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
-          "cod": true
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 3,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Negru M",
-      "orderName": "#235427",
-      "orderLinks": [
-        {
-          "name": "#235427",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
-          "cod": true
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
       ]
     },
     {
