@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T15:55:31.914Z",
+  "generatedAt": "2026-08-21T16:18:56.407Z",
   "planDate": "2026-08-21",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -94,14 +94,6 @@
       "hours": 1
     },
     {
-      "productId": "gid://shopify/Product/15499245715780",
-      "title": "Split White Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated129_74ef1e9a-d248-426a-9368-311404a90956.jpg?v=1773567724",
-      "category": "Tricou simplu",
-      "size": "S",
-      "hours": 0.6667
-    },
-    {
       "productId": "gid://shopify/Product/15614810030404",
       "title": "Dream State Oversized Off-White Tee",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
@@ -124,10 +116,18 @@
       "category": "Tricou Doer",
       "size": "L",
       "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/8888098619716",
+      "title": "Ivory T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Ivory_tshirt_2_6dfde0fb-9aa9-4429-b43f-e7e4c32c864f.jpg?v=1769606445",
+      "category": "Tricou raiat",
+      "size": "S",
+      "hours": 1
     }
   ],
   "felicia": {
-    "hours": 7.17,
+    "hours": 7.58,
     "capacity": 7.2,
     "items": [
       {
@@ -186,16 +186,16 @@
         ]
       },
       {
-        "title": "04. H offwhite M",
-        "hours": 1,
+        "title": "04. C Bal scurta gri XL",
+        "hours": 1.42,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235432",
+        "orderName": "#235429",
         "orderLinks": [
           {
-            "name": "#235432",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
+            "name": "#235429",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074510061892",
             "cod": false
           }
         ]
@@ -203,7 +203,7 @@
     ]
   },
   "flori": {
-    "hours": 7.33,
+    "hours": 7.58,
     "capacity": 7.2,
     "items": [
       {
@@ -252,22 +252,37 @@
         ]
       },
       {
-        "title": "03. C Bal scurta gri XL",
-        "hours": 1.42,
+        "title": "03. H offwhite M",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235429",
+        "orderName": "#235432",
         "orderLinks": [
           {
-            "name": "#235429",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074510061892",
+            "name": "#235432",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
             "cod": false
           }
         ]
       },
       {
-        "title": "04. X. Maiou alb 2L",
+        "title": "04. T Split Alb S",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235433",
+        "orderLinks": [
+          {
+            "name": "#235433",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075993141572",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "05. X. Maiou alb 2L",
         "hours": 1,
         "tags": [
           "predicted"
@@ -419,6 +434,23 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Split Alb S",
+      "orderName": "#235433",
+      "orderLinks": [
+        {
+          "name": "#235433",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075993141572",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
