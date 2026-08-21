@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T05:54:37.471Z",
+  "generatedAt": "2026-08-21T06:24:16.880Z",
   "planDate": "2026-08-21",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.63,
+    "hours": 8.13,
     "capacity": 7.2,
     "items": [
       {
@@ -140,32 +140,37 @@
         ]
       },
       {
-        "title": "01. W Statue XL ",
-        "hours": 2.5,
+        "title": "01. Bluza alb rupta 2L",
+        "hours": 3,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235419",
+        "orderName": "#235381, #235400",
         "orderLinks": [
           {
-            "name": "#235419",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
+            "name": "#235381",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11060422050116",
+            "cod": false
+          },
+          {
+            "name": "#235400",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066308067652",
             "cod": false
           }
         ]
       },
       {
-        "title": "02. T Negru M",
+        "title": "02. T Roz M",
         "hours": 0.67,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235427",
+        "orderName": "#235431",
         "orderLinks": [
           {
-            "name": "#235427",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
+            "name": "#235431",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074667086148",
             "cod": true
           }
         ]
@@ -203,41 +208,45 @@
     ]
   },
   "flori": {
-    "hours": 7.97,
+    "hours": 8.13,
     "capacity": 7.2,
     "items": [
       {
-        "title": "02. T negru L (30%)",
-        "hours": 0.47,
+        "title": "01. T Negru M + L",
+        "hours": 0.93,
         "tags": [
           "leftover",
           "asana",
-          "buffer"
+          "buffer",
+          "shopify"
+        ],
+        "orderName": "#235427",
+        "orderLinks": [
+          {
+            "name": "#235427",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
+            "cod": true
+          }
         ]
       },
       {
-        "title": "01. Bluza alb rupta 2L",
-        "hours": 3,
+        "title": "02. W Statue XL ",
+        "hours": 2.5,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235381, #235400",
+        "orderName": "#235419",
         "orderLinks": [
           {
-            "name": "#235381",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11060422050116",
-            "cod": false
-          },
-          {
-            "name": "#235400",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11066308067652",
+            "name": "#235419",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11071950717252",
             "cod": false
           }
         ]
       },
       {
-        "title": "02. C maneci detasate XS + S + M",
+        "title": "03. C maneci detasate XS + S + M",
         "hours": 4.5,
         "tags": [
           "shopify"
@@ -382,6 +391,23 @@
         {
           "name": "#235427",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074377908548",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Roz M",
+      "orderName": "#235431",
+      "orderLinks": [
+        {
+          "name": "#235431",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074667086148",
           "cod": true
         }
       ],
