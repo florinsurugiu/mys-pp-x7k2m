@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T09:57:32.364Z",
+  "generatedAt": "2026-08-21T10:23:17.171Z",
   "planDate": "2026-08-21",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.75,
+    "hours": 8.25,
     "capacity": 7.2,
     "items": [
       {
@@ -179,7 +179,22 @@
         ]
       },
       {
-        "title": "03. C Bal scurta gri XL",
+        "title": "03. Bluza roz MYstudios S",
+        "hours": 0.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235428",
+        "orderLinks": [
+          {
+            "name": "#235428",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074493972804",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. C Bal scurta gri XL",
         "hours": 1.42,
         "tags": [
           "shopify"
@@ -194,7 +209,7 @@
         ]
       },
       {
-        "title": "04. X. Maiou alb 2L",
+        "title": "05. X. Maiou alb 2L",
         "hours": 1,
         "tags": [
           "predicted"
@@ -205,12 +220,12 @@
     ]
   },
   "flori": {
-    "hours": 7.92,
+    "hours": 8.08,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. camasa maro M",
-        "hours": 1.42,
+        "title": "02. T offwhite 2L fara tiv",
+        "hours": 0.67,
         "tags": [
           "leftover",
           "asana",
@@ -218,8 +233,8 @@
         ]
       },
       {
-        "title": "02. T offwhite 2L fara tiv",
-        "hours": 0.67,
+        "title": "03. C print XL",
+        "hours": 1.42,
         "tags": [
           "leftover",
           "asana",
@@ -242,22 +257,7 @@
         ]
       },
       {
-        "title": "02. Bluza roz MYstudios S",
-        "hours": 0.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235428",
-        "orderLinks": [
-          {
-            "name": "#235428",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074493972804",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. W Pink XS",
+        "title": "02. W Pink XS",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -272,8 +272,8 @@
         ]
       },
       {
-        "title": "04. T alb 2L",
-        "hours": 1.33,
+        "title": "03. T alb 2L + M",
+        "hours": 2,
         "tags": [
           "predicted"
         ],
@@ -284,28 +284,14 @@
   },
   "croit": [
     {
-      "name": "0. T alb 2L",
+      "name": "0. T alb 2L + M",
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": null,
       "leftover": false,
       "number": 0,
       "orderLinks": [],
-      "hours": 1.3334,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "04. T alb XXL + S + L + M (sau ce crezi ca lipseste)",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-24",
-      "leftover": false,
-      "number": 4,
-      "orderLinks": [],
-      "hours": 0.6667,
+      "hours": 2.0000999999999998,
       "tags": [
         "asana",
         "predicted"
@@ -348,20 +334,6 @@
       "number": null,
       "orderLinks": [],
       "hours": 2.8334,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "X. C gri balenci XL",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": null,
-      "leftover": false,
-      "number": null,
-      "orderLinks": [],
-      "hours": 1.4167,
       "tags": [
         "asana",
         "predicted"
