@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T18:20:09.847Z",
+  "generatedAt": "2026-08-21T19:04:22.998Z",
   "planDate": "2026-08-21",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -30,36 +30,12 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "M",
-      "hours": 1.5
-    },
-    {
       "productId": "gid://shopify/Product/7837829071085",
       "title": "Third Eye  Windbreaker",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
       "category": "Windbreaker",
       "size": "M",
       "hours": 2.5
-    },
-    {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "S",
-      "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "XS",
-      "hours": 1.5
     },
     {
       "productId": "gid://shopify/Product/15614810030404",
@@ -124,10 +100,34 @@
       "category": "Tricou raiat",
       "size": "S",
       "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/15614948868420",
+      "title": "Reality Grey Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+      "category": "Tricou simplu",
+      "size": "XL",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15588974428484",
+      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
+      "category": "Camasa scurta",
+      "size": "XL",
+      "hours": 1.4167
+    },
+    {
+      "productId": "gid://shopify/Product/8612489199940",
+      "title": "White T-shirt Darwin",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/white-t-shirt-darwin-399004_d2eac6c6-6443-4bc7-9332-2c3eab970a23.jpg?v=1770114834",
+      "category": "Tricou simplu",
+      "size": "L",
+      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 7.58,
+    "hours": 8.17,
     "capacity": 7.2,
     "items": [
       {
@@ -186,24 +186,33 @@
         ]
       },
       {
-        "title": "04. C Bal scurta gri XL",
-        "hours": 1.42,
+        "title": "04. H offwhite M",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235429",
+        "orderName": "#235432",
         "orderLinks": [
           {
-            "name": "#235429",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074510061892",
+            "name": "#235432",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
             "cod": false
           }
         ]
+      },
+      {
+        "title": "05. X. Maiou alb 2L",
+        "hours": 1,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
   "flori": {
-    "hours": 7.58,
+    "hours": 8.5,
     "capacity": 7.2,
     "items": [
       {
@@ -252,16 +261,16 @@
         ]
       },
       {
-        "title": "03. H offwhite M",
-        "hours": 1,
+        "title": "03. C Bal scurta gri XL",
+        "hours": 1.42,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235432",
+        "orderName": "#235429",
         "orderLinks": [
           {
-            "name": "#235432",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
+            "name": "#235429",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074510061892",
             "cod": false
           }
         ]
@@ -282,13 +291,19 @@
         ]
       },
       {
-        "title": "05. X. Maiou alb 2L",
-        "hours": 1,
+        "title": "05. C maneci detasate XS",
+        "hours": 1.5,
         "tags": [
-          "predicted"
+          "shopify"
         ],
-        "orderName": null,
-        "orderLinks": []
+        "orderName": "#235434",
+        "orderLinks": [
+          {
+            "name": "#235434",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11076392091972",
+            "cod": false
+          }
+        ]
       }
     ]
   },
@@ -451,6 +466,23 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C maneci detasate XS",
+      "orderName": "#235434",
+      "orderLinks": [
+        {
+          "name": "#235434",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11076392091972",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
