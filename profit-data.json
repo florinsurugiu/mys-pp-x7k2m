@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-08-21T13:58:40.711Z",
+  "generatedAt": "2026-08-21T14:43:40.356Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
-  "fxRate": 5.2515,
+  "fxRate": 5.2563,
   "days": [
     {
       "date": "2026-07-22",
       "revenue": 1300.31,
       "cogs": 625.55,
       "shipping": 83.3,
-      "adSpend": 675.08,
+      "adSpend": 675.7,
       "grossProfit": 591.46,
-      "netProfit": -83.62,
-      "roas": 1.93,
+      "netProfit": -84.24,
+      "roas": 1.92,
       "unknownCostUnits": 0
     },
     {
@@ -21,9 +21,9 @@
       "revenue": 295.2,
       "cogs": 120.29,
       "shipping": 0,
-      "adSpend": 639.06,
+      "adSpend": 639.64,
       "grossProfit": 174.91,
-      "netProfit": -464.15,
+      "netProfit": -464.73,
       "roas": 0.46,
       "unknownCostUnits": 0
     },
@@ -32,9 +32,9 @@
       "revenue": 569.15,
       "cogs": 274.72,
       "shipping": 0,
-      "adSpend": 646.35,
+      "adSpend": 646.95,
       "grossProfit": 294.43,
-      "netProfit": -351.92,
+      "netProfit": -352.52,
       "roas": 0.88,
       "unknownCostUnits": 0
     },
@@ -43,9 +43,9 @@
       "revenue": 1998.4,
       "cogs": 892.06,
       "shipping": 83.3,
-      "adSpend": 515.91,
+      "adSpend": 516.38,
       "grossProfit": 1023.04,
-      "netProfit": 507.13,
+      "netProfit": 506.66,
       "roas": 3.87,
       "unknownCostUnits": 0
     },
@@ -54,9 +54,9 @@
       "revenue": 1985.3,
       "cogs": 859.65,
       "shipping": 0,
-      "adSpend": 707.95,
+      "adSpend": 708.6,
       "grossProfit": 1125.65,
-      "netProfit": 417.7,
+      "netProfit": 417.05,
       "roas": 2.8,
       "unknownCostUnits": 0
     },
@@ -65,9 +65,9 @@
       "revenue": 1472.65,
       "cogs": 678.69,
       "shipping": 0,
-      "adSpend": 665,
+      "adSpend": 665.61,
       "grossProfit": 793.96,
-      "netProfit": 128.96,
+      "netProfit": 128.35,
       "roas": 2.21,
       "unknownCostUnits": 0
     },
@@ -76,10 +76,10 @@
       "revenue": 2674.35,
       "cogs": 1240.14,
       "shipping": 0,
-      "adSpend": 709.85,
+      "adSpend": 710.49,
       "grossProfit": 1434.21,
-      "netProfit": 724.36,
-      "roas": 3.77,
+      "netProfit": 723.72,
+      "roas": 3.76,
       "unknownCostUnits": 0
     },
     {
@@ -87,9 +87,9 @@
       "revenue": 2035,
       "cogs": 804.42,
       "shipping": 0,
-      "adSpend": 691.83,
+      "adSpend": 692.46,
       "grossProfit": 1230.58,
-      "netProfit": 538.75,
+      "netProfit": 538.12,
       "roas": 2.94,
       "unknownCostUnits": 0
     },
@@ -98,9 +98,9 @@
       "revenue": 314.1,
       "cogs": 384.97,
       "shipping": 0,
-      "adSpend": 629.13,
+      "adSpend": 629.7,
       "grossProfit": -70.87,
-      "netProfit": -700,
+      "netProfit": -700.57,
       "roas": 0.5,
       "unknownCostUnits": 0
     },
@@ -109,9 +109,9 @@
       "revenue": 2089.25,
       "cogs": 1036.43,
       "shipping": 0,
-      "adSpend": 650.92,
+      "adSpend": 651.52,
       "grossProfit": 1052.82,
-      "netProfit": 401.9,
+      "netProfit": 401.3,
       "roas": 3.21,
       "unknownCostUnits": 0
     },
@@ -120,9 +120,9 @@
       "revenue": 1057,
       "cogs": 668,
       "shipping": 0,
-      "adSpend": 571.36,
+      "adSpend": 571.89,
       "grossProfit": 389,
-      "netProfit": -182.36,
+      "netProfit": -182.89,
       "roas": 1.85,
       "unknownCostUnits": 0
     },
@@ -131,9 +131,9 @@
       "revenue": 1545,
       "cogs": 708.29,
       "shipping": 0,
-      "adSpend": 817.24,
+      "adSpend": 817.99,
       "grossProfit": 836.71,
-      "netProfit": 19.47,
+      "netProfit": 18.72,
       "roas": 1.89,
       "unknownCostUnits": 0
     },
@@ -142,10 +142,10 @@
       "revenue": 2094.9,
       "cogs": 1202.3,
       "shipping": 0,
-      "adSpend": 608.02,
+      "adSpend": 608.57,
       "grossProfit": 892.6,
-      "netProfit": 284.58,
-      "roas": 3.45,
+      "netProfit": 284.03,
+      "roas": 3.44,
       "unknownCostUnits": 0
     },
     {
@@ -153,10 +153,10 @@
       "revenue": 2187.25,
       "cogs": 992.37,
       "shipping": 0,
-      "adSpend": 562.54,
+      "adSpend": 563.05,
       "grossProfit": 1194.88,
-      "netProfit": 632.34,
-      "roas": 3.89,
+      "netProfit": 631.83,
+      "roas": 3.88,
       "unknownCostUnits": 0
     },
     {
@@ -164,9 +164,9 @@
       "revenue": 2203.1,
       "cogs": 1020.63,
       "shipping": 0,
-      "adSpend": 590.01,
+      "adSpend": 590.55,
       "grossProfit": 1182.47,
-      "netProfit": 592.46,
+      "netProfit": 591.92,
       "roas": 3.73,
       "unknownCostUnits": 0
     },
@@ -175,9 +175,9 @@
       "revenue": 229,
       "cogs": 120.29,
       "shipping": 0,
-      "adSpend": 657.65,
+      "adSpend": 658.25,
       "grossProfit": 108.71,
-      "netProfit": -548.94,
+      "netProfit": -549.54,
       "roas": 0.35,
       "unknownCostUnits": 0
     },
@@ -186,10 +186,10 @@
       "revenue": 3705.89,
       "cogs": 1434.83,
       "shipping": 333.2,
-      "adSpend": 497.53,
+      "adSpend": 497.98,
       "grossProfit": 1937.86,
-      "netProfit": 1440.33,
-      "roas": 7.45,
+      "netProfit": 1439.88,
+      "roas": 7.44,
       "unknownCostUnits": 0
     },
     {
@@ -197,9 +197,9 @@
       "revenue": 1765.33,
       "cogs": 705.22,
       "shipping": 249.9,
-      "adSpend": 563.33,
+      "adSpend": 563.84,
       "grossProfit": 810.21,
-      "netProfit": 246.88,
+      "netProfit": 246.37,
       "roas": 3.13,
       "unknownCostUnits": 0
     },
@@ -208,9 +208,9 @@
       "revenue": 785.72,
       "cogs": 750.38,
       "shipping": 83.3,
-      "adSpend": 692.57,
+      "adSpend": 693.2,
       "grossProfit": -47.96,
-      "netProfit": -740.53,
+      "netProfit": -741.16,
       "roas": 1.13,
       "unknownCostUnits": 0
     },
@@ -219,9 +219,9 @@
       "revenue": 959.3,
       "cogs": 462.13,
       "shipping": 0,
-      "adSpend": 494.9,
+      "adSpend": 495.35,
       "grossProfit": 497.17,
-      "netProfit": 2.27,
+      "netProfit": 1.82,
       "roas": 1.94,
       "unknownCostUnits": 0
     },
@@ -230,9 +230,9 @@
       "revenue": 2439.76,
       "cogs": 1272.72,
       "shipping": 166.6,
-      "adSpend": 437.82,
+      "adSpend": 438.22,
       "grossProfit": 1000.44,
-      "netProfit": 562.62,
+      "netProfit": 562.22,
       "roas": 5.57,
       "unknownCostUnits": 0
     },
@@ -241,10 +241,10 @@
       "revenue": 1710.98,
       "cogs": 909.85,
       "shipping": 83.3,
-      "adSpend": 527.09,
+      "adSpend": 527.57,
       "grossProfit": 717.83,
-      "netProfit": 190.74,
-      "roas": 3.25,
+      "netProfit": 190.26,
+      "roas": 3.24,
       "unknownCostUnits": 0
     },
     {
@@ -252,9 +252,9 @@
       "revenue": 3024.69,
       "cogs": 1146.4,
       "shipping": 416.5,
-      "adSpend": 596.57,
+      "adSpend": 597.12,
       "grossProfit": 1461.79,
-      "netProfit": 865.22,
+      "netProfit": 864.67,
       "roas": 5.07,
       "unknownCostUnits": 0
     },
@@ -263,9 +263,9 @@
       "revenue": 1740.89,
       "cogs": 849.61,
       "shipping": 83.3,
-      "adSpend": 535.18,
+      "adSpend": 535.67,
       "grossProfit": 807.98,
-      "netProfit": 272.8,
+      "netProfit": 272.31,
       "roas": 3.25,
       "unknownCostUnits": 0
     },
@@ -274,10 +274,10 @@
       "revenue": 2083.2,
       "cogs": 1374.46,
       "shipping": 0,
-      "adSpend": 521.42,
+      "adSpend": 521.9,
       "grossProfit": 708.74,
-      "netProfit": 187.32,
-      "roas": 4,
+      "netProfit": 186.84,
+      "roas": 3.99,
       "unknownCostUnits": 0
     },
     {
@@ -285,10 +285,10 @@
       "revenue": 4880.54,
       "cogs": 2402.25,
       "shipping": 583.1,
-      "adSpend": 691.36,
+      "adSpend": 691.99,
       "grossProfit": 1895.19,
-      "netProfit": 1203.83,
-      "roas": 7.06,
+      "netProfit": 1203.2,
+      "roas": 7.05,
       "unknownCostUnits": 0
     },
     {
@@ -296,9 +296,9 @@
       "revenue": 3554.35,
       "cogs": 1869.76,
       "shipping": 249.9,
-      "adSpend": 562.07,
+      "adSpend": 562.58,
       "grossProfit": 1434.69,
-      "netProfit": 872.62,
+      "netProfit": 872.11,
       "roas": 6.32,
       "unknownCostUnits": 0
     },
@@ -307,10 +307,10 @@
       "revenue": 207.2,
       "cogs": 120.29,
       "shipping": 0,
-      "adSpend": 524.41,
+      "adSpend": 524.89,
       "grossProfit": 86.91,
-      "netProfit": -437.5,
-      "roas": 0.4,
+      "netProfit": -437.98,
+      "roas": 0.39,
       "unknownCostUnits": 0
     },
     {
@@ -318,9 +318,9 @@
       "revenue": 1514.48,
       "cogs": 895.81,
       "shipping": 83.3,
-      "adSpend": 580.03,
+      "adSpend": 580.56,
       "grossProfit": 535.37,
-      "netProfit": -44.66,
+      "netProfit": -45.19,
       "roas": 2.61,
       "unknownCostUnits": 0
     },
@@ -329,10 +329,10 @@
       "revenue": 3845.26,
       "cogs": 2172.08,
       "shipping": 166.6,
-      "adSpend": 514.38,
+      "adSpend": 515.17,
       "grossProfit": 1506.58,
-      "netProfit": 992.2,
-      "roas": 7.48,
+      "netProfit": 991.41,
+      "roas": 7.46,
       "unknownCostUnits": 0
     },
     {
@@ -340,37 +340,37 @@
       "revenue": 1849.12,
       "cogs": 890.26,
       "shipping": 249.9,
-      "adSpend": 378.95,
+      "adSpend": 402.9,
       "grossProfit": 708.96,
-      "netProfit": 330.01,
-      "roas": 4.88,
+      "netProfit": 306.06,
+      "roas": 4.59,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 13789.55,
+      "spend": 13811.51,
       "purchases": 92,
-      "metaRoas": 2.655911
+      "metaRoas": 2.654112
     },
     {
       "name": "DE",
-      "spend": 3842.26,
+      "spend": 3858.18,
       "purchases": 24,
-      "metaRoas": 3.464935
+      "metaRoas": 3.453795
     },
     {
       "name": "Latvia",
-      "spend": 449.42,
+      "spend": 451.78,
       "purchases": 3,
-      "metaRoas": 3.602477
+      "metaRoas": 3.586969
     },
     {
       "name": "Single Images",
-      "spend": 21.06,
+      "spend": 21.29,
       "purchases": 1,
-      "metaRoas": 34.032419
+      "metaRoas": 33.696296
     }
   ]
 }
