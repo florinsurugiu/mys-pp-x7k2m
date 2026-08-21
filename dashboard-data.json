@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T14:04:10.089Z",
+  "generatedAt": "2026-08-21T14:51:19.945Z",
   "planDate": "2026-08-21",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.08,
+    "hours": 7.17,
     "capacity": 7.2,
     "items": [
       {
@@ -140,7 +140,23 @@
         ]
       },
       {
-        "title": "01. Double Sleeve Negru MG Vitamin M",
+        "title": "01. W Mauve XS",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235425",
+        "orderLinks": [
+          {
+            "name": "#235425",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. Double Sleeve Negru MG Vitamin M",
         "hours": 1.5,
         "tags": [
           "shopify"
@@ -155,8 +171,8 @@
         ]
       },
       {
-        "title": "02. W Mauve XS",
-        "hours": 2.5,
+        "title": "03. Bluza Rupta L",
+        "hours": 1.5,
         "tags": [
           "shopify"
         ],
@@ -170,7 +186,53 @@
         ]
       },
       {
-        "title": "03. Bluza roz MYstudios 2S",
+        "title": "04. H offwhite M",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235432",
+        "orderLinks": [
+          {
+            "name": "#235432",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 7.33,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "03. C print XL",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. W pink XS",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235425",
+        "orderLinks": [
+          {
+            "name": "#235425",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. Bluza roz MYstudios 2S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -190,7 +252,7 @@
         ]
       },
       {
-        "title": "04. C Bal scurta gri XL",
+        "title": "03. C Bal scurta gri XL",
         "hours": 1.42,
         "tags": [
           "shopify"
@@ -205,68 +267,8 @@
         ]
       },
       {
-        "title": "05. H offwhite M",
+        "title": "04. X. Maiou alb 2L",
         "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235432",
-        "orderLinks": [
-          {
-            "name": "#235432",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 7.92,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "03. C print XL",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. Bluza Rupta L",
-        "hours": 1.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235425",
-        "orderLinks": [
-          {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. W Pink XS",
-        "hours": 2.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235425",
-        "orderLinks": [
-          {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. W pink XS",
-        "hours": 2.5,
         "tags": [
           "predicted"
         ],
@@ -276,34 +278,6 @@
     ]
   },
   "croit": [
-    {
-      "name": "03. W pink XS",
-      "orderName": null,
-      "category": "Windbreaker",
-      "dueOn": "2026-08-21",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 2.5,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "04. W Mauve XS",
-      "orderName": null,
-      "category": "Windbreaker",
-      "dueOn": "2026-08-21",
-      "leftover": false,
-      "number": 4,
-      "orderLinks": [],
-      "hours": 2.5,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
     {
       "name": "05. W Statue L+XL ",
       "orderName": null,
@@ -358,40 +332,6 @@
       "tags": [
         "asana",
         "predicted"
-      ]
-    },
-    {
-      "name": "W Mauve XS",
-      "orderName": "#235425",
-      "orderLinks": [
-        {
-          "name": "#235425",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "W Pink XS",
-      "orderName": "#235425",
-      "orderLinks": [
-        {
-          "name": "#235425",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
       ]
     },
     {
