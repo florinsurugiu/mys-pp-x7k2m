@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T09:18:57.306Z",
+  "generatedAt": "2026-08-21T09:57:32.364Z",
   "planDate": "2026-08-21",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 9,
+    "hours": 7.75,
     "capacity": 7.2,
     "items": [
       {
@@ -164,8 +164,8 @@
         ]
       },
       {
-        "title": "02. Bluza Rupta L",
-        "hours": 1.5,
+        "title": "02. W Mauve XS",
+        "hours": 2.5,
         "tags": [
           "shopify"
         ],
@@ -179,40 +179,33 @@
         ]
       },
       {
-        "title": "03. T Alb L",
-        "hours": 0.67,
+        "title": "03. C Bal scurta gri XL",
+        "hours": 1.42,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235430",
+        "orderName": "#235429",
         "orderLinks": [
           {
-            "name": "#235430",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074528608580",
+            "name": "#235429",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074510061892",
             "cod": false
           }
         ]
       },
       {
-        "title": "04. T offwhite 2L",
-        "hours": 4,
+        "title": "04. X. Maiou alb 2L",
+        "hours": 1,
         "tags": [
-          "shopify",
           "predicted"
         ],
-        "orderName": "#235431",
-        "orderLinks": [
-          {
-            "name": "#235431",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074667086148",
-            "cod": true
-          }
-        ]
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
   "flori": {
-    "hours": 9,
+    "hours": 7.92,
     "capacity": 7.2,
     "items": [
       {
@@ -234,8 +227,8 @@
         ]
       },
       {
-        "title": "01. W Pink XS",
-        "hours": 2.5,
+        "title": "01. Bluza Rupta L",
+        "hours": 1.5,
         "tags": [
           "shopify"
         ],
@@ -249,22 +242,7 @@
         ]
       },
       {
-        "title": "02. W Mauve XS",
-        "hours": 2.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235425",
-        "orderLinks": [
-          {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. Bluza roz MYstudios S",
+        "title": "02. Bluza roz MYstudios S",
         "hours": 0.5,
         "tags": [
           "shopify"
@@ -279,37 +257,32 @@
         ]
       },
       {
-        "title": "04. C Bal scurta gri XL",
-        "hours": 1.42,
+        "title": "03. W Pink XS",
+        "hours": 2.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235429",
+        "orderName": "#235425",
         "orderLinks": [
           {
-            "name": "#235429",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074510061892",
+            "name": "#235425",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
             "cod": false
           }
         ]
+      },
+      {
+        "title": "04. T alb 2L",
+        "hours": 1.33,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
   "croit": [
-    {
-      "name": "0. T offwhite 2L",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": null,
-      "leftover": false,
-      "number": 0,
-      "orderLinks": [],
-      "hours": 1.3334,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
     {
       "name": "0. T alb 2L",
       "orderName": null,
@@ -319,20 +292,6 @@
       "number": 0,
       "orderLinks": [],
       "hours": 1.3334,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "02. T roz M 2 buc",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-21",
-      "leftover": false,
-      "number": 2,
-      "orderLinks": [],
-      "hours": 0.6667,
       "tags": [
         "asana",
         "predicted"
@@ -420,23 +379,6 @@
       "tags": [
         "asana",
         "predicted"
-      ]
-    },
-    {
-      "name": "T Roz M",
-      "orderName": "#235431",
-      "orderLinks": [
-        {
-          "name": "#235431",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074667086148",
-          "cod": true
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
       ]
     },
     {
@@ -536,23 +478,6 @@
       ],
       "category": "Camasa scurta",
       "hours": 1.4167,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Alb L",
-      "orderName": "#235430",
-      "orderLinks": [
-        {
-          "name": "#235430",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074528608580",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
