@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T07:57:49.200Z",
+  "generatedAt": "2026-08-21T08:33:58.663Z",
   "planDate": "2026-08-21",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -140,7 +140,7 @@
         ]
       },
       {
-        "title": "03. T roz 2M",
+        "title": "03. T roz 2M (unu cu MSPCT)",
         "hours": 0.67,
         "tags": [
           "leftover",
@@ -268,6 +268,20 @@
   },
   "croit": [
     {
+      "name": "02. T roz M 2 buc",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-21",
+      "leftover": false,
+      "number": 2,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
       "name": "04. T alb XXL + S + L + M (sau ce crezi ca lipseste)",
       "orderName": null,
       "category": "Tricou simplu",
@@ -290,20 +304,6 @@
       "number": 5,
       "orderLinks": [],
       "hours": 2.5,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "T roz M 2 buc",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-21",
-      "leftover": false,
-      "number": null,
-      "orderLinks": [],
-      "hours": 0.6667,
       "tags": [
         "asana",
         "predicted"
