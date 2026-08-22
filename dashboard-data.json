@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T11:13:53.548Z",
+  "generatedAt": "2026-08-22T11:34:40.253Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -28,14 +28,6 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/7837829071085",
-      "title": "Third Eye  Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
-      "category": "Windbreaker",
-      "size": "M",
-      "hours": 2.5
-    },
-    {
       "productId": "gid://shopify/Product/15614810030404",
       "title": "Dream State Oversized Off-White Tee",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
@@ -50,14 +42,6 @@
       "category": "Tricou simplu",
       "size": "S",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/7837829071085",
-      "title": "Third Eye  Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
-      "category": "Windbreaker",
-      "size": "S",
-      "hours": 2.5
     },
     {
       "productId": "gid://shopify/Product/15629712687428",
@@ -122,6 +106,22 @@
       "category": "Tricou simplu",
       "size": "M",
       "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15616900333892",
+      "title": "Blue Stripes Oversized Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
+      "category": "Camasa Unisex",
+      "size": "XL",
+      "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15590401605956",
+      "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_120446_12b5b28c-d728-4ca8-bdb2-a4b21e5fe9c7.jpg?v=1786555960",
+      "category": "Camasa scurta",
+      "size": "XL",
+      "hours": 1.4167
     }
   ],
   "felicia": {
@@ -546,6 +546,40 @@
       ],
       "category": "Hanorac patchuri",
       "hours": 3,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W 3rd eye S",
+      "orderName": "#235438",
+      "orderLinks": [
+        {
+          "name": "#235438",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077452202308",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H Layers V2 S",
+      "orderName": "#235438",
+      "orderLinks": [
+        {
+          "name": "#235438",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077452202308",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
