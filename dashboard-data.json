@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T13:01:27.921Z",
+  "generatedAt": "2026-08-22T13:41:52.477Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -528,17 +528,22 @@
       ]
     },
     {
-      "name": "C maneci detasate XS",
-      "orderName": "#235434",
+      "name": "C maneci detasate XS + L",
+      "orderName": "#235434, #235440",
       "orderLinks": [
         {
           "name": "#235434",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11076392091972",
           "cod": false
+        },
+        {
+          "name": "#235440",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077695275332",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 1.5,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
