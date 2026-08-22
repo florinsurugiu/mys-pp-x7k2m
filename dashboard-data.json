@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T10:11:16.591Z",
+  "generatedAt": "2026-08-22T10:37:30.444Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.08,
+    "hours": 8.83,
     "capacity": 7.2,
     "items": [
       {
@@ -154,7 +154,22 @@
         ]
       },
       {
-        "title": "02. C Complex Rosu L",
+        "title": "02. W Pink M",
+        "hours": 2.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235437",
+        "orderLinks": [
+          {
+            "name": "#235437",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. C Complex Rosu L",
         "hours": 1.75,
         "tags": [
           "shopify"
@@ -169,51 +184,16 @@
         ]
       },
       {
-        "title": "03. Bluza Rupta L",
-        "hours": 1.5,
+        "title": "04. C Bal scurta gri XL",
+        "hours": 1.42,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235425",
+        "orderName": "#235429",
         "orderLinks": [
           {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. Bluza roz MYstudios 2S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235428, #235432",
-        "orderLinks": [
-          {
-            "name": "#235428",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074493972804",
-            "cod": false
-          },
-          {
-            "name": "#235432",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "05. T Split Alb S",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235433",
-        "orderLinks": [
-          {
-            "name": "#235433",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075993141572",
+            "name": "#235429",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074510061892",
             "cod": false
           }
         ]
@@ -221,7 +201,7 @@
     ]
   },
   "flori": {
-    "hours": 7.92,
+    "hours": 9,
     "capacity": 7.2,
     "items": [
       {
@@ -271,22 +251,42 @@
         ]
       },
       {
-        "title": "04. C Bal scurta gri XL",
-        "hours": 1.42,
+        "title": "04. Bluza Rupta L",
+        "hours": 1.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235429",
+        "orderName": "#235425",
         "orderLinks": [
           {
-            "name": "#235429",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074510061892",
+            "name": "#235425",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
             "cod": false
           }
         ]
       },
       {
-        "title": "05. H offwhite M",
+        "title": "05. Bluza roz MYstudios 2S",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235428, #235432",
+        "orderLinks": [
+          {
+            "name": "#235428",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074493972804",
+            "cod": false
+          },
+          {
+            "name": "#235432",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "06. H offwhite M",
         "hours": 1,
         "tags": [
           "shopify"
@@ -388,6 +388,23 @@
       ],
       "category": "Camasa lunga",
       "hours": 1.75,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Pink M",
+      "orderName": "#235437",
+      "orderLinks": [
+        {
+          "name": "#235437",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
+          "cod": true
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
