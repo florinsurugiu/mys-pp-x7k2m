@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T11:14:36.201Z",
+  "generatedAt": "2026-08-23T11:34:51.418Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 11.92,
+    "hours": 11.67,
     "capacity": 7.2,
     "items": [
       {
@@ -138,12 +138,27 @@
         ]
       },
       {
-        "title": "01. Bluza Rupta L + S",
-        "hours": 3,
+        "title": "01. C roz Pop Cola XS",
+        "hours": 1.5,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3417610",
+        "orderLinks": [
+          {
+            "name": "WB#3417610",
+            "url": null,
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. Bluza Rupta L + 2S",
+        "hours": 4.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235425, #235443",
+        "orderName": "#235425, #235443, #235448",
         "orderLinks": [
           {
             "name": "#235425",
@@ -154,21 +169,11 @@
             "name": "#235443",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078396084548",
             "cod": true
-          }
-        ]
-      },
-      {
-        "title": "02. C Complex Rosu L",
-        "hours": 1.75,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235435",
-        "orderLinks": [
+          },
           {
-            "name": "#235435",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11076462739780",
-            "cod": true
+            "name": "#235448",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
+            "cod": false
           }
         ]
       },
@@ -191,26 +196,11 @@
             "cod": true
           }
         ]
-      },
-      {
-        "title": "04. Double Sleeve Negru MG Vitamin M",
-        "hours": 1.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235425",
-        "orderLinks": [
-          {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-            "cod": false
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.17,
+    "hours": 7.42,
     "capacity": 7.2,
     "items": [
       {
@@ -246,17 +236,17 @@
         ]
       },
       {
-        "title": "03. C roz Pop Cola XS",
-        "hours": 1.5,
+        "title": "03. C Complex Rosu L",
+        "hours": 1.75,
         "tags": [
-          "wb"
+          "shopify"
         ],
-        "orderName": "WB#3417610",
+        "orderName": "#235435",
         "orderLinks": [
           {
-            "name": "WB#3417610",
-            "url": null,
-            "cod": false
+            "name": "#235435",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11076462739780",
+            "cod": true
           }
         ]
       },
@@ -272,26 +262,6 @@
             "name": "#235442",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077990482244",
             "cod": true
-          }
-        ]
-      },
-      {
-        "title": "05. Bluza roz MYstudios 2S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235428, #235432",
-        "orderLinks": [
-          {
-            "name": "#235428",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11074493972804",
-            "cod": false
-          },
-          {
-            "name": "#235432",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
-            "cod": false
           }
         ]
       }
@@ -372,8 +342,8 @@
       ]
     },
     {
-      "name": "Bluza Rupta L + S",
-      "orderName": "#235425, #235443",
+      "name": "Bluza Rupta L + 2S",
+      "orderName": "#235425, #235443, #235448",
       "orderLinks": [
         {
           "name": "#235425",
@@ -384,10 +354,15 @@
           "name": "#235443",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078396084548",
           "cod": true
+        },
+        {
+          "name": "#235448",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
+          "cod": false
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 3,
+      "hours": 4.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -601,17 +576,22 @@
       ]
     },
     {
-      "name": "H Layers V2 S",
-      "orderName": "#235438",
+      "name": "H Layers V2 2S",
+      "orderName": "#235438, #235448",
       "orderLinks": [
         {
           "name": "#235438",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077452202308",
           "cod": false
+        },
+        {
+          "name": "#235448",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
