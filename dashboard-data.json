@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T12:16:04.044Z",
+  "generatedAt": "2026-08-23T13:07:51.373Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 11.67,
+    "hours": 7.33,
     "capacity": 7.2,
     "items": [
       {
@@ -153,7 +153,22 @@
         ]
       },
       {
-        "title": "02. Bluza Rupta L + 2S",
+        "title": "02. T gri M",
+        "hours": 0.67,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3419436",
+        "orderLinks": [
+          {
+            "name": "WB#3419436",
+            "url": null,
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. Bluza Rupta L + 2S",
         "hours": 4.5,
         "tags": [
           "shopify"
@@ -176,31 +191,11 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "03. W Pink 2M",
-        "hours": 5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235437, #235439",
-        "orderLinks": [
-          {
-            "name": "#235437",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
-            "cod": true
-          },
-          {
-            "name": "#235439",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077506924868",
-            "cod": true
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 7.42,
+    "hours": 11.75,
     "capacity": 7.2,
     "items": [
       {
@@ -236,7 +231,27 @@
         ]
       },
       {
-        "title": "03. C Complex Rosu L",
+        "title": "03. W Pink 2M",
+        "hours": 5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235437, #235439",
+        "orderLinks": [
+          {
+            "name": "#235437",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
+            "cod": true
+          },
+          {
+            "name": "#235439",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077506924868",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. C Complex Rosu L",
         "hours": 1.75,
         "tags": [
           "shopify"
@@ -246,21 +261,6 @@
           {
             "name": "#235435",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11076462739780",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. T Mov S",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235442",
-        "orderLinks": [
-          {
-            "name": "#235442",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077990482244",
             "cod": true
           }
         ]
@@ -336,6 +336,23 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "wb"
+      ]
+    },
+    {
+      "name": "T gri M",
+      "orderName": "WB#3419436",
+      "orderLinks": [
+        {
+          "name": "WB#3419436",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "wb"
