@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T10:57:15.063Z",
+  "generatedAt": "2026-08-23T11:14:36.201Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -42,14 +42,6 @@
       "category": "Tricou simplu",
       "size": "S",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15629712687428",
-      "title": "777 Mauve Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-      "category": "Tricou raiat",
-      "size": "S",
-      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/15419494531396",
@@ -122,6 +114,14 @@
       "category": "Camasa scurta",
       "size": "XL",
       "hours": 1.4167
+    },
+    {
+      "productId": "gid://shopify/Product/15499249942852",
+      "title": "Split White Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
+      "category": "Tricou simplu",
+      "size": "M",
+      "hours": 0.6667
     }
   ],
   "felicia": {
@@ -663,6 +663,40 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Gri S",
+      "orderName": "#235447",
+      "orderLinks": [
+        {
+          "name": "#235447",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078951502148",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Mov S",
+      "orderName": "#235447",
+      "orderLinks": [
+        {
+          "name": "#235447",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078951502148",
+          "cod": false
+        }
+      ],
+      "category": "Tricou raiat",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
