@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T16:42:44.250Z",
+  "generatedAt": "2026-08-23T17:00:32.010Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 10.92,
+    "hours": 12.42,
     "capacity": 7.2,
     "items": [
       {
@@ -154,12 +154,12 @@
         ]
       },
       {
-        "title": "02. Bluza Rupta L + 3S",
-        "hours": 6,
+        "title": "02. Bluza Rupta 2L + 3S",
+        "hours": 7.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235425, #235443, #235448, #235449",
+        "orderName": "#235425, #235443, #235448, #235449, #235452",
         "orderLinks": [
           {
             "name": "#235425",
@@ -179,6 +179,11 @@
           {
             "name": "#235449",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079207354692",
+            "cod": false
+          },
+          {
+            "name": "#235452",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079530381636",
             "cod": false
           }
         ]
@@ -374,8 +379,8 @@
       ]
     },
     {
-      "name": "Bluza Rupta L + 3S",
-      "orderName": "#235425, #235443, #235448, #235449",
+      "name": "Bluza Rupta 2L + 3S",
+      "orderName": "#235425, #235443, #235448, #235449, #235452",
       "orderLinks": [
         {
           "name": "#235425",
@@ -396,10 +401,15 @@
           "name": "#235449",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079207354692",
           "cod": false
+        },
+        {
+          "name": "#235452",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079530381636",
+          "cod": false
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 6,
+      "hours": 7.5,
       "leftover": false,
       "tags": [
         "shopify"
