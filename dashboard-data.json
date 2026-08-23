@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T07:44:56.680Z",
+  "generatedAt": "2026-08-23T08:01:50.345Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -60,14 +60,6 @@
       "hours": 1
     },
     {
-      "productId": "gid://shopify/Product/7820197691629",
-      "title": "DOER Ice Cream T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_doer_tshirt.jpg?v=1769644387",
-      "category": "Tricou Doer",
-      "size": "L",
-      "hours": 1
-    },
-    {
       "productId": "gid://shopify/Product/8888098619716",
       "title": "Ivory T-shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Ivory_tshirt_2_6dfde0fb-9aa9-4429-b43f-e7e4c32c864f.jpg?v=1769606445",
@@ -122,6 +114,14 @@
       "category": "Camasa Unisex",
       "size": "XL",
       "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15590401605956",
+      "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_120446_12b5b28c-d728-4ca8-bdb2-a4b21e5fe9c7.jpg?v=1786555960",
+      "category": "Camasa scurta",
+      "size": "XL",
+      "hours": 1.4167
     }
   ],
   "felicia": {
@@ -628,6 +628,23 @@
         }
       ],
       "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Doer S",
+      "orderName": "#235445",
+      "orderLinks": [
+        {
+          "name": "#235445",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078650659140",
+          "cod": false
+        }
+      ],
+      "category": "Tricou Doer",
       "hours": 1,
       "leftover": false,
       "tags": [
