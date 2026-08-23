@@ -1,16 +1,8 @@
 {
-  "generatedAt": "2026-08-22T23:55:35.017Z",
+  "generatedAt": "2026-08-23T00:34:31.360Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [],
   "predictionIdeas": [
-    {
-      "productId": "gid://shopify/Product/15588974428484",
-      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-      "category": "Camasa scurta",
-      "size": "XXL",
-      "hours": 1.4167
-    },
     {
       "productId": "gid://shopify/Product/15614948868420",
       "title": "Reality Grey Oversized T-Shirt",
@@ -26,6 +18,14 @@
       "category": "Tricou simplu",
       "size": "M",
       "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15588974428484",
+      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
+      "category": "Camasa scurta",
+      "size": "XXL",
+      "hours": 1.4167
     },
     {
       "productId": "gid://shopify/Product/15614810030404",
@@ -92,6 +92,14 @@
       "hours": 1.4167
     },
     {
+      "productId": "gid://shopify/Product/15590250840388",
+      "title": "MYSIMPLICATED® Duality Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
+      "category": "Camasa Unisex",
+      "size": "XXL",
+      "hours": 1.5
+    },
+    {
       "productId": "gid://shopify/Product/8612489199940",
       "title": "White T-shirt Darwin",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/white-t-shirt-darwin-399004_d2eac6c6-6443-4bc7-9332-2c3eab970a23.jpg?v=1770114834",
@@ -114,14 +122,6 @@
       "category": "Camasa Unisex",
       "size": "XL",
       "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15590401605956",
-      "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_120446_12b5b28c-d728-4ca8-bdb2-a4b21e5fe9c7.jpg?v=1786555960",
-      "category": "Camasa scurta",
-      "size": "XL",
-      "hours": 1.4167
     }
   ],
   "felicia": {
@@ -540,8 +540,8 @@
       ]
     },
     {
-      "name": "C maneci detasate XS + L",
-      "orderName": "#235434, #235440",
+      "name": "C maneci detasate 2XS + L",
+      "orderName": "#235434, #235440, #235444",
       "orderLinks": [
         {
           "name": "#235434",
@@ -552,10 +552,15 @@
           "name": "#235440",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077695275332",
           "cod": false
+        },
+        {
+          "name": "#235444",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078429442372",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 3,
+      "hours": 4.5,
       "leftover": false,
       "tags": [
         "shopify"
