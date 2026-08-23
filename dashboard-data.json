@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T13:59:39.458Z",
+  "generatedAt": "2026-08-23T14:21:38.941Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 9.92,
+    "hours": 10.92,
     "capacity": 7.2,
     "items": [
       {
@@ -154,22 +154,32 @@
         ]
       },
       {
-        "title": "02. W Pink 2M",
-        "hours": 5,
+        "title": "02. Bluza Rupta L + 3S",
+        "hours": 6,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235437, #235439",
+        "orderName": "#235425, #235443, #235448, #235449",
         "orderLinks": [
           {
-            "name": "#235437",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
+            "name": "#235425",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
+            "cod": false
+          },
+          {
+            "name": "#235443",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078396084548",
             "cod": true
           },
           {
-            "name": "#235439",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077506924868",
-            "cod": true
+            "name": "#235448",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
+            "cod": false
+          },
+          {
+            "name": "#235449",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079207354692",
+            "cod": false
           }
         ]
       },
@@ -191,7 +201,7 @@
     ]
   },
   "flori": {
-    "hours": 10.67,
+    "hours": 10.33,
     "capacity": 7.2,
     "items": [
       {
@@ -226,13 +236,18 @@
         ]
       },
       {
-        "title": "03. T gri M",
-        "hours": 0.67,
+        "title": "03. T alb L + M",
+        "hours": 1.33,
         "tags": [
           "wb"
         ],
-        "orderName": "WB#3419436",
+        "orderName": "WB#3419599, WB#3419436",
         "orderLinks": [
+          {
+            "name": "WB#3419599",
+            "url": null,
+            "cod": false
+          },
           {
             "name": "WB#3419436",
             "url": null,
@@ -241,32 +256,22 @@
         ]
       },
       {
-        "title": "04. Bluza Rupta L + 3S",
-        "hours": 6,
+        "title": "04. W Pink 2M",
+        "hours": 5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235425, #235443, #235448, #235449",
+        "orderName": "#235437, #235439",
         "orderLinks": [
           {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-            "cod": false
-          },
-          {
-            "name": "#235443",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078396084548",
+            "name": "#235437",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
             "cod": true
           },
           {
-            "name": "#235448",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
-            "cod": false
-          },
-          {
-            "name": "#235449",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079207354692",
-            "cod": false
+            "name": "#235439",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077506924868",
+            "cod": true
           }
         ]
       }
@@ -347,9 +352,14 @@
       ]
     },
     {
-      "name": "T gri M",
-      "orderName": "WB#3419436",
+      "name": "T alb L + M",
+      "orderName": "WB#3419599, WB#3419436",
       "orderLinks": [
+        {
+          "name": "WB#3419599",
+          "url": null,
+          "cod": false
+        },
         {
           "name": "WB#3419436",
           "url": null,
@@ -357,7 +367,7 @@
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "wb"
@@ -542,8 +552,8 @@
       ]
     },
     {
-      "name": "C maneci detasate 2XS + L",
-      "orderName": "#235434, #235440, #235444",
+      "name": "C maneci detasate 2XS + 2L",
+      "orderName": "#235434, #235440, #235444, #235450",
       "orderLinks": [
         {
           "name": "#235434",
@@ -559,10 +569,15 @@
           "name": "#235444",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078429442372",
           "cod": false
+        },
+        {
+          "name": "#235450",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079279640900",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 4.5,
+      "hours": 6,
       "leftover": false,
       "tags": [
         "shopify"
