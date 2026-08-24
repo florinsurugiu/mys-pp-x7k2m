@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T16:08:23.317Z",
+  "generatedAt": "2026-08-24T16:53:18.543Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [
     "Water Repellent Windbreaker Pink Design W"
@@ -127,21 +127,34 @@
     }
   ],
   "felicia": {
-    "hours": 9.17,
+    "hours": 14.5,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. C roz Pop Cola XS",
-        "hours": 1.5,
+        "title": "01. W Pink XS + 3M",
+        "hours": 10,
         "tags": [
-          "wb"
+          "leftover",
+          "asana",
+          "buffer",
+          "shopify"
         ],
-        "orderName": "WB#3417610",
+        "orderName": "#235425, #235437, #235439",
         "orderLinks": [
           {
-            "name": "WB#3417610",
-            "url": null,
+            "name": "#235425",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
             "cod": false
+          },
+          {
+            "name": "#235437",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
+            "cod": true
+          },
+          {
+            "name": "#235439",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077506924868",
+            "cod": true
           }
         ]
       },
@@ -169,41 +182,11 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "03. T Mov S",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235442",
-        "orderLinks": [
-          {
-            "name": "#235442",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077990482244",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. W Mauve XS",
-        "hours": 2.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235425",
-        "orderLinks": [
-          {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-            "cod": false
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 13.33,
+    "hours": 7.33,
     "capacity": 7.2,
     "items": [
       {
@@ -223,27 +206,17 @@
         ]
       },
       {
-        "title": "02. W Pink XS + 2M",
-        "hours": 7.5,
+        "title": "02. C roz Pop Cola XS",
+        "hours": 1.5,
         "tags": [
-          "shopify"
+          "wb"
         ],
-        "orderName": "#235425, #235437, #235439",
+        "orderName": "WB#3417610",
         "orderLinks": [
           {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
+            "name": "WB#3417610",
+            "url": null,
             "cod": false
-          },
-          {
-            "name": "#235437",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
-            "cod": true
-          },
-          {
-            "name": "#235439",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077506924868",
-            "cod": true
           }
         ]
       },
@@ -564,6 +537,28 @@
       ]
     },
     {
+      "name": "T Gri S + XXL",
+      "orderName": "#235447, #235458",
+      "orderLinks": [
+        {
+          "name": "#235447",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078951502148",
+          "cod": false
+        },
+        {
+          "name": "#235458",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081459499332",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 1.3334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "W Mauve XS",
       "orderName": "#235425",
       "orderLinks": [
@@ -649,8 +644,8 @@
       ]
     },
     {
-      "name": "C maneci detasate 2XS + 2L",
-      "orderName": "#235434, #235440, #235444, #235450",
+      "name": "C maneci detasate 3XS + 2L",
+      "orderName": "#235434, #235440, #235444, #235450, #235457",
       "orderLinks": [
         {
           "name": "#235434",
@@ -671,10 +666,15 @@
           "name": "#235450",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079279640900",
           "cod": false
+        },
+        {
+          "name": "#235457",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081445409092",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 6,
+      "hours": 7.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -771,23 +771,6 @@
       ]
     },
     {
-      "name": "T Gri S",
-      "orderName": "#235447",
-      "orderLinks": [
-        {
-          "name": "#235447",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078951502148",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T Mov S",
       "orderName": "#235447",
       "orderLinks": [
@@ -816,6 +799,23 @@
       ],
       "category": "Camasa scurta",
       "hours": 1.4167,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru Superwoman XS",
+      "orderName": "#235457",
+      "orderLinks": [
+        {
+          "name": "#235457",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081445409092",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
