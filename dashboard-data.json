@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T19:41:04.174Z",
+  "generatedAt": "2026-08-24T20:01:06.321Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [
     "Water Repellent Windbreaker Pink Design W"
@@ -127,34 +127,20 @@
     }
   ],
   "felicia": {
-    "hours": 11.5,
+    "hours": 11,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. W Pink 3M",
-        "hours": 7.5,
+        "title": "02. W pink 2M",
+        "hours": 2.5,
         "tags": [
           "leftover",
           "asana",
-          "buffer",
-          "shopify"
-        ],
-        "orderName": "#235437, #235439",
-        "orderLinks": [
-          {
-            "name": "#235437",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
-            "cod": true
-          },
-          {
-            "name": "#235439",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077506924868",
-            "cod": true
-          }
+          "buffer"
         ]
       },
       {
-        "title": "02. W Statue XL ",
+        "title": "01. W Statue XL ",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -170,7 +156,7 @@
         ]
       },
       {
-        "title": "03. C roz Pop Cola XS",
+        "title": "02. C roz Pop Cola XS",
         "hours": 1.5,
         "tags": [
           "wb"
@@ -183,31 +169,9 @@
             "cod": false
           }
         ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 10.33,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "01. W pink 2M (sunt 3 pink lipite pe acelasi material ca sa stii cum le gasesti)",
-        "hours": 2.5,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235425",
-        "orderLinks": [
-          {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-            "cod": false
-          }
-        ]
       },
       {
-        "title": "02. Bluza Rupta L + 2S",
+        "title": "03. Bluza Rupta L + 2S",
         "hours": 4.5,
         "tags": [
           "shopify"
@@ -230,9 +194,67 @@
             "cod": false
           }
         ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 11.5,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "01. T alb split S",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235433",
+        "orderLinks": [
+          {
+            "name": "#235433",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075993141572",
+            "cod": false
+          }
+        ]
       },
       {
-        "title": "03. Bluza rupta alba 2S, L",
+        "title": "02. W pink 2M (sunt 3 pink lipite pe acelasi material ca sa stii cum le gasesti)",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235425",
+        "orderLinks": [
+          {
+            "name": "#235425",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. W Pink 2M",
+        "hours": 5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235437, #235439",
+        "orderLinks": [
+          {
+            "name": "#235437",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
+            "cod": true
+          },
+          {
+            "name": "#235439",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077506924868",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. Bluza rupta alba 2S, L",
         "hours": 3.33,
         "tags": [
           "wb",
@@ -255,20 +277,6 @@
     ]
   },
   "croit": [
-    {
-      "name": "02. T alb split S",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-24",
-      "leftover": false,
-      "number": 2,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
     {
       "name": "03. Bluza MY studios S",
       "orderName": null,
@@ -613,23 +621,6 @@
       ],
       "category": "Top Spirit",
       "hours": 0.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Split Alb S",
-      "orderName": "#235433",
-      "orderLinks": [
-        {
-          "name": "#235433",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075993141572",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
