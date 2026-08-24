@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T14:56:53.190Z",
+  "generatedAt": "2026-08-24T15:31:52.747Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [
     "Water Repellent Windbreaker Pink Design W"
@@ -127,18 +127,9 @@
     }
   ],
   "felicia": {
-    "hours": 14.33,
+    "hours": 9.17,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "05. T grey S",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "01. C roz Pop Cola XS",
         "hours": 1.5,
@@ -150,74 +141,6 @@
           {
             "name": "WB#3417610",
             "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. W Pink XS + 2M",
-        "hours": 7.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235425, #235437, #235439",
-        "orderLinks": [
-          {
-            "name": "#235425",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
-            "cod": false
-          },
-          {
-            "name": "#235437",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
-            "cod": true
-          },
-          {
-            "name": "#235439",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077506924868",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. T grey 2S",
-        "hours": 4.67,
-        "tags": [
-          "wb",
-          "predicted"
-        ],
-        "orderName": "WB#3419436, WB#3419599",
-        "orderLinks": [
-          {
-            "name": "WB#3419436",
-            "url": null,
-            "cod": false
-          },
-          {
-            "name": "WB#3419599",
-            "url": null,
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 7.67,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "01. W Statue XL ",
-        "hours": 2.5,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235456",
-        "orderLinks": [
-          {
-            "name": "#235456",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081073393988",
             "cod": false
           }
         ]
@@ -259,6 +182,89 @@
             "name": "#235442",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077990482244",
             "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. W Mauve XS",
+        "hours": 2.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235425",
+        "orderLinks": [
+          {
+            "name": "#235425",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 13.33,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "01. W Statue XL ",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235456",
+        "orderLinks": [
+          {
+            "name": "#235456",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081073393988",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. W Pink XS + 2M",
+        "hours": 7.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235425, #235437, #235439",
+        "orderLinks": [
+          {
+            "name": "#235425",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11073835598148",
+            "cod": false
+          },
+          {
+            "name": "#235437",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077337252164",
+            "cod": true
+          },
+          {
+            "name": "#235439",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077506924868",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. Bluza rupta alba 2S, L",
+        "hours": 3.33,
+        "tags": [
+          "wb",
+          "predicted"
+        ],
+        "orderName": "WB#3419436, WB#3419599",
+        "orderLinks": [
+          {
+            "name": "WB#3419436",
+            "url": null,
+            "cod": false
+          },
+          {
+            "name": "WB#3419599",
+            "url": null,
+            "cod": false
           }
         ]
       }
@@ -308,20 +314,6 @@
       ]
     },
     {
-      "name": "04. T grey 2S",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-24",
-      "leftover": false,
-      "number": 4,
-      "orderLinks": [],
-      "hours": 1.3334,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
       "name": "04. H layers S v2 2 buc",
       "orderName": null,
       "category": "Hanorac bumbac",
@@ -353,7 +345,7 @@
       "name": "07. C maneci detasate 2XS, 2L",
       "orderName": null,
       "category": "Camasa scurta",
-      "dueOn": "2026-08-24",
+      "dueOn": "2026-08-25",
       "leftover": false,
       "number": 7,
       "orderLinks": [],
