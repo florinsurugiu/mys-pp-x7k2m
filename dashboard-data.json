@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T07:17:45.162Z",
+  "generatedAt": "2026-08-24T08:09:46.760Z",
   "planDate": "2026-08-24",
   "unmatchedProducts": [
     "Water Repellent Windbreaker Pink Design W"
@@ -472,17 +472,22 @@
       ]
     },
     {
-      "name": "T Alb S",
-      "orderName": "#235454",
+      "name": "T Alb S + L",
+      "orderName": "#235454, #235455",
       "orderLinks": [
         {
           "name": "#235454",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079863468356",
           "cod": true
+        },
+        {
+          "name": "#235455",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11080349909316",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
