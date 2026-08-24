@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T06:30:42.867Z",
+  "generatedAt": "2026-08-24T08:33:10.940Z",
   "periods": {
     "7": {
       "topSellers": [
@@ -32,18 +32,18 @@
           "revenue": 1448.06
         },
         {
-          "productId": "gid://shopify/Product/14994921226564",
-          "title": "Complex Minds Checkered Shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_checkered_shirt_m1.jpg?v=1769631253",
-          "units": 3,
-          "revenue": 1290.83
-        },
-        {
           "productId": "gid://shopify/Product/15417811403076",
           "title": "3-in-1 Layered Hoodie V2",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
           "units": 3,
           "revenue": 1197
+        },
+        {
+          "productId": "gid://shopify/Product/14994921226564",
+          "title": "Complex Minds Checkered Shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_checkered_shirt_m1.jpg?v=1769631253",
+          "units": 2,
+          "revenue": 891.83
         },
         {
           "productId": "gid://shopify/Product/15588910334276",
@@ -84,6 +84,13 @@
           "productId": "gid://shopify/Product/15614948868420",
           "title": "Reality Grey Oversized T-Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+          "units": 2,
+          "revenue": 518
+        },
+        {
+          "productId": "gid://shopify/Product/14969291276612",
+          "title": "Not My Circus White T-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
           "units": 2,
           "revenue": 518
         },
@@ -238,13 +245,6 @@
           "productId": "gid://shopify/Product/7820197691629",
           "title": "DOER Ice Cream T-Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_doer_tshirt.jpg?v=1769644387",
-          "units": 1,
-          "revenue": 259
-        },
-        {
-          "productId": "gid://shopify/Product/14969291276612",
-          "title": "Not My Circus White T-shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
           "units": 1,
           "revenue": 259
         }
@@ -2007,7 +2007,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_checkered_shirt_m1.jpg?v=1769631253",
             "views": 62,
             "addToCart": 4,
-            "purchases": 3
+            "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/14996604289348",
@@ -2143,7 +2143,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
             "views": 40,
             "addToCart": 2,
-            "purchases": 1
+            "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/15455598313796",
@@ -2294,7 +2294,7 @@
             "title": "Lost Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260813_111646_2c192fe8-5550-4b16-b0ce-85eb297a96a5.jpg?v=1786620013",
             "views": 29,
-            "addToCart": 5,
+            "addToCart": 6,
             "purchases": 0
           },
           {
@@ -2842,6 +2842,22 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/9074579734852",
+            "title": "Pop Cola Classic Shirt Ribbed Fabric",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-432694_0bde8aa1-d8b1-4216-b513-5b703b92ef6b.jpg?v=1770071961",
+            "views": 12,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/9074591498564",
+            "title": "Pop Cola Classic Shirt Ribbed Fabric",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-651197_8983b2a9-9efe-4bec-be8f-15f5e9332825.jpg?v=1770071891",
+            "views": 12,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/9074754519364",
             "title": "Pop Cola Eyes Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-eyes-black-oversized-t-shirt-301702_2b2c4096-6872-4565-aded-4f8ca3e93887.jpg?v=1770114736",
@@ -2909,22 +2925,6 @@
             "productId": "gid://shopify/Product/8979258147140",
             "title": "Oversized Cotton White T-shirt 777",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-777-273152_3c48b29e-e37e-4756-9723-a71f63ca51b7.jpg?v=1770115155",
-            "views": 11,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/9074579734852",
-            "title": "Pop Cola Classic Shirt Ribbed Fabric",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-432694_0bde8aa1-d8b1-4216-b513-5b703b92ef6b.jpg?v=1770071961",
-            "views": 11,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/9074591498564",
-            "title": "Pop Cola Classic Shirt Ribbed Fabric",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-651197_8983b2a9-9efe-4bec-be8f-15f5e9332825.jpg?v=1770071891",
             "views": 11,
             "addToCart": 0,
             "purchases": 0
@@ -3250,6 +3250,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/8649032270148",
+            "title": "Oversized Cotton White T-shirt Double Eye",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
+            "views": 8,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/9384767816004",
             "title": "Beige Full-Print Dress",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_115547_31eae7f5-31c8-4d7b-980f-030e1dcf6e0e-_1.jpg?v=1786608745",
@@ -3421,14 +3429,6 @@
             "productId": "gid://shopify/Product/8597290123588",
             "title": "Bermuda Shorts Numbers (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_numbers.jpg?v=1770377145",
-            "views": 6,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/8649032270148",
-            "title": "Oversized Cotton White T-shirt Double Eye",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
             "views": 6,
             "addToCart": 0,
             "purchases": 0
@@ -3994,6 +3994,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/9074574000452",
+            "title": "Pop Cola Classic Bermuda Ribbed Fabric",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-bermuda-ribbed-fabric-678221_2c2b65e2-04a3-40ff-9887-ba47494f1185.jpg?v=1770335006",
+            "views": 3,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/9074716377412",
             "title": "Pop Cola Mix Shirt Ribbed Fabric",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-mix-shirt-ribbed-fabric-520557_ca9d9159-5285-4d58-aa2c-a133a0e65ea3.jpg?v=1770071833",
@@ -4045,6 +4053,22 @@
             "productId": "gid://shopify/Product/15419488993604",
             "title": "Blue Camo Jeans",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated752.jpg?v=1766873151",
+            "views": 3,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15421271605572",
+            "title": "Grey Camo Jeans",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated853.jpg?v=1767040019",
+            "views": 3,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15421369811268",
+            "title": "Grey Camo Jeans",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated864.jpg?v=1767051018",
             "views": 3,
             "addToCart": 0,
             "purchases": 0
@@ -4162,33 +4186,9 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15421271605572",
-            "title": "Grey Camo Jeans",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated853.jpg?v=1767040019",
-            "views": 2,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15421369811268",
-            "title": "Grey Camo Jeans",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated864.jpg?v=1767051018",
-            "views": 2,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/15440519397700",
             "title": "Cloud Drawstring Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Cloud-Drawstring-Black-Hoodie1_f9ad56c7-56d5-4456-bf50-4dd90c680d02.jpg?v=1769080976",
-            "views": 2,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15587082469700",
-            "title": "MYSIMPLICATED® Graphite Bermuda",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_190935_0db3bcc3-2281-4aec-9609-7f6bab44a1fb-_1.jpg?v=1786556380",
             "views": 2,
             "addToCart": 0,
             "purchases": 0
@@ -4263,6 +4263,13 @@
           "revenue": 1549.8
         },
         {
+          "productId": "gid://shopify/Product/14969291276612",
+          "title": "Not My Circus White T-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
+          "units": 5,
+          "revenue": 1415.2
+        },
+        {
           "productId": "gid://shopify/Product/15614810030404",
           "title": "Dream State Oversized Off-White Tee",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
@@ -4282,13 +4289,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
           "units": 3,
           "revenue": 1197
-        },
-        {
-          "productId": "gid://shopify/Product/14969291276612",
-          "title": "Not My Circus White T-shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
-          "units": 4,
-          "revenue": 1156.2
         },
         {
           "productId": "gid://shopify/Product/15616900333892",
@@ -6686,7 +6686,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
             "views": 182,
             "addToCart": 7,
-            "purchases": 4
+            "purchases": 5
           },
           {
             "productId": "gid://shopify/Product/15455598313796",
@@ -7541,7 +7541,7 @@
             "title": "Lost Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260813_111646_2c192fe8-5550-4b16-b0ce-85eb297a96a5.jpg?v=1786620013",
             "views": 39,
-            "addToCart": 5,
+            "addToCart": 6,
             "purchases": 0
           },
           {
@@ -7713,6 +7713,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/8649032270148",
+            "title": "Oversized Cotton White T-shirt Double Eye",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
+            "views": 31,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/7820389974253",
             "title": "Short Sleeve Shirt Rockets (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/short-sleeve-shirt-rockets-recycled-fabric-525376_3e98b66e-0360-477c-be94-d77b3b4ce96a.jpg?v=1770080311",
@@ -7750,14 +7758,6 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4237.jpg?v=1770331616",
             "views": 29,
             "addToCart": 1,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/8649032270148",
-            "title": "Oversized Cotton White T-shirt Double Eye",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
-            "views": 29,
-            "addToCart": 0,
             "purchases": 0
           },
           {
@@ -7953,6 +7953,22 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/9074579734852",
+            "title": "Pop Cola Classic Shirt Ribbed Fabric",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-432694_0bde8aa1-d8b1-4216-b513-5b703b92ef6b.jpg?v=1770071961",
+            "views": 24,
+            "addToCart": 2,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/9074591498564",
+            "title": "Pop Cola Classic Shirt Ribbed Fabric",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-651197_8983b2a9-9efe-4bec-be8f-15f5e9332825.jpg?v=1770071891",
+            "views": 24,
+            "addToCart": 2,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15577307054404",
             "title": "Oversized Pink Sleeveless Tee",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260618_193045_ff8cadee-4209-4b08-86f5-409ddf66d62e-_1.jpg?v=1786557849",
@@ -7973,22 +7989,6 @@
             "title": "MYSIMPLICATED® Ciel Blue Bermuda",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_100159_d21a1167-81f5-4e00-9fbd-a7323358cd51.jpg?v=1786556158",
             "views": 24,
-            "addToCart": 2,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/9074579734852",
-            "title": "Pop Cola Classic Shirt Ribbed Fabric",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-432694_0bde8aa1-d8b1-4216-b513-5b703b92ef6b.jpg?v=1770071961",
-            "views": 23,
-            "addToCart": 2,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/9074591498564",
-            "title": "Pop Cola Classic Shirt Ribbed Fabric",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-651197_8983b2a9-9efe-4bec-be8f-15f5e9332825.jpg?v=1770071891",
-            "views": 23,
             "addToCart": 2,
             "purchases": 0
           },
@@ -8561,6 +8561,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/9074574000452",
+            "title": "Pop Cola Classic Bermuda Ribbed Fabric",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-bermuda-ribbed-fabric-678221_2c2b65e2-04a3-40ff-9887-ba47494f1185.jpg?v=1770335006",
+            "views": 12,
+            "addToCart": 1,
+            "purchases": 1
+          },
+          {
             "productId": "gid://shopify/Product/15412278493508",
             "title": "Pop Cola Balloon Skirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated113.jpg?v=1766257090",
@@ -8575,14 +8583,6 @@
             "views": 11,
             "addToCart": 0,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/9074574000452",
-            "title": "Pop Cola Classic Bermuda Ribbed Fabric",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-bermuda-ribbed-fabric-678221_2c2b65e2-04a3-40ff-9887-ba47494f1185.jpg?v=1770335006",
-            "views": 11,
-            "addToCart": 1,
-            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15157494153540",
@@ -8741,6 +8741,13 @@
           "revenue": 2754.36
         },
         {
+          "productId": "gid://shopify/Product/14969291276612",
+          "title": "Not My Circus White T-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
+          "units": 9,
+          "revenue": 2725.87
+        },
+        {
           "productId": "gid://shopify/Product/15590250840388",
           "title": "MYSIMPLICATED® Duality Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
@@ -8760,13 +8767,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
           "units": 10,
           "revenue": 2633.35
-        },
-        {
-          "productId": "gid://shopify/Product/14969291276612",
-          "title": "Not My Circus White T-shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
-          "units": 8,
-          "revenue": 2466.87
         },
         {
           "productId": "gid://shopify/Product/8888098619716",
@@ -11161,7 +11161,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
             "views": 886,
             "addToCart": 38,
-            "purchases": 8
+            "purchases": 9
           },
           {
             "productId": "gid://shopify/Product/15455598313796",
@@ -12820,18 +12820,10 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/14980071948612",
-            "title": "Clown Oversized White T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/T-shirt-man-back-clown-_1.jpg?v=1770116468",
-            "views": 74,
-            "addToCart": 9,
-            "purchases": 3
-          },
-          {
             "productId": "gid://shopify/Product/8649032270148",
             "title": "Oversized Cotton White T-shirt Double Eye",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
-            "views": 73,
+            "views": 75,
             "addToCart": 6,
             "purchases": 3
           },
@@ -12839,7 +12831,7 @@
             "productId": "gid://shopify/Product/9074579734852",
             "title": "Pop Cola Classic Shirt Ribbed Fabric",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-432694_0bde8aa1-d8b1-4216-b513-5b703b92ef6b.jpg?v=1770071961",
-            "views": 73,
+            "views": 74,
             "addToCart": 16,
             "purchases": 1
           },
@@ -12847,9 +12839,17 @@
             "productId": "gid://shopify/Product/9074591498564",
             "title": "Pop Cola Classic Shirt Ribbed Fabric",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-651197_8983b2a9-9efe-4bec-be8f-15f5e9332825.jpg?v=1770071891",
-            "views": 73,
+            "views": 74,
             "addToCart": 16,
             "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/14980071948612",
+            "title": "Clown Oversized White T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/T-shirt-man-back-clown-_1.jpg?v=1770116468",
+            "views": 74,
+            "addToCart": 9,
+            "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/7820400492781",
@@ -13132,20 +13132,20 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/9074574000452",
+            "title": "Pop Cola Classic Bermuda Ribbed Fabric",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-bermuda-ribbed-fabric-678221_2c2b65e2-04a3-40ff-9887-ba47494f1185.jpg?v=1770335006",
+            "views": 51,
+            "addToCart": 3,
+            "purchases": 1
+          },
+          {
             "productId": "gid://shopify/Product/15412278493508",
             "title": "Pop Cola Balloon Skirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated113.jpg?v=1766257090",
             "views": 51,
             "addToCart": 4,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/9074574000452",
-            "title": "Pop Cola Classic Bermuda Ribbed Fabric",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-bermuda-ribbed-fabric-678221_2c2b65e2-04a3-40ff-9887-ba47494f1185.jpg?v=1770335006",
-            "views": 50,
-            "addToCart": 3,
-            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15637158494532",
