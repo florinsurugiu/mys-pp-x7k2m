@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T09:26:56.652Z",
+  "generatedAt": "2026-08-25T09:59:08.937Z",
   "planDate": "2026-08-25",
   "unmatchedProducts": [
     "Lost Grey Oversized T-Shirt W"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 11.67,
+    "hours": 10.17,
     "capacity": 7.2,
     "items": [
       {
@@ -158,15 +158,15 @@
         ]
       },
       {
-        "title": "01. Bluza Rupta 3S + 2L",
-        "hours": 7.5,
+        "title": "01. Bluza Rupta 2S + 2L",
+        "hours": 6,
         "tags": [
           "leftover",
           "asana",
           "buffer",
           "shopify"
         ],
-        "orderName": "#235448, #235462, #235463, #235464",
+        "orderName": "#235448, #235462, #235463",
         "orderLinks": [
           {
             "name": "#235448",
@@ -181,11 +181,6 @@
           {
             "name": "#235463",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082384867652",
-            "cod": false
-          },
-          {
-            "name": "#235464",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082430447940",
             "cod": false
           }
         ]
@@ -604,8 +599,8 @@
       ]
     },
     {
-      "name": "Bluza Rupta 2S + 2L",
-      "orderName": "#235448, #235462, #235463, #235464",
+      "name": "Bluza Rupta S + 2L",
+      "orderName": "#235448, #235462, #235463",
       "orderLinks": [
         {
           "name": "#235448",
@@ -621,15 +616,10 @@
           "name": "#235463",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082384867652",
           "cod": false
-        },
-        {
-          "name": "#235464",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082430447940",
-          "cod": false
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 6,
+      "hours": 4.5,
       "leftover": false,
       "tags": [
         "shopify"
