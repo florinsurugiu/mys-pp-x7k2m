@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T09:59:08.937Z",
+  "generatedAt": "2026-08-25T10:29:59.696Z",
   "planDate": "2026-08-25",
   "unmatchedProducts": [
     "Lost Grey Oversized T-Shirt W"
@@ -127,21 +127,12 @@
     }
   ],
   "felicia": {
-    "hours": 10.17,
+    "hours": 11.17,
     "capacity": 7.2,
     "items": [
       {
         "title": "01. W pink 2M",
         "hours": 2.5,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "02. H layers 2S",
-        "hours": 1,
         "tags": [
           "leftover",
           "asana",
@@ -158,7 +149,25 @@
         ]
       },
       {
-        "title": "01. Bluza Rupta 2S + 2L",
+        "title": "01. H Layers V2 2S",
+        "hours": 2,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer",
+          "shopify"
+        ],
+        "orderName": "#235448",
+        "orderLinks": [
+          {
+            "name": "#235448",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. Bluza Rupta 2S + 2L",
         "hours": 6,
         "tags": [
           "leftover",
@@ -188,7 +197,7 @@
     ]
   },
   "flori": {
-    "hours": 12.33,
+    "hours": 12.83,
     "capacity": 7.2,
     "items": [
       {
@@ -252,12 +261,12 @@
         ]
       },
       {
-        "title": "05. C maneci detasate 3XS + 2L",
-        "hours": 7.5,
+        "title": "05. C maneci detasate 3XS + 2L + S",
+        "hours": 9,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235434, #235440, #235444, #235450, #235457",
+        "orderName": "#235434, #235440, #235444, #235450, #235457, #235465",
         "orderLinks": [
           {
             "name": "#235434",
@@ -283,6 +292,11 @@
             "name": "#235457",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081445409092",
             "cod": false
+          },
+          {
+            "name": "#235465",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082576855364",
+            "cod": false
           }
         ]
       },
@@ -297,21 +311,6 @@
           {
             "name": "#235441",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077910856004",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "07. H Layers V2 S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235448",
-        "orderLinks": [
-          {
-            "name": "#235448",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
             "cod": false
           }
         ]
@@ -511,8 +510,8 @@
       ]
     },
     {
-      "name": "C maneci detasate 3XS + 2L",
-      "orderName": "#235434, #235440, #235444, #235450, #235457",
+      "name": "C maneci detasate 3XS + 2L + S",
+      "orderName": "#235434, #235440, #235444, #235450, #235457, #235465",
       "orderLinks": [
         {
           "name": "#235434",
@@ -538,10 +537,15 @@
           "name": "#235457",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081445409092",
           "cod": false
+        },
+        {
+          "name": "#235465",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082576855364",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 7.5,
+      "hours": 9,
       "leftover": false,
       "tags": [
         "shopify"
