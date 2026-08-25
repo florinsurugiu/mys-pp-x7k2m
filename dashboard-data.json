@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T12:22:37.902Z",
+  "generatedAt": "2026-08-25T13:25:28.632Z",
   "planDate": "2026-08-25",
   "unmatchedProducts": [
     "Lost Grey Oversized T-Shirt W"
@@ -131,15 +131,6 @@
     "capacity": 7.2,
     "items": [
       {
-        "title": "02. H layers 2S",
-        "hours": 1,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
         "title": "03. T alb split S",
         "hours": 0.67,
         "tags": [
@@ -216,11 +207,26 @@
             "cod": false
           }
         ]
+      },
+      {
+        "title": "03. H Layers V2 S",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235448",
+        "orderLinks": [
+          {
+            "name": "#235448",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
+            "cod": false
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 9.67,
+    "hours": 8.67,
     "capacity": 7.2,
     "items": [
       {
@@ -337,34 +343,19 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "08. H Layers V2 S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235448",
-        "orderLinks": [
-          {
-            "name": "#235448",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
-            "cod": false
-          }
-        ]
       }
     ]
   },
   "croit": [
     {
-      "name": "0. Bluza rupta alba 2S, 2L",
+      "name": "0. Bluza rupta alba 2S",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-25",
+      "dueOn": "2026-08-26",
       "leftover": false,
       "number": 0,
       "orderLinks": [],
-      "hours": 2.6668,
+      "hours": 1.3334,
       "tags": [
         "asana",
         "predicted"
@@ -773,9 +764,53 @@
       "tags": [
         "shopify"
       ]
+    },
+    {
+      "name": "T Roz M",
+      "orderName": "#235467",
+      "orderLinks": [
+        {
+          "name": "#235467",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082909319492",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Gri M",
+      "orderName": "#235467",
+      "orderLinks": [
+        {
+          "name": "#235467",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082909319492",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1217820088404534",
+      "name": "Bluza rupta alba 2L",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1217669193571413",
       "name": "C balenci gri XL grey",
