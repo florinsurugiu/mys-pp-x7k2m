@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T19:22:04.952Z",
+  "generatedAt": "2026-08-25T19:52:11.566Z",
   "planDate": "2026-08-25",
   "unmatchedProducts": [
     "Lost Grey Oversized T-Shirt W"
@@ -86,14 +86,6 @@
       "hours": 1.4167
     },
     {
-      "productId": "gid://shopify/Product/15590250840388",
-      "title": "MYSIMPLICATED® Duality Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
-      "category": "Camasa Unisex",
-      "size": "XXL",
-      "hours": 1.5
-    },
-    {
       "productId": "gid://shopify/Product/8612489199940",
       "title": "White T-shirt Darwin",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/white-t-shirt-darwin-399004_d2eac6c6-6443-4bc7-9332-2c3eab970a23.jpg?v=1770114834",
@@ -124,10 +116,18 @@
       "category": "Camasa scurta",
       "size": "XL",
       "hours": 1.4167
+    },
+    {
+      "productId": "gid://shopify/Product/15499249942852",
+      "title": "Split White Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
+      "category": "Tricou simplu",
+      "size": "M",
+      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 9.42,
+    "hours": 14.67,
     "capacity": 7.2,
     "items": [
       {
@@ -148,102 +148,6 @@
           "buffer"
         ]
       },
-      {
-        "title": "01. H negru L",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235469",
-        "orderLinks": [
-          {
-            "name": "#235469",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083185881412",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "02. T Negru Superwoman XS",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235457",
-        "orderLinks": [
-          {
-            "name": "#235457",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081445409092",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. T Doer S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235470",
-        "orderLinks": [
-          {
-            "name": "#235470",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083212259652",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. T Tiv Offwhite Miau XL",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235446",
-        "orderLinks": [
-          {
-            "name": "#235446",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078740574532",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "05. C Pop Mix XL",
-        "hours": 1.42,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235451",
-        "orderLinks": [
-          {
-            "name": "#235451",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079383384388",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "06. W 3rd eye L",
-        "hours": 2.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235461",
-        "orderLinks": [
-          {
-            "name": "#235461",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082294264132",
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 14.33,
-    "capacity": 7.2,
-    "items": [
       {
         "title": "01. C maneci detasate 3XS + 2L + 2S",
         "hours": 10.5,
@@ -290,37 +194,22 @@
         ]
       },
       {
-        "title": "02. T Alb M",
-        "hours": 0.67,
+        "title": "02. T Doer S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235466",
+        "orderName": "#235470",
         "orderLinks": [
           {
-            "name": "#235466",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082753016132",
+            "name": "#235470",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083212259652",
             "cod": true
           }
         ]
       },
       {
-        "title": "03. T Negru M",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235466",
-        "orderLinks": [
-          {
-            "name": "#235466",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082753016132",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. H offwhite M",
+        "title": "03. H offwhite M",
         "hours": 1,
         "tags": [
           "shopify"
@@ -331,6 +220,77 @@
             "name": "#235432",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
             "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 8.08,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "01. T Negru M + XXL",
+        "hours": 1.33,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235466, #235471",
+        "orderLinks": [
+          {
+            "name": "#235466",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082753016132",
+            "cod": true
+          },
+          {
+            "name": "#235471",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083566350660",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "02. H negru L",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235469",
+        "orderLinks": [
+          {
+            "name": "#235469",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083185881412",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. T Alb M",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235466",
+        "orderLinks": [
+          {
+            "name": "#235466",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082753016132",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. C 3 culori XXL",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235471",
+        "orderLinks": [
+          {
+            "name": "#235471",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083566350660",
+            "cod": true
           }
         ]
       },
@@ -360,6 +320,36 @@
           {
             "name": "#235441",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077910856004",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "07. T Tiv Offwhite Miau XL",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235446",
+        "orderLinks": [
+          {
+            "name": "#235446",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078740574532",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "08. C Pop Mix XL",
+        "hours": 1.42,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235451",
+        "orderLinks": [
+          {
+            "name": "#235451",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079383384388",
             "cod": false
           }
         ]
@@ -555,17 +545,22 @@
       ]
     },
     {
-      "name": "T Negru M",
-      "orderName": "#235466",
+      "name": "T Negru M + XXL",
+      "orderName": "#235466, #235471",
       "orderLinks": [
         {
           "name": "#235466",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082753016132",
           "cod": true
+        },
+        {
+          "name": "#235471",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083566350660",
+          "cod": true
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
@@ -617,6 +612,23 @@
       ],
       "category": "Tricou Doer",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C 3 culori XXL",
+      "orderName": "#235471",
+      "orderLinks": [
+        {
+          "name": "#235471",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083566350660",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -742,8 +754,8 @@
       ]
     },
     {
-      "name": "Bluza Rupta 3L",
-      "orderName": "#235462, #235463, #235468",
+      "name": "Bluza Rupta 4L",
+      "orderName": "#235462, #235463, #235468, #235472",
       "orderLinks": [
         {
           "name": "#235462",
@@ -759,10 +771,15 @@
           "name": "#235468",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083123392836",
           "cod": false
+        },
+        {
+          "name": "#235472",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083575689540",
+          "cod": false
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 4.5,
+      "hours": 6,
       "leftover": false,
       "tags": [
         "shopify"
