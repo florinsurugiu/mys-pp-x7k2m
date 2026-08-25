@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T13:25:28.632Z",
+  "generatedAt": "2026-08-25T14:11:29.418Z",
   "planDate": "2026-08-25",
   "unmatchedProducts": [
     "Lost Grey Oversized T-Shirt W"
@@ -127,27 +127,98 @@
     }
   ],
   "felicia": {
-    "hours": 14.67,
+    "hours": 9.58,
     "capacity": 7.2,
     "items": [
       {
-        "title": "03. T alb split S",
-        "hours": 0.67,
+        "title": "01. Bluza roz MYstudios 2S",
+        "hours": 2,
         "tags": [
           "leftover",
           "asana",
-          "buffer"
+          "buffer",
+          "shopify"
+        ],
+        "orderName": "#235432",
+        "orderLinks": [
+          {
+            "name": "#235432",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
+            "cod": false
+          }
         ]
       },
       {
-        "title": "04. Bluza MY studios S",
-        "hours": 1.5,
+        "title": "02. Bluza Rupta 2L",
+        "hours": 3,
         "tags": [
-          "leftover",
-          "asana",
-          "buffer"
+          "shopify"
+        ],
+        "orderName": "#235462, #235463",
+        "orderLinks": [
+          {
+            "name": "#235462",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082301800772",
+            "cod": false
+          },
+          {
+            "name": "#235463",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082384867652",
+            "cod": false
+          }
         ]
       },
+      {
+        "title": "03. T Negru M",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235466",
+        "orderLinks": [
+          {
+            "name": "#235466",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082753016132",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. C Pop Mix XL",
+        "hours": 1.42,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235451",
+        "orderLinks": [
+          {
+            "name": "#235451",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079383384388",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "05. W 3rd eye L",
+        "hours": 2.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235461",
+        "orderLinks": [
+          {
+            "name": "#235461",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082294264132",
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 14.5,
+    "capacity": 7.2,
+    "items": [
       {
         "title": "01. C maneci detasate 3XS + 2L + 2S",
         "hours": 10.5,
@@ -186,57 +257,6 @@
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082576855364",
             "cod": false
           },
-          {
-            "name": "#235466",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082753016132",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "02. H Fume XL",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235441",
-        "orderLinks": [
-          {
-            "name": "#235441",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077910856004",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. H Layers V2 S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235448",
-        "orderLinks": [
-          {
-            "name": "#235448",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8.67,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "01. T Negru M",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235466",
-        "orderLinks": [
           {
             "name": "#235466",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082753016132",
@@ -290,56 +310,31 @@
         ]
       },
       {
-        "title": "05. Bluza roz MYstudios S",
-        "hours": 0.5,
+        "title": "05. H Fume XL",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235432",
+        "orderName": "#235441",
         "orderLinks": [
           {
-            "name": "#235432",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
+            "name": "#235441",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077910856004",
             "cod": false
           }
         ]
       },
       {
-        "title": "06. Bluza Rupta S + 2L",
-        "hours": 4.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235448, #235462, #235463",
-        "orderLinks": [
-          {
-            "name": "#235448",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
-            "cod": false
-          },
-          {
-            "name": "#235462",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082301800772",
-            "cod": false
-          },
-          {
-            "name": "#235463",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082384867652",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "07. T Split Alb S",
+        "title": "06. T Negru Superwoman XS",
         "hours": 0.67,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235433",
+        "orderName": "#235457",
         "orderLinks": [
           {
-            "name": "#235433",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075993141572",
+            "name": "#235457",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081445409092",
             "cod": false
           }
         ]
@@ -603,23 +598,6 @@
       ]
     },
     {
-      "name": "T Split Alb S",
-      "orderName": "#235433",
-      "orderLinks": [
-        {
-          "name": "#235433",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075993141572",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "H Fume XL",
       "orderName": "#235441",
       "orderLinks": [
@@ -648,50 +626,6 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H Layers V2 S",
-      "orderName": "#235448",
-      "orderLinks": [
-        {
-          "name": "#235448",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "Bluza Rupta S + 2L",
-      "orderName": "#235448, #235462, #235463",
-      "orderLinks": [
-        {
-          "name": "#235448",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
-          "cod": false
-        },
-        {
-          "name": "#235462",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082301800772",
-          "cod": false
-        },
-        {
-          "name": "#235463",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082384867652",
-          "cod": false
-        }
-      ],
-      "category": "Bluza inimioara / obsidian",
-      "hours": 4.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -743,6 +677,28 @@
       ],
       "category": "Windbreaker",
       "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Bluza Rupta 2L",
+      "orderName": "#235462, #235463",
+      "orderLinks": [
+        {
+          "name": "#235462",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082301800772",
+          "cod": false
+        },
+        {
+          "name": "#235463",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082384867652",
+          "cod": false
+        }
+      ],
+      "category": "Bluza inimioara / obsidian",
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
