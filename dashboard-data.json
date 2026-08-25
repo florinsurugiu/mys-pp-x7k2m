@@ -1,7 +1,9 @@
 {
-  "generatedAt": "2026-08-25T08:05:04.064Z",
+  "generatedAt": "2026-08-25T09:26:56.652Z",
   "planDate": "2026-08-25",
-  "unmatchedProducts": [],
+  "unmatchedProducts": [
+    "Lost Grey Oversized T-Shirt W"
+  ],
   "predictionIdeas": [
     {
       "productId": "gid://shopify/Product/15614948868420",
@@ -34,6 +36,14 @@
       "category": "Windbreaker",
       "size": "M",
       "hours": 2.5
+    },
+    {
+      "productId": "gid://shopify/Product/15629712687428",
+      "title": "777 Mauve Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
+      "category": "Tricou raiat",
+      "size": "S",
+      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/15614948868420",
@@ -114,18 +124,10 @@
       "category": "Camasa Unisex",
       "size": "XL",
       "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15590401605956",
-      "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_120446_12b5b28c-d728-4ca8-bdb2-a4b21e5fe9c7.jpg?v=1786555960",
-      "category": "Camasa scurta",
-      "size": "XL",
-      "hours": 1.4167
     }
   ],
   "felicia": {
-    "hours": 7.83,
+    "hours": 11.67,
     "capacity": 7.2,
     "items": [
       {
@@ -138,7 +140,7 @@
         ]
       },
       {
-        "title": "02. H layers S",
+        "title": "02. H layers 2S",
         "hours": 1,
         "tags": [
           "leftover",
@@ -147,12 +149,57 @@
         ]
       },
       {
-        "title": "01. Bluza roz MYstudios 2S",
-        "hours": 2,
+        "title": "03. T alb split S",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. Bluza Rupta 3S + 2L",
+        "hours": 7.5,
         "tags": [
           "leftover",
           "asana",
           "buffer",
+          "shopify"
+        ],
+        "orderName": "#235448, #235462, #235463, #235464",
+        "orderLinks": [
+          {
+            "name": "#235448",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
+            "cod": false
+          },
+          {
+            "name": "#235462",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082301800772",
+            "cod": false
+          },
+          {
+            "name": "#235463",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082384867652",
+            "cod": false
+          },
+          {
+            "name": "#235464",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082430447940",
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 12.33,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "01. H offwhite M",
+        "hours": 1,
+        "tags": [
           "shopify"
         ],
         "orderName": "#235432",
@@ -165,12 +212,39 @@
         ]
       },
       {
-        "title": "02. T Split Alb 2S",
-        "hours": 1.33,
+        "title": "02. T Tiv Offwhite Miau XL",
+        "hours": 0.67,
         "tags": [
-          "leftover",
-          "asana",
-          "buffer",
+          "shopify"
+        ],
+        "orderName": "#235446",
+        "orderLinks": [
+          {
+            "name": "#235446",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078740574532",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. Bluza roz MYstudios S",
+        "hours": 0.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235432",
+        "orderLinks": [
+          {
+            "name": "#235432",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. T Split Alb S",
+        "hours": 0.67,
+        "tags": [
           "shopify"
         ],
         "orderName": "#235433",
@@ -183,74 +257,7 @@
         ]
       },
       {
-        "title": "03. H Fume XL",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235441",
-        "orderLinks": [
-          {
-            "name": "#235441",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077910856004",
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 13.83,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "01. W Statue XL ",
-        "hours": 2.5,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235456",
-        "orderLinks": [
-          {
-            "name": "#235456",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081073393988",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. C albastru Graffiti S + M",
-        "hours": 2.83,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3421177",
-        "orderLinks": [
-          {
-            "name": "WB#3421177",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. H offwhite M",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235432",
-        "orderLinks": [
-          {
-            "name": "#235432",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. C maneci detasate 3XS + 2L",
+        "title": "05. C maneci detasate 3XS + 2L",
         "hours": 7.5,
         "tags": [
           "shopify"
@@ -283,89 +290,91 @@
             "cod": false
           }
         ]
+      },
+      {
+        "title": "06. H Fume XL",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235441",
+        "orderLinks": [
+          {
+            "name": "#235441",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077910856004",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "07. H Layers V2 S",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235448",
+        "orderLinks": [
+          {
+            "name": "#235448",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078983123268",
+            "cod": false
+          }
+        ]
       }
     ]
   },
   "croit": [
     {
-      "name": "0. Accesorii w stander + cutter bluza alba",
-      "orderName": null,
-      "category": "Windbreaker",
-      "dueOn": "2026-08-25",
-      "leftover": false,
-      "number": 0,
-      "orderLinks": [],
-      "hours": 2.5,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "01. impachetat H patch L",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-08-25",
-      "leftover": false,
-      "number": 1,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "01. H layers S v2 2 buc",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-08-25",
-      "leftover": false,
-      "number": 1,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "02. C maneci detasate 2XS, 2L",
+      "name": "02. C maneci detasate 3XS, 2L",
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-08-25",
       "leftover": false,
       "number": 2,
       "orderLinks": [],
-      "hours": 5.6668,
+      "hours": 7.083500000000001,
       "tags": [
         "asana",
         "predicted"
       ]
     },
     {
-      "name": "05. Bluza rupta alba 2S, L",
+      "name": "05. Bluza rupta alba 2S, 2L",
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-25",
       "leftover": false,
       "number": 5,
       "orderLinks": [],
-      "hours": 2.0000999999999998,
+      "hours": 2.6668,
       "tags": [
         "asana",
         "predicted"
       ]
     },
     {
-      "name": "08. H fume XL",
+      "name": "06. H fume XL",
       "orderName": null,
       "category": "Hanorac bumbac",
       "dueOn": "2026-08-25",
       "leftover": false,
-      "number": 8,
+      "number": 6,
       "orderLinks": [],
       "hours": 1,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "07. T grey XXL",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-25",
+      "leftover": false,
+      "number": 7,
+      "orderLinks": [],
+      "hours": 0.6667,
       "tags": [
         "asana",
         "predicted"
@@ -453,23 +462,6 @@
       "tags": [
         "asana",
         "predicted"
-      ]
-    },
-    {
-      "name": "C albastru Graffiti S + M",
-      "orderName": "WB#3421177",
-      "orderLinks": [
-        {
-          "name": "WB#3421177",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Camasa scurta",
-      "hours": 2.8334,
-      "leftover": false,
-      "tags": [
-        "wb"
       ]
     },
     {
@@ -595,40 +587,6 @@
       ]
     },
     {
-      "name": "T Gri S",
-      "orderName": "#235447",
-      "orderLinks": [
-        {
-          "name": "#235447",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078951502148",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Mov S",
-      "orderName": "#235447",
-      "orderLinks": [
-        {
-          "name": "#235447",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078951502148",
-          "cod": false
-        }
-      ],
-      "category": "Tricou raiat",
-      "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "H Layers V2 S",
       "orderName": "#235448",
       "orderLinks": [
@@ -646,8 +604,8 @@
       ]
     },
     {
-      "name": "Bluza Rupta S + L",
-      "orderName": "#235448, #235462",
+      "name": "Bluza Rupta 2S + 2L",
+      "orderName": "#235448, #235462, #235463, #235464",
       "orderLinks": [
         {
           "name": "#235448",
@@ -658,10 +616,20 @@
           "name": "#235462",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082301800772",
           "cod": false
+        },
+        {
+          "name": "#235463",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082384867652",
+          "cod": false
+        },
+        {
+          "name": "#235464",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082430447940",
+          "cod": false
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 3,
+      "hours": 6,
       "leftover": false,
       "tags": [
         "shopify"
@@ -742,6 +710,16 @@
       "name": "C balenci gri XL grey",
       "orderName": null,
       "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1217669193571393",
+      "name": "W Statue XL ",
+      "orderName": null,
+      "category": "Windbreaker",
       "tags": [
         "predicted",
         "asana"
