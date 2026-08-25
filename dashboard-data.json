@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T15:57:12.649Z",
+  "generatedAt": "2026-08-25T16:27:32.662Z",
   "planDate": "2026-08-25",
   "unmatchedProducts": [
     "Lost Grey Oversized T-Shirt W"
@@ -62,14 +62,6 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/7820197691629",
-      "title": "DOER Ice Cream T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_doer_tshirt.jpg?v=1769644387",
-      "category": "Tricou Doer",
-      "size": "L",
-      "hours": 1
-    },
-    {
       "productId": "gid://shopify/Product/8888098619716",
       "title": "Ivory T-shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Ivory_tshirt_2_6dfde0fb-9aa9-4429-b43f-e7e4c32c864f.jpg?v=1769606445",
@@ -124,10 +116,18 @@
       "category": "Camasa Unisex",
       "size": "XL",
       "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15590401605956",
+      "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_120446_12b5b28c-d728-4ca8-bdb2-a4b21e5fe9c7.jpg?v=1786555960",
+      "category": "Camasa scurta",
+      "size": "XL",
+      "hours": 1.4167
     }
   ],
   "felicia": {
-    "hours": 7.75,
+    "hours": 9.42,
     "capacity": 7.2,
     "items": [
       {
@@ -149,37 +149,22 @@
         ]
       },
       {
-        "title": "01. H offwhite M",
+        "title": "01. H negru L",
         "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235432",
+        "orderName": "#235469",
         "orderLinks": [
           {
-            "name": "#235432",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
-            "cod": false
+            "name": "#235469",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083185881412",
+            "cod": true
           }
         ]
       },
       {
-        "title": "02. C Pop Mix XL",
-        "hours": 1.42,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235451",
-        "orderLinks": [
-          {
-            "name": "#235451",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079383384388",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. T Negru Superwoman XS",
+        "title": "02. T Negru Superwoman XS",
         "hours": 0.67,
         "tags": [
           "shopify"
@@ -194,7 +179,52 @@
         ]
       },
       {
-        "title": "04. W 3rd eye L",
+        "title": "03. T Doer S",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235470",
+        "orderLinks": [
+          {
+            "name": "#235470",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083212259652",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. T Tiv Offwhite Miau XL",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235446",
+        "orderLinks": [
+          {
+            "name": "#235446",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078740574532",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "05. C Pop Mix XL",
+        "hours": 1.42,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235451",
+        "orderLinks": [
+          {
+            "name": "#235451",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079383384388",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "06. W 3rd eye L",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -211,7 +241,7 @@
     ]
   },
   "flori": {
-    "hours": 15,
+    "hours": 14.33,
     "capacity": 7.2,
     "items": [
       {
@@ -260,7 +290,7 @@
         ]
       },
       {
-        "title": "02. T Negru M",
+        "title": "02. T Alb M",
         "hours": 0.67,
         "tags": [
           "shopify"
@@ -275,32 +305,32 @@
         ]
       },
       {
-        "title": "03. H negru L",
+        "title": "03. T Negru M",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235466",
+        "orderLinks": [
+          {
+            "name": "#235466",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082753016132",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. H offwhite M",
         "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235469",
+        "orderName": "#235432",
         "orderLinks": [
           {
-            "name": "#235469",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083185881412",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. T Alb M",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235466",
-        "orderLinks": [
-          {
-            "name": "#235466",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082753016132",
-            "cod": true
+            "name": "#235432",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11075679387972",
+            "cod": false
           }
         ]
       },
@@ -330,21 +360,6 @@
           {
             "name": "#235441",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077910856004",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "07. T Tiv Offwhite Miau XL",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235446",
-        "orderLinks": [
-          {
-            "name": "#235446",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11078740574532",
             "cod": false
           }
         ]
@@ -584,6 +599,23 @@
         }
       ],
       "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Doer S",
+      "orderName": "#235470",
+      "orderLinks": [
+        {
+          "name": "#235470",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083212259652",
+          "cod": true
+        }
+      ],
+      "category": "Tricou Doer",
       "hours": 1,
       "leftover": false,
       "tags": [
