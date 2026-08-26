@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T05:16:34.680Z",
+  "generatedAt": "2026-08-26T05:59:56.178Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -340,9 +340,9 @@
       "revenue": 0,
       "cogs": 0,
       "shipping": 0,
-      "adSpend": 60.47,
+      "adSpend": 70.19,
       "grossProfit": 0,
-      "netProfit": -60.47,
+      "netProfit": -70.19,
       "roas": 0,
       "unknownCostUnits": 0
     }
@@ -350,27 +350,27 @@
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 12264.18,
+      "spend": 12267.02,
       "purchases": 102,
-      "metaRoas": 3.023938
+      "metaRoas": 3.023238
     },
     {
       "name": "DE",
-      "spend": 5121.94,
+      "spend": 5125.35,
       "purchases": 29,
-      "metaRoas": 3.021274
+      "metaRoas": 3.019261
     },
     {
       "name": "Latvia",
-      "spend": 798.14,
+      "spend": 800.77,
       "purchases": 8,
-      "metaRoas": 5.013296
+      "metaRoas": 4.996851
     },
     {
       "name": "Single Images",
-      "spend": 162.65,
+      "spend": 163.5,
       "purchases": 3,
-      "metaRoas": 6.789729
+      "metaRoas": 6.75482
     }
   ]
 }
