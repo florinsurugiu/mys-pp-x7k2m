@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T08:08:27.121Z",
+  "generatedAt": "2026-08-26T08:59:36.362Z",
   "planDate": "2026-08-26",
   "unmatchedProducts": [
     "Oversized White T-Shirt - Circus - Monkeys W",
@@ -356,31 +356,15 @@
       ]
     },
     {
-      "name": "01. C maneci detasate 3XS, S, 2L",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-08-25",
-      "leftover": true,
-      "number": 1,
-      "orderLinks": [],
-      "hours": 8.5002,
-      "tags": [
-        "leftover",
-        "asana",
-        "predicted"
-      ]
-    },
-    {
       "name": "03. T grey XXL",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-25",
-      "leftover": true,
+      "dueOn": "2026-08-26",
+      "leftover": false,
       "number": 3,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
-        "leftover",
         "asana",
         "predicted"
       ]
@@ -389,13 +373,12 @@
       "name": "04. T offwhite cu tiv Miau XL",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-25",
-      "leftover": true,
+      "dueOn": "2026-08-26",
+      "leftover": false,
       "number": 4,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
-        "leftover",
         "asana",
         "predicted"
       ]
@@ -404,13 +387,12 @@
       "name": "05. C pop mix XL",
       "orderName": null,
       "category": "Camasa scurta",
-      "dueOn": "2026-08-25",
-      "leftover": true,
+      "dueOn": "2026-08-26",
+      "leftover": false,
       "number": 5,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
-        "leftover",
         "asana",
         "predicted"
       ]
@@ -430,16 +412,29 @@
       ]
     },
     {
+      "name": "07. T negru superw XS",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-26",
+      "leftover": false,
+      "number": 7,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
       "name": "02 H fume XL",
       "orderName": null,
       "category": "Hanorac bumbac",
-      "dueOn": "2026-08-25",
-      "leftover": true,
+      "dueOn": "2026-08-26",
+      "leftover": false,
       "number": null,
       "orderLinks": [],
       "hours": 1,
       "tags": [
-        "leftover",
         "asana",
         "predicted"
       ]
@@ -770,6 +765,16 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1217770970577400",
+      "name": "01. C maneci detasate 3XS, S, 2L",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1217669193571413",
       "name": "C balenci gri XL grey",
