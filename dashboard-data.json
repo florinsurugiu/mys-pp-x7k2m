@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T15:57:31.367Z",
+  "generatedAt": "2026-08-26T16:42:56.267Z",
   "planDate": "2026-08-26",
   "unmatchedProducts": [
     "Oversized White T-Shirt - Circus - Monkeys W",
@@ -128,7 +128,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.42,
+    "hours": 7.33,
     "capacity": 7.2,
     "items": [
       {
@@ -151,17 +151,18 @@
         "orderLinks": []
       },
       {
-        "title": "02. T Alb M",
-        "hours": 0.67,
+        "title": "02. H fume XL",
+        "hours": 1,
         "tags": [
-          "shopify"
+          "shopify",
+          "buffer"
         ],
-        "orderName": "#235469",
+        "orderName": "#235441",
         "orderLinks": [
           {
-            "name": "#235469",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083185881412",
-            "cod": true
+            "name": "#235441",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077910856004",
+            "cod": false
           }
         ]
       },
@@ -199,26 +200,11 @@
             "cod": true
           }
         ]
-      },
-      {
-        "title": "05. C Pop Mix XL",
-        "hours": 1.42,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235451",
-        "orderLinks": [
-          {
-            "name": "#235451",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079383384388",
-            "cod": false
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 13,
+    "hours": 7.33,
     "capacity": 7.2,
     "items": [
       {
@@ -232,23 +218,7 @@
         "orderLinks": []
       },
       {
-        "title": "02. H fume XL",
-        "hours": 1,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235441",
-        "orderLinks": [
-          {
-            "name": "#235441",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077910856004",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. H negru L",
+        "title": "02. H negru L",
         "hours": 1,
         "tags": [
           "shopify"
@@ -263,16 +233,36 @@
         ]
       },
       {
-        "title": "04. T Negru XXL",
-        "hours": 0.67,
+        "title": "03. T Negru XXL + L",
+        "hours": 1.33,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235471",
+        "orderName": "#235471, #235476",
         "orderLinks": [
           {
             "name": "#235471",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083566350660",
+            "cod": true
+          },
+          {
+            "name": "#235476",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085050282308",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. T Alb M",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235469",
+        "orderLinks": [
+          {
+            "name": "#235469",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083185881412",
             "cod": true
           }
         ]
@@ -289,36 +279,6 @@
             "name": "#235471",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083566350660",
             "cod": true
-          }
-        ]
-      },
-      {
-        "title": "06. C maneci detasate L + XS + 2S",
-        "hours": 6,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235450, #235457, #235465, #235475",
-        "orderLinks": [
-          {
-            "name": "#235450",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079279640900",
-            "cod": false
-          },
-          {
-            "name": "#235457",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081445409092",
-            "cod": false
-          },
-          {
-            "name": "#235465",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082576855364",
-            "cod": false
-          },
-          {
-            "name": "#235475",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11084753928516",
-            "cod": false
           }
         ]
       }
@@ -520,17 +480,22 @@
       ]
     },
     {
-      "name": "T Negru XXL",
-      "orderName": "#235471",
+      "name": "T Negru XXL + L",
+      "orderName": "#235471, #235476",
       "orderLinks": [
         {
           "name": "#235471",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083566350660",
           "cod": true
+        },
+        {
+          "name": "#235476",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085050282308",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
