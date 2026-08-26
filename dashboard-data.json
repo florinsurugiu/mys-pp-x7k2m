@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-26T20:18:23.521Z",
-  "planDate": "2026-08-26",
+  "generatedAt": "2026-08-26T23:48:57.427Z",
+  "planDate": "2026-08-27",
   "unmatchedProducts": [
     "Oversized White T-Shirt - Circus - Monkeys W",
     "Oversized Black T-Shirt With Not My Circus Design"
@@ -49,7 +49,7 @@
     {
       "productId": "gid://shopify/Product/8888098619716",
       "title": "Ivory T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Ivory_tshirt_2_6dfde0fb-9aa9-4429-b43f-e7e4c32c864f.jpg?v=1769606445",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_205443_79f01467-c4b8-41bc-842e-7caad7f75630.jpg?v=1787779168",
       "category": "Tricou raiat",
       "size": "S",
       "hours": 1
@@ -295,11 +295,12 @@
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-08-26",
-      "leftover": false,
+      "leftover": true,
       "number": 1,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -309,11 +310,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-26",
-      "leftover": false,
+      "leftover": true,
       "number": 2,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -323,11 +325,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-26",
-      "leftover": false,
+      "leftover": true,
       "number": 2,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -337,11 +340,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-26",
-      "leftover": false,
+      "leftover": true,
       "number": 3,
       "orderLinks": [],
       "hours": 1.3334,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -351,11 +355,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-26",
-      "leftover": false,
+      "leftover": true,
       "number": 7,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -551,8 +556,8 @@
       ]
     },
     {
-      "name": "C maneci detasate L + XS + 2S",
-      "orderName": "#235450, #235457, #235465, #235475",
+      "name": "C maneci detasate L + XS + 2S + M",
+      "orderName": "#235450, #235457, #235465, #235475, #235480",
       "orderLinks": [
         {
           "name": "#235450",
@@ -573,10 +578,15 @@
           "name": "#235475",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11084753928516",
           "cod": false
+        },
+        {
+          "name": "#235480",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085516833092",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 6,
+      "hours": 7.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -716,6 +726,23 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H Aria M",
+      "orderName": "#235479",
+      "orderLinks": [
+        {
+          "name": "#235479",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085458768196",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
