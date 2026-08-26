@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T13:31:20.969Z",
+  "generatedAt": "2026-08-26T14:24:21.600Z",
   "planDate": "2026-08-26",
   "unmatchedProducts": [
     "Oversized White T-Shirt - Circus - Monkeys W",
@@ -128,18 +128,9 @@
     }
   ],
   "felicia": {
-    "hours": 7.25,
+    "hours": 8.08,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "03. C maneci detasate S",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "04. Bluza rupta alba 2S",
         "hours": 0.67,
@@ -166,16 +157,16 @@
         ]
       },
       {
-        "title": "02. H negru L",
+        "title": "02. T Doer S",
         "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235469",
+        "orderName": "#235470",
         "orderLinks": [
           {
-            "name": "#235469",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083185881412",
+            "name": "#235470",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083212259652",
             "cod": true
           }
         ]
@@ -196,39 +187,44 @@
         ]
       },
       {
-        "title": "04. T Doer S",
-        "hours": 1,
+        "title": "04. T Split Alb 3 buc XL + 2M",
+        "hours": 3.33,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235470",
+        "orderName": "#235473, #235474",
         "orderLinks": [
           {
-            "name": "#235470",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083212259652",
+            "name": "#235473",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11084538904900",
+            "cod": true
+          },
+          {
+            "name": "#235474",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11084681806148",
             "cod": true
           }
         ]
       },
       {
-        "title": "05. C 3 culori XXL",
-        "hours": 1.5,
+        "title": "05. C Pop Mix XL",
+        "hours": 1.42,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235471",
+        "orderName": "#235451",
         "orderLinks": [
           {
-            "name": "#235471",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083566350660",
-            "cod": true
+            "name": "#235451",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079383384388",
+            "cod": false
           }
         ]
       }
     ]
   },
   "flori": {
-    "hours": 7.5,
+    "hours": 12.67,
     "capacity": 7.2,
     "items": [
       {
@@ -252,22 +248,62 @@
         "orderLinks": []
       },
       {
-        "title": "03. T Split Alb 3 buc XL + 2M",
-        "hours": 3.33,
+        "title": "03. H negru L",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235473, #235474",
+        "orderName": "#235469",
         "orderLinks": [
           {
-            "name": "#235473",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11084538904900",
+            "name": "#235469",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083185881412",
             "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. C 3 culori XXL",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235471",
+        "orderLinks": [
+          {
+            "name": "#235471",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083566350660",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "05. C maneci detasate L + XS + 2S",
+        "hours": 6,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235450, #235457, #235465, #235475",
+        "orderLinks": [
+          {
+            "name": "#235450",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11079279640900",
+            "cod": false
           },
           {
-            "name": "#235474",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11084681806148",
-            "cod": true
+            "name": "#235457",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11081445409092",
+            "cod": false
+          },
+          {
+            "name": "#235465",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082576855364",
+            "cod": false
+          },
+          {
+            "name": "#235475",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11084753928516",
+            "cod": false
           }
         ]
       }
@@ -491,8 +527,8 @@
       ]
     },
     {
-      "name": "C maneci detasate L + XS + S",
-      "orderName": "#235450, #235457, #235465",
+      "name": "C maneci detasate L + XS + 2S",
+      "orderName": "#235450, #235457, #235465, #235475",
       "orderLinks": [
         {
           "name": "#235450",
@@ -508,10 +544,15 @@
           "name": "#235465",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082576855364",
           "cod": false
+        },
+        {
+          "name": "#235475",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11084753928516",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 4.5,
+      "hours": 6,
       "leftover": false,
       "tags": [
         "shopify"
