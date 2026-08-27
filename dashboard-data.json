@@ -1,11 +1,18 @@
 {
-  "generatedAt": "2026-08-26T23:48:57.427Z",
+  "generatedAt": "2026-08-27T05:25:46.690Z",
   "planDate": "2026-08-27",
   "unmatchedProducts": [
-    "Oversized White T-Shirt - Circus - Monkeys W",
-    "Oversized Black T-Shirt With Not My Circus Design"
+    "Long Sleeve Shirt In Grey - Recycled Fabric"
   ],
   "predictionIdeas": [
+    {
+      "productId": "gid://shopify/Product/7837843849453",
+      "title": "Pink DOER  Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
+      "category": "Windbreaker",
+      "size": "M",
+      "hours": 2.5
+    },
     {
       "productId": "gid://shopify/Product/15614948868420",
       "title": "Reality Grey Oversized T-Shirt",
@@ -23,14 +30,6 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/7837843849453",
-      "title": "Pink DOER  Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
-      "category": "Windbreaker",
-      "size": "M",
-      "hours": 2.5
-    },
-    {
       "productId": "gid://shopify/Product/15629712687428",
       "title": "777 Mauve Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
@@ -45,14 +44,6 @@
       "category": "Camasa scurta",
       "size": "XXL",
       "hours": 1.4167
-    },
-    {
-      "productId": "gid://shopify/Product/8888098619716",
-      "title": "Ivory T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_205443_79f01467-c4b8-41bc-842e-7caad7f75630.jpg?v=1787779168",
-      "category": "Tricou raiat",
-      "size": "S",
-      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/15614948868420",
@@ -125,10 +116,18 @@
       "category": "Bermude",
       "size": "L",
       "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/9436029976900",
+      "title": "Oversized Cotton White T-shirt Kindness",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
+      "category": "Tricou simplu",
+      "size": "L",
+      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 7.42,
+    "hours": 7.67,
     "capacity": 7.2,
     "items": [
       {
@@ -187,7 +186,22 @@
         ]
       },
       {
-        "title": "02. T Alb M",
+        "title": "02. Pant gri Trousers M",
+        "hours": 1.25,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3423588",
+        "orderLinks": [
+          {
+            "name": "WB#3423588",
+            "url": null,
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. T Alb M",
         "hours": 0.67,
         "tags": [
           "shopify"
@@ -197,21 +211,6 @@
           {
             "name": "#235469",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083185881412",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. T Doer S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235470",
-        "orderLinks": [
-          {
-            "name": "#235470",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083212259652",
             "cod": true
           }
         ]
@@ -258,7 +257,22 @@
         ]
       },
       {
-        "title": "04. C 3 culori XXL",
+        "title": "04. T Doer S",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235470",
+        "orderLinks": [
+          {
+            "name": "#235470",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083212259652",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "05. C 3 culori XXL",
         "hours": 1.5,
         "tags": [
           "shopify"
@@ -269,21 +283,6 @@
             "name": "#235471",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11083566350660",
             "cod": true
-          }
-        ]
-      },
-      {
-        "title": "05. H Fume XL",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235441",
-        "orderLinks": [
-          {
-            "name": "#235441",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11077910856004",
-            "cod": false
           }
         ]
       }
@@ -422,6 +421,23 @@
       ]
     },
     {
+      "name": "Pant gri Trousers M",
+      "orderName": "WB#3423588",
+      "orderLinks": [
+        {
+          "name": "WB#3423588",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Pantaloni lungi full print",
+      "hours": 1.25,
+      "leftover": false,
+      "tags": [
+        "wb"
+      ]
+    },
+    {
       "name": "H negru L",
       "orderName": "#235469",
       "orderLinks": [
@@ -556,8 +572,8 @@
       ]
     },
     {
-      "name": "C maneci detasate L + XS + 2S + M",
-      "orderName": "#235450, #235457, #235465, #235475, #235480",
+      "name": "C maneci detasate L + XS + 3S + M",
+      "orderName": "#235450, #235457, #235465, #235475, #235480, #235481",
       "orderLinks": [
         {
           "name": "#235450",
@@ -583,10 +599,15 @@
           "name": "#235480",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085516833092",
           "cod": false
+        },
+        {
+          "name": "#235481",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11086028046660",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 7.5,
+      "hours": 9,
       "leftover": false,
       "tags": [
         "shopify"
