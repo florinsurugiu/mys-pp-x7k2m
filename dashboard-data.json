@@ -1,7 +1,9 @@
 {
-  "generatedAt": "2026-08-28T12:44:07.656Z",
-  "planDate": "2026-08-28",
-  "unmatchedProducts": [],
+  "generatedAt": "2026-08-28T22:40:46.883Z",
+  "planDate": "2026-08-31",
+  "unmatchedProducts": [
+    "Oversized White T-Shirt With Super-Frida Design W"
+  ],
   "predictionIdeas": [
     {
       "productId": "gid://shopify/Product/7837843849453",
@@ -42,14 +44,6 @@
       "category": "Tricou simplu",
       "size": "XL",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15629712687428",
-      "title": "777 Mauve Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-      "category": "Tricou raiat",
-      "size": "S",
-      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/15590250840388",
@@ -122,21 +116,20 @@
       "category": "Tricou simplu",
       "size": "S",
       "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15588121084228",
+      "title": "MYSIMPLICATED® Black Bermuda",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_215741_52ec5e88-77af-464d-8f2e-aa316d1f58db.jpg?v=1786556343",
+      "category": "Bermude",
+      "size": "L",
+      "hours": 1.5
     }
   ],
   "felicia": {
-    "hours": 10.83,
+    "hours": 9.42,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "05. C maneci detasate S",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "06. C maneci detasate L",
         "hours": 1.42,
@@ -212,7 +205,7 @@
     ]
   },
   "flori": {
-    "hours": 15.5,
+    "hours": 13,
     "capacity": 7.2,
     "items": [
       {
@@ -232,22 +225,7 @@
         ]
       },
       {
-        "title": "02. W Water Repellent Third Eye M",
-        "hours": 2.5,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3424331",
-        "orderLinks": [
-          {
-            "name": "WB#3424331",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. C maneci detasate XS + 4S + 3M",
+        "title": "02. C maneci detasate XS + 4S + 3M",
         "hours": 12,
         "tags": [
           "shopify"
@@ -304,11 +282,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-28",
-      "leftover": false,
+      "leftover": true,
       "number": 2,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -318,11 +297,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-28",
-      "leftover": false,
+      "leftover": true,
       "number": 3,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -332,11 +312,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-28",
-      "leftover": false,
+      "leftover": true,
       "number": 3,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -346,11 +327,12 @@
       "orderName": null,
       "category": "Windbreaker",
       "dueOn": "2026-08-28",
-      "leftover": false,
+      "leftover": true,
       "number": 4,
       "orderLinks": [],
       "hours": 2.5,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -360,11 +342,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-28",
-      "leftover": false,
+      "leftover": true,
       "number": 5,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -374,11 +357,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-08-28",
-      "leftover": false,
+      "leftover": true,
       "number": 6,
       "orderLinks": [],
       "hours": 2.6668,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -437,23 +421,6 @@
       "tags": [
         "asana",
         "predicted"
-      ]
-    },
-    {
-      "name": "W Water Repellent Third Eye M",
-      "orderName": "WB#3424331",
-      "orderLinks": [
-        {
-          "name": "WB#3424331",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "wb"
       ]
     },
     {
@@ -543,17 +510,39 @@
       ]
     },
     {
-      "name": "T Alb M",
-      "orderName": "#235488",
+      "name": "T Alb M + L",
+      "orderName": "#235488, #235496",
       "orderLinks": [
         {
           "name": "#235488",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11086487126340",
           "cod": true
+        },
+        {
+          "name": "#235496",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11089419305284",
+          "cod": true
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Complex Rosu M",
+      "orderName": "#235495",
+      "orderLinks": [
+        {
+          "name": "#235495",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11089399906628",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -749,6 +738,23 @@
       ],
       "category": "Pantalon drept",
       "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Mov S",
+      "orderName": "#235494",
+      "orderLinks": [
+        {
+          "name": "#235494",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11089309237572",
+          "cod": false
+        }
+      ],
+      "category": "Tricou raiat",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
