@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-08-28T09:49:44.178Z",
+  "generatedAt": "2026-08-28T21:06:55.227Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.2584,
   "days": [
-    {
-      "date": "2026-07-29",
-      "revenue": 2035,
-      "cogs": 804.42,
-      "shipping": 0,
-      "adSpend": 692.74,
-      "grossProfit": 1230.58,
-      "netProfit": 537.84,
-      "roas": 2.94,
-      "unknownCostUnits": 0
-    },
     {
       "date": "2026-07-30",
       "revenue": 314.1,
@@ -329,48 +318,59 @@
       "revenue": 5293.08,
       "cogs": 2925.74,
       "shipping": 583.1,
-      "adSpend": 664.03,
+      "adSpend": 664.14,
       "grossProfit": 1784.24,
-      "netProfit": 1120.21,
+      "netProfit": 1120.1,
       "roas": 7.97,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-08-28",
-      "revenue": 0,
-      "cogs": 0,
+      "revenue": 841.63,
+      "cogs": 422.55,
+      "shipping": 83.3,
+      "adSpend": 596.2,
+      "grossProfit": 335.78,
+      "netProfit": -260.42,
+      "roas": 1.41,
+      "unknownCostUnits": 0
+    },
+    {
+      "date": "2026-08-29",
+      "revenue": 319.2,
+      "cogs": 181.97,
       "shipping": 0,
-      "adSpend": 259.13,
-      "grossProfit": 0,
-      "netProfit": -259.13,
-      "roas": 0,
+      "adSpend": 0,
+      "grossProfit": 137.23,
+      "netProfit": 137.23,
+      "roas": null,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 11466.89,
-      "purchases": 101,
-      "metaRoas": 3.123507
+      "spend": 10909.66,
+      "purchases": 97,
+      "metaRoas": 3.138656
     },
     {
       "name": "DE",
-      "spend": 5725.71,
+      "spend": 5874.26,
       "purchases": 33,
-      "metaRoas": 3.012224
+      "metaRoas": 2.93605
     },
     {
       "name": "Latvia",
-      "spend": 997.15,
+      "spend": 1036.59,
       "purchases": 10,
-      "metaRoas": 4.700258
+      "metaRoas": 4.521433
     },
     {
       "name": "Single Images",
-      "spend": 211.91,
+      "spend": 225.59,
       "purchases": 4,
-      "metaRoas": 6.626303
+      "metaRoas": 6.224709
     }
   ]
 }
