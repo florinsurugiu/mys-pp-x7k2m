@@ -1,9 +1,7 @@
 {
-  "generatedAt": "2026-08-27T16:36:44.562Z",
-  "planDate": "2026-08-27",
-  "unmatchedProducts": [
-    "Long Sleeve Shirt In Grey - Recycled Fabric"
-  ],
+  "generatedAt": "2026-08-28T01:07:21.473Z",
+  "planDate": "2026-08-28",
+  "unmatchedProducts": [],
   "predictionIdeas": [
     {
       "productId": "gid://shopify/Product/7837843849453",
@@ -51,22 +49,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
       "category": "Camasa scurta",
       "size": "XXL",
-      "hours": 1.4167
-    },
-    {
-      "productId": "gid://shopify/Product/15614948868420",
-      "title": "Reality Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
-      "category": "Tricou simplu",
-      "size": "XL",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15588974428484",
-      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-      "category": "Camasa scurta",
-      "size": "XL",
       "hours": 1.4167
     },
     {
@@ -124,6 +106,22 @@
       "category": "Tricou simplu",
       "size": "S",
       "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15588121084228",
+      "title": "MYSIMPLICATED® Black Bermuda",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_215741_52ec5e88-77af-464d-8f2e-aa316d1f58db.jpg?v=1786556343",
+      "category": "Bermude",
+      "size": "L",
+      "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/9436029976900",
+      "title": "Oversized Cotton White T-shirt Kindness",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
+      "category": "Tricou simplu",
+      "size": "L",
+      "hours": 0.6667
     }
   ],
   "felicia": {
@@ -131,16 +129,7 @@
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. T grey M, XXL",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "06. C graffiti S,M (DHL)",
+        "title": "01. C graffiti S,M (DHL)",
         "hours": 1.42,
         "tags": [
           "leftover",
@@ -149,7 +138,25 @@
         ]
       },
       {
-        "title": "06. H negru simplu L",
+        "title": "02. T grey M, XXL (DHL)",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "03. Bluza rupta alba 2L (DHL)",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "04. H negru simplu L",
         "hours": 1,
         "tags": [
           "leftover",
@@ -158,16 +165,7 @@
         ]
       },
       {
-        "title": "06. Bluza rupta alba 2L (DHL)",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "07. C maneci detasate XS",
+        "title": "05. C maneci detasate S",
         "hours": 1.42,
         "tags": [
           "leftover",
@@ -176,7 +174,7 @@
         ]
       },
       {
-        "title": "08. C maneci detasate S",
+        "title": "07. C maneci detasate XS",
         "hours": 1.42,
         "tags": [
           "leftover",
@@ -205,7 +203,7 @@
     ]
   },
   "flori": {
-    "hours": 16.08,
+    "hours": 19.83,
     "capacity": 7.2,
     "items": [
       {
@@ -225,22 +223,38 @@
         ]
       },
       {
-        "title": "02. Pant gri Trousers M",
-        "hours": 1.25,
+        "title": "02. W Statue XL ",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235492",
+        "orderLinks": [
+          {
+            "name": "#235492",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087340142916",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. W Water Repellent Third Eye M",
+        "hours": 2.5,
         "tags": [
           "wb"
         ],
-        "orderName": "WB#3423588",
+        "orderName": "WB#3424331",
         "orderLinks": [
           {
-            "name": "WB#3423588",
+            "name": "WB#3424331",
             "url": null,
             "cod": false
           }
         ]
       },
       {
-        "title": "03. C maneci detasate XS + 5S + 3M",
+        "title": "04. C maneci detasate XS + 5S + 3M",
         "hours": 13.5,
         "tags": [
           "shopify"
@@ -298,14 +312,28 @@
   },
   "croit": [
     {
-      "name": "01. bluza rupta roz L",
+      "name": "0. H negru L simplu",
       "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-08-27",
+      "category": "Hanorac bumbac",
+      "dueOn": "2026-08-28",
+      "leftover": false,
+      "number": 0,
+      "orderLinks": [],
+      "hours": 1,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "01. H negru dupa ala offwhite L",
+      "orderName": null,
+      "category": "Hanorac bumbac",
+      "dueOn": "2026-08-28",
       "leftover": false,
       "number": 1,
       "orderLinks": [],
-      "hours": 0.6667,
+      "hours": 1,
       "tags": [
         "asana",
         "predicted"
@@ -315,9 +343,37 @@
       "name": "02. T negru split XL",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-27",
+      "dueOn": "2026-08-28",
       "leftover": false,
       "number": 2,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "02. C maneci detasate maro deschis 2S",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "dueOn": "2026-08-28",
+      "leftover": false,
+      "number": 2,
+      "orderLinks": [],
+      "hours": 2.8334,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "03. bluza rupta roz L",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-08-28",
+      "leftover": false,
+      "number": 3,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
@@ -329,39 +385,11 @@
       "name": "03. T negru superw XS",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-08-27",
+      "dueOn": "2026-08-28",
       "leftover": false,
       "number": 3,
       "orderLinks": [],
       "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "05. H negru L simplu",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-08-27",
-      "leftover": false,
-      "number": 5,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "07. C maneci detasate maro deschis 2S",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": null,
-      "leftover": false,
-      "number": 7,
-      "orderLinks": [],
-      "hours": 2.8334,
       "tags": [
         "asana",
         "predicted"
@@ -424,17 +452,17 @@
       ]
     },
     {
-      "name": "Pant gri Trousers M",
-      "orderName": "WB#3423588",
+      "name": "W Water Repellent Third Eye M",
+      "orderName": "WB#3424331",
       "orderLinks": [
         {
-          "name": "WB#3423588",
+          "name": "WB#3424331",
           "url": null,
           "cod": false
         }
       ],
-      "category": "Pantaloni lungi full print",
-      "hours": 1.25,
+      "category": "Windbreaker",
+      "hours": 2.5,
       "leftover": false,
       "tags": [
         "wb"
@@ -720,17 +748,22 @@
       ]
     },
     {
-      "name": "T Negru L",
-      "orderName": "#235476",
+      "name": "T Negru L + M",
+      "orderName": "#235476, #235491",
       "orderLinks": [
         {
           "name": "#235476",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085050282308",
           "cod": false
+        },
+        {
+          "name": "#235491",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
@@ -821,16 +854,6 @@
       "name": "C balenci gri XL grey",
       "orderName": null,
       "category": "Camasa scurta",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1217669193571393",
-      "name": "W Statue XL ",
-      "orderName": null,
-      "category": "Windbreaker",
       "tags": [
         "predicted",
         "asana"
