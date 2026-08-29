@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T21:12:47.044Z",
+  "generatedAt": "2026-08-29T23:17:41.230Z",
   "planDate": "2026-08-31",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -14,25 +14,9 @@
       "hours": 2.5
     },
     {
-      "productId": "gid://shopify/Product/15614948868420",
-      "title": "Reality Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
-      "category": "Tricou simplu",
-      "size": "L",
-      "hours": 0.6667
-    },
-    {
       "productId": "gid://shopify/Product/15499249942852",
       "title": "Split White Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15614948868420",
-      "title": "Reality Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
       "category": "Tricou simplu",
       "size": "M",
       "hours": 0.6667
@@ -118,11 +102,27 @@
       "hours": 1.5
     },
     {
-      "productId": "gid://shopify/Product/15614948868420",
-      "title": "Reality Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+      "productId": "gid://shopify/Product/14994921226564",
+      "title": "Complex Minds Checkered Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_checkered_shirt_m1.jpg?v=1769631253",
+      "category": "Camasa lunga",
+      "size": "S",
+      "hours": 1.75
+    },
+    {
+      "productId": "gid://shopify/Product/15499245715780",
+      "title": "Split White Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated129_74ef1e9a-d248-426a-9368-311404a90956.jpg?v=1773567724",
       "category": "Tricou simplu",
       "size": "S",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15003405582660",
+      "title": "Oversized White T-shirt Need Money for Porsche",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
+      "category": "Tricou simplu",
+      "size": "XL",
       "hours": 0.6667
     }
   ],
@@ -568,8 +568,8 @@
       ]
     },
     {
-      "name": "T Alb 2M + L",
-      "orderName": "#235488, #235496, #235499",
+      "name": "T Alb 2M + L + XS",
+      "orderName": "#235488, #235496, #235499, #235503",
       "orderLinks": [
         {
           "name": "#235488",
@@ -585,10 +585,15 @@
           "name": "#235499",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090163040580",
           "cod": false
+        },
+        {
+          "name": "#235503",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091120423236",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 2.0000999999999998,
+      "hours": 2.6668,
       "leftover": false,
       "tags": [
         "shopify"
@@ -712,8 +717,8 @@
       ]
     },
     {
-      "name": "T Gri M + S",
-      "orderName": "#235467, #235489",
+      "name": "T Gri M + S + XS",
+      "orderName": "#235467, #235489, #235503",
       "orderLinks": [
         {
           "name": "#235467",
@@ -724,10 +729,15 @@
           "name": "#235489",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11086546534724",
           "cod": false
+        },
+        {
+          "name": "#235503",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091120423236",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
@@ -802,17 +812,22 @@
       ]
     },
     {
-      "name": "T Mov S",
-      "orderName": "#235494",
+      "name": "T Mov S + XS",
+      "orderName": "#235494, #235503",
       "orderLinks": [
         {
           "name": "#235494",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11089309237572",
           "cod": false
+        },
+        {
+          "name": "#235503",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091120423236",
+          "cod": false
         }
       ],
       "category": "Tricou raiat",
-      "hours": 1,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -846,6 +861,23 @@
         }
       ],
       "category": "Bermude",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Double Sleeve Roz ZN Vitamin S",
+      "orderName": "#235503",
+      "orderLinks": [
+        {
+          "name": "#235503",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091120423236",
+          "cod": false
+        }
+      ],
+      "category": "Double sleeve",
       "hours": 1.5,
       "leftover": false,
       "tags": [
