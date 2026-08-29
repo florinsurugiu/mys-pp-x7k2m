@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T10:32:16.082Z",
+  "generatedAt": "2026-08-29T15:18:27.449Z",
   "planDate": "2026-08-31",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -520,8 +520,8 @@
       ]
     },
     {
-      "name": "T Alb M + L",
-      "orderName": "#235488, #235496",
+      "name": "T Alb 2M + L",
+      "orderName": "#235488, #235496, #235499",
       "orderLinks": [
         {
           "name": "#235488",
@@ -532,10 +532,15 @@
           "name": "#235496",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11089419305284",
           "cod": true
+        },
+        {
+          "name": "#235499",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090163040580",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
@@ -664,8 +669,8 @@
       ]
     },
     {
-      "name": "T Negru L + M",
-      "orderName": "#235476, #235491",
+      "name": "T Negru L + M + S",
+      "orderName": "#235476, #235491, #235499",
       "orderLinks": [
         {
           "name": "#235476",
@@ -676,10 +681,15 @@
           "name": "#235491",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
           "cod": false
+        },
+        {
+          "name": "#235499",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090163040580",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
