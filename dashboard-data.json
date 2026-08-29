@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T18:41:49.846Z",
+  "generatedAt": "2026-08-29T21:12:47.044Z",
   "planDate": "2026-08-31",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -205,7 +205,7 @@
     ]
   },
   "flori": {
-    "hours": 14.5,
+    "hours": 17,
     "capacity": 7.2,
     "items": [
       {
@@ -225,7 +225,23 @@
         ]
       },
       {
-        "title": "02. C maneci detasate XS + 4S + 4M",
+        "title": "02. W Statue XL ",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235501",
+        "orderLinks": [
+          {
+            "name": "#235501",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091029459268",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. C maneci detasate XS + 4S + 4M",
         "hours": 13.5,
         "tags": [
           "shopify"
@@ -486,6 +502,38 @@
       ]
     },
     {
+      "name": "T Negru L + M + S + XXL",
+      "orderName": "#235476, #235491, #235499, #235500",
+      "orderLinks": [
+        {
+          "name": "#235476",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085050282308",
+          "cod": false
+        },
+        {
+          "name": "#235491",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
+          "cod": false
+        },
+        {
+          "name": "#235499",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090163040580",
+          "cod": false
+        },
+        {
+          "name": "#235500",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090992922948",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 2.6668,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "C maneci detasate maro inchis M",
       "orderName": "#235486",
       "orderLinks": [
@@ -553,6 +601,23 @@
         {
           "name": "#235495",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11089399906628",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Blug Gaurele XL",
+      "orderName": "#235500",
+      "orderLinks": [
+        {
+          "name": "#235500",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090992922948",
           "cod": true
         }
       ],
@@ -669,33 +734,6 @@
       ]
     },
     {
-      "name": "T Negru L + M + S",
-      "orderName": "#235476, #235491, #235499",
-      "orderLinks": [
-        {
-          "name": "#235476",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085050282308",
-          "cod": false
-        },
-        {
-          "name": "#235491",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
-          "cod": false
-        },
-        {
-          "name": "#235499",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090163040580",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 2.0000999999999998,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "H Aria M",
       "orderName": "#235479",
       "orderLinks": [
@@ -796,6 +834,23 @@
       "tags": [
         "shopify"
       ]
+    },
+    {
+      "name": "Bermude Leopard L",
+      "orderName": "#235502",
+      "orderLinks": [
+        {
+          "name": "#235502",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091072352580",
+          "cod": false
+        }
+      ],
+      "category": "Bermude",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
     }
   ],
   "croitBuffer": [
@@ -824,16 +879,6 @@
       "name": "C balenci gri XL grey",
       "orderName": null,
       "category": "Camasa scurta",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1217669193571393",
-      "name": "W Statue XL ",
-      "orderName": null,
-      "category": "Windbreaker",
       "tags": [
         "predicted",
         "asana"
