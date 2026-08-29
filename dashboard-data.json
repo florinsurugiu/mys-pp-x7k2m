@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T03:51:43.668Z",
+  "generatedAt": "2026-08-29T10:32:16.082Z",
   "planDate": "2026-08-31",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -110,20 +110,20 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/15417912623428",
-      "title": "Overthink Club Brown T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Overthink-Club-Brown-T-Shirt1.jpg?v=1779920882",
-      "category": "Tricou simplu",
-      "size": "S",
-      "hours": 0.6667
-    },
-    {
       "productId": "gid://shopify/Product/15590250840388",
       "title": "MYSIMPLICATED® Duality Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
       "category": "Camasa Unisex",
       "size": "XXL",
       "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15614948868420",
+      "title": "Reality Grey Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+      "category": "Tricou simplu",
+      "size": "S",
+      "hours": 0.6667
     }
   ],
   "felicia": {
@@ -205,7 +205,7 @@
     ]
   },
   "flori": {
-    "hours": 13,
+    "hours": 14.5,
     "capacity": 7.2,
     "items": [
       {
@@ -225,12 +225,12 @@
         ]
       },
       {
-        "title": "02. C maneci detasate XS + 4S + 3M",
-        "hours": 12,
+        "title": "02. C maneci detasate XS + 4S + 4M",
+        "hours": 13.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235457, #235465, #235480, #235481, #235482, #235483, #235484, #235487",
+        "orderName": "#235457, #235465, #235480, #235481, #235482, #235483, #235484, #235487, #235498",
         "orderLinks": [
           {
             "name": "#235457",
@@ -271,6 +271,11 @@
             "name": "#235487",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11086401470788",
             "cod": false
+          },
+          {
+            "name": "#235498",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11089792991556",
+            "cod": true
           }
         ]
       }
@@ -424,8 +429,8 @@
       ]
     },
     {
-      "name": "C maneci detasate XS + 4S + 3M",
-      "orderName": "#235457, #235465, #235480, #235481, #235482, #235483, #235484, #235487",
+      "name": "C maneci detasate XS + 4S + 4M",
+      "orderName": "#235457, #235465, #235480, #235481, #235482, #235483, #235484, #235487, #235498",
       "orderLinks": [
         {
           "name": "#235457",
@@ -466,10 +471,15 @@
           "name": "#235487",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11086401470788",
           "cod": false
+        },
+        {
+          "name": "#235498",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11089792991556",
+          "cod": true
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 12,
+      "hours": 13.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -755,6 +765,23 @@
       ],
       "category": "Tricou raiat",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Maro S",
+      "orderName": "#235497",
+      "orderLinks": [
+        {
+          "name": "#235497",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11089624432964",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
