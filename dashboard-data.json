@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T16:51:02.479Z",
+  "generatedAt": "2026-08-30T19:32:58.786Z",
   "planDate": "2026-08-31",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -600,17 +600,22 @@
       ]
     },
     {
-      "name": "C Complex Rosu M",
-      "orderName": "#235495",
+      "name": "C Complex Rosu 2M",
+      "orderName": "#235495, #235509",
       "orderLinks": [
         {
           "name": "#235495",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11089399906628",
           "cod": true
+        },
+        {
+          "name": "#235509",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11094554640708",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 1.5,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -685,25 +690,30 @@
       ]
     },
     {
-      "name": "W 3rd eye L",
-      "orderName": "#235461",
+      "name": "W 3rd eye L + M",
+      "orderName": "#235461, #235508",
       "orderLinks": [
         {
           "name": "#235461",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11082294264132",
           "cod": false
+        },
+        {
+          "name": "#235508",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11094531670340",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 5,
       "leftover": false,
       "tags": [
         "shopify"
       ]
     },
     {
-      "name": "Bluza Rupta 4L",
-      "orderName": "#235462, #235472, #235478, #235483",
+      "name": "Bluza Rupta 5L",
+      "orderName": "#235462, #235472, #235478, #235483, #235509",
       "orderLinks": [
         {
           "name": "#235462",
@@ -724,10 +734,15 @@
           "name": "#235483",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11086184448324",
           "cod": false
+        },
+        {
+          "name": "#235509",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11094554640708",
+          "cod": false
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 6,
+      "hours": 7.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -751,8 +766,8 @@
       ]
     },
     {
-      "name": "T Gri M + S + XS",
-      "orderName": "#235467, #235489, #235503",
+      "name": "T Gri M + S + XS + XXL",
+      "orderName": "#235467, #235489, #235503, #235507",
       "orderLinks": [
         {
           "name": "#235467",
@@ -768,10 +783,15 @@
           "name": "#235503",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091120423236",
           "cod": false
+        },
+        {
+          "name": "#235507",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11094416621892",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 2.0000999999999998,
+      "hours": 2.6668,
       "leftover": false,
       "tags": [
         "shopify"
