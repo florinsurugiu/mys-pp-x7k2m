@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T12:22:12.220Z",
+  "generatedAt": "2026-08-30T16:51:02.479Z",
   "planDate": "2026-08-31",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -44,14 +44,6 @@
       "category": "Camasa scurta",
       "size": "XL",
       "hours": 1.4167
-    },
-    {
-      "productId": "gid://shopify/Product/15416222613828",
-      "title": "Miau Miau Oversized Ivory T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
-      "category": "Tricou simplu",
-      "size": "S",
-      "hours": 0.6667
     },
     {
       "productId": "gid://shopify/Product/15586981314884",
@@ -124,6 +116,14 @@
       "category": "Tricou simplu",
       "size": "XL",
       "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15588910334276",
+      "title": "MYSTUDIOS Pink Oversized Tee",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/00011mysimplicated_3970eb48-1e46-4ca7-a9bd-70fe99b2c05f.jpg?v=1786556286",
+      "category": "Top Spirit",
+      "size": "S",
+      "hours": 0.5
     }
   ],
   "felicia": {
@@ -651,6 +651,23 @@
       ]
     },
     {
+      "name": "T Tiv Offwhite Miau L",
+      "orderName": "#235506",
+      "orderLinks": [
+        {
+          "name": "#235506",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11093819523396",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Negru Superwoman XS",
       "orderName": "#235457",
       "orderLinks": [
@@ -896,6 +913,40 @@
       ],
       "category": "Double sleeve",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Albastru L",
+      "orderName": "#235505",
+      "orderLinks": [
+        {
+          "name": "#235505",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091973407044",
+          "cod": false
+        }
+      ],
+      "category": "Tricou raiat",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H negru Dept L",
+      "orderName": "#235505",
+      "orderLinks": [
+        {
+          "name": "#235505",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091973407044",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
