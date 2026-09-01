@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T16:36:30.107Z",
+  "generatedAt": "2026-09-01T19:34:32.699Z",
   "planDate": "2026-09-01",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 16,
+    "hours": 7.5,
     "capacity": 7.2,
     "items": [
       {
@@ -149,12 +149,42 @@
         ]
       },
       {
-        "title": "01. H negru dupa ala offwhite L",
-        "hours": 1.67,
+        "title": "06. T negru L",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. C maneci detasate maro inchis 2M",
+        "hours": 2.92,
         "tags": [
           "leftover",
           "asana",
           "buffer",
+          "shopify"
+        ],
+        "orderName": "#235486",
+        "orderLinks": [
+          {
+            "name": "#235486",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11086341538116",
+            "cod": true
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 13.5,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "01. H negru dupa ala offwhite L",
+        "hours": 1,
+        "tags": [
           "shopify",
           "buffer"
         ],
@@ -168,12 +198,41 @@
         ]
       },
       {
-        "title": "02. C maneci detasate 3S + 3M + XL",
-        "hours": 10.42,
+        "title": "02. T negru L - 2 buc.",
+        "hours": 0.67,
         "tags": [
-          "leftover",
-          "asana",
-          "buffer",
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235476",
+        "orderLinks": [
+          {
+            "name": "#235476",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085050282308",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. C maneci detasate maro deschis 2S",
+        "hours": 2.83,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235515",
+        "orderLinks": [
+          {
+            "name": "#235515",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11096051122500",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. C maneci detasate 3S + 2M + XL",
+        "hours": 9,
+        "tags": [
           "shopify"
         ],
         "orderName": "#235481, #235483, #235484, #235487, #235498, #235521",
@@ -212,107 +271,7 @@
       }
     ]
   },
-  "flori": {
-    "hours": 8.17,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "01. C maneci detasate maro deschis 2S",
-        "hours": 2.83,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235515",
-        "orderLinks": [
-          {
-            "name": "#235515",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11096051122500",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "02. T Negru 3L + 3M + S + XXL",
-        "hours": 5.33,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235476, #235491, #235499, #235500, #235510, #235522, #235524, #235528",
-        "orderLinks": [
-          {
-            "name": "#235476",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085050282308",
-            "cod": false
-          },
-          {
-            "name": "#235491",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
-            "cod": false
-          },
-          {
-            "name": "#235499",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090163040580",
-            "cod": false
-          },
-          {
-            "name": "#235500",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090992922948",
-            "cod": true
-          },
-          {
-            "name": "#235510",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
-            "cod": false
-          },
-          {
-            "name": "#235522",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097301221700",
-            "cod": true
-          },
-          {
-            "name": "#235524",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
-            "cod": true
-          },
-          {
-            "name": "#235528",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097897075012",
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
   "croit": [
-    {
-      "name": "03. T negru L - 2 buc.",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-09-01",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "04. W 3rd eye M (DHL)",
-      "orderName": null,
-      "category": "Windbreaker",
-      "dueOn": "2026-09-01",
-      "leftover": false,
-      "number": 4,
-      "orderLinks": [],
-      "hours": 2.5,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
     {
       "name": "07. T miau offwhite XL",
       "orderName": null,
@@ -426,58 +385,6 @@
       ]
     },
     {
-      "name": "T Negru 3L + 3M + S + XXL",
-      "orderName": "#235476, #235491, #235499, #235500, #235510, #235522, #235524, #235528",
-      "orderLinks": [
-        {
-          "name": "#235476",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11085050282308",
-          "cod": false
-        },
-        {
-          "name": "#235491",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
-          "cod": false
-        },
-        {
-          "name": "#235499",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090163040580",
-          "cod": false
-        },
-        {
-          "name": "#235500",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090992922948",
-          "cod": true
-        },
-        {
-          "name": "#235510",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
-          "cod": false
-        },
-        {
-          "name": "#235522",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097301221700",
-          "cod": true
-        },
-        {
-          "name": "#235524",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
-          "cod": true
-        },
-        {
-          "name": "#235528",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097897075012",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 5.333599999999999,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "C maneci detasate 3S + 2M + XL",
       "orderName": "#235481, #235483, #235484, #235487, #235498, #235521",
       "orderLinks": [
@@ -568,6 +475,53 @@
       ],
       "category": "Tricou simplu",
       "hours": 3.3335,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru 3M + S + XXL + 2L",
+      "orderName": "#235491, #235499, #235500, #235510, #235522, #235524, #235528",
+      "orderLinks": [
+        {
+          "name": "#235491",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
+          "cod": false
+        },
+        {
+          "name": "#235499",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090163040580",
+          "cod": false
+        },
+        {
+          "name": "#235500",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090992922948",
+          "cod": true
+        },
+        {
+          "name": "#235510",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
+          "cod": false
+        },
+        {
+          "name": "#235522",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097301221700",
+          "cod": true
+        },
+        {
+          "name": "#235524",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
+          "cod": true
+        },
+        {
+          "name": "#235528",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097897075012",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 4.666899999999999,
       "leftover": false,
       "tags": [
         "shopify"
