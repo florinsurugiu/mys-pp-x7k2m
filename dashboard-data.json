@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T23:21:50.357Z",
+  "generatedAt": "2026-09-01T01:53:58.445Z",
   "planDate": "2026-09-01",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -36,14 +36,6 @@
       "category": "Tricou Doer",
       "size": "S",
       "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/9074716377412",
-      "title": "Pop Cola Mix Shirt Ribbed Fabric",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-mix-shirt-ribbed-fabric-520557_ca9d9159-5285-4d58-aa2c-a133a0e65ea3.jpg?v=1770071833",
-      "category": "Camasa scurta",
-      "size": "XL",
-      "hours": 1.4167
     },
     {
       "productId": "gid://shopify/Product/15416222613828",
@@ -123,6 +115,14 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
       "category": "Tricou simplu",
       "size": "L",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15003405582660",
+      "title": "Oversized White T-shirt Need Money for Porsche",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
+      "category": "Tricou simplu",
+      "size": "XL",
       "hours": 0.6667
     }
   ],
@@ -763,8 +763,8 @@
       ]
     },
     {
-      "name": "T Gri S + XS + XXL",
-      "orderName": "#235489, #235503, #235507",
+      "name": "T Gri 2S + XS + XXL",
+      "orderName": "#235489, #235503, #235507, #235520",
       "orderLinks": [
         {
           "name": "#235489",
@@ -780,10 +780,15 @@
           "name": "#235507",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11094416621892",
           "cod": false
+        },
+        {
+          "name": "#235520",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11096898175300",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 2.0000999999999998,
+      "hours": 2.6668,
       "leftover": false,
       "tags": [
         "shopify"
