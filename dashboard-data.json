@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-01T19:34:32.699Z",
-  "planDate": "2026-09-01",
+  "generatedAt": "2026-09-01T22:00:31.582Z",
+  "planDate": "2026-09-02",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
   ],
@@ -118,12 +118,12 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/15003405582660",
-      "title": "Oversized White T-shirt Need Money for Porsche",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
-      "category": "Tricou simplu",
-      "size": "XL",
-      "hours": 0.6667
+      "productId": "gid://shopify/Product/15588910334276",
+      "title": "MYSTUDIOS Pink Oversized Tee",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/00011mysimplicated_3970eb48-1e46-4ca7-a9bd-70fe99b2c05f.jpg?v=1786556286",
+      "category": "Top Spirit",
+      "size": "S",
+      "hours": 0.5
     }
   ],
   "felicia": {
@@ -198,7 +198,7 @@
         ]
       },
       {
-        "title": "02. T negru L - 2 buc.",
+        "title": "02. T negru L",
         "hours": 0.67,
         "tags": [
           "shopify",
@@ -277,11 +277,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-09-01",
-      "leftover": false,
+      "leftover": true,
       "number": 7,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -291,11 +292,12 @@
       "orderName": null,
       "category": "Hanorac bumbac",
       "dueOn": "2026-09-01",
-      "leftover": false,
+      "leftover": true,
       "number": 8,
       "orderLinks": [],
       "hours": 1,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -305,11 +307,12 @@
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-09-01",
-      "leftover": false,
+      "leftover": true,
       "number": 9,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -528,8 +531,8 @@
       ]
     },
     {
-      "name": "T Gri M + XS + XXL + L",
-      "orderName": "#235499, #235503, #235519, #235524",
+      "name": "T Gri M + XS + XXL + L + S",
+      "orderName": "#235499, #235503, #235519, #235524, #235530",
       "orderLinks": [
         {
           "name": "#235499",
@@ -550,10 +553,15 @@
           "name": "#235524",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
           "cod": true
+        },
+        {
+          "name": "#235530",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11098996769092",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 2.6668,
+      "hours": 3.3335,
       "leftover": false,
       "tags": [
         "shopify"
