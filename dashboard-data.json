@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T21:25:18.924Z",
+  "generatedAt": "2026-09-02T23:25:35.120Z",
   "planDate": "2026-09-03",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -127,11 +127,20 @@
     }
   ],
   "felicia": {
-    "hours": 8.17,
+    "hours": 7.5,
     "capacity": 7.2,
     "items": [
       {
-        "title": "02. C maneci detasate S (DHL)",
+        "title": "01. Bluza rupta L (DHL)",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "02. C maneci detasate S,M (DHL)",
         "hours": 1.42,
         "tags": [
           "leftover",
@@ -140,7 +149,25 @@
         ]
       },
       {
-        "title": "07. T miau tiv offwhite XL",
+        "title": "03. T negru L (spirit), XL (logo my fata)",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "04. T AER XXL",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "05. T miau tiv offwhite XL",
         "hours": 0.67,
         "tags": [
           "leftover",
@@ -158,61 +185,27 @@
         ]
       },
       {
-        "title": "09. T AER XXL",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. H negru dupa ala offwhite L",
-        "hours": 1.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer",
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235505",
-        "orderLinks": [
-          {
-            "name": "#235505",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091973407044",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. H Aria M",
-        "hours": 1,
+        "title": "01. T negru M",
+        "hours": 2,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235545",
-        "orderLinks": [
-          {
-            "name": "#235545",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100799304004",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. T negru XXL, M",
-        "hours": 1.33,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235491",
+        "orderName": "#235491, #235500, #235499",
         "orderLinks": [
           {
             "name": "#235491",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
+            "cod": false
+          },
+          {
+            "name": "#235500",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090992922948",
+            "cod": true
+          },
+          {
+            "name": "#235499",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090163040580",
             "cod": false
           }
         ]
@@ -220,7 +213,7 @@
     ]
   },
   "flori": {
-    "hours": 7.92,
+    "hours": 7.58,
     "capacity": 7.2,
     "items": [
       {
@@ -233,17 +226,8 @@
         ]
       },
       {
-        "title": "02. H aria M (DHL)",
+        "title": "02. H gluga camasa M (DHL)",
         "hours": 1,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "02. T alb superwoman 2L",
-        "hours": 0.67,
         "tags": [
           "leftover",
           "asana",
@@ -260,7 +244,7 @@
         ]
       },
       {
-        "title": "04. C maneci detasate S,M",
+        "title": "04. C maneci detasate S",
         "hours": 1.42,
         "tags": [
           "leftover",
@@ -269,23 +253,27 @@
         ]
       },
       {
-        "title": "01. T negru L circus",
-        "hours": 1.33,
+        "title": "05. T alb superwoman 2L",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. H negru dupa ala offwhite L",
+        "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235510, #235500",
+        "orderName": "#235505",
         "orderLinks": [
           {
-            "name": "#235510",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
+            "name": "#235505",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091973407044",
             "cod": false
-          },
-          {
-            "name": "#235500",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11090992922948",
-            "cod": true
           }
         ]
       }
@@ -599,6 +587,28 @@
       ]
     },
     {
+      "name": "T Negru M + L",
+      "orderName": "#235510, #235524",
+      "orderLinks": [
+        {
+          "name": "#235510",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
+          "cod": false
+        },
+        {
+          "name": "#235524",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 1.3334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "W Pink XS + M",
       "orderName": "#235513, #235529",
       "orderLinks": [
@@ -649,23 +659,6 @@
       ],
       "category": "Camasa lunga",
       "hours": 1.75,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Negru L",
-      "orderName": "#235524",
-      "orderLinks": [
-        {
-          "name": "#235524",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
-          "cod": true
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1069,7 +1062,7 @@
       ]
     },
     {
-      "name": "H Aria M",
+      "name": "H Aria XXL + M",
       "orderName": "#235545",
       "orderLinks": [
         {
@@ -1079,7 +1072,7 @@
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1089,19 +1082,9 @@
   "croitBuffer": [
     {
       "gid": "1217939900227266",
-      "name": "Bluza rupta 3L",
+      "name": "Bluza rupta 2L",
       "orderName": null,
       "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1217854346002545",
-      "name": "C maneci detasate maro deschis S",
-      "orderName": null,
-      "category": "Camasa scurta",
       "tags": [
         "predicted",
         "asana"
