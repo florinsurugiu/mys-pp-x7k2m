@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T01:42:04.880Z",
+  "generatedAt": "2026-09-02T06:25:14.092Z",
   "planDate": "2026-09-02",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -447,8 +447,8 @@
       ]
     },
     {
-      "name": "T Gri 2S + XS + XXL + L",
-      "orderName": "#235489, #235503, #235507, #235522, #235527",
+      "name": "T Gri 2S + 2XS + XXL + L",
+      "orderName": "#235489, #235503, #235507, #235522, #235527, #235531",
       "orderLinks": [
         {
           "name": "#235489",
@@ -474,10 +474,15 @@
           "name": "#235527",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097745981764",
           "cod": false
+        },
+        {
+          "name": "#235531",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099178631492",
+          "cod": true
         }
       ],
       "category": "Tricou simplu",
-      "hours": 3.3335,
+      "hours": 4.0001999999999995,
       "leftover": false,
       "tags": [
         "shopify"
@@ -651,6 +656,74 @@
         }
       ],
       "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H negru XL",
+      "orderName": "#235531",
+      "orderLinks": [
+        {
+          "name": "#235531",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099178631492",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Gri Vitamin XL",
+      "orderName": "#235531",
+      "orderLinks": [
+        {
+          "name": "#235531",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099178631492",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Retro XL",
+      "orderName": "#235531",
+      "orderLinks": [
+        {
+          "name": "#235531",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099178631492",
+          "cod": true
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Bermude Grey Denim XL",
+      "orderName": "#235531",
+      "orderLinks": [
+        {
+          "name": "#235531",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099178631492",
+          "cod": true
+        }
+      ],
+      "category": "Bermude",
       "hours": 1.5,
       "leftover": false,
       "tags": [
