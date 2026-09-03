@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T23:25:35.120Z",
+  "generatedAt": "2026-09-03T01:14:58.430Z",
   "planDate": "2026-09-03",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -44,22 +44,6 @@
       "category": "Tricou Doer",
       "size": "S",
       "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/15056634904900",
-      "title": "Miau Miau Oversized Ivory T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated203.jpg?v=1766270039",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15416222613828",
-      "title": "Miau Miau Oversized Ivory T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
-      "category": "Tricou simplu",
-      "size": "S",
-      "hours": 0.6667
     },
     {
       "productId": "gid://shopify/Product/8978697126212",
@@ -124,6 +108,22 @@
       "category": "Top Spirit",
       "size": "S",
       "hours": 0.5
+    },
+    {
+      "productId": "gid://shopify/Product/15417811403076",
+      "title": "3-in-1 Layered Hoodie V2",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
+      "category": "Hanorac bumbac",
+      "size": "S",
+      "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/15416222613828",
+      "title": "Miau Miau Oversized Ivory T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
+      "category": "Tricou simplu",
+      "size": "XL",
+      "hours": 0.6667
     }
   ],
   "felicia": {
@@ -665,6 +665,28 @@
       ]
     },
     {
+      "name": "H Patch XL + S",
+      "orderName": "#235525, #235547",
+      "orderLinks": [
+        {
+          "name": "#235525",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097646629188",
+          "cod": false
+        },
+        {
+          "name": "#235547",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100995223876",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac patchuri",
+      "hours": 6,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "C Blue XXL",
       "orderName": "#235526",
       "orderLinks": [
@@ -933,8 +955,8 @@
       ]
     },
     {
-      "name": "W 3rd eye M + L",
-      "orderName": "#235508, #235538",
+      "name": "W 3rd eye 2M + L",
+      "orderName": "#235508, #235538, #235546",
       "orderLinks": [
         {
           "name": "#235508",
@@ -945,10 +967,15 @@
           "name": "#235538",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099972337988",
           "cod": false
+        },
+        {
+          "name": "#235546",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100993585476",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 5,
+      "hours": 7.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -988,23 +1015,6 @@
       ],
       "category": "Pantalon drept",
       "hours": 2,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H Patch XL",
-      "orderName": "#235525",
-      "orderLinks": [
-        {
-          "name": "#235525",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097646629188",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac patchuri",
-      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
