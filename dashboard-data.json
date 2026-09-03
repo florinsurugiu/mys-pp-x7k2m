@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T20:58:41.581Z",
-  "planDate": "2026-09-03",
+  "generatedAt": "2026-09-03T22:57:54.987Z",
+  "planDate": "2026-09-04",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
   ],
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 12.17,
+    "hours": 14.33,
     "capacity": 7.2,
     "items": [
       {
@@ -167,12 +167,27 @@
         ]
       },
       {
-        "title": "01. C maneci detasate 2S + XL + XS + 2M",
-        "hours": 8.92,
+        "title": "01. C maneci detasate maro inchis 2M",
+        "hours": 2.92,
         "tags": [
           "leftover",
           "asana",
           "buffer",
+          "shopify"
+        ],
+        "orderName": "#235486",
+        "orderLinks": [
+          {
+            "name": "#235486",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11086341538116",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "02. C maneci detasate 2S + XL + XS + M",
+        "hours": 7.5,
+        "tags": [
           "shopify"
         ],
         "orderName": "#235487, #235521, #235535, #235536, #235541",
@@ -203,11 +218,27 @@
             "cod": true
           }
         ]
+      },
+      {
+        "title": "03. T negru M",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235491",
+        "orderLinks": [
+          {
+            "name": "#235491",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
+            "cod": false
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 9.83,
+    "hours": 10.33,
     "capacity": 7.2,
     "items": [
       {
@@ -227,19 +258,14 @@
         ]
       },
       {
-        "title": "02. T alb XL (clown)",
-        "hours": 2.67,
+        "title": "02. T negru L",
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235491, #235510, #235524",
+        "orderName": "#235510, #235524",
         "orderLinks": [
-          {
-            "name": "#235491",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
-            "cod": false
-          },
           {
             "name": "#235510",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
@@ -253,22 +279,7 @@
         ]
       },
       {
-        "title": "03. C maneci detasate maro inchis M",
-        "hours": 1.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235486",
-        "orderLinks": [
-          {
-            "name": "#235486",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11086341538116",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. T Gri 3S + 2XS + XXL + L",
+        "title": "03. T Gri 3S + 2XS + XXL + L",
         "hours": 4.67,
         "tags": [
           "shopify"
@@ -309,6 +320,36 @@
             "name": "#235543",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100768862532",
             "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. T Alb XS + L + S + 2 buc XL",
+        "hours": 3.33,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235503, #235524, #235530, #235537",
+        "orderLinks": [
+          {
+            "name": "#235503",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091120423236",
+            "cod": false
+          },
+          {
+            "name": "#235524",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
+            "cod": true
+          },
+          {
+            "name": "#235530",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11098996769092",
+            "cod": false
+          },
+          {
+            "name": "#235537",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099944943940",
+            "cod": true
           }
         ]
       }
