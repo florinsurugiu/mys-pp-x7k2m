@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T17:13:44.508Z",
+  "generatedAt": "2026-09-04T19:34:24.388Z",
   "planDate": "2026-09-04",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 13.25,
+    "hours": 11.75,
     "capacity": 7.2,
     "items": [
       {
@@ -202,34 +202,39 @@
         ]
       },
       {
-        "title": "04. W Pink XS + M + S",
-        "hours": 7.5,
+        "title": "04. Bluza Rupta 3L + S",
+        "hours": 6,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235513, #235529, #235554",
+        "orderName": "#235510, #235511, #235543, #235555",
         "orderLinks": [
           {
-            "name": "#235513",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095771119940",
+            "name": "#235510",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
+            "cod": false
+          },
+          {
+            "name": "#235511",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095596237124",
+            "cod": false
+          },
+          {
+            "name": "#235543",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100768862532",
+            "cod": false
+          },
+          {
+            "name": "#235555",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11106214936900",
             "cod": true
-          },
-          {
-            "name": "#235529",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097957302596",
-            "cod": false
-          },
-          {
-            "name": "#235554",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105583530308",
-            "cod": false
           }
         ]
       }
     ]
   },
   "flori": {
-    "hours": 7.75,
+    "hours": 13.5,
     "capacity": 7.2,
     "items": [
       {
@@ -294,17 +299,27 @@
         ]
       },
       {
-        "title": "03. C Complex Rosu XL",
-        "hours": 1.75,
+        "title": "03. W Pink XS + M + S",
+        "hours": 7.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235518",
+        "orderName": "#235513, #235529, #235554",
         "orderLinks": [
           {
-            "name": "#235518",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11096427692356",
+            "name": "#235513",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095771119940",
             "cod": true
+          },
+          {
+            "name": "#235529",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097957302596",
+            "cod": false
+          },
+          {
+            "name": "#235554",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105583530308",
+            "cod": false
           }
         ]
       }
@@ -450,6 +465,38 @@
       ],
       "category": "Tricou simplu",
       "hours": 2.0000999999999998,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Bluza Rupta 3L + S",
+      "orderName": "#235510, #235511, #235543, #235555",
+      "orderLinks": [
+        {
+          "name": "#235510",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
+          "cod": false
+        },
+        {
+          "name": "#235511",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095596237124",
+          "cod": false
+        },
+        {
+          "name": "#235543",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100768862532",
+          "cod": false
+        },
+        {
+          "name": "#235555",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11106214936900",
+          "cod": true
+        }
+      ],
+      "category": "Bluza inimioara / obsidian",
+      "hours": 6,
       "leftover": false,
       "tags": [
         "shopify"
@@ -678,6 +725,23 @@
       ]
     },
     {
+      "name": "Bluza rupta roz L",
+      "orderName": "#235555",
+      "orderLinks": [
+        {
+          "name": "#235555",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11106214936900",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "Bermude Leopard L",
       "orderName": "#235502",
       "orderLinks": [
@@ -777,33 +841,6 @@
       ],
       "category": "Windbreaker",
       "hours": 7.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "Bluza Rupta 2L + S",
-      "orderName": "#235510, #235511, #235543",
-      "orderLinks": [
-        {
-          "name": "#235510",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
-          "cod": false
-        },
-        {
-          "name": "#235511",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095596237124",
-          "cod": false
-        },
-        {
-          "name": "#235543",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100768862532",
-          "cod": false
-        }
-      ],
-      "category": "Bluza inimioara / obsidian",
-      "hours": 4.5,
       "leftover": false,
       "tags": [
         "shopify"
