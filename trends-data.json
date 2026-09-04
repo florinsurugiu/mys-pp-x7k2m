@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T12:17:59.134Z",
+  "generatedAt": "2026-09-04T17:12:15.683Z",
   "periods": {
     "7": {
       "topSellers": [
@@ -25,6 +25,13 @@
           "revenue": 1542.24
         },
         {
+          "productId": "gid://shopify/Product/7837843849453",
+          "title": "Pink DOER  Windbreaker",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
+          "units": 3,
+          "revenue": 1449.61
+        },
+        {
           "productId": "gid://shopify/Product/15629712687428",
           "title": "777 Mauve Oversized T-Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
@@ -37,13 +44,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated784.jpg?v=1766876426",
           "units": 2,
           "revenue": 1082.22
-        },
-        {
-          "productId": "gid://shopify/Product/7837843849453",
-          "title": "Pink DOER  Windbreaker",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
-          "units": 2,
-          "revenue": 1000.61
         },
         {
           "productId": "gid://shopify/Product/14996604289348",
@@ -114,13 +114,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_oversizedtshirt_superwoman_c8bc9810-f5c7-4365-913c-cce6077b7547.jpg?v=1769599859",
           "units": 2,
           "revenue": 579.36
-        },
-        {
-          "productId": "gid://shopify/Product/8649104851268",
-          "title": "Oversized Cotton White T-shirt Spirit",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-spirit-208380_030235ea-5578-4880-b7fb-9d370800162c.jpg?v=1770112894",
-          "units": 2,
-          "revenue": 518
         },
         {
           "productId": "gid://shopify/Product/15440579035460",
@@ -378,6 +371,13 @@
           "productId": "gid://shopify/Product/14980071948612",
           "title": "Clown Oversized White T-shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/T-shirt-man-back-clown-_1.jpg?v=1770116468",
+          "units": 1,
+          "revenue": 259
+        },
+        {
+          "productId": "gid://shopify/Product/8649104851268",
+          "title": "Oversized Cotton White T-shirt Spirit",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-spirit-208380_030235ea-5578-4880-b7fb-9d370800162c.jpg?v=1770112894",
           "units": 1,
           "revenue": 259
         },
@@ -1739,6 +1739,18 @@
             "saves": 2
           },
           {
+            "productId": "gid://shopify/Product/7837777559789",
+            "title": "Statue DOER  Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
+            "saves": 1
+          },
+          {
+            "productId": "gid://shopify/Product/7843686711533",
+            "title": "Statue DOER  Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_statue.jpg?v=1769644045",
+            "saves": 1
+          },
+          {
             "productId": "gid://shopify/Product/8649104851268",
             "title": "Oversized Cotton White T-shirt Spirit",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-spirit-208380_030235ea-5578-4880-b7fb-9d370800162c.jpg?v=1770112894",
@@ -1907,8 +1919,8 @@
             "saves": 1
           }
         ],
-        "totalSaves": 21,
-        "totalUsers": 8
+        "totalSaves": 22,
+        "totalUsers": 9
       },
       "funnel": {
         "items": [
@@ -1916,7 +1928,7 @@
             "productId": "gid://shopify/Product/15499252695364",
             "title": "Fragmented Sleeves Shirt V2",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-            "views": 363,
+            "views": 379,
             "addToCart": 18,
             "purchases": 5
           },
@@ -1924,7 +1936,7 @@
             "productId": "gid://shopify/Product/14982879248708",
             "title": "Dystopia White Oversized Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dystopia-White-Oversized-Sweater1.jpg?v=1769817561",
-            "views": 303,
+            "views": 316,
             "addToCart": 12,
             "purchases": 4
           },
@@ -1932,23 +1944,23 @@
             "productId": "gid://shopify/Product/15573327249732",
             "title": "Reality Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
-            "views": 181,
-            "addToCart": 15,
+            "views": 188,
+            "addToCart": 16,
             "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15614948868420",
             "title": "Reality Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
-            "views": 181,
-            "addToCart": 15,
+            "views": 188,
+            "addToCart": 16,
             "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/14994921226564",
             "title": "Complex Minds Checkered Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_checkered_shirt_m1.jpg?v=1769631253",
-            "views": 166,
+            "views": 174,
             "addToCart": 5,
             "purchases": 1
           },
@@ -1956,7 +1968,7 @@
             "productId": "gid://shopify/Product/14996604289348",
             "title": "Complex Minds Checkered Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_204524_0c3a6aa4-e4ff-44e6-84a1-515fc09722cf.jpg?v=1787777353",
-            "views": 166,
+            "views": 174,
             "addToCart": 5,
             "purchases": 2
           },
@@ -1964,31 +1976,31 @@
             "productId": "gid://shopify/Product/8825186812228",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
-            "views": 155,
-            "addToCart": 6,
+            "views": 158,
+            "addToCart": 7,
             "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/15421163340100",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated806.jpg?v=1767032584",
-            "views": 155,
-            "addToCart": 6,
+            "views": 158,
+            "addToCart": 7,
             "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/7837829071085",
             "title": "Third Eye  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
-            "views": 119,
-            "addToCart": 7,
+            "views": 129,
+            "addToCart": 9,
             "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/15421171990852",
             "title": "Dystopia Pink Oversized Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated821.jpg?v=1767033677",
-            "views": 104,
+            "views": 107,
             "addToCart": 3,
             "purchases": 0
           },
@@ -1996,39 +2008,39 @@
             "productId": "gid://shopify/Product/15629712687428",
             "title": "777 Mauve Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-            "views": 99,
-            "addToCart": 7,
+            "views": 103,
+            "addToCart": 8,
             "purchases": 4
           },
           {
             "productId": "gid://shopify/Product/15630103970116",
             "title": "777 Mauve Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260804_091046_eb491f35-b1c6-41bb-babc-a4f45c9e4cf5.jpg?v=1786555250",
-            "views": 99,
-            "addToCart": 7,
+            "views": 103,
+            "addToCart": 8,
             "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/7837777559789",
             "title": "Statue DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
-            "views": 86,
-            "addToCart": 4,
+            "views": 91,
+            "addToCart": 5,
             "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/7843686711533",
             "title": "Statue DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_statue.jpg?v=1769644045",
-            "views": 86,
-            "addToCart": 4,
+            "views": 91,
+            "addToCart": 5,
             "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/15414933061956",
             "title": "DEPT. GRAPHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated317.jpg?v=1766412528",
-            "views": 78,
+            "views": 80,
             "addToCart": 3,
             "purchases": 0
           },
@@ -2036,7 +2048,7 @@
             "productId": "gid://shopify/Product/15417920848196",
             "title": "DEPT. GRAPHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated620.jpg?v=1766701922",
-            "views": 78,
+            "views": 80,
             "addToCart": 3,
             "purchases": 0
           },
@@ -2044,15 +2056,31 @@
             "productId": "gid://shopify/Product/7820197691629",
             "title": "DOER Ice Cream T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_doer_tshirt.jpg?v=1769644387",
-            "views": 64,
+            "views": 67,
             "addToCart": 5,
+            "purchases": 1
+          },
+          {
+            "productId": "gid://shopify/Product/15332271063364",
+            "title": "Retro Pop Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Retro-Pop-Windbreaker.jpg?v=1771580253",
+            "views": 61,
+            "addToCart": 3,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15446025503044",
+            "title": "Retro Pop Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_retro_windbreaker_M1.jpg?v=1769543665",
+            "views": 61,
+            "addToCart": 3,
             "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/14969291276612",
             "title": "Not My Circus White T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
-            "views": 58,
+            "views": 60,
             "addToCart": 4,
             "purchases": 0
           },
@@ -2060,23 +2088,15 @@
             "productId": "gid://shopify/Product/15455598313796",
             "title": "Not My Circus White T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_circus1.jpg?v=1769822340",
-            "views": 58,
+            "views": 60,
             "addToCart": 4,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15332271063364",
-            "title": "Retro Pop Windbreaker",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Retro-Pop-Windbreaker.jpg?v=1771580253",
-            "views": 57,
-            "addToCart": 3,
             "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/15408429302084",
             "title": "DEPT. OFF-WHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated051.jpg?v=1766195246",
-            "views": 57,
+            "views": 59,
             "addToCart": 6,
             "purchases": 0
           },
@@ -2084,31 +2104,23 @@
             "productId": "gid://shopify/Product/15412640219460",
             "title": "DEPT. OFF-WHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated207.jpg?v=1766271373",
-            "views": 57,
+            "views": 59,
             "addToCart": 6,
-            "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/15446025503044",
-            "title": "Retro Pop Windbreaker",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_retro_windbreaker_M1.jpg?v=1769543665",
-            "views": 57,
-            "addToCart": 3,
             "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/7837843849453",
             "title": "Pink DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
-            "views": 56,
+            "views": 58,
             "addToCart": 3,
-            "purchases": 2
+            "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/15056634904900",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated203.jpg?v=1766270039",
-            "views": 54,
+            "views": 56,
             "addToCart": 4,
             "purchases": 1
           },
@@ -2116,7 +2128,7 @@
             "productId": "gid://shopify/Product/15416222613828",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
-            "views": 54,
+            "views": 56,
             "addToCart": 4,
             "purchases": 2
           },
@@ -2124,49 +2136,57 @@
             "productId": "gid://shopify/Product/15417916752196",
             "title": "MG Black Straight Sweatpants",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated735.jpg?v=1766871485",
-            "views": 54,
+            "views": 55,
             "addToCart": 4,
             "purchases": 2
-          },
-          {
-            "productId": "gid://shopify/Product/15417796133188",
-            "title": "3-in-1 Layered Hoodie V2",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated538.jpg?v=1766694549",
-            "views": 52,
-            "addToCart": 3,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15417811403076",
-            "title": "3-in-1 Layered Hoodie V2",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
-            "views": 52,
-            "addToCart": 3,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/14980056842564",
-            "title": "Anxiety Oversized White T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_anxiety_tshirt1.jpg?v=1769684708",
-            "views": 51,
-            "addToCart": 2,
-            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/15588974428484",
             "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-            "views": 51,
-            "addToCart": 4,
+            "views": 55,
+            "addToCart": 5,
             "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/15634869158212",
             "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260810_184412_62064429-5d1e-4fae-90c3-edf9a8c8efd1-_1.jpg?v=1786555154",
-            "views": 51,
+            "views": 55,
+            "addToCart": 5,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15417796133188",
+            "title": "3-in-1 Layered Hoodie V2",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated538.jpg?v=1766694549",
+            "views": 53,
             "addToCart": 4,
             "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15417811403076",
+            "title": "3-in-1 Layered Hoodie V2",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
+            "views": 53,
+            "addToCart": 4,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/14980056842564",
+            "title": "Anxiety Oversized White T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_anxiety_tshirt1.jpg?v=1769684708",
+            "views": 52,
+            "addToCart": 2,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15417912623428",
+            "title": "Overthink Club Brown T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Overthink-Club-Brown-T-Shirt1.jpg?v=1779920882",
+            "views": 50,
+            "addToCart": 3,
+            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15419494531396",
@@ -2180,15 +2200,15 @@
             "productId": "gid://shopify/Product/8649104851268",
             "title": "Oversized Cotton White T-shirt Spirit",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-spirit-208380_030235ea-5578-4880-b7fb-9d370800162c.jpg?v=1770112894",
-            "views": 47,
+            "views": 49,
             "addToCart": 1,
-            "purchases": 2
+            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/8978718327108",
             "title": "Oversized Cotton White T-shirt Spirit",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicatet_tshirt_spirit.jpg?v=1769822867",
-            "views": 47,
+            "views": 49,
             "addToCart": 1,
             "purchases": 0
           },
@@ -2196,17 +2216,9 @@
             "productId": "gid://shopify/Product/15637158494532",
             "title": "Spirit Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Grey-Spirit_db0be8a9-3ec3-4102-a682-ae7784079885.jpg?v=1786555068",
-            "views": 47,
+            "views": 48,
             "addToCart": 14,
             "purchases": 3
-          },
-          {
-            "productId": "gid://shopify/Product/15417912623428",
-            "title": "Overthink Club Brown T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Overthink-Club-Brown-T-Shirt1.jpg?v=1779920882",
-            "views": 46,
-            "addToCart": 3,
-            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15455881298244",
@@ -2220,7 +2232,7 @@
             "productId": "gid://shopify/Product/15499163468100",
             "title": "Broken Strap Olive Top",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated051_4fcf3053-c16f-4ea8-a0bf-aaa8f71c2c9c.jpg?v=1773534435",
-            "views": 43,
+            "views": 44,
             "addToCart": 0,
             "purchases": 0
           },
@@ -2228,7 +2240,7 @@
             "productId": "gid://shopify/Product/7820223250669",
             "title": "Oversized Black T-shirt Superwoman",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_oversizedtshirt_superwoman_c8bc9810-f5c7-4365-913c-cce6077b7547.jpg?v=1769599859",
-            "views": 41,
+            "views": 43,
             "addToCart": 5,
             "purchases": 2
           },
@@ -2236,7 +2248,7 @@
             "productId": "gid://shopify/Product/15068676522308",
             "title": "Miau Miau Mornings Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated488.jpg?v=1766530654",
-            "views": 40,
+            "views": 41,
             "addToCart": 2,
             "purchases": 1
           },
@@ -2244,7 +2256,7 @@
             "productId": "gid://shopify/Product/15416230281540",
             "title": "Miau Miau Mornings Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated480.jpg?v=1766530553",
-            "views": 40,
+            "views": 41,
             "addToCart": 2,
             "purchases": 0
           },
@@ -2252,7 +2264,7 @@
             "productId": "gid://shopify/Product/14798693368132",
             "title": "Black Oversized Love Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-love-sweater-1.jpg?v=1769676679",
-            "views": 38,
+            "views": 39,
             "addToCart": 1,
             "purchases": 0
           },
@@ -2276,7 +2288,7 @@
             "productId": "gid://shopify/Product/9074771755332",
             "title": "Pop Cola Mix Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-mix-black-oversized-t-shirt-493598_a8863545-1201-422a-8ec2-dcd417b8fa0a.jpg?v=1770115372",
-            "views": 33,
+            "views": 35,
             "addToCart": 2,
             "purchases": 0
           },
@@ -2284,7 +2296,7 @@
             "productId": "gid://shopify/Product/9074773885252",
             "title": "Pop Cola Mix Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_popcola_mix.jpg?v=1769682410",
-            "views": 33,
+            "views": 35,
             "addToCart": 2,
             "purchases": 1
           },
@@ -2292,7 +2304,7 @@
             "productId": "gid://shopify/Product/15414113567044",
             "title": "Arc Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated303.jpg?v=1766360019",
-            "views": 31,
+            "views": 32,
             "addToCart": 2,
             "purchases": 0
           },
@@ -2300,7 +2312,7 @@
             "productId": "gid://shopify/Product/15420232073540",
             "title": "Arc Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated792.jpg?v=1766921733",
-            "views": 31,
+            "views": 32,
             "addToCart": 2,
             "purchases": 1
           },
@@ -2308,9 +2320,25 @@
             "productId": "gid://shopify/Product/9657554731332",
             "title": "Animal Print Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_animal_w1.jpg?v=1769815446",
-            "views": 29,
+            "views": 31,
             "addToCart": 2,
             "purchases": 1
+          },
+          {
+            "productId": "gid://shopify/Product/7837822812397",
+            "title": "Beige  Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_beige_w4.jpg?v=1769815816",
+            "views": 30,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/7843696214253",
+            "title": "Beige  Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_beige.jpg?v=1769643852",
+            "views": 30,
+            "addToCart": 0,
+            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/15003405582660",
@@ -2329,22 +2357,6 @@
             "purchases": 1
           },
           {
-            "productId": "gid://shopify/Product/7837822812397",
-            "title": "Beige  Windbreaker",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_beige_w4.jpg?v=1769815816",
-            "views": 28,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7843696214253",
-            "title": "Beige  Windbreaker",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_beige.jpg?v=1769643852",
-            "views": 28,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/7820555223277",
             "title": "Tokyo DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_tokyo2.jpg?v=1769644461",
@@ -2356,6 +2368,22 @@
             "productId": "gid://shopify/Product/7843680649453",
             "title": "Tokyo DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_tokyo.jpg?v=1769643963",
+            "views": 27,
+            "addToCart": 1,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/14932056408388",
+            "title": "3-in-1 Layered Hoodie",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_m1.jpg?v=1769604447",
+            "views": 27,
+            "addToCart": 1,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/14947608396100",
+            "title": "3-in-1 Layered Hoodie",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_w1.jpg?v=1769601948",
             "views": 27,
             "addToCart": 1,
             "purchases": 0
@@ -2377,26 +2405,10 @@
             "purchases": 1
           },
           {
-            "productId": "gid://shopify/Product/14932056408388",
-            "title": "3-in-1 Layered Hoodie",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_m1.jpg?v=1769604447",
-            "views": 26,
-            "addToCart": 1,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/14947608396100",
-            "title": "3-in-1 Layered Hoodie",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_w1.jpg?v=1769601948",
-            "views": 26,
-            "addToCart": 1,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/15415454728516",
             "title": "Vitamin Club Pink T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated359.jpg?v=1766441249",
-            "views": 25,
+            "views": 26,
             "addToCart": 2,
             "purchases": 0
           },
@@ -2404,7 +2416,7 @@
             "productId": "gid://shopify/Product/15415504240964",
             "title": "Vitamin Club Pink T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated405.jpg?v=1766447510",
-            "views": 25,
+            "views": 26,
             "addToCart": 2,
             "purchases": 0
           },
@@ -2420,7 +2432,7 @@
             "productId": "gid://shopify/Product/15589180244292",
             "title": "Blue Stripes Oversized Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_122211-_1_0182a10e-28a0-4261-a557-064737d29d7e.jpg?v=1786556115",
-            "views": 24,
+            "views": 25,
             "addToCart": 2,
             "purchases": 0
           },
@@ -2428,7 +2440,7 @@
             "productId": "gid://shopify/Product/15616900333892",
             "title": "Blue Stripes Oversized Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
-            "views": 24,
+            "views": 25,
             "addToCart": 2,
             "purchases": 1
           },
@@ -2436,7 +2448,7 @@
             "productId": "gid://shopify/Product/15412527432004",
             "title": "Untitled Dual Layered Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated420.jpg?v=1766512950",
-            "views": 23,
+            "views": 24,
             "addToCart": 2,
             "purchases": 0
           },
@@ -2444,7 +2456,7 @@
             "productId": "gid://shopify/Product/15414088433988",
             "title": "Untitled Dual Layered Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated257.jpg?v=1766355877",
-            "views": 23,
+            "views": 24,
             "addToCart": 2,
             "purchases": 0
           },
@@ -2452,7 +2464,7 @@
             "productId": "gid://shopify/Product/15499251745092",
             "title": "Fracture Oversized Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated125_3009d002-7de1-4eea-8b0d-60a5bb7538e0.jpg?v=1773565936",
-            "views": 23,
+            "views": 24,
             "addToCart": 1,
             "purchases": 1
           },
@@ -2460,8 +2472,48 @@
             "productId": "gid://shopify/Product/15572095795524",
             "title": "Fragmented Sleeves Shirt V3",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260617_153753-_1_48c11b68-9ad6-4e06-9eb7-9f0f1f9a10ff.jpg?v=1786558284",
-            "views": 22,
+            "views": 23,
             "addToCart": 2,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15572089995588",
+            "title": "Overthinking MS-24 Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/MS244_a4f6a3e1-e75b-4fe2-ae59-09e9102fc218.jpg?v=1786558381",
+            "views": 22,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15572091437380",
+            "title": "Overthinking MS-24 Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/ms24man2-_1.jpg?v=1786558334",
+            "views": 22,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15576784240964",
+            "title": "MSPCT Patch Tee Faded Rose",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260617_210431_d3ec662e-1a77-4b1d-a9c3-d062f3980d6f.jpg?v=1786557943",
+            "views": 22,
+            "addToCart": 1,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15614810030404",
+            "title": "Dream State Oversized Off-White Tee",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
+            "views": 22,
+            "addToCart": 3,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15614913446212",
+            "title": "Dream State Oversized Off-White Tee",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260721_102819_bbf7f7f4-269a-41d0-ab65-e0f74cd99be5.jpg?v=1786555755",
+            "views": 22,
+            "addToCart": 3,
             "purchases": 0
           },
           {
@@ -2481,43 +2533,11 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15572089995588",
-            "title": "Overthinking MS-24 Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/MS244_a4f6a3e1-e75b-4fe2-ae59-09e9102fc218.jpg?v=1786558381",
-            "views": 21,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15572091437380",
-            "title": "Overthinking MS-24 Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/ms24man2-_1.jpg?v=1786558334",
-            "views": 21,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15576784240964",
-            "title": "MSPCT Patch Tee Faded Rose",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260617_210431_d3ec662e-1a77-4b1d-a9c3-d062f3980d6f.jpg?v=1786557943",
-            "views": 21,
+            "productId": "gid://shopify/Product/15590250840388",
+            "title": "MYSIMPLICATED® Duality Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
+            "views": 20,
             "addToCart": 1,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15614810030404",
-            "title": "Dream State Oversized Off-White Tee",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
-            "views": 21,
-            "addToCart": 3,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15614913446212",
-            "title": "Dream State Oversized Off-White Tee",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260721_102819_bbf7f7f4-269a-41d0-ab65-e0f74cd99be5.jpg?v=1786555755",
-            "views": 21,
-            "addToCart": 3,
             "purchases": 0
           },
           {
@@ -2569,18 +2589,10 @@
             "purchases": 1
           },
           {
-            "productId": "gid://shopify/Product/15590250840388",
-            "title": "MYSIMPLICATED® Duality Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
-            "views": 18,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/15411830882628",
             "title": "Vitamin Aqua MG Black Double Sleeve",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated066.jpg?v=1766225935",
-            "views": 17,
+            "views": 18,
             "addToCart": 1,
             "purchases": 0
           },
@@ -2588,7 +2600,7 @@
             "productId": "gid://shopify/Product/15414916514116",
             "title": "Reversed Club Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated315.jpg?v=1766411090",
-            "views": 17,
+            "views": 18,
             "addToCart": 1,
             "purchases": 0
           },
@@ -2596,7 +2608,7 @@
             "productId": "gid://shopify/Product/15417841549636",
             "title": "Reversed Club Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated561.jpg?v=1766696856",
-            "views": 17,
+            "views": 18,
             "addToCart": 1,
             "purchases": 0
           },
@@ -2604,7 +2616,7 @@
             "productId": "gid://shopify/Product/15419157250372",
             "title": "Vitamin Aqua MG Black Double Sleeve",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated662.jpg?v=1766854599",
-            "views": 17,
+            "views": 18,
             "addToCart": 1,
             "purchases": 0
           },
@@ -2612,7 +2624,7 @@
             "productId": "gid://shopify/Product/15586896642372",
             "title": "MYSIMPLICATED® Blue Collar Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_115032_d2217f8c-a9ae-4e85-b573-bb9f85e2242d.jpg?v=1786556577",
-            "views": 16,
+            "views": 17,
             "addToCart": 1,
             "purchases": 0
           },
@@ -2620,15 +2632,31 @@
             "productId": "gid://shopify/Product/15587072409924",
             "title": "MYSIMPLICATED® Blue Collar Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_181428-_2_c0b27a7e-d503-4b73-9eb1-566b711712f6.jpg?v=1786556462",
+            "views": 17,
+            "addToCart": 1,
+            "purchases": 1
+          },
+          {
+            "productId": "gid://shopify/Product/15412296745284",
+            "title": "Offset Black Sweatpants",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
             "views": 16,
             "addToCart": 1,
             "purchases": 1
           },
           {
+            "productId": "gid://shopify/Product/15419153842500",
+            "title": "Offset Black Sweatpants",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated734.jpg?v=1766871341",
+            "views": 16,
+            "addToCart": 1,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/7820252315885",
             "title": "Oversized Full Print T-shirt Beige",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_beige_tshirt_42e4b226-e1ad-4dfb-9d33-79f00fc76502.jpg?v=1769644607",
-            "views": 14,
+            "views": 15,
             "addToCart": 0,
             "purchases": 0
           },
@@ -2636,8 +2664,40 @@
             "productId": "gid://shopify/Product/7843649093869",
             "title": "Oversized Full Print T-shirt Beige",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Oversized-T-shirt-Beige.jpg?v=1770114428",
-            "views": 14,
+            "views": 15,
             "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15412697071940",
+            "title": "Vitamin Aqua ZN Sweatpants",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated237.jpg?v=1766274244",
+            "views": 15,
+            "addToCart": 1,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15499245715780",
+            "title": "Split White Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated129_74ef1e9a-d248-426a-9368-311404a90956.jpg?v=1773567724",
+            "views": 15,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15499249942852",
+            "title": "Split White Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
+            "views": 15,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/8649103278404",
+            "title": "Oversized Cotton White T-shirt Lucky",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-lucky-464516_5884cb80-ba5e-4029-b86c-3744026db1cc.jpg?v=1770112974",
+            "views": 14,
+            "addToCart": 1,
             "purchases": 0
           },
           {
@@ -2646,6 +2706,14 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_mushrooms_hoodie.jpg?v=1769614342",
             "views": 14,
             "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/8978719310148",
+            "title": "Oversized Cotton White T-shirt Lucky",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_lucky_tshirt.jpg?v=1769824246",
+            "views": 14,
+            "addToCart": 1,
             "purchases": 0
           },
           {
@@ -2681,19 +2749,11 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15412296745284",
-            "title": "Offset Black Sweatpants",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
+            "productId": "gid://shopify/Product/15412465041732",
+            "title": "Vitamin Aqua MG Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated186.jpg?v=1766267216",
             "views": 14,
-            "addToCart": 1,
-            "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/15412697071940",
-            "title": "Vitamin Aqua ZN Sweatpants",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated237.jpg?v=1766274244",
-            "views": 14,
-            "addToCart": 1,
+            "addToCart": 3,
             "purchases": 0
           },
           {
@@ -2713,12 +2773,12 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15419153842500",
-            "title": "Offset Black Sweatpants",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated734.jpg?v=1766871341",
+            "productId": "gid://shopify/Product/15417915932996",
+            "title": "Vitamin Aqua MG Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated593.jpg?v=1766699424",
             "views": 14,
-            "addToCart": 1,
-            "purchases": 0
+            "addToCart": 3,
+            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15499159699780",
@@ -2729,20 +2789,20 @@
             "purchases": 1
           },
           {
-            "productId": "gid://shopify/Product/15499245715780",
-            "title": "Split White Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated129_74ef1e9a-d248-426a-9368-311404a90956.jpg?v=1773567724",
+            "productId": "gid://shopify/Product/15590514917700",
+            "title": "Denim Bermuda",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_160855_ec0cfa77-295a-4f3c-8ae0-1b31a9f31c34-_1.jpg?v=1786555920",
             "views": 14,
-            "addToCart": 0,
-            "purchases": 0
+            "addToCart": 1,
+            "purchases": 1
           },
           {
-            "productId": "gid://shopify/Product/15499249942852",
-            "title": "Split White Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
-            "views": 14,
-            "addToCart": 0,
-            "purchases": 0
+            "productId": "gid://shopify/Product/7820250448109",
+            "title": "AER Black T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_aer_tshirt.jpg?v=1769644685",
+            "views": 13,
+            "addToCart": 2,
+            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/7820482511085",
@@ -2753,27 +2813,19 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/7839115542765",
+            "title": "AER Black T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/aer-black-t-shirt-657675_49294a87-ec43-4293-801a-57837b4cb19a.jpg?v=1770114192",
+            "views": 13,
+            "addToCart": 2,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/7839300583661",
             "title": "Botanical Pants (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4225.jpg?v=1770331427",
             "views": 13,
             "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/8649103278404",
-            "title": "Oversized Cotton White T-shirt Lucky",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-lucky-464516_5884cb80-ba5e-4029-b86c-3744026db1cc.jpg?v=1770112974",
-            "views": 13,
-            "addToCart": 1,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/8978719310148",
-            "title": "Oversized Cotton White T-shirt Lucky",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_lucky_tshirt.jpg?v=1769824246",
-            "views": 13,
-            "addToCart": 1,
             "purchases": 0
           },
           {
@@ -2791,22 +2843,6 @@
             "views": 13,
             "addToCart": 0,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15412465041732",
-            "title": "Vitamin Aqua MG Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated186.jpg?v=1766267216",
-            "views": 13,
-            "addToCart": 3,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15417915932996",
-            "title": "Vitamin Aqua MG Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated593.jpg?v=1766699424",
-            "views": 13,
-            "addToCart": 3,
-            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15577328255300",
@@ -2833,27 +2869,27 @@
             "purchases": 1
           },
           {
-            "productId": "gid://shopify/Product/15590514917700",
-            "title": "Denim Bermuda",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_160855_ec0cfa77-295a-4f3c-8ae0-1b31a9f31c34-_1.jpg?v=1786555920",
+            "productId": "gid://shopify/Product/15638163521860",
+            "title": "Lost Grey Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260813_111646_2c192fe8-5550-4b16-b0ce-85eb297a96a5.jpg?v=1786620013",
             "views": 13,
-            "addToCart": 1,
-            "purchases": 1
+            "addToCart": 2,
+            "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/7820250448109",
-            "title": "AER Black T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_aer_tshirt.jpg?v=1769644685",
+            "productId": "gid://shopify/Product/8888098619716",
+            "title": "Ivory T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_205443_79f01467-c4b8-41bc-842e-7caad7f75630.jpg?v=1787779168",
             "views": 12,
             "addToCart": 2,
-            "purchases": 1
+            "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/7839115542765",
-            "title": "AER Black T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/aer-black-t-shirt-657675_49294a87-ec43-4293-801a-57837b4cb19a.jpg?v=1770114192",
+            "productId": "gid://shopify/Product/8978705908036",
+            "title": "Oversized Cotton Black T-shirt 777",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_777_95102fd3-8178-49f6-a14f-d1340899074f.jpg?v=1769826069",
             "views": 12,
-            "addToCart": 2,
+            "addToCart": 0,
             "purchases": 0
           },
           {
@@ -2865,17 +2901,33 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15638163521860",
-            "title": "Lost Grey Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260813_111646_2c192fe8-5550-4b16-b0ce-85eb297a96a5.jpg?v=1786620013",
-            "views": 12,
-            "addToCart": 2,
+            "productId": "gid://shopify/Product/7820397969645",
+            "title": "Bermuda Shorts Stickers (recycled fabric)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_woman.jpg?v=1770378344",
+            "views": 11,
+            "addToCart": 0,
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/8978705908036",
-            "title": "Oversized Cotton Black T-shirt 777",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_777_95102fd3-8178-49f6-a14f-d1340899074f.jpg?v=1769826069",
+            "productId": "gid://shopify/Product/7820480643309",
+            "title": "Grey Pants (recycled fabric)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4198.jpg?v=1769818273",
+            "views": 11,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/7839241437421",
+            "title": "Bermuda Shorts Stickers (recycled fabric)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_man.jpg?v=1770378868",
+            "views": 11,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/7839299141869",
+            "title": "Grey Pants (recycled fabric)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_grey_trousers.jpg?v=1770335668",
             "views": 11,
             "addToCart": 0,
             "purchases": 0
@@ -2913,9 +2965,25 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15419437941060",
+            "title": "Broken Stripes Jeans",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated724.jpg?v=1766870887",
+            "views": 11,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15419456225604",
             "title": "Broken Stripes Denim Jacket",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated745.jpg?v=1766872341",
+            "views": 11,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15419492892996",
+            "title": "Broken Stripes Jeans",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated759.jpg?v=1766874542",
             "views": 11,
             "addToCart": 0,
             "purchases": 0
@@ -2953,38 +3021,6 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/7820397969645",
-            "title": "Bermuda Shorts Stickers (recycled fabric)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_woman.jpg?v=1770378344",
-            "views": 10,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7839241437421",
-            "title": "Bermuda Shorts Stickers (recycled fabric)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_man.jpg?v=1770378868",
-            "views": 10,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15419437941060",
-            "title": "Broken Stripes Jeans",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated724.jpg?v=1766870887",
-            "views": 10,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15419492892996",
-            "title": "Broken Stripes Jeans",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated759.jpg?v=1766874542",
-            "views": 10,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/15573330395460",
             "title": "Workwear Ecru Oversized Pocket T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260611_231302_83eeb7e7-c091-402e-8371-bf1dd1b7c613.jpg?v=1786558114",
@@ -2998,30 +3034,6 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260717_125918_6bae9e90-c49d-483a-a0f4-9ecf3f31de36.jpg?v=1786555496",
             "views": 10,
             "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7820480643309",
-            "title": "Grey Pants (recycled fabric)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4198.jpg?v=1769818273",
-            "views": 9,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7839299141869",
-            "title": "Grey Pants (recycled fabric)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_grey_trousers.jpg?v=1770335668",
-            "views": 9,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/8888098619716",
-            "title": "Ivory T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_205443_79f01467-c4b8-41bc-842e-7caad7f75630.jpg?v=1787779168",
-            "views": 9,
-            "addToCart": 1,
             "purchases": 0
           },
           {
@@ -3049,9 +3061,25 @@
             "purchases": 1
           },
           {
+            "productId": "gid://shopify/Product/15415436542276",
+            "title": "Vitamin Club Black T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated349.jpg?v=1766440318",
+            "views": 9,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15415461740868",
             "title": "Vitamin Club White T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated368.jpg?v=1766442432",
+            "views": 9,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15415485694276",
+            "title": "Vitamin Club Black T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated395.jpg?v=1766445574",
             "views": 9,
             "addToCart": 0,
             "purchases": 0
@@ -3071,6 +3099,14 @@
             "views": 9,
             "addToCart": 0,
             "purchases": 1
+          },
+          {
+            "productId": "gid://shopify/Product/7752903196909",
+            "title": "DOER Windbreaker (customisable)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/doer-windbreaker-customisable-679244.jpg?v=1740948885",
+            "views": 8,
+            "addToCart": 0,
+            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/9046564667716",
@@ -3109,30 +3145,6 @@
             "title": "Pop Cola Blue Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated269.jpg?v=1766356962",
             "views": 8,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15415436542276",
-            "title": "Vitamin Club Black T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated349.jpg?v=1766440318",
-            "views": 8,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15415485694276",
-            "title": "Vitamin Club Black T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated395.jpg?v=1766445574",
-            "views": 8,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7752903196909",
-            "title": "DOER Windbreaker (customisable)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/doer-windbreaker-customisable-679244.jpg?v=1740948885",
-            "views": 7,
             "addToCart": 0,
             "purchases": 0
           },
@@ -3241,6 +3253,14 @@
             "purchases": 1
           },
           {
+            "productId": "gid://shopify/Product/9610181247300",
+            "title": "Set Numbers Short Sleeve Shirt, Pants & Top",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_numbers_set.jpg?v=1769865193",
+            "views": 6,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15583466062148",
             "title": "Côte Bleue Short Sleeve Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/2hf_20260624_085857-_1_26f6b9f5-fc8a-4cc4-a5bc-fcf0f4bcae84.jpg?v=1786557630",
@@ -3308,14 +3328,6 @@
             "productId": "gid://shopify/Product/9074297012548",
             "title": "Limited Series Pop Cola 330 Unisex Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4200.jpg?v=1769819731",
-            "views": 5,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/9610181247300",
-            "title": "Set Numbers Short Sleeve Shirt, Pants & Top",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_numbers_set.jpg?v=1769865193",
             "views": 5,
             "addToCart": 0,
             "purchases": 0
@@ -3801,6 +3813,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15584662880580",
+            "title": "Red Horizon Oversized Off-White Tee",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260625_225648_48857dfd-9e94-473f-aafb-7d8493c793b1.jpg?v=1786616994",
+            "views": 3,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15588910334276",
             "title": "MYSTUDIOS Pink Oversized Tee",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/00011mysimplicated_3970eb48-1e46-4ca7-a9bd-70fe99b2c05f.jpg?v=1786556286",
@@ -3841,9 +3861,25 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15655572537668",
+            "title": "Flower Boy Oversized Off-White Tee",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260902_142457_12855601-d934-4252-8bfc-a1dd461eba23.jpg?v=1788361952",
+            "views": 3,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/7711062720749",
             "title": "Oversized Shirt (customisable)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-shirt-customisable-967976.jpg?v=1740948868",
+            "views": 2,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/7713118617837",
+            "title": "Bermuda Shorts (customisable)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/bermuda-shorts-customisable-178992.jpg?v=1740948891",
             "views": 2,
             "addToCart": 0,
             "purchases": 0
@@ -4121,6 +4157,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15457746387268",
+            "title": "Black Rib Cotton Top",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4218.jpg?v=1770054421",
+            "views": 2,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15499159109956",
             "title": "Torsion Top",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated116_461d4c9d-5c43-45cb-a9b5-c4fbfdff6d6b.jpg?v=1773532289",
@@ -4132,14 +4176,6 @@
             "productId": "gid://shopify/Product/15576325816644",
             "title": "Sunset Short Sleeve Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260616_220032_c23980ac-8b26-46d9-aa09-5812a834ffcf-_1.jpg?v=1786557988",
-            "views": 2,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15584662880580",
-            "title": "Red Horizon Oversized Off-White Tee",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260625_225648_48857dfd-9e94-473f-aafb-7d8493c793b1.jpg?v=1786616994",
             "views": 2,
             "addToCart": 0,
             "purchases": 0
@@ -4157,22 +4193,6 @@
             "title": "Blue Camo Top",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Top-blue-camo.jpg?v=1786524668",
             "views": 2,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15655572537668",
-            "title": "Flower Boy Oversized Off-White Tee",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260902_142457_12855601-d934-4252-8bfc-a1dd461eba23.jpg?v=1788361952",
-            "views": 2,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7713118617837",
-            "title": "Bermuda Shorts (customisable)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/bermuda-shorts-customisable-178992.jpg?v=1740948891",
-            "views": 1,
             "addToCart": 0,
             "purchases": 0
           },
@@ -4233,14 +4253,6 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15457746387268",
-            "title": "Black Rib Cotton Top",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4218.jpg?v=1770054421",
-            "views": 1,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/15576790204740",
             "title": "Leopard Short Sleeve Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260617_210413_a0791270-4a55-4aa2-8f94-e57ec6902bd5.jpg?v=1786557896",
@@ -4278,8 +4290,8 @@
           "productId": "gid://shopify/Product/7837843849453",
           "title": "Pink DOER  Windbreaker",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
-          "units": 6,
-          "revenue": 2898.2
+          "units": 7,
+          "revenue": 3347.2
         },
         {
           "productId": "gid://shopify/Product/7837777559789",
@@ -4485,13 +4497,6 @@
           "revenue": 808.2
         },
         {
-          "productId": "gid://shopify/Product/9436029976900",
-          "title": "Oversized Cotton White T-shirt Kindness",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
-          "units": 3,
-          "revenue": 777
-        },
-        {
           "productId": "gid://shopify/Product/15573327249732",
           "title": "Reality Grey Oversized T-Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
@@ -4546,13 +4551,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_160855_ec0cfa77-295a-4f3c-8ae0-1b31a9f31c34-_1.jpg?v=1786555920",
           "units": 1,
           "revenue": 712.72
-        },
-        {
-          "productId": "gid://shopify/Product/15588121084228",
-          "title": "MYSIMPLICATED® Black Bermuda",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_215741_52ec5e88-77af-464d-8f2e-aa316d1f58db.jpg?v=1786556343",
-          "units": 2,
-          "revenue": 698
         },
         {
           "productId": "gid://shopify/Product/8555335450948",
@@ -4623,6 +4621,13 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/products/mauve-windbreaker-707812.png?v=1701252399",
           "units": 1,
           "revenue": 550.59
+        },
+        {
+          "productId": "gid://shopify/Product/9436029976900",
+          "title": "Oversized Cotton White T-shirt Kindness",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
+          "units": 2,
+          "revenue": 518
         },
         {
           "productId": "gid://shopify/Product/8978719310148",
@@ -4849,16 +4854,9 @@
           "revenue": 356.2
         },
         {
-          "productId": "gid://shopify/Product/15587082469700",
-          "title": "MYSIMPLICATED® Graphite Bermuda",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_190935_0db3bcc3-2281-4aec-9609-7f6bab44a1fb-_1.jpg?v=1786556380",
-          "units": 1,
-          "revenue": 349
-        },
-        {
-          "productId": "gid://shopify/Product/15586896642372",
-          "title": "MYSIMPLICATED® Blue Collar Shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_115032_d2217f8c-a9ae-4e85-b573-bb9f85e2242d.jpg?v=1786556577",
+          "productId": "gid://shopify/Product/15588121084228",
+          "title": "MYSIMPLICATED® Black Bermuda",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_215741_52ec5e88-77af-464d-8f2e-aa316d1f58db.jpg?v=1786556343",
           "units": 1,
           "revenue": 349
         },
@@ -6005,6 +6003,16 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260626_000405_edef4548-dbef-4044-abc9-3ebe6c04f1c4-_1.jpg?v=1786556722"
         },
         {
+          "productId": "gid://shopify/Product/15586896642372",
+          "title": "MYSIMPLICATED® Blue Collar Shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_115032_d2217f8c-a9ae-4e85-b573-bb9f85e2242d.jpg?v=1786556577"
+        },
+        {
+          "productId": "gid://shopify/Product/15587082469700",
+          "title": "MYSIMPLICATED® Graphite Bermuda",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_190935_0db3bcc3-2281-4aec-9609-7f6bab44a1fb-_1.jpg?v=1786556380"
+        },
+        {
           "productId": "gid://shopify/Product/15589139677508",
           "title": "MYSIMPLICATED® Ciel Blue Bermuda",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_100159_d21a1167-81f5-4e00-9fbd-a7323358cd51.jpg?v=1786556158"
@@ -6199,6 +6207,12 @@
             "saves": 1
           },
           {
+            "productId": "gid://shopify/Product/7837777559789",
+            "title": "Statue DOER  Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
+            "saves": 1
+          },
+          {
             "productId": "gid://shopify/Product/7837829071085",
             "title": "Third Eye  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
@@ -6226,6 +6240,12 @@
             "productId": "gid://shopify/Product/7839299141869",
             "title": "Grey Pants (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_grey_trousers.jpg?v=1770335668",
+            "saves": 1
+          },
+          {
+            "productId": "gid://shopify/Product/7843686711533",
+            "title": "Statue DOER  Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_statue.jpg?v=1769644045",
             "saves": 1
           },
           {
@@ -6493,8 +6513,8 @@
             "saves": 1
           }
         ],
-        "totalSaves": 72,
-        "totalUsers": 34
+        "totalSaves": 73,
+        "totalUsers": 35
       },
       "funnel": {
         "items": [
@@ -6502,7 +6522,7 @@
             "productId": "gid://shopify/Product/14982879248708",
             "title": "Dystopia White Oversized Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dystopia-White-Oversized-Sweater1.jpg?v=1769817561",
-            "views": 1320,
+            "views": 1333,
             "addToCart": 77,
             "purchases": 20
           },
@@ -6510,7 +6530,7 @@
             "productId": "gid://shopify/Product/15499252695364",
             "title": "Fragmented Sleeves Shirt V2",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-            "views": 1204,
+            "views": 1220,
             "addToCart": 87,
             "purchases": 29
           },
@@ -6518,63 +6538,63 @@
             "productId": "gid://shopify/Product/15573327249732",
             "title": "Reality Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
-            "views": 635,
-            "addToCart": 48,
+            "views": 642,
+            "addToCart": 49,
             "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/15614948868420",
             "title": "Reality Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
-            "views": 635,
-            "addToCart": 48,
+            "views": 642,
+            "addToCart": 49,
             "purchases": 8
           },
           {
             "productId": "gid://shopify/Product/15629712687428",
             "title": "777 Mauve Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-            "views": 615,
-            "addToCart": 41,
+            "views": 619,
+            "addToCart": 42,
             "purchases": 7
           },
           {
             "productId": "gid://shopify/Product/15630103970116",
             "title": "777 Mauve Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260804_091046_eb491f35-b1c6-41bb-babc-a4f45c9e4cf5.jpg?v=1786555250",
-            "views": 615,
-            "addToCart": 41,
+            "views": 619,
+            "addToCart": 42,
             "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/8825186812228",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
-            "views": 454,
-            "addToCart": 18,
+            "views": 457,
+            "addToCart": 19,
             "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/15421163340100",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated806.jpg?v=1767032584",
-            "views": 454,
-            "addToCart": 18,
+            "views": 457,
+            "addToCart": 19,
             "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/7837829071085",
             "title": "Third Eye  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
-            "views": 434,
-            "addToCart": 24,
+            "views": 444,
+            "addToCart": 26,
             "purchases": 9
           },
           {
             "productId": "gid://shopify/Product/15421171990852",
             "title": "Dystopia Pink Oversized Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated821.jpg?v=1767033677",
-            "views": 409,
+            "views": 412,
             "addToCart": 10,
             "purchases": 1
           },
@@ -6582,7 +6602,7 @@
             "productId": "gid://shopify/Product/14994921226564",
             "title": "Complex Minds Checkered Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_checkered_shirt_m1.jpg?v=1769631253",
-            "views": 312,
+            "views": 320,
             "addToCart": 15,
             "purchases": 5
           },
@@ -6590,7 +6610,7 @@
             "productId": "gid://shopify/Product/14996604289348",
             "title": "Complex Minds Checkered Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_204524_0c3a6aa4-e4ff-44e6-84a1-515fc09722cf.jpg?v=1787777353",
-            "views": 312,
+            "views": 320,
             "addToCart": 15,
             "purchases": 2
           },
@@ -6598,7 +6618,7 @@
             "productId": "gid://shopify/Product/15414933061956",
             "title": "DEPT. GRAPHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated317.jpg?v=1766412528",
-            "views": 296,
+            "views": 298,
             "addToCart": 11,
             "purchases": 0
           },
@@ -6606,7 +6626,7 @@
             "productId": "gid://shopify/Product/15417920848196",
             "title": "DEPT. GRAPHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated620.jpg?v=1766701922",
-            "views": 296,
+            "views": 298,
             "addToCart": 11,
             "purchases": 2
           },
@@ -6614,23 +6634,23 @@
             "productId": "gid://shopify/Product/7837777559789",
             "title": "Statue DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
-            "views": 271,
-            "addToCart": 17,
+            "views": 276,
+            "addToCart": 18,
             "purchases": 5
           },
           {
             "productId": "gid://shopify/Product/7843686711533",
             "title": "Statue DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_statue.jpg?v=1769644045",
-            "views": 271,
-            "addToCart": 17,
+            "views": 276,
+            "addToCart": 18,
             "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/7820197691629",
             "title": "DOER Ice Cream T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_doer_tshirt.jpg?v=1769644387",
-            "views": 254,
+            "views": 257,
             "addToCart": 16,
             "purchases": 3
           },
@@ -6638,15 +6658,15 @@
             "productId": "gid://shopify/Product/7837843849453",
             "title": "Pink DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
-            "views": 252,
+            "views": 254,
             "addToCart": 18,
-            "purchases": 6
+            "purchases": 7
           },
           {
             "productId": "gid://shopify/Product/15332271063364",
             "title": "Retro Pop Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Retro-Pop-Windbreaker.jpg?v=1771580253",
-            "views": 230,
+            "views": 234,
             "addToCart": 9,
             "purchases": 1
           },
@@ -6654,7 +6674,7 @@
             "productId": "gid://shopify/Product/15446025503044",
             "title": "Retro Pop Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_retro_windbreaker_M1.jpg?v=1769543665",
-            "views": 230,
+            "views": 234,
             "addToCart": 9,
             "purchases": 2
           },
@@ -6662,23 +6682,23 @@
             "productId": "gid://shopify/Product/15588974428484",
             "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-            "views": 223,
-            "addToCart": 9,
+            "views": 227,
+            "addToCart": 10,
             "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/15634869158212",
             "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260810_184412_62064429-5d1e-4fae-90c3-edf9a8c8efd1-_1.jpg?v=1786555154",
-            "views": 223,
-            "addToCart": 9,
+            "views": 227,
+            "addToCart": 10,
             "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/14980056842564",
             "title": "Anxiety Oversized White T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_anxiety_tshirt1.jpg?v=1769684708",
-            "views": 219,
+            "views": 220,
             "addToCart": 4,
             "purchases": 1
           },
@@ -6686,7 +6706,7 @@
             "productId": "gid://shopify/Product/15056634904900",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated203.jpg?v=1766270039",
-            "views": 217,
+            "views": 219,
             "addToCart": 14,
             "purchases": 2
           },
@@ -6694,9 +6714,41 @@
             "productId": "gid://shopify/Product/15416222613828",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
-            "views": 217,
+            "views": 219,
             "addToCart": 14,
             "purchases": 4
+          },
+          {
+            "productId": "gid://shopify/Product/14969291276612",
+            "title": "Not My Circus White T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
+            "views": 194,
+            "addToCart": 14,
+            "purchases": 6
+          },
+          {
+            "productId": "gid://shopify/Product/15455598313796",
+            "title": "Not My Circus White T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_circus1.jpg?v=1769822340",
+            "views": 194,
+            "addToCart": 14,
+            "purchases": 1
+          },
+          {
+            "productId": "gid://shopify/Product/15417796133188",
+            "title": "3-in-1 Layered Hoodie V2",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated538.jpg?v=1766694549",
+            "views": 193,
+            "addToCart": 14,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15417811403076",
+            "title": "3-in-1 Layered Hoodie V2",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
+            "views": 193,
+            "addToCart": 14,
+            "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/15419494531396",
@@ -6707,42 +6759,10 @@
             "purchases": 4
           },
           {
-            "productId": "gid://shopify/Product/14969291276612",
-            "title": "Not My Circus White T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
-            "views": 192,
-            "addToCart": 14,
-            "purchases": 6
-          },
-          {
-            "productId": "gid://shopify/Product/15417796133188",
-            "title": "3-in-1 Layered Hoodie V2",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated538.jpg?v=1766694549",
-            "views": 192,
-            "addToCart": 13,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15417811403076",
-            "title": "3-in-1 Layered Hoodie V2",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
-            "views": 192,
-            "addToCart": 13,
-            "purchases": 3
-          },
-          {
-            "productId": "gid://shopify/Product/15455598313796",
-            "title": "Not My Circus White T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_circus1.jpg?v=1769822340",
-            "views": 192,
-            "addToCart": 14,
-            "purchases": 1
-          },
-          {
             "productId": "gid://shopify/Product/15408429302084",
             "title": "DEPT. OFF-WHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated051.jpg?v=1766195246",
-            "views": 180,
+            "views": 182,
             "addToCart": 14,
             "purchases": 1
           },
@@ -6750,7 +6770,7 @@
             "productId": "gid://shopify/Product/15412640219460",
             "title": "DEPT. OFF-WHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated207.jpg?v=1766271373",
-            "views": 180,
+            "views": 182,
             "addToCart": 14,
             "purchases": 1
           },
@@ -6766,7 +6786,7 @@
             "productId": "gid://shopify/Product/8649104851268",
             "title": "Oversized Cotton White T-shirt Spirit",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-spirit-208380_030235ea-5578-4880-b7fb-9d370800162c.jpg?v=1770112894",
-            "views": 173,
+            "views": 175,
             "addToCart": 3,
             "purchases": 3
           },
@@ -6774,7 +6794,7 @@
             "productId": "gid://shopify/Product/8978718327108",
             "title": "Oversized Cotton White T-shirt Spirit",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicatet_tshirt_spirit.jpg?v=1769822867",
-            "views": 173,
+            "views": 175,
             "addToCart": 3,
             "purchases": 0
           },
@@ -6782,9 +6802,17 @@
             "productId": "gid://shopify/Product/15499163468100",
             "title": "Broken Strap Olive Top",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated051_4fcf3053-c16f-4ea8-a0bf-aaa8f71c2c9c.jpg?v=1773534435",
-            "views": 166,
+            "views": 167,
             "addToCart": 3,
             "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/7820223250669",
+            "title": "Oversized Black T-shirt Superwoman",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_oversizedtshirt_superwoman_c8bc9810-f5c7-4365-913c-cce6077b7547.jpg?v=1769599859",
+            "views": 154,
+            "addToCart": 8,
+            "purchases": 6
           },
           {
             "productId": "gid://shopify/Product/8651638964548",
@@ -6806,7 +6834,7 @@
             "productId": "gid://shopify/Product/15614810030404",
             "title": "Dream State Oversized Off-White Tee",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
-            "views": 153,
+            "views": 154,
             "addToCart": 10,
             "purchases": 2
           },
@@ -6814,23 +6842,15 @@
             "productId": "gid://shopify/Product/15614913446212",
             "title": "Dream State Oversized Off-White Tee",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260721_102819_bbf7f7f4-269a-41d0-ab65-e0f74cd99be5.jpg?v=1786555755",
-            "views": 153,
+            "views": 154,
             "addToCart": 10,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7820223250669",
-            "title": "Oversized Black T-shirt Superwoman",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_oversizedtshirt_superwoman_c8bc9810-f5c7-4365-913c-cce6077b7547.jpg?v=1769599859",
-            "views": 152,
-            "addToCart": 8,
-            "purchases": 6
           },
           {
             "productId": "gid://shopify/Product/9074771755332",
             "title": "Pop Cola Mix Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-mix-black-oversized-t-shirt-493598_a8863545-1201-422a-8ec2-dcd417b8fa0a.jpg?v=1770115372",
-            "views": 150,
+            "views": 152,
             "addToCart": 5,
             "purchases": 0
           },
@@ -6838,31 +6858,31 @@
             "productId": "gid://shopify/Product/9074773885252",
             "title": "Pop Cola Mix Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_popcola_mix.jpg?v=1769682410",
-            "views": 150,
+            "views": 152,
             "addToCart": 5,
             "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/15637158494532",
-            "title": "Spirit Grey Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Grey-Spirit_db0be8a9-3ec3-4102-a682-ae7784079885.jpg?v=1786555068",
-            "views": 147,
-            "addToCart": 30,
-            "purchases": 9
           },
           {
             "productId": "gid://shopify/Product/15417912623428",
             "title": "Overthink Club Brown T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Overthink-Club-Brown-T-Shirt1.jpg?v=1779920882",
-            "views": 146,
+            "views": 150,
             "addToCart": 12,
             "purchases": 3
+          },
+          {
+            "productId": "gid://shopify/Product/15637158494532",
+            "title": "Spirit Grey Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Grey-Spirit_db0be8a9-3ec3-4102-a682-ae7784079885.jpg?v=1786555068",
+            "views": 148,
+            "addToCart": 30,
+            "purchases": 9
           },
           {
             "productId": "gid://shopify/Product/15414113567044",
             "title": "Arc Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated303.jpg?v=1766360019",
-            "views": 145,
+            "views": 146,
             "addToCart": 5,
             "purchases": 0
           },
@@ -6870,7 +6890,7 @@
             "productId": "gid://shopify/Product/15420232073540",
             "title": "Arc Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated792.jpg?v=1766921733",
-            "views": 145,
+            "views": 146,
             "addToCart": 5,
             "purchases": 2
           },
@@ -6878,7 +6898,7 @@
             "productId": "gid://shopify/Product/15417916752196",
             "title": "MG Black Straight Sweatpants",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated735.jpg?v=1766871485",
-            "views": 136,
+            "views": 137,
             "addToCart": 8,
             "purchases": 3
           },
@@ -6886,7 +6906,7 @@
             "productId": "gid://shopify/Product/7837822812397",
             "title": "Beige  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_beige_w4.jpg?v=1769815816",
-            "views": 131,
+            "views": 133,
             "addToCart": 19,
             "purchases": 0
           },
@@ -6894,7 +6914,7 @@
             "productId": "gid://shopify/Product/7843696214253",
             "title": "Beige  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_beige.jpg?v=1769643852",
-            "views": 131,
+            "views": 133,
             "addToCart": 19,
             "purchases": 0
           },
@@ -6902,7 +6922,7 @@
             "productId": "gid://shopify/Product/15415454728516",
             "title": "Vitamin Club Pink T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated359.jpg?v=1766441249",
-            "views": 121,
+            "views": 122,
             "addToCart": 7,
             "purchases": 0
           },
@@ -6910,7 +6930,7 @@
             "productId": "gid://shopify/Product/15415504240964",
             "title": "Vitamin Club Pink T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated405.jpg?v=1766447510",
-            "views": 121,
+            "views": 122,
             "addToCart": 7,
             "purchases": 0
           },
@@ -6918,7 +6938,7 @@
             "productId": "gid://shopify/Product/15572095795524",
             "title": "Fragmented Sleeves Shirt V3",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260617_153753-_1_48c11b68-9ad6-4e06-9eb7-9f0f1f9a10ff.jpg?v=1786558284",
-            "views": 114,
+            "views": 115,
             "addToCart": 7,
             "purchases": 1
           },
@@ -6939,10 +6959,18 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/9657554731332",
+            "title": "Animal Print Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_animal_w1.jpg?v=1769815446",
+            "views": 106,
+            "addToCart": 5,
+            "purchases": 2
+          },
+          {
             "productId": "gid://shopify/Product/15068676522308",
             "title": "Miau Miau Mornings Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated488.jpg?v=1766530654",
-            "views": 105,
+            "views": 106,
             "addToCart": 4,
             "purchases": 2
           },
@@ -6950,8 +6978,16 @@
             "productId": "gid://shopify/Product/15416230281540",
             "title": "Miau Miau Mornings Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated480.jpg?v=1766530553",
-            "views": 105,
+            "views": 106,
             "addToCart": 4,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15576784240964",
+            "title": "MSPCT Patch Tee Faded Rose",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260617_210431_d3ec662e-1a77-4b1d-a9c3-d062f3980d6f.jpg?v=1786557943",
+            "views": 106,
+            "addToCart": 9,
             "purchases": 0
           },
           {
@@ -6963,22 +6999,6 @@
             "purchases": 2
           },
           {
-            "productId": "gid://shopify/Product/15576784240964",
-            "title": "MSPCT Patch Tee Faded Rose",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260617_210431_d3ec662e-1a77-4b1d-a9c3-d062f3980d6f.jpg?v=1786557943",
-            "views": 105,
-            "addToCart": 9,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/9657554731332",
-            "title": "Animal Print Windbreaker",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_animal_w1.jpg?v=1769815446",
-            "views": 104,
-            "addToCart": 5,
-            "purchases": 2
-          },
-          {
             "productId": "gid://shopify/Product/8877513113924",
             "title": "Black Hoodie Spirit",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated575_5da77184-16dc-4104-aa57-9769c0980707.jpg?v=1769623148",
@@ -6987,20 +7007,20 @@
             "purchases": 2
           },
           {
+            "productId": "gid://shopify/Product/15590250840388",
+            "title": "MYSIMPLICATED® Duality Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
+            "views": 99,
+            "addToCart": 13,
+            "purchases": 3
+          },
+          {
             "productId": "gid://shopify/Product/15583737872708",
             "title": "Soldout Oversized Off-White Tee",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260624_144855_f2793a7a-ee2d-4a35-87ba-376f46e4f752-_1.jpg?v=1786557016",
             "views": 97,
             "addToCart": 4,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15590250840388",
-            "title": "MYSIMPLICATED® Duality Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
-            "views": 97,
-            "addToCart": 12,
-            "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/15614808850756",
@@ -7022,7 +7042,7 @@
             "productId": "gid://shopify/Product/14932056408388",
             "title": "3-in-1 Layered Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_m1.jpg?v=1769604447",
-            "views": 92,
+            "views": 93,
             "addToCart": 7,
             "purchases": 1
           },
@@ -7030,7 +7050,7 @@
             "productId": "gid://shopify/Product/14947608396100",
             "title": "3-in-1 Layered Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_w1.jpg?v=1769601948",
-            "views": 92,
+            "views": 93,
             "addToCart": 7,
             "purchases": 0
           },
@@ -7054,7 +7074,7 @@
             "productId": "gid://shopify/Product/14798693368132",
             "title": "Black Oversized Love Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-love-sweater-1.jpg?v=1769676679",
-            "views": 90,
+            "views": 91,
             "addToCart": 1,
             "purchases": 1
           },
@@ -7062,15 +7082,15 @@
             "productId": "gid://shopify/Product/8888098619716",
             "title": "Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_205443_79f01467-c4b8-41bc-842e-7caad7f75630.jpg?v=1787779168",
-            "views": 87,
-            "addToCart": 11,
+            "views": 90,
+            "addToCart": 12,
             "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/15589180244292",
             "title": "Blue Stripes Oversized Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_122211-_1_0182a10e-28a0-4261-a557-064737d29d7e.jpg?v=1786556115",
-            "views": 87,
+            "views": 88,
             "addToCart": 6,
             "purchases": 0
           },
@@ -7078,7 +7098,7 @@
             "productId": "gid://shopify/Product/15616900333892",
             "title": "Blue Stripes Oversized Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
-            "views": 87,
+            "views": 88,
             "addToCart": 6,
             "purchases": 3
           },
@@ -7086,7 +7106,7 @@
             "productId": "gid://shopify/Product/15499245715780",
             "title": "Split White Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated129_74ef1e9a-d248-426a-9368-311404a90956.jpg?v=1773567724",
-            "views": 86,
+            "views": 87,
             "addToCart": 6,
             "purchases": 2
           },
@@ -7094,7 +7114,7 @@
             "productId": "gid://shopify/Product/15499249942852",
             "title": "Split White Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
-            "views": 86,
+            "views": 87,
             "addToCart": 6,
             "purchases": 5
           },
@@ -7102,7 +7122,7 @@
             "productId": "gid://shopify/Product/15499251745092",
             "title": "Fracture Oversized Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated125_3009d002-7de1-4eea-8b0d-60a5bb7538e0.jpg?v=1773565936",
-            "views": 84,
+            "views": 85,
             "addToCart": 3,
             "purchases": 1
           },
@@ -7110,7 +7130,7 @@
             "productId": "gid://shopify/Product/15411830882628",
             "title": "Vitamin Aqua MG Black Double Sleeve",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated066.jpg?v=1766225935",
-            "views": 82,
+            "views": 83,
             "addToCart": 5,
             "purchases": 1
           },
@@ -7118,7 +7138,7 @@
             "productId": "gid://shopify/Product/15419157250372",
             "title": "Vitamin Aqua MG Black Double Sleeve",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated662.jpg?v=1766854599",
-            "views": 82,
+            "views": 83,
             "addToCart": 5,
             "purchases": 1
           },
@@ -7126,7 +7146,7 @@
             "productId": "gid://shopify/Product/15572089995588",
             "title": "Overthinking MS-24 Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/MS244_a4f6a3e1-e75b-4fe2-ae59-09e9102fc218.jpg?v=1786558381",
-            "views": 81,
+            "views": 82,
             "addToCart": 1,
             "purchases": 0
           },
@@ -7134,7 +7154,7 @@
             "productId": "gid://shopify/Product/15572091437380",
             "title": "Overthinking MS-24 Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/ms24man2-_1.jpg?v=1786558334",
-            "views": 81,
+            "views": 82,
             "addToCart": 1,
             "purchases": 0
           },
@@ -7182,7 +7202,7 @@
             "productId": "gid://shopify/Product/15412296745284",
             "title": "Offset Black Sweatpants",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
-            "views": 66,
+            "views": 68,
             "addToCart": 3,
             "purchases": 1
           },
@@ -7190,7 +7210,7 @@
             "productId": "gid://shopify/Product/15419153842500",
             "title": "Offset Black Sweatpants",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated734.jpg?v=1766871341",
-            "views": 66,
+            "views": 68,
             "addToCart": 3,
             "purchases": 0
           },
@@ -7198,7 +7218,7 @@
             "productId": "gid://shopify/Product/7820250448109",
             "title": "AER Black T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_aer_tshirt.jpg?v=1769644685",
-            "views": 64,
+            "views": 65,
             "addToCart": 3,
             "purchases": 1
           },
@@ -7206,9 +7226,25 @@
             "productId": "gid://shopify/Product/7839115542765",
             "title": "AER Black T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/aer-black-t-shirt-657675_49294a87-ec43-4293-801a-57837b4cb19a.jpg?v=1770114192",
-            "views": 64,
+            "views": 65,
             "addToCart": 3,
             "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15412465041732",
+            "title": "Vitamin Aqua MG Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated186.jpg?v=1766267216",
+            "views": 63,
+            "addToCart": 4,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15417915932996",
+            "title": "Vitamin Aqua MG Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated593.jpg?v=1766699424",
+            "views": 63,
+            "addToCart": 4,
+            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15136104382788",
@@ -7219,28 +7255,28 @@
             "purchases": 4
           },
           {
-            "productId": "gid://shopify/Product/15412465041732",
-            "title": "Vitamin Aqua MG Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated186.jpg?v=1766267216",
-            "views": 62,
-            "addToCart": 4,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15417915932996",
-            "title": "Vitamin Aqua MG Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated593.jpg?v=1766699424",
-            "views": 62,
-            "addToCart": 4,
-            "purchases": 1
-          },
-          {
             "productId": "gid://shopify/Product/15590401605956",
             "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_120446_12b5b28c-d728-4ca8-bdb2-a4b21e5fe9c7.jpg?v=1786555960",
             "views": 62,
             "addToCart": 4,
             "purchases": 1
+          },
+          {
+            "productId": "gid://shopify/Product/7820252315885",
+            "title": "Oversized Full Print T-shirt Beige",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_beige_tshirt_42e4b226-e1ad-4dfb-9d33-79f00fc76502.jpg?v=1769644607",
+            "views": 60,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/7843649093869",
+            "title": "Oversized Full Print T-shirt Beige",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Oversized-T-shirt-Beige.jpg?v=1770114428",
+            "views": 60,
+            "addToCart": 0,
+            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/15499161207108",
@@ -7251,26 +7287,10 @@
             "purchases": 1
           },
           {
-            "productId": "gid://shopify/Product/7820252315885",
-            "title": "Oversized Full Print T-shirt Beige",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_beige_tshirt_42e4b226-e1ad-4dfb-9d33-79f00fc76502.jpg?v=1769644607",
-            "views": 59,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7843649093869",
-            "title": "Oversized Full Print T-shirt Beige",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Oversized-T-shirt-Beige.jpg?v=1770114428",
-            "views": 59,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/15638163521860",
             "title": "Lost Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260813_111646_2c192fe8-5550-4b16-b0ce-85eb297a96a5.jpg?v=1786620013",
-            "views": 59,
+            "views": 60,
             "addToCart": 10,
             "purchases": 0
           },
@@ -7291,6 +7311,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/8649103278404",
+            "title": "Oversized Cotton White T-shirt Lucky",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-lucky-464516_5884cb80-ba5e-4029-b86c-3744026db1cc.jpg?v=1770112974",
+            "views": 57,
+            "addToCart": 3,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/8978708431172",
             "title": "Oversized Cotton Black T-shirt Love",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_love_tshirt.jpg?v=1769684186",
@@ -7299,18 +7327,10 @@
             "purchases": 1
           },
           {
-            "productId": "gid://shopify/Product/8649103278404",
-            "title": "Oversized Cotton White T-shirt Lucky",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-lucky-464516_5884cb80-ba5e-4029-b86c-3744026db1cc.jpg?v=1770112974",
-            "views": 56,
-            "addToCart": 3,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/8978719310148",
             "title": "Oversized Cotton White T-shirt Lucky",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_lucky_tshirt.jpg?v=1769824246",
-            "views": 56,
+            "views": 57,
             "addToCart": 3,
             "purchases": 2
           },
@@ -7318,9 +7338,25 @@
             "productId": "gid://shopify/Product/15412697071940",
             "title": "Vitamin Aqua ZN Sweatpants",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated237.jpg?v=1766274244",
-            "views": 51,
+            "views": 52,
             "addToCart": 1,
             "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15586896642372",
+            "title": "MYSIMPLICATED® Blue Collar Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_115032_d2217f8c-a9ae-4e85-b573-bb9f85e2242d.jpg?v=1786556577",
+            "views": 51,
+            "addToCart": 4,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15587072409924",
+            "title": "MYSIMPLICATED® Blue Collar Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_181428-_2_c0b27a7e-d503-4b73-9eb1-566b711712f6.jpg?v=1786556462",
+            "views": 51,
+            "addToCart": 4,
+            "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/15587076374852",
@@ -7355,26 +7391,10 @@
             "purchases": 2
           },
           {
-            "productId": "gid://shopify/Product/15586896642372",
-            "title": "MYSIMPLICATED® Blue Collar Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_115032_d2217f8c-a9ae-4e85-b573-bb9f85e2242d.jpg?v=1786556577",
-            "views": 50,
-            "addToCart": 4,
-            "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/15587072409924",
-            "title": "MYSIMPLICATED® Blue Collar Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_181428-_2_c0b27a7e-d503-4b73-9eb1-566b711712f6.jpg?v=1786556462",
-            "views": 50,
-            "addToCart": 4,
-            "purchases": 2
-          },
-          {
             "productId": "gid://shopify/Product/15415436542276",
             "title": "Vitamin Club Black T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated349.jpg?v=1766440318",
-            "views": 48,
+            "views": 49,
             "addToCart": 0,
             "purchases": 0
           },
@@ -7382,9 +7402,25 @@
             "productId": "gid://shopify/Product/15415485694276",
             "title": "Vitamin Club Black T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated395.jpg?v=1766445574",
-            "views": 48,
+            "views": 49,
             "addToCart": 0,
             "purchases": 1
+          },
+          {
+            "productId": "gid://shopify/Product/15414916514116",
+            "title": "Reversed Club Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated315.jpg?v=1766411090",
+            "views": 48,
+            "addToCart": 3,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15417841549636",
+            "title": "Reversed Club Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated561.jpg?v=1766696856",
+            "views": 48,
+            "addToCart": 3,
+            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/15584665108804",
@@ -7403,19 +7439,19 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15414916514116",
-            "title": "Reversed Club Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated315.jpg?v=1766411090",
+            "productId": "gid://shopify/Product/7820480643309",
+            "title": "Grey Pants (recycled fabric)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4198.jpg?v=1769818273",
             "views": 47,
-            "addToCart": 3,
+            "addToCart": 1,
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15417841549636",
-            "title": "Reversed Club Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated561.jpg?v=1766696856",
+            "productId": "gid://shopify/Product/7839299141869",
+            "title": "Grey Pants (recycled fabric)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_grey_trousers.jpg?v=1770335668",
             "views": 47,
-            "addToCart": 3,
+            "addToCart": 1,
             "purchases": 0
           },
           {
@@ -7425,22 +7461,6 @@
             "views": 47,
             "addToCart": 2,
             "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/7820480643309",
-            "title": "Grey Pants (recycled fabric)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4198.jpg?v=1769818273",
-            "views": 45,
-            "addToCart": 1,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7839299141869",
-            "title": "Grey Pants (recycled fabric)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_grey_trousers.jpg?v=1770335668",
-            "views": 45,
-            "addToCart": 1,
-            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/9074732335428",
@@ -7536,7 +7556,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
             "views": 41,
             "addToCart": 3,
-            "purchases": 3
+            "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/9674414588228",
@@ -7715,6 +7735,22 @@
             "purchases": 1
           },
           {
+            "productId": "gid://shopify/Product/15412527432004",
+            "title": "Untitled Dual Layered Sweater",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated420.jpg?v=1766512950",
+            "views": 35,
+            "addToCart": 2,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15414088433988",
+            "title": "Untitled Dual Layered Sweater",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated257.jpg?v=1766355877",
+            "views": 35,
+            "addToCart": 2,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15414109438276",
             "title": "Pop Cola Pink Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated285.jpg?v=1766359271",
@@ -7723,26 +7759,10 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15412527432004",
-            "title": "Untitled Dual Layered Sweater",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated420.jpg?v=1766512950",
-            "views": 34,
-            "addToCart": 2,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15414088433988",
-            "title": "Untitled Dual Layered Sweater",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated257.jpg?v=1766355877",
-            "views": 34,
-            "addToCart": 2,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/15419437941060",
             "title": "Broken Stripes Jeans",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated724.jpg?v=1766870887",
-            "views": 34,
+            "views": 35,
             "addToCart": 0,
             "purchases": 0
           },
@@ -7750,7 +7770,7 @@
             "productId": "gid://shopify/Product/15419492892996",
             "title": "Broken Stripes Jeans",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated759.jpg?v=1766874542",
-            "views": 34,
+            "views": 35,
             "addToCart": 0,
             "purchases": 0
           },
@@ -7766,7 +7786,7 @@
             "productId": "gid://shopify/Product/8978705908036",
             "title": "Oversized Cotton Black T-shirt 777",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_777_95102fd3-8178-49f6-a14f-d1340899074f.jpg?v=1769826069",
-            "views": 31,
+            "views": 32,
             "addToCart": 2,
             "purchases": 1
           },
@@ -7851,6 +7871,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15590514917700",
+            "title": "Denim Bermuda",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_160855_ec0cfa77-295a-4f3c-8ae0-1b31a9f31c34-_1.jpg?v=1786555920",
+            "views": 29,
+            "addToCart": 2,
+            "purchases": 1
+          },
+          {
             "productId": "gid://shopify/Product/15636759511364",
             "title": "Worldwide Oversized Off-White Tee",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260811_191405_9b4656a9-15ce-4240-84fc-7bd02042e69f-_1.jpg?v=1786555109",
@@ -7865,14 +7893,6 @@
             "views": 28,
             "addToCart": 2,
             "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15590514917700",
-            "title": "Denim Bermuda",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_160855_ec0cfa77-295a-4f3c-8ae0-1b31a9f31c34-_1.jpg?v=1786555920",
-            "views": 28,
-            "addToCart": 2,
-            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/14838735405380",
@@ -7915,6 +7935,22 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/7820397969645",
+            "title": "Bermuda Shorts Stickers (recycled fabric)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_woman.jpg?v=1770378344",
+            "views": 25,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/7839241437421",
+            "title": "Bermuda Shorts Stickers (recycled fabric)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_man.jpg?v=1770378868",
+            "views": 25,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15577399853380",
             "title": "MYSIMPLICATED® Atelier 50/50 Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260618_221443-_1_7ed00544-273c-4904-845a-9920ce927961.jpg?v=1786557671",
@@ -7927,22 +7963,6 @@
             "title": "MYSIMPLICATED® Atelier 50/50 Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260624_124624-_1_7448eff0-2a59-4e86-9d6d-14cb902e4ca7.jpg?v=1786557164",
             "views": 25,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7820397969645",
-            "title": "Bermuda Shorts Stickers (recycled fabric)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_woman.jpg?v=1770378344",
-            "views": 24,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7839241437421",
-            "title": "Bermuda Shorts Stickers (recycled fabric)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_man.jpg?v=1770378868",
-            "views": 24,
             "addToCart": 0,
             "purchases": 0
           },
@@ -7976,6 +7996,14 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-classic-shirt-ribbed-fabric-651197_8983b2a9-9efe-4bec-be8f-15f5e9332825.jpg?v=1770071891",
             "views": 24,
             "addToCart": 2,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/9610181247300",
+            "title": "Set Numbers Short Sleeve Shirt, Pants & Top",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_numbers_set.jpg?v=1769865193",
+            "views": 24,
+            "addToCart": 0,
             "purchases": 0
           },
           {
@@ -8016,14 +8044,6 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/short-sleeve-shirt-mushrooms-recycled-fabric-668148_6b7f5ed1-0f22-4df3-b71a-98a3610cba15.jpg?v=1770074606",
             "views": 23,
             "addToCart": 1,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/9610181247300",
-            "title": "Set Numbers Short Sleeve Shirt, Pants & Top",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_numbers_set.jpg?v=1769865193",
-            "views": 23,
-            "addToCart": 0,
             "purchases": 0
           },
           {
@@ -8128,7 +8148,15 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_215741_52ec5e88-77af-464d-8f2e-aa316d1f58db.jpg?v=1786556343",
             "views": 20,
             "addToCart": 2,
-            "purchases": 2
+            "purchases": 1
+          },
+          {
+            "productId": "gid://shopify/Product/7672697389293",
+            "title": "MYS Windbreaker (customisable)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mys-windbreaker-customisable-430101.jpg?v=1740948876",
+            "views": 19,
+            "addToCart": 0,
+            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/7820362842349",
@@ -8227,14 +8255,6 @@
             "purchases": 2
           },
           {
-            "productId": "gid://shopify/Product/7672697389293",
-            "title": "MYS Windbreaker (customisable)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mys-windbreaker-customisable-430101.jpg?v=1740948876",
-            "views": 18,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/7839293964525",
             "title": "Faces Pants (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4227.jpg?v=1770331547",
@@ -8326,6 +8346,14 @@
             "productId": "gid://shopify/Product/8649032270148",
             "title": "Oversized Cotton White T-shirt Double Eye",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-double-eye-223265_7b871a27-6563-46f0-b7cd-a7ae8300ffea.jpg?v=1770116935",
+            "views": 16,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15584662880580",
+            "title": "Red Horizon Oversized Off-White Tee",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260625_225648_48857dfd-9e94-473f-aafb-7d8493c793b1.jpg?v=1786616994",
             "views": 16,
             "addToCart": 0,
             "purchases": 0
@@ -8435,14 +8463,6 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15584662880580",
-            "title": "Red Horizon Oversized Off-White Tee",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260625_225648_48857dfd-9e94-473f-aafb-7d8493c793b1.jpg?v=1786616994",
-            "views": 15,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
             "productId": "gid://shopify/Product/15620095672644",
             "title": "Blush Cropped Set",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260721_090938_e4b5e386-0ab1-439d-83d4-c2bb26a8f61d.jpg?v=1786555609",
@@ -8523,6 +8543,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/7752903196909",
+            "title": "DOER Windbreaker (customisable)",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/doer-windbreaker-customisable-679244.jpg?v=1740948885",
+            "views": 13,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/9436037185860",
             "title": "Oversized Black T-shirt Staff",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-black-t-shirt-staff-301446_0f8ead1b-4ad7-4d14-8944-4bafaeca15ab.jpg?v=1770117051",
@@ -8534,14 +8562,6 @@
             "productId": "gid://shopify/Product/7731206389997",
             "title": "Black Edgeless Oversized T-shirt (customisable)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-edgeless-oversized-t-shirt-customisable-697289.jpg?v=1740948884",
-            "views": 12,
-            "addToCart": 0,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7752903196909",
-            "title": "DOER Windbreaker (customisable)",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/doer-windbreaker-customisable-679244.jpg?v=1740948885",
             "views": 12,
             "addToCart": 0,
             "purchases": 0
@@ -8635,12 +8655,20 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15457746387268",
+            "title": "Black Rib Cotton Top",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4218.jpg?v=1770054421",
+            "views": 12,
+            "addToCart": 0,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/15587082469700",
             "title": "MYSIMPLICATED® Graphite Bermuda",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_190935_0db3bcc3-2281-4aec-9609-7f6bab44a1fb-_1.jpg?v=1786556380",
             "views": 12,
             "addToCart": 2,
-            "purchases": 1
+            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/7711062720749",
@@ -8664,14 +8692,6 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated513.jpg?v=1766692472",
             "views": 11,
             "addToCart": 2,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15457746387268",
-            "title": "Black Rib Cotton Top",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4218.jpg?v=1770054421",
-            "views": 11,
-            "addToCart": 0,
             "purchases": 0
           },
           {
@@ -8880,8 +8900,8 @@
           "productId": "gid://shopify/Product/7837843849453",
           "title": "Pink DOER  Windbreaker",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
-          "units": 11,
-          "revenue": 5316.09
+          "units": 12,
+          "revenue": 5765.09
         },
         {
           "productId": "gid://shopify/Product/15614948868420",
@@ -10967,6 +10987,12 @@
             "saves": 1
           },
           {
+            "productId": "gid://shopify/Product/7837777559789",
+            "title": "Statue DOER  Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
+            "saves": 1
+          },
+          {
             "productId": "gid://shopify/Product/7837829071085",
             "title": "Third Eye  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
@@ -11006,6 +11032,12 @@
             "productId": "gid://shopify/Product/7843643654381",
             "title": "Long Sleeve Shirt Tigers (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/long-sleeve-shirt-tigers-recycled-fabric-874982_af82aa81-2caf-412c-93f0-d07da39aade3.jpg?v=1770075021",
+            "saves": 1
+          },
+          {
+            "productId": "gid://shopify/Product/7843686711533",
+            "title": "Statue DOER  Windbreaker",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_statue.jpg?v=1769644045",
             "saves": 1
           },
           {
@@ -11327,8 +11359,8 @@
             "saves": 1
           }
         ],
-        "totalSaves": 88,
-        "totalUsers": 42
+        "totalSaves": 89,
+        "totalUsers": 43
       },
       "funnel": {
         "items": [
@@ -11336,7 +11368,7 @@
             "productId": "gid://shopify/Product/14982879248708",
             "title": "Dystopia White Oversized Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dystopia-White-Oversized-Sweater1.jpg?v=1769817561",
-            "views": 2518,
+            "views": 2531,
             "addToCart": 121,
             "purchases": 25
           },
@@ -11344,7 +11376,7 @@
             "productId": "gid://shopify/Product/15499252695364",
             "title": "Fragmented Sleeves Shirt V2",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-            "views": 2423,
+            "views": 2439,
             "addToCart": 157,
             "purchases": 33
           },
@@ -11352,23 +11384,23 @@
             "productId": "gid://shopify/Product/8825186812228",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
-            "views": 1492,
-            "addToCart": 57,
+            "views": 1495,
+            "addToCart": 58,
             "purchases": 4
           },
           {
             "productId": "gid://shopify/Product/15421163340100",
             "title": "Interchangable Patches Black Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated806.jpg?v=1767032584",
-            "views": 1492,
-            "addToCart": 57,
+            "views": 1495,
+            "addToCart": 58,
             "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/15499163468100",
             "title": "Broken Strap Olive Top",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated051_4fcf3053-c16f-4ea8-a0bf-aaa8f71c2c9c.jpg?v=1773534435",
-            "views": 1393,
+            "views": 1394,
             "addToCart": 30,
             "purchases": 2
           },
@@ -11376,15 +11408,15 @@
             "productId": "gid://shopify/Product/7837829071085",
             "title": "Third Eye  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
-            "views": 1356,
-            "addToCart": 50,
+            "views": 1366,
+            "addToCart": 52,
             "purchases": 13
           },
           {
             "productId": "gid://shopify/Product/7820197691629",
             "title": "DOER Ice Cream T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_doer_tshirt.jpg?v=1769644387",
-            "views": 1345,
+            "views": 1348,
             "addToCart": 95,
             "purchases": 11
           },
@@ -11392,23 +11424,23 @@
             "productId": "gid://shopify/Product/15573327249732",
             "title": "Reality Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
-            "views": 1291,
-            "addToCart": 87,
+            "views": 1298,
+            "addToCart": 88,
             "purchases": 3
           },
           {
             "productId": "gid://shopify/Product/15614948868420",
             "title": "Reality Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
-            "views": 1291,
-            "addToCart": 87,
+            "views": 1298,
+            "addToCart": 88,
             "purchases": 15
           },
           {
             "productId": "gid://shopify/Product/8649104851268",
             "title": "Oversized Cotton White T-shirt Spirit",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-spirit-208380_030235ea-5578-4880-b7fb-9d370800162c.jpg?v=1770112894",
-            "views": 1266,
+            "views": 1268,
             "addToCart": 97,
             "purchases": 10
           },
@@ -11416,7 +11448,7 @@
             "productId": "gid://shopify/Product/8978718327108",
             "title": "Oversized Cotton White T-shirt Spirit",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicatet_tshirt_spirit.jpg?v=1769822867",
-            "views": 1266,
+            "views": 1268,
             "addToCart": 97,
             "purchases": 8
           },
@@ -11424,7 +11456,7 @@
             "productId": "gid://shopify/Product/15056634904900",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated203.jpg?v=1766270039",
-            "views": 1179,
+            "views": 1181,
             "addToCart": 59,
             "purchases": 4
           },
@@ -11432,7 +11464,7 @@
             "productId": "gid://shopify/Product/15416222613828",
             "title": "Miau Miau Oversized Ivory T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
-            "views": 1179,
+            "views": 1181,
             "addToCart": 59,
             "purchases": 11
           },
@@ -11440,7 +11472,7 @@
             "productId": "gid://shopify/Product/15414113567044",
             "title": "Arc Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated303.jpg?v=1766360019",
-            "views": 980,
+            "views": 981,
             "addToCart": 51,
             "purchases": 2
           },
@@ -11448,7 +11480,7 @@
             "productId": "gid://shopify/Product/15420232073540",
             "title": "Arc Grey Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated792.jpg?v=1766921733",
-            "views": 980,
+            "views": 981,
             "addToCart": 51,
             "purchases": 2
           },
@@ -11456,7 +11488,7 @@
             "productId": "gid://shopify/Product/15332271063364",
             "title": "Retro Pop Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Retro-Pop-Windbreaker.jpg?v=1771580253",
-            "views": 939,
+            "views": 943,
             "addToCart": 32,
             "purchases": 2
           },
@@ -11464,7 +11496,7 @@
             "productId": "gid://shopify/Product/15446025503044",
             "title": "Retro Pop Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_retro_windbreaker_M1.jpg?v=1769543665",
-            "views": 939,
+            "views": 943,
             "addToCart": 32,
             "purchases": 2
           },
@@ -11472,7 +11504,7 @@
             "productId": "gid://shopify/Product/7837822812397",
             "title": "Beige  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_beige_w4.jpg?v=1769815816",
-            "views": 891,
+            "views": 893,
             "addToCart": 38,
             "purchases": 0
           },
@@ -11480,7 +11512,7 @@
             "productId": "gid://shopify/Product/7843696214253",
             "title": "Beige  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_beige.jpg?v=1769643852",
-            "views": 891,
+            "views": 893,
             "addToCart": 38,
             "purchases": 0
           },
@@ -11488,7 +11520,7 @@
             "productId": "gid://shopify/Product/14980056842564",
             "title": "Anxiety Oversized White T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_anxiety_tshirt1.jpg?v=1769684708",
-            "views": 887,
+            "views": 888,
             "addToCart": 35,
             "purchases": 1
           },
@@ -11496,23 +11528,23 @@
             "productId": "gid://shopify/Product/15588974428484",
             "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-            "views": 878,
-            "addToCart": 55,
+            "views": 882,
+            "addToCart": 56,
             "purchases": 8
           },
           {
             "productId": "gid://shopify/Product/15634869158212",
             "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260810_184412_62064429-5d1e-4fae-90c3-edf9a8c8efd1-_1.jpg?v=1786555154",
-            "views": 878,
-            "addToCart": 55,
+            "views": 882,
+            "addToCart": 56,
             "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/9074771755332",
             "title": "Pop Cola Mix Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-mix-black-oversized-t-shirt-493598_a8863545-1201-422a-8ec2-dcd417b8fa0a.jpg?v=1770115372",
-            "views": 849,
+            "views": 851,
             "addToCart": 27,
             "purchases": 2
           },
@@ -11520,7 +11552,7 @@
             "productId": "gid://shopify/Product/9074773885252",
             "title": "Pop Cola Mix Black Oversized T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_popcola_mix.jpg?v=1769682410",
-            "views": 849,
+            "views": 851,
             "addToCart": 27,
             "purchases": 3
           },
@@ -11528,15 +11560,15 @@
             "productId": "gid://shopify/Product/7837843849453",
             "title": "Pink DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
-            "views": 848,
+            "views": 850,
             "addToCart": 53,
-            "purchases": 11
+            "purchases": 12
           },
           {
             "productId": "gid://shopify/Product/15414933061956",
             "title": "DEPT. GRAPHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated317.jpg?v=1766412528",
-            "views": 831,
+            "views": 833,
             "addToCart": 37,
             "purchases": 1
           },
@@ -11544,7 +11576,7 @@
             "productId": "gid://shopify/Product/15417920848196",
             "title": "DEPT. GRAPHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated620.jpg?v=1766701922",
-            "views": 831,
+            "views": 833,
             "addToCart": 37,
             "purchases": 3
           },
@@ -11552,23 +11584,23 @@
             "productId": "gid://shopify/Product/7837777559789",
             "title": "Statue DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
-            "views": 825,
-            "addToCart": 29,
+            "views": 830,
+            "addToCart": 30,
             "purchases": 6
           },
           {
             "productId": "gid://shopify/Product/7843686711533",
             "title": "Statue DOER  Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_statue.jpg?v=1769644045",
-            "views": 825,
-            "addToCart": 29,
+            "views": 830,
+            "addToCart": 30,
             "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/14994921226564",
             "title": "Complex Minds Checkered Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_checkered_shirt_m1.jpg?v=1769631253",
-            "views": 822,
+            "views": 830,
             "addToCart": 33,
             "purchases": 10
           },
@@ -11576,7 +11608,7 @@
             "productId": "gid://shopify/Product/14996604289348",
             "title": "Complex Minds Checkered Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_204524_0c3a6aa4-e4ff-44e6-84a1-515fc09722cf.jpg?v=1787777353",
-            "views": 822,
+            "views": 830,
             "addToCart": 33,
             "purchases": 2
           },
@@ -11584,7 +11616,7 @@
             "productId": "gid://shopify/Product/15572089995588",
             "title": "Overthinking MS-24 Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/MS244_a4f6a3e1-e75b-4fe2-ae59-09e9102fc218.jpg?v=1786558381",
-            "views": 820,
+            "views": 821,
             "addToCart": 25,
             "purchases": 2
           },
@@ -11592,7 +11624,7 @@
             "productId": "gid://shopify/Product/15572091437380",
             "title": "Overthinking MS-24 Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/ms24man2-_1.jpg?v=1786558334",
-            "views": 820,
+            "views": 821,
             "addToCart": 25,
             "purchases": 1
           },
@@ -11600,7 +11632,7 @@
             "productId": "gid://shopify/Product/14969291276612",
             "title": "Not My Circus White T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
-            "views": 789,
+            "views": 791,
             "addToCart": 33,
             "purchases": 9
           },
@@ -11608,7 +11640,7 @@
             "productId": "gid://shopify/Product/15455598313796",
             "title": "Not My Circus White T-shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_circus1.jpg?v=1769822340",
-            "views": 789,
+            "views": 791,
             "addToCart": 33,
             "purchases": 1
           },
@@ -11616,7 +11648,7 @@
             "productId": "gid://shopify/Product/15499245715780",
             "title": "Split White Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated129_74ef1e9a-d248-426a-9368-311404a90956.jpg?v=1773567724",
-            "views": 762,
+            "views": 763,
             "addToCart": 54,
             "purchases": 3
           },
@@ -11624,7 +11656,7 @@
             "productId": "gid://shopify/Product/15499249942852",
             "title": "Split White Oversized T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
-            "views": 762,
+            "views": 763,
             "addToCart": 54,
             "purchases": 13
           },
@@ -11653,6 +11685,22 @@
             "purchases": 7
           },
           {
+            "productId": "gid://shopify/Product/15629712687428",
+            "title": "777 Mauve Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
+            "views": 627,
+            "addToCart": 42,
+            "purchases": 7
+          },
+          {
+            "productId": "gid://shopify/Product/15630103970116",
+            "title": "777 Mauve Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260804_091046_eb491f35-b1c6-41bb-babc-a4f45c9e4cf5.jpg?v=1786555250",
+            "views": 627,
+            "addToCart": 42,
+            "purchases": 3
+          },
+          {
             "productId": "gid://shopify/Product/15577328255300",
             "title": "MYSIMPLICATED® Atelier Division Overshirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260618_211444_1_4cc0bd3d-98d3-4852-86ef-eb82079d49b9.jpg?v=1786594829",
@@ -11669,26 +11717,10 @@
             "purchases": 1
           },
           {
-            "productId": "gid://shopify/Product/15629712687428",
-            "title": "777 Mauve Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-            "views": 623,
-            "addToCart": 41,
-            "purchases": 7
-          },
-          {
-            "productId": "gid://shopify/Product/15630103970116",
-            "title": "777 Mauve Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260804_091046_eb491f35-b1c6-41bb-babc-a4f45c9e4cf5.jpg?v=1786555250",
-            "views": 623,
-            "addToCart": 41,
-            "purchases": 3
-          },
-          {
             "productId": "gid://shopify/Product/15421171990852",
             "title": "Dystopia Pink Oversized Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated821.jpg?v=1767033677",
-            "views": 586,
+            "views": 589,
             "addToCart": 22,
             "purchases": 2
           },
@@ -11696,7 +11728,7 @@
             "productId": "gid://shopify/Product/15415454728516",
             "title": "Vitamin Club Pink T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated359.jpg?v=1766441249",
-            "views": 573,
+            "views": 574,
             "addToCart": 23,
             "purchases": 0
           },
@@ -11704,7 +11736,7 @@
             "productId": "gid://shopify/Product/15415504240964",
             "title": "Vitamin Club Pink T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated405.jpg?v=1766447510",
-            "views": 573,
+            "views": 574,
             "addToCart": 23,
             "purchases": 2
           },
@@ -11712,7 +11744,7 @@
             "productId": "gid://shopify/Product/7820223250669",
             "title": "Oversized Black T-shirt Superwoman",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_oversizedtshirt_superwoman_c8bc9810-f5c7-4365-913c-cce6077b7547.jpg?v=1769599859",
-            "views": 569,
+            "views": 571,
             "addToCart": 26,
             "purchases": 9
           },
@@ -11741,34 +11773,34 @@
             "purchases": 4
           },
           {
+            "productId": "gid://shopify/Product/8888098619716",
+            "title": "Ivory T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_205443_79f01467-c4b8-41bc-842e-7caad7f75630.jpg?v=1787779168",
+            "views": 512,
+            "addToCart": 41,
+            "purchases": 6
+          },
+          {
             "productId": "gid://shopify/Product/15417796133188",
             "title": "3-in-1 Layered Hoodie V2",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated538.jpg?v=1766694549",
-            "views": 510,
-            "addToCart": 27,
+            "views": 511,
+            "addToCart": 28,
             "purchases": 2
           },
           {
             "productId": "gid://shopify/Product/15417811403076",
             "title": "3-in-1 Layered Hoodie V2",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
-            "views": 510,
-            "addToCart": 27,
+            "views": 511,
+            "addToCart": 28,
             "purchases": 3
-          },
-          {
-            "productId": "gid://shopify/Product/8888098619716",
-            "title": "Ivory T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_205443_79f01467-c4b8-41bc-842e-7caad7f75630.jpg?v=1787779168",
-            "views": 509,
-            "addToCart": 40,
-            "purchases": 6
           },
           {
             "productId": "gid://shopify/Product/15417916752196",
             "title": "MG Black Straight Sweatpants",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated735.jpg?v=1766871485",
-            "views": 507,
+            "views": 508,
             "addToCart": 26,
             "purchases": 3
           },
@@ -11792,7 +11824,7 @@
             "productId": "gid://shopify/Product/15408429302084",
             "title": "DEPT. OFF-WHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated051.jpg?v=1766195246",
-            "views": 459,
+            "views": 461,
             "addToCart": 34,
             "purchases": 2
           },
@@ -11800,7 +11832,7 @@
             "productId": "gid://shopify/Product/15412640219460",
             "title": "DEPT. OFF-WHITE HOODIE",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated207.jpg?v=1766271373",
-            "views": 459,
+            "views": 461,
             "addToCart": 34,
             "purchases": 1
           },
@@ -11808,7 +11840,7 @@
             "productId": "gid://shopify/Product/15614810030404",
             "title": "Dream State Oversized Off-White Tee",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
-            "views": 444,
+            "views": 445,
             "addToCart": 28,
             "purchases": 6
           },
@@ -11816,7 +11848,7 @@
             "productId": "gid://shopify/Product/15614913446212",
             "title": "Dream State Oversized Off-White Tee",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260721_102819_bbf7f7f4-269a-41d0-ab65-e0f74cd99be5.jpg?v=1786555755",
-            "views": 444,
+            "views": 445,
             "addToCart": 28,
             "purchases": 0
           },
@@ -11824,7 +11856,7 @@
             "productId": "gid://shopify/Product/15417912623428",
             "title": "Overthink Club Brown T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Overthink-Club-Brown-T-Shirt1.jpg?v=1779920882",
-            "views": 423,
+            "views": 427,
             "addToCart": 26,
             "purchases": 5
           },
@@ -11832,7 +11864,7 @@
             "productId": "gid://shopify/Product/15572095795524",
             "title": "Fragmented Sleeves Shirt V3",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260617_153753-_1_48c11b68-9ad6-4e06-9eb7-9f0f1f9a10ff.jpg?v=1786558284",
-            "views": 399,
+            "views": 400,
             "addToCart": 11,
             "purchases": 1
           },
@@ -11848,7 +11880,7 @@
             "productId": "gid://shopify/Product/15499251745092",
             "title": "Fracture Oversized Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated125_3009d002-7de1-4eea-8b0d-60a5bb7538e0.jpg?v=1773565936",
-            "views": 393,
+            "views": 394,
             "addToCart": 11,
             "purchases": 3
           },
@@ -11856,7 +11888,7 @@
             "productId": "gid://shopify/Product/15412465041732",
             "title": "Vitamin Aqua MG Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated186.jpg?v=1766267216",
-            "views": 369,
+            "views": 370,
             "addToCart": 18,
             "purchases": 0
           },
@@ -11864,7 +11896,7 @@
             "productId": "gid://shopify/Product/15417915932996",
             "title": "Vitamin Aqua MG Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated593.jpg?v=1766699424",
-            "views": 369,
+            "views": 370,
             "addToCart": 18,
             "purchases": 1
           },
@@ -11872,9 +11904,17 @@
             "productId": "gid://shopify/Product/9657554731332",
             "title": "Animal Print Windbreaker",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_animal_w1.jpg?v=1769815446",
-            "views": 364,
+            "views": 366,
             "addToCart": 25,
             "purchases": 5
+          },
+          {
+            "productId": "gid://shopify/Product/7820250448109",
+            "title": "AER Black T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_aer_tshirt.jpg?v=1769644685",
+            "views": 354,
+            "addToCart": 25,
+            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/7820389974253",
@@ -11885,27 +11925,19 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/7839115542765",
+            "title": "AER Black T-shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/aer-black-t-shirt-657675_49294a87-ec43-4293-801a-57837b4cb19a.jpg?v=1770114192",
+            "views": 354,
+            "addToCart": 25,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/7845659377901",
             "title": "Short Sleeve Shirt Rockets (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/short-sleeve-shirt-rockets-recycled-fabric-958206_07cc187e-2ab8-4d11-970f-7dfef22e7cb0.jpg?v=1770080399",
             "views": 354,
             "addToCart": 7,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/7820250448109",
-            "title": "AER Black T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_aer_tshirt.jpg?v=1769644685",
-            "views": 353,
-            "addToCart": 25,
-            "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/7839115542765",
-            "title": "AER Black T-shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/aer-black-t-shirt-657675_49294a87-ec43-4293-801a-57837b4cb19a.jpg?v=1770114192",
-            "views": 353,
-            "addToCart": 25,
             "purchases": 0
           },
           {
@@ -11925,12 +11957,36 @@
             "purchases": 1
           },
           {
+            "productId": "gid://shopify/Product/15590250840388",
+            "title": "MYSIMPLICATED® Duality Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
+            "views": 338,
+            "addToCart": 38,
+            "purchases": 6
+          },
+          {
             "productId": "gid://shopify/Product/15003405582660",
             "title": "Oversized White T-shirt Need Money for Porsche",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
             "views": 337,
             "addToCart": 22,
             "purchases": 11
+          },
+          {
+            "productId": "gid://shopify/Product/15589180244292",
+            "title": "Blue Stripes Oversized Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_122211-_1_0182a10e-28a0-4261-a557-064737d29d7e.jpg?v=1786556115",
+            "views": 337,
+            "addToCart": 11,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15616900333892",
+            "title": "Blue Stripes Oversized Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
+            "views": 337,
+            "addToCart": 11,
+            "purchases": 4
           },
           {
             "productId": "gid://shopify/Product/15573330395460",
@@ -11941,36 +11997,12 @@
             "purchases": 0
           },
           {
-            "productId": "gid://shopify/Product/15589180244292",
-            "title": "Blue Stripes Oversized Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_122211-_1_0182a10e-28a0-4261-a557-064737d29d7e.jpg?v=1786556115",
-            "views": 336,
-            "addToCart": 11,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15590250840388",
-            "title": "MYSIMPLICATED® Duality Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
-            "views": 336,
-            "addToCart": 37,
-            "purchases": 6
-          },
-          {
             "productId": "gid://shopify/Product/15614951457092",
             "title": "Workwear Ecru Oversized Pocket T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260717_125918_6bae9e90-c49d-483a-a0f4-9ecf3f31de36.jpg?v=1786555496",
             "views": 336,
             "addToCart": 5,
             "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/15616900333892",
-            "title": "Blue Stripes Oversized Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
-            "views": 336,
-            "addToCart": 11,
-            "purchases": 4
           },
           {
             "productId": "gid://shopify/Product/8877513113924",
@@ -11984,7 +12016,7 @@
             "productId": "gid://shopify/Product/15576784240964",
             "title": "MSPCT Patch Tee Faded Rose",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260617_210431_d3ec662e-1a77-4b1d-a9c3-d062f3980d6f.jpg?v=1786557943",
-            "views": 319,
+            "views": 320,
             "addToCart": 14,
             "purchases": 1
           },
@@ -12000,7 +12032,7 @@
             "productId": "gid://shopify/Product/7820252315885",
             "title": "Oversized Full Print T-shirt Beige",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_beige_tshirt_42e4b226-e1ad-4dfb-9d33-79f00fc76502.jpg?v=1769644607",
-            "views": 317,
+            "views": 318,
             "addToCart": 28,
             "purchases": 4
           },
@@ -12008,7 +12040,7 @@
             "productId": "gid://shopify/Product/7843649093869",
             "title": "Oversized Full Print T-shirt Beige",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Oversized-T-shirt-Beige.jpg?v=1770114428",
-            "views": 317,
+            "views": 318,
             "addToCart": 28,
             "purchases": 2
           },
@@ -12024,7 +12056,7 @@
             "productId": "gid://shopify/Product/8649103278404",
             "title": "Oversized Cotton White T-shirt Lucky",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-lucky-464516_5884cb80-ba5e-4029-b86c-3744026db1cc.jpg?v=1770112974",
-            "views": 303,
+            "views": 304,
             "addToCart": 22,
             "purchases": 4
           },
@@ -12032,7 +12064,7 @@
             "productId": "gid://shopify/Product/8978719310148",
             "title": "Oversized Cotton White T-shirt Lucky",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_lucky_tshirt.jpg?v=1769824246",
-            "views": 303,
+            "views": 304,
             "addToCart": 22,
             "purchases": 2
           },
@@ -12104,7 +12136,7 @@
             "productId": "gid://shopify/Product/15586896642372",
             "title": "MYSIMPLICATED® Blue Collar Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_115032_d2217f8c-a9ae-4e85-b573-bb9f85e2242d.jpg?v=1786556577",
-            "views": 261,
+            "views": 262,
             "addToCart": 5,
             "purchases": 1
           },
@@ -12112,7 +12144,7 @@
             "productId": "gid://shopify/Product/15587072409924",
             "title": "MYSIMPLICATED® Blue Collar Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_181428-_2_c0b27a7e-d503-4b73-9eb1-566b711712f6.jpg?v=1786556462",
-            "views": 261,
+            "views": 262,
             "addToCart": 5,
             "purchases": 2
           },
@@ -12120,7 +12152,7 @@
             "productId": "gid://shopify/Product/15412697071940",
             "title": "Vitamin Aqua ZN Sweatpants",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated237.jpg?v=1766274244",
-            "views": 246,
+            "views": 247,
             "addToCart": 11,
             "purchases": 0
           },
@@ -12144,7 +12176,7 @@
             "productId": "gid://shopify/Product/15068676522308",
             "title": "Miau Miau Mornings Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated488.jpg?v=1766530654",
-            "views": 238,
+            "views": 239,
             "addToCart": 8,
             "purchases": 2
           },
@@ -12152,7 +12184,7 @@
             "productId": "gid://shopify/Product/15416230281540",
             "title": "Miau Miau Mornings Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated480.jpg?v=1766530553",
-            "views": 238,
+            "views": 239,
             "addToCart": 8,
             "purchases": 0
           },
@@ -12160,7 +12192,7 @@
             "productId": "gid://shopify/Product/14932056408388",
             "title": "3-in-1 Layered Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_m1.jpg?v=1769604447",
-            "views": 237,
+            "views": 238,
             "addToCart": 15,
             "purchases": 2
           },
@@ -12168,8 +12200,24 @@
             "productId": "gid://shopify/Product/14947608396100",
             "title": "3-in-1 Layered Hoodie",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_w1.jpg?v=1769601948",
-            "views": 237,
+            "views": 238,
             "addToCart": 15,
+            "purchases": 0
+          },
+          {
+            "productId": "gid://shopify/Product/15412296745284",
+            "title": "Offset Black Sweatpants",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
+            "views": 236,
+            "addToCart": 18,
+            "purchases": 2
+          },
+          {
+            "productId": "gid://shopify/Product/15419153842500",
+            "title": "Offset Black Sweatpants",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated734.jpg?v=1766871341",
+            "views": 236,
+            "addToCart": 18,
             "purchases": 0
           },
           {
@@ -12179,22 +12227,6 @@
             "views": 236,
             "addToCart": 12,
             "purchases": 5
-          },
-          {
-            "productId": "gid://shopify/Product/15412296745284",
-            "title": "Offset Black Sweatpants",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
-            "views": 234,
-            "addToCart": 18,
-            "purchases": 2
-          },
-          {
-            "productId": "gid://shopify/Product/15419153842500",
-            "title": "Offset Black Sweatpants",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated734.jpg?v=1766871341",
-            "views": 234,
-            "addToCart": 18,
-            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/15584665108804",
@@ -12224,7 +12256,7 @@
             "productId": "gid://shopify/Product/7820480643309",
             "title": "Grey Pants (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4198.jpg?v=1769818273",
-            "views": 223,
+            "views": 225,
             "addToCart": 8,
             "purchases": 1
           },
@@ -12232,7 +12264,7 @@
             "productId": "gid://shopify/Product/7839299141869",
             "title": "Grey Pants (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_grey_trousers.jpg?v=1770335668",
-            "views": 223,
+            "views": 225,
             "addToCart": 8,
             "purchases": 0
           },
@@ -12240,7 +12272,7 @@
             "productId": "gid://shopify/Product/15411830882628",
             "title": "Vitamin Aqua MG Black Double Sleeve",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated066.jpg?v=1766225935",
-            "views": 222,
+            "views": 223,
             "addToCart": 9,
             "purchases": 1
           },
@@ -12248,23 +12280,15 @@
             "productId": "gid://shopify/Product/15419157250372",
             "title": "Vitamin Aqua MG Black Double Sleeve",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated662.jpg?v=1766854599",
-            "views": 222,
+            "views": 223,
             "addToCart": 9,
-            "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/8978708431172",
-            "title": "Oversized Cotton Black T-shirt Love",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_love_tshirt.jpg?v=1769684186",
-            "views": 216,
-            "addToCart": 17,
             "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/15419437941060",
             "title": "Broken Stripes Jeans",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated724.jpg?v=1766870887",
-            "views": 216,
+            "views": 217,
             "addToCart": 17,
             "purchases": 2
           },
@@ -12272,6 +12296,14 @@
             "productId": "gid://shopify/Product/15419492892996",
             "title": "Broken Stripes Jeans",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated759.jpg?v=1766874542",
+            "views": 217,
+            "addToCart": 17,
+            "purchases": 1
+          },
+          {
+            "productId": "gid://shopify/Product/8978708431172",
+            "title": "Oversized Cotton Black T-shirt Love",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_love_tshirt.jpg?v=1769684186",
             "views": 216,
             "addToCart": 17,
             "purchases": 1
@@ -12376,7 +12408,7 @@
             "productId": "gid://shopify/Product/14798693368132",
             "title": "Black Oversized Love Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-love-sweater-1.jpg?v=1769676679",
-            "views": 186,
+            "views": 187,
             "addToCart": 9,
             "purchases": 2
           },
@@ -12397,6 +12429,22 @@
             "purchases": 4
           },
           {
+            "productId": "gid://shopify/Product/15414916514116",
+            "title": "Reversed Club Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated315.jpg?v=1766411090",
+            "views": 182,
+            "addToCart": 12,
+            "purchases": 1
+          },
+          {
+            "productId": "gid://shopify/Product/15417841549636",
+            "title": "Reversed Club Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated561.jpg?v=1766696856",
+            "views": 182,
+            "addToCart": 12,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/9435991736644",
             "title": "Oversized Cotton White T-shirt Kindness",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_kindness2.jpg?v=1769821274",
@@ -12413,19 +12461,11 @@
             "purchases": 4
           },
           {
-            "productId": "gid://shopify/Product/15414916514116",
-            "title": "Reversed Club Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated315.jpg?v=1766411090",
-            "views": 181,
-            "addToCart": 12,
-            "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/15417841549636",
-            "title": "Reversed Club Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated561.jpg?v=1766696856",
-            "views": 181,
-            "addToCart": 12,
+            "productId": "gid://shopify/Product/15584662880580",
+            "title": "Red Horizon Oversized Off-White Tee",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260625_225648_48857dfd-9e94-473f-aafb-7d8493c793b1.jpg?v=1786616994",
+            "views": 178,
+            "addToCart": 0,
             "purchases": 0
           },
           {
@@ -12442,14 +12482,6 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260624_124624-_1_7448eff0-2a59-4e86-9d6d-14cb902e4ca7.jpg?v=1786557164",
             "views": 177,
             "addToCart": 5,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15584662880580",
-            "title": "Red Horizon Oversized Off-White Tee",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260625_225648_48857dfd-9e94-473f-aafb-7d8493c793b1.jpg?v=1786616994",
-            "views": 177,
-            "addToCart": 0,
             "purchases": 0
           },
           {
@@ -12520,7 +12552,7 @@
             "productId": "gid://shopify/Product/15415436542276",
             "title": "Vitamin Club Black T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated349.jpg?v=1766440318",
-            "views": 162,
+            "views": 163,
             "addToCart": 11,
             "purchases": 0
           },
@@ -12528,7 +12560,7 @@
             "productId": "gid://shopify/Product/15415485694276",
             "title": "Vitamin Club Black T-Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated395.jpg?v=1766445574",
-            "views": 162,
+            "views": 163,
             "addToCart": 11,
             "purchases": 1
           },
@@ -12536,7 +12568,7 @@
             "productId": "gid://shopify/Product/7820397969645",
             "title": "Bermuda Shorts Stickers (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_woman.jpg?v=1770378344",
-            "views": 159,
+            "views": 160,
             "addToCart": 13,
             "purchases": 1
           },
@@ -12544,7 +12576,7 @@
             "productId": "gid://shopify/Product/7839241437421",
             "title": "Bermuda Shorts Stickers (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_man.jpg?v=1770378868",
-            "views": 159,
+            "views": 160,
             "addToCart": 13,
             "purchases": 0
           },
@@ -12597,20 +12629,20 @@
             "purchases": 2
           },
           {
+            "productId": "gid://shopify/Product/15637158494532",
+            "title": "Spirit Grey Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Grey-Spirit_db0be8a9-3ec3-4102-a682-ae7784079885.jpg?v=1786555068",
+            "views": 148,
+            "addToCart": 30,
+            "purchases": 9
+          },
+          {
             "productId": "gid://shopify/Product/15499159699780",
             "title": "Broken Strap Black Top",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated046_7f512298-ed3a-4602-a0d5-330234fde9be.jpg?v=1773532375",
             "views": 147,
             "addToCart": 13,
             "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/15637158494532",
-            "title": "Spirit Grey Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Grey-Spirit_db0be8a9-3ec3-4102-a682-ae7784079885.jpg?v=1786555068",
-            "views": 147,
-            "addToCart": 30,
-            "purchases": 9
           },
           {
             "productId": "gid://shopify/Product/15573320630596",
@@ -12672,7 +12704,7 @@
             "productId": "gid://shopify/Product/9610181247300",
             "title": "Set Numbers Short Sleeve Shirt, Pants & Top",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_numbers_set.jpg?v=1769865193",
-            "views": 125,
+            "views": 126,
             "addToCart": 2,
             "purchases": 1
           },
@@ -12829,19 +12861,19 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/8978705908036",
+            "title": "Oversized Cotton Black T-shirt 777",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_777_95102fd3-8178-49f6-a14f-d1340899074f.jpg?v=1769826069",
+            "views": 101,
+            "addToCart": 2,
+            "purchases": 1
+          },
+          {
             "productId": "gid://shopify/Product/15583466062148",
             "title": "Côte Bleue Short Sleeve Shirt",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/2hf_20260624_085857-_1_26f6b9f5-fc8a-4cc4-a5bc-fcf0f4bcae84.jpg?v=1786557630",
             "views": 101,
             "addToCart": 6,
-            "purchases": 1
-          },
-          {
-            "productId": "gid://shopify/Product/8978705908036",
-            "title": "Oversized Cotton Black T-shirt 777",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_777_95102fd3-8178-49f6-a14f-d1340899074f.jpg?v=1769826069",
-            "views": 100,
-            "addToCart": 2,
             "purchases": 1
           },
           {
@@ -13160,7 +13192,7 @@
             "productId": "gid://shopify/Product/15412527432004",
             "title": "Untitled Dual Layered Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated420.jpg?v=1766512950",
-            "views": 73,
+            "views": 74,
             "addToCart": 8,
             "purchases": 1
           },
@@ -13168,7 +13200,7 @@
             "productId": "gid://shopify/Product/15414088433988",
             "title": "Untitled Dual Layered Sweater",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated257.jpg?v=1766355877",
-            "views": 73,
+            "views": 74,
             "addToCart": 8,
             "purchases": 1
           },
@@ -13232,7 +13264,7 @@
             "productId": "gid://shopify/Product/7672697389293",
             "title": "MYS Windbreaker (customisable)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mys-windbreaker-customisable-430101.jpg?v=1740948876",
-            "views": 63,
+            "views": 64,
             "addToCart": 0,
             "purchases": 0
           },
@@ -13341,6 +13373,14 @@
             "purchases": 0
           },
           {
+            "productId": "gid://shopify/Product/15638163521860",
+            "title": "Lost Grey Oversized T-Shirt",
+            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260813_111646_2c192fe8-5550-4b16-b0ce-85eb297a96a5.jpg?v=1786620013",
+            "views": 60,
+            "addToCart": 10,
+            "purchases": 0
+          },
+          {
             "productId": "gid://shopify/Product/8555334697284",
             "title": "Short Sleeve Shirt & Bermuda Set Snake (recycled fabric)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_snake_set1.jpg?v=1770635504",
@@ -13362,14 +13402,6 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated455.jpg?v=1766526513",
             "views": 59,
             "addToCart": 7,
-            "purchases": 0
-          },
-          {
-            "productId": "gid://shopify/Product/15638163521860",
-            "title": "Lost Grey Oversized T-Shirt",
-            "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260813_111646_2c192fe8-5550-4b16-b0ce-85eb297a96a5.jpg?v=1786620013",
-            "views": 59,
-            "addToCart": 10,
             "purchases": 0
           },
           {
@@ -13488,7 +13520,7 @@
             "productId": "gid://shopify/Product/7752903196909",
             "title": "DOER Windbreaker (customisable)",
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/doer-windbreaker-customisable-679244.jpg?v=1740948885",
-            "views": 46,
+            "views": 47,
             "addToCart": 0,
             "purchases": 0
           },
