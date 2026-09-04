@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T13:45:53.671Z",
+  "generatedAt": "2026-09-04T17:13:44.508Z",
   "planDate": "2026-09-04",
   "unmatchedProducts": [
     "Oversized White T-Shirt With Super-Frida Design W"
@@ -127,29 +127,11 @@
     }
   ],
   "felicia": {
-    "hours": 13.92,
+    "hours": 13.25,
     "capacity": 7.2,
     "items": [
       {
-        "title": "05. T roz L",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "06. Bluza rupta L",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "07. C maneci detasate M",
+        "title": "01. C maneci detasate M",
         "hours": 1.42,
         "tags": [
           "leftover",
@@ -174,14 +156,19 @@
         ]
       },
       {
-        "title": "02. T negru L circus",
-        "hours": 0.67,
+        "title": "02. T negru M",
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235524",
+        "orderName": "#235491, #235524",
         "orderLinks": [
+          {
+            "name": "#235491",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
+            "cod": false
+          },
           {
             "name": "#235524",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
@@ -242,23 +229,18 @@
     ]
   },
   "flori": {
-    "hours": 8.42,
+    "hours": 7.75,
     "capacity": 7.2,
     "items": [
       {
         "title": "01. T mauve full print XS",
-        "hours": 2,
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235491, #235510",
+        "orderName": "#235510",
         "orderLinks": [
-          {
-            "name": "#235491",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
-            "cod": false
-          },
           {
             "name": "#235510",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
@@ -330,14 +312,14 @@
   },
   "croit": [
     {
-      "name": "02. T gri 3 buc XS, 3S, XXL",
+      "name": "02. T gri XXL",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-09-04",
+      "dueOn": "2026-09-07",
       "leftover": false,
       "number": 2,
       "orderLinks": [],
-      "hours": 4.6669,
+      "hours": 0.6667,
       "tags": [
         "asana",
         "predicted"
@@ -988,8 +970,18 @@
   ],
   "croitBuffer": [
     {
+      "gid": "1218146608896537",
+      "name": "T gri Xs - 3 buc si S - 3 buc",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
       "gid": "1218126526129395",
-      "name": "05. T full blue L",
+      "name": "T full blue L",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
