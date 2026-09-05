@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T17:45:14.908Z",
+  "generatedAt": "2026-09-05T19:36:56.055Z",
   "periods": {
     "7": {
       "topSellers": [
@@ -256,13 +256,6 @@
           "revenue": 356.89
         },
         {
-          "productId": "gid://shopify/Product/15587072409924",
-          "title": "MYSIMPLICATED® Blue Collar Shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_181428-_2_c0b27a7e-d503-4b73-9eb1-566b711712f6.jpg?v=1786556462",
-          "units": 1,
-          "revenue": 349
-        },
-        {
           "productId": "gid://shopify/Product/15616900333892",
           "title": "Blue Stripes Oversized Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
@@ -289,13 +282,6 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated821.jpg?v=1767033677",
           "units": 1,
           "revenue": 329
-        },
-        {
-          "productId": "gid://shopify/Product/7820250448109",
-          "title": "AER Black T-shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_aer_tshirt.jpg?v=1769644685",
-          "units": 1,
-          "revenue": 259
         },
         {
           "productId": "gid://shopify/Product/8979258147140",
@@ -397,6 +383,11 @@
         }
       ],
       "zeroSellers": [
+        {
+          "productId": "gid://shopify/Product/7820250448109",
+          "title": "AER Black T-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_aer_tshirt.jpg?v=1769644685"
+        },
         {
           "productId": "gid://shopify/Product/7820252315885",
           "title": "Oversized Full Print T-shirt Beige",
@@ -1628,6 +1619,11 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_115032_d2217f8c-a9ae-4e85-b573-bb9f85e2242d.jpg?v=1786556577"
         },
         {
+          "productId": "gid://shopify/Product/15587072409924",
+          "title": "MYSIMPLICATED® Blue Collar Shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_181428-_2_c0b27a7e-d503-4b73-9eb1-566b711712f6.jpg?v=1786556462"
+        },
+        {
           "productId": "gid://shopify/Product/15587076374852",
           "title": "MYSIMPLICATED® Oversized Black Sleeveless Tee",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_184608_81abb499-93ec-47af-ac9a-5518453036b8-_1.jpg?v=1786556423"
@@ -2562,7 +2558,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_181428-_2_c0b27a7e-d503-4b73-9eb1-566b711712f6.jpg?v=1786556462",
             "views": 18,
             "addToCart": 1,
-            "purchases": 1
+            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/9074754519364",
@@ -2874,7 +2870,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_aer_tshirt.jpg?v=1769644685",
             "views": 11,
             "addToCart": 2,
-            "purchases": 1
+            "purchases": 0
           },
           {
             "productId": "gid://shopify/Product/7820397969645",
@@ -8917,18 +8913,18 @@
           "revenue": 3684.83
         },
         {
-          "productId": "gid://shopify/Product/15416222613828",
-          "title": "Miau Miau Oversized Ivory T-shirt",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
-          "units": 11,
-          "revenue": 3550.55
-        },
-        {
           "productId": "gid://shopify/Product/15499249942852",
           "title": "Split White Oversized T-Shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
           "units": 13,
           "revenue": 3461.25
+        },
+        {
+          "productId": "gid://shopify/Product/15416222613828",
+          "title": "Miau Miau Oversized Ivory T-shirt",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
+          "units": 10,
+          "revenue": 3251.55
         },
         {
           "productId": "gid://shopify/Product/15588974428484",
@@ -9526,13 +9522,6 @@
           "revenue": 519.8
         },
         {
-          "productId": "gid://shopify/Product/7987360563437",
-          "title": "Black Oversized T-Shirt Angel and Devil",
-          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-angel-and-devil-683837_b2521efe-4237-4eb4-8eec-ab2912c56e34.jpg?v=1770114979",
-          "units": 2,
-          "revenue": 518.9
-        },
-        {
           "productId": "gid://shopify/Product/9074771755332",
           "title": "Pop Cola Mix Black Oversized T-shirt",
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/pop-cola-mix-black-oversized-t-shirt-493598_a8863545-1201-422a-8ec2-dcd417b8fa0a.jpg?v=1770115372",
@@ -9965,6 +9954,13 @@
           "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-black-t-shirt-existence-956341_9dde248d-c9f9-4324-9cc0-4b25c2d0ded1.jpg?v=1770116814",
           "units": 1,
           "revenue": 259.9
+        },
+        {
+          "productId": "gid://shopify/Product/7987360563437",
+          "title": "Black Oversized T-Shirt Angel and Devil",
+          "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-angel-and-devil-683837_b2521efe-4237-4eb4-8eec-ab2912c56e34.jpg?v=1770114979",
+          "units": 1,
+          "revenue": 259
         },
         {
           "productId": "gid://shopify/Product/15499159699780",
@@ -11458,7 +11454,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
             "views": 1170,
             "addToCart": 59,
-            "purchases": 11
+            "purchases": 10
           },
           {
             "productId": "gid://shopify/Product/15414113567044",
@@ -13018,7 +13014,7 @@
             "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-angel-and-devil-683837_b2521efe-4237-4eb4-8eec-ab2912c56e34.jpg?v=1770114979",
             "views": 84,
             "addToCart": 7,
-            "purchases": 2
+            "purchases": 1
           },
           {
             "productId": "gid://shopify/Product/7820388139245",
