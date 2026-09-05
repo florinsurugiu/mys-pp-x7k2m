@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T09:34:05.036Z",
+  "generatedAt": "2026-09-05T13:01:37.819Z",
   "planDate": "2026-09-07",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -967,17 +967,22 @@
       ]
     },
     {
-      "name": "H Aria XXL + M",
-      "orderName": "#235545",
+      "name": "H Aria XXL + 2M",
+      "orderName": "#235545, #235557",
       "orderLinks": [
         {
           "name": "#235545",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100799304004",
           "cod": false
+        },
+        {
+          "name": "#235557",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11106907586884",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 2,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
