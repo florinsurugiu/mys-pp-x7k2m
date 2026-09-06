@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T16:59:44.771Z",
+  "generatedAt": "2026-09-06T18:52:17.004Z",
   "planDate": "2026-09-07",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -511,8 +511,8 @@
       ]
     },
     {
-      "name": "W Pink XS + M + S",
-      "orderName": "#235513, #235529, #235554",
+      "name": "W Pink 2XS + M + S",
+      "orderName": "#235513, #235529, #235554, #235564",
       "orderLinks": [
         {
           "name": "#235513",
@@ -528,10 +528,15 @@
           "name": "#235554",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105583530308",
           "cod": false
+        },
+        {
+          "name": "#235564",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120699179332",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 7.5,
+      "hours": 10,
       "leftover": false,
       "tags": [
         "shopify"
@@ -631,17 +636,22 @@
       ]
     },
     {
-      "name": "H negru XL",
-      "orderName": "#235531",
+      "name": "H negru XL + M",
+      "orderName": "#235531, #235565",
       "orderLinks": [
         {
           "name": "#235531",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099178631492",
           "cod": true
+        },
+        {
+          "name": "#235565",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120781164868",
+          "cod": true
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
