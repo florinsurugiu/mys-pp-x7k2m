@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T11:14:13.211Z",
+  "generatedAt": "2026-09-06T14:10:49.487Z",
   "planDate": "2026-09-07",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -576,8 +576,8 @@
       ]
     },
     {
-      "name": "C maneci detasate XL + XS + M + S",
-      "orderName": "#235521, #235535, #235536, #235541",
+      "name": "C maneci detasate XL + XS + 2M + S",
+      "orderName": "#235521, #235535, #235536, #235541, #235559",
       "orderLinks": [
         {
           "name": "#235521",
@@ -598,9 +598,36 @@
           "name": "#235541",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100573040964",
           "cod": true
+        },
+        {
+          "name": "#235559",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120019308868",
+          "cod": true
         }
       ],
       "category": "Camasa Unisex",
+      "hours": 7.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H Patch XL + L",
+      "orderName": "#235525, #235560",
+      "orderLinks": [
+        {
+          "name": "#235525",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097646629188",
+          "cod": false
+        },
+        {
+          "name": "#235560",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120257171780",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac patchuri",
       "hours": 6,
       "leftover": false,
       "tags": [
@@ -904,23 +931,6 @@
       ],
       "category": "Pantalon drept",
       "hours": 2,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H Patch XL",
-      "orderName": "#235525",
-      "orderLinks": [
-        {
-          "name": "#235525",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097646629188",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac patchuri",
-      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
