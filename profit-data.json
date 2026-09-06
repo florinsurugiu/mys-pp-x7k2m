@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-09-06T18:51:59.174Z",
+  "generatedAt": "2026-09-06T21:04:00.885Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.253,
   "days": [
-    {
-      "date": "2026-08-07",
-      "revenue": 3266.91,
-      "cogs": 1434.83,
-      "shipping": 333.2,
-      "adSpend": 497.67,
-      "grossProfit": 1498.88,
-      "netProfit": 1001.21,
-      "roas": 6.56,
-      "unknownCostUnits": 0
-    },
     {
       "date": "2026-08-08",
       "revenue": 1765.33,
@@ -315,13 +304,13 @@
     },
     {
       "date": "2026-09-04",
-      "revenue": 2853.51,
-      "cogs": 1618.62,
+      "revenue": 2622.31,
+      "cogs": 1514.85,
       "shipping": 83.3,
       "adSpend": 692.87,
-      "grossProfit": 1151.59,
-      "netProfit": 458.72,
-      "roas": 4.12,
+      "grossProfit": 1024.16,
+      "netProfit": 331.29,
+      "roas": 3.78,
       "unknownCostUnits": 0
     },
     {
@@ -337,40 +326,40 @@
     },
     {
       "date": "2026-09-06",
-      "revenue": 2071.45,
-      "cogs": 1063.63,
-      "shipping": 333.2,
-      "adSpend": 596.27,
-      "grossProfit": 674.62,
-      "netProfit": 78.35,
-      "roas": 3.47,
+      "revenue": 2642.95,
+      "cogs": 1234.55,
+      "shipping": 416.5,
+      "adSpend": 672.59,
+      "grossProfit": 991.9,
+      "netProfit": 319.31,
+      "roas": 3.93,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
-      "name": "RO 26  march",
-      "spend": 8129.07,
-      "purchases": 100,
-      "metaRoas": 4.311326
+      "name": "DE",
+      "spend": 7928.09,
+      "purchases": 46,
+      "metaRoas": 2.821812
     },
     {
-      "name": "DE",
-      "spend": 8127.76,
-      "purchases": 48,
-      "metaRoas": 2.978368
+      "name": "RO 26  march",
+      "spend": 7894.73,
+      "purchases": 98,
+      "metaRoas": 4.346011
     },
     {
       "name": "Latvia",
-      "spend": 1724.09,
+      "spend": 1734.17,
       "purchases": 12,
-      "metaRoas": 3.120045
+      "metaRoas": 3.101899
     },
     {
       "name": "Single Images",
-      "spend": 458.11,
+      "spend": 460.69,
       "purchases": 7,
-      "metaRoas": 8.035088
+      "metaRoas": 7.990194
     }
   ]
 }
