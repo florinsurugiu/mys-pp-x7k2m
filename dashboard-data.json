@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T18:52:17.004Z",
+  "generatedAt": "2026-09-06T20:55:02.869Z",
   "planDate": "2026-09-07",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,11 +125,11 @@
     }
   ],
   "felicia": {
-    "hours": 7.58,
+    "hours": 13.08,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. C maneci detasate M",
+        "title": "02. C maneci detasate M (DHL)",
         "hours": 1.42,
         "tags": [
           "leftover",
@@ -138,82 +138,39 @@
         ]
       },
       {
-        "title": "01. C Blue XS",
-        "hours": 1.5,
+        "title": "03. T gri XS, S, XXL",
+        "hours": 0.67,
         "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3434101",
-        "orderLinks": [
-          {
-            "name": "WB#3434101",
-            "url": null,
-            "cod": false
-          }
+          "leftover",
+          "asana",
+          "buffer"
         ]
       },
       {
-        "title": "02. T Alb XS + L + S + XL",
-        "hours": 2.67,
+        "title": "04. T alb XS, S",
+        "hours": 0.67,
         "tags": [
-          "shopify"
-        ],
-        "orderName": "#235503, #235524, #235530, #235558",
-        "orderLinks": [
-          {
-            "name": "#235503",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091120423236",
-            "cod": false
-          },
-          {
-            "name": "#235524",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
-            "cod": true
-          },
-          {
-            "name": "#235530",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11098996769092",
-            "cod": false
-          },
-          {
-            "name": "#235558",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11108048339268",
-            "cod": false
-          }
+          "leftover",
+          "asana",
+          "buffer"
         ]
       },
       {
-        "title": "03. T negru L circus",
-        "hours": 2,
+        "title": "05. T mauve full print XS",
+        "hours": 0.67,
         "tags": [
-          "wb",
-          "buffer",
-          "predicted"
-        ],
-        "orderName": "#235524, WB#3435778",
-        "orderLinks": [
-          {
-            "name": "#235524",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
-            "cod": true
-          },
-          {
-            "name": "WB#3435778",
-            "url": null,
-            "cod": false
-          }
+          "leftover",
+          "asana",
+          "buffer"
         ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 7.67,
-    "capacity": 7.2,
-    "items": [
+      },
       {
         "title": "01. H negru dupa ala offwhite L",
-        "hours": 1,
+        "hours": 1.67,
         "tags": [
+          "leftover",
+          "asana",
+          "buffer",
           "shopify",
           "buffer"
         ],
@@ -227,13 +184,15 @@
         ]
       },
       {
-        "title": "02. T mauve full print XS",
-        "hours": 2,
+        "title": "02. Bluza Rupta 4L + S",
+        "hours": 6.67,
         "tags": [
-          "shopify",
-          "buffer"
+          "leftover",
+          "asana",
+          "buffer",
+          "shopify"
         ],
-        "orderName": "#235510, #235491",
+        "orderName": "#235510, #235511, #235543, #235555",
         "orderLinks": [
           {
             "name": "#235510",
@@ -241,8 +200,81 @@
             "cod": false
           },
           {
+            "name": "#235511",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095596237124",
+            "cod": false
+          },
+          {
+            "name": "#235543",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100768862532",
+            "cod": false
+          },
+          {
+            "name": "#235555",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11106214936900",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. T gri XXL",
+        "hours": 1.33,
+        "tags": [
+          "wb",
+          "predicted"
+        ],
+        "orderName": "WB#3435778",
+        "orderLinks": [
+          {
+            "name": "WB#3435778",
+            "url": null,
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 11.5,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "01. T mauve full print XS",
+        "hours": 2.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235491, #235510, #235524",
+        "orderLinks": [
+          {
             "name": "#235491",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11087278113092",
+            "cod": false
+          },
+          {
+            "name": "#235510",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095299752260",
+            "cod": false
+          },
+          {
+            "name": "#235524",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "02. C Blue XS",
+        "hours": 1.5,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3434101",
+        "orderLinks": [
+          {
+            "name": "WB#3434101",
+            "url": null,
             "cod": false
           }
         ]
@@ -288,6 +320,36 @@
           {
             "name": "#235551",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105326530884",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. T Alb XS + L + S + XL",
+        "hours": 2.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235503, #235524, #235530, #235558",
+        "orderLinks": [
+          {
+            "name": "#235503",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11091120423236",
+            "cod": false
+          },
+          {
+            "name": "#235524",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097582666052",
+            "cod": true
+          },
+          {
+            "name": "#235530",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11098996769092",
+            "cod": false
+          },
+          {
+            "name": "#235558",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11108048339268",
             "cod": false
           }
         ]
@@ -619,17 +681,22 @@
       ]
     },
     {
-      "name": "C Blue XXL",
-      "orderName": "#235526",
+      "name": "C Blue XXL + XL",
+      "orderName": "#235526, #235566",
       "orderLinks": [
         {
           "name": "#235526",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097663013188",
           "cod": true
+        },
+        {
+          "name": "#235566",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11121100652868",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 1.5,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -747,28 +814,6 @@
       ],
       "category": "Tricou simplu",
       "hours": 2.0000999999999998,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Roz S + XXL",
-      "orderName": "#235551, #235552",
-      "orderLinks": [
-        {
-          "name": "#235551",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105326530884",
-          "cod": false
-        },
-        {
-          "name": "#235552",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105333379396",
-          "cod": true
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1031,6 +1076,23 @@
       ]
     },
     {
+      "name": "T Roz S",
+      "orderName": "#235551",
+      "orderLinks": [
+        {
+          "name": "#235551",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105326530884",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "W Animal Print S",
       "orderName": "#235553",
       "orderLinks": [
@@ -1106,26 +1168,6 @@
     {
       "gid": "1218086416821175",
       "name": "T alb L (kindness)",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1218086416821173",
-      "name": "T alb S (Porsche)",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1218086416821171",
-      "name": "T alb XS (777)",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
