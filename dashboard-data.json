@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T22:07:41.449Z",
+  "generatedAt": "2026-09-08T00:20:44.683Z",
   "planDate": "2026-09-08",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -34,30 +34,6 @@
       "category": "Tricou simplu",
       "size": "XL",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15590250840388",
-      "title": "MYSIMPLICATED® Duality Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
-      "category": "Camasa Unisex",
-      "size": "XXL",
-      "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15420232073540",
-      "title": "Arc Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated792.jpg?v=1766921733",
-      "category": "Tricou simplu",
-      "size": "S",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15586981314884",
-      "title": "MYSIMPLICATED® Oversized White Sleeveless Tee",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_133900-_1_23c0fef5-8daf-4b50-a80e-18de863d3966.jpg?v=1786556503",
-      "category": "Maiou",
-      "size": "L",
-      "hours": 0.5
     },
     {
       "productId": "gid://shopify/Product/9436029976900",
@@ -121,6 +97,30 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
       "category": "Hanorac bumbac",
       "size": "S",
+      "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/15416222613828",
+      "title": "Miau Miau Oversized Ivory T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
+      "category": "Tricou simplu",
+      "size": "XL",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15003405582660",
+      "title": "Oversized White T-shirt Need Money for Porsche",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
+      "category": "Tricou simplu",
+      "size": "S",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15440579035460",
+      "title": "DEPT. BLACK HOODIE",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dept-Hoodie-Black2.jpg?v=1769083167",
+      "category": "Hanorac bumbac",
+      "size": "L",
       "hours": 1
     }
   ],
@@ -874,6 +874,23 @@
         {
           "name": "#235563",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120486252868",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Portocaliu S",
+      "orderName": "#235571",
+      "orderLinks": [
+        {
+          "name": "#235571",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11123126141252",
           "cod": false
         }
       ],
