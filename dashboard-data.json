@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T04:54:06.301Z",
+  "generatedAt": "2026-09-08T09:12:41.720Z",
   "planDate": "2026-09-08",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -50,6 +50,14 @@
       "category": "Camasa Unisex",
       "size": "XL",
       "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15573327249732",
+      "title": "Reality Grey Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
+      "category": "Tricou simplu",
+      "size": "XXL",
+      "hours": 0.6667
     },
     {
       "productId": "gid://shopify/Product/15416222613828",
@@ -114,18 +122,10 @@
       "category": "Tricou simplu",
       "size": "S",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15440579035460",
-      "title": "DEPT. BLACK HOODIE",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dept-Hoodie-Black2.jpg?v=1769083167",
-      "category": "Hanorac bumbac",
-      "size": "L",
-      "hours": 1
     }
   ],
   "felicia": {
-    "hours": 7.67,
+    "hours": 14.33,
     "capacity": 7.2,
     "items": [
       {
@@ -138,7 +138,7 @@
         ]
       },
       {
-        "title": "01. H negru dept L (DHL)",
+        "title": "01. H negru L (DHL)",
         "hours": 1,
         "tags": [
           "leftover",
@@ -165,23 +165,16 @@
         ]
       },
       {
-        "title": "01. T negru L",
+        "title": "06. B rupta roz, alb L",
         "hours": 0.67,
         "tags": [
-          "shopify",
+          "leftover",
+          "asana",
           "buffer"
-        ],
-        "orderName": "#235548",
-        "orderLinks": [
-          {
-            "name": "#235548",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11104381239620",
-            "cod": true
-          }
         ]
       },
       {
-        "title": "02. W Statue XL ",
+        "title": "01. W Statue XL ",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -197,16 +190,41 @@
         ]
       },
       {
-        "title": "03. C Blue XS",
-        "hours": 1.5,
+        "title": "02. T alb S",
+        "hours": 0.67,
         "tags": [
           "wb"
         ],
-        "orderName": "WB#3434101",
+        "orderName": "WB#3435778",
         "orderLinks": [
           {
-            "name": "WB#3434101",
+            "name": "WB#3435778",
             "url": null,
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. W Pink 2XS + M",
+        "hours": 7.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235513, #235529, #235564",
+        "orderLinks": [
+          {
+            "name": "#235513",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11095771119940",
+            "cod": true
+          },
+          {
+            "name": "#235529",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097957302596",
+            "cod": false
+          },
+          {
+            "name": "#235564",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120699179332",
             "cod": false
           }
         ]
@@ -227,32 +245,22 @@
         ]
       },
       {
-        "title": "01. Bermude galbene M",
-        "hours": 3,
+        "title": "02. Bermude galbene 4L, 5M (1L are defect) ",
+        "hours": 1.5,
         "tags": [
           "leftover",
           "asana",
-          "buffer",
-          "shopify",
           "buffer"
-        ],
-        "orderName": "#235531",
-        "orderLinks": [
-          {
-            "name": "#235531",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099178631492",
-            "cod": true
-          }
         ]
       },
       {
-        "title": "02. T negru M",
+        "title": "01. T negru M",
         "hours": 2,
         "tags": [
-          "wb",
+          "shopify",
           "buffer"
         ],
-        "orderName": "#235543, #235553, WB#3435778",
+        "orderName": "#235543, #235548, #235553",
         "orderLinks": [
           {
             "name": "#235543",
@@ -260,12 +268,27 @@
             "cod": false
           },
           {
+            "name": "#235548",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11104381239620",
+            "cod": true
+          },
+          {
             "name": "#235553",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105426309444",
             "cod": false
-          },
+          }
+        ]
+      },
+      {
+        "title": "02. C Blue XS",
+        "hours": 1.5,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3434101",
+        "orderLinks": [
           {
-            "name": "WB#3435778",
+            "name": "WB#3434101",
             "url": null,
             "cod": false
           }
@@ -275,12 +298,12 @@
   },
   "croit": [
     {
-      "name": "03. C complex rosu XL 2 buc",
+      "name": "01. C complex rosu XL 2 buc",
       "orderName": null,
       "category": "Camasa scurta",
-      "dueOn": null,
+      "dueOn": "2026-09-08",
       "leftover": false,
-      "number": 3,
+      "number": 1,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
@@ -289,12 +312,26 @@
       ]
     },
     {
-      "name": "06. H negru XL",
+      "name": "02. H negru XL",
       "orderName": null,
       "category": "Hanorac bumbac",
-      "dueOn": null,
+      "dueOn": "2026-09-08",
       "leftover": false,
-      "number": 6,
+      "number": 2,
+      "orderLinks": [],
+      "hours": 1,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "03. H patch XL",
+      "orderName": null,
+      "category": "Hanorac bumbac",
+      "dueOn": "2026-09-08",
+      "leftover": false,
+      "number": 3,
       "orderLinks": [],
       "hours": 1,
       "tags": [
@@ -306,7 +343,7 @@
       "name": "07. Bermude blug gri XL",
       "orderName": null,
       "category": "Bermude",
-      "dueOn": null,
+      "dueOn": "2026-09-08",
       "leftover": false,
       "number": 7,
       "orderLinks": [],
@@ -320,7 +357,7 @@
       "name": "08. W pink XS",
       "orderName": null,
       "category": "Windbreaker",
-      "dueOn": null,
+      "dueOn": "2026-09-08",
       "leftover": false,
       "number": 8,
       "orderLinks": [],
@@ -473,8 +510,8 @@
       ]
     },
     {
-      "name": "C Blue XXL + XL",
-      "orderName": "#235526, #235566",
+      "name": "C Blue XXL + XL + L",
+      "orderName": "#235526, #235566, #235573",
       "orderLinks": [
         {
           "name": "#235526",
@@ -485,18 +522,23 @@
           "name": "#235566",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11121100652868",
           "cod": false
+        },
+        {
+          "name": "#235573",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11123549864260",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 3,
+      "hours": 4.5,
       "leftover": false,
       "tags": [
         "shopify"
       ]
     },
     {
-      "name": "T Gri 2S + XS + XL",
-      "orderName": "#235527, #235531, #235543, #235569",
+      "name": "T Gri 2S + XS",
+      "orderName": "#235527, #235531, #235543",
       "orderLinks": [
         {
           "name": "#235527",
@@ -512,15 +554,10 @@
           "name": "#235543",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100768862532",
           "cod": false
-        },
-        {
-          "name": "#235569",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122959188292",
-          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 2.6668,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
@@ -572,6 +609,23 @@
       ],
       "category": "Windbreaker",
       "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Bermude Grey Denim XL",
+      "orderName": "#235531",
+      "orderLinks": [
+        {
+          "name": "#235531",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099178631492",
+          "cod": true
+        }
+      ],
+      "category": "Bermude",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -661,8 +715,8 @@
       ]
     },
     {
-      "name": "T Offwhite 2 buc XL",
-      "orderName": "#235558, #235570",
+      "name": "T Offwhite 3 buc XL",
+      "orderName": "#235558, #235570, #235572",
       "orderLinks": [
         {
           "name": "#235558",
@@ -673,10 +727,15 @@
           "name": "#235570",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122989039940",
           "cod": true
+        },
+        {
+          "name": "#235572",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11123455754564",
+          "cod": true
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
@@ -904,8 +963,8 @@
   ],
   "croitBuffer": [
     {
-      "gid": "1218234073243544",
-      "name": "Dystopia roz, alb L",
+      "gid": "1206027661472877",
+      "name": "0. Peel folie alba",
       "orderName": null,
       "category": null,
       "tags": [
