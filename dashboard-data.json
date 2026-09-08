@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T13:36:12.035Z",
+  "generatedAt": "2026-09-08T17:29:12.338Z",
   "planDate": "2026-09-08",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,20 +125,11 @@
     }
   ],
   "felicia": {
-    "hours": 12.42,
+    "hours": 13.75,
     "capacity": 7.2,
     "items": [
       {
-        "title": "03. B rupta roz, alb L",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "04. C complex rosu XL 2 buc",
+        "title": "01. C complex rosu XL 2 buc (DHL)",
         "hours": 1.42,
         "tags": [
           "leftover",
@@ -147,7 +138,7 @@
         ]
       },
       {
-        "title": "05. Bermude blug gri XL",
+        "title": "02. Bermude blug gri XL",
         "hours": 1.5,
         "tags": [
           "leftover",
@@ -156,70 +147,17 @@
         ]
       },
       {
-        "title": "01. T negru L",
-        "hours": 1.33,
+        "title": "03. H patch XL",
+        "hours": 1,
         "tags": [
-          "shopify",
+          "leftover",
+          "asana",
           "buffer"
-        ],
-        "orderName": "#235548, #235543",
-        "orderLinks": [
-          {
-            "name": "#235548",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11104381239620",
-            "cod": true
-          },
-          {
-            "name": "#235543",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100768862532",
-            "cod": false
-          }
         ]
       },
       {
-        "title": "02. C Blue XS",
-        "hours": 1.5,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3434101",
-        "orderLinks": [
-          {
-            "name": "WB#3434101",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. H Patch XL + L",
-        "hours": 6,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235525, #235560",
-        "orderLinks": [
-          {
-            "name": "#235525",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097646629188",
-            "cod": false
-          },
-          {
-            "name": "#235560",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120257171780",
-            "cod": true
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 13.83,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "02. Bermude galbene 4L, 5M (1L are defect) ",
-        "hours": 1.5,
+        "title": "03. H negru XL",
+        "hours": 1,
         "tags": [
           "leftover",
           "asana",
@@ -248,39 +186,7 @@
         ]
       },
       {
-        "title": "02. H negru XL",
-        "hours": 1,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235545",
-        "orderLinks": [
-          {
-            "name": "#235545",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100799304004",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. W Statue XL ",
-        "hours": 2.5,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235570",
-        "orderLinks": [
-          {
-            "name": "#235570",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122989039940",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. C maneci detasate XL + 2M + S + L",
+        "title": "02. C maneci detasate XL + 2M + S + L",
         "hours": 7.5,
         "tags": [
           "shopify"
@@ -316,42 +222,101 @@
       }
     ]
   },
+  "flori": {
+    "hours": 12.83,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "02. Bermude galbene 5L, 5M",
+        "hours": 1.5,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. T negru M",
+        "hours": 1.33,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235543, #235548",
+        "orderLinks": [
+          {
+            "name": "#235543",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100768862532",
+            "cod": false
+          },
+          {
+            "name": "#235548",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11104381239620",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "02. W Statue XL ",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235570",
+        "orderLinks": [
+          {
+            "name": "#235570",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122989039940",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. C Blue XS",
+        "hours": 1.5,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3434101",
+        "orderLinks": [
+          {
+            "name": "WB#3434101",
+            "url": null,
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. H Patch XL + L",
+        "hours": 6,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235525, #235560",
+        "orderLinks": [
+          {
+            "name": "#235525",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097646629188",
+            "cod": false
+          },
+          {
+            "name": "#235560",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120257171780",
+            "cod": true
+          }
+        ]
+      }
+    ]
+  },
   "croit": [
     {
-      "name": "03. H patch XL",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-09-08",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "05. Bermude blug gri XL",
-      "orderName": null,
-      "category": "Bermude",
-      "dueOn": "2026-09-08",
-      "leftover": false,
-      "number": 5,
-      "orderLinks": [],
-      "hours": 1.5,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "05. W pink XS",
+      "name": "0. W pink XS",
       "orderName": null,
       "category": "Windbreaker",
-      "dueOn": "2026-09-08",
+      "dueOn": "2026-09-09",
       "leftover": false,
-      "number": 5,
+      "number": 0,
       "orderLinks": [],
       "hours": 2.5,
       "tags": [
@@ -360,12 +325,26 @@
       ]
     },
     {
-      "name": "06. C maneci detasate XL",
+      "name": "01. Bermude blug gri XL",
+      "orderName": null,
+      "category": "Bermude",
+      "dueOn": "2026-09-09",
+      "leftover": false,
+      "number": 1,
+      "orderLinks": [],
+      "hours": 1.5,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "02. C maneci detasate XL",
       "orderName": null,
       "category": "Camasa scurta",
-      "dueOn": null,
+      "dueOn": "2026-09-09",
       "leftover": false,
-      "number": 6,
+      "number": 2,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
@@ -560,6 +539,23 @@
       ]
     },
     {
+      "name": "C Bal scurta maro XXL",
+      "orderName": "#235576",
+      "orderLinks": [
+        {
+          "name": "#235576",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11124490764612",
+          "cod": true
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 1.4167,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Mov M + S",
       "orderName": "#235523, #235527",
       "orderLinks": [
@@ -699,7 +695,7 @@
       ]
     },
     {
-      "name": "H Aria 2M",
+      "name": "H Aria XXL + 2M",
       "orderName": "#235545, #235557",
       "orderLinks": [
         {
@@ -714,7 +710,7 @@
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 2,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -838,9 +834,36 @@
       "tags": [
         "shopify"
       ]
+    },
+    {
+      "name": "H offwhite M",
+      "orderName": "#235575",
+      "orderLinks": [
+        {
+          "name": "#235575",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11124419658052",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1218255532946048",
+      "name": "04. P men long XL",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1218146608896537",
       "name": "T gri Xs si S - 2 buc",
