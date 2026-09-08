@@ -1,7 +1,9 @@
 {
-  "generatedAt": "2026-09-08T20:04:47.554Z",
-  "planDate": "2026-09-08",
-  "unmatchedProducts": [],
+  "generatedAt": "2026-09-08T22:36:59.026Z",
+  "planDate": "2026-09-09",
+  "unmatchedProducts": [
+    "Fanny Pack Dust"
+  ],
   "predictionIdeas": [
     {
       "productId": "gid://shopify/Product/15499249942852",
@@ -125,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 13.75,
+    "hours": 11.58,
     "capacity": 7.2,
     "items": [
       {
@@ -147,15 +149,6 @@
         ]
       },
       {
-        "title": "03. H patch XL",
-        "hours": 1,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
         "title": "03. H negru XL",
         "hours": 1,
         "tags": [
@@ -165,65 +158,48 @@
         ]
       },
       {
-        "title": "01. T negru L circus",
-        "hours": 1.33,
+        "title": "01. H Patch 2 buc XL + L",
+        "hours": 7,
         "tags": [
-          "wb",
+          "leftover",
+          "asana",
+          "buffer",
+          "shopify"
+        ],
+        "orderName": "#235525, #235560",
+        "orderLinks": [
+          {
+            "name": "#235525",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097646629188",
+            "cod": false
+          },
+          {
+            "name": "#235560",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120257171780",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "02. T negru L circus",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
           "buffer"
         ],
-        "orderName": "#235553, WB#3435778",
+        "orderName": "#235553",
         "orderLinks": [
           {
             "name": "#235553",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105426309444",
             "cod": false
-          },
-          {
-            "name": "WB#3435778",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. C maneci detasate XL + 2M + S + L",
-        "hours": 7.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235521, #235536, #235541, #235559, #235568",
-        "orderLinks": [
-          {
-            "name": "#235521",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097187156292",
-            "cod": false
-          },
-          {
-            "name": "#235536",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099675623748",
-            "cod": false
-          },
-          {
-            "name": "#235541",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100573040964",
-            "cod": true
-          },
-          {
-            "name": "#235559",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120019308868",
-            "cod": true
-          },
-          {
-            "name": "#235568",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122437030212",
-            "cod": true
           }
         ]
       }
     ]
   },
   "flori": {
-    "hours": 12.83,
+    "hours": 14.33,
     "capacity": 7.2,
     "items": [
       {
@@ -273,36 +249,41 @@
         ]
       },
       {
-        "title": "03. C Blue XS",
-        "hours": 1.5,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3434101",
-        "orderLinks": [
-          {
-            "name": "WB#3434101",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. H Patch XL + L",
-        "hours": 6,
+        "title": "03. C maneci detasate XL + 3M + S + L",
+        "hours": 9,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235525, #235560",
+        "orderName": "#235521, #235536, #235541, #235559, #235568, #235578",
         "orderLinks": [
           {
-            "name": "#235525",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097646629188",
+            "name": "#235521",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097187156292",
             "cod": false
           },
           {
-            "name": "#235560",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120257171780",
+            "name": "#235536",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099675623748",
+            "cod": false
+          },
+          {
+            "name": "#235541",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100573040964",
+            "cod": true
+          },
+          {
+            "name": "#235559",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120019308868",
+            "cod": true
+          },
+          {
+            "name": "#235568",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122437030212",
+            "cod": true
+          },
+          {
+            "name": "#235578",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11125171945796",
             "cod": true
           }
         ]
@@ -353,42 +334,8 @@
       ]
     },
     {
-      "name": "C Blue XS",
-      "orderName": "WB#3434101",
-      "orderLinks": [
-        {
-          "name": "WB#3434101",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "wb"
-      ]
-    },
-    {
-      "name": "T alb S",
-      "orderName": "WB#3435778",
-      "orderLinks": [
-        {
-          "name": "WB#3435778",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "wb"
-      ]
-    },
-    {
-      "name": "C maneci detasate XL + 2M + S + L",
-      "orderName": "#235521, #235536, #235541, #235559, #235568",
+      "name": "C maneci detasate XL + 3M + S + L",
+      "orderName": "#235521, #235536, #235541, #235559, #235568, #235578",
       "orderLinks": [
         {
           "name": "#235521",
@@ -414,10 +361,15 @@
           "name": "#235568",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122437030212",
           "cod": true
+        },
+        {
+          "name": "#235578",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11125171945796",
+          "cod": true
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 7.5,
+      "hours": 9,
       "leftover": false,
       "tags": [
         "shopify"
@@ -539,17 +491,22 @@
       ]
     },
     {
-      "name": "C Bal scurta maro XXL",
-      "orderName": "#235576",
+      "name": "C Bal scurta maro 2XXL",
+      "orderName": "#235576, #235577",
       "orderLinks": [
         {
           "name": "#235576",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11124490764612",
           "cod": true
+        },
+        {
+          "name": "#235577",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11125154644292",
+          "cod": true
         }
       ],
       "category": "Camasa scurta",
-      "hours": 1.4167,
+      "hours": 2.8334,
       "leftover": false,
       "tags": [
         "shopify"
