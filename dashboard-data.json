@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T17:25:27.457Z",
+  "generatedAt": "2026-09-09T19:53:24.665Z",
   "planDate": "2026-09-09",
   "unmatchedProducts": [
     "Fanny Pack Dust"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 16.08,
+    "hours": 10.5,
     "capacity": 7.2,
     "items": [
       {
@@ -158,8 +158,8 @@
         ]
       },
       {
-        "title": "06. H patch XL",
-        "hours": 1,
+        "title": "08. C maneci detasate XS",
+        "hours": 1.42,
         "tags": [
           "leftover",
           "asana",
@@ -167,46 +167,26 @@
         ]
       },
       {
-        "title": "01. C maneci detasate XL + 4M + S + L",
-        "hours": 10.5,
+        "title": "01. C Blue XXL + XL + L",
+        "hours": 4.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235521, #235536, #235541, #235559, #235568, #235578, #235583",
+        "orderName": "#235526, #235566, #235573",
         "orderLinks": [
           {
-            "name": "#235521",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097187156292",
+            "name": "#235526",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097663013188",
+            "cod": true
+          },
+          {
+            "name": "#235566",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11121100652868",
             "cod": false
           },
           {
-            "name": "#235536",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099675623748",
-            "cod": false
-          },
-          {
-            "name": "#235541",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100573040964",
-            "cod": true
-          },
-          {
-            "name": "#235559",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120019308868",
-            "cod": true
-          },
-          {
-            "name": "#235568",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122437030212",
-            "cod": true
-          },
-          {
-            "name": "#235578",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11125171945796",
-            "cod": true
-          },
-          {
-            "name": "#235583",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11126426763588",
+            "name": "#235573",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11123549864260",
             "cod": false
           }
         ]
@@ -214,12 +194,12 @@
     ]
   },
   "flori": {
-    "hours": 10.5,
+    "hours": 16,
     "capacity": 7.2,
     "items": [
       {
-        "title": "02. Bermude galbene 5L, 5M",
-        "hours": 1.5,
+        "title": "02. H patch XL",
+        "hours": 1,
         "tags": [
           "leftover",
           "asana",
@@ -269,26 +249,46 @@
         ]
       },
       {
-        "title": "03. C Blue XXL + XL + L",
-        "hours": 4.5,
+        "title": "03. C maneci detasate XL + 4M + S + L",
+        "hours": 10.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235526, #235566, #235573",
+        "orderName": "#235521, #235536, #235541, #235559, #235568, #235578, #235583",
         "orderLinks": [
           {
-            "name": "#235526",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097663013188",
-            "cod": true
-          },
-          {
-            "name": "#235566",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11121100652868",
+            "name": "#235521",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097187156292",
             "cod": false
           },
           {
-            "name": "#235573",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11123549864260",
+            "name": "#235536",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099675623748",
+            "cod": false
+          },
+          {
+            "name": "#235541",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100573040964",
+            "cod": true
+          },
+          {
+            "name": "#235559",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120019308868",
+            "cod": true
+          },
+          {
+            "name": "#235568",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122437030212",
+            "cod": true
+          },
+          {
+            "name": "#235578",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11125171945796",
+            "cod": true
+          },
+          {
+            "name": "#235583",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11126426763588",
             "cod": false
           }
         ]
@@ -483,8 +483,8 @@
       ]
     },
     {
-      "name": "T Offwhite 2 buc XL",
-      "orderName": "#235558, #235570",
+      "name": "T Offwhite 3 buc XL",
+      "orderName": "#235558, #235570, #235584",
       "orderLinks": [
         {
           "name": "#235558",
@@ -495,10 +495,15 @@
           "name": "#235570",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122989039940",
           "cod": true
+        },
+        {
+          "name": "#235584",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11126945841476",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
@@ -795,6 +800,23 @@
       "tags": [
         "shopify"
       ]
+    },
+    {
+      "name": "H Layers V1 L",
+      "orderName": "#235584",
+      "orderLinks": [
+        {
+          "name": "#235584",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11126945841476",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
     }
   ],
   "croitBuffer": [
@@ -803,16 +825,6 @@
       "name": "T gri Xs si S - 2 buc",
       "orderName": null,
       "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1217770970577400",
-      "name": "C maneci detasate XS",
-      "orderName": null,
-      "category": "Camasa scurta",
       "tags": [
         "predicted",
         "asana"
