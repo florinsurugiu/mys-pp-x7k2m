@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-10T19:39:37.980Z",
-  "planDate": "2026-09-10",
+  "generatedAt": "2026-09-10T21:52:56.898Z",
+  "planDate": "2026-09-11",
   "unmatchedProducts": [
     "[#235589] Flower Boy Oversized Off-White Tee",
     "[#235592] Bra Overlay Black Hoodie"
@@ -128,7 +128,7 @@
     }
   ],
   "felicia": {
-    "hours": 15.5,
+    "hours": 17,
     "capacity": 7.2,
     "items": [
       {
@@ -159,15 +159,15 @@
         ]
       },
       {
-        "title": "01. C maneci detasate 5M + S + L + XL",
-        "hours": 11.92,
+        "title": "01. C maneci detasate 5M + 2S + L + XL",
+        "hours": 13.42,
         "tags": [
           "leftover",
           "asana",
           "buffer",
           "shopify"
         ],
-        "orderName": "#235536, #235541, #235559, #235568, #235578, #235583, #235585",
+        "orderName": "#235536, #235541, #235559, #235568, #235578, #235583, #235585, #235595",
         "orderLinks": [
           {
             "name": "#235536",
@@ -202,6 +202,11 @@
           {
             "name": "#235585",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11126953345348",
+            "cod": true
+          },
+          {
+            "name": "#235595",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128621105476",
             "cod": true
           }
         ]
@@ -422,8 +427,8 @@
       ]
     },
     {
-      "name": "C maneci detasate 5M + S + L",
-      "orderName": "#235536, #235541, #235559, #235568, #235578, #235583, #235585",
+      "name": "C maneci detasate 5M + 2S + L",
+      "orderName": "#235536, #235541, #235559, #235568, #235578, #235583, #235585, #235595",
       "orderLinks": [
         {
           "name": "#235536",
@@ -459,10 +464,15 @@
           "name": "#235585",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11126953345348",
           "cod": true
+        },
+        {
+          "name": "#235595",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128621105476",
+          "cod": true
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 10.5,
+      "hours": 12,
       "leftover": false,
       "tags": [
         "shopify"
@@ -714,8 +724,8 @@
       ]
     },
     {
-      "name": "Bluza Rupta S + L",
-      "orderName": "#235543, #235590",
+      "name": "Bluza Rupta S + 2L",
+      "orderName": "#235543, #235590, #235596",
       "orderLinks": [
         {
           "name": "#235543",
@@ -726,10 +736,15 @@
           "name": "#235590",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11127946084676",
           "cod": false
+        },
+        {
+          "name": "#235596",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128743133508",
+          "cod": false
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 3,
+      "hours": 4.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -841,17 +856,22 @@
       ]
     },
     {
-      "name": "Bluza rupta roz S",
-      "orderName": "#235574",
+      "name": "Bluza rupta roz 2S",
+      "orderName": "#235574, #235596",
       "orderLinks": [
         {
           "name": "#235574",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11124366836036",
           "cod": false
+        },
+        {
+          "name": "#235596",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128743133508",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -959,6 +979,23 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H negru Dept M",
+      "orderName": "#235596",
+      "orderLinks": [
+        {
+          "name": "#235596",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128743133508",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
