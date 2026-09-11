@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T06:17:53.652Z",
+  "generatedAt": "2026-09-11T11:35:20.765Z",
   "planDate": "2026-09-11",
   "unmatchedProducts": [
     "[#235589] Flower Boy Oversized Off-White Tee",
@@ -128,18 +128,9 @@
     }
   ],
   "felicia": {
-    "hours": 8.33,
+    "hours": 11.33,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "01. H patch XL (DHL)",
-        "hours": 1,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "03. C maneci detasate XL",
         "hours": 1.42,
@@ -168,13 +159,55 @@
         ]
       },
       {
+        "title": "11. C blue XXL",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "12. W pink M (DHL)",
+        "hours": 2.5,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "13. C maneci detasate M (DHL)",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "14. W 3rd eye L (DHL)",
+        "hours": 2.5,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 9.08,
+    "capacity": 7.2,
+    "items": [
+      {
         "title": "01. T negru M",
-        "hours": 1.33,
+        "hours": 2,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235543, #235553",
+        "orderName": "#235543, #235548, #235553",
         "orderLinks": [
           {
             "name": "#235543",
@@ -182,47 +215,14 @@
             "cod": false
           },
           {
-            "name": "#235553",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105426309444",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. W statue L",
-        "hours": 2.5,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235570",
-        "orderLinks": [
-          {
-            "name": "#235570",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122989039940",
-            "cod": true
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8.25,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "01. T negru L",
-        "hours": 0.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235548",
-        "orderLinks": [
-          {
             "name": "#235548",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11104381239620",
             "cod": true
+          },
+          {
+            "name": "#235553",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11105426309444",
+            "cod": false
           }
         ]
       },
@@ -241,69 +241,12 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "03. Fusta Fundite L",
-        "hours": 0.5,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3440534",
-        "orderLinks": [
-          {
-            "name": "WB#3440534",
-            "url": null,
-            "cod": false
-          }
-        ]
       }
     ]
   },
   "croit": [
     {
-      "name": "01. T offwhite XL",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-09-11",
-      "leftover": false,
-      "number": 1,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "02. W Pink M",
-      "orderName": null,
-      "category": "Windbreaker",
-      "dueOn": "2026-09-11",
-      "leftover": false,
-      "number": 2,
-      "orderLinks": [],
-      "hours": 2.5,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "03. W 3rd eye L",
-      "orderName": null,
-      "category": "Windbreaker",
-      "dueOn": "2026-09-11",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 2.5,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "04. Bluza rupta alba, roz S",
+      "name": "04. Bluza rupta alba, roz S 2buc",
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-09-11",
@@ -348,46 +291,9 @@
       ]
     },
     {
-      "name": "C Blue XXL + XL + L + M",
-      "orderName": "#235526, #235566, #235573, #235593",
+      "name": "C maneci detasate 2S + 5M + 2L",
+      "orderName": "#235541, #235559, #235568, #235578, #235583, #235585, #235595, #235598, #235599",
       "orderLinks": [
-        {
-          "name": "#235526",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097663013188",
-          "cod": true
-        },
-        {
-          "name": "#235566",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11121100652868",
-          "cod": false
-        },
-        {
-          "name": "#235573",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11123549864260",
-          "cod": false
-        },
-        {
-          "name": "#235593",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128393433412",
-          "cod": false
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 6,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "C maneci detasate 6M + 2S + L",
-      "orderName": "#235536, #235541, #235559, #235568, #235578, #235583, #235585, #235595, #235598",
-      "orderLinks": [
-        {
-          "name": "#235536",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11099675623748",
-          "cod": false
-        },
         {
           "name": "#235541",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11100573040964",
@@ -426,6 +332,11 @@
         {
           "name": "#235598",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128955896132",
+          "cod": true
+        },
+        {
+          "name": "#235599",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11129160597828",
           "cod": true
         }
       ],
@@ -518,14 +429,36 @@
       ]
     },
     {
-      "name": "T Offwhite 3 buc XL + 2M",
-      "orderName": "#235558, #235570, #235584, #235590, #235593",
+      "name": "H Patch L + M + S",
+      "orderName": "#235560, #235591, #235592",
       "orderLinks": [
         {
-          "name": "#235558",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11108048339268",
+          "name": "#235560",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120257171780",
+          "cod": true
+        },
+        {
+          "name": "#235591",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128145903940",
           "cod": false
         },
+        {
+          "name": "#235592",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128301814084",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac patchuri",
+      "hours": 9,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Alb 2 buc XL + 2M",
+      "orderName": "#235570, #235584, #235590, #235593",
+      "orderLinks": [
         {
           "name": "#235570",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11122989039940",
@@ -548,34 +481,7 @@
         }
       ],
       "category": "Tricou simplu",
-      "hours": 3.3335,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H Patch L + M + S",
-      "orderName": "#235560, #235591, #235592",
-      "orderLinks": [
-        {
-          "name": "#235560",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120257171780",
-          "cod": true
-        },
-        {
-          "name": "#235591",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128145903940",
-          "cod": false
-        },
-        {
-          "name": "#235592",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128301814084",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac patchuri",
-      "hours": 9,
+      "hours": 2.6668,
       "leftover": false,
       "tags": [
         "shopify"
@@ -632,28 +538,6 @@
       ],
       "category": "Camasa scurta",
       "hours": 2.8334,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "W Pink M + XS",
-      "orderName": "#235529, #235564",
-      "orderLinks": [
-        {
-          "name": "#235529",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11097957302596",
-          "cod": false
-        },
-        {
-          "name": "#235564",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11120699179332",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -791,6 +675,33 @@
       ],
       "category": "Tricou simplu",
       "hours": 1.3334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Blue XL + L + M",
+      "orderName": "#235566, #235573, #235593",
+      "orderLinks": [
+        {
+          "name": "#235566",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11121100652868",
+          "cod": false
+        },
+        {
+          "name": "#235573",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11123549864260",
+          "cod": false
+        },
+        {
+          "name": "#235593",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128393433412",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 4.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -979,6 +890,46 @@
   ],
   "croitBuffer": [
     {
+      "gid": "1218328202594366",
+      "name": "03. W 3rd eye L",
+      "orderName": null,
+      "category": "Windbreaker",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1218345825589085",
+      "name": "01. T offwhite XL",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1218328202594363",
+      "name": "02. W Pink M",
+      "orderName": null,
+      "category": "Windbreaker",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1218295293896525",
+      "name": "W statue L",
+      "orderName": null,
+      "category": "Windbreaker",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
       "gid": "1218146608896537",
       "name": "T gri Xs si S - 2 buc",
       "orderName": null,
@@ -1020,7 +971,20 @@
     }
   ],
   "backlog": {
-    "hours": 0,
-    "items": []
+    "hours": 5,
+    "items": [
+      {
+        "orderName": "#235564",
+        "title": "W Pink M",
+        "category": "Windbreaker",
+        "hours": 2.5
+      },
+      {
+        "orderName": "#235570",
+        "title": "W statue L",
+        "category": "Windbreaker",
+        "hours": 2.5
+      }
+    ]
   }
 }
