@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T05:44:51.984Z",
+  "generatedAt": "2026-09-12T09:36:01.327Z",
   "planDate": "2026-09-14",
   "unmatchedProducts": [
     "[#235589] Flower Boy Oversized Off-White Tee",
@@ -7,14 +7,6 @@
     "[#235600] Bra Overlay Black Hoodie"
   ],
   "predictionIdeas": [
-    {
-      "productId": "gid://shopify/Product/15629712687428",
-      "title": "777 Mauve Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
-      "category": "Tricou raiat",
-      "size": "S",
-      "hours": 1
-    },
     {
       "productId": "gid://shopify/Product/15499249942852",
       "title": "Split White Oversized T-Shirt",
@@ -125,6 +117,14 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
       "category": "Tricou simplu",
       "size": "S",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/8649104851268",
+      "title": "Oversized Cotton White T-shirt Spirit",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-spirit-208380_030235ea-5578-4880-b7fb-9d370800162c.jpg?v=1770112894",
+      "category": "Tricou simplu",
+      "size": "M",
       "hours": 0.6667
     }
   ],
@@ -874,6 +874,57 @@
       ],
       "category": "Maiou",
       "hours": 0.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Pop Gri XS",
+      "orderName": "#235602",
+      "orderLinks": [
+        {
+          "name": "#235602",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11130606027076",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Mov M",
+      "orderName": "#235602",
+      "orderLinks": [
+        {
+          "name": "#235602",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11130606027076",
+          "cod": false
+        }
+      ],
+      "category": "Tricou raiat",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Bermude Stickers S",
+      "orderName": "#235602",
+      "orderLinks": [
+        {
+          "name": "#235602",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11130606027076",
+          "cod": false
+        }
+      ],
+      "category": "Bermude",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
