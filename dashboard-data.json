@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T18:31:56.408Z",
+  "generatedAt": "2026-09-12T20:56:26.252Z",
   "planDate": "2026-09-14",
   "unmatchedProducts": [
     "[#235589] Flower Boy Oversized Off-White Tee",
@@ -254,8 +254,8 @@
       ]
     },
     {
-      "name": "C maneci detasate 2S + 5M + 3L",
-      "orderName": "#235541, #235559, #235568, #235578, #235583, #235585, #235595, #235598, #235599, #235603",
+      "name": "C maneci detasate 2S + 5M + 4L",
+      "orderName": "#235541, #235559, #235568, #235578, #235583, #235585, #235595, #235598, #235599, #235603, #235605",
       "orderLinks": [
         {
           "name": "#235541",
@@ -306,10 +306,15 @@
           "name": "#235603",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11131403960644",
           "cod": false
+        },
+        {
+          "name": "#235605",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11131892072772",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 15,
+      "hours": 16.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -490,6 +495,28 @@
       ]
     },
     {
+      "name": "C 3 culori M + XL",
+      "orderName": "#235593, #235606",
+      "orderLinks": [
+        {
+          "name": "#235593",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128393433412",
+          "cod": false
+        },
+        {
+          "name": "#235606",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11131899838788",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 3,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "Double Sleeve Roz ZN Vitamin XXL",
       "orderName": "#235601",
       "orderLinks": [
@@ -524,6 +551,40 @@
       ]
     },
     {
+      "name": "C Bal scurta gri XL",
+      "orderName": "#235606",
+      "orderLinks": [
+        {
+          "name": "#235606",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11131899838788",
+          "cod": true
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 1.4167,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Offwhite Soldout XL",
+      "orderName": "#235606",
+      "orderLinks": [
+        {
+          "name": "#235606",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11131899838788",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "W 3rd eye L + M",
       "orderName": "#235538, #235546",
       "orderLinks": [
@@ -546,8 +607,8 @@
       ]
     },
     {
-      "name": "Bluza Rupta S + 2L",
-      "orderName": "#235543, #235590, #235596",
+      "name": "Bluza Rupta 2S + 2L",
+      "orderName": "#235543, #235590, #235596, #235605",
       "orderLinks": [
         {
           "name": "#235543",
@@ -563,10 +624,15 @@
           "name": "#235596",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128743133508",
           "cod": false
+        },
+        {
+          "name": "#235605",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11131892072772",
+          "cod": false
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 4.5,
+      "hours": 6,
       "leftover": false,
       "tags": [
         "shopify"
@@ -806,23 +872,6 @@
         {
           "name": "#235592",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128301814084",
-          "cod": false
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "C 3 culori M",
-      "orderName": "#235593",
-      "orderLinks": [
-        {
-          "name": "#235593",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11128393433412",
           "cod": false
         }
       ],
