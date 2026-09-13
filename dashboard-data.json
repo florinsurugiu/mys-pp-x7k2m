@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T14:22:07.669Z",
+  "generatedAt": "2026-09-13T17:28:57.434Z",
   "planDate": "2026-09-14",
   "unmatchedProducts": [
     "[#235589] Flower Boy Oversized Off-White Tee",
@@ -80,14 +80,6 @@
       "hours": 0.5
     },
     {
-      "productId": "gid://shopify/Product/15417811403076",
-      "title": "3-in-1 Layered Hoodie V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
-      "category": "Hanorac bumbac",
-      "size": "S",
-      "hours": 1
-    },
-    {
       "productId": "gid://shopify/Product/15416222613828",
       "title": "Miau Miau Oversized Ivory T-shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
@@ -125,6 +117,14 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
       "category": "Tricou simplu",
       "size": "XS",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15573327249732",
+      "title": "Reality Grey Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
+      "category": "Tricou simplu",
+      "size": "M",
       "hours": 0.6667
     }
   ],
@@ -254,8 +254,8 @@
       ]
     },
     {
-      "name": "C maneci detasate 3S + 6M + 4L + XS",
-      "orderName": "#235541, #235559, #235568, #235578, #235583, #235585, #235595, #235598, #235599, #235603, #235605, #235607, #235608, #235609",
+      "name": "C maneci detasate 3S + 6M + 4L + 2XS",
+      "orderName": "#235541, #235559, #235568, #235578, #235583, #235585, #235595, #235598, #235599, #235603, #235605, #235607, #235608, #235609, #235611",
       "orderLinks": [
         {
           "name": "#235541",
@@ -326,10 +326,15 @@
           "name": "#235609",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11132917481796",
           "cod": true
+        },
+        {
+          "name": "#235611",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11133176840516",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 21,
+      "hours": 22.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -368,8 +373,8 @@
       ]
     },
     {
-      "name": "T Negru 3 buc XL + M + S",
-      "orderName": "#235553, #235561, #235570, #235580",
+      "name": "T Negru 3 buc XL + 2M + S",
+      "orderName": "#235553, #235561, #235570, #235580, #235612",
       "orderLinks": [
         {
           "name": "#235553",
@@ -390,10 +395,15 @@
           "name": "#235580",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11125676245316",
           "cod": true
+        },
+        {
+          "name": "#235612",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11133317775684",
+          "cod": true
         }
       ],
       "category": "Tricou simplu",
-      "hours": 3.3335,
+      "hours": 4.0001999999999995,
       "leftover": false,
       "tags": [
         "shopify"
@@ -599,6 +609,40 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T struna fume M",
+      "orderName": "#235612",
+      "orderLinks": [
+        {
+          "name": "#235612",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11133317775684",
+          "cod": true
+        }
+      ],
+      "category": "Top Spirit",
+      "hours": 0.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H Layers V2 M",
+      "orderName": "#235612",
+      "orderLinks": [
+        {
+          "name": "#235612",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11133317775684",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
