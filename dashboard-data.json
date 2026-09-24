@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T16:38:39.128Z",
+  "generatedAt": "2026-09-24T20:07:28.777Z",
   "planDate": "2026-09-24",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
@@ -134,8 +134,8 @@
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. top patent fume M",
-        "hours": 0.5,
+        "title": "01. H negru cu fermoar L - 2 buc.(dhl)",
+        "hours": 1,
         "tags": [
           "leftover",
           "asana",
@@ -143,8 +143,8 @@
         ]
       },
       {
-        "title": "02. H negru cu fermoar L - 2 buc.",
-        "hours": 1,
+        "title": "02. top patent fume M",
+        "hours": 0.5,
         "tags": [
           "leftover",
           "asana",
@@ -236,16 +236,7 @@
         ]
       },
       {
-        "title": "02. C maro S",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "04. W retro L ",
+        "title": "03. W retro L (dhl)",
         "hours": 2.5,
         "tags": [
           "leftover",
@@ -254,7 +245,16 @@
         ]
       },
       {
-        "title": "07. H layers L cam rosie",
+        "title": "04. C maro S",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "05. H layers L cam rosie",
         "hours": 1,
         "tags": [
           "leftover",
@@ -296,6 +296,20 @@
     ]
   },
   "croit": [
+    {
+      "name": "01. C maro S",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "dueOn": "2026-09-25",
+      "leftover": false,
+      "number": 1,
+      "orderLinks": [],
+      "hours": 1.4167,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
     {
       "name": "07. T negru cusatura pe mijloc - XL",
       "orderName": null,
@@ -1204,7 +1218,7 @@
     },
     {
       "gid": "1218779253300004",
-      "name": "04. Double sleeve roz S - 2 buc. ",
+      "name": "04. Double sleeve roz S",
       "orderName": null,
       "category": null,
       "tags": [
