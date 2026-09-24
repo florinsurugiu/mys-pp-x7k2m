@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T23:08:49.951Z",
+  "generatedAt": "2026-09-24T01:20:44.589Z",
   "planDate": "2026-09-24",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
@@ -7,20 +7,20 @@
   ],
   "predictionIdeas": [
     {
+      "productId": "gid://shopify/Product/15588974428484",
+      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
+      "category": "Camasa scurta",
+      "size": "XXL",
+      "hours": 1.4167
+    },
+    {
       "productId": "gid://shopify/Product/15499249942852",
       "title": "Split White Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated124_5300ee8d-eb24-4473-8227-dd0488aa067f.jpg?v=1773565303",
       "category": "Tricou simplu",
       "size": "XL",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/7837777559789",
-      "title": "Statue DOER  Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
-      "category": "Windbreaker",
-      "size": "M",
-      "hours": 2.5
     },
     {
       "productId": "gid://shopify/Product/7820197691629",
@@ -79,14 +79,6 @@
       "hours": 2.5
     },
     {
-      "productId": "gid://shopify/Product/7820223250669",
-      "title": "Oversized Black T-shirt Superwoman",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_oversizedtshirt_superwoman_c8bc9810-f5c7-4365-913c-cce6077b7547.jpg?v=1769599859",
-      "category": "Tricou simplu",
-      "size": "XS",
-      "hours": 0.6667
-    },
-    {
       "productId": "gid://shopify/Product/8978705908036",
       "title": "Oversized Cotton Black T-shirt 777",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_777_95102fd3-8178-49f6-a14f-d1340899074f.jpg?v=1769826069",
@@ -125,6 +117,14 @@
       "category": "Double sleeve",
       "size": "M",
       "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/8978719310148",
+      "title": "Oversized Cotton White T-shirt Lucky",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_lucky_tshirt.jpg?v=1769824246",
+      "category": "Tricou simplu",
+      "size": "M",
+      "hours": 0.6667
     }
   ],
   "felicia": {
@@ -401,28 +401,6 @@
       "leftover": false,
       "tags": [
         "wb"
-      ]
-    },
-    {
-      "name": "C Bal scurta maro 2XXL",
-      "orderName": "#235587, #235588",
-      "orderLinks": [
-        {
-          "name": "#235587",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11126969336132",
-          "cod": true
-        },
-        {
-          "name": "#235588",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11126972285252",
-          "cod": true
-        }
-      ],
-      "category": "Camasa scurta",
-      "hours": 2.8334,
-      "leftover": false,
-      "tags": [
-        "shopify"
       ]
     },
     {
