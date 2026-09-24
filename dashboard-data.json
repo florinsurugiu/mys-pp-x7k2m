@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-24T01:20:44.589Z",
+  "generatedAt": "2026-09-24T06:18:50.182Z",
   "planDate": "2026-09-24",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
-    "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT"
+    "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
+    "[#235694] Bra Overlay Black Hoodie"
   ],
   "predictionIdeas": [
     {
@@ -21,14 +22,6 @@
       "category": "Tricou simplu",
       "size": "XL",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/7820197691629",
-      "title": "DOER Ice Cream T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_doer_tshirt.jpg?v=1769644387",
-      "category": "Tricou Doer",
-      "size": "S",
-      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/15499249942852",
@@ -71,25 +64,9 @@
       "hours": 1
     },
     {
-      "productId": "gid://shopify/Product/15332271063364",
-      "title": "Retro Pop Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Retro-Pop-Windbreaker.jpg?v=1771580253",
-      "category": "Windbreaker",
-      "size": "M",
-      "hours": 2.5
-    },
-    {
       "productId": "gid://shopify/Product/8978705908036",
       "title": "Oversized Cotton Black T-shirt 777",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_777_95102fd3-8178-49f6-a14f-d1340899074f.jpg?v=1769826069",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15136104382788",
-      "title": "Overthink Club Oversized Pink T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_pink_tshirt1.jpg?v=1769819075",
       "category": "Tricou simplu",
       "size": "M",
       "hours": 0.6667
@@ -125,6 +102,30 @@
       "category": "Tricou simplu",
       "size": "M",
       "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/7837777559789",
+      "title": "Statue DOER  Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
+      "category": "Windbreaker",
+      "size": "S",
+      "hours": 2.5
+    },
+    {
+      "productId": "gid://shopify/Product/9436033843524",
+      "title": "Oversized Black T-shirt Circus",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-black-t-shirt-circus-711533_c98add91-c0fb-45bb-b4b5-29db9a838311.jpg?v=1770115294",
+      "category": "Tricou simplu",
+      "size": "S",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15587072409924",
+      "title": "MYSIMPLICATED® Blue Collar Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260629_181428-_2_c0b27a7e-d503-4b73-9eb1-566b711712f6.jpg?v=1786556462",
+      "category": "Camasa Unisex",
+      "size": "XL",
+      "hours": 1.5
     }
   ],
   "felicia": {
@@ -548,8 +549,8 @@
       ]
     },
     {
-      "name": "T Gri 3XXL + XS + S + M",
-      "orderName": "#235615, #235626, #235658, #235671, #235683, #235684",
+      "name": "T Gri 3XXL + XS + S + M + L",
+      "orderName": "#235615, #235626, #235658, #235671, #235683, #235684, #235694",
       "orderLinks": [
         {
           "name": "#235615",
@@ -580,10 +581,15 @@
           "name": "#235684",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11152589160772",
           "cod": true
+        },
+        {
+          "name": "#235694",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
+          "cod": true
         }
       ],
       "category": "Tricou simplu",
-      "hours": 4.0001999999999995,
+      "hours": 4.666899999999999,
       "leftover": false,
       "tags": [
         "shopify"
@@ -612,8 +618,8 @@
       ]
     },
     {
-      "name": "T Alb XXL + 2 buc XL",
-      "orderName": "#235624, #235629",
+      "name": "T Alb XXL + 2 buc XL + L",
+      "orderName": "#235624, #235629, #235694",
       "orderLinks": [
         {
           "name": "#235624",
@@ -624,10 +630,15 @@
           "name": "#235629",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11138409300292",
           "cod": true
+        },
+        {
+          "name": "#235694",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
+          "cod": true
         }
       ],
       "category": "Tricou simplu",
-      "hours": 2.0000999999999998,
+      "hours": 2.6668,
       "leftover": false,
       "tags": [
         "shopify"
@@ -742,8 +753,8 @@
       ]
     },
     {
-      "name": "T Alb 4L + XL + XXL + 3M + 3S + XS",
-      "orderName": "#235647, #235654, #235661, #235669, #235670, #235673, #235682, #235687, #235690, ds-ayou-139-400396978",
+      "name": "T Alb 4L + XL + XXL + 3M + 3S + 2XS",
+      "orderName": "#235647, #235654, #235661, #235669, #235670, #235673, #235682, #235687, #235690, ds-ayou-139-400396978, #235696",
       "orderLinks": [
         {
           "name": "#235647",
@@ -794,10 +805,15 @@
           "name": "ds-ayou-139-400396978",
           "url": null,
           "cod": false
+        },
+        {
+          "name": "#235696",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154700566852",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 8.667099999999998,
+      "hours": 9.333799999999998,
       "leftover": false,
       "tags": [
         "shopify"
@@ -894,6 +910,45 @@
       ]
     },
     {
+      "name": "T Maro XL + XS",
+      "orderName": "#235694, #235696",
+      "orderLinks": [
+        {
+          "name": "#235694",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
+          "cod": true
+        },
+        {
+          "name": "#235696",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154700566852",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 1.3334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Roz L",
+      "orderName": "#235694",
+      "orderLinks": [
+        {
+          "name": "#235694",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "Bluza Rupta L + S",
       "orderName": "#235605, #235651",
       "orderLinks": [
@@ -972,17 +1027,22 @@
       ]
     },
     {
-      "name": "W Retro L",
-      "orderName": "#235635",
+      "name": "W Retro L + M",
+      "orderName": "#235635, #235695",
       "orderLinks": [
         {
           "name": "#235635",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11141176492356",
           "cod": false
+        },
+        {
+          "name": "#235695",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154681889092",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1230,6 +1290,23 @@
         }
       ],
       "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Doer S",
+      "orderName": "#235696",
+      "orderLinks": [
+        {
+          "name": "#235696",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154700566852",
+          "cod": false
+        }
+      ],
+      "category": "Tricou Doer",
       "hours": 1,
       "leftover": false,
       "tags": [
