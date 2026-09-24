@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-24T20:07:28.777Z",
-  "planDate": "2026-09-24",
+  "generatedAt": "2026-09-24T23:11:49.209Z",
+  "planDate": "2026-09-25",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
@@ -97,14 +97,6 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/8978705908036",
-      "title": "Oversized Cotton Black T-shirt 777",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_777_95102fd3-8178-49f6-a14f-d1340899074f.jpg?v=1769826069",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
-    },
-    {
       "productId": "gid://shopify/Product/8877513113924",
       "title": "Black Hoodie Spirit",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated575_5da77184-16dc-4104-aa57-9769c0980707.jpg?v=1769623148",
@@ -127,6 +119,14 @@
       "category": "Double sleeve",
       "size": "M",
       "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/8978719310148",
+      "title": "Oversized Cotton White T-shirt Lucky",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_lucky_tshirt.jpg?v=1769824246",
+      "category": "Tricou simplu",
+      "size": "M",
+      "hours": 0.6667
     }
   ],
   "felicia": {
@@ -315,11 +315,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-09-24",
-      "leftover": false,
+      "leftover": true,
       "number": 7,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -329,11 +330,12 @@
       "orderName": null,
       "category": "Hanorac bumbac",
       "dueOn": "2026-09-24",
-      "leftover": false,
+      "leftover": true,
       "number": 8,
       "orderLinks": [],
       "hours": 1,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -343,11 +345,12 @@
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-09-24",
-      "leftover": false,
+      "leftover": true,
       "number": 9,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -546,8 +549,8 @@
       ]
     },
     {
-      "name": "T Negru XL + L + M",
-      "orderName": "#235629, #235694, #235700",
+      "name": "T Negru XL + L + 2M",
+      "orderName": "#235629, #235694, #235700, ds-ayou-139-400705156",
       "orderLinks": [
         {
           "name": "#235629",
@@ -563,10 +566,15 @@
           "name": "#235700",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
           "cod": false
+        },
+        {
+          "name": "ds-ayou-139-400705156",
+          "url": null,
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 2.0000999999999998,
+      "hours": 2.6668,
       "leftover": false,
       "tags": [
         "shopify"
