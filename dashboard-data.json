@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T06:37:26.544Z",
+  "generatedAt": "2026-09-26T11:45:46.487Z",
   "planDate": "2026-09-28",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
@@ -73,14 +73,6 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/7837777559789",
-      "title": "Statue DOER  Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
-      "category": "Windbreaker",
-      "size": "S",
-      "hours": 2.5
-    },
-    {
       "productId": "gid://shopify/Product/9436033843524",
       "title": "Oversized Black T-shirt Circus",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-black-t-shirt-circus-711533_c98add91-c0fb-45bb-b4b5-29db9a838311.jpg?v=1770115294",
@@ -105,14 +97,6 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/7837777559789",
-      "title": "Statue DOER  Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
-      "category": "Windbreaker",
-      "size": "M",
-      "hours": 2.5
-    },
-    {
       "productId": "gid://shopify/Product/15590514917700",
       "title": "Denim Bermuda",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_160855_ec0cfa77-295a-4f3c-8ae0-1b31a9f31c34-_1.jpg?v=1786555920",
@@ -127,10 +111,26 @@
       "category": "Tricou simplu",
       "size": "XS",
       "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15416222613828",
+      "title": "Miau Miau Oversized Ivory T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
+      "category": "Tricou simplu",
+      "size": "L",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15416222613828",
+      "title": "Miau Miau Oversized Ivory T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
+      "category": "Tricou simplu",
+      "size": "XL",
+      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 7.5,
+    "hours": 7.33,
     "capacity": 7.2,
     "items": [
       {
@@ -144,63 +144,53 @@
         "orderLinks": []
       },
       {
-        "title": "02. H fume cu fermoar XL",
-        "hours": 1,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235633",
-        "orderLinks": [
-          {
-            "name": "#235633",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11139621060932",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. T negru XL si XXL",
+        "title": "02. T negru XL si XXL",
         "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235629",
+        "orderName": "#235629, #235624",
         "orderLinks": [
           {
             "name": "#235629",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11138409300292",
             "cod": true
+          },
+          {
+            "name": "#235624",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11136076251460",
+            "cod": false
           }
         ]
       },
       {
-        "title": "04. T Negru L + 2M + XXL",
-        "hours": 2.67,
+        "title": "03. W Statue XL ",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235708",
+        "orderLinks": [
+          {
+            "name": "#235708",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158256222532",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. H Layers V1 S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235694, #235700, ds-ayou-139-400705156, #235705",
+        "orderName": "#235623",
         "orderLinks": [
           {
-            "name": "#235694",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
-            "cod": true
-          },
-          {
-            "name": "#235700",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
-            "cod": false
-          },
-          {
-            "name": "ds-ayou-139-400705156",
-            "url": null,
-            "cod": false
-          },
-          {
-            "name": "#235705",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157155217732",
+            "name": "#235623",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11135993839940",
             "cod": true
           }
         ]
@@ -239,32 +229,33 @@
         ]
       },
       {
-        "title": "01. T negru cusatura pe mijloc - XL",
-        "hours": 0.67,
+        "title": "01. H fume cu fermoar XL",
+        "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235624",
+        "orderName": "#235633",
         "orderLinks": [
           {
-            "name": "#235624",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11136076251460",
+            "name": "#235633",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11139621060932",
             "cod": false
           }
         ]
       },
       {
-        "title": "02. H Layers V1 S",
-        "hours": 1,
+        "title": "02. T negru L circus (printat)",
+        "hours": 0.67,
         "tags": [
-          "shopify"
+          "shopify",
+          "buffer"
         ],
-        "orderName": "#235623",
+        "orderName": "#235629",
         "orderLinks": [
           {
-            "name": "#235623",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11135993839940",
+            "name": "#235629",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11138409300292",
             "cod": true
           }
         ]
@@ -1032,17 +1023,22 @@
       ]
     },
     {
-      "name": "Bluza Rupta S",
-      "orderName": "#235651",
+      "name": "Bluza Rupta 2S",
+      "orderName": "#235651, #235707",
       "orderLinks": [
         {
           "name": "#235651",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11145479389508",
           "cod": false
+        },
+        {
+          "name": "#235707",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158242525508",
+          "cod": false
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 1.5,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1315,16 +1311,6 @@
       "name": "02. T gri XS",
       "orderName": null,
       "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1217669193571393",
-      "name": "W Statue XL ",
-      "orderName": null,
-      "category": "Windbreaker",
       "tags": [
         "predicted",
         "asana"
