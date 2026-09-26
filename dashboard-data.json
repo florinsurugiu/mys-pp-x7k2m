@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T11:45:46.487Z",
+  "generatedAt": "2026-09-26T15:14:45.425Z",
   "planDate": "2026-09-28",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
@@ -633,8 +633,8 @@
       ]
     },
     {
-      "name": "H offwhite 2M",
-      "orderName": "#235655, #235697",
+      "name": "H offwhite 3M",
+      "orderName": "#235655, #235697, #235709",
       "orderLinks": [
         {
           "name": "#235655",
@@ -645,10 +645,15 @@
           "name": "#235697",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155083166020",
           "cod": false
+        },
+        {
+          "name": "#235709",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158735323460",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 2,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -837,6 +842,23 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "P Numbers XS",
+      "orderName": "#235710",
+      "orderLinks": [
+        {
+          "name": "#235710",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158765338948",
+          "cod": true
+        }
+      ],
+      "category": "Pantaloni lungi full print",
+      "hours": 1.25,
       "leftover": false,
       "tags": [
         "shopify"
