@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T18:37:20.948Z",
+  "generatedAt": "2026-09-26T21:32:45.332Z",
   "planDate": "2026-09-28",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
@@ -434,8 +434,8 @@
       ]
     },
     {
-      "name": "H Aria L + M",
-      "orderName": "#235625, #235686",
+      "name": "H Aria 2L + M",
+      "orderName": "#235625, #235686, #235711",
       "orderLinks": [
         {
           "name": "#235625",
@@ -446,10 +446,15 @@
           "name": "#235686",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153074716996",
           "cod": true
+        },
+        {
+          "name": "#235711",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11159450517828",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 2,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
