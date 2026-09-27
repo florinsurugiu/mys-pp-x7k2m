@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T13:54:24.888Z",
+  "generatedAt": "2026-09-27T17:58:18.525Z",
   "planDate": "2026-09-28",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
@@ -1094,17 +1094,22 @@
       ]
     },
     {
-      "name": "W 3rd eye L",
-      "orderName": "#235653",
+      "name": "W 3rd eye L + M",
+      "orderName": "#235653, #235713",
       "orderLinks": [
         {
           "name": "#235653",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11145957015876",
           "cod": false
+        },
+        {
+          "name": "#235713",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11160721785156",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 5,
       "leftover": false,
       "tags": [
         "shopify"
