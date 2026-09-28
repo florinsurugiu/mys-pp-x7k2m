@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T01:39:30.069Z",
+  "generatedAt": "2026-09-28T07:39:19.921Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -51,13 +51,13 @@
     },
     {
       "date": "2026-09-02",
-      "revenue": 6733.5,
+      "revenue": 5897.35,
       "cogs": 3827.62,
       "shipping": 499.8,
       "adSpend": 656.71,
-      "grossProfit": 2406.08,
-      "netProfit": 1749.37,
-      "roas": 10.25,
+      "grossProfit": 1569.93,
+      "netProfit": 913.22,
+      "roas": 8.98,
       "unknownCostUnits": 0
     },
     {
@@ -329,48 +329,48 @@
       "revenue": 1581.03,
       "cogs": 895.81,
       "shipping": 83.3,
-      "adSpend": 728.1,
+      "adSpend": 730.11,
       "grossProfit": 601.92,
-      "netProfit": -126.18,
+      "netProfit": -128.19,
       "roas": 2.17,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-09-28",
-      "revenue": 0,
-      "cogs": 0,
+      "revenue": 1005.6,
+      "cogs": 467.71,
       "shipping": 0,
-      "adSpend": 48.28,
-      "grossProfit": 0,
-      "netProfit": -48.28,
-      "roas": 0,
+      "adSpend": 111.81,
+      "grossProfit": 537.89,
+      "netProfit": 426.08,
+      "roas": 8.99,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
-      "name": "DE",
-      "spend": 7914.64,
-      "purchases": 36,
-      "metaRoas": 2.311591
+      "name": "RO 26  march",
+      "spend": 7939.13,
+      "purchases": 120,
+      "metaRoas": 5.779293
     },
     {
-      "name": "RO 26  march",
-      "spend": 7913.69,
-      "purchases": 119,
-      "metaRoas": 5.69732
+      "name": "DE",
+      "spend": 7937.39,
+      "purchases": 36,
+      "metaRoas": 2.304968
     },
     {
       "name": "Latvia",
-      "spend": 2366.14,
+      "spend": 2376.43,
       "purchases": 12,
-      "metaRoas": 2.48701
+      "metaRoas": 2.476242
     },
     {
       "name": "Single Images",
-      "spend": 794.9,
+      "spend": 801.98,
       "purchases": 9,
-      "metaRoas": 6.790641
+      "metaRoas": 6.730772
     }
   ]
 }
