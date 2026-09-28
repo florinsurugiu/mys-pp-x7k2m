@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T01:47:53.731Z",
+  "generatedAt": "2026-09-28T07:50:36.580Z",
   "planDate": "2026-09-28",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
@@ -23,6 +23,22 @@
       "category": "Camasa Unisex",
       "size": "M",
       "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/7837843849453",
+      "title": "Pink DOER  Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
+      "category": "Windbreaker",
+      "size": "XS",
+      "hours": 2.5
+    },
+    {
+      "productId": "gid://shopify/Product/7837843849453",
+      "title": "Pink DOER  Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
+      "category": "Windbreaker",
+      "size": "M",
+      "hours": 2.5
     },
     {
       "productId": "gid://shopify/Product/15421171990852",
@@ -111,37 +127,12 @@
       "category": "Maiou",
       "size": "L",
       "hours": 0.5
-    },
-    {
-      "productId": "gid://shopify/Product/9680747495748",
-      "title": "Vintage Puff Print Oversized Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_vintage-hoodie3.jpg?v=1769826821",
-      "category": "Hanorac bumbac",
-      "size": "XL",
-      "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/15412640219460",
-      "title": "DEPT. OFF-WHITE HOODIE",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated207.jpg?v=1766271373",
-      "category": "Hanorac bumbac",
-      "size": "M",
-      "hours": 1
     }
   ],
   "felicia": {
-    "hours": 8.33,
+    "hours": 8.67,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "01. T negru XXL (DHL)",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "02. H cu gluga de camasa L (DHL)",
         "hours": 1,
@@ -152,7 +143,43 @@
         ]
       },
       {
-        "title": "01. H fume cu fermoar XL",
+        "title": "03. T negru L (Andi)",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "04. C maro S ",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "05. C balenci L (maneci lungi)",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "06. T Pop Cola L",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. H fume cu fermoar XL (Eric)",
         "hours": 1,
         "tags": [
           "shopify",
@@ -168,23 +195,7 @@
         ]
       },
       {
-        "title": "02. T negru XL",
-        "hours": 0.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235629",
-        "orderLinks": [
-          {
-            "name": "#235629",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11138409300292",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. W animal print S",
+        "title": "02. W animal print S",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -198,27 +209,11 @@
             "cod": true
           }
         ]
-      },
-      {
-        "title": "04. W Statue XL ",
-        "hours": 2.5,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235708",
-        "orderLinks": [
-          {
-            "name": "#235708",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158256222532",
-            "cod": false
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.42,
+    "hours": 9.17,
     "capacity": 7.2,
     "items": [
       {
@@ -249,8 +244,8 @@
         ]
       },
       {
-        "title": "09. T mauve XXL",
-        "hours": 0.67,
+        "title": "04. C maro XS",
+        "hours": 1.42,
         "tags": [
           "leftover",
           "asana",
@@ -264,16 +259,11 @@
           "shopify",
           "buffer"
         ],
-        "orderName": "#235629, #235694",
+        "orderName": "#235629",
         "orderLinks": [
           {
             "name": "#235629",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11138409300292",
-            "cod": true
-          },
-          {
-            "name": "#235694",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
             "cod": true
           }
         ]
@@ -282,21 +272,7 @@
   },
   "croit": [
     {
-      "name": "01. C cu tunica carouri gri XL",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-09-28",
-      "leftover": false,
-      "number": 1,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "02. T offwhite L",
+      "name": "02. T offwhite L (Eric)",
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-09-28",
@@ -710,8 +686,8 @@
       ]
     },
     {
-      "name": "H Patch 2M + XL",
-      "orderName": "#235669, #235676, #235677",
+      "name": "H Patch 2M + XL + S + L",
+      "orderName": "#235669, #235676, #235677, #235716",
       "orderLinks": [
         {
           "name": "#235669",
@@ -727,10 +703,15 @@
           "name": "#235677",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11151237022020",
           "cod": true
+        },
+        {
+          "name": "#235716",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161712591172",
+          "cod": false
         }
       ],
       "category": "Hanorac patchuri",
-      "hours": 9,
+      "hours": 15,
       "leftover": false,
       "tags": [
         "shopify"
@@ -754,8 +735,8 @@
       ]
     },
     {
-      "name": "T Maro XL + XS + M",
-      "orderName": "#235694, #235696, #235715",
+      "name": "T Maro XL + XS + M + L",
+      "orderName": "#235694, #235696, #235715, #235717",
       "orderLinks": [
         {
           "name": "#235694",
@@ -771,10 +752,15 @@
           "name": "#235715",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
           "cod": true
+        },
+        {
+          "name": "#235717",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161814729028",
+          "cod": true
         }
       ],
       "category": "Tricou simplu",
-      "hours": 2.0000999999999998,
+      "hours": 2.6668,
       "leftover": false,
       "tags": [
         "shopify"
@@ -904,23 +890,6 @@
       ],
       "category": "Double sleeve",
       "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "W Pink M",
-      "orderName": "#235636",
-      "orderLinks": [
-        {
-          "name": "#235636",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11141383553348",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1270,10 +1239,10 @@
   ],
   "croitBuffer": [
     {
-      "gid": "1218883981965565",
-      "name": "T Pop L",
+      "gid": "1218779253300016",
+      "name": "01. C cu tunica carouri gri XL",
       "orderName": null,
-      "category": "Tricou simplu",
+      "category": "Camasa scurta",
       "tags": [
         "predicted",
         "asana"
@@ -1290,18 +1259,8 @@
       ]
     },
     {
-      "gid": "1218820282004946",
-      "name": "04. C balenci L mat gri ",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
       "gid": "1218825323702766",
-      "name": "01. C maro 2S, XS",
+      "name": "01. C maro S",
       "orderName": null,
       "category": "Camasa scurta",
       "tags": [
@@ -1338,10 +1297,43 @@
         "predicted",
         "asana"
       ]
+    },
+    {
+      "gid": "1218075096218267",
+      "name": "T negru L circus (printat)",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1217669193571393",
+      "name": "W Statue XL ",
+      "orderName": null,
+      "category": "Windbreaker",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
     }
   ],
   "backlog": {
-    "hours": 0,
-    "items": []
+    "hours": 3.17,
+    "items": [
+      {
+        "orderName": "#235708",
+        "title": "W Statue XL ",
+        "category": "Windbreaker",
+        "hours": 2.5
+      },
+      {
+        "orderName": "#235694",
+        "title": "T negru L circus (printat)",
+        "category": "Tricou simplu",
+        "hours": 0.67
+      }
+    ]
   }
 }
