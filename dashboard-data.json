@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-29T19:23:20.872Z",
-  "planDate": "2026-09-29",
+  "generatedAt": "2026-09-29T23:03:37.678Z",
+  "planDate": "2026-09-30",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
@@ -179,22 +179,22 @@
         ]
       },
       {
-        "title": "01. T negru M 777 (about you test)",
+        "title": "01. T portocaliu XS (dupa tipar de negru) - nu uita de placuta",
         "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235694, #235698",
+        "orderName": "#235652, #235694",
         "orderLinks": [
           {
-            "name": "#235694",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
+            "name": "#235652",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11145808904516",
             "cod": true
           },
           {
-            "name": "#235698",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155158008132",
+            "name": "#235694",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
             "cod": true
           }
         ]
@@ -218,7 +218,7 @@
     ]
   },
   "flori": {
-    "hours": 7.67,
+    "hours": 8.33,
     "capacity": 7.2,
     "items": [
       {
@@ -274,7 +274,23 @@
         ]
       },
       {
-        "title": "02. W animal print S",
+        "title": "02. T negru L circus (printat)",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235698",
+        "orderLinks": [
+          {
+            "name": "#235698",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155158008132",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. W animal print S",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -293,71 +309,16 @@
   },
   "croit": [
     {
-      "name": "02. C maro S 2 buc.(vreau stei si guler impecabile) / #235627 si #235650",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-09-29",
-      "leftover": false,
-      "number": 2,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "03. T portocaliu XS (dupa tipar de negru) - nu uita de placuta",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-09-29",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
       "name": "05. C carouri dungi rosii L (atentie cum faci mansetele)",
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-09-29",
-      "leftover": false,
+      "leftover": true,
       "number": 5,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "06. T alb M (material alb subtire)",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-09-29",
-      "leftover": false,
-      "number": 6,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "07. T offwhite (bej) S si M ",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-09-29",
-      "leftover": false,
-      "number": 7,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -377,17 +338,12 @@
       ]
     },
     {
-      "name": "C maneci detasate 6S + 3L + 4M + 2XS",
-      "orderName": "#235627, #235634, #235650, #235656, #235657, #235664, #235667, #235668, #235672, #235673, #235675, #235678, #235679, #235680, #235704",
+      "name": "C maneci detasate 6S + 4M + 2XS + 2L",
+      "orderName": "#235627, #235650, #235656, #235657, #235664, #235667, #235668, #235672, #235673, #235675, #235678, #235679, #235680, #235704",
       "orderLinks": [
         {
           "name": "#235627",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11136324272452",
-          "cod": false
-        },
-        {
-          "name": "#235634",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11140835344708",
           "cod": false
         },
         {
@@ -457,24 +413,7 @@
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 22.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Portocaliu XS",
-      "orderName": "#235652",
-      "orderLinks": [
-        {
-          "name": "#235652",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11145808904516",
-          "cod": true
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 21,
       "leftover": false,
       "tags": [
         "shopify"
@@ -918,23 +857,6 @@
       ]
     },
     {
-      "name": "Double Sleeve Negru MG Vitamin L",
-      "orderName": "#235634",
-      "orderLinks": [
-        {
-          "name": "#235634",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11140835344708",
-          "cod": false
-        }
-      ],
-      "category": "Double sleeve",
-      "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "W Gaia XL",
       "orderName": "#235638",
       "orderLinks": [
@@ -1198,22 +1120,17 @@
       ]
     },
     {
-      "name": "Bluza Rupta S + L",
-      "orderName": "#235707, #235712",
+      "name": "Bluza Rupta S",
+      "orderName": "#235707",
       "orderLinks": [
         {
           "name": "#235707",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158242525508",
           "cod": false
-        },
-        {
-          "name": "#235712",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11160550998340",
-          "cod": false
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 3,
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1221,6 +1138,36 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1203699292375694",
+      "name": "07. T offwhite (bej) S si M ",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1203699292375693",
+      "name": "06. T alb M (material alb subtire)",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1218942521463494",
+      "name": "02. C maro S 2 buc.(vreau stei si guler impecabile) / #235627 si #235650",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1218942521463469",
       "name": "Double Sleeve Roz S",
