@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T01:22:14.391Z",
+  "generatedAt": "2026-09-29T07:04:28.479Z",
   "planDate": "2026-09-29",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
@@ -566,38 +566,6 @@
       ],
       "category": "Tricou simplu",
       "hours": 7.333699999999998,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H offwhite 3M + XXL",
-      "orderName": "#235655, #235697, #235709, #235718",
-      "orderLinks": [
-        {
-          "name": "#235655",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146312876356",
-          "cod": true
-        },
-        {
-          "name": "#235697",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155083166020",
-          "cod": false
-        },
-        {
-          "name": "#235709",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158735323460",
-          "cod": false
-        },
-        {
-          "name": "#235718",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11162174095684",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 4,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1195,12 +1163,49 @@
       "tags": [
         "shopify"
       ]
+    },
+    {
+      "name": "H offwhite 2M + XXL",
+      "orderName": "#235697, #235709, #235718",
+      "orderLinks": [
+        {
+          "name": "#235697",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155083166020",
+          "cod": false
+        },
+        {
+          "name": "#235709",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158735323460",
+          "cod": false
+        },
+        {
+          "name": "#235718",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11162174095684",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 3,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
     }
   ],
   "croitBuffer": [
     {
+      "gid": "1218942521463469",
+      "name": "Double Sleeve Roz S",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
       "gid": "1218942521463456",
-      "name": "05. WB Beige L (poza cu modelul in task)",
+      "name": "WB Beige L ",
       "orderName": null,
       "category": null,
       "tags": [
@@ -1210,7 +1215,7 @@
     },
     {
       "gid": "1218942732314618",
-      "name": "04. WB Gaia XL (ala albastru)",
+      "name": "WB Gaia XL",
       "orderName": null,
       "category": null,
       "tags": [
@@ -1220,7 +1225,7 @@
     },
     {
       "gid": "1218913047599589",
-      "name": "03. C maro XS (#235675)",
+      "name": "C maro XS (#235675)",
       "orderName": null,
       "category": "Camasa scurta",
       "tags": [
@@ -1230,7 +1235,7 @@
     },
     {
       "gid": "1218913047599593",
-      "name": "02. C maro M (#235656)",
+      "name": "C maro M (#235656)",
       "orderName": null,
       "category": "Camasa scurta",
       "tags": [
@@ -1240,7 +1245,7 @@
     },
     {
       "gid": "1218913047599585",
-      "name": "01. C. maro S (#235623)",
+      "name": "C. maro S (#235623)",
       "orderName": null,
       "category": "Camasa scurta",
       "tags": [
