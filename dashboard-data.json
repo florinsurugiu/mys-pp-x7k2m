@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T02:04:24.733Z",
+  "generatedAt": "2026-09-30T08:28:04.222Z",
   "planDate": "2026-09-30",
   "unmatchedProducts": [
     "[#235652] Vitamin Aqua Cotton Socks (4 pcs)",
@@ -15,6 +15,14 @@
       "category": "Camasa scurta",
       "size": "XXL",
       "hours": 1.4167
+    },
+    {
+      "productId": "gid://shopify/Product/15629712687428",
+      "title": "777 Mauve Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
+      "category": "Tricou raiat",
+      "size": "M",
+      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/14932056408388",
@@ -39,6 +47,14 @@
       "category": "Windbreaker",
       "size": "XS",
       "hours": 2.5
+    },
+    {
+      "productId": "gid://shopify/Product/15629712687428",
+      "title": "777 Mauve Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
+      "category": "Tricou raiat",
+      "size": "S",
+      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/7837843849453",
@@ -73,6 +89,14 @@
       "hours": 1
     },
     {
+      "productId": "gid://shopify/Product/15414933061956",
+      "title": "DEPT. GRAPHITE HOODIE",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated317.jpg?v=1766412528",
+      "category": "Hanorac bumbac",
+      "size": "L",
+      "hours": 1
+    },
+    {
       "productId": "gid://shopify/Product/15590250840388",
       "title": "MYSIMPLICATED® Duality Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
@@ -97,40 +121,16 @@
       "hours": 1.5
     },
     {
-      "productId": "gid://shopify/Product/9680747495748",
-      "title": "Vintage Puff Print Oversized Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_vintage-hoodie3.jpg?v=1769826821",
-      "category": "Hanorac bumbac",
-      "size": "XL",
-      "hours": 1
-    },
-    {
       "productId": "gid://shopify/Product/15420232073540",
       "title": "Arc Grey Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated792.jpg?v=1766921733",
       "category": "Tricou simplu",
       "size": "S",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/9074773885252",
-      "title": "Pop Cola Mix Black Oversized T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_popcola_mix.jpg?v=1769682410",
-      "category": "Tricou simplu",
-      "size": "L",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15614948868420",
-      "title": "Reality Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
-      "category": "Tricou simplu",
-      "size": "L",
-      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 8.25,
+    "hours": 7.58,
     "capacity": 7.2,
     "items": [
       {
@@ -179,19 +179,14 @@
         ]
       },
       {
-        "title": "01. T portocaliu XS (dupa tipar de negru) - nu uita de placuta",
-        "hours": 1.33,
+        "title": "01. T negru M 777 (about you test)",
+        "hours": 0.67,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235652, #235694",
+        "orderName": "#235694",
         "orderLinks": [
-          {
-            "name": "#235652",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11145808904516",
-            "cod": true
-          },
           {
             "name": "#235694",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
@@ -218,7 +213,7 @@
     ]
   },
   "flori": {
-    "hours": 8.33,
+    "hours": 8,
     "capacity": 7.2,
     "items": [
       {
@@ -258,30 +253,19 @@
         ]
       },
       {
-        "title": "01. Hanorac Fume XL (fara patent)",
-        "hours": 1,
+        "title": "01. T portocaliu XS (dupa tipar de negru) - nu uita de placuta",
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235633",
+        "orderName": "#235652, #235698",
         "orderLinks": [
           {
-            "name": "#235633",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11139621060932",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. T negru L circus (printat)",
-        "hours": 0.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235698",
-        "orderLinks": [
+            "name": "#235652",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11145808904516",
+            "cod": true
+          },
           {
             "name": "#235698",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155158008132",
@@ -290,7 +274,7 @@
         ]
       },
       {
-        "title": "03. W animal print S",
+        "title": "02. W animal print S",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -309,12 +293,12 @@
   },
   "croit": [
     {
-      "name": "T portocaliu XS (dupa tipar de negru) ",
+      "name": "02. T portocaliu XS (dupa tipar de negru) ",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": null,
+      "dueOn": "2026-09-30",
       "leftover": false,
-      "number": null,
+      "number": 2,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
@@ -323,8 +307,8 @@
       ]
     },
     {
-      "name": "C maneci detasate 5S + 4M + 2XS + 2L",
-      "orderName": "#235650, #235656, #235657, #235664, #235667, #235668, #235672, #235673, #235675, #235678, #235679, #235680, #235704",
+      "name": "C maneci detasate 5S + 4M + XS + 2L",
+      "orderName": "#235650, #235656, #235657, #235664, #235667, #235668, #235672, #235673, #235678, #235679, #235680, #235704",
       "orderLinks": [
         {
           "name": "#235650",
@@ -367,11 +351,6 @@
           "cod": true
         },
         {
-          "name": "#235675",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11151094481220",
-          "cod": false
-        },
-        {
           "name": "#235678",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11151467151684",
           "cod": false
@@ -393,7 +372,7 @@
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 19.5,
+      "hours": 18,
       "leftover": false,
       "tags": [
         "shopify"
@@ -837,33 +816,16 @@
       ]
     },
     {
-      "name": "W Gaia XL",
-      "orderName": "#235638",
+      "name": "H vintage S",
+      "orderName": "#235728",
       "orderLinks": [
         {
-          "name": "#235638",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11142169624900",
-          "cod": false
+          "name": "#235728",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11166705713476",
+          "cod": true
         }
       ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Mov M",
-      "orderName": "#235646",
-      "orderLinks": [
-        {
-          "name": "#235646",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11143760118084",
-          "cod": false
-        }
-      ],
-      "category": "Tricou raiat",
+      "category": "Hanorac bumbac",
       "hours": 1,
       "leftover": false,
       "tags": [
@@ -871,12 +833,12 @@
       ]
     },
     {
-      "name": "W Indian L",
-      "orderName": "#235648",
+      "name": "W Gaia XL",
+      "orderName": "#235638",
       "orderLinks": [
         {
-          "name": "#235648",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11144611332420",
+          "name": "#235638",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11142169624900",
           "cod": false
         }
       ],
@@ -1130,7 +1092,7 @@
     },
     {
       "gid": "1203699292375692",
-      "name": "05. C carouri dungi rosii L (atentie cum faci mansetele)",
+      "name": "C carouri dungi rosii L ",
       "orderName": null,
       "category": "Camasa scurta",
       "tags": [
@@ -1140,7 +1102,7 @@
     },
     {
       "gid": "1203699292375694",
-      "name": "07. T offwhite (bej) S si M ",
+      "name": "T offwhite S si M ",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
@@ -1150,7 +1112,7 @@
     },
     {
       "gid": "1203699292375693",
-      "name": "06. T alb M (material alb subtire)",
+      "name": "T alb M ",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
@@ -1160,9 +1122,19 @@
     },
     {
       "gid": "1218942521463494",
-      "name": "02. C maro S 2 buc.(vreau stei si guler impecabile) / #235627 si #235650",
+      "name": "C maro S 2 buc. / #235627 si #235650",
       "orderName": null,
       "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1218942521463484",
+      "name": "01. Hanorac Fume XL (fara patent)",
+      "orderName": null,
+      "category": "Hanorac bumbac",
       "tags": [
         "predicted",
         "asana"
