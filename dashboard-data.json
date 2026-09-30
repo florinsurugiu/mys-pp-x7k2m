@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T15:04:28.679Z",
+  "generatedAt": "2026-09-30T19:58:56.212Z",
   "planDate": "2026-09-30",
   "unmatchedProducts": [
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
@@ -129,20 +129,134 @@
     }
   ],
   "felicia": {
-    "hours": 23.92,
+    "hours": 13.17,
     "capacity": 7.2,
     "items": [
       {
-        "title": "02. T mauve XXL (dhl)",
+        "title": "01. T negru L circus (printat)",
         "hours": 0.67,
         "tags": [
-          "leftover",
-          "asana",
+          "shopify",
           "buffer"
+        ],
+        "orderName": "#235698",
+        "orderLinks": [
+          {
+            "name": "#235698",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155158008132",
+            "cod": true
+          }
         ]
       },
       {
-        "title": "05. C maro S (#235627)",
+        "title": "02. W animal print S",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235715",
+        "orderLinks": [
+          {
+            "name": "#235715",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. T Negru 2M + XXL",
+        "hours": 2,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235700, ds-ayou-139-400705156, #235705",
+        "orderLinks": [
+          {
+            "name": "#235700",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
+            "cod": false
+          },
+          {
+            "name": "ds-ayou-139-400705156",
+            "url": null,
+            "cod": false
+          },
+          {
+            "name": "#235705",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157155217732",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. T Gri XL + 2XXL + 3M + 3S + 2XS + L",
+        "hours": 8,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235654, #235661, #235669, #235673, #235687, #235690, #235696, #235705, #235719, #235721",
+        "orderLinks": [
+          {
+            "name": "#235654",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146076913988",
+            "cod": false
+          },
+          {
+            "name": "#235661",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146673979716",
+            "cod": false
+          },
+          {
+            "name": "#235669",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11149637157188",
+            "cod": true
+          },
+          {
+            "name": "#235673",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11150723973444",
+            "cod": true
+          },
+          {
+            "name": "#235687",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153387553092",
+            "cod": false
+          },
+          {
+            "name": "#235690",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153713070404",
+            "cod": true
+          },
+          {
+            "name": "#235696",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154700566852",
+            "cod": false
+          },
+          {
+            "name": "#235705",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157155217732",
+            "cod": true
+          },
+          {
+            "name": "#235719",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11162621018436",
+            "cod": false
+          },
+          {
+            "name": "#235721",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164295594308",
+            "cod": true
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 22.58,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "04. C maro XS (#235675) ",
         "hours": 1.42,
         "tags": [
           "leftover",
@@ -151,19 +265,14 @@
         ]
       },
       {
-        "title": "01. T negru L circus (printat)",
-        "hours": 1.33,
+        "title": "01. T negru M 777 (about you test)",
+        "hours": 0.67,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235698, #235694",
+        "orderName": "#235694",
         "orderLinks": [
-          {
-            "name": "#235698",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155158008132",
-            "cod": true
-          },
           {
             "name": "#235694",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
@@ -253,122 +362,6 @@
           {
             "name": "#235704",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157034795332",
-            "cod": true
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 13.92,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "04. C maro XS (#235675) ",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. W animal print S",
-        "hours": 2.5,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235715",
-        "orderLinks": [
-          {
-            "name": "#235715",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "02. T Negru 2M + XXL",
-        "hours": 2,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235700, ds-ayou-139-400705156, #235705",
-        "orderLinks": [
-          {
-            "name": "#235700",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
-            "cod": false
-          },
-          {
-            "name": "ds-ayou-139-400705156",
-            "url": null,
-            "cod": false
-          },
-          {
-            "name": "#235705",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157155217732",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. T Gri XL + 2XXL + 3M + 3S + 2XS + L",
-        "hours": 8,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235654, #235661, #235669, #235673, #235687, #235690, #235696, #235705, #235719, #235721",
-        "orderLinks": [
-          {
-            "name": "#235654",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146076913988",
-            "cod": false
-          },
-          {
-            "name": "#235661",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146673979716",
-            "cod": false
-          },
-          {
-            "name": "#235669",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11149637157188",
-            "cod": true
-          },
-          {
-            "name": "#235673",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11150723973444",
-            "cod": true
-          },
-          {
-            "name": "#235687",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153387553092",
-            "cod": false
-          },
-          {
-            "name": "#235690",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153713070404",
-            "cod": true
-          },
-          {
-            "name": "#235696",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154700566852",
-            "cod": false
-          },
-          {
-            "name": "#235705",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157155217732",
-            "cod": true
-          },
-          {
-            "name": "#235719",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11162621018436",
-            "cod": false
-          },
-          {
-            "name": "#235721",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164295594308",
             "cod": true
           }
         ]
@@ -704,8 +697,8 @@
       ]
     },
     {
-      "name": "P Drept print S + XS + 2M",
-      "orderName": "#235672, #235721, #235722, #235729",
+      "name": "P Drept print S + 2XS + 2M",
+      "orderName": "#235672, #235721, #235722, #235729, #235731",
       "orderLinks": [
         {
           "name": "#235672",
@@ -726,10 +719,15 @@
           "name": "#235729",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11166974476612",
           "cod": false
+        },
+        {
+          "name": "#235731",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11167966069060",
+          "cod": false
         }
       ],
       "category": "Pantalon drept",
-      "hours": 8,
+      "hours": 10,
       "leftover": false,
       "tags": [
         "shopify"
@@ -790,17 +788,22 @@
       ]
     },
     {
-      "name": "T Roz L",
-      "orderName": "#235694",
+      "name": "T Roz L + XS",
+      "orderName": "#235694, #235731",
       "orderLinks": [
         {
           "name": "#235694",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
           "cod": true
+        },
+        {
+          "name": "#235731",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11167966069060",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1218,6 +1221,40 @@
       ],
       "category": "Bluza inimioara / obsidian",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H Fume M",
+      "orderName": "#235730",
+      "orderLinks": [
+        {
+          "name": "#235730",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11167812452676",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Double Sleeve Patch M",
+      "orderName": "#235731",
+      "orderLinks": [
+        {
+          "name": "#235731",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11167966069060",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
