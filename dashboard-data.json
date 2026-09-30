@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-30T19:58:56.212Z",
-  "planDate": "2026-09-30",
+  "generatedAt": "2026-09-30T23:26:15.936Z",
+  "planDate": "2026-10-01",
   "unmatchedProducts": [
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
     "[#235694] Bra Overlay Black Hoodie",
@@ -129,18 +129,50 @@
     }
   ],
   "felicia": {
-    "hours": 13.17,
+    "hours": 7.25,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. T negru L circus (printat)",
+        "title": "01. T alb M - not my circus mic (DHL) ",
         "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "03. T Stalinskaya M 4 buc ",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "04. C maro XS (#235657)",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. T grey M (#235671)",
+        "hours": 2,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235698",
+        "orderName": "#235694, #235698",
         "orderLinks": [
+          {
+            "name": "#235694",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
+            "cod": true
+          },
           {
             "name": "#235698",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155158008132",
@@ -163,98 +195,40 @@
             "cod": true
           }
         ]
-      },
-      {
-        "title": "03. T Negru 2M + XXL",
-        "hours": 2,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235700, ds-ayou-139-400705156, #235705",
-        "orderLinks": [
-          {
-            "name": "#235700",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
-            "cod": false
-          },
-          {
-            "name": "ds-ayou-139-400705156",
-            "url": null,
-            "cod": false
-          },
-          {
-            "name": "#235705",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157155217732",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. T Gri XL + 2XXL + 3M + 3S + 2XS + L",
-        "hours": 8,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235654, #235661, #235669, #235673, #235687, #235690, #235696, #235705, #235719, #235721",
-        "orderLinks": [
-          {
-            "name": "#235654",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146076913988",
-            "cod": false
-          },
-          {
-            "name": "#235661",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146673979716",
-            "cod": false
-          },
-          {
-            "name": "#235669",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11149637157188",
-            "cod": true
-          },
-          {
-            "name": "#235673",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11150723973444",
-            "cod": true
-          },
-          {
-            "name": "#235687",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153387553092",
-            "cod": false
-          },
-          {
-            "name": "#235690",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153713070404",
-            "cod": true
-          },
-          {
-            "name": "#235696",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154700566852",
-            "cod": false
-          },
-          {
-            "name": "#235705",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157155217732",
-            "cod": true
-          },
-          {
-            "name": "#235719",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11162621018436",
-            "cod": false
-          },
-          {
-            "name": "#235721",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164295594308",
-            "cod": true
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 22.58,
+    "hours": 7.42,
     "capacity": 7.2,
     "items": [
+      {
+        "title": "02. T blue L (dhl)",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "03. C maro S 2 buc. / #235627 si #235650",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "04. C maro M (#235656)",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
       {
         "title": "04. C maro XS (#235675) ",
         "hours": 1.42,
@@ -265,23 +239,7 @@
         ]
       },
       {
-        "title": "01. T negru M 777 (about you test)",
-        "hours": 0.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235694",
-        "orderLinks": [
-          {
-            "name": "#235694",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154652791108",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "02. W Statue XL ",
+        "title": "01. W Statue XL ",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -295,150 +253,10 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "03. C maneci detasate 5S + 4M + XS + 2L",
-        "hours": 18,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235650, #235656, #235657, #235664, #235667, #235668, #235672, #235673, #235678, #235679, #235680, #235704",
-        "orderLinks": [
-          {
-            "name": "#235650",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11144727724356",
-            "cod": false
-          },
-          {
-            "name": "#235656",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146314056004",
-            "cod": true
-          },
-          {
-            "name": "#235657",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146423566660",
-            "cod": true
-          },
-          {
-            "name": "#235664",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11147543707972",
-            "cod": false
-          },
-          {
-            "name": "#235667",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11148631474500",
-            "cod": false
-          },
-          {
-            "name": "#235668",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11149148422468",
-            "cod": false
-          },
-          {
-            "name": "#235672",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11150642512196",
-            "cod": true
-          },
-          {
-            "name": "#235673",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11150723973444",
-            "cod": true
-          },
-          {
-            "name": "#235678",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11151467151684",
-            "cod": false
-          },
-          {
-            "name": "#235679",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11151494447428",
-            "cod": true
-          },
-          {
-            "name": "#235680",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11151572107588",
-            "cod": true
-          },
-          {
-            "name": "#235704",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157034795332",
-            "cod": true
-          }
-        ]
       }
     ]
   },
   "croit": [
-    {
-      "name": "02. C maro L (#235664)",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-09-30",
-      "leftover": false,
-      "number": 2,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "03. C maro M (#235667)",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-09-30",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "04. C albastra M (#235665)",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-09-30",
-      "leftover": false,
-      "number": 4,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "05. Tricou blue L",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-09-30",
-      "leftover": false,
-      "number": 5,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "07. T grey M (#235671)",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-09-30",
-      "leftover": false,
-      "number": 7,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
     {
       "name": "C maneci detasate 5S + 4M + XS + 2L",
       "orderName": "#235650, #235656, #235657, #235664, #235667, #235668, #235672, #235673, #235678, #235679, #235680, #235704",
@@ -1263,8 +1081,18 @@
   ],
   "croitBuffer": [
     {
-      "gid": "1218986203284580",
-      "name": "01. C maro XS (#235657)",
+      "gid": "1218986203284596",
+      "name": "05. Tricou blue L",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1218986203284586",
+      "name": "04. C albastra M (#235665)",
       "orderName": null,
       "category": "Camasa scurta",
       "tags": [
@@ -1273,10 +1101,20 @@
       ]
     },
     {
-      "gid": "1203699292375690",
-      "name": "04. WB third eye L",
+      "gid": "1218986203284589",
+      "name": "03. C maro M (#235667)",
       "orderName": null,
-      "category": null,
+      "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1218986203284583",
+      "name": "02. C maro L (#235664)",
+      "orderName": null,
+      "category": "Camasa scurta",
       "tags": [
         "predicted",
         "asana"
@@ -1303,50 +1141,10 @@
       ]
     },
     {
-      "gid": "1203699292375693",
-      "name": "T alb M - not my circus mic (#235661) ",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1218942521463494",
-      "name": "C maro S 2 buc. / #235627 si #235650",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
       "gid": "1218942521463469",
       "name": "Double Sleeve Roz S",
       "orderName": null,
       "category": null,
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1218942732314618",
-      "name": "WB Gaia XL",
-      "orderName": null,
-      "category": null,
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1218913047599593",
-      "name": "C maro M (#235656)",
-      "orderName": null,
-      "category": "Camasa scurta",
       "tags": [
         "predicted",
         "asana"
