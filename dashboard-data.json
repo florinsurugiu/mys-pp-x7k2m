@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T23:26:15.936Z",
+  "generatedAt": "2026-10-01T02:15:35.198Z",
   "planDate": "2026-10-01",
   "unmatchedProducts": [
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
@@ -38,14 +38,6 @@
       "category": "Hanorac bumbac",
       "size": "S",
       "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/7837843849453",
-      "title": "Pink DOER  Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
-      "category": "Windbreaker",
-      "size": "XS",
-      "hours": 2.5
     },
     {
       "productId": "gid://shopify/Product/15629712687428",
@@ -112,19 +104,27 @@
       "hours": 1.5
     },
     {
-      "productId": "gid://shopify/Product/14996604289348",
-      "title": "Complex Minds Checkered Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_204524_0c3a6aa4-e4ff-44e6-84a1-515fc09722cf.jpg?v=1787777353",
-      "category": "Camasa Unisex",
-      "size": "XL",
-      "hours": 1.5
-    },
-    {
       "productId": "gid://shopify/Product/15420232073540",
       "title": "Arc Grey Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated792.jpg?v=1766921733",
       "category": "Tricou simplu",
       "size": "S",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/9074773885252",
+      "title": "Pop Cola Mix Black Oversized T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_popcola_mix.jpg?v=1769682410",
+      "category": "Tricou simplu",
+      "size": "L",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15614948868420",
+      "title": "Reality Grey Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+      "category": "Tricou simplu",
+      "size": "L",
       "hours": 0.6667
     }
   ],
@@ -799,23 +799,6 @@
       ]
     },
     {
-      "name": "W Gaia XL",
-      "orderName": "#235638",
-      "orderLinks": [
-        {
-          "name": "#235638",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11142169624900",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T Albastru L",
       "orderName": "#235653",
       "orderLinks": [
@@ -1080,6 +1063,16 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1218986203284600",
+      "name": "06. Tricouri stalinskaya! neaparat",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1218986203284596",
       "name": "05. Tricou blue L",
