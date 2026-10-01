@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T02:15:35.198Z",
+  "generatedAt": "2026-10-01T08:57:46.187Z",
   "planDate": "2026-10-01",
   "unmatchedProducts": [
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
@@ -21,14 +21,6 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
       "category": "Tricou raiat",
       "size": "M",
-      "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/14932056408388",
-      "title": "3-in-1 Layered Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_m1.jpg?v=1769604447",
-      "category": "Hanorac bumbac",
-      "size": "L",
       "hours": 1
     },
     {
@@ -123,6 +115,14 @@
       "productId": "gid://shopify/Product/15614948868420",
       "title": "Reality Grey Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+      "category": "Tricou simplu",
+      "size": "L",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/9436029976900",
+      "title": "Oversized Cotton White T-shirt Kindness",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
       "category": "Tricou simplu",
       "size": "L",
       "hours": 0.6667
@@ -788,6 +788,23 @@
         {
           "name": "#235728",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11166705713476",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H Layers V1 L",
+      "orderName": "#235732",
+      "orderLinks": [
+        {
+          "name": "#235732",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11168488882500",
           "cod": true
         }
       ],
