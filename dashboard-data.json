@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T00:12:02.136Z",
+  "generatedAt": "2026-10-02T05:31:39.117Z",
   "planDate": "2026-10-02",
   "unmatchedProducts": [
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
@@ -311,51 +311,6 @@
       "number": 5,
       "orderLinks": [],
       "hours": 1,
-      "tags": [
-        "leftover",
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "Camasa sleeveless carouri gri - XL si XXL (vezi poza in link)",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-10-01",
-      "leftover": true,
-      "number": null,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "leftover",
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "Camasa carouri gri (reversed club) - XL si XXL (vezi poze in link)",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-10-01",
-      "leftover": true,
-      "number": null,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "leftover",
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "Camasa carouri gri (Vitamin Aqua) - XXL (vezi poze in link)",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-10-01",
-      "leftover": true,
-      "number": null,
-      "orderLinks": [],
-      "hours": 1.4167,
       "tags": [
         "leftover",
         "asana",
@@ -1191,6 +1146,36 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1219069085721851",
+      "name": "Camasa sleeveless carouri gri - XL si XXL (vezi poza in link)",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219069085721835",
+      "name": "Camasa carouri gri (Vitamin Aqua) - XXL (vezi poze in link)",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219069085721839",
+      "name": "Camasa carouri gri (reversed club) - XL si XXL (vezi poze in link)",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1219066658821338",
       "name": "06. C maro L ",
