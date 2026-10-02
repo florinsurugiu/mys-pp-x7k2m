@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T16:43:52.336Z",
+  "generatedAt": "2026-10-02T20:58:56.265Z",
   "planDate": "2026-10-02",
   "unmatchedProducts": [
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
@@ -45,14 +45,6 @@
       "category": "Tricou simplu",
       "size": "S",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15421171990852",
-      "title": "Dystopia Pink Oversized Sweater",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated821.jpg?v=1767033677",
-      "category": "Hanorac bumbac",
-      "size": "S",
-      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/15637158494532",
@@ -125,6 +117,14 @@
       "category": "Windbreaker",
       "size": "XL",
       "hours": 2.5
+    },
+    {
+      "productId": "gid://shopify/Product/15622269043012",
+      "title": "Workwear Grey Denim Shorts",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260721_121621_c47e3385-2d51-405c-bc9f-dc8dd114e227-_1.jpg?v=1786555338",
+      "category": "Bermude",
+      "size": "XL",
+      "hours": 1.5
     }
   ],
   "felicia": {
@@ -294,6 +294,33 @@
       ]
     },
     {
+      "name": "C Gri Vitamin 2 buc XL + XXL + L",
+      "orderName": "#235654, #235699, #235744",
+      "orderLinks": [
+        {
+          "name": "#235654",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146076913988",
+          "cod": false
+        },
+        {
+          "name": "#235699",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155395313988",
+          "cod": false
+        },
+        {
+          "name": "#235744",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171902882116",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 6,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Gri XL + 2XXL + 4S + 2M + 2XS + L",
       "orderName": "#235654, #235669, #235673, #235687, #235690, #235696, #235705, #235719, #235721, #235736",
       "orderLinks": [
@@ -403,8 +430,8 @@
       ]
     },
     {
-      "name": "H Patch M + XL + S + L",
-      "orderName": "#235669, #235677, #235716",
+      "name": "H Patch M + XL + 2S + L",
+      "orderName": "#235669, #235677, #235716, #235742",
       "orderLinks": [
         {
           "name": "#235669",
@@ -420,10 +447,15 @@
           "name": "#235716",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161712591172",
           "cod": false
+        },
+        {
+          "name": "#235742",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171760013636",
+          "cod": true
         }
       ],
       "category": "Hanorac patchuri",
-      "hours": 12,
+      "hours": 15,
       "leftover": false,
       "tags": [
         "shopify"
@@ -516,6 +548,38 @@
       ]
     },
     {
+      "name": "H negru Dept XXL + 2L + M",
+      "orderName": "#235693, #235701, #235725, #235745",
+      "orderLinks": [
+        {
+          "name": "#235693",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154049597764",
+          "cod": false
+        },
+        {
+          "name": "#235701",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155608469828",
+          "cod": false
+        },
+        {
+          "name": "#235725",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164825944388",
+          "cod": false
+        },
+        {
+          "name": "#235745",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171907404100",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 4,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Maro XS + M + S",
       "orderName": "#235696, #235715, #235739",
       "orderLinks": [
@@ -543,17 +607,22 @@
       ]
     },
     {
-      "name": "T Negru XXL",
-      "orderName": "#235705",
+      "name": "T Negru XXL + M",
+      "orderName": "#235705, #235743",
       "orderLinks": [
         {
           "name": "#235705",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157155217732",
           "cod": true
+        },
+        {
+          "name": "#235743",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
@@ -801,28 +870,6 @@
       ]
     },
     {
-      "name": "C Gri Vitamin 2 buc XL + XXL",
-      "orderName": "#235654, #235699",
-      "orderLinks": [
-        {
-          "name": "#235654",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11146076913988",
-          "cod": false
-        },
-        {
-          "name": "#235699",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155395313988",
-          "cod": false
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 4.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "C Gri Reversed XL + XXL",
       "orderName": "#235654",
       "orderLinks": [
@@ -890,33 +937,6 @@
       ],
       "category": "Tricou fundite negre",
       "hours": 2,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H negru Dept XXL + L + M",
-      "orderName": "#235693, #235701, #235725",
-      "orderLinks": [
-        {
-          "name": "#235693",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154049597764",
-          "cod": false
-        },
-        {
-          "name": "#235701",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155608469828",
-          "cod": false
-        },
-        {
-          "name": "#235725",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164825944388",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1053,6 +1073,57 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Complex Rosu M",
+      "orderName": "#235743",
+      "orderLinks": [
+        {
+          "name": "#235743",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Bluza rupta roz L",
+      "orderName": "#235743",
+      "orderLinks": [
+        {
+          "name": "#235743",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Offwhite M",
+      "orderName": "#235743",
+      "orderLinks": [
+        {
+          "name": "#235743",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
