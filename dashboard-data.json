@@ -1,9 +1,8 @@
 {
-  "generatedAt": "2026-10-03T00:10:11.975Z",
+  "generatedAt": "2026-10-03T05:12:35.594Z",
   "planDate": "2026-10-05",
   "unmatchedProducts": [
-    "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
-    "Water Repellent Windbreaker Tokyo Design"
+    "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT"
   ],
   "predictionIdeas": [
     {
@@ -128,18 +127,9 @@
     }
   ],
   "felicia": {
-    "hours": 7.58,
+    "hours": 8.33,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "05. C maro XS (#235657)",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "06. H negru bra XL",
         "hours": 1,
@@ -150,10 +140,29 @@
         ]
       },
       {
-        "title": "01. T grey XXL",
-        "hours": 2.67,
+        "title": "01. C maro L ",
+        "hours": 2.83,
         "tags": [
-          "wb",
+          "leftover",
+          "asana",
+          "buffer",
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235740",
+        "orderLinks": [
+          {
+            "name": "#235740",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11170884124996",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "02. T grey XXL",
+        "hours": 2,
+        "tags": [
+          "shopify",
           "buffer"
         ],
         "orderName": "#235698, ds-ayou-139-400705156",
@@ -171,7 +180,7 @@
         ]
       },
       {
-        "title": "02. W Statue XL ",
+        "title": "03. W Statue XL ",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -189,7 +198,7 @@
     ]
   },
   "flori": {
-    "hours": 7.58,
+    "hours": 8.33,
     "capacity": 7.2,
     "items": [
       {
@@ -228,8 +237,8 @@
         ]
       },
       {
-        "title": "03. T negru M 777 (about you test)",
-        "hours": 0.67,
+        "title": "03. T grey XXL",
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
@@ -244,23 +253,7 @@
         ]
       },
       {
-        "title": "04. C maro L ",
-        "hours": 1.42,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235740",
-        "orderLinks": [
-          {
-            "name": "#235740",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11170884124996",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "05. W animal print S",
+        "title": "04. W animal print S",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -272,6 +265,21 @@
             "name": "#235715",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
             "cod": true
+          }
+        ]
+      },
+      {
+        "title": "05. C Blue XL",
+        "hours": 1.5,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3462618",
+        "orderLinks": [
+          {
+            "name": "WB#3462618",
+            "url": null,
+            "cod": false
           }
         ]
       }
@@ -291,6 +299,23 @@
         "leftover",
         "asana",
         "predicted"
+      ]
+    },
+    {
+      "name": "C Blue XL",
+      "orderName": "WB#3462618",
+      "orderLinks": [
+        {
+          "name": "WB#3462618",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "wb"
       ]
     },
     {
