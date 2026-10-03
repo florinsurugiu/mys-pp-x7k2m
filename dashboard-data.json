@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T14:46:49.407Z",
+  "generatedAt": "2026-10-03T18:23:46.347Z",
   "planDate": "2026-10-05",
   "unmatchedProducts": [
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT"
@@ -608,17 +608,22 @@
       ]
     },
     {
-      "name": "C Blue L",
-      "orderName": "#235688",
+      "name": "C Blue L + S",
+      "orderName": "#235688, #235749",
       "orderLinks": [
         {
           "name": "#235688",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153555849540",
           "cod": true
+        },
+        {
+          "name": "#235749",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11173653578052",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 1.5,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1282,6 +1287,40 @@
       ],
       "category": "Tricou raiat",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Ivory M",
+      "orderName": "#235749",
+      "orderLinks": [
+        {
+          "name": "#235749",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11173653578052",
+          "cod": false
+        }
+      ],
+      "category": "Tricou raiat",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Gradient Rosu S",
+      "orderName": "#235749",
+      "orderLinks": [
+        {
+          "name": "#235749",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11173653578052",
+          "cod": false
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 1.4167,
       "leftover": false,
       "tags": [
         "shopify"
