@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T15:53:30.289Z",
+  "generatedAt": "2026-10-04T18:52:17.168Z",
   "planDate": "2026-10-05",
   "unmatchedProducts": [
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 17.58,
+    "hours": 19.08,
     "capacity": 7.2,
     "items": [
       {
@@ -210,12 +210,12 @@
         ]
       },
       {
-        "title": "06. C maneci detasate L + 4S + 2M",
-        "hours": 10.5,
+        "title": "06. C maneci detasate 2L + 4S + 2M",
+        "hours": 12,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235668, #235672, #235673, #235678, #235679, #235704, #235741",
+        "orderName": "#235668, #235672, #235673, #235678, #235679, #235704, #235741, #235751",
         "orderLinks": [
           {
             "name": "#235668",
@@ -251,6 +251,11 @@
             "name": "#235741",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171230810436",
             "cod": true
+          },
+          {
+            "name": "#235751",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11175360397636",
+            "cod": false
           }
         ]
       }
@@ -381,14 +386,74 @@
   },
   "croit": [
     {
-      "name": "05. H bra overlay XL (negru gros - e hanoracul ala cu triunghiuri la sani)",
+      "name": "01. Pant negri dama S long (tipar pant dama - daca e regular adaugi 5 cm)",
+      "orderName": null,
+      "category": "Pantalon drept",
+      "dueOn": "2026-10-04",
+      "leftover": true,
+      "number": 1,
+      "orderLinks": [],
+      "hours": 2,
+      "tags": [
+        "leftover",
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "02. T alb S ",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-10-04",
+      "leftover": true,
+      "number": 2,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "leftover",
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "03. H patchuri XL",
       "orderName": null,
       "category": "Hanorac bumbac",
-      "dueOn": "2026-10-01",
+      "dueOn": "2026-10-04",
+      "leftover": true,
+      "number": 3,
+      "orderLinks": [],
+      "hours": 1,
+      "tags": [
+        "leftover",
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "04. C maro S (fin materialul in carouri negre)",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "dueOn": "2026-10-04",
+      "leftover": true,
+      "number": 4,
+      "orderLinks": [],
+      "hours": 1.4167,
+      "tags": [
+        "leftover",
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "05. T alb cusaturi XL (aceeasi regula ca la ala negru)",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-10-04",
       "leftover": true,
       "number": 5,
       "orderLinks": [],
-      "hours": 1,
+      "hours": 0.6667,
       "tags": [
         "leftover",
         "asana",
@@ -413,8 +478,8 @@
       ]
     },
     {
-      "name": "C maneci detasate L + 4S + 2M",
-      "orderName": "#235668, #235672, #235673, #235678, #235679, #235704, #235741",
+      "name": "C maneci detasate 2L + 4S + 2M",
+      "orderName": "#235668, #235672, #235673, #235678, #235679, #235704, #235741, #235751",
       "orderLinks": [
         {
           "name": "#235668",
@@ -450,10 +515,15 @@
           "name": "#235741",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171230810436",
           "cod": true
+        },
+        {
+          "name": "#235751",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11175360397636",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 10.5,
+      "hours": 12,
       "leftover": false,
       "tags": [
         "shopify"
