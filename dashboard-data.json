@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T00:52:54.754Z",
+  "generatedAt": "2026-10-05T06:22:40.979Z",
   "planDate": "2026-10-05",
   "unmatchedProducts": [
     "[#235674] DOER Windbreaker (customisable) - Customer's Product with price 549.00 ID NuXzLl3SA4Fgy8Y2_td798RT",
@@ -128,7 +128,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.67,
+    "hours": 8.75,
     "capacity": 7.2,
     "items": [
       {
@@ -150,60 +150,32 @@
         ]
       },
       {
-        "title": "01. H negru cu patchuri M",
-        "hours": 1,
+        "title": "03. C maro L ",
+        "hours": 1.42,
         "tags": [
-          "shopify",
+          "leftover",
+          "asana",
           "buffer"
-        ],
-        "orderName": "#235686",
-        "orderLinks": [
-          {
-            "name": "#235686",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153074716996",
-            "cod": true
-          }
         ]
       },
       {
-        "title": "02. H offwhite XXL (material bej gros - cu puf pe interior)",
-        "hours": 1,
+        "title": "01. T grey XXL",
+        "hours": 2,
         "tags": [
-          "shopify",
+          "wb",
           "buffer"
         ],
-        "orderName": "#235697",
+        "orderName": "#235700",
         "orderLinks": [
           {
-            "name": "#235697",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155083166020",
+            "name": "#235700",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
             "cod": false
           }
         ]
       },
       {
-        "title": "03. T negru L",
-        "hours": 1.33,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235698, ds-ayou-139-400705156",
-        "orderLinks": [
-          {
-            "name": "#235698",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155158008132",
-            "cod": true
-          },
-          {
-            "name": "ds-ayou-139-400705156",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. W Statue XL ",
+        "title": "02. W Statue XL ",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -221,7 +193,7 @@
     ]
   },
   "flori": {
-    "hours": 8.33,
+    "hours": 9,
     "capacity": 7.2,
     "items": [
       {
@@ -234,8 +206,8 @@
         ]
       },
       {
-        "title": "05. H offwhite XXL ",
-        "hours": 1,
+        "title": "03. C carouri dungi rosii L ",
+        "hours": 1.42,
         "tags": [
           "leftover",
           "asana",
@@ -243,39 +215,58 @@
         ]
       },
       {
-        "title": "01. T grey XXL",
+        "title": "01. H offwhite XXL (material bej gros - cu puf pe interior)",
         "hours": 2,
         "tags": [
+          "leftover",
+          "asana",
+          "buffer",
           "shopify",
           "buffer"
         ],
-        "orderName": "#235700",
+        "orderName": "#235697",
         "orderLinks": [
           {
-            "name": "#235700",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
+            "name": "#235697",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155083166020",
             "cod": false
           }
         ]
       },
       {
-        "title": "02. C maro L ",
-        "hours": 1.42,
+        "title": "02. H negru cu patchuri M",
+        "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235740",
+        "orderName": "#235686",
         "orderLinks": [
           {
-            "name": "#235740",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11170884124996",
+            "name": "#235686",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153074716996",
             "cod": true
           }
         ]
       },
       {
-        "title": "03. W animal print S",
+        "title": "03. T negru L",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235698",
+        "orderLinks": [
+          {
+            "name": "#235698",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155158008132",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. W animal print S",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -959,6 +950,23 @@
       ]
     },
     {
+      "name": "C Bal scurta maro M",
+      "orderName": "#235740",
+      "orderLinks": [
+        {
+          "name": "#235740",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11170884124996",
+          "cod": true
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 1.4167,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "P Drept MG S",
       "orderName": "#235752",
       "orderLinks": [
@@ -1312,16 +1320,6 @@
       ]
     },
     {
-      "gid": "1203699292375692",
-      "name": "C carouri dungi rosii L ",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
       "gid": "1203699292375694",
       "name": "T offwhite S si M ",
       "orderName": null,
@@ -1350,10 +1348,27 @@
         "predicted",
         "asana"
       ]
+    },
+    {
+      "gid": "1218075096218267",
+      "name": "T negru L circus (printat)",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
     }
   ],
   "backlog": {
-    "hours": 0,
-    "items": []
+    "hours": 0.67,
+    "items": [
+      {
+        "orderName": "ds-ayou-139-400705156",
+        "title": "T negru L circus (printat)",
+        "category": "Tricou simplu",
+        "hours": 0.67
+      }
+    ]
   }
 }
