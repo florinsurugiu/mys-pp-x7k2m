@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T15:31:25.058Z",
+  "generatedAt": "2026-10-06T20:32:55.173Z",
   "planDate": "2026-10-06",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -125,7 +125,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.83,
+    "hours": 8.58,
     "capacity": 7.2,
     "items": [
       {
@@ -184,26 +184,37 @@
       },
       {
         "title": "01. T grey XXL",
-        "hours": 2.67,
+        "hours": 2,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235755, ds-ayou-139-400705156, #235698",
+        "orderName": "#235698, #235700",
         "orderLinks": [
-          {
-            "name": "#235755",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11176666366276",
-            "cod": false
-          },
-          {
-            "name": "ds-ayou-139-400705156",
-            "url": null,
-            "cod": false
-          },
           {
             "name": "#235698",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155158008132",
+            "cod": true
+          },
+          {
+            "name": "#235700",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. C carouri (aceeasi regula ca la cea maro) - L (vezi link)",
+        "hours": 1.42,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235740",
+        "orderLinks": [
+          {
+            "name": "#235740",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11170884124996",
             "cod": true
           }
         ]
@@ -211,7 +222,7 @@
     ]
   },
   "flori": {
-    "hours": 8.08,
+    "hours": 8.75,
     "capacity": 7.2,
     "items": [
       {
@@ -240,17 +251,22 @@
         ]
       },
       {
-        "title": "02. T negru M 777 (about you test)",
-        "hours": 0.67,
+        "title": "02. T offwhite S si M ",
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235700",
+        "orderName": "#235755, ds-ayou-139-400705156",
         "orderLinks": [
           {
-            "name": "#235700",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
+            "name": "#235755",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11176666366276",
+            "cod": false
+          },
+          {
+            "name": "ds-ayou-139-400705156",
+            "url": null,
             "cod": false
           }
         ]
@@ -290,62 +306,6 @@
     ]
   },
   "croit": [
-    {
-      "name": "01. Pant negri dama S long (tipar pant dama - daca e regular adaugi 5 cm)",
-      "orderName": null,
-      "category": "Pantalon drept",
-      "dueOn": "2026-10-06",
-      "leftover": false,
-      "number": 1,
-      "orderLinks": [],
-      "hours": 2,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "02. C carouri (aceeasi regula ca la cea maro) - L (vezi link)",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-10-06",
-      "leftover": false,
-      "number": 2,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "03. T alb XS",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-10-06",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "05. C albastra XL ",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-10-06",
-      "leftover": false,
-      "number": 5,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
     {
       "name": "C albastru Stripes M",
       "orderName": "WB#3465329",
@@ -413,8 +373,8 @@
       ]
     },
     {
-      "name": "T Alb 2L + XXL + 2M + 2S",
-      "orderName": "#235690, #235705, #235719, #235721, #235736, #235754, #235757",
+      "name": "T Alb 2L + XXL + 3M + 2S",
+      "orderName": "#235690, #235705, #235719, #235721, #235736, #235754, #235757, #235759",
       "orderLinks": [
         {
           "name": "#235690",
@@ -450,10 +410,15 @@
           "name": "#235757",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11178050912580",
           "cod": false
+        },
+        {
+          "name": "#235759",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179566235972",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 4.666899999999999,
+      "hours": 5.333599999999999,
       "leftover": false,
       "tags": [
         "shopify"
@@ -812,23 +777,6 @@
       ]
     },
     {
-      "name": "C Bal scurta maro M",
-      "orderName": "#235740",
-      "orderLinks": [
-        {
-          "name": "#235740",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11170884124996",
-          "cod": true
-        }
-      ],
-      "category": "Camasa scurta",
-      "hours": 1.4167,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "H Patch S + XL",
       "orderName": "#235742, #235750",
       "orderLinks": [
@@ -1092,9 +1040,83 @@
       "tags": [
         "shopify"
       ]
+    },
+    {
+      "name": "P Drept MG L",
+      "orderName": "#235758",
+      "orderLinks": [
+        {
+          "name": "#235758",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179351867716",
+          "cod": false
+        }
+      ],
+      "category": "Pantalon drept",
+      "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Gri XL",
+      "orderName": "#235758",
+      "orderLinks": [
+        {
+          "name": "#235758",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179351867716",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1219216180660168",
+      "name": "06. WB custom L (vezi poza) ",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219216180660164",
+      "name": "05. C albastra XL ",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219216286103837",
+      "name": "03. T alb XS",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1203699292375698",
+      "name": "01. Pant negri dama S long (tipar pant dama - daca e regular adaugi 5 cm)",
+      "orderName": null,
+      "category": "Pantalon drept",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1219158558743855",
       "name": "06. C albastra L (vezi poza)",
