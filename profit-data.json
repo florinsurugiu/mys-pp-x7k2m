@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T01:54:58.759Z",
+  "generatedAt": "2026-10-06T08:36:41.595Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -40,13 +40,13 @@
     },
     {
       "date": "2026-09-09",
-      "revenue": 3756.97,
+      "revenue": 2442.4,
       "cogs": 1898.67,
       "shipping": 83.3,
       "adSpend": 661.49,
-      "grossProfit": 1775,
-      "netProfit": 1113.51,
-      "roas": 5.68,
+      "grossProfit": 460.43,
+      "netProfit": -201.06,
+      "roas": 3.69,
       "unknownCostUnits": 0
     },
     {
@@ -329,48 +329,48 @@
       "revenue": 765.6,
       "cogs": 406.03,
       "shipping": 0,
-      "adSpend": 601.83,
+      "adSpend": 603.75,
       "grossProfit": 359.57,
-      "netProfit": -242.26,
+      "netProfit": -244.18,
       "roas": 1.27,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-10-06",
-      "revenue": 0,
-      "cogs": 0,
+      "revenue": 630.4,
+      "cogs": 288.43,
       "shipping": 0,
-      "adSpend": 66.76,
-      "grossProfit": 0,
-      "netProfit": -66.76,
-      "roas": 0,
+      "adSpend": 174.92,
+      "grossProfit": 341.97,
+      "netProfit": 167.05,
+      "roas": 3.6,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
-      "name": "DE",
-      "spend": 8071.15,
-      "purchases": 27,
-      "metaRoas": 1.697719
+      "name": "RO 26  march",
+      "spend": 8110.38,
+      "purchases": 113,
+      "metaRoas": 5.482956
     },
     {
-      "name": "RO 26  march",
-      "spend": 8057.6,
-      "purchases": 113,
-      "metaRoas": 5.518868
+      "name": "DE",
+      "spend": 8105.89,
+      "purchases": 27,
+      "metaRoas": 1.690443
     },
     {
       "name": "Latvia",
-      "spend": 2423.53,
+      "spend": 2439.06,
       "purchases": 11,
-      "metaRoas": 2.270764
+      "metaRoas": 2.256306
     },
     {
       "name": "Single Images",
-      "spend": 805.94,
+      "spend": 812.99,
       "purchases": 7,
-      "metaRoas": 4.284976
+      "metaRoas": 4.24785
     }
   ]
 }
