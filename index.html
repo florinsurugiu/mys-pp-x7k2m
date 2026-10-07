@@ -1237,7 +1237,7 @@ function renderPnlPeriod(root) {
       ? fmtMoney(runRate.actual) + ' in ' + runRate.daysElapsed + ' din ' + runRate.daysInMonth + ' zile -- proiectat pe rulaj real'
       : 'medie D2C pe ' + data.rows.length + ' luni (inca nu avem vanzari reale pt luna asta)') +
     statCard('Venit estimat (D2C + B2B incoming)', fmtMoney(revenueWithIncoming), incomingB2BTotal > 0 ? 'D2C ' + fmtMoney(d2cEstimate) + ' + B2B incoming ' + fmtMoney(incomingB2BTotal) : 'niciun proiect B2B incoming adaugat inca') +
-    statCard('Costuri medii / luna', fmtMoney(costsTotal), 'COGS (medie 8 luni, fara cost proiecte) · restul (medie ultimele 4 luni)', null, costsTooltip(data.rows.length, 4)) +
+    statCard('Costuri medii / luna', fmtMoney(costsTotal), 'COGS (medie ' + data.rows.length + ' luni, fara cost proiecte) · restul (medie ultimele 4 luni)', null, costsTooltip(data.rows.length, 4)) +
     statCard('Rezultat net estimat', (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming), incomingB2BTotal > 0 ? 'D2C real + B2B incoming (' + fmtMoney(incomingB2BTotal) + ')' : 'pe baza vanzarilor D2C reale, fara proiecte B2B', netWithIncoming >= 0 ? 'good' : 'bad')
     :
     statCard('Venit total (' + (periodLabel || filteredRows.length + ' luni') + ')', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k' + (pnlPeriod === data.rows.length ? ' &middot; include luna curenta (estimat)' : '')) +
@@ -1325,7 +1325,7 @@ function renderPnlPeriod(root) {
     ) +
     '<div class="stat-sub" style="margin-top:20px">' +
       (isSingleMonth
-        ? 'COGS medie 8 luni (fara cost proiecte B2B) &middot; restul categoriilor medie ultimele 4 luni (nu avem defalcare lunara reala pe categorii).'
+        ? 'COGS medie ' + data.rows.length + ' luni (fara cost proiecte B2B) &middot; restul categoriilor medie ultimele 4 luni (nu avem defalcare lunara reala pe categorii).'
         : 'Categoriile fara defalcare lunara reala (Neclasificat, Chirie etc) sunt scalate proportional cu ponderea lor pe tot intervalul.') +
     '</div>' +
     (isSingleMonth ? '' : '<div class="meta" style="margin-top:8px">' + escapeHtml(data.period) + ' &middot; ' + escapeHtml(data.entities) + '</div>');
