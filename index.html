@@ -1156,6 +1156,15 @@ function buildCurrentMonthEstimateRow(data) {
   };
 }
 
+function pnlFilterButtons(data) {
+  const monthOptions = [1, 'lastMonth', 3, 6, data.rows.length];
+  return [...new Set(monthOptions)].map((m) => (
+    '<button class="period-btn' + (m === pnlPeriod ? ' active' : '') + '" onclick="setPnlPeriod(' + (typeof m === 'string' ? "'" + m + "'" : m) + ')">' +
+      (m === data.rows.length ? 'Toate' : m === 1 ? 'Luna curenta' : m === 'lastMonth' ? 'Luna trecuta' : m + ' luni') +
+    '</button>'
+  )).join('');
+}
+
 function renderPnlPeriod(root) {
   const data = pnlDataCache;
   const isSingleMonth = pnlPeriod === 1;
@@ -1165,8 +1174,29 @@ function renderPnlPeriod(root) {
     filteredRows = [avg];
     t = avg;
   } else {
-    const sliceCount = pnlPeriod === 'lastMonth' ? 1 : pnlPeriod;
-    filteredRows = data.rows.slice(-sliceCount);
+    if (pnlPeriod === 'lastMonth') {
+      // Luna trecuta = luna calendaristica anterioara, nu ultimul rand din
+      // date: istoricul vine din acte contabile adaugate manual, deci poate
+      // ramane in urma cu cateva luni -- atunci spunem asta explicit in loc
+      // sa afisam tacit o luna mai veche.
+      const now = new Date();
+      const prev = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+      const prevKey = prev.getFullYear() + '_' + String(prev.getMonth() + 1).padStart(2, '0');
+      const prevRow = data.rows.find((r) => r.month === prevKey);
+      if (!prevRow) {
+        const lastRow = data.rows[data.rows.length - 1];
+        const prevLabel = prev.toLocaleDateString('ro-RO', { month: 'long', year: 'numeric' });
+        root.innerHTML =
+          '<div class="period-filter">' + pnlFilterButtons(data) + '</div>' +
+          '<div class="card"><div class="person-name" style="font-size:0.95rem;margin-bottom:6px">Nu avem inca date pentru ' + escapeHtml(prevLabel) + '</div>' +
+          '<div class="item-sub">Istoricul P&amp;L e reconstruit din acte contabile si ajunge momentan pana la ' + escapeHtml(lastRow.label) +
+          '. Lunile de dupa trebuie adaugate din extrase/facturi.</div></div>';
+        return;
+      }
+      filteredRows = [prevRow];
+    } else {
+      filteredRows = data.rows.slice(-pnlPeriod);
+    }
     if (pnlPeriod === data.rows.length) {
       // "Toate" include si estimarea lunii curente, nu doar istoricul --
       // altfel totalul pare incomplet fata de ce arata Luna curenta.
@@ -1180,12 +1210,10 @@ function renderPnlPeriod(root) {
     }, { d2c: 0, b2bProject: 0, b2bOther: 0, revenue: 0, cogs: 0, marketing: 0, salaries: 0, taxes: 0, other: 0, net: 0 });
   }
 
-  const monthOptions = [1, 'lastMonth', 3, 6, data.rows.length];
-  const filterBtns = [...new Set(monthOptions)].map((m) => (
-    '<button class="period-btn' + (m === pnlPeriod ? ' active' : '') + '" onclick="setPnlPeriod(' + (typeof m === 'string' ? "'" + m + "'" : m) + ')">' +
-      (m === data.rows.length ? 'Toate' : m === 1 ? 'Luna curenta' : m === 'lastMonth' ? 'Luna trecuta' : m + ' luni') +
-    '</button>'
-  )).join('');
+  const filterBtns = pnlFilterButtons(data);
+  const historyRows = filteredRows.filter((r) => r.month !== 'estimat');
+  const periodLabel = historyRows.length === 1 ? historyRows[0].label
+    : historyRows.length ? historyRows[0].label + ' – ' + historyRows[historyRows.length - 1].label : '';
 
   const statCard = (label, value, sub, cls, tooltip) =>
     '<div class="stat-card"' + (tooltip ? ' title="' + tooltip.replace(/"/g, '&quot;') + '"' : '') + '>' +
@@ -1212,7 +1240,7 @@ function renderPnlPeriod(root) {
     statCard('Costuri medii / luna', fmtMoney(costsTotal), 'COGS (medie 8 luni, fara cost proiecte) · restul (medie ultimele 4 luni)', null, costsTooltip(data.rows.length, 4)) +
     statCard('Rezultat net estimat', (netWithIncoming >= 0 ? '+' : '') + fmtMoney(netWithIncoming), incomingB2BTotal > 0 ? 'D2C real + B2B incoming (' + fmtMoney(incomingB2BTotal) + ')' : 'pe baza vanzarilor D2C reale, fara proiecte B2B', netWithIncoming >= 0 ? 'good' : 'bad')
     :
-    statCard('Venit total (' + filteredRows.length + ' luni)', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k' + (pnlPeriod === data.rows.length ? ' &middot; include luna curenta (estimat)' : '')) +
+    statCard('Venit total (' + (periodLabel || filteredRows.length + ' luni') + ')', fmtMoney(t.revenue), 'D2C ' + Math.round(t.d2c / 1000) + 'k &middot; B2B proiecte ' + Math.round(t.b2bProject / 1000) + 'k &middot; B2B altele ' + Math.round(t.b2bOther / 1000) + 'k' + (pnlPeriod === data.rows.length ? ' &middot; include luna curenta (estimat)' : '')) +
     statCard('Costuri totale', fmtMoney(t.cogs + t.marketing + t.salaries + t.taxes + t.other), 'COGS, marketing, salarii, taxe, altele', null, costsTooltip()) +
     statCard('Rezultat net', (t.net >= 0 ? '+' : '') + fmtMoney(t.net), 'profitabil doar datorita B2B', t.net >= 0 ? 'good' : 'bad');
 
