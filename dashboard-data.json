@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-06T20:32:55.173Z",
-  "planDate": "2026-10-06",
+  "generatedAt": "2026-10-07T00:06:50.634Z",
+  "planDate": "2026-10-07",
   "unmatchedProducts": [],
   "predictionIdeas": [
     {
@@ -92,36 +92,36 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/7820250448109",
-      "title": "AER Black T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_aer_tshirt.jpg?v=1769644685",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/7820252315885",
-      "title": "Oversized Full Print T-shirt Beige",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_beige_tshirt_42e4b226-e1ad-4dfb-9d33-79f00fc76502.jpg?v=1769644607",
-      "category": "Tricou simplu",
-      "size": "XXL",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/7837843849453",
-      "title": "Pink DOER  Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
+      "productId": "gid://shopify/Product/7837777559789",
+      "title": "Statue DOER  Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
       "category": "Windbreaker",
-      "size": "XS",
+      "size": "L",
       "hours": 2.5
     },
     {
-      "productId": "gid://shopify/Product/8877513113924",
-      "title": "Black Hoodie Spirit",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated575_5da77184-16dc-4104-aa57-9769c0980707.jpg?v=1769623148",
-      "category": "Hanorac bumbac",
-      "size": "M",
-      "hours": 1
+      "productId": "gid://shopify/Product/9074732335428",
+      "title": "Pop Cola Obey White Oversized T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Pop-Cola-Obey-White-Oversized-T-shirt.jpg?v=1770057889",
+      "category": "Tricou simplu",
+      "size": "XL",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/7839115542765",
+      "title": "AER Black T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/aer-black-t-shirt-657675_49294a87-ec43-4293-801a-57837b4cb19a.jpg?v=1770114192",
+      "category": "Tricou simplu",
+      "size": "XL",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/9436033843524",
+      "title": "Oversized Black T-shirt Circus",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-black-t-shirt-circus-711533_c98add91-c0fb-45bb-b4b5-29db9a838311.jpg?v=1770115294",
+      "category": "Tricou simplu",
+      "size": "XL",
+      "hours": 0.6667
     }
   ],
   "felicia": {
@@ -506,8 +506,8 @@
       ]
     },
     {
-      "name": "T Negru XXL + M",
-      "orderName": "#235705, #235743",
+      "name": "T Negru 2XXL + M",
+      "orderName": "#235705, #235743, #235760",
       "orderLinks": [
         {
           "name": "#235705",
@@ -518,10 +518,15 @@
           "name": "#235743",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
           "cod": false
+        },
+        {
+          "name": "#235760",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179728142660",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1070,6 +1075,40 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C fara maneci maro XXL",
+      "orderName": "#235760",
+      "orderLinks": [
+        {
+          "name": "#235760",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179728142660",
+          "cod": false
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 1.4167,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Bal scurta maro XXL",
+      "orderName": "#235760",
+      "orderLinks": [
+        {
+          "name": "#235760",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179728142660",
+          "cod": false
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 1.4167,
       "leftover": false,
       "tags": [
         "shopify"
