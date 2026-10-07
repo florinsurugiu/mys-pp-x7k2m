@@ -413,7 +413,10 @@ async function load() {
 
   try {
     const res = await fetch('b2b-projects-data.json', { cache: 'no-store' });
-    if (res.ok) b2bSeedCache = await res.json();
+    if (res.ok) {
+      b2bSeedCache = await res.json();
+      syncIncomingProjectsWithSeed();
+    }
   } catch (e) {}
 
   try {
@@ -1551,6 +1554,19 @@ function loadIncomingProjects() {
     if (raw !== null) return JSON.parse(raw) || [];
   } catch (e) {}
   return b2bSeedCache;
+}
+// Cand lista comuna (b2b-projects-data.json) se schimba, fiecare device o
+// preia, chiar daca avea editari locale mai vechi -- altfel o stergere ceruta
+// "de acum incolo" ar ramane vizibila pe device-urile deja editate.
+const LS_SEED_SIG_KEY = 'mys_pnl_incoming_seed_sig';
+function syncIncomingProjectsWithSeed() {
+  try {
+    const sig = JSON.stringify(b2bSeedCache);
+    if (localStorage.getItem(LS_SEED_SIG_KEY) !== sig) {
+      localStorage.removeItem(LS_PROJECTS_KEY);
+      localStorage.setItem(LS_SEED_SIG_KEY, sig);
+    }
+  } catch (e) {}
 }
 function saveIncomingProjects(list) {
   localStorage.setItem(LS_PROJECTS_KEY, JSON.stringify(list));
