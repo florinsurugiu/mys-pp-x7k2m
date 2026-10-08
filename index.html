@@ -1178,25 +1178,10 @@ function renderPnlPeriod(root) {
     t = avg;
   } else {
     if (pnlPeriod === 'lastMonth') {
-      // Luna trecuta = luna calendaristica anterioara, nu ultimul rand din
-      // date: istoricul vine din acte contabile adaugate manual, deci poate
-      // ramane in urma cu cateva luni -- atunci spunem asta explicit in loc
-      // sa afisam tacit o luna mai veche.
-      const now = new Date();
-      const prev = new Date(now.getFullYear(), now.getMonth() - 1, 1);
-      const prevKey = prev.getFullYear() + '_' + String(prev.getMonth() + 1).padStart(2, '0');
-      const prevRow = data.rows.find((r) => r.month === prevKey);
-      if (!prevRow) {
-        const lastRow = data.rows[data.rows.length - 1];
-        const prevLabel = prev.toLocaleDateString('ro-RO', { month: 'long', year: 'numeric' });
-        root.innerHTML =
-          '<div class="period-filter">' + pnlFilterButtons(data) + '</div>' +
-          '<div class="card"><div class="person-name" style="font-size:0.95rem;margin-bottom:6px">Nu avem inca date pentru ' + escapeHtml(prevLabel) + '</div>' +
-          '<div class="item-sub">Istoricul P&amp;L e reconstruit din acte contabile si ajunge momentan pana la ' + escapeHtml(lastRow.label) +
-          '. Lunile de dupa trebuie adaugate din extrase/facturi.</div></div>';
-        return;
-      }
-      filteredRows = [prevRow];
+      // Luna trecuta = ultima luna inchisa contabil: actele unei luni se
+      // trimit in luna urmatoare, deci ultimul rand din date (nu luna
+      // calendaristica anterioara) e luna completa cea mai recenta.
+      filteredRows = data.rows.slice(-1);
     } else {
       filteredRows = data.rows.slice(-pnlPeriod);
     }
