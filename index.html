@@ -1177,8 +1177,14 @@ function buildProvisionalMonthRow(data, monthDate) {
   const revenue = d2c + b2bOther;
   // Shopify's per-product cost includes labour (already in salaries), so use
   // the documented materials share of non-project revenue instead.
+  // Uses the last 3 documented months (closer to the current purchasing
+  // pattern than the whole history); project costs are only aggregated per
+  // project, so remove the share matching the project revenue in the window.
+  const cogsWindow = rows.slice(-3);
   const projectCost = Object.values(data.projectCosts).reduce((acc, pc) => acc + pc.cost, 0);
-  const cogs = revenue * ((sum(rows, 'cogs') - projectCost) / (sum(rows, 'd2c') + sum(rows, 'b2bOther')));
+  const totalProjectRevenue = sum(rows, 'b2bProject');
+  const windowProjectCost = totalProjectRevenue > 0 ? projectCost * (sum(cogsWindow, 'b2bProject') / totalProjectRevenue) : 0;
+  const cogs = revenue * ((sum(cogsWindow, 'cogs') - windowProjectCost) / (sum(cogsWindow, 'd2c') + sum(cogsWindow, 'b2bOther')));
   const marketing = m.adSpend;
   const salaries = Object.values(CURRENT_TEAM_SALARIES).reduce((a, b) => a + b, 0);
   const taxes = revenue * (sum(rows, 'taxes') / sum(rows, 'revenue'));
@@ -1334,7 +1340,7 @@ function renderPnlPeriod(root) {
 
   const provisionalNote = isProvisional
     ? '<div class="stat-sub" style="margin-bottom:12px">Provizoriu, pana adaugam actele lunii: vanzarile Shopify (' + filteredRows[0].provisional.orders +
-      ' comenzi) si cheltuiala Meta sunt reale; COGS e estimat din ponderea materialelor din acte, iar salariile, taxele si restul costurilor ca la Luna curenta. B2B include doar venitul recurent Wolf &amp; Badger.</div>'
+      ' comenzi) si cheltuiala Meta sunt reale; COGS e estimat din ponderea materialelor din ultimele 3 luni cu acte, iar salariile, taxele si restul costurilor ca la Luna curenta. B2B include doar venitul recurent Wolf &amp; Badger.</div>'
     : '';
   root.innerHTML =
     '<div class="period-filter">' + filterBtns + '</div>' +
