@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T23:22:36.055Z",
+  "generatedAt": "2026-10-08T02:46:36.887Z",
   "planDate": "2026-10-08",
   "unmatchedProducts": [],
   "predictionIdeas": [
@@ -18,6 +18,14 @@
       "category": "Hanorac bumbac",
       "size": "S",
       "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/15616900333892",
+      "title": "Blue Stripes Oversized Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
+      "category": "Camasa Unisex",
+      "size": "L",
+      "hours": 1.5
     },
     {
       "productId": "gid://shopify/Product/15637158494532",
@@ -52,6 +60,14 @@
       "hours": 0.6667
     },
     {
+      "productId": "gid://shopify/Product/15616900333892",
+      "title": "Blue Stripes Oversized Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
+      "category": "Camasa Unisex",
+      "size": "M",
+      "hours": 1.5
+    },
+    {
       "productId": "gid://shopify/Product/15614810030404",
       "title": "Dream State Oversized Off-White Tee",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
@@ -84,48 +100,32 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/7837777559789",
-      "title": "Statue DOER  Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_statue_windbreaker.jpg?v=1769608673",
-      "category": "Windbreaker",
-      "size": "L",
-      "hours": 2.5
-    },
-    {
-      "productId": "gid://shopify/Product/9074732335428",
-      "title": "Pop Cola Obey White Oversized T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Pop-Cola-Obey-White-Oversized-T-shirt.jpg?v=1770057889",
-      "category": "Tricou simplu",
-      "size": "XL",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/7839115542765",
-      "title": "AER Black T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/aer-black-t-shirt-657675_49294a87-ec43-4293-801a-57837b4cb19a.jpg?v=1770114192",
-      "category": "Tricou simplu",
-      "size": "XL",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/9436033843524",
-      "title": "Oversized Black T-shirt Circus",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-black-t-shirt-circus-711533_c98add91-c0fb-45bb-b4b5-29db9a838311.jpg?v=1770115294",
-      "category": "Tricou simplu",
-      "size": "XL",
-      "hours": 0.6667
-    },
-    {
       "productId": "gid://shopify/Product/15416074961220",
       "title": "Vitamin Club Orange T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated418.jpg?v=1766508538",
       "category": "Tricou simplu",
       "size": "S",
       "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15614810030404",
+      "title": "Dream State Oversized Off-White Tee",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
+      "category": "Tricou simplu",
+      "size": "XL",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15631558508868",
+      "title": "Grey Denim Bermuda",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260805_204736_4ba48c85-c239-47e2-8f40-341e78fb1d5c-_1.jpg?v=1786555202",
+      "category": "Bermude",
+      "size": "M",
+      "hours": 1.5
     }
   ],
   "felicia": {
-    "hours": 7.43,
+    "hours": 8.09,
     "capacity": 7.2,
     "items": [
       {
@@ -147,13 +147,13 @@
         ]
       },
       {
-        "title": "01. T negru L",
-        "hours": 2,
+        "title": "01. T grey XXL",
+        "hours": 2.67,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235698, #235755, #235700",
+        "orderName": "#235698, #235700, #235755",
         "orderLinks": [
           {
             "name": "#235698",
@@ -161,13 +161,13 @@
             "cod": true
           },
           {
-            "name": "#235755",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11176666366276",
+            "name": "#235700",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
             "cod": false
           },
           {
-            "name": "#235700",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
+            "name": "#235755",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11176666366276",
             "cod": false
           }
         ]
@@ -206,7 +206,7 @@
     ]
   },
   "flori": {
-    "hours": 7.5,
+    "hours": 7.83,
     "capacity": 7.2,
     "items": [
       {
@@ -237,15 +237,6 @@
         ]
       },
       {
-        "title": "05. T. offwhite XXL",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
         "title": "06. H negru cu patchuri M",
         "hours": 1,
         "tags": [
@@ -255,10 +246,29 @@
         ]
       },
       {
-        "title": "01. T negru L circus (printat)",
-        "hours": 1.33,
+        "title": "01. H Offwhite M",
+        "hours": 1.67,
         "tags": [
-          "wb",
+          "leftover",
+          "asana",
+          "buffer",
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235709",
+        "orderLinks": [
+          {
+            "name": "#235709",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158735323460",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. T negru L circus (printat)",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
           "buffer"
         ],
         "orderName": "ds-ayou-139-400705156",
@@ -271,7 +281,7 @@
         ]
       },
       {
-        "title": "02. W Statue XL ",
+        "title": "03. W Statue XL ",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -289,36 +299,6 @@
     ]
   },
   "croit": [
-    {
-      "name": "01. H Offwhite M",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-10-07",
-      "leftover": true,
-      "number": 1,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
-        "leftover",
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "02. T roz XS",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-10-07",
-      "leftover": true,
-      "number": 2,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "leftover",
-        "asana",
-        "predicted"
-      ]
-    },
     {
       "name": "04. H negru cu fermoar XXL (ca cel offwhite)",
       "orderName": null,
@@ -412,18 +392,18 @@
       ]
     },
     {
-      "name": "C Blue L + S",
-      "orderName": "#235688, #235749",
+      "name": "C Gri Vitamin XL + L",
+      "orderName": "#235699, #235744",
       "orderLinks": [
         {
-          "name": "#235688",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153555849540",
-          "cod": true
+          "name": "#235699",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155395313988",
+          "cod": false
         },
         {
-          "name": "#235749",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11173653578052",
-          "cod": false
+          "name": "#235744",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171902882116",
+          "cod": true
         }
       ],
       "category": "Camasa Unisex",
@@ -434,93 +414,9 @@
       ]
     },
     {
-      "name": "C Complex Rosu L + 2M",
-      "orderName": "#235689, #235722, #235726",
+      "name": "H negru Dept 2L + M",
+      "orderName": "#235701, #235725, #235745",
       "orderLinks": [
-        {
-          "name": "#235689",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153710874948",
-          "cod": true
-        },
-        {
-          "name": "#235722",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
-          "cod": true
-        },
-        {
-          "name": "#235726",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11166073651524",
-          "cod": true
-        }
-      ],
-      "category": "Camasa lunga",
-      "hours": 5.25,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Alb 2L + XXL + 3M + 2S",
-      "orderName": "#235690, #235705, #235719, #235721, #235736, #235754, #235757, #235759",
-      "orderLinks": [
-        {
-          "name": "#235690",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11153713070404",
-          "cod": true
-        },
-        {
-          "name": "#235705",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157155217732",
-          "cod": true
-        },
-        {
-          "name": "#235719",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11162621018436",
-          "cod": false
-        },
-        {
-          "name": "#235721",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164295594308",
-          "cod": true
-        },
-        {
-          "name": "#235736",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11169935786308",
-          "cod": true
-        },
-        {
-          "name": "#235754",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11176421916996",
-          "cod": true
-        },
-        {
-          "name": "#235757",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11178050912580",
-          "cod": false
-        },
-        {
-          "name": "#235759",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179566235972",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 5.333599999999999,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H negru Dept XXL + 2L + M",
-      "orderName": "#235693, #235701, #235725, #235745",
-      "orderLinks": [
-        {
-          "name": "#235693",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154049597764",
-          "cod": false
-        },
         {
           "name": "#235701",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155608469828",
@@ -538,28 +434,6 @@
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 4,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "C Gri Vitamin XL + L",
-      "orderName": "#235699, #235744",
-      "orderLinks": [
-        {
-          "name": "#235699",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155395313988",
-          "cod": false
-        },
-        {
-          "name": "#235744",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171902882116",
-          "cod": true
-        }
-      ],
-      "category": "Camasa Unisex",
       "hours": 3,
       "leftover": false,
       "tags": [
@@ -616,27 +490,47 @@
       ]
     },
     {
-      "name": "H offwhite 3M",
-      "orderName": "#235709, #235722, #235723",
+      "name": "T Alb XXL + 3M + 2S + L",
+      "orderName": "#235705, #235719, #235721, #235736, #235754, #235757, #235759",
       "orderLinks": [
         {
-          "name": "#235709",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158735323460",
+          "name": "#235705",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11157155217732",
+          "cod": true
+        },
+        {
+          "name": "#235719",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11162621018436",
           "cod": false
         },
         {
-          "name": "#235722",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
+          "name": "#235721",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164295594308",
           "cod": true
         },
         {
-          "name": "#235723",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164541681988",
+          "name": "#235736",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11169935786308",
           "cod": true
+        },
+        {
+          "name": "#235754",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11176421916996",
+          "cod": true
+        },
+        {
+          "name": "#235757",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11178050912580",
+          "cod": false
+        },
+        {
+          "name": "#235759",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179566235972",
+          "cod": false
         }
       ],
-      "category": "Hanorac bumbac",
-      "hours": 3,
+      "category": "Tricou simplu",
+      "hours": 4.666899999999999,
       "leftover": false,
       "tags": [
         "shopify"
@@ -718,6 +612,50 @@
       ],
       "category": "Pantalon drept",
       "hours": 10,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Complex Rosu 2M",
+      "orderName": "#235722, #235726",
+      "orderLinks": [
+        {
+          "name": "#235722",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
+          "cod": true
+        },
+        {
+          "name": "#235726",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11166073651524",
+          "cod": true
+        }
+      ],
+      "category": "Camasa lunga",
+      "hours": 3.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H offwhite 2M",
+      "orderName": "#235722, #235723",
+      "orderLinks": [
+        {
+          "name": "#235722",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
+          "cod": true
+        },
+        {
+          "name": "#235723",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164541681988",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -953,23 +891,6 @@
       ]
     },
     {
-      "name": "B Love XL",
-      "orderName": "#235693",
-      "orderLinks": [
-        {
-          "name": "#235693",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11154049597764",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "Bluza Rupta 2S + L",
       "orderName": "#235707, #235746, #235765",
       "orderLinks": [
@@ -1098,6 +1019,23 @@
       ],
       "category": "Tricou raiat",
       "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Blue S",
+      "orderName": "#235749",
+      "orderLinks": [
+        {
+          "name": "#235749",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11173653578052",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1275,6 +1213,36 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1219216180660232",
+      "name": "03. P drept barbati XS regular 2 bucati (bumbac negru gros) - daca tiparul e long scazi 5 cm din lungime pastrand latimea de jos",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219216180660236",
+      "name": "02. T roz XS",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219216180660240",
+      "name": "00. Double sleeve negru M (adaugi 3 cm in lungime la maneci)",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1219216180660164",
       "name": "C albastra XL ",
