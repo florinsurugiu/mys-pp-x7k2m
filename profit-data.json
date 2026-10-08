@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T14:47:33.890Z",
+  "generatedAt": "2026-10-08T14:48:11.198Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -372,5 +372,27 @@
       "purchases": 9,
       "metaRoas": 5.076968
     }
-  ]
+  ],
+  "months": {
+    "2026-09": {
+      "revenue": 73020.98,
+      "cogs": 41880.94,
+      "shipping": 4581.5,
+      "adSpend": 19297.1,
+      "orders": 177,
+      "unknownCostUnits": 0,
+      "firstDay": "2026-09-01",
+      "lastDay": "2026-09-30"
+    },
+    "2026-10": {
+      "revenue": 19423.87,
+      "cogs": 9064.48,
+      "shipping": 666.4,
+      "adSpend": 4942.22,
+      "orders": 38,
+      "unknownCostUnits": 0,
+      "firstDay": "2026-10-01",
+      "lastDay": "2026-10-08"
+    }
+  }
 }
