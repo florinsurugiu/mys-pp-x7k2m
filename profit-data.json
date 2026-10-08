@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T02:57:54.607Z",
+  "generatedAt": "2026-10-08T10:19:17.961Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -172,13 +172,13 @@
     },
     {
       "date": "2026-09-23",
-      "revenue": 3035.07,
-      "cogs": 1528.89,
+      "revenue": 2229.47,
+      "cogs": 1055.71,
       "shipping": 166.6,
       "adSpend": 735.69,
-      "grossProfit": 1339.58,
-      "netProfit": 603.89,
-      "roas": 4.13,
+      "grossProfit": 1007.16,
+      "netProfit": 271.47,
+      "roas": 3.03,
       "unknownCostUnits": 0
     },
     {
@@ -329,48 +329,48 @@
       "revenue": 4504.13,
       "cogs": 1765.22,
       "shipping": 249.9,
-      "adSpend": 651.6,
+      "adSpend": 655.34,
       "grossProfit": 2489.01,
-      "netProfit": 1837.41,
-      "roas": 6.91,
+      "netProfit": 1833.67,
+      "roas": 6.87,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-10-08",
-      "revenue": 0,
-      "cogs": 0,
+      "revenue": 558.4,
+      "cogs": 285.74,
       "shipping": 0,
-      "adSpend": 66.37,
-      "grossProfit": 0,
-      "netProfit": -66.37,
-      "roas": 0,
+      "adSpend": 304.84,
+      "grossProfit": 272.66,
+      "netProfit": -32.18,
+      "roas": 1.83,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
-      "name": "DE",
-      "spend": 8098.73,
-      "purchases": 25,
-      "metaRoas": 1.597724
+      "name": "RO 26  march",
+      "spend": 8199.74,
+      "purchases": 115,
+      "metaRoas": 5.529552
     },
     {
-      "name": "RO 26  march",
-      "spend": 8074.11,
-      "purchases": 115,
-      "metaRoas": 5.61559
+      "name": "DE",
+      "spend": 8169.55,
+      "purchases": 25,
+      "metaRoas": 1.583874
     },
     {
       "name": "Latvia",
-      "spend": 2438.52,
+      "spend": 2475.83,
       "purchases": 10,
-      "metaRoas": 2.156752
+      "metaRoas": 2.124251
     },
     {
       "name": "Single Images",
-      "spend": 806.72,
+      "spend": 815.98,
       "purchases": 9,
-      "metaRoas": 5.177692
+      "metaRoas": 5.118932
     }
   ]
 }
