@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-08T18:24:33.696Z",
-  "planDate": "2026-10-08",
+  "generatedAt": "2026-10-08T21:36:52.593Z",
+  "planDate": "2026-10-09",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee"
   ],
@@ -290,11 +290,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-10-08",
-      "leftover": false,
+      "leftover": true,
       "number": 1,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -304,11 +305,12 @@
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-10-08",
-      "leftover": false,
+      "leftover": true,
       "number": 4,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -632,8 +634,8 @@
       ]
     },
     {
-      "name": "H Layers V2 XXL + XL",
-      "orderName": "#235735, #235748",
+      "name": "H Layers V2 XXL + 2 buc XL",
+      "orderName": "#235735, #235748, #235771",
       "orderLinks": [
         {
           "name": "#235735",
@@ -644,10 +646,15 @@
           "name": "#235748",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11172859052356",
           "cod": true
+        },
+        {
+          "name": "#235771",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11183337865540",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 2,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
