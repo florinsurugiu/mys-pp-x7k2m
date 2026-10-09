@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-10-09T19:44:18.543Z",
-  "planDate": "2026-10-09",
+  "generatedAt": "2026-10-09T23:30:49.176Z",
+  "planDate": "2026-10-12",
   "unmatchedProducts": [
-    "[#235770] Midnight Essential Tee"
+    "[#235770] Midnight Essential Tee",
+    "Oversized Three Layered Distressed Hoodie"
   ],
   "predictionIdeas": [
     {
@@ -127,7 +128,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.5,
+    "hours": 7.83,
     "capacity": 7.2,
     "items": [
       {
@@ -140,19 +141,30 @@
         ]
       },
       {
-        "title": "01. T negru XL",
-        "hours": 1.33,
+        "title": "01. H cu gluga de camasa L (dupa tipar de H regular din bumbac negru gros) (gluga o fac eu)",
+        "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235743, #235760",
+        "orderName": "#235711",
         "orderLinks": [
           {
-            "name": "#235743",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
+            "name": "#235711",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11159450517828",
             "cod": false
-          },
+          }
+        ]
+      },
+      {
+        "title": "02. T negru L",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235760",
+        "orderLinks": [
           {
             "name": "#235760",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179728142660",
@@ -161,7 +173,7 @@
         ]
       },
       {
-        "title": "02. W animal print S",
+        "title": "03. W animal print S",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -177,69 +189,7 @@
         ]
       },
       {
-        "title": "03. W Statue XL ",
-        "hours": 2.5,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235737",
-        "orderLinks": [
-          {
-            "name": "#235737",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11170174697796",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. C albastru Stripes M",
-        "hours": 1.5,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3465329",
-        "orderLinks": [
-          {
-            "name": "WB#3465329",
-            "url": null,
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8.7,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "H fermoar XXL (30%)",
-        "hours": 0.7,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T grey XXL",
-        "hours": 1.33,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235755",
-        "orderLinks": [
-          {
-            "name": "#235755",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11176666366276",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. H offwhite 3M",
+        "title": "04. H offwhite 3M",
         "hours": 3,
         "tags": [
           "shopify"
@@ -262,20 +212,67 @@
             "cod": true
           }
         ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 7.87,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "H fermoar XXL (30%)",
+        "hours": 0.7,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
       },
       {
-        "title": "03. H Aria 2L + S",
-        "hours": 3,
+        "title": "01. T negru XL",
+        "hours": 2,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235743, #235755",
+        "orderLinks": [
+          {
+            "name": "#235743",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
+            "cod": false
+          },
+          {
+            "name": "#235755",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11176666366276",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. W Statue XL ",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235737",
+        "orderLinks": [
+          {
+            "name": "#235737",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11170174697796",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. H Aria S + L",
+        "hours": 2,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235711, #235714, #235762",
+        "orderName": "#235714, #235762",
         "orderLinks": [
-          {
-            "name": "#235711",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11159450517828",
-            "cod": false
-          },
           {
             "name": "#235714",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161060147524",
@@ -311,11 +308,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-10-09",
-      "leftover": false,
+      "leftover": true,
       "number": 3,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -325,11 +323,12 @@
       "orderName": null,
       "category": "Bluza inimioara / obsidian",
       "dueOn": "2026-10-09",
-      "leftover": false,
+      "leftover": true,
       "number": 4,
       "orderLinks": [],
       "hours": 1.5,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -339,25 +338,12 @@
       "orderName": null,
       "category": "Hanorac bumbac",
       "dueOn": "2026-10-09",
-      "leftover": false,
+      "leftover": true,
       "number": 6,
       "orderLinks": [],
       "hours": 1,
       "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "07. H cu gluga de camasa L (dupa tipar de H regular din bumbac negru gros) (gluga o fac eu)",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-10-09",
-      "leftover": false,
-      "number": 7,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -367,30 +353,14 @@
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-10-09",
-      "leftover": false,
+      "leftover": true,
       "number": 9,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
-      ]
-    },
-    {
-      "name": "C albastru Stripes M",
-      "orderName": "WB#3465329",
-      "orderLinks": [
-        {
-          "name": "WB#3465329",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "wb"
       ]
     },
     {
@@ -421,14 +391,9 @@
       ]
     },
     {
-      "name": "H Aria 2L + S",
-      "orderName": "#235711, #235714, #235762",
+      "name": "H Aria S + L",
+      "orderName": "#235714, #235762",
       "orderLinks": [
-        {
-          "name": "#235711",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11159450517828",
-          "cod": false
-        },
         {
           "name": "#235714",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161060147524",
@@ -441,7 +406,7 @@
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 3,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1131,6 +1096,16 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1219309197650761",
+      "name": "02. P drepti barbati L regular (bumbac negru gros)",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1219309197650701",
       "name": "01. P drepti barbati XXL long (daca e regular adaugi 5 cm jos) (bumbacv negru gros)",
