@@ -4,16 +4,16 @@
   "eurRate": 5.05,
   "rows": [
     { "month": "2025_12", "label": "Dec 2025", "d2c": 32111.0, "b2bProject": 0.0, "b2bOther": 0.0, "revenue": 32111.0, "cogs": 9439.0, "marketing": 12651.0, "salaries": 0.0, "taxes": 0.0, "other": 0.0, "net": 10021.0, "klarnaMissing": false },
-    { "month": "2026_01", "label": "Ian 2026", "d2c": 35493.0, "b2bProject": 0.0, "b2bOther": 12682.0, "revenue": 48175.0, "cogs": 11071.02, "marketing": 12288.0, "salaries": 13730.0, "taxes": 9628.0, "other": 21145.98, "net": -24552.0, "klarnaMissing": false },
-    { "month": "2026_02", "label": "Feb 2026", "d2c": 42465.0, "b2bProject": 135473.0, "b2bOther": 5447.0, "revenue": 183385.0, "cogs": 74929.34, "marketing": 11041.0, "salaries": 14940.0, "taxes": 22198.0, "other": 15003.66, "net": 45272.0, "klarnaMissing": false },
-    { "month": "2026_03", "label": "Mar 2026", "d2c": 31445.0, "b2bProject": 0.0, "b2bOther": 3791.0, "revenue": 35235.0, "cogs": 24245.0, "marketing": 15861.0, "salaries": 4864.0, "taxes": 0.0, "other": 2333.0, "net": -12068.0, "klarnaMissing": true },
-    { "month": "2026_04", "label": "Apr 2026", "d2c": 52682.0, "b2bProject": 160664.0, "b2bOther": 2861.0, "revenue": 216207.0, "cogs": 34626.58, "marketing": 15825.0, "salaries": 17435.0, "taxes": 35249.0, "other": 14300.42, "net": 98771.0, "klarnaMissing": false },
-    { "month": "2026_05", "label": "Mai 2026", "d2c": 39741.0, "b2bProject": 7240.0, "b2bOther": 7500.0, "revenue": 54481.0, "cogs": 24042.65, "marketing": 18789.0, "salaries": 15864.0, "taxes": 14751.0, "other": 13526.35, "net": -34491.0, "klarnaMissing": false },
-    { "month": "2026_06", "label": "Iun 2026", "d2c": 43373.0, "b2bProject": 115731.0, "b2bOther": 17958.0, "revenue": 177062.0, "cogs": 49799.26, "marketing": 16665.0, "salaries": 15879.0, "taxes": 37599.0, "other": 26820.74, "net": 30301.0, "klarnaMissing": false },
-    { "month": "2026_07", "label": "Iul 2026", "d2c": 42258.0, "b2bProject": 0.0, "b2bOther": 12839.0, "revenue": 55097.0, "cogs": 12593.31, "marketing": 16385.0, "salaries": 22340.0, "taxes": 26039.0, "other": 18252.69, "net": -40514.0, "klarnaMissing": false },
-    { "month": "2026_08", "label": "Aug 2026", "d2c": 50326.65, "b2bProject": 0.0, "b2bOther": 12588.24, "revenue": 62914.89, "cogs": 11236.68, "marketing": 18861.5, "salaries": 6940.0, "taxes": 13902.0, "other": 12838.36, "net": -863.65, "klarnaMissing": false }
+    { "month": "2026_01", "label": "Ian 2026", "d2c": 35493.0, "b2bProject": 0.0, "b2bOther": 12682.0, "revenue": 48175.0, "cogs": 11071.02, "marketing": 12288.0, "salaries": 13730.0, "taxes": 9628.0, "other": 22240.98, "net": -25647.0, "klarnaMissing": false, "courierSameday": 1095 },
+    { "month": "2026_02", "label": "Feb 2026", "d2c": 42465.0, "b2bProject": 135473.0, "b2bOther": 5447.0, "revenue": 183385.0, "cogs": 74929.34, "marketing": 11041.0, "salaries": 14940.0, "taxes": 22198.0, "other": 16932.66, "net": 43343.0, "klarnaMissing": false, "courierSameday": 1929 },
+    { "month": "2026_03", "label": "Mar 2026", "d2c": 31445.0, "b2bProject": 0.0, "b2bOther": 3791.0, "revenue": 35235.0, "cogs": 24245.0, "marketing": 15861.0, "salaries": 4864.0, "taxes": 0.0, "other": 5281.0, "net": -15016.0, "klarnaMissing": true, "courierSameday": 2948 },
+    { "month": "2026_04", "label": "Apr 2026", "d2c": 52682.0, "b2bProject": 160664.0, "b2bOther": 2861.0, "revenue": 216207.0, "cogs": 34626.58, "marketing": 15825.0, "salaries": 17435.0, "taxes": 35249.0, "other": 19526.42, "net": 93545.0, "klarnaMissing": false, "courierSameday": 5226 },
+    { "month": "2026_05", "label": "Mai 2026", "d2c": 39741.0, "b2bProject": 7240.0, "b2bOther": 7500.0, "revenue": 54481.0, "cogs": 24042.65, "marketing": 18789.0, "salaries": 15864.0, "taxes": 14751.0, "other": 16671.35, "net": -37636.0, "klarnaMissing": false, "courierSameday": 3145 },
+    { "month": "2026_06", "label": "Iun 2026", "d2c": 43373.0, "b2bProject": 115731.0, "b2bOther": 17958.0, "revenue": 177062.0, "cogs": 49799.26, "marketing": 16665.0, "salaries": 15879.0, "taxes": 37599.0, "other": 29883.74, "net": 27238.0, "klarnaMissing": false, "courierSameday": 3063 },
+    { "month": "2026_07", "label": "Iul 2026", "d2c": 42258.0, "b2bProject": 0.0, "b2bOther": 12839.0, "revenue": 55097.0, "cogs": 12593.31, "marketing": 16385.0, "salaries": 22340.0, "taxes": 26039.0, "other": 21707.69, "net": -43969.0, "klarnaMissing": false, "courierSameday": 3455 },
+    { "month": "2026_08", "label": "Aug 2026", "d2c": 50326.65, "b2bProject": 0.0, "b2bOther": 12588.24, "revenue": 62914.89, "cogs": 11236.68, "marketing": 18861.5, "salaries": 6940.0, "taxes": 13902.0, "other": 16115.36, "net": -4140.65, "klarnaMissing": false, "courierSameday": 3277 }
   ],
-  "totals": { "d2c": 369894.65, "b2bProject": 419108.0, "b2bOther": 75666.24, "revenue": 864667.89, "cogs": 251982.84, "marketing": 138366.5, "salaries": 111992.0, "taxes": 159366.0, "other": 124220.91, "net": 71876.35 },
+  "totals": { "d2c": 369894.65, "b2bProject": 419108.0, "b2bOther": 75666.24, "revenue": 864667.89, "cogs": 251982.84, "marketing": 138366.5, "salaries": 111992.0, "taxes": 159366.0, "other": 148358.91, "net": 47738.35 },
   "categoryBreakdown": [
     { "name": "COGS (marfă/materiale, incl. proiecte)", "val": 251982.84 },
     { "name": "Taxe (ANAF, TVA, CAS)", "val": 159366.0 },
@@ -23,16 +23,15 @@
     { "name": "Chirie & echipament", "val": 43074.66 },
     { "name": "Personal (călătorii + cumpărături pe card firmă)", "val": 15552.0 },
     { "name": "Contabilitate", "val": 18020.46 },
-    { "name": "Transport, curieri & deplasări business", "val": 11862.17 }
+    { "name": "Transport, curieri & deplasări business", "val": 36000.17 }
   ],
   "projectCosts": {
     "ploom": { "revenue": 296137.0, "cost": 82598.0, "net": 213539.0 },
     "george": { "revenue": 122971.0, "cost": 32886.0, "net": 90085.0 }
   },
-  "withoutB2B": -231748,
+  "withoutB2B": -255886,
   "baseline": [
     { "name": "SIMPLICATED S.R.L.", "cif": "37019355", "rev2023": 172059, "net2023": -15956, "rev2024": 60021, "net2024": -97071 },
     { "name": "CUSTOMISABLE SIMPLICATED S.R.L.", "cif": "46370265", "rev2023": 878723, "net2023": 307742, "rev2024": 139352, "net2024": -183353 },
     { "name": "BAD COPY S.R.L.", "cif": "48150517", "rev2023": 190047, "net2023": 55363, "rev2024": 338359, "net2024": 68671 }
   ]
-}
