@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-10-09T16:36:25.614Z",
+  "generatedAt": "2026-10-09T21:18:14.032Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.3406,
   "days": [
-    {
-      "date": "2026-09-09",
-      "revenue": 2442.4,
-      "cogs": 1897.99,
-      "shipping": 83.3,
-      "adSpend": 662.02,
-      "grossProfit": 461.11,
-      "netProfit": -200.91,
-      "roas": 3.69,
-      "unknownCostUnits": 0
-    },
     {
       "date": "2026-09-10",
       "revenue": 4794.86,
@@ -329,9 +318,9 @@
       "revenue": 2313.85,
       "cogs": 1117.39,
       "shipping": 83.3,
-      "adSpend": 709.98,
+      "adSpend": 710.14,
       "grossProfit": 1113.16,
-      "netProfit": 403.18,
+      "netProfit": 403.02,
       "roas": 3.26,
       "unknownCostUnits": 0
     },
@@ -340,37 +329,48 @@
       "revenue": 368.63,
       "cogs": 181.97,
       "shipping": 83.3,
-      "adSpend": 362.47,
+      "adSpend": 536.52,
       "grossProfit": 103.36,
-      "netProfit": -259.11,
-      "roas": 1.02,
+      "netProfit": -433.16,
+      "roas": 0.69,
+      "unknownCostUnits": 0
+    },
+    {
+      "date": "2026-10-10",
+      "revenue": 0,
+      "cogs": 0,
+      "shipping": 0,
+      "adSpend": 6.78,
+      "grossProfit": 0,
+      "netProfit": -6.78,
+      "roas": 0,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "DE",
-      "spend": 8232.96,
-      "purchases": 24,
-      "metaRoas": 1.535042
+      "spend": 8019.55,
+      "purchases": 23,
+      "metaRoas": 1.409218
     },
     {
       "name": "RO 26  march",
-      "spend": 8208.98,
-      "purchases": 111,
-      "metaRoas": 5.416989
+      "spend": 8015.76,
+      "purchases": 108,
+      "metaRoas": 5.383827
     },
     {
       "name": "Latvia",
-      "spend": 2490.27,
+      "spend": 2432.86,
       "purchases": 11,
-      "metaRoas": 2.683244
+      "metaRoas": 2.746565
     },
     {
       "name": "Single Images",
-      "spend": 820.64,
-      "purchases": 9,
-      "metaRoas": 5.07829
+      "spend": 803.65,
+      "purchases": 8,
+      "metaRoas": 4.268939
     }
   ],
   "months": {
@@ -388,11 +388,11 @@
       "revenue": 19792.5,
       "cogs": 9257.5,
       "shipping": 749.7,
-      "adSpend": 5543.54,
+      "adSpend": 5724.54,
       "orders": 39,
       "unknownCostUnits": 0,
       "firstDay": "2026-10-01",
-      "lastDay": "2026-10-09"
+      "lastDay": "2026-10-10"
     }
   }
 }
