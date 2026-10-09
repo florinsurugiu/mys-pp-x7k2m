@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T21:36:52.593Z",
+  "generatedAt": "2026-10-09T01:25:57.007Z",
   "planDate": "2026-10-09",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee"
@@ -38,11 +38,11 @@
       "hours": 3
     },
     {
-      "productId": "gid://shopify/Product/15616900333892",
-      "title": "Blue Stripes Oversized Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
+      "productId": "gid://shopify/Product/15417915932996",
+      "title": "Vitamin Aqua MG Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated593.jpg?v=1766699424",
       "category": "Camasa Unisex",
-      "size": "L",
+      "size": "XL",
       "hours": 1.5
     },
     {
@@ -118,35 +118,30 @@
       "hours": 1.5
     },
     {
-      "productId": "gid://shopify/Product/15614810030404",
-      "title": "Dream State Oversized Off-White Tee",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
-      "category": "Tricou simplu",
-      "size": "L",
-      "hours": 0.6667
+      "productId": "gid://shopify/Product/15417915932996",
+      "title": "Vitamin Aqua MG Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated593.jpg?v=1766699424",
+      "category": "Camasa Unisex",
+      "size": "XXL",
+      "hours": 1.5
     }
   ],
   "felicia": {
-    "hours": 8,
+    "hours": 8.5,
     "capacity": 7.2,
     "items": [
       {
         "title": "01. T grey XXL",
-        "hours": 2,
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235755, #235743",
+        "orderName": "#235755",
         "orderLinks": [
           {
             "name": "#235755",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11176666366276",
-            "cod": false
-          },
-          {
-            "name": "#235743",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
             "cod": false
           }
         ]
@@ -168,36 +163,61 @@
         ]
       },
       {
-        "title": "03. C albastru Stripes M",
-        "hours": 1.5,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3465329",
-        "orderLinks": [
-          {
-            "name": "WB#3465329",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. C Gri Vitamin XL + L",
+        "title": "03. H offwhite 3M",
         "hours": 3,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235699, #235744",
+        "orderName": "#235709, #235722, #235723",
         "orderLinks": [
           {
-            "name": "#235699",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155395313988",
+            "name": "#235709",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158735323460",
             "cod": false
           },
           {
-            "name": "#235744",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171902882116",
+            "name": "#235722",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
+            "cod": true
+          },
+          {
+            "name": "#235723",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164541681988",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. H Aria S + L",
+        "hours": 2,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235714, #235762",
+        "orderLinks": [
+          {
+            "name": "#235714",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161060147524",
+            "cod": true
+          },
+          {
+            "name": "#235762",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180080726340",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "05. T Maro M",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235715",
+        "orderLinks": [
+          {
+            "name": "#235715",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
             "cod": true
           }
         ]
@@ -205,7 +225,7 @@
     ]
   },
   "flori": {
-    "hours": 8,
+    "hours": 8.83,
     "capacity": 7.2,
     "items": [
       {
@@ -215,37 +235,32 @@
           "shopify",
           "buffer"
         ],
-        "orderName": "#235701",
+        "orderName": "#235711",
         "orderLinks": [
           {
-            "name": "#235701",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155608469828",
+            "name": "#235711",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11159450517828",
             "cod": false
           }
         ]
       },
       {
         "title": "02. T negru XL",
-        "hours": 2,
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235698, #235700, ds-ayou-139-400705156",
+        "orderName": "#235743, #235760",
         "orderLinks": [
           {
-            "name": "#235698",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155158008132",
-            "cod": true
-          },
-          {
-            "name": "#235700",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155459899716",
+            "name": "#235743",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
             "cod": false
           },
           {
-            "name": "ds-ayou-139-400705156",
-            "url": null,
+            "name": "#235760",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179728142660",
             "cod": false
           }
         ]
@@ -279,6 +294,21 @@
             "name": "#235715",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
             "cod": true
+          }
+        ]
+      },
+      {
+        "title": "05. C albastru Stripes M",
+        "hours": 1.5,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3465329",
+        "orderLinks": [
+          {
+            "name": "WB#3465329",
+            "url": null,
+            "cod": false
           }
         ]
       }
@@ -333,28 +363,6 @@
       ]
     },
     {
-      "name": "C Gri Vitamin XL + L",
-      "orderName": "#235699, #235744",
-      "orderLinks": [
-        {
-          "name": "#235699",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11155395313988",
-          "cod": false
-        },
-        {
-          "name": "#235744",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171902882116",
-          "cod": true
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 3,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "H offwhite 3M",
       "orderName": "#235709, #235722, #235723",
       "orderLinks": [
@@ -382,14 +390,9 @@
       ]
     },
     {
-      "name": "H Aria 2L + S",
-      "orderName": "#235711, #235714, #235762",
+      "name": "H Aria S + L",
+      "orderName": "#235714, #235762",
       "orderLinks": [
-        {
-          "name": "#235711",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11159450517828",
-          "cod": false
-        },
         {
           "name": "#235714",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161060147524",
@@ -402,7 +405,7 @@
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 3,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -694,6 +697,23 @@
       ],
       "category": "Camasa scurta",
       "hours": 2.8334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Gri Vitamin L",
+      "orderName": "#235744",
+      "orderLinks": [
+        {
+          "name": "#235744",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171902882116",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1021,23 +1041,6 @@
       ]
     },
     {
-      "name": "T Negru XXL",
-      "orderName": "#235760",
-      "orderLinks": [
-        {
-          "name": "#235760",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179728142660",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T Mov XXL",
       "orderName": "#235764",
       "orderLinks": [
@@ -1192,8 +1195,28 @@
       ]
     },
     {
+      "gid": "1218869498803450",
+      "name": "T negru M",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
       "gid": "1218481540198823",
       "name": "T alb XXL",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1218075096218267",
+      "name": "T negru L circus (printat)",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
