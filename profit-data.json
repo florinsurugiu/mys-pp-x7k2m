@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T07:07:14.275Z",
+  "generatedAt": "2026-10-10T13:41:39.365Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -329,48 +329,48 @@
       "revenue": 368.63,
       "cogs": 181.97,
       "shipping": 83.3,
-      "adSpend": 540.42,
+      "adSpend": 541.11,
       "grossProfit": 103.36,
-      "netProfit": -437.06,
+      "netProfit": -437.75,
       "roas": 0.68,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-10-10",
-      "revenue": 1323.33,
-      "cogs": 532.08,
-      "shipping": 83.3,
-      "adSpend": 155.73,
-      "grossProfit": 707.95,
-      "netProfit": 552.22,
-      "roas": 8.5,
+      "revenue": 1716.55,
+      "cogs": 714.05,
+      "shipping": 166.6,
+      "adSpend": 422.12,
+      "grossProfit": 835.9,
+      "netProfit": 413.78,
+      "roas": 4.07,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 8086.26,
+      "spend": 8197.39,
       "purchases": 108,
-      "metaRoas": 5.336891
+      "metaRoas": 5.264535
     },
     {
       "name": "DE",
-      "spend": 8075.2,
-      "purchases": 23,
-      "metaRoas": 1.399507
+      "spend": 8196.22,
+      "purchases": 25,
+      "metaRoas": 1.588291
     },
     {
       "name": "Latvia",
-      "spend": 2454.65,
+      "spend": 2480.17,
       "purchases": 11,
-      "metaRoas": 2.722184
+      "metaRoas": 2.694165
     },
     {
       "name": "Single Images",
-      "spend": 808.57,
+      "spend": 817.97,
       "purchases": 8,
-      "metaRoas": 4.242999
+      "metaRoas": 4.194241
     }
   ],
   "months": {
@@ -385,11 +385,11 @@
       "lastDay": "2026-09-30"
     },
     "2026-10": {
-      "revenue": 21115.83,
-      "cogs": 9789.58,
-      "shipping": 833,
-      "adSpend": 5877.38,
-      "orders": 40,
+      "revenue": 21509.05,
+      "cogs": 9971.55,
+      "shipping": 916.3,
+      "adSpend": 6144.47,
+      "orders": 41,
       "unknownCostUnits": 0,
       "firstDay": "2026-10-01",
       "lastDay": "2026-10-10"
