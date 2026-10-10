@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T15:19:15.204Z",
+  "generatedAt": "2026-10-10T19:23:13.836Z",
   "planDate": "2026-10-12",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee",
@@ -128,20 +128,39 @@
     }
   ],
   "felicia": {
-    "hours": 8.5,
+    "hours": 9.08,
     "capacity": 7.2,
     "items": [
       {
-        "title": "T negru superwoman XL",
-        "hours": 0.67,
+        "title": "01. H Aria S + L + 2 buc XL",
+        "hours": 3.67,
         "tags": [
           "leftover",
           "asana",
-          "buffer"
+          "buffer",
+          "shopify"
+        ],
+        "orderName": "#235714, #235762, #235773",
+        "orderLinks": [
+          {
+            "name": "#235714",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161060147524",
+            "cod": true
+          },
+          {
+            "name": "#235762",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180080726340",
+            "cod": true
+          },
+          {
+            "name": "#235773",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
+            "cod": false
+          }
         ]
       },
       {
-        "title": "01. H cu gluga de camasa L (dupa tipar de H regular din bumbac negru gros) (gluga o fac eu)",
+        "title": "02. H cu gluga de camasa L (dupa tipar de H regular din bumbac negru gros) (gluga o fac eu)",
         "hours": 1,
         "tags": [
           "shopify",
@@ -157,7 +176,7 @@
         ]
       },
       {
-        "title": "02. T negru L",
+        "title": "03. T negru L",
         "hours": 0.67,
         "tags": [
           "shopify",
@@ -173,7 +192,7 @@
         ]
       },
       {
-        "title": "03. W animal print S",
+        "title": "04. W animal print S",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -189,49 +208,24 @@
         ]
       },
       {
-        "title": "04. H offwhite 3M",
-        "hours": 3,
+        "title": "05. Pant albastru Trousers Faces XXL",
+        "hours": 1.25,
         "tags": [
-          "shopify"
+          "wb"
         ],
-        "orderName": "#235709, #235722, #235723",
+        "orderName": "WB#3470121",
         "orderLinks": [
           {
-            "name": "#235709",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158735323460",
+            "name": "WB#3470121",
+            "url": null,
             "cod": false
-          },
-          {
-            "name": "#235722",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
-            "cod": true
-          },
-          {
-            "name": "#235723",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164541681988",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "05. T Maro M",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235715",
-        "orderLinks": [
-          {
-            "name": "#235715",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
-            "cod": true
           }
         ]
       }
     ]
   },
   "flori": {
-    "hours": 8.2,
+    "hours": 8.87,
     "capacity": 7.2,
     "items": [
       {
@@ -281,27 +275,42 @@
         ]
       },
       {
-        "title": "03. H Aria S + L + XL",
+        "title": "03. H offwhite 3M",
         "hours": 3,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235714, #235762, #235773",
+        "orderName": "#235709, #235722, #235723",
         "orderLinks": [
           {
-            "name": "#235714",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161060147524",
-            "cod": true
-          },
-          {
-            "name": "#235762",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180080726340",
-            "cod": true
-          },
-          {
-            "name": "#235773",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
+            "name": "#235709",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158735323460",
             "cod": false
+          },
+          {
+            "name": "#235722",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
+            "cod": true
+          },
+          {
+            "name": "#235723",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164541681988",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. T Maro M",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235715",
+        "orderLinks": [
+          {
+            "name": "#235715",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
+            "cod": true
           }
         ]
       }
@@ -366,6 +375,23 @@
         "leftover",
         "asana",
         "predicted"
+      ]
+    },
+    {
+      "name": "Pant albastru Trousers Faces XXL",
+      "orderName": "WB#3470121",
+      "orderLinks": [
+        {
+          "name": "WB#3470121",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Pantaloni lungi full print",
+      "hours": 1.25,
+      "leftover": false,
+      "tags": [
+        "wb"
       ]
     },
     {
