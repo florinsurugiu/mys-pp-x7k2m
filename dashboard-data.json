@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T02:43:58.178Z",
+  "generatedAt": "2026-10-10T09:01:40.327Z",
   "planDate": "2026-10-12",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee",
@@ -128,7 +128,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.83,
+    "hours": 8.5,
     "capacity": 7.2,
     "items": [
       {
@@ -212,11 +212,26 @@
             "cod": true
           }
         ]
+      },
+      {
+        "title": "05. T Maro M",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235715",
+        "orderLinks": [
+          {
+            "name": "#235715",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
+            "cod": true
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 7.87,
+    "hours": 8.2,
     "capacity": 7.2,
     "items": [
       {
@@ -266,12 +281,12 @@
         ]
       },
       {
-        "title": "03. H Aria S + L",
-        "hours": 2,
+        "title": "03. H Aria S + L + XL",
+        "hours": 3,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235714, #235762",
+        "orderName": "#235714, #235762, #235773",
         "orderLinks": [
           {
             "name": "#235714",
@@ -282,21 +297,11 @@
             "name": "#235762",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180080726340",
             "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. T Maro M",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235715",
-        "orderLinks": [
+          },
           {
-            "name": "#235715",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
-            "cod": true
+            "name": "#235773",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
+            "cod": false
           }
         ]
       }
@@ -391,8 +396,8 @@
       ]
     },
     {
-      "name": "H Aria S + L",
-      "orderName": "#235714, #235762",
+      "name": "H Aria S + L + XL",
+      "orderName": "#235714, #235762, #235773",
       "orderLinks": [
         {
           "name": "#235714",
@@ -403,10 +408,15 @@
           "name": "#235762",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180080726340",
           "cod": true
+        },
+        {
+          "name": "#235773",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 2,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -694,17 +704,22 @@
       ]
     },
     {
-      "name": "Jacket Denim Negru Dungi XL",
-      "orderName": "#235766",
+      "name": "Jacket Denim Negru Dungi XL + XXL",
+      "orderName": "#235766, #235773",
       "orderLinks": [
         {
           "name": "#235766",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180688965956",
           "cod": true
+        },
+        {
+          "name": "#235773",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
+          "cod": false
         }
       ],
       "category": "Denim Jacket",
-      "hours": 4,
+      "hours": 8,
       "leftover": false,
       "tags": [
         "shopify"
@@ -1089,6 +1104,23 @@
       ],
       "category": "Double sleeve",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Blugi negri dungi XL (EU-42)",
+      "orderName": "#235773",
+      "orderLinks": [
+        {
+          "name": "#235773",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
+          "cod": false
+        }
+      ],
+      "category": "Jeans",
+      "hours": 4,
       "leftover": false,
       "tags": [
         "shopify"
