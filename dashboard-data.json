@@ -1,27 +1,11 @@
 {
-  "generatedAt": "2026-10-10T22:43:50.720Z",
+  "generatedAt": "2026-10-11T01:15:28.721Z",
   "planDate": "2026-10-12",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee",
     "Oversized Three Layered Distressed Hoodie"
   ],
   "predictionIdeas": [
-    {
-      "productId": "gid://shopify/Product/8825186812228",
-      "title": "Interchangable Patches Black Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
-      "category": "Hanorac patchuri",
-      "size": "M",
-      "hours": 3
-    },
-    {
-      "productId": "gid://shopify/Product/14947608396100",
-      "title": "3-in-1 Layered Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_w1.jpg?v=1769601948",
-      "category": "Hanorac bumbac",
-      "size": "S",
-      "hours": 1
-    },
     {
       "productId": "gid://shopify/Product/8825186812228",
       "title": "Interchangable Patches Black Hoodie",
@@ -39,30 +23,6 @@
       "hours": 1.5
     },
     {
-      "productId": "gid://shopify/Product/15637158494532",
-      "title": "Spirit Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Grey-Spirit_db0be8a9-3ec3-4102-a682-ae7784079885.jpg?v=1786555068",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15616900333892",
-      "title": "Blue Stripes Oversized Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260720_102604_1d3bcb28-8db3-428e-9aa0-82003a7c5247.jpg?v=1786555666",
-      "category": "Camasa Unisex",
-      "size": "M",
-      "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15614810030404",
-      "title": "Dream State Oversized Off-White Tee",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_084820_3eb377f8-9217-4458-acf9-8cc0cc91216b.jpg?v=1786555831",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
-    },
-    {
       "productId": "gid://shopify/Product/15590250840388",
       "title": "MYSIMPLICATED® Duality Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
@@ -77,6 +37,14 @@
       "category": "Hanorac patchuri",
       "size": "L",
       "hours": 3
+    },
+    {
+      "productId": "gid://shopify/Product/14947608396100",
+      "title": "3-in-1 Layered Hoodie",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_w1.jpg?v=1769601948",
+      "category": "Hanorac bumbac",
+      "size": "S",
+      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/15417915932996",
@@ -95,6 +63,14 @@
       "hours": 0.6667
     },
     {
+      "productId": "gid://shopify/Product/8825186812228",
+      "title": "Interchangable Patches Black Hoodie",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
+      "category": "Hanorac patchuri",
+      "size": "M",
+      "hours": 3
+    },
+    {
       "productId": "gid://shopify/Product/15636885799236",
       "title": "Broken Stripes Top",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/broken-top.jpg?v=1786523248",
@@ -103,80 +79,85 @@
       "hours": 0.5
     },
     {
-      "productId": "gid://shopify/Product/15590250840388",
-      "title": "MYSIMPLICATED® Duality Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_120139-_1_7bd5187d-c16d-4570-b68f-674ad67ea73b.jpg?v=1786556001",
+      "productId": "gid://shopify/Product/15577307054404",
+      "title": "Oversized Pink Sleeveless Tee",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260618_193045_ff8cadee-4209-4b08-86f5-409ddf66d62e-_1.jpg?v=1786557849",
+      "category": "Maiou",
+      "size": "XL",
+      "hours": 0.5
+    },
+    {
+      "productId": "gid://shopify/Product/15638163521860",
+      "title": "Lost Grey Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260813_111646_2c192fe8-5550-4b16-b0ce-85eb297a96a5.jpg?v=1786620013",
+      "category": "Tricou simplu",
+      "size": "S",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15412421787972",
+      "title": "Pop Cola Grey Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated172.jpg?v=1766265102",
       "category": "Camasa Unisex",
-      "size": "M",
+      "size": "XS",
       "hours": 1.5
     },
     {
-      "productId": "gid://shopify/Product/7843649093869",
-      "title": "Oversized Full Print T-shirt Beige",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Oversized-T-shirt-Beige.jpg?v=1770114428",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
+      "productId": "gid://shopify/Product/7820397969645",
+      "title": "Bermuda Shorts Stickers (recycled fabric)",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_bermuda_stickers_woman.jpg?v=1770378344",
+      "category": "Bermude",
+      "size": "S",
+      "hours": 1.5
     },
     {
-      "productId": "gid://shopify/Product/15572089995588",
-      "title": "Overthinking MS-24 Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/MS244_a4f6a3e1-e75b-4fe2-ae59-09e9102fc218.jpg?v=1786558381",
-      "category": "Tricou simplu",
-      "size": "XS",
-      "hours": 0.6667
+      "productId": "gid://shopify/Product/15577328255300",
+      "title": "MYSIMPLICATED® Atelier Division Overshirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260618_211444_1_4cc0bd3d-98d3-4852-86ef-eb82079d49b9.jpg?v=1786594829",
+      "category": "Camasa scurta",
+      "size": "XL",
+      "hours": 1.4167
+    },
+    {
+      "productId": "gid://shopify/Product/15614808850756",
+      "title": "Soldout Oversized Off-White Tee",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260626_000020_adf6788b-d5f1-4de4-b2f6-0545719773d5.jpg?v=1786555879",
+      "category": "Camasa Unisex",
+      "size": "XL",
+      "hours": 1.5
     }
   ],
   "felicia": {
-    "hours": 9.08,
+    "hours": 9.58,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. H Aria S + L + 2 buc XL",
-        "hours": 3.67,
+        "title": "T negru superwoman XL",
+        "hours": 0.67,
         "tags": [
           "leftover",
           "asana",
-          "buffer",
-          "shopify"
-        ],
-        "orderName": "#235714, #235762, #235773",
-        "orderLinks": [
-          {
-            "name": "#235714",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161060147524",
-            "cod": true
-          },
-          {
-            "name": "#235762",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180080726340",
-            "cod": true
-          },
-          {
-            "name": "#235773",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
-            "cod": false
-          }
+          "buffer"
         ]
       },
       {
-        "title": "02. H cu gluga de camasa L (dupa tipar de H regular din bumbac negru gros) (gluga o fac eu)",
+        "title": "01. H cu gluga de camasa L (dupa tipar de H regular din bumbac negru gros) (gluga o fac eu)",
         "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235711",
+        "orderName": "#235714",
         "orderLinks": [
           {
-            "name": "#235711",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11159450517828",
-            "cod": false
+            "name": "#235714",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161060147524",
+            "cod": true
           }
         ]
       },
       {
-        "title": "03. T negru L",
+        "title": "02. T negru L",
         "hours": 0.67,
         "tags": [
           "shopify",
@@ -192,7 +173,7 @@
         ]
       },
       {
-        "title": "04. W animal print S",
+        "title": "03. W animal print S",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -208,7 +189,7 @@
         ]
       },
       {
-        "title": "05. Pant albastru Trousers Faces XXL",
+        "title": "04. Pant albastru Trousers Faces XXL",
         "hours": 1.25,
         "tags": [
           "wb"
@@ -221,11 +202,31 @@
             "cod": false
           }
         ]
+      },
+      {
+        "title": "05. C Complex Rosu 2M",
+        "hours": 3.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235722, #235726",
+        "orderLinks": [
+          {
+            "name": "#235722",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
+            "cod": true
+          },
+          {
+            "name": "#235726",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11166073651524",
+            "cod": true
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.87,
+    "hours": 9.2,
     "capacity": 7.2,
     "items": [
       {
@@ -275,32 +276,7 @@
         ]
       },
       {
-        "title": "03. H offwhite 3M",
-        "hours": 3,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235709, #235722, #235723",
-        "orderLinks": [
-          {
-            "name": "#235709",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158735323460",
-            "cod": false
-          },
-          {
-            "name": "#235722",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
-            "cod": true
-          },
-          {
-            "name": "#235723",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164541681988",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. T Maro M",
+        "title": "03. T Maro M",
         "hours": 0.67,
         "tags": [
           "shopify"
@@ -311,6 +287,41 @@
             "name": "#235715",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161080758596",
             "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. T Alb 3M + S + L",
+        "hours": 3.33,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235719, #235736, #235754, #235757, #235759",
+        "orderLinks": [
+          {
+            "name": "#235719",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11162621018436",
+            "cod": false
+          },
+          {
+            "name": "#235736",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11169935786308",
+            "cod": true
+          },
+          {
+            "name": "#235754",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11176421916996",
+            "cod": true
+          },
+          {
+            "name": "#235757",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11178050912580",
+            "cod": false
+          },
+          {
+            "name": "#235759",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179566235972",
+            "cod": false
           }
         ]
       }
@@ -395,60 +406,6 @@
       ]
     },
     {
-      "name": "H offwhite 3M",
-      "orderName": "#235709, #235722, #235723",
-      "orderLinks": [
-        {
-          "name": "#235709",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158735323460",
-          "cod": false
-        },
-        {
-          "name": "#235722",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
-          "cod": true
-        },
-        {
-          "name": "#235723",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164541681988",
-          "cod": true
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 3,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H Aria S + L + XL",
-      "orderName": "#235714, #235762, #235773",
-      "orderLinks": [
-        {
-          "name": "#235714",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11161060147524",
-          "cod": true
-        },
-        {
-          "name": "#235762",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180080726340",
-          "cod": true
-        },
-        {
-          "name": "#235773",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 3,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T Maro M",
       "orderName": "#235715",
       "orderLinks": [
@@ -519,6 +476,28 @@
       ],
       "category": "Camasa lunga",
       "hours": 3.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H offwhite 2M",
+      "orderName": "#235722, #235723",
+      "orderLinks": [
+        {
+          "name": "#235722",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164412641604",
+          "cod": true
+        },
+        {
+          "name": "#235723",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164541681988",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -730,6 +709,28 @@
       ]
     },
     {
+      "name": "H Aria L + XL",
+      "orderName": "#235762, #235773",
+      "orderLinks": [
+        {
+          "name": "#235762",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180080726340",
+          "cod": true
+        },
+        {
+          "name": "#235773",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "Jacket Denim Negru Dungi XL + XXL",
       "orderName": "#235766, #235773",
       "orderLinks": [
@@ -763,33 +764,6 @@
       ],
       "category": "Hanorac patchuri",
       "hours": 3,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "Bluza Rupta 2S + L",
-      "orderName": "#235707, #235746, #235765",
-      "orderLinks": [
-        {
-          "name": "#235707",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11158242525508",
-          "cod": false
-        },
-        {
-          "name": "#235746",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11172476289348",
-          "cod": false
-        },
-        {
-          "name": "#235765",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180584239428",
-          "cod": false
-        }
-      ],
-      "category": "Bluza inimioara / obsidian",
-      "hours": 4.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -841,6 +815,28 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Bluza Rupta L + S",
+      "orderName": "#235746, #235765",
+      "orderLinks": [
+        {
+          "name": "#235746",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11172476289348",
+          "cod": false
+        },
+        {
+          "name": "#235765",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180584239428",
+          "cod": false
+        }
+      ],
+      "category": "Bluza inimioara / obsidian",
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
