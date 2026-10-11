@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T07:12:53.174Z",
+  "generatedAt": "2026-10-11T14:01:47.555Z",
   "planDate": "2026-10-12",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee",
@@ -226,7 +226,7 @@
     ]
   },
   "flori": {
-    "hours": 9.2,
+    "hours": 9.87,
     "capacity": 7.2,
     "items": [
       {
@@ -291,12 +291,12 @@
         ]
       },
       {
-        "title": "04. T Alb 3M + S + L",
-        "hours": 3.33,
+        "title": "04. T Alb 4M + S + L",
+        "hours": 4,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235719, #235736, #235754, #235757, #235759",
+        "orderName": "#235719, #235736, #235754, #235757, #235759, #235775",
         "orderLinks": [
           {
             "name": "#235719",
@@ -322,6 +322,11 @@
             "name": "#235759",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179566235972",
             "cod": false
+          },
+          {
+            "name": "#235775",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11188087259460",
+            "cod": true
           }
         ]
       }
@@ -423,8 +428,8 @@
       ]
     },
     {
-      "name": "T Alb 3M + S + L",
-      "orderName": "#235719, #235736, #235754, #235757, #235759",
+      "name": "T Alb 4M + S + L",
+      "orderName": "#235719, #235736, #235754, #235757, #235759, #235775",
       "orderLinks": [
         {
           "name": "#235719",
@@ -450,10 +455,15 @@
           "name": "#235759",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11179566235972",
           "cod": false
+        },
+        {
+          "name": "#235775",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11188087259460",
+          "cod": true
         }
       ],
       "category": "Tricou simplu",
-      "hours": 3.3335,
+      "hours": 4.0001999999999995,
       "leftover": false,
       "tags": [
         "shopify"
