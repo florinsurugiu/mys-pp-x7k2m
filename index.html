@@ -339,6 +339,7 @@
     <button class="tab-btn" data-tab="production">Production</button>
     <button class="tab-btn" data-tab="profit">Marketing</button>
     <button class="tab-btn" data-tab="pnl">P&amp;L</button>
+    <button class="tab-btn" data-tab="cash">Bani</button>
     <button class="tab-btn" data-tab="trends">Trends</button>
     <button class="tab-btn" data-tab="reco">Actions</button>
   </div>
@@ -359,6 +360,11 @@
   </div>
   <div class="tab-panel" id="panel-pnl">
     <div id="root-pnl">
+      <div class="loading">Se incarca datele...</div>
+    </div>
+  </div>
+  <div class="tab-panel" id="panel-cash">
+    <div id="root-cash">
       <div class="loading">Se incarca datele...</div>
     </div>
   </div>
@@ -433,6 +439,17 @@ async function load() {
     if (pnlLastModified) metaParts.push({ label: 'P&L', iso: new Date(pnlLastModified).toISOString(), freshMs: 45 * 24 * 60 * 60 * 1000 });
   } catch (e) {
     rootPnl.innerHTML = '<div class="error">Nu am putut incarca datele P&amp;L (' + e.message + ').</div>';
+  }
+
+  try {
+    const res = await fetch('cash-data.enc.json', { cache: 'no-store' });
+    if (res.ok) {
+      cashEncCache = await res.json();
+      metaParts.push({ label: 'Bani', iso: cashEncCache.generatedAt, freshMs: 2 * 60 * 60 * 1000 });
+    }
+    await renderCash();
+  } catch (e) {
+    document.getElementById('root-cash').innerHTML = '<div class="error">Nu am putut incarca datele de cash (' + e.message + ').</div>';
   }
 
   try {
@@ -913,6 +930,212 @@ function predictionIdeasSection(ideas) {
       '<div class="zero-list">' + rows + '</div>' +
     '</section>'
   );
+}
+
+// ---- Tab "Bani": cash on hand, what comes in, what must go out. ----
+// cash-data.enc.json is AES-GCM encrypted by automation/cash/cash-report.mjs
+// (private repo) because it names people and suppliers; the passphrase and
+// the bank balances (no bank API yet) stay in this browser's localStorage.
+const CASH_PASS_KEY = 'mys_cash_pass';
+const CASH_BAL_KEY = 'mys_cash_balances';
+let cashEncCache = null;
+let cashDataCache = null;
+
+function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+function lsDel(k) { try { localStorage.removeItem(k); } catch (e) {} }
+
+async function decryptCash(enc, pass) {
+  const b = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+  const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pass), 'PBKDF2', false, ['deriveKey']);
+  const key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b(enc.salt), iterations: 250000, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+  const plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b(enc.iv) }, key, b(enc.data));
+  return JSON.parse(new TextDecoder().decode(plain));
+}
+
+function fmtLei(n) { return Math.round(n).toLocaleString('ro-RO') + ' lei'; }
+function dayKey(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+function fmtDay(d) { return d.toLocaleDateString('ro-RO', { weekday: 'short', day: 'numeric', month: 'short' }); }
+const CASH_PRIORITY = { must: ['obligatoriu', 'confirmat'], flex: ['se poate amâna', 'probabil'], optional: ['opțional', ''] };
+
+async function renderCash() {
+  const root = document.getElementById('root-cash');
+  if (!cashEncCache) { root.innerHTML = '<div class="error">Datele de cash nu sunt publicate încă.</div>'; return; }
+  const pass = lsGet(CASH_PASS_KEY);
+  if (!pass) return renderCashLogin(root);
+  try {
+    cashDataCache = await decryptCash(cashEncCache, pass);
+  } catch (e) {
+    lsDel(CASH_PASS_KEY);
+    return renderCashLogin(root, 'Parola nu e corectă.');
+  }
+  renderCashData(root, cashDataCache);
+}
+
+function renderCashLogin(root, err) {
+  root.innerHTML = '<div class="card" style="max-width:420px">' +
+    '<h2>Bani · protejat</h2><p class="item-sub" style="margin:0 0 12px">Datele sunt criptate. Parola rămâne doar pe acest dispozitiv.</p>' +
+    '<form id="cash-login" style="display:flex;gap:8px;flex-wrap:wrap">' +
+    '<input id="cash-pass" type="password" autocomplete="current-password" placeholder="Parola" style="flex:1;min-width:180px;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text)">' +
+    '<button class="period-btn active" type="submit">Deschide</button></form>' +
+    (err ? '<div class="error" style="margin-top:10px">' + err + '</div>' : '') + '</div>';
+  document.getElementById('cash-login').addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    lsSet(CASH_PASS_KEY, document.getElementById('cash-pass').value);
+    renderCash();
+  });
+}
+
+function cashBalances() {
+  try { return JSON.parse(lsGet(CASH_BAL_KEY)) || null; } catch (e) { return null; }
+}
+
+/** Day-by-day projection for the next `days` days: known incoming orders,
+ * future sales at the last-28-day run rate (landing after each method's
+ * payout delay; PayPal excluded, it goes to the personal account), the
+ * recurring payments on their usual day of month, and Meta spend daily. */
+function buildCashProjection(d, start, days) {
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const rows = [];
+  const known = {};
+  for (const i of d.incoming) known[i.expected] = (known[i.expected] || 0) + i.amount * (i.method === 'cod' ? 0.95 : 0.97);
+  // COD refusals and card/Klarna fees: small haircuts so "intră" isn't optimistic.
+  const net = { cod: 0.95, card: 0.97, klarna: 0.95 };
+  let bal = start;
+  for (let k = 0; k < days; k++) {
+    const day = new Date(today); day.setDate(today.getDate() + k);
+    const key = dayKey(day);
+    let inKnown = known[key] || 0;
+    if (k === 0) for (const [kk, v] of Object.entries(known)) if (kk < key) inKnown += v;
+    let inForecast = 0;
+    for (const [m, perDay] of Object.entries(d.dailySalesByMethod)) {
+      if (!net[m]) continue;
+      const lag = (d.lagDays[m] || 3) + (m === 'cod' ? d.codLeadDays : 0);
+      if (k - lag >= 1) inForecast += perDay * net[m];
+    }
+    const out = [];
+    for (const r of d.recurring) {
+      const dim = new Date(day.getFullYear(), day.getMonth() + 1, 0).getDate();
+      if (day.getDate() === Math.min(r.day, dim) && k > 0) out.push(r);
+    }
+    const outSum = out.reduce((s, r) => s + r.amount, 0) + (k > 0 ? d.metaDaily : 0);
+    bal += inKnown + inForecast - outSum;
+    rows.push({ day, key, inKnown, inForecast, out, outSum, bal });
+  }
+  return rows;
+}
+
+function cashChart(rows, minBalance) {
+  const W = 760, H = 200, pl = 8, pr = 8, pt = 14, pb = 22;
+  const vals = rows.map((r) => r.bal);
+  const lo = Math.min(0, minBalance, ...vals), hi = Math.max(minBalance, ...vals) * 1.05 || 1;
+  const x = (i) => pl + (i / (rows.length - 1)) * (W - pl - pr);
+  const y = (v) => pt + (1 - (v - lo) / (hi - lo)) * (H - pt - pb);
+  const pts = rows.map((r, i) => x(i).toFixed(1) + ',' + y(r.bal).toFixed(1)).join(' ');
+  const area = 'M' + x(0) + ',' + y(lo) + ' L' + pts.replace(/ /g, ' L') + ' L' + x(rows.length - 1) + ',' + y(lo) + ' Z';
+  let ticks = '';
+  rows.forEach((r, i) => {
+    if (i % 7 === 0) ticks += '<text x="' + x(i) + '" y="' + (H - 6) + '" font-size="10" fill="var(--text-faint)" text-anchor="' + (i === 0 ? 'start' : 'middle') + '">' + r.day.toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) + '</text>';
+  });
+  const minI = vals.indexOf(Math.min(...vals));
+  const low = vals[minI] < minBalance;
+  return '<div style="position:relative">' +
+    '<svg id="cash-svg" viewBox="0 0 ' + W + ' ' + H + '" width="100%" role="img" aria-label="Sold estimat pe 8 săptămâni" style="display:block;overflow:visible">' +
+    '<line x1="' + pl + '" x2="' + (W - pr) + '" y1="' + y(0) + '" y2="' + y(0) + '" stroke="var(--border)"/>' +
+    '<line x1="' + pl + '" x2="' + (W - pr) + '" y1="' + y(minBalance) + '" y2="' + y(minBalance) + '" stroke="var(--warn)" stroke-dasharray="4 4"/>' +
+    '<text x="' + (W - pr) + '" y="' + (y(minBalance) - 4) + '" font-size="10" fill="var(--text-faint)" text-anchor="end">prag minim ' + fmtLei(minBalance) + '</text>' +
+    '<path d="' + area + '" fill="var(--accent)" opacity="0.10"/>' +
+    '<polyline points="' + pts + '" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/>' +
+    '<circle cx="' + x(minI) + '" cy="' + y(vals[minI]) + '" r="4" fill="' + (low ? 'var(--bad)' : 'var(--accent)') + '" stroke="var(--bg-elevated)" stroke-width="2"/>' +
+    '<line id="cash-cross" x1="0" x2="0" y1="' + pt + '" y2="' + (H - pb) + '" stroke="var(--text-faint)" visibility="hidden"/>' +
+    ticks + '<rect id="cash-hit" x="0" y="0" width="' + W + '" height="' + H + '" fill="transparent"/></svg>' +
+    '<div id="cash-tip" class="meta-pill" style="position:absolute;top:0;pointer-events:none;display:none;white-space:normal;max-width:220px;line-height:1.4"></div></div>';
+}
+
+function bindCashChart(rows) {
+  const svg = document.getElementById('cash-svg'), hit = document.getElementById('cash-hit');
+  const tip = document.getElementById('cash-tip'), cross = document.getElementById('cash-cross');
+  if (!svg) return;
+  const move = (ev) => {
+    const box = svg.getBoundingClientRect();
+    const i = Math.max(0, Math.min(rows.length - 1, Math.round(((ev.clientX - box.left) / box.width) * (rows.length - 1))));
+    const r = rows[i], px = 8 + (i / (rows.length - 1)) * 744;
+    cross.setAttribute('x1', px); cross.setAttribute('x2', px); cross.setAttribute('visibility', 'visible');
+    tip.style.display = 'block';
+    tip.style.left = Math.min(box.width - 220, Math.max(0, (px / 760) * box.width - 110)) + 'px';
+    tip.innerHTML = '<strong>' + fmtDay(r.day) + '</strong><br>Sold estimat: ' + fmtLei(r.bal) +
+      '<br>Intră: ' + fmtLei(r.inKnown + r.inForecast) + ' · Iese: ' + fmtLei(r.outSum) +
+      (r.out.length ? '<br>' + r.out.map((o) => o.name).join(', ') : '');
+  };
+  hit.addEventListener('pointermove', move);
+  hit.addEventListener('pointerleave', () => { tip.style.display = 'none'; cross.setAttribute('visibility', 'hidden'); });
+}
+
+function renderCashData(root, d) {
+  const bals = cashBalances();
+  const start = bals ? (bals.ing || 0) + (bals.bt || 0) + (bals.cash || 0) : 0;
+  const rows = buildCashProjection(d, start, 56);
+  const next30 = rows.slice(0, 31);
+  const knownIn30 = next30.reduce((s, r) => s + r.inKnown, 0);
+  const in30 = next30.reduce((s, r) => s + r.inKnown + r.inForecast, 0);
+  const out30 = next30.reduce((s, r) => s + r.outSum, 0);
+  const must30 = next30.reduce((s, r) => s + r.out.filter((o) => o.priority === 'must').reduce((a, o) => a + o.amount, 0), 0);
+  const free = start + knownIn30 - must30 - d.minBalance;
+  const minRow = rows.reduce((a, r) => (r.bal < a.bal ? r : a), rows[0]);
+  const codUnshipped = d.incoming.filter((i) => i.method === 'cod' && !i.shipped);
+  const codShipped = d.incoming.filter((i) => i.method === 'cod' && i.shipped);
+  const sum = (xs) => xs.reduce((s, i) => s + i.amount, 0);
+  const balAge = bals ? Math.floor((Date.now() - bals.updatedAt) / 86400000) : null;
+
+  const alerts = [];
+  if (!bals) alerts.push(['bad', 'Introdu soldurile din conturi (jos), altfel proiecția pornește de la 0.']);
+  else if (balAge >= 7) alerts.push(['warn', 'Soldurile sunt de acum ' + balAge + ' zile. Actualizează-le pentru o proiecție corectă.']);
+  if (bals && minRow.bal < d.minBalance) alerts.push(['bad', 'Pe ' + fmtDay(minRow.day) + ' soldul estimat coboară la ' + fmtLei(minRow.bal) + ', sub pragul de ' + fmtLei(d.minBalance) + '. Amână ce se poate amâna sau grăbește încasările.']);
+  if (sum(codUnshipped) > 3000) alerts.push(['warn', fmtLei(sum(codUnshipped)) + ' sunt blocați în ' + codUnshipped.length + ' comenzi ramburs neexpediate. Intră abia după ce pleacă coletele.']);
+
+  const chip = (p) => '<span class="status-chip ' + CASH_PRIORITY[p][1] + '">' + CASH_PRIORITY[p][0] + '</span>';
+  const upcoming = next30.filter((r) => r.out.length).map((r) =>
+    r.out.map((o) => '<li class="item"><span class="item-sub" style="width:92px;flex:0 0 auto">' + fmtDay(r.day) + '</span>' +
+      '<span class="item-title">' + o.name + (o.priority !== 'must' ? '' : '') + chip(o.priority) + '</span>' +
+      '<span class="item-hours">' + (o.estimate ? '~' : '') + fmtLei(o.amount) + '</span></li>').join('')).join('');
+
+  const inRow = (label, xs, sub) => '<li class="item"><span class="item-title">' + label + '<div class="item-sub">' + sub + '</div></span><span class="item-hours">' + fmtLei(sum(xs)) + '</span></li>';
+  const card = d.incoming.filter((i) => i.method === 'card'), klarna = d.incoming.filter((i) => i.method === 'klarna');
+
+  root.innerHTML =
+    (alerts.length ? '<div class="card" style="margin-bottom:16px"><ul class="items">' + alerts.map((a) => '<li class="item"><span class="status-chip ' + (a[0] === 'bad' ? '' : 'probabil') + '" style="' + (a[0] === 'bad' ? 'background:color-mix(in srgb,var(--bad) 20%,transparent);color:var(--bad)' : '') + ';margin:0">' + (a[0] === 'bad' ? 'atenție' : 'de știut') + '</span><span class="item-title">' + a[1] + '</span></li>').join('') + '</ul></div>' : '') +
+    '<div class="stat-grid">' +
+      '<div class="stat-card" title="Suma soldurilor introduse mai jos"><div class="stat-label">În conturi</div><div class="stat-value">' + (bals ? fmtLei(start) : '—') + '</div></div>' +
+      '<div class="stat-card" title="Comenzi deja plasate care se încasează + vânzări estimate din ritmul ultimelor 28 de zile (fără PayPal)"><div class="stat-label">Intră · 30 zile</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(in30) + '</div></div>' +
+      '<div class="stat-card" title="Plăți recurente + Meta"><div class="stat-label">Iese · 30 zile</div><div class="stat-value" style="color:var(--bad)">−' + fmtLei(out30) + '</div></div>' +
+      '<div class="stat-card" title="Sold + încasări sigure (comenzi existente) − plăți obligatorii 30 zile − prag minim"><div class="stat-label">Liber de cheltuit</div><div class="stat-value" style="color:' + (free >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(free) : '—') + '</div></div>' +
+    '</div>' +
+    '<div class="card" style="margin-bottom:16px"><h2>Sold estimat · 8 săptămâni</h2>' + cashChart(rows, d.minBalance) +
+      '<div class="item-sub" style="margin-top:8px">Cel mai jos: ' + fmtLei(minRow.bal) + ' pe ' + fmtDay(minRow.day) + '. Include vânzări estimate din ritmul actual; plățile recurente sunt cele din extrase (mai–aug).</div></div>' +
+    '<div class="grid-two">' +
+      '<div class="card"><h2>De plătit · 30 zile</h2><ul class="items">' + (upcoming || '<li class="item-sub">Nimic programat.</li>') + '</ul></div>' +
+      '<div class="card"><h2>Intră · din comenzi existente</h2><ul class="items">' +
+        inRow('Ramburs expediate', codShipped, codShipped.length + ' colete · Sameday plătește în ~' + d.lagDays.cod + ' zile') +
+        inRow('Ramburs neexpediate', codUnshipped, codUnshipped.length + ' comenzi · după producție (~' + d.codLeadDays + ' zile)') +
+        inRow('Card (Shopify)', card, 'payout la ~' + d.lagDays.card + ' zile') +
+        inRow('Klarna', klarna, 'decontare săptămânală') +
+      '</ul><div class="item-sub" style="margin-top:10px">Vânzări medii/zi: ' + Object.entries(d.dailySalesByMethod).map(([m, v]) => m + ' ' + fmtLei(v)).join(' · ') + '. PayPal intră în contul personal și nu e numărat. Meta: ~' + fmtLei(d.metaDaily) + '/zi.</div></div>' +
+    '</div>' +
+    '<div class="card" style="margin-top:16px"><h2>Solduri' + (bals ? ' · actualizate ' + new Date(bals.updatedAt).toLocaleDateString('ro-RO') : '') + '</h2>' +
+      '<form id="cash-bal" style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">' +
+      [['ing', 'ING Bad Copy'], ['bt', 'BT Simplicated'], ['cash', 'Cash']].map(([k, l]) => '<label class="item-sub" style="display:flex;flex-direction:column;gap:4px">' + l + '<input name="' + k + '" type="number" inputmode="decimal" step="any" value="' + (bals ? bals[k] || 0 : '') + '" style="width:140px;padding:7px 9px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text)"></label>').join('') +
+      '<button class="period-btn active" type="submit">Salvează</button>' +
+      '<button class="period-btn" type="button" id="cash-lock">Blochează</button></form>' +
+      '<div class="item-sub" style="margin-top:8px">Soldurile rămân doar pe acest dispozitiv până conectăm băncile. Date: ' + fmtDateTime(d.generatedAt) + '.</div></div>';
+
+  bindCashChart(rows);
+  document.getElementById('cash-bal').addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    const f = new FormData(ev.target), v = (k) => Number(f.get(k)) || 0;
+    lsSet(CASH_BAL_KEY, JSON.stringify({ ing: v('ing'), bt: v('bt'), cash: v('cash'), updatedAt: Date.now() }));
+    renderCashData(root, d);
+  });
+  document.getElementById('cash-lock').addEventListener('click', () => { lsDel(CASH_PASS_KEY); renderCash(); });
 }
 
 function fmtMoney(n) {
