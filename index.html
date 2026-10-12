@@ -1168,7 +1168,7 @@ function renderCashData(root, d) {
   // Every B2B invoice still open in SmartBill, recent ones (counted as money
   // coming in) and old ones (kept out of the projection) in one list.
   const recvAll = [...recv].sort((a, b) => a.ageDays - b.ageDays);
-  const recvCheckHtml = recvAll.length ? '<div class="card" style="margin-top:16px"><h2>Facturi B2B neîncasate în SmartBill · ' + fmtLei(sum(recvAll)) + '</h2><ul class="items">' +
+  const recvCheckHtml = recvAll.length ? '<div class="card" style="margin-bottom:16px"><h2>Facturi B2B neplătite · ' + recvAll.length + ' · ' + fmtLei(sum(recvAll)) + '</h2><ul class="items">' +
     recvAll.map((r) => cashLine(r.client + (r.counted ? '<span class="status-chip probabil">în calcul</span>' : '<span class="status-chip" style="background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)">de verificat</span>'),
       r.company + ' ' + r.invoice + ' · emisă ' + new Date(r.date).toLocaleDateString('ro-RO') + ' · ' + r.ageDays + ' zile' +
       (r.counted ? ' · așteptată ' + new Date(r.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : ' · nu e în calcul'), r.amount)).join('') +
@@ -1182,11 +1182,11 @@ function renderCashData(root, d) {
       '<button type="button" class="stat-card cash-card" data-calc="calc-out"><div class="stat-label">Iese · 30 zile</div><div class="stat-value" style="color:var(--bad)">−' + fmtLei(out30) + '</div><div class="item-sub">' + fmtLei(must30) + ' obligatoriu</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-free"><div class="stat-label">Liber de cheltuit</div><div class="stat-value" style="color:' + (free >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(free) : '—') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
     '</div>' +
+    recvCheckHtml +
     '<div class="card" style="margin-bottom:16px"><h2>Cum am calculat</h2>' + calc + '</div>' +
     '<div class="card" style="margin-bottom:16px"><h2>Sold estimat · 8 săptămâni</h2>' + cashChart(rows, d.minBalance) +
       '<div class="item-sub" style="margin-top:8px">Cel mai jos: ' + fmtLei(minRow.bal) + ' pe ' + fmtDay(minRow.day) + '.</div></div>' +
     '<div class="card"><h2>De plătit · 30 zile</h2><ul class="items">' + (upcoming || '<li class="item-sub">Nimic programat.</li>') + '</ul></div>' +
-    recvCheckHtml +
     '<div class="card" style="margin-top:16px"><h2>Solduri' + (bals ? ' · actualizate ' + new Date(bals.updatedAt).toLocaleDateString('ro-RO') : '') + '</h2>' +
       '<form id="cash-bal" style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">' +
       [['ing', 'ING Bad Copy'], ['bt', 'BT Simplicated'], ['cash', 'Cash']].map(([k, l]) => '<label class="item-sub" style="display:flex;flex-direction:column;gap:4px">' + l + '<input name="' + k + '" type="number" inputmode="decimal" step="any" value="' + (bals ? bals[k] || 0 : '') + '" style="width:140px;padding:7px 9px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text)"></label>').join('') +
