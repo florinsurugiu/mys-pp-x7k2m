@@ -18,9 +18,14 @@
 <body>
 <div class="card">
   <h1 id="title">Cod de autorizare ANAF</h1>
-  <p id="hint">Copiază codul de mai jos și trimite-l lui Claude. Expiră în câteva minute.</p>
+  <p id="hint">Apasă „Copiază” și trimite codul lui Claude în chat ACUM (ANAF îl acceptă doar ~60 de secunde).</p>
   <code id="code"></code>
   <button id="copy" type="button">Copiază</button>
+  <form id="start" hidden>
+    <label for="cid" style="display:block;color:var(--dim);margin-bottom:6px">Client ID (de la ANAF, din „Editare profil Oauth”)</label>
+    <input id="cid" autocomplete="off" style="width:100%;box-sizing:border-box;padding:9px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text);font:inherit">
+    <button type="submit">Autentificare ANAF cu certificatul</button>
+  </form>
 </div>
 <script>
   // ANAF redirects here after the certificate login (OAuth callback). The
@@ -31,11 +36,29 @@
   const box = document.getElementById('code');
   if (code) {
     box.textContent = code;
-  } else {
-    document.getElementById('title').textContent = 'Nu am primit niciun cod';
-    document.getElementById('hint').textContent = q.get('error_description') || q.get('error') || 'Pagina trebuie deschisă de ANAF după logarea cu certificatul.';
+  } else if (q.get('error')) {
+    document.getElementById('title').textContent = 'ANAF a refuzat logarea';
+    document.getElementById('hint').textContent = q.get('error_description') || q.get('error');
     box.hidden = true;
     document.getElementById('copy').hidden = true;
+  } else {
+    // Start page: build the ANAF authorize link from the Client ID (not a
+    // secret; it is part of the login URL anyway).
+    document.getElementById('title').textContent = 'Conectare ANAF e-Factura';
+    document.getElementById('hint').textContent = 'Deschide pagina asta pe calculatorul cu certificatul digital, cu stick-ul introdus.';
+    box.hidden = true;
+    document.getElementById('copy').hidden = true;
+    const form = document.getElementById('start');
+    form.hidden = false;
+    try { document.getElementById('cid').value = localStorage.getItem('anaf_client_id') || ''; } catch (e) {}
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      const cid = document.getElementById('cid').value.trim();
+      if (!cid) return;
+      try { localStorage.setItem('anaf_client_id', cid); } catch (e) {}
+      const redirect = location.origin + location.pathname;
+      location.href = 'https://logincert.anaf.ro/anaf-oauth2/v1/authorize?response_type=code&client_id=' + encodeURIComponent(cid) + '&redirect_uri=' + encodeURIComponent(redirect) + '&token_content_type=jwt';
+    });
   }
   document.getElementById('copy').addEventListener('click', async () => {
     try { await navigator.clipboard.writeText(code); document.getElementById('copy').textContent = 'Copiat'; } catch (e) {}
