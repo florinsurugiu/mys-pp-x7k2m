@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T17:50:58.732Z",
-  "planDate": "2026-10-12",
+  "generatedAt": "2026-10-12T23:53:49.526Z",
+  "planDate": "2026-10-13",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee",
     "[#235777] Pop Cola Classic Socks (3 pairs)",
@@ -130,7 +130,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.42,
+    "hours": 7.83,
     "capacity": 7.2,
     "items": [
       {
@@ -160,7 +160,23 @@
         ]
       },
       {
-        "title": "03. H Fume M",
+        "title": "03. H layers M(v1)",
+        "hours": 1,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235735",
+        "orderLinks": [
+          {
+            "name": "#235735",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11169724662084",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. H layers XXL (v2)",
         "hours": 1,
         "tags": [
           "shopify",
@@ -176,40 +192,24 @@
         ]
       },
       {
-        "title": "04. Gluga (si bumbac si carouri) de la un H Aria L",
+        "title": "05. H Fume M",
         "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235762",
+        "orderName": "#235748",
         "orderLinks": [
           {
-            "name": "#235762",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180080726340",
+            "name": "#235748",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11172859052356",
             "cod": true
           }
         ]
       },
       {
-        "title": "05. H offwhite M ",
-        "hours": 1,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235723",
-        "orderLinks": [
-          {
-            "name": "#235723",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164541681988",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "06. T offwhite S si M ",
-        "hours": 0.67,
+        "title": "06. T grey XXL",
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
@@ -222,40 +222,16 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "07. Pant albastru Trousers Faces XXL",
-        "hours": 1.25,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3470121",
-        "orderLinks": [
-          {
-            "name": "WB#3470121",
-            "url": null,
-            "cod": false
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.17,
+    "hours": 7.75,
     "capacity": 7.2,
     "items": [
       {
-        "title": "04. H offwhite fermoar M",
-        "hours": 1,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T alb M (DHL) (love)",
-        "hours": 2.67,
+        "title": "01. T negru XL",
+        "hours": 2,
         "tags": [
           "wb",
           "buffer"
@@ -275,33 +251,33 @@
         ]
       },
       {
-        "title": "02. H layers M(v1)",
+        "title": "02. Gluga (si bumbac si carouri) de la un H Aria L",
         "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235735",
+        "orderName": "#235762",
         "orderLinks": [
           {
-            "name": "#235735",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11169724662084",
+            "name": "#235762",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180080726340",
             "cod": true
           }
         ]
       },
       {
-        "title": "03. H layers XXL (v2)",
+        "title": "03. H offwhite M ",
         "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235748",
+        "orderName": "#235723",
         "orderLinks": [
           {
-            "name": "#235748",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11172859052356",
+            "name": "#235723",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164541681988",
             "cod": true
           }
         ]
@@ -321,6 +297,21 @@
             "cod": true
           }
         ]
+      },
+      {
+        "title": "05. Pant albastru Trousers Faces XXL",
+        "hours": 1.25,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3470121",
+        "orderLinks": [
+          {
+            "name": "WB#3470121",
+            "url": null,
+            "cod": false
+          }
+        ]
       }
     ]
   },
@@ -330,11 +321,12 @@
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-10-12",
-      "leftover": false,
+      "leftover": true,
       "number": 8,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -1045,6 +1037,40 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Maro L",
+      "orderName": "#235780",
+      "orderLinks": [
+        {
+          "name": "#235780",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11190989029700",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Gri S",
+      "orderName": "#235780",
+      "orderLinks": [
+        {
+          "name": "#235780",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11190989029700",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
