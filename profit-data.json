@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-10-12T17:44:57.002Z",
+  "generatedAt": "2026-10-12T23:47:49.804Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.337,
   "days": [
-    {
-      "date": "2026-09-12",
-      "revenue": 2368.59,
-      "cogs": 1661.78,
-      "shipping": 249.9,
-      "adSpend": 673.42,
-      "grossProfit": 456.91,
-      "netProfit": -216.51,
-      "roas": 3.52,
-      "unknownCostUnits": 0
-    },
     {
       "date": "2026-09-13",
       "revenue": 2273.4,
@@ -329,46 +318,57 @@
       "revenue": 566.4,
       "cogs": 317.82,
       "shipping": 0,
-      "adSpend": 817.9,
+      "adSpend": 817.95,
       "grossProfit": 248.58,
-      "netProfit": -569.32,
+      "netProfit": -569.37,
       "roas": 0.69,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-10-12",
-      "revenue": 2905.78,
-      "cogs": 1480.95,
+      "revenue": 3320.18,
+      "cogs": 1705.01,
       "shipping": 83.3,
-      "adSpend": 356.83,
-      "grossProfit": 1341.53,
-      "netProfit": 984.7,
-      "roas": 8.14,
+      "adSpend": 504.93,
+      "grossProfit": 1531.87,
+      "netProfit": 1026.94,
+      "roas": 6.58,
+      "unknownCostUnits": 0
+    },
+    {
+      "date": "2026-10-13",
+      "revenue": 0,
+      "cogs": 0,
+      "shipping": 0,
+      "adSpend": 51.88,
+      "grossProfit": 0,
+      "netProfit": -51.88,
+      "roas": 0,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 8264.34,
+      "spend": 8057.06,
       "purchases": 104,
-      "metaRoas": 5.168634
+      "metaRoas": 5.252547
     },
     {
       "name": "DE",
-      "spend": 8220.1,
-      "purchases": 25,
-      "metaRoas": 1.47537
+      "spend": 7958.43,
+      "purchases": 22,
+      "metaRoas": 1.323368
     },
     {
       "name": "Single Images",
-      "spend": 821.15,
+      "spend": 815.6,
       "purchases": 7,
-      "metaRoas": 3.695177
+      "metaRoas": 3.720325
     },
     {
       "name": "BG, HU",
-      "spend": 0,
+      "spend": 86.78,
       "purchases": null,
       "metaRoas": null
     }
@@ -385,14 +385,14 @@
       "lastDay": "2026-09-30"
     },
     "2026-10": {
-      "revenue": 24662.03,
-      "cogs": 11588.35,
+      "revenue": 25076.43,
+      "cogs": 11812.41,
       "shipping": 999.6,
-      "adSpend": 7490.27,
-      "orders": 45,
+      "adSpend": 7690.3,
+      "orders": 46,
       "unknownCostUnits": 0,
       "firstDay": "2026-10-01",
-      "lastDay": "2026-10-12"
+      "lastDay": "2026-10-13"
     }
   }
 }
