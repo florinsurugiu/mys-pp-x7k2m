@@ -253,6 +253,10 @@
   .estimate-field .form-input { width: 100%; }
   .storage-note { font-size: 0.74rem; color: var(--text-faint); margin-top: 10px; }
 
+  .cash-card { text-align: left; font: inherit; color: inherit; cursor: pointer; width: 100%; }
+  .cash-card:hover { border-color: var(--accent); }
+  .cash-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .cash-calc-link { font-size: 0.72rem; color: var(--accent); margin-top: 6px; }
   .cash-calc { border-top: 1px solid var(--border); padding: 8px 0; }
   .cash-calc summary { display: flex; align-items: center; gap: 10px; cursor: pointer; list-style: none; font-size: 0.9rem; }
   .cash-calc summary::-webkit-details-marker { display: none; }
@@ -1083,8 +1087,8 @@ function bindCashChart(rows) {
   hit.addEventListener('pointerleave', () => { tip.style.display = 'none'; cross.setAttribute('visibility', 'hidden'); });
 }
 
-function cashDetails(title, total, rowsHtml, note) {
-  return '<details class="cash-calc"><summary><span class="item-title">' + title + '</span><span class="item-hours">' + total + '</span></summary>' +
+function cashDetails(title, total, rowsHtml, note, id) {
+  return '<details class="cash-calc"' + (id ? ' id="' + id + '"' : '') + '><summary><span class="item-title">' + title + '</span><span class="item-hours">' + total + '</span></summary>' +
     '<ul class="items" style="margin:8px 0 4px">' + rowsHtml + '</ul>' + (note ? '<div class="item-sub" style="margin:4px 0 8px">' + note + '</div>' : '') + '</details>';
 }
 function cashLine(label, sub, amount, sign) {
@@ -1147,16 +1151,16 @@ function renderCashData(root, d) {
   const mustItems = outItems.filter((o) => o.priority === 'must');
 
   const calc =
-    cashDetails('În conturi', bals ? fmtLei(start) : '—', bals ? cashLine('ING Bad Copy', '', bals.ing || 0) + cashLine('BT Simplicated', '', bals.bt || 0) + cashLine('Cash', '', bals.cash || 0) : '', bals ? 'Introduse de tine pe ' + new Date(bals.updatedAt).toLocaleDateString('ro-RO') + '.' : 'Nu ai introdus soldurile.') +
+    cashDetails('În conturi', bals ? fmtLei(start) : '—', bals ? cashLine('ING Bad Copy', '', bals.ing || 0) + cashLine('BT Simplicated', '', bals.bt || 0) + cashLine('Cash', '', bals.cash || 0) : '', bals ? 'Introduse de tine pe ' + new Date(bals.updatedAt).toLocaleDateString('ro-RO') + '.' : 'Nu ai introdus soldurile.', 'calc-bal') +
     cashDetails('Intră · 30 zile', '+' + fmtLei(in30),
       '<li class="item-sub" style="font-weight:700">Sigur (comenzi și facturi existente): ' + fmtLei(knownIn30) + '</li>' + orderLines + recvLines +
       '<li class="item-sub" style="font-weight:700;margin-top:6px">Estimat (comenzi care încă nu există): ' + fmtLei(forecast30) + '</li>' + fcLines,
-      'PayPal (' + fmtLei(d.dailySalesByMethod.paypal || 0) + '/zi) intră în contul personal și nu e numărat. Facturile B2B mai vechi de ' + d.receivableFreshDays + ' de zile nu sunt numărate (vezi „De verificat”).') +
-    cashDetails('Iese · 30 zile', '−' + fmtLei(out30), outLines, d.recurringSource || '') +
+      'PayPal (' + fmtLei(d.dailySalesByMethod.paypal || 0) + '/zi) intră în contul personal și nu e numărat. Facturile B2B mai vechi de ' + d.receivableFreshDays + ' de zile nu sunt numărate (vezi „De verificat”).', 'calc-in') +
+    cashDetails('Iese · 30 zile', '−' + fmtLei(out30), outLines, d.recurringSource || '', 'calc-out') +
     cashDetails('Liber de cheltuit', bals ? fmtLei(free) : '—',
       cashLine('Sold în conturi', '', start, '') + cashLine('+ încasări sigure în 30 zile', 'doar comenzi și facturi existente, fără estimări', knownIn30, '+') +
       cashLine('− plăți obligatorii în 30 zile', mustItems.map((o) => o.name).join(', '), must30, '−') + cashLine('− prag minim', 'rezerva pe care nu vrei s-o atingi', d.minBalance, '−'),
-      'Nu include vânzările estimate, nici plățile care se pot amâna. E suma pe care o poți folosi fără să depinzi de vânzări noi.') +
+      'Nu include vânzările estimate, nici plățile care se pot amâna. E suma pe care o poți folosi fără să depinzi de vânzări noi.', 'calc-free') +
     cashDetails('Sold estimat · cel mai jos', fmtLei(minRow.bal),
       cashLine('Pornește de la sold', '', start) + cashLine('Apoi, în fiecare zi', '+ încasări sigure + vânzări estimate − plăți recurente − Meta', null),
       'Treci cu mouse-ul peste grafic ca să vezi ce intră și ce iese în fiecare zi.');
@@ -1168,10 +1172,10 @@ function renderCashData(root, d) {
   root.innerHTML =
     (alerts.length ? '<div class="card" style="margin-bottom:16px"><ul class="items">' + alerts.map((a) => '<li class="item"><span class="status-chip ' + (a[0] === 'bad' ? '' : 'probabil') + '" style="' + (a[0] === 'bad' ? 'background:color-mix(in srgb,var(--bad) 20%,transparent);color:var(--bad);' : '') + 'margin:0">' + (a[0] === 'bad' ? 'atenție' : 'de știut') + '</span><span class="item-title">' + a[1] + '</span></li>').join('') + '</ul></div>' : '') +
     '<div class="stat-grid">' +
-      '<div class="stat-card"><div class="stat-label">În conturi</div><div class="stat-value">' + (bals ? fmtLei(start) : '—') + '</div></div>' +
-      '<div class="stat-card"><div class="stat-label">Intră · 30 zile</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(in30) + '</div><div class="item-sub">' + fmtLei(knownIn30) + ' sigur</div></div>' +
-      '<div class="stat-card"><div class="stat-label">Iese · 30 zile</div><div class="stat-value" style="color:var(--bad)">−' + fmtLei(out30) + '</div><div class="item-sub">' + fmtLei(must30) + ' obligatoriu</div></div>' +
-      '<div class="stat-card"><div class="stat-label">Liber de cheltuit</div><div class="stat-value" style="color:' + (free >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(free) : '—') + '</div></div>' +
+      '<button type="button" class="stat-card cash-card" data-calc="calc-bal"><div class="stat-label">În conturi</div><div class="stat-value">' + (bals ? fmtLei(start) : '—') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
+      '<button type="button" class="stat-card cash-card" data-calc="calc-in"><div class="stat-label">Intră · 30 zile</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(in30) + '</div><div class="item-sub">' + fmtLei(knownIn30) + ' sigur</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
+      '<button type="button" class="stat-card cash-card" data-calc="calc-out"><div class="stat-label">Iese · 30 zile</div><div class="stat-value" style="color:var(--bad)">−' + fmtLei(out30) + '</div><div class="item-sub">' + fmtLei(must30) + ' obligatoriu</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
+      '<button type="button" class="stat-card cash-card" data-calc="calc-free"><div class="stat-label">Liber de cheltuit</div><div class="stat-value" style="color:' + (free >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(free) : '—') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
     '</div>' +
     '<div class="card" style="margin-bottom:16px"><h2>Cum am calculat</h2>' + calc + '</div>' +
     '<div class="card" style="margin-bottom:16px"><h2>Sold estimat · 8 săptămâni</h2>' + cashChart(rows, d.minBalance) +
@@ -1186,6 +1190,12 @@ function renderCashData(root, d) {
       '<div class="item-sub" style="margin-top:8px">Soldurile rămân doar pe acest dispozitiv până conectăm băncile. Date: ' + fmtDateTime(d.generatedAt) + ' · SmartBill se actualizează zilnic.</div></div>';
 
   bindCashChart(rows);
+  root.querySelectorAll('.cash-card').forEach((btn) => btn.addEventListener('click', () => {
+    const det = document.getElementById(btn.dataset.calc);
+    if (!det) return;
+    det.open = true;
+    det.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
   document.getElementById('cash-bal').addEventListener('submit', (ev) => {
     ev.preventDefault();
     const f = new FormData(ev.target), v = (k) => Number(f.get(k)) || 0;
