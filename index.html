@@ -1147,7 +1147,7 @@ function renderCashData(root, d) {
   const orderLines = Object.entries(byMethod).map(([m, xs]) => cashLine(CASH_METHOD[m] + ' · ' + xs.length + (xs.length === 1 ? ' comandă' : ' comenzi'),
     xs.map((i) => i.order + ' ' + fmtLei(i.amount) + (m === 'cod' ? (i.shipped ? ' expediat' : ' neexpediat') : '') + ' → ' + new Date(i.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' })).join(' · ') +
     '<br>× ' + Math.round(CASH_NET[m] * 100) + '% (' + (m === 'cod' ? 'refuzuri la livrare' : 'comisioane') + ')', sum(xs, (i) => i.amount * CASH_NET[m]), '+')).join('');
-  const recvLines = recvIn.map((r) => cashLine(r.client + ' · ' + r.company + ' ' + r.invoice, 'emisă ' + new Date(r.date).toLocaleDateString('ro-RO') + ' · așteptată ' + new Date(r.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) + ' (30 zile de la emitere)', r.amount, '+')).join('');
+  const recvLines = recvIn.map((r) => cashLine(r.client + ' · ' + r.company + ' ' + r.invoice, (r.planned ? 'de emis ' : 'emisă ') + new Date(r.date).toLocaleDateString('ro-RO') + ' · așteptată ' + new Date(r.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) + ' (30 zile de la emitere)', r.amount, '+')).join('');
   const fcLines = Object.entries(fc).map(([m, v]) => {
     const lag = (d.lagDays[m] || 3) + (m === 'cod' ? d.codLeadDays : 0);
     const n = next30.filter((r) => r.forecast[m]).length;
@@ -1177,9 +1177,11 @@ function renderCashData(root, d) {
   // Every B2B invoice still open in SmartBill, recent ones (counted as money
   // coming in) and old ones (kept out of the projection) in one list.
   const recvAll = [...recv].sort((a, b) => a.ageDays - b.ageDays);
-  const recvCheckHtml = recvAll.length ? '<div class="card" style="margin-bottom:16px"><h2>Facturi B2B neplătite · ' + recvAll.length + ' · ' + fmtLei(sum(recvAll)) + '</h2><ul class="items">' +
-    recvAll.map((r) => cashLine(r.client + (r.counted ? '<span class="status-chip probabil">în calcul</span>' : '<span class="status-chip" style="background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)">de verificat</span>'),
-      r.company + ' ' + r.invoice + ' · emisă ' + new Date(r.date).toLocaleDateString('ro-RO') + ' · ' + r.ageDays + ' zile' +
+  // Planned invoices are not issued yet, so the card title counts only real ones.
+  const recvIssued = recvAll.filter((r) => !r.planned);
+  const recvCheckHtml = recvAll.length ? '<div class="card" style="margin-bottom:16px"><h2>Facturi B2B neplătite · ' + recvIssued.length + ' · ' + fmtLei(sum(recvIssued)) + (recvIssued.length < recvAll.length ? ' + ' + fmtLei(sum(recvAll) - sum(recvIssued)) + ' de emis' : '') + '</h2><ul class="items">' +
+    recvAll.map((r) => cashLine(r.client + (r.planned ? '<span class="status-chip confirmat">de emis</span>' : '') + (r.counted ? '<span class="status-chip probabil">în calcul</span>' : '<span class="status-chip" style="background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)">de verificat</span>'),
+      r.company + ' · ' + (r.planned ? 'factură de emis pe ' + new Date(r.date).toLocaleDateString('ro-RO') : r.invoice + ' · emisă ' + new Date(r.date).toLocaleDateString('ro-RO') + ' · ' + r.ageDays + ' zile') +
       (r.counted ? ' · așteptată ' + new Date(r.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : ' · nu e în calcul'), r.amount)).join('') +
     '</ul><div class="item-sub" style="margin-top:8px">„În calcul”: emise în ultimele ' + d.receivableFreshDays + ' de zile, intră la „Intră · 30 zile” la 30 de zile de la emitere. „De verificat”: mai vechi, nu sunt în calcul. Când banii intră, marchează factura „încasată” în SmartBill și dispare de aici a doua zi.</div></div>' : '';
 
