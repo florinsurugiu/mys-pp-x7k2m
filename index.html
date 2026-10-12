@@ -1165,9 +1165,14 @@ function renderCashData(root, d) {
       cashLine('Pornește de la sold', '', start) + cashLine('Apoi, în fiecare zi', '+ încasări sigure + vânzări estimate − plăți recurente − Meta', null),
       'Treci cu mouse-ul peste grafic ca să vezi ce intră și ce iese în fiecare zi.');
 
-  const recvCheckHtml = recvCheck.length ? '<div class="card" style="margin-top:16px"><h2>De verificat · facturi B2B vechi neîncasate în SmartBill</h2><ul class="items">' +
-    recvCheck.map((r) => cashLine(r.client, r.company + ' ' + r.invoice + ' · emisă ' + new Date(r.date).toLocaleDateString('ro-RO') + ' · ' + r.ageDays + ' zile', r.amount)).join('') +
-    '</ul><div class="item-sub" style="margin-top:8px">Nu sunt în calcul. Dacă banii au intrat, marchează factura „încasată” în SmartBill și dispare de aici a doua zi.</div></div>' : '';
+  // Every B2B invoice still open in SmartBill, recent ones (counted as money
+  // coming in) and old ones (kept out of the projection) in one list.
+  const recvAll = [...recv].sort((a, b) => a.ageDays - b.ageDays);
+  const recvCheckHtml = recvAll.length ? '<div class="card" style="margin-top:16px"><h2>Facturi B2B neîncasate în SmartBill · ' + fmtLei(sum(recvAll)) + '</h2><ul class="items">' +
+    recvAll.map((r) => cashLine(r.client + (r.counted ? '<span class="status-chip probabil">în calcul</span>' : '<span class="status-chip" style="background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)">de verificat</span>'),
+      r.company + ' ' + r.invoice + ' · emisă ' + new Date(r.date).toLocaleDateString('ro-RO') + ' · ' + r.ageDays + ' zile' +
+      (r.counted ? ' · așteptată ' + new Date(r.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : ' · nu e în calcul'), r.amount)).join('') +
+    '</ul><div class="item-sub" style="margin-top:8px">„În calcul”: emise în ultimele ' + d.receivableFreshDays + ' de zile, intră la „Intră · 30 zile” la 30 de zile de la emitere. „De verificat”: mai vechi, nu sunt în calcul. Când banii intră, marchează factura „încasată” în SmartBill și dispare de aici a doua zi.</div></div>' : '';
 
   root.innerHTML =
     (alerts.length ? '<div class="card" style="margin-bottom:16px"><ul class="items">' + alerts.map((a) => '<li class="item"><span class="status-chip ' + (a[0] === 'bad' ? '' : 'probabil') + '" style="' + (a[0] === 'bad' ? 'background:color-mix(in srgb,var(--bad) 20%,transparent);color:var(--bad);' : '') + 'margin:0">' + (a[0] === 'bad' ? 'atenție' : 'de știut') + '</span><span class="item-title">' + a[1] + '</span></li>').join('') + '</ul></div>' : '') +
