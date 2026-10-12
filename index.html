@@ -1029,9 +1029,18 @@ function buildCashProjection(d, start, days) {
     const inForecast = Object.values(forecast).reduce((a, b) => a + b, 0);
     const out = [];
     if (k > 0) {
+      // A real invoice (d.bills) replaces that month's estimate of the same
+      // recurring payment and lands on its own due date.
+      const month = key.slice(0, 7);
       const dim = new Date(day.getFullYear(), day.getMonth() + 1, 0).getDate();
-      for (const r of d.recurring) if (day.getDate() === Math.min(r.day, dim)) out.push(r);
+      for (const r of d.recurring) {
+        if (day.getDate() !== Math.min(r.day, dim)) continue;
+        if ((d.bills || []).some((b) => b.replaces === r.name && b.month === month)) continue;
+        out.push(r);
+      }
+      for (const b of d.bills || []) if (b.due === key) out.push({ ...b, bill: true });
     }
+    if (k === 0) for (const b of d.bills || []) if (b.due <= key) out.push({ ...b, bill: true, overdue: b.due < key });
     const meta = k > 0 ? d.metaDaily : 0;
     const outSum = out.reduce((s, r) => s + r.amount, 0) + meta;
     const inKnown = knownByDay[key] || 0;
@@ -1130,7 +1139,7 @@ function renderCashData(root, d) {
 
   const chip = (p) => '<span class="status-chip ' + CASH_PRIORITY[p][1] + '">' + CASH_PRIORITY[p][0] + '</span>';
   const upcoming = outItems.map((o) => '<li class="item"><span class="item-sub" style="width:92px;flex:0 0 auto">' + fmtDay(o.day) + '</span>' +
-    '<span class="item-title">' + o.name + chip(o.priority) + '</span><span class="item-hours">' + (o.estimate ? '~' : '') + fmtLei(o.amount) + '</span></li>').join('');
+    '<span class="item-title">' + o.name + chip(o.priority) + (o.bill ? '<span class="status-chip confirmat">factură</span>' : '') + (o.note ? '<div class="item-sub">' + o.note + '</div>' : '') + '</span><span class="item-hours">' + (o.estimate ? '~' : '') + fmtLei(o.amount) + '</span></li>').join('');
 
   // "Cum am calculat" -- every total broken into the amounts behind it.
   const byMethod = {};
