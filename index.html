@@ -1138,7 +1138,7 @@ function renderCashData(root, d) {
   if (recvCheck.length) alerts.push(['warn', recvCheck.length + (recvCheck.length === 1 ? ' factură B2B apare neîncasată' : ' facturi B2B apar neîncasate') + ' în SmartBill de peste ' + d.receivableFreshDays + ' de zile (' + fmtLei(sum(recvCheck)) + '). Marchează-le încasate în SmartBill sau cere banii; nu sunt în calcul.']);
 
   const chip = (p) => '<span class="status-chip ' + CASH_PRIORITY[p][1] + '">' + CASH_PRIORITY[p][0] + '</span>';
-  const upcoming = outItems.map((o) => '<li class="item"><span class="item-sub" style="width:92px;flex:0 0 auto">' + fmtDay(o.day) + '</span>' +
+  const upcoming = [...outItems].sort((a, b) => b.amount - a.amount).map((o) => '<li class="item"><span class="item-sub" style="width:92px;flex:0 0 auto">' + fmtDay(o.day) + '</span>' +
     '<span class="item-title">' + o.name + chip(o.priority) + (o.bill ? '<span class="status-chip confirmat">factură</span>' : '') + (o.note ? '<div class="item-sub">' + o.note + '</div>' : '') + '</span><span class="item-hours">' + (o.estimate ? '~' : '') + fmtLei(o.amount) + '</span></li>').join('');
 
   // "Cum am calculat" -- every total broken into the amounts behind it.
