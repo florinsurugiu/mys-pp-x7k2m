@@ -1156,7 +1156,7 @@ function renderCashData(root, d) {
   const outByCat = {};
   for (const o of outItems) (outByCat[o.category] = outByCat[o.category] || []).push(o);
   const outLines = Object.entries(outByCat).sort((a, b) => sum(b[1]) - sum(a[1])).map(([c, xs]) => cashLine(c, xs.map((o) => o.name + ' ' + (o.estimate ? '~' : '') + fmtLei(o.amount) + ' (' + o.day.toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) + ')').join(' · '), sum(xs), '−')).join('') +
-    cashLine('Meta (reclame)', fmtLei(d.metaDaily) + '/zi (media ultimelor 7 zile) × ' + next30.filter((r) => r.meta).length + ' zile', meta30, '−');
+    cashLine('Meta (reclame)', (d.meta && d.meta.budgetDaily ? 'bugete zilnice active acum: ' + d.meta.campaigns.map((c) => c.name + ' ' + fmtLei(c.daily)).join(' · ') + ' = ' + fmtLei(d.metaDaily) + '/zi (în ultimele 7 zile s-au cheltuit în medie ' + fmtLei(d.meta.spentDaily7) + '/zi)' : fmtLei(d.metaDaily) + '/zi (media ultimelor 7 zile)') + ' × ' + next30.filter((r) => r.meta).length + ' zile', meta30, '−');
   const mustItems = outItems.filter((o) => o.priority === 'must');
 
   const calc =
