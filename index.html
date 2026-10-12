@@ -349,7 +349,7 @@
     <button class="tab-btn" data-tab="production">Production</button>
     <button class="tab-btn" data-tab="profit">Marketing</button>
     <button class="tab-btn" data-tab="pnl">P&amp;L</button>
-    <button class="tab-btn" data-tab="cash">Bani</button>
+    <button class="tab-btn" data-tab="cash">Cashflow</button>
     <button class="tab-btn" data-tab="trends">Trends</button>
     <button class="tab-btn" data-tab="reco">Actions</button>
   </div>
@@ -455,7 +455,7 @@ async function load() {
     const res = await fetch('cash-data.enc.json', { cache: 'no-store' });
     if (res.ok) {
       cashEncCache = await res.json();
-      metaParts.push({ label: 'Bani', iso: cashEncCache.generatedAt, freshMs: 2 * 60 * 60 * 1000 });
+      metaParts.push({ label: 'Cashflow', iso: cashEncCache.generatedAt, freshMs: 2 * 60 * 60 * 1000 });
     }
     await renderCash();
   } catch (e) {
@@ -984,7 +984,7 @@ async function renderCash() {
 
 function renderCashLogin(root, err) {
   root.innerHTML = '<div class="card" style="max-width:420px">' +
-    '<h2>Bani · protejat</h2><p class="item-sub" style="margin:0 0 12px">Datele sunt criptate. Parola rămâne doar pe acest dispozitiv.</p>' +
+    '<h2>Cashflow · protejat</h2><p class="item-sub" style="margin:0 0 12px">Datele sunt criptate. Parola rămâne doar pe acest dispozitiv.</p>' +
     '<form id="cash-login" style="display:flex;gap:8px;flex-wrap:wrap">' +
     '<input id="cash-pass" type="password" autocomplete="current-password" placeholder="Parola" style="flex:1;min-width:180px;padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text)">' +
     '<button class="period-btn active" type="submit">Deschide</button></form>' +
@@ -1186,7 +1186,6 @@ function renderCashData(root, d) {
     '</ul><div class="item-sub" style="margin-top:8px">„În calcul”: emise în ultimele ' + d.receivableFreshDays + ' de zile, intră la „Intră · 30 zile” la 30 de zile de la emitere. „De verificat”: mai vechi, nu sunt în calcul. Când banii intră, marchează factura „încasată” în SmartBill și dispare de aici a doua zi.</div></div>' : '';
 
   root.innerHTML =
-    (alerts.length ? '<div class="card" style="margin-bottom:16px"><ul class="items">' + alerts.map((a) => '<li class="item"><span class="status-chip ' + (a[0] === 'bad' ? '' : 'probabil') + '" style="' + (a[0] === 'bad' ? 'background:color-mix(in srgb,var(--bad) 20%,transparent);color:var(--bad);' : '') + 'margin:0">' + (a[0] === 'bad' ? 'atenție' : 'de știut') + '</span><span class="item-title">' + a[1] + '</span></li>').join('') + '</ul></div>' : '') +
     '<div class="stat-grid">' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-bal"><div class="stat-label">În conturi</div><div class="stat-value">' + (bals ? fmtLei(start) : '—') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-in"><div class="stat-label">Intră · 30 zile</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(in30) + '</div><div class="item-sub">' + fmtLei(knownIn30) + ' sigur</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
@@ -1203,7 +1202,8 @@ function renderCashData(root, d) {
       [['ing', 'ING Bad Copy'], ['bt', 'BT Simplicated'], ['cash', 'Cash']].map(([k, l]) => '<label class="item-sub" style="display:flex;flex-direction:column;gap:4px">' + l + '<input name="' + k + '" type="number" inputmode="decimal" step="any" value="' + (bals ? bals[k] || 0 : '') + '" style="width:140px;padding:7px 9px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text)"></label>').join('') +
       '<button class="period-btn active" type="submit">Salvează</button>' +
       '<button class="period-btn" type="button" id="cash-lock">Blochează</button></form>' +
-      '<div class="item-sub" style="margin-top:8px">Soldurile rămân doar pe acest dispozitiv până conectăm băncile. Date: ' + fmtDateTime(d.generatedAt) + ' · SmartBill se actualizează zilnic.</div></div>';
+      '<div class="item-sub" style="margin-top:8px">Soldurile rămân doar pe acest dispozitiv până conectăm băncile. Date: ' + fmtDateTime(d.generatedAt) + ' · SmartBill se actualizează zilnic.</div></div>' +
+        (alerts.length ? '<div class="card" style="margin-top:16px"><ul class="items">' + alerts.map((a) => '<li class="item"><span class="status-chip ' + (a[0] === 'bad' ? '' : 'probabil') + '" style="' + (a[0] === 'bad' ? 'background:color-mix(in srgb,var(--bad) 20%,transparent);color:var(--bad);' : '') + 'margin:0">' + (a[0] === 'bad' ? 'atenție' : 'de știut') + '</span><span class="item-title">' + a[1] + '</span></li>').join('') + '</ul></div>' : '');
 
   bindCashChart(rows);
   root.querySelectorAll('.cash-card').forEach((btn) => btn.addEventListener('click', () => {
