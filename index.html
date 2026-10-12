@@ -1007,7 +1007,7 @@ function cashBalances() {
  * after each method's payout delay; PayPal excluded, it goes to the personal
  * account), recurring payments on their usual day of month, Meta daily. */
 const CASH_NET = { cod: 0.95, card: 0.97, klarna: 0.95 };
-const CASH_METHOD = { cod: 'Ramburs (Sameday)', card: 'Card (Shopify Payments)', klarna: 'Klarna', paypal: 'PayPal' };
+const CASH_METHOD = { cod: 'Ramburs (Sameday)', card: 'Card (Shopify Payments)', klarna: 'Klarna', paypal: 'PayPal', payout: 'Payout Shopify anunțat' };
 function buildCashProjection(d, start, days) {
   const today = new Date(); today.setHours(0, 0, 0, 0);
   const todayKey = dayKey(today);
@@ -1144,9 +1144,9 @@ function renderCashData(root, d) {
   // "Cum am calculat" -- every total broken into the amounts behind it.
   const byMethod = {};
   for (const i of orders30) (byMethod[i.method] = byMethod[i.method] || []).push(i);
-  const orderLines = Object.entries(byMethod).map(([m, xs]) => cashLine(CASH_METHOD[m] + ' · ' + xs.length + (xs.length === 1 ? ' comandă' : ' comenzi'),
+  const orderLines = Object.entries(byMethod).map(([m, xs]) => cashLine(CASH_METHOD[m] + (m === 'payout' ? '' : ' · ' + xs.length + (xs.length === 1 ? ' comandă' : ' comenzi')),
     xs.map((i) => i.order + ' ' + fmtLei(i.amount) + (m === 'cod' ? (i.shipped ? ' expediat' : ' neexpediat') : '') + ' → ' + new Date(i.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' })).join(' · ') +
-    '<br>× ' + Math.round(CASH_NET[m] * 100) + '% (' + (m === 'cod' ? 'refuzuri la livrare' : 'comisioane') + ')', sum(xs, (i) => i.amount * CASH_NET[m]), '+')).join('');
+    (CASH_NET[m] ? '<br>× ' + Math.round(CASH_NET[m] * 100) + '% (' + (m === 'cod' ? 'refuzuri la livrare' : 'comisioane') + ')' : (xs[0].note ? '<br>' + xs[0].note : '')), sum(xs, (i) => i.amount * (CASH_NET[m] || 1)), '+')).join('');
   const recvLines = recvIn.map((r) => cashLine(r.client + ' · ' + r.company + ' ' + r.invoice, (r.planned ? 'de emis ' : 'emisă ') + new Date(r.date).toLocaleDateString('ro-RO') + ' · așteptată ' + new Date(r.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) + ' (30 zile de la emitere)', r.amount, '+')).join('');
   const fcLines = Object.entries(fc).map(([m, v]) => {
     const lag = (d.lagDays[m] || 3) + (m === 'cod' ? d.codLeadDays : 0);
