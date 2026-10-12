@@ -1116,7 +1116,7 @@ function renderCashData(root, d) {
   const meta30 = sum(next30, (r) => r.meta);
   const out30 = sum(outItems) + meta30;
   const must30 = sum(outItems.filter((o) => o.priority === 'must'));
-  const free = start + knownIn30 - must30 - d.minBalance;
+  const bal30 = start + in30 - out30;
   const minRow = rows.reduce((a, r) => (r.bal < a.bal ? r : a), rows[0]);
   const codUnshipped = d.incoming.filter((i) => i.method === 'cod' && !i.shipped);
   const balAge = bals ? Math.floor((Date.now() - bals.updatedAt) / 86400000) : null;
@@ -1157,10 +1157,10 @@ function renderCashData(root, d) {
       '<li class="item-sub" style="font-weight:700;margin-top:6px">Estimat (comenzi care încă nu există): ' + fmtLei(forecast30) + '</li>' + fcLines,
       'PayPal (' + fmtLei(d.dailySalesByMethod.paypal || 0) + '/zi) intră în contul personal și nu e numărat. Facturile B2B mai vechi de ' + d.receivableFreshDays + ' de zile nu sunt numărate (vezi „De verificat”).', 'calc-in') +
     cashDetails('Iese · 30 zile', '−' + fmtLei(out30), outLines, d.recurringSource || '', 'calc-out') +
-    cashDetails('Liber de cheltuit', bals ? fmtLei(free) : '—',
-      cashLine('Sold în conturi', '', start, '') + cashLine('+ încasări sigure în 30 zile', 'doar comenzi și facturi existente, fără estimări', knownIn30, '+') +
-      cashLine('− plăți obligatorii în 30 zile', mustItems.map((o) => o.name).join(', '), must30, '−') + cashLine('− prag minim', 'rezerva pe care nu vrei s-o atingi', d.minBalance, '−'),
-      'Nu include vânzările estimate, nici plățile care se pot amâna. E suma pe care o poți folosi fără să depinzi de vânzări noi.', 'calc-free') +
+    cashDetails('Sold peste 30 zile', bals ? fmtLei(bal30) : '—',
+      cashLine('Sold în conturi azi', '', start, '') + cashLine('+ intră în 30 zile', fmtLei(knownIn30) + ' sigur + ' + fmtLei(forecast30) + ' estimat din ritmul vânzărilor', in30, '+') +
+      cashLine('− iese în 30 zile', 'plăți recurente + Meta', out30, '−'),
+      'Soldul estimat pe ' + fmtDay(next30[next30.length - 1].day) + ', dacă vânzările merg în ritmul ultimelor 28 de zile.', 'calc-free') +
     cashDetails('Sold estimat · cel mai jos', fmtLei(minRow.bal),
       cashLine('Pornește de la sold', '', start) + cashLine('Apoi, în fiecare zi', '+ încasări sigure + vânzări estimate − plăți recurente − Meta', null),
       'Treci cu mouse-ul peste grafic ca să vezi ce intră și ce iese în fiecare zi.');
@@ -1180,7 +1180,7 @@ function renderCashData(root, d) {
       '<button type="button" class="stat-card cash-card" data-calc="calc-bal"><div class="stat-label">În conturi</div><div class="stat-value">' + (bals ? fmtLei(start) : '—') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-in"><div class="stat-label">Intră · 30 zile</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(in30) + '</div><div class="item-sub">' + fmtLei(knownIn30) + ' sigur</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-out"><div class="stat-label">Iese · 30 zile</div><div class="stat-value" style="color:var(--bad)">−' + fmtLei(out30) + '</div><div class="item-sub">' + fmtLei(must30) + ' obligatoriu</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
-      '<button type="button" class="stat-card cash-card" data-calc="calc-free"><div class="stat-label">Liber de cheltuit</div><div class="stat-value" style="color:' + (free >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(free) : '—') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
+      '<button type="button" class="stat-card cash-card" data-calc="calc-free"><div class="stat-label">Sold peste 30 zile</div><div class="stat-value" style="color:' + (bal30 >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(bal30) : '—') + '</div><div class="item-sub">pe ' + fmtDay(next30[next30.length - 1].day) + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
     '</div>' +
     recvCheckHtml +
     '<div class="card" style="margin-bottom:16px"><h2>Cum am calculat</h2>' + calc + '</div>' +
