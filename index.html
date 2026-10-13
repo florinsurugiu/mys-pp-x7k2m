@@ -273,6 +273,12 @@
   ul.tot-parts li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; font-size: 0.88rem; color: var(--text-dim); border-bottom: 1px dashed var(--border); }
   ul.tot-parts li:last-child { border-bottom: none; }
   ul.tot-parts li span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--text); font-weight: 600; }
+  .cat-icon { flex: 0 0 auto; width: 30px; height: 30px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); }
+  .cat-icon svg { width: 17px; height: 17px; }
+  .cat-icon.bad { background: color-mix(in srgb, var(--bad) 14%, transparent); color: var(--bad); }
+  .tot-name { display: inline-flex; align-items: center; gap: 8px; }
+  .tot-name .cat-icon { width: 24px; height: 24px; border-radius: 6px; }
+  .tot-name .cat-icon svg { width: 14px; height: 14px; }
   .cat-block { margin-top: 18px; }
   .cat-block:first-of-type { margin-top: 6px; }
   .cat-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 12px; border-radius: 10px; background: color-mix(in srgb, var(--text-faint) 12%, transparent); }
@@ -535,7 +541,7 @@ async function load() {
       // ANAF e-Factura every 3 hours, SmartBill once a day.
       const src = cashEncCache.sources || {};
       if (src.anaf) metaParts.push({ label: 'ANAF', iso: src.anaf, freshMs: 6 * 60 * 60 * 1000 });
-      if (src.smartbill) metaParts.push({ label: 'SmartBill', iso: src.smartbill, freshMs: 26 * 60 * 60 * 1000 });
+      if (src.smartbill) metaParts.push({ label: 'SmartBill', iso: src.smartbill, freshMs: 4 * 60 * 60 * 1000 });
     }
     await renderCash();
   } catch (e) {
@@ -1046,6 +1052,36 @@ async function decryptCash(enc, pass) {
 function fmtLei(n) { return Math.round(n).toLocaleString('ro-RO') + ' lei'; }
 function dayKey(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
 function fmtDay(d) { return d.toLocaleDateString('ro-RO', { weekday: 'short', day: 'numeric', month: 'short' }); }
+// Line icons per category (24x24, stroke = currentColor), so expenses and
+// income are easy to tell apart at a glance.
+const CAT_ICON_PATHS = {
+  'Taxe': 'M3 21h18M5 21V11M9.5 21V11M14.5 21V11M19 21V11M2 11l10-7 10 7z',
+  'Salarii': 'M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8',
+  'Chirie & utilități': 'M3 10.5L12 3l9 7.5V21h-6v-6H9v6H3z',
+  'Furnizori': 'M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8',
+  'Contabilitate': 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h5',
+  'Echipament': 'M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z',
+  'Abonamente': 'M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3',
+  'Cheltuieli variabile': 'M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8zM7 7h.01',
+  'Transport': 'M1 4h14v12H1zM15 9h4l3 3v4h-7zM5.5 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18.5 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4z',
+  'Reclame Meta': 'M3 11l15-6v14L3 13v-2zM7 13.5l1 5.5h3l-1-4.5',
+  'Materiale (estimare)': 'M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12',
+  'Restant': 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 7v6M12 17h.01',
+  'Shopify · card': 'M2 5h20v14H2zM2 10h20M6 15h4',
+  'Shopify · plăți anunțate': 'M2 5h20v14H2zM2 10h20M6 15h4',
+  'Klarna': 'M2 5h20v14H2zM2 10h20M6 15h4',
+  'Shopify · ramburs': 'M2 6h20v12H2zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 12h.01M18 12h.01',
+  'PayPal (sold PayPal)': 'M20 7H5a2 2 0 0 1 0-4h13v4M3 5v14a2 2 0 0 0 2 2h15V7M16 14h.01',
+  'Facturi B2B': 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h8',
+  'Venituri recurente': 'M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3',
+  'Comenzi Shopify deja plasate': 'M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0',
+  'Vânzări viitoare (estimare)': 'M23 6l-9.5 9.5-5-5L1 18M17 6h6v6',
+};
+function catIcon(cat, tone) {
+  const p = CAT_ICON_PATHS[cat] || 'M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z';
+  return '<span class="cat-icon' + (tone ? ' ' + tone : '') + '" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="' + p + '"/></svg></span>';
+}
+
 const CASH_SUB_KEY = 'mys_cash_sub';
 const CASH_PRIORITY = { must: ['obligatoriu', 'confirmat'], flex: ['se poate amâna', 'probabil'], optional: ['opțional', ''] };
 
@@ -1245,7 +1281,7 @@ function renderCashData(root, d) {
   const today0 = new Date(); today0.setHours(0, 0, 0, 0);
   const shortMonth = (dd) => dd.toLocaleDateString('ro-RO', { month: 'short' }).replace('.', '');
   const dateChip = (dd, late) => '<div class="date-chip' + (late ? ' late' : '') + '"><b>' + dd.getDate() + '</b><span>' + shortMonth(dd) + '</span></div>';
-  const row = (x) => '<li class="pay-row">' + dateChip(x.day, x.late) + '<div class="pay-main"><div class="pay-name">' + x.name + '</div>' +
+  const row = (x) => '<li class="pay-row">' + dateChip(x.day, x.late) + (x.cat ? catIcon(x.cat, x.late ? 'bad' : '') : '') + '<div class="pay-main"><div class="pay-name">' + x.name + '</div>' +
     (x.meta ? '<div class="pay-meta">' + x.meta + '</div>' : '') + '</div><div class="pay-amt">' + (x.approx ? '~' : '') + fmtLei(x.amount) + '</div></li>';
   const block = (title, xs, opts) => !xs.length ? '' : '<section class="cat-block' + (opts && opts.tone ? ' ' + opts.tone : '') + '"><div class="cat-head"><span class="cat-name">' + title +
     '<span class="cat-count">' + xs.length + '</span></span><span class="cat-total">' + (opts && opts.sign || '') + fmtLei(sum(xs)) + '</span></div>' +
@@ -1255,13 +1291,13 @@ function renderCashData(root, d) {
   const byCatOut = {};
   for (const o of outItems.filter((x) => !x.overdue)) (byCatOut[o.category || 'Altele'] = byCatOut[o.category || 'Altele'] || []).push(o);
   const catNames = Object.keys(byCatOut).sort((x, y) => ((CAT_ORDER.indexOf(x) + 1) || 99) - ((CAT_ORDER.indexOf(y) + 1) || 99));
-  const lateItems = outItems.filter((x) => x.overdue).map((o) => ({ name: o.name, meta: [o.category, (o.due < dayKey(today0) ? 'trebuia plătit pe ' : 'scadent pe ') + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), o.payOn ? 'plătești pe ' + new Date(o.payOn).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }) : '', o.estimate ? 'estimare' : ''].filter(Boolean).join(' · '), day: new Date(o.due), late: true, amount: o.amount, approx: o.estimate }));
+  const lateItems = outItems.filter((x) => x.overdue).map((o) => ({ name: o.name, cat: o.category, meta: [o.category, (o.due < dayKey(today0) ? 'trebuia plătit pe ' : 'scadent pe ') + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), o.payOn ? 'plătești pe ' + new Date(o.payOn).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }) : '', o.estimate ? 'estimare' : ''].filter(Boolean).join(' · '), day: new Date(o.due), late: true, amount: o.amount, approx: o.estimate }));
   const overdue = (d.supplierOverdue || []).slice().sort((x, y) => y.amount - x.amount)
-    .map((o) => ({ name: o.name, meta: o.note.split(' · ')[0] + ' · verifică dacă e plătită', day: new Date(o.due), late: true, amount: o.amount }));
+    .map((o) => ({ name: o.name, cat: 'Furnizori', meta: o.note.split(' · ')[0] + ' · verifică dacă e plătită', day: new Date(o.due), late: true, amount: o.amount }));
   // Upcoming payments in date order; the category is a label on each row
   // (the totals box above splits them by category).
   const upcomingOut = outItems.filter((x) => !x.overdue && x.amount > 0).sort((x, y) => x.day - y.day || y.amount - x.amount)
-    .map((o) => ({ name: o.name, meta: [o.category, metaOf(o)].filter(Boolean).join(' · '), day: o.day, amount: o.amount, approx: o.estimate }));
+    .map((o) => ({ name: o.name, cat: o.category, meta: [o.category, metaOf(o)].filter(Boolean).join(' · '), day: o.day, amount: o.amount, approx: o.estimate }));
   const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit</h2>' +
     block('Restant · plătește acum', lateItems.sort((x, y) => x.day - y.day), { tone: 'bad' }) +
     block('Următoarele 30 de zile · în ordinea datei', upcomingOut) +
@@ -1273,7 +1309,7 @@ function renderCashData(root, d) {
   const lastDay = rows[rows.length - 1].day;
   const IN_CAT = { card: 'Shopify · card', cod: 'Shopify · ramburs', klarna: 'Klarna', payout: 'Shopify · plăți anunțate', paypal: 'PayPal (sold PayPal)' };
   const inCats = {};
-  const addIn = (cat, x) => (inCats[cat] = inCats[cat] || []).push(x);
+  const addIn = (cat, x) => (inCats[cat] = inCats[cat] || []).push({ cat, ...x });
   const perDayMethod = {};
   for (const i of d.incoming) {
     const day = new Date(Math.max(Date.parse(i.expected), today0.getTime()));
@@ -1293,7 +1329,7 @@ function renderCashData(root, d) {
   // Totals: the same 30-day numbers as the stat cards, split by category,
   // each with a bar for its share.
   const totalBox = (label, total, sign, tone, parts) => '<div class="tot-box ' + tone + '"><div class="tot-label">' + label + '</div><div class="tot-value">' + sign + fmtLei(total) + '</div>' +
-    '<ul class="tot-parts">' + parts.filter((p) => p[1] > 0).sort((x, y) => y[1] - x[1]).map((p) => '<li><div class="tot-row"><span>' + p[0] + '</span><span>' + fmtLei(p[1]) + '</span></div>' +
+    '<ul class="tot-parts">' + parts.filter((p) => p[1] > 0).sort((x, y) => y[1] - x[1]).map((p) => '<li><div class="tot-row"><span class="tot-name">' + catIcon(p[0], p[0] === 'Restant' ? 'bad' : '') + p[0] + '</span><span>' + fmtLei(p[1]) + '</span></div>' +
       '<div class="tot-bar"><span style="width:' + Math.max(1, Math.round(p[1] / total * 100)) + '%"></span></div></li>').join('') + '</ul></div>';
   const inTotal = totalBox('Venituri totale · următoarele 30 de zile', in30, '+', 'good', [
     ['Comenzi Shopify deja plasate', ordersNet], ['Facturi B2B', sum(recvIn)], ['Venituri recurente', sum(incomeItems)], ['Vânzări viitoare (estimare)', forecast30]]);
