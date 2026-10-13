@@ -1123,7 +1123,10 @@ function buildCashProjection(d, start, days) {
     const materials = inForecast * (d.materialsShare || 0);
     const outSum = out.reduce((s, r) => s + r.amount, 0) + meta + materials;
     // Regular income (Wolf & Badger) on its usual day of the month.
-    const income = (d.recurringIncome || []).filter((r) => day.getDate() === Math.min(r.day, new Date(day.getFullYear(), day.getMonth() + 1, 0).getDate()));
+    // A month-specific amount (incomeOverrides) wins over the usual one.
+    const income = (d.recurringIncome || []).filter((r) => day.getDate() === Math.min(r.day, new Date(day.getFullYear(), day.getMonth() + 1, 0).getDate()))
+      .map((r) => { const o = (d.incomeOverrides || []).find((x) => x.name === r.name && x.month === key.slice(0, 7)); return o ? { ...r, amount: o.amount, note: o.note } : r; })
+      .filter((r) => r.amount > 0);
     const inKnown = (knownByDay[key] || 0) + income.reduce((t, r) => t + r.amount, 0);
     bal += inKnown + inForecast - outSum;
     rows.push({ day, key, inKnown, inForecast, forecast, income, out, meta, materials, outSum, bal });
