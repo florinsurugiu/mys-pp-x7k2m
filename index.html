@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MY Dashboard</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="favicon.png" type="image/png" sizes="256x256">
+<link rel="apple-touch-icon" href="favicon.png">
 <meta name="robots" content="noindex, nofollow">
 <style>
   :root {
@@ -63,7 +64,7 @@
   h1 { font-size: 1.3rem; font-weight: 700; margin: 0; letter-spacing: -0.01em; }
   h1.brand { display: flex; align-items: center; line-height: 0; }
   .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  .brand-logo { height: 28px; width: auto; fill: var(--text); }
+  .brand-logo { display: block; height: 22px; aspect-ratio: 2233 / 415; background: var(--text); -webkit-mask: url(logo.png) center / contain no-repeat; mask: url(logo.png) center / contain no-repeat; }
   .meta { font-size: 0.8rem; color: var(--text-faint); font-variant-numeric: tabular-nums; }
   .meta-pills { display: flex; flex-wrap: wrap; gap: 6px; }
   .meta-pill { font-size: 0.72rem; color: var(--text-faint); font-variant-numeric: tabular-nums; background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; white-space: nowrap; }
@@ -410,7 +411,7 @@
 <div class="wrap">
   <header>
     <div class="header-top">
-      <h1 class="brand"><svg class="brand-logo" viewBox="0 238 850.4 409" role="img" aria-label="MY"><path d="M472.4,238.1v379.1l-105,29.2V354.8H315v262.5l-105,29.2V354.8h-52.5v262.5l-105,29.2V354.8H0l26.2-116.6H472.4z"/><path d="M640,500.6H535V354.8h-52.5l26.2-116.6H640v145.8h105V238.1h105v262.5H745v145.8H640V500.6z"/></svg><span class="visually-hidden">MY Dashboard</span></h1>
+      <h1 class="brand"><span class="brand-logo" role="img" aria-label="MY"></span><span class="visually-hidden">MY Dashboard</span></h1>
       <div class="header-actions">
         <button class="icon-btn" id="refresh-btn" onclick="refreshDashboard()" title="Reincarca datele">&#8635;</button>
         <button class="icon-btn settings-btn tab-btn" data-tab="settings" title="Setari">&#9881;</button>
