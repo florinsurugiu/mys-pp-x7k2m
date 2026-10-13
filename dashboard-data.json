@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T17:35:10.198Z",
-  "planDate": "2026-10-13",
+  "generatedAt": "2026-10-13T21:59:31.769Z",
+  "planDate": "2026-10-14",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee",
     "[#235777] Pop Cola Classic Socks (3 pairs)",
@@ -386,8 +386,8 @@
       ]
     },
     {
-      "name": "H negru Dept M + S",
-      "orderName": "#235725, #235784",
+      "name": "H negru Dept 2M + S",
+      "orderName": "#235725, #235784, #235786",
       "orderLinks": [
         {
           "name": "#235725",
@@ -398,10 +398,15 @@
           "name": "#235784",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192240898372",
           "cod": true
+        },
+        {
+          "name": "#235786",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192851530052",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 2,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -550,17 +555,22 @@
       ]
     },
     {
-      "name": "T Split Alb L",
-      "orderName": "#235777",
+      "name": "T Split Alb L + XL",
+      "orderName": "#235777, #235788",
       "orderLinks": [
         {
           "name": "#235777",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189645836612",
           "cod": true
+        },
+        {
+          "name": "#235788",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11193004261700",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
@@ -673,6 +683,23 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Statue M",
+      "orderName": "#235787",
+      "orderLinks": [
+        {
+          "name": "#235787",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192987844932",
+          "cod": true
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -837,17 +864,22 @@
       ]
     },
     {
-      "name": "C maneci detasate maro inchis L",
-      "orderName": "#235751",
+      "name": "C maneci detasate maro inchis L + XL",
+      "orderName": "#235751, #235788",
       "orderLinks": [
         {
           "name": "#235751",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11175360397636",
           "cod": false
+        },
+        {
+          "name": "#235788",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11193004261700",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 1.5,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
