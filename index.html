@@ -1249,7 +1249,7 @@ function renderCashData(root, d) {
     .map((o) => ({ name: o.name, meta: o.note.split(' · ')[0] + ' · verifică dacă e plătită', day: new Date(o.due), late: true, amount: o.amount }));
   // Upcoming payments in date order; the category is a label on each row
   // (the totals box above splits them by category).
-  const upcomingOut = outItems.filter((x) => !x.overdue).sort((x, y) => x.day - y.day || y.amount - x.amount)
+  const upcomingOut = outItems.filter((x) => !x.overdue && x.amount > 0).sort((x, y) => x.day - y.day || y.amount - x.amount)
     .map((o) => ({ name: o.name, meta: [o.category, metaOf(o)].filter(Boolean).join(' · '), day: o.day, amount: o.amount, approx: o.estimate }));
   const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit</h2>' +
     block('Restant · plătește acum', lateItems.sort((x, y) => x.day - y.day), { tone: 'bad' }) +
