@@ -1240,13 +1240,17 @@ function renderCashData(root, d) {
   const byCatOut = {};
   for (const o of outItems.filter((x) => !x.overdue)) (byCatOut[o.category || 'Altele'] = byCatOut[o.category || 'Altele'] || []).push(o);
   const catNames = Object.keys(byCatOut).sort((x, y) => ((CAT_ORDER.indexOf(x) + 1) || 99) - ((CAT_ORDER.indexOf(y) + 1) || 99));
-  const lateItems = outItems.filter((x) => x.overdue).map((o) => ({ name: o.name, meta: 'trebuia plătit pe ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), day: new Date(o.due), late: true, amount: o.amount, approx: o.estimate }));
+  const lateItems = outItems.filter((x) => x.overdue).map((o) => ({ name: o.name, meta: [o.category, 'trebuia plătit pe ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), o.estimate ? 'de confirmat' : ''].filter(Boolean).join(' · '), day: new Date(o.due), late: true, amount: o.amount, approx: o.estimate }));
   const overdue = (d.supplierOverdue || []).slice().sort((x, y) => y.amount - x.amount)
     .map((o) => ({ name: o.name, meta: o.note.split(' · ')[0] + ' · verifică dacă e plătită', day: new Date(o.due), late: true, amount: o.amount }));
-  const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit · pe categorii</h2>' +
-    block('Restant · plătește acum', lateItems, { tone: 'bad' }) +
-    catNames.map((c) => block(c, byCatOut[c].sort((x, y) => x.day - y.day).map((o) => ({ name: o.name, meta: metaOf(o), day: o.day, amount: o.amount, approx: o.estimate })))).join('') +
-    block('Furnizori cu scadența trecută · de verificat', overdue, { tone: 'warn', note: 'Nu sunt în calcul: e-Factura nu arată dacă i-ai plătit.' }) +
+  // Upcoming payments in date order; the category is a label on each row
+  // (the totals box above splits them by category).
+  const upcomingOut = outItems.filter((x) => !x.overdue).sort((x, y) => x.day - y.day || y.amount - x.amount)
+    .map((o) => ({ name: o.name, meta: [o.category, metaOf(o)].filter(Boolean).join(' · '), day: o.day, amount: o.amount, approx: o.estimate }));
+  const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit</h2>' +
+    block('Restant · plătește acum', lateItems.sort((x, y) => x.day - y.day), { tone: 'bad' }) +
+    block('Următoarele 30 de zile · în ordinea datei', upcomingOut) +
+    block('Furnizori cu scadența trecută · de verificat', overdue.sort((x, y) => x.day - y.day), { tone: 'warn', note: 'Nu sunt în calcul: e-Factura nu arată dacă i-ai plătit.' }) +
     '<div class="item-sub" style="margin-top:12px">Pe lângă acestea, zilnic: reclame Meta ~' + fmtLei(d.metaDaily) + ' pe zi și materiale ~' + Math.round((d.materialsShare || 0) * 100) + '% din vânzări.</div></div>';
 
   // Income: Shopify orders summed per day and payment method, B2B invoices,
