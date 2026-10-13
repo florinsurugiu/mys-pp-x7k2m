@@ -1007,13 +1007,15 @@ function cashBalances() {
  * after each method's payout delay; PayPal excluded, it goes to the personal
  * account), recurring payments on their usual day of month, Meta daily. */
 const CASH_NET = { cod: 0.95, card: 0.97, klarna: 0.95 };
+// Unshipped COD orders still get cancelled or refused before they ship.
+const netOf = (i) => (i.method === 'cod' && !i.shipped ? 0.8 : CASH_NET[i.method] || 1);
 const CASH_METHOD = { cod: 'Ramburs (Sameday)', card: 'Card (Shopify Payments)', klarna: 'Klarna', paypal: 'PayPal', payout: 'Payout Shopify anunțat' };
 function buildCashProjection(d, start, days) {
   const today = new Date(); today.setHours(0, 0, 0, 0);
   const todayKey = dayKey(today);
   const knownByDay = {};
   const addKnown = (key, amount) => { const k = key < todayKey ? todayKey : key; knownByDay[k] = (knownByDay[k] || 0) + amount; };
-  for (const i of d.incoming) addKnown(i.expected, i.amount * (CASH_NET[i.method] || 1));
+  for (const i of d.incoming) addKnown(i.expected, i.amount * netOf(i));
   for (const r of d.receivables || []) if (r.counted) addKnown(r.expected, r.amount);
   const rows = [];
   let bal = start;
@@ -1021,10 +1023,13 @@ function buildCashProjection(d, start, days) {
     const day = new Date(today); day.setDate(today.getDate() + k);
     const key = dayKey(day);
     const forecast = {};
+    // Future sales: what actually reached the bank per day last month (net of
+    // fees, refusals and cancellations); order value as a fallback.
+    const rate = d.inflowRate ? d.inflowRate.perDay : null;
     for (const [m, perDay] of Object.entries(d.dailySalesByMethod)) {
       if (!CASH_NET[m]) continue;
       const lag = (d.lagDays[m] || 3) + (m === 'cod' ? d.codLeadDays : 0);
-      if (k - lag >= 1) forecast[m] = perDay * CASH_NET[m];
+      if (k - lag >= 1) forecast[m] = rate && rate[m] != null ? rate[m] : perDay * CASH_NET[m];
     }
     const inForecast = Object.values(forecast).reduce((a, b) => a + b, 0);
     const out = [];
@@ -1107,17 +1112,23 @@ function cashLine(label, sub, amount, sign) {
 }
 
 function renderCashData(root, d) {
-  const bals = cashBalances();
+  const sum = (xs, f) => xs.reduce((s, x) => s + (f ? f(x) : x.amount), 0);
+  // Closing balances from the latest bank statements; a balance typed in this
+  // browser wins only when it is more recent than the statements.
+  const typed = cashBalances();
+  const bank = (d.bankBalances || []);
+  const bankDate = bank.reduce((m, b) => (b.date > m ? b.date : m), '');
+  const bankBals = bank.length ? { ing: sum(bank.filter((b) => b.account.startsWith('ING')), (b) => b.amount), bt: sum(bank.filter((b) => b.account.startsWith('BT')), (b) => b.amount), cash: typed ? typed.cash || 0 : 0, updatedAt: Date.parse(bankDate), fromBank: true, detail: bank } : null;
+  const bals = typed && (!bankBals || typed.updatedAt > bankBals.updatedAt + 86400000) ? typed : bankBals || typed;
   const start = bals ? (bals.ing || 0) + (bals.bt || 0) + (bals.cash || 0) : 0;
   const rows = buildCashProjection(d, start, 56);
   const next30 = rows.slice(0, 31);
   const horizon = next30[next30.length - 1].key;
-  const sum = (xs, f) => xs.reduce((s, x) => s + (f ? f(x) : x.amount), 0);
   const recv = d.receivables || [];
   const recvIn = recv.filter((r) => r.counted && r.expected <= horizon);
   const recvCheck = recv.filter((r) => !r.counted);
   const orders30 = d.incoming.filter((i) => i.expected <= horizon);
-  const ordersNet = sum(orders30, (i) => i.amount * (CASH_NET[i.method] || 1));
+  const ordersNet = sum(orders30, (i) => i.amount * netOf(i));
   const incomeItems = next30.flatMap((r) => r.income.map((i) => ({ ...i, day: r.day })));
   const knownIn30 = ordersNet + sum(recvIn) + sum(incomeItems);
   const fc = {};
@@ -1149,13 +1160,15 @@ function renderCashData(root, d) {
   for (const i of orders30) (byMethod[i.method] = byMethod[i.method] || []).push(i);
   const orderLines = Object.entries(byMethod).map(([m, xs]) => cashLine(CASH_METHOD[m] + (m === 'payout' ? '' : ' · ' + xs.length + (xs.length === 1 ? ' comandă' : ' comenzi')),
     xs.map((i) => i.order + ' ' + fmtLei(i.amount) + (m === 'cod' ? (i.shipped ? ' expediat' : ' neexpediat') : '') + ' → ' + new Date(i.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' })).join(' · ') +
-    (CASH_NET[m] ? '<br>× ' + Math.round(CASH_NET[m] * 100) + '% (' + (m === 'cod' ? 'refuzuri la livrare' : 'comisioane') + ')' : (xs[0].note ? '<br>' + xs[0].note : '')), sum(xs, (i) => i.amount * (CASH_NET[m] || 1)), '+')).join('');
+    (CASH_NET[m] ? '<br>× ' + Math.round(CASH_NET[m] * 100) + '% (' + (m === 'cod' ? 'refuzuri la livrare; neexpediate × 80%, se mai anulează' : 'comisioane') + ')' : (xs[0].note ? '<br>' + xs[0].note : '')), sum(xs, (i) => i.amount * netOf(i)), '+')).join('');
   const recvLines = recvIn.map((r) => cashLine(r.client + ' · ' + r.company + ' ' + r.invoice, (r.planned ? 'de emis ' : 'emisă ') + new Date(r.date).toLocaleDateString('ro-RO') + ' · așteptată ' + new Date(r.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) + ' (30 zile de la emitere)', r.amount, '+')).join('');
   const incomeLines = incomeItems.map((i) => cashLine(i.name, (i.note || '') + ' · ' + i.day.toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }), i.amount, '+')).join('');
   const fcLines = Object.entries(fc).map(([m, v]) => {
     const lag = (d.lagDays[m] || 3) + (m === 'cod' ? d.codLeadDays : 0);
     const n = next30.filter((r) => r.forecast[m]).length;
-    return cashLine('Vânzări viitoare · ' + CASH_METHOD[m], fmtLei(d.dailySalesByMethod[m]) + '/zi (media ultimelor 28 zile) × ' + Math.round(CASH_NET[m] * 100) + '% × ' + n + ' zile (primii bani după ~' + lag + ' zile' + (m === 'cod' ? ': producție ' + d.codLeadDays + ' + Sameday ' + d.lagDays.cod : '') + ')', v, '+');
+    const r = d.inflowRate && d.inflowRate.perDay[m] != null;
+    const how = r ? fmtLei(d.inflowRate.perDay[m]) + '/zi (încasat efectiv în bancă în ' + d.inflowRate.month + ': ' + fmtLei(d.inflowRate.total[m]) + ')' : fmtLei(d.dailySalesByMethod[m]) + '/zi (comenzi, media ultimelor 28 zile) × ' + Math.round(CASH_NET[m] * 100) + '%';
+    return cashLine('Vânzări viitoare · ' + CASH_METHOD[m], how + ' × ' + n + ' zile (primii bani după ~' + lag + ' zile' + (m === 'cod' ? ': producție ' + d.codLeadDays + ' + Sameday ' + d.lagDays.cod : '') + ')', v, '+');
   }).join('');
   const outByCat = {};
   for (const o of outItems) (outByCat[o.category] = outByCat[o.category] || []).push(o);
@@ -1164,7 +1177,7 @@ function renderCashData(root, d) {
   const mustItems = outItems.filter((o) => o.priority === 'must');
 
   const calc =
-    cashDetails('În conturi', bals ? fmtLei(start) : '—', bals ? cashLine('ING Bad Copy', '', bals.ing || 0) + cashLine('BT Simplicated', '', bals.bt || 0) + cashLine('Cash', '', bals.cash || 0) : '', bals ? 'Introduse de tine pe ' + new Date(bals.updatedAt).toLocaleDateString('ro-RO') + '.' : 'Nu ai introdus soldurile.', 'calc-bal') +
+    cashDetails('În conturi', bals ? fmtLei(start) : '—', bals ? cashLine('ING Bad Copy', '', bals.ing || 0) + cashLine('BT Simplicated', '', bals.bt || 0) + cashLine('Cash', '', bals.cash || 0) : '', bals ? (bals.fromBank ? 'Din extrasele de cont: ' + bals.detail.map((b) => b.account + ' la ' + new Date(b.date).toLocaleDateString('ro-RO')).join(', ') + '. Cash: ce ai introdus tu.' : 'Introduse de tine pe ' + new Date(bals.updatedAt).toLocaleDateString('ro-RO') + '.') : 'Nu ai introdus soldurile.', 'calc-bal') +
     cashDetails('Intră · 30 zile', '+' + fmtLei(in30),
       '<li class="item-sub" style="font-weight:700">Sigur (comenzi și facturi existente): ' + fmtLei(knownIn30) + '</li>' + orderLines + recvLines + incomeLines +
       '<li class="item-sub" style="font-weight:700;margin-top:6px">Estimat (comenzi care încă nu există): ' + fmtLei(forecast30) + '</li>' + fcLines,
