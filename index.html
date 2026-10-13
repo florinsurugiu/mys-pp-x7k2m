@@ -454,6 +454,7 @@
   .cat-icon.bad { background: color-mix(in srgb, var(--bad) 18%, transparent); }
   .cat-head .cat-icon { font-size: 13px; }
   .tot-name .cat-icon { font-size: 12px; }
+  .tot-late { display: block; font-size: 0.7rem; color: var(--bad); margin-top: 1px; }
 </style>
 </head>
 <body>
@@ -1364,12 +1365,16 @@ function renderCashData(root, d) {
   // Totals: the same 30-day numbers as the stat cards, split by category,
   // each with a bar for its share.
   const totalBox = (label, total, sign, tone, parts) => '<div class="tot-box ' + tone + '"><div class="tot-label">' + label + '</div><div class="tot-value">' + sign + fmtLei(total) + '</div>' +
-    '<ul class="tot-parts">' + parts.filter((p) => p[1] > 0).sort((x, y) => y[1] - x[1]).map((p) => '<li><div class="tot-row"><span class="tot-name" title="' + p[0] + '">' + catIcon(p[0], p[0] === 'Restant' ? 'bad' : '') + '<span class="tot-txt">' + p[0] + '</span></span><span>' + fmtLei(p[1]) + '</span></div>' +
+    '<ul class="tot-parts">' + parts.filter((p) => p[1] > 0).sort((x, y) => y[1] - x[1]).map((p) => '<li><div class="tot-row"><span class="tot-name" title="' + p[0] + '">' + catIcon(p[0], p[0] === 'Restant' ? 'bad' : '') + '<span class="tot-txt">' + p[0] + (p[2] ? '<span class="tot-late">din care ' + fmtLei(p[2]) + ' restant</span>' : '') + '</span></span><span>' + fmtLei(p[1]) + '</span></div>' +
       '<div class="tot-bar"><span style="width:' + Math.max(1, Math.round(p[1] / total * 100)) + '%"></span></div></li>').join('') + '</ul></div>';
   const inTotal = totalBox('Venituri totale · următoarele 30 de zile', in30, '+', 'good', [
     ['Comenzi Shopify deja plasate', ordersNet], ['Facturi B2B', sum(recvIn)], ['Venituri recurente', sum(incomeItems)], ['Vânzări viitoare (estimare)', forecast30]]);
+  // Totals by the nature of the cost; overdue is a status, shown as "din
+  // care restant" inside its category rather than as a category of its own.
+  const byCatAll = {};
+  for (const o of outItems) (byCatAll[o.category || 'Altele'] = byCatAll[o.category || 'Altele'] || []).push(o);
   const outTotal = totalBox('Cheltuieli totale · următoarele 30 de zile', out30, '−', 'bad', [
-    ...catNames.map((c) => [c, sum(byCatOut[c])]), ['Restant', sum(outItems.filter((x) => x.overdue))], ['Reclame Meta', meta30], ['Materiale (estimare)', materials30]]);
+    ...Object.entries(byCatAll).map(([c, xs]) => [c, sum(xs), sum(xs.filter((x) => x.overdue))]), ['Reclame Meta', meta30], ['Materiale (estimare)', materials30]]);
 
   // "Cum am calculat" -- every total broken into the amounts behind it.
   const byMethod = {};
