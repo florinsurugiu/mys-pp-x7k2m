@@ -257,6 +257,20 @@
   .cash-card:hover { border-color: var(--accent); }
   .cash-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .cash-calc-link { font-size: 0.72rem; color: var(--accent); margin-top: 6px; }
+  .cash-due-date { width: 92px; flex: 0 0 auto; }
+  #root-cash .item-hours { flex: 0 0 auto; white-space: nowrap; }
+  #root-cash .item-title { min-width: 0; overflow-wrap: anywhere; }
+  .tabs { overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tabs .tab-btn { flex: 0 0 auto; }
+  @media (max-width: 640px) {
+    .cash-due { flex-wrap: wrap; row-gap: 2px; }
+    .cash-due .cash-due-date { width: 100%; }
+    .cash-due .item-title { flex: 1 1 0; }
+    #root-cash .card { padding: 14px 14px; }
+    #root-cash .stat-value { font-size: 1.15rem; }
+    #root-cash .cash-calc summary { font-size: 0.86rem; }
+  }
   .cash-calc { border-top: 1px solid var(--border); padding: 8px 0; }
   .cash-calc summary { display: flex; align-items: center; gap: 10px; cursor: pointer; list-style: none; font-size: 0.9rem; }
   .cash-calc summary::-webkit-details-marker { display: none; }
@@ -1156,7 +1170,7 @@ function renderCashData(root, d) {
   if (recvCheck.length) alerts.push(['warn', recvCheck.length + (recvCheck.length === 1 ? ' factură B2B apare neîncasată' : ' facturi B2B apar neîncasate') + ' în SmartBill de peste ' + d.receivableFreshDays + ' de zile (' + fmtLei(sum(recvCheck)) + '). Marchează-le încasate în SmartBill sau cere banii; nu sunt în calcul.']);
 
   const chip = (p) => '<span class="status-chip ' + CASH_PRIORITY[p][1] + '">' + CASH_PRIORITY[p][0] + '</span>';
-  const upcoming = [...outItems].sort((a, b) => b.amount - a.amount).map((o) => '<li class="item"><span class="item-sub" style="width:92px;flex:0 0 auto">' + fmtDay(o.day) + '</span>' +
+  const upcoming = [...outItems].sort((a, b) => b.amount - a.amount).map((o) => '<li class="item cash-due"><span class="item-sub cash-due-date">' + fmtDay(o.day) + '</span>' +
     '<span class="item-title">' + o.name + chip(o.priority) + (o.bill ? '<span class="status-chip confirmat">' + (o.efactura ? 'e-Factura' : 'factură') + '</span>' : '') + (o.note ? '<div class="item-sub">' + o.note + '</div>' : '') + '</span><span class="item-hours">' + (o.estimate ? '~' : '') + fmtLei(o.amount) + '</span></li>').join('');
 
   // "Cum am calculat" -- every total broken into the amounts behind it.
