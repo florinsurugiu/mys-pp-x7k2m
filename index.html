@@ -1074,9 +1074,9 @@ function cashBalances() {
  * contribution so the tab can show exactly what each total is made of:
  * known money (open Shopify orders by payout date, recent SmartBill B2B
  * invoices at 30 days), future sales at the last-28-day run rate (landing
- * after each method's payout delay; PayPal excluded, it goes to the personal
+ * after each method's payout delay; PayPal included (PayPal balance, not in the
  * account), recurring payments on their usual day of month, Meta daily. */
-const CASH_NET = { cod: 0.95, card: 0.97, klarna: 0.95 };
+const CASH_NET = { cod: 0.95, card: 0.97, klarna: 0.95, paypal: 0.965 };
 // Unshipped COD orders still get cancelled or refused before they ship.
 const netOf = (i) => (i.method === 'cod' && !i.shipped ? 0.8 : CASH_NET[i.method] || 1);
 const CASH_METHOD = { cod: 'Ramburs (Sameday)', card: 'Card (Shopify Payments)', klarna: 'Klarna', paypal: 'PayPal', payout: 'Payout Shopify anunțat' };
@@ -1256,7 +1256,7 @@ function renderCashData(root, d) {
   // Income: Shopify orders summed per day and payment method, B2B invoices,
   // recurring income.
   const lastDay = rows[rows.length - 1].day;
-  const IN_CAT = { card: 'Shopify · card', cod: 'Shopify · ramburs', klarna: 'Klarna', payout: 'Shopify · plăți anunțate', paypal: 'PayPal' };
+  const IN_CAT = { card: 'Shopify · card', cod: 'Shopify · ramburs', klarna: 'Klarna', payout: 'Shopify · plăți anunțate', paypal: 'PayPal (sold PayPal)' };
   const inCats = {};
   const addIn = (cat, x) => (inCats[cat] = inCats[cat] || []).push(x);
   const perDayMethod = {};
@@ -1270,7 +1270,7 @@ function renderCashData(root, d) {
   for (const g of Object.values(perDayMethod)) addIn(IN_CAT[g.method] || g.method, { name: g.method === 'payout' ? 'Plată Shopify Payments' : g.n + (g.n === 1 ? ' comandă' : ' comenzi'), meta: g.method === 'cod' ? 'o parte se refuză la livrare' : '', day: g.day, amount: g.amount, approx: g.method === 'cod' });
   for (const r of recvIn) addIn('Facturi B2B', { name: r.client, meta: r.company + ' · ' + (r.planned ? 'factură de emis' : r.invoice), day: new Date(r.expected), amount: r.amount });
   for (const i of incomeItems) addIn('Venituri recurente', { name: i.name, meta: i.note || '', day: i.day, amount: i.amount });
-  const inOrder = ['Shopify · plăți anunțate', 'Shopify · card', 'Shopify · ramburs', 'Klarna', 'Facturi B2B', 'Venituri recurente'];
+  const inOrder = ['Shopify · plăți anunțate', 'Shopify · card', 'Shopify · ramburs', 'Klarna', 'PayPal (sold PayPal)', 'Facturi B2B', 'Venituri recurente'];
   const inCard = '<div class="card" style="margin-bottom:16px"><h2>Intră sigur · pe categorii</h2>' +
     (Object.keys(inCats).sort((x, y) => ((inOrder.indexOf(x) + 1) || 99) - ((inOrder.indexOf(y) + 1) || 99)).map((c) => block(c, inCats[c].sort((x, y) => x.day - y.day), { sign: '+', tone: 'good' })).join('') || '<div class="item-sub">Nimic anunțat încă.</div>') +
     '<div class="item-sub" style="margin-top:12px">Pe lângă acestea vin vânzările viitoare, estimate din ritmul de luna trecută: ~' + fmtLei(forecast30) + ' în 30 de zile.</div></div>';
@@ -1312,7 +1312,7 @@ function renderCashData(root, d) {
     cashDetails('Intră · 30 zile', '+' + fmtLei(in30),
       '<li class="item-sub" style="font-weight:700">Sigur (comenzi și facturi existente): ' + fmtLei(knownIn30) + '</li>' + orderLines + recvLines + incomeLines +
       '<li class="item-sub" style="font-weight:700;margin-top:6px">Estimat (comenzi care încă nu există): ' + fmtLei(forecast30) + '</li>' + fcLines,
-      'PayPal (' + fmtLei(d.dailySalesByMethod.paypal || 0) + '/zi) intră în contul personal și nu e numărat. Facturile B2B mai vechi de ' + d.receivableFreshDays + ' de zile nu sunt numărate (vezi „De verificat”).', 'calc-in') +
+      'PayPal (~' + fmtLei((d.dailySalesByMethod.paypal || 0) * 0.965) + '/zi, după comision) e numărat, deși banii stau în soldul PayPal, nu în extrase. Facturile B2B mai vechi de ' + d.receivableFreshDays + ' de zile nu sunt numărate (vezi „De verificat”).', 'calc-in') +
     cashDetails('Iese · 30 zile', '−' + fmtLei(out30), outLines, d.recurringSource || '', 'calc-out') +
     cashDetails('Sold peste 30 zile', bals ? fmtLei(bal30) : '—',
       cashLine('Sold în conturi azi', '', start, '') + cashLine('+ intră în 30 zile', fmtLei(knownIn30) + ' sigur + ' + fmtLei(forecast30) + ' estimat din ritmul vânzărilor', in30, '+') +
