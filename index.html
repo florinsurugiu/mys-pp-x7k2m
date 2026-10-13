@@ -267,6 +267,30 @@
   ul.tot-parts li { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; font-size: 0.88rem; color: var(--text-dim); border-bottom: 1px dashed var(--border); }
   ul.tot-parts li:last-child { border-bottom: none; }
   ul.tot-parts li span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--text); font-weight: 600; }
+  .cat-block { margin-top: 18px; }
+  .cat-block:first-of-type { margin-top: 6px; }
+  .cat-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 12px; border-radius: 10px; background: color-mix(in srgb, var(--text-faint) 12%, transparent); }
+  .cat-name { font-weight: 700; font-size: 0.95rem; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  .cat-count { font-size: 0.7rem; font-weight: 700; color: var(--text-dim); background: var(--bg); border-radius: 20px; padding: 1px 7px; }
+  .cat-total { font-weight: 800; font-size: 1rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .cat-block.bad .cat-head { background: color-mix(in srgb, var(--bad) 16%, transparent); }
+  .cat-block.bad .cat-name, .cat-block.bad .cat-total { color: var(--bad); }
+  .cat-block.warn .cat-head { background: color-mix(in srgb, var(--warn) 14%, transparent); }
+  .cat-block.warn .cat-name, .cat-block.warn .cat-total { color: var(--warn); }
+  .cat-block.good .cat-total { color: var(--good); }
+  .cat-note { font-size: 0.76rem; color: var(--text-dim); margin: 6px 12px 0; }
+  .cat-block .pay-row { padding: 10px 12px; }
+  .date-chip { flex: 0 0 44px; height: 44px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg); display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1; }
+  .date-chip b { font-size: 1.05rem; font-variant-numeric: tabular-nums; color: var(--text); }
+  .date-chip span { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-dim); margin-top: 3px; }
+  .date-chip.late { border-color: color-mix(in srgb, var(--bad) 60%, transparent); background: color-mix(in srgb, var(--bad) 10%, transparent); }
+  .date-chip.late b, .date-chip.late span { color: var(--bad); }
+  ul.tot-parts li { display: block; }
+  .tot-row { display: flex; justify-content: space-between; gap: 12px; }
+  .tot-bar { height: 6px; border-radius: 3px; background: color-mix(in srgb, var(--text-faint) 15%, transparent); margin-top: 5px; overflow: hidden; }
+  .tot-bar span { display: block; height: 100%; border-radius: 3px; }
+  .tot-box.good .tot-bar span { background: var(--good); }
+  .tot-box.bad .tot-bar span { background: var(--bad); }
   .cash-sub { display: flex; gap: 4px; margin: 0 0 16px; padding: 4px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-elevated); }
   .cash-sub-btn { flex: 1; appearance: none; border: none; background: none; font: inherit; font-size: 0.95rem; font-weight: 700; color: var(--text-dim); padding: 10px 12px; border-radius: 9px; cursor: pointer; }
   .cash-sub-btn:hover { color: var(--text); }
@@ -1201,69 +1225,61 @@ function renderCashData(root, d) {
   if (sum(codUnshipped) > 3000) alerts.push(['warn', fmtLei(sum(codUnshipped)) + ' sunt blocați în ' + codUnshipped.length + (codUnshipped.length === 1 ? ' comandă ramburs neexpediată' : ' comenzi ramburs neexpediate') + '. Intră abia după ce pleacă coletele.']);
   if (recvCheck.length) alerts.push(['warn', recvCheck.length + (recvCheck.length === 1 ? ' factură B2B apare neîncasată' : ' facturi B2B apar neîncasate') + ' în SmartBill de peste ' + d.receivableFreshDays + ' de zile (' + fmtLei(sum(recvCheck)) + '). Marchează-le încasate în SmartBill sau cere banii; nu sunt în calcul.']);
 
-  // "De plătit", grouped by when: what is already late first, then the rest
-  // of this month and next month. Biggest amounts first.
+  // "Venituri" / "Cheltuieli": the next 30 days by category, each row with a
+  // date chip so "when" stays visible. Overdue payments come first.
   const today0 = new Date(); today0.setHours(0, 0, 0, 0);
-  const monthEnd = new Date(today0.getFullYear(), today0.getMonth() + 1, 0);
-  const whenOf = (o) => (o.overdue ? 'now' : o.day <= monthEnd ? 'month' : 'later');
-  const payRow = (name, meta, amount, approx, tag) => '<li class="pay-row"><div class="pay-main"><div class="pay-name">' + name + (tag || '') + '</div>' +
-    (meta ? '<div class="pay-meta">' + meta + '</div>' : '') + '</div><div class="pay-amt">' + (approx ? '~' : '') + fmtLei(amount) + '</div></li>';
-  const dueText = (o) => (o.overdue ? 'era de plătit pe ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : fmtDay(o.day));
-  const tagOf = (o) => (o.priority === 'flex' ? '<span class="pay-tag">se poate amâna</span>' : '') + (o.estimate ? '<span class="pay-tag">estimare</span>' : '');
-  const payGroups = [
-    ['now', 'Restant · plătește acum', 'bad'],
-    ['month', 'Până pe ' + monthEnd.toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), ''],
-    ['later', 'Luna viitoare', ''],
-  ];
-  const overdue = (d.supplierOverdue || []).slice().sort((a, b) => b.amount - a.amount);
-  const payHtml = payGroups.map(([key, title, tone]) => {
-    const xs = outItems.filter((o) => whenOf(o) === key).sort((a, b) => b.amount - a.amount);
-    const check = key === 'now' ? overdue : [];
-    if (!xs.length && !check.length) return '';
-    return '<div class="pay-group ' + tone + '"><div class="pay-head"><span>' + title + '</span><span class="pay-total">' + fmtLei(sum(xs)) + '</span></div>' +
-      (xs.length ? '<ul class="pay-list">' + xs.map((o) => payRow(o.name, [dueText(o), o.category].filter(Boolean).join(' · '), o.amount, o.estimate, tagOf(o))).join('') + '</ul>' : '') +
-      (check.length ? '<div class="pay-sub">Facturi furnizori cu scadența trecută · ' + fmtLei(sum(check)) + ' · verifică dacă sunt plătite</div><ul class="pay-list">' +
-        check.map((o) => payRow(o.name, o.note + ' · scadentă ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }), o.amount)).join('') + '</ul>' : '') +
-      '</div>';
-  }).join('');
-  // "Venituri": money expected in, grouped by when like "De plătit". Shopify
-  // orders are summed per payment method so the list stays short.
-  const groupOfDay = (day) => (day <= monthEnd ? 'month' : 'later');
+  const shortMonth = (dd) => dd.toLocaleDateString('ro-RO', { month: 'short' }).replace('.', '');
+  const dateChip = (dd, late) => '<div class="date-chip' + (late ? ' late' : '') + '"><b>' + dd.getDate() + '</b><span>' + shortMonth(dd) + '</span></div>';
+  const row = (x) => '<li class="pay-row">' + dateChip(x.day, x.late) + '<div class="pay-main"><div class="pay-name">' + x.name + '</div>' +
+    (x.meta ? '<div class="pay-meta">' + x.meta + '</div>' : '') + '</div><div class="pay-amt">' + (x.approx ? '~' : '') + fmtLei(x.amount) + '</div></li>';
+  const block = (title, xs, opts) => !xs.length ? '' : '<section class="cat-block' + (opts && opts.tone ? ' ' + opts.tone : '') + '"><div class="cat-head"><span class="cat-name">' + title +
+    '<span class="cat-count">' + xs.length + '</span></span><span class="cat-total">' + (opts && opts.sign || '') + fmtLei(sum(xs)) + '</span></div>' +
+    (opts && opts.note ? '<div class="cat-note">' + opts.note + '</div>' : '') + '<ul class="pay-list">' + xs.map(row).join('') + '</ul></section>';
+  const metaOf = (o) => [o.estimate ? 'estimare' : '', o.priority === 'flex' ? 'se poate amâna' : ''].filter(Boolean).join(' · ');
+  const CAT_ORDER = ['Taxe', 'Salarii', 'Chirie & utilități', 'Furnizori', 'Contabilitate', 'Echipament', 'Abonamente', 'Cheltuieli variabile'];
+  const byCatOut = {};
+  for (const o of outItems.filter((x) => !x.overdue)) (byCatOut[o.category || 'Altele'] = byCatOut[o.category || 'Altele'] || []).push(o);
+  const catNames = Object.keys(byCatOut).sort((x, y) => ((CAT_ORDER.indexOf(x) + 1) || 99) - ((CAT_ORDER.indexOf(y) + 1) || 99));
+  const lateItems = outItems.filter((x) => x.overdue).map((o) => ({ name: o.name, meta: 'trebuia plătit pe ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), day: new Date(o.due), late: true, amount: o.amount, approx: o.estimate }));
+  const overdue = (d.supplierOverdue || []).slice().sort((x, y) => y.amount - x.amount)
+    .map((o) => ({ name: o.name, meta: o.note.split(' · ')[0] + ' · verifică dacă e plătită', day: new Date(o.due), late: true, amount: o.amount }));
+  const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit · pe categorii</h2>' +
+    block('Restant · plătește acum', lateItems, { tone: 'bad' }) +
+    catNames.map((c) => block(c, byCatOut[c].sort((x, y) => x.day - y.day).map((o) => ({ name: o.name, meta: metaOf(o), day: o.day, amount: o.amount, approx: o.estimate })))).join('') +
+    block('Furnizori cu scadența trecută · de verificat', overdue, { tone: 'warn', note: 'Nu sunt în calcul: e-Factura nu arată dacă i-ai plătit.' }) +
+    '<div class="item-sub" style="margin-top:12px">Pe lângă acestea, zilnic: reclame Meta ~' + fmtLei(d.metaDaily) + ' pe zi și materiale ~' + Math.round((d.materialsShare || 0) * 100) + '% din vânzări.</div></div>';
+
+  // Income: Shopify orders summed per day and payment method, B2B invoices,
+  // recurring income.
   const lastDay = rows[rows.length - 1].day;
-  const inItems = [];
+  const IN_CAT = { card: 'Shopify · card', cod: 'Shopify · ramburs', klarna: 'Klarna', payout: 'Shopify · plăți anunțate', paypal: 'PayPal' };
+  const inCats = {};
+  const addIn = (cat, x) => (inCats[cat] = inCats[cat] || []).push(x);
+  const perDayMethod = {};
   for (const i of d.incoming) {
     const day = new Date(Math.max(Date.parse(i.expected), today0.getTime()));
-    if (day <= lastDay) inItems.push({ kind: i.method, day, amount: i.amount * netOf(i), order: i.order });
+    if (day > rows[30].day) continue;
+    const k = i.method + '|' + dayKey(day);
+    (perDayMethod[k] = perDayMethod[k] || { method: i.method, day, n: 0, amount: 0 });
+    perDayMethod[k].n++; perDayMethod[k].amount += i.amount * netOf(i);
   }
-  for (const r of recv) if (r.counted && r.expected) inItems.push({ name: r.client, meta: r.company + ' · ' + (r.planned ? 'factură de emis' : r.invoice) + ' · ' + fmtDay(new Date(r.expected)), day: new Date(r.expected), amount: r.amount, tag: r.planned ? '<span class="pay-tag">de emis</span>' : '' });
-  for (const r of rows) for (const i of r.income) inItems.push({ name: i.name, meta: [fmtDay(r.day), i.note].filter(Boolean).join(' · '), day: r.day, amount: i.amount });
-  const inGroups = [['month', 'Până pe ' + monthEnd.toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), ''], ['later', 'Luna viitoare', '']];
-  const inHtml = inGroups.map(([key, title, tone]) => {
-    const xs = inItems.filter((x) => groupOfDay(x.day) === key);
-    if (!xs.length) return '';
-    const byKind = {};
-    for (const x of xs) if (x.kind) (byKind[x.kind] = byKind[x.kind] || []).push(x);
-    const lines = [
-      ...Object.entries(byKind).map(([m, ys]) => ({ name: CASH_METHOD[m] || m, meta: (m === 'payout' ? 'plată anunțată de Shopify' : ys.length + (ys.length === 1 ? ' comandă' : ' comenzi')) + ' · ' + ys.map((y) => y.day).sort((a, b) => a - b).map((dd) => dd.toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' })).filter((v, i, a) => a.indexOf(v) === i).join(', '), amount: sum(ys), approx: m === 'cod' })),
-      ...xs.filter((x) => !x.kind),
-    ].sort((a, b) => b.amount - a.amount);
-    return '<div class="pay-group ' + tone + '"><div class="pay-head"><span>' + title + '</span><span class="pay-total">+' + fmtLei(sum(xs)) + '</span></div><ul class="pay-list">' +
-      lines.map((x) => payRow(x.name, x.meta, x.amount, x.approx, x.tag)).join('') + '</ul></div>';
-  }).join('');
-  const inCard = '<div class="card" style="margin-bottom:16px"><h2>Venituri sigure</h2>' + (inHtml || '<div class="item-sub">Nimic anunțat încă.</div>') +
-    '<div class="item-sub" style="margin-top:10px">Pe lângă acestea vin vânzările viitoare, estimate din ritmul de luna trecută: ~' + fmtLei(forecast30) + ' în 30 de zile (card, ramburs, Klarna), incluse la „Intră · 30 zile”. Rambursurile apar cu ~, pentru că o parte se refuză la livrare.</div></div>';
+  for (const g of Object.values(perDayMethod)) addIn(IN_CAT[g.method] || g.method, { name: g.method === 'payout' ? 'Plată Shopify Payments' : g.n + (g.n === 1 ? ' comandă' : ' comenzi'), meta: g.method === 'cod' ? 'o parte se refuză la livrare' : '', day: g.day, amount: g.amount, approx: g.method === 'cod' });
+  for (const r of recvIn) addIn('Facturi B2B', { name: r.client, meta: r.company + ' · ' + (r.planned ? 'factură de emis' : r.invoice), day: new Date(r.expected), amount: r.amount });
+  for (const i of incomeItems) addIn('Venituri recurente', { name: i.name, meta: i.note || '', day: i.day, amount: i.amount });
+  const inOrder = ['Shopify · plăți anunțate', 'Shopify · card', 'Shopify · ramburs', 'Klarna', 'Facturi B2B', 'Venituri recurente'];
+  const inCard = '<div class="card" style="margin-bottom:16px"><h2>Intră sigur · pe categorii</h2>' +
+    (Object.keys(inCats).sort((x, y) => ((inOrder.indexOf(x) + 1) || 99) - ((inOrder.indexOf(y) + 1) || 99)).map((c) => block(c, inCats[c].sort((x, y) => x.day - y.day), { sign: '+', tone: 'good' })).join('') || '<div class="item-sub">Nimic anunțat încă.</div>') +
+    '<div class="item-sub" style="margin-top:12px">Pe lângă acestea vin vânzările viitoare, estimate din ritmul de luna trecută: ~' + fmtLei(forecast30) + ' în 30 de zile.</div></div>';
 
-  // Totals for the two sub-tabs: the same 30-day numbers as the stat cards,
-  // split into what they are made of.
+  // Totals: the same 30-day numbers as the stat cards, split by category,
+  // each with a bar for its share.
   const totalBox = (label, total, sign, tone, parts) => '<div class="tot-box ' + tone + '"><div class="tot-label">' + label + '</div><div class="tot-value">' + sign + fmtLei(total) + '</div>' +
-    '<ul class="tot-parts">' + parts.filter((p) => p[1]).map((p) => '<li><span>' + p[0] + '</span><span>' + sign + fmtLei(p[1]) + '</span></li>').join('') + '</ul></div>';
+    '<ul class="tot-parts">' + parts.filter((p) => p[1] > 0).sort((x, y) => y[1] - x[1]).map((p) => '<li><div class="tot-row"><span>' + p[0] + '</span><span>' + fmtLei(p[1]) + '</span></div>' +
+      '<div class="tot-bar"><span style="width:' + Math.max(1, Math.round(p[1] / total * 100)) + '%"></span></div></li>').join('') + '</ul></div>';
   const inTotal = totalBox('Venituri totale · următoarele 30 de zile', in30, '+', 'good', [
-    ['Comenzi Shopify deja plasate', ordersNet], ['Facturi B2B', sum(recvIn)], ['Venituri recurente (Wolf & Badger)', sum(incomeItems)], ['Vânzări viitoare (estimare)', forecast30]]);
+    ['Comenzi Shopify deja plasate', ordersNet], ['Facturi B2B', sum(recvIn)], ['Venituri recurente', sum(incomeItems)], ['Vânzări viitoare (estimare)', forecast30]]);
   const outTotal = totalBox('Cheltuieli totale · următoarele 30 de zile', out30, '−', 'bad', [
-    ['Plăți programate (salarii, taxe, chirii, facturi)', sum(outItems)], ['Reclame Meta', meta30], ['Materiale (estimare)', materials30]]);
-
-  const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit</h2>' + (payHtml || '<div class="item-sub">Nimic programat.</div>') +
-    '<div class="item-sub" style="margin-top:10px">Pe lângă acestea, zilnic: reclame Meta ~' + fmtLei(d.metaDaily) + ' pe zi și materiale ~' + Math.round((d.materialsShare || 0) * 100) + '% din vânzări (incluse la „Iese · 30 zile”). Furnizorii cu scadența trecută nu sunt în calcul: e-Factura nu arată dacă i-ai plătit.</div></div>';
+    ...catNames.map((c) => [c, sum(byCatOut[c])]), ['Restant', sum(outItems.filter((x) => x.overdue))], ['Reclame Meta', meta30], ['Materiale (estimare)', materials30]]);
 
   // "Cum am calculat" -- every total broken into the amounts behind it.
   const byMethod = {};
