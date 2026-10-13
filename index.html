@@ -257,6 +257,12 @@
   .cash-card:hover { border-color: var(--accent); }
   .cash-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .cash-calc-link { font-size: 0.72rem; color: var(--accent); margin-top: 6px; }
+  .cash-sub { display: flex; gap: 4px; margin: 0 0 16px; padding: 4px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-elevated); }
+  .cash-sub-btn { flex: 1; appearance: none; border: none; background: none; font: inherit; font-size: 0.95rem; font-weight: 700; color: var(--text-dim); padding: 10px 12px; border-radius: 9px; cursor: pointer; }
+  .cash-sub-btn:hover { color: var(--text); }
+  .cash-sub-btn.active { background: var(--accent-dim); color: var(--accent); }
+  .cash-sub-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .pay-group.good .pay-head { color: var(--good); }
   .pay-group { border-top: 1px solid var(--border); padding: 12px 0 4px; }
   .pay-group:first-of-type { border-top: none; padding-top: 4px; }
   .pay-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; }
@@ -995,6 +1001,7 @@ async function decryptCash(enc, pass) {
 function fmtLei(n) { return Math.round(n).toLocaleString('ro-RO') + ' lei'; }
 function dayKey(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
 function fmtDay(d) { return d.toLocaleDateString('ro-RO', { weekday: 'short', day: 'numeric', month: 'short' }); }
+const CASH_SUB_KEY = 'mys_cash_sub';
 const CASH_PRIORITY = { must: ['obligatoriu', 'confirmat'], flex: ['se poate amâna', 'probabil'], optional: ['opțional', ''] };
 
 async function renderCash() {
@@ -1211,6 +1218,33 @@ function renderCashData(root, d) {
         check.map((o) => payRow(o.name, o.note + ' · scadentă ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }), o.amount)).join('') + '</ul>' : '') +
       '</div>';
   }).join('');
+  // "Venituri": money expected in, grouped by when like "De plătit". Shopify
+  // orders are summed per payment method so the list stays short.
+  const groupOfDay = (day) => (day < weekEnd ? 'week' : day <= monthEnd ? 'month' : 'later');
+  const lastDay = rows[rows.length - 1].day;
+  const inItems = [];
+  for (const i of d.incoming) {
+    const day = new Date(Math.max(Date.parse(i.expected), today0.getTime()));
+    if (day <= lastDay) inItems.push({ kind: i.method, day, amount: i.amount * netOf(i), order: i.order });
+  }
+  for (const r of recv) if (r.counted && r.expected) inItems.push({ name: r.client, meta: r.company + ' · ' + (r.planned ? 'factură de emis' : r.invoice) + ' · ' + fmtDay(new Date(r.expected)), day: new Date(r.expected), amount: r.amount, tag: r.planned ? '<span class="pay-tag">de emis</span>' : '' });
+  for (const r of rows) for (const i of r.income) inItems.push({ name: i.name, meta: [fmtDay(r.day), i.note].filter(Boolean).join(' · '), day: r.day, amount: i.amount });
+  const inGroups = [['week', 'Următoarele 7 zile', 'good'], ['month', 'Până pe ' + monthEnd.toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), ''], ['later', 'Luna viitoare', '']];
+  const inHtml = inGroups.map(([key, title, tone]) => {
+    const xs = inItems.filter((x) => groupOfDay(x.day) === key);
+    if (!xs.length) return '';
+    const byKind = {};
+    for (const x of xs) if (x.kind) (byKind[x.kind] = byKind[x.kind] || []).push(x);
+    const lines = [
+      ...Object.entries(byKind).map(([m, ys]) => ({ name: CASH_METHOD[m] || m, meta: (m === 'payout' ? 'plată anunțată de Shopify' : ys.length + (ys.length === 1 ? ' comandă' : ' comenzi')) + ' · ' + ys.map((y) => y.day).sort((a, b) => a - b).map((dd) => dd.toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' })).filter((v, i, a) => a.indexOf(v) === i).join(', '), amount: sum(ys), approx: m === 'cod' })),
+      ...xs.filter((x) => !x.kind),
+    ].sort((a, b) => b.amount - a.amount);
+    return '<div class="pay-group ' + tone + '"><div class="pay-head"><span>' + title + '</span><span class="pay-total">+' + fmtLei(sum(xs)) + '</span></div><ul class="pay-list">' +
+      lines.map((x) => payRow(x.name, x.meta, x.amount, x.approx, x.tag)).join('') + '</ul></div>';
+  }).join('');
+  const inCard = '<div class="card" style="margin-bottom:16px"><h2>Venituri sigure</h2>' + (inHtml || '<div class="item-sub">Nimic anunțat încă.</div>') +
+    '<div class="item-sub" style="margin-top:10px">Pe lângă acestea vin vânzările viitoare, estimate din ritmul de luna trecută: ~' + fmtLei(forecast30) + ' în 30 de zile (card, ramburs, Klarna), incluse la „Intră · 30 zile”. Rambursurile apar cu ~, pentru că o parte se refuză la livrare.</div></div>';
+
   const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit</h2>' + (payHtml || '<div class="item-sub">Nimic programat.</div>') +
     '<div class="item-sub" style="margin-top:10px">Pe lângă acestea, zilnic: reclame Meta ~' + fmtLei(d.metaDaily) + ' pe zi și materiale ~' + Math.round((d.materialsShare || 0) * 100) + '% din vânzări (incluse la „Iese · 30 zile”). Furnizorii cu scadența trecută nu sunt în calcul: e-Factura nu arată dacă i-ai plătit.</div></div>';
 
@@ -1269,8 +1303,9 @@ function renderCashData(root, d) {
       '<button type="button" class="stat-card cash-card" data-calc="calc-out"><div class="stat-label">Iese · 30 zile</div><div class="stat-value" style="color:var(--bad)">−' + fmtLei(out30) + '</div><div class="item-sub">' + fmtLei(must30) + ' obligatoriu</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-free"><div class="stat-label">Sold peste 30 zile</div><div class="stat-value" style="color:' + (bal30 >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(bal30) : '—') + '</div><div class="item-sub">pe ' + fmtDay(next30[next30.length - 1].day) + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
     '</div>' +
-    payCard +
-    recvCheckHtml +
+    '<div class="cash-sub" role="tablist">' + [['in', 'Venituri'], ['out', 'Cheltuieli']].map(([k, l]) => '<button type="button" role="tab" class="cash-sub-btn" data-sub="' + k + '">' + l + '</button>').join('') + '</div>' +
+    '<div class="cash-pane" data-pane="in">' + inCard + recvCheckHtml + '</div>' +
+    '<div class="cash-pane" data-pane="out">' + payCard + '</div>' +
     '<div class="card" style="margin-bottom:16px"><h2>Cum am calculat</h2>' + calc + '</div>' +
     '<div class="card" style="margin-bottom:16px"><h2>Sold estimat · 8 săptămâni</h2>' + cashChart(rows, d.minBalance) +
       '<div class="item-sub" style="margin-top:8px">Cel mai jos: ' + fmtLei(minRow.bal) + ' pe ' + fmtDay(minRow.day) + '.</div></div>' +
@@ -1283,6 +1318,13 @@ function renderCashData(root, d) {
         (alerts.length ? '<div class="card" style="margin-top:16px"><ul class="items">' + alerts.map((a) => '<li class="item"><span class="status-chip ' + (a[0] === 'bad' ? '' : 'probabil') + '" style="' + (a[0] === 'bad' ? 'background:color-mix(in srgb,var(--bad) 20%,transparent);color:var(--bad);' : '') + 'margin:0">' + (a[0] === 'bad' ? 'atenție' : 'de știut') + '</span><span class="item-title">' + a[1] + '</span></li>').join('') + '</ul></div>' : '');
 
   bindCashChart(rows);
+  const showSub = (k) => {
+    root.querySelectorAll('.cash-sub-btn').forEach((b) => { const on = b.dataset.sub === k; b.classList.toggle('active', on); b.setAttribute('aria-selected', on); });
+    root.querySelectorAll('.cash-pane').forEach((p) => { p.hidden = p.dataset.pane !== k; });
+    lsSet(CASH_SUB_KEY, k);
+  };
+  root.querySelectorAll('.cash-sub-btn').forEach((b) => b.addEventListener('click', () => showSub(b.dataset.sub)));
+  showSub(lsGet(CASH_SUB_KEY) === 'out' ? 'out' : 'in');
   root.querySelectorAll('.cash-card').forEach((btn) => btn.addEventListener('click', () => {
     const det = document.getElementById(btn.dataset.calc);
     if (!det) return;
