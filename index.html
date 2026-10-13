@@ -454,7 +454,7 @@
   .cat-icon.bad { background: color-mix(in srgb, var(--bad) 18%, transparent); }
   .cat-head .cat-icon { font-size: 13px; }
   .tot-name .cat-icon { font-size: 12px; }
-  .tot-late { display: block; font-size: 0.7rem; color: var(--bad); margin-top: 1px; }
+  .tot-late { margin-left: 8px; font-size: 0.72rem; font-weight: 600; color: var(--bad); white-space: nowrap; padding: 1px 6px; border-radius: 20px; background: color-mix(in srgb, var(--bad) 14%, transparent); }
 </style>
 </head>
 <body>
@@ -1365,7 +1365,7 @@ function renderCashData(root, d) {
   // Totals: the same 30-day numbers as the stat cards, split by category,
   // each with a bar for its share.
   const totalBox = (label, total, sign, tone, parts) => '<div class="tot-box ' + tone + '"><div class="tot-label">' + label + '</div><div class="tot-value">' + sign + fmtLei(total) + '</div>' +
-    '<ul class="tot-parts">' + parts.filter((p) => p[1] > 0).sort((x, y) => y[1] - x[1]).map((p) => '<li><div class="tot-row"><span class="tot-name" title="' + p[0] + '">' + catIcon(p[0], p[0] === 'Restant' ? 'bad' : '') + '<span class="tot-txt">' + p[0] + (p[2] ? '<span class="tot-late">din care ' + fmtLei(p[2]) + ' restant</span>' : '') + '</span></span><span>' + fmtLei(p[1]) + '</span></div>' +
+    '<ul class="tot-parts">' + parts.filter((p) => p[1] > 0).sort((x, y) => y[1] - x[1]).map((p) => '<li><div class="tot-row"><span class="tot-name" title="' + p[0] + '">' + catIcon(p[0], p[0] === 'Restant' ? 'bad' : '') + '<span class="tot-txt">' + p[0] + (p[2] ? '<span class="tot-late">' + fmtLei(p[2]) + ' restant</span>' : '') + '</span></span><span>' + fmtLei(p[1]) + '</span></div>' +
       '<div class="tot-bar"><span style="width:' + Math.max(1, Math.round(p[1] / total * 100)) + '%"></span></div></li>').join('') + '</ul></div>';
   const inTotal = totalBox('Venituri totale · următoarele 30 de zile', in30, '+', 'good', [
     ['Comenzi Shopify deja plasate', ordersNet], ['Facturi B2B', sum(recvIn)], ['Venituri recurente', sum(incomeItems)], ['Vânzări viitoare (estimare)', forecast30]]);
