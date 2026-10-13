@@ -439,16 +439,21 @@
   details.cat-block > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .tot-box { padding: 14px 16px; }
   .tot-value { font-size: 1.6rem; margin: 2px 0 8px; }
-  ul.tot-parts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 14px; }
-  ul.tot-parts li { padding: 6px 0; font-size: 0.8rem; }
+  ul.tot-parts { display: grid; grid-template-columns: 1fr; }
+  ul.tot-parts li { padding: 5px 0; font-size: 0.84rem; }
   .tot-row { align-items: center; }
   .tot-row { gap: 6px; }
   .tot-name { gap: 6px; min-width: 0; flex: 1; line-height: 1.25; }
-  .tot-txt { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .tot-txt { min-width: 0; }
+  @media (min-width: 720px) { ul.tot-parts { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; } }
   .tot-name .cat-icon { width: 20px; height: 20px; border-radius: 5px; }
   .tot-name .cat-icon svg { width: 12px; height: 12px; }
   .tot-bar { height: 4px; margin-top: 4px; }
-  @media (max-width: 380px) { ul.tot-parts { grid-template-columns: 1fr; } }
+  /* Emoji icons: neutral chip, the emoji carries the colour. */
+  .cat-icon { background: color-mix(in srgb, var(--text-faint) 14%, transparent); color: inherit; font-size: 15px; line-height: 1; }
+  .cat-icon.bad { background: color-mix(in srgb, var(--bad) 18%, transparent); }
+  .cat-head .cat-icon { font-size: 13px; }
+  .tot-name .cat-icon { font-size: 12px; }
 </style>
 </head>
 <body>
@@ -1090,44 +1095,18 @@ async function decryptCash(enc, pass) {
 function fmtLei(n) { return Math.round(n).toLocaleString('ro-RO') + ' lei'; }
 function dayKey(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
 function fmtDay(d) { return d.toLocaleDateString('ro-RO', { weekday: 'short', day: 'numeric', month: 'short' }); }
-// Line icons per category (24x24, stroke = currentColor), so expenses and
-// income are easy to tell apart at a glance.
-const CAT_ICON_PATHS = {
-  'Taxe': 'M3 21h18M5 21V11M9.5 21V11M14.5 21V11M19 21V11M2 11l10-7 10 7z',
-  'Salarii': 'M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8',
-  'Chirie & utilități': 'M3 10.5L12 3l9 7.5V21h-6v-6H9v6H3z',
-  'Furnizori': 'M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8',
-  'Contabilitate': 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h5',
-  'Echipament': 'M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z',
-  'Abonamente': 'M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3',
-  'Cheltuieli variabile': 'M20.6 13.4l-7.2 7.2a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8zM7 7h.01',
-  'Transport': 'M1 4h14v12H1zM15 9h4l3 3v4h-7zM5.5 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18.5 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4z',
-  'Reclame Meta': 'M3 11l15-6v14L3 13v-2zM7 13.5l1 5.5h3l-1-4.5',
-  'Materiale (estimare)': 'M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12',
-  'Restant': 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 7v6M12 17h.01',
-  'Shopify · card': 'M2 5h20v14H2zM2 10h20M6 15h4',
-  'Shopify · plăți anunțate': 'M2 5h20v14H2zM2 10h20M6 15h4',
-  'Klarna': 'M2 5h20v14H2zM2 10h20M6 15h4',
-  'Shopify · ramburs': 'M2 6h20v12H2zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 12h.01M18 12h.01',
-  'PayPal (sold PayPal)': 'M20 7H5a2 2 0 0 1 0-4h13v4M3 5v14a2 2 0 0 0 2 2h15V7M16 14h.01',
-  'Facturi B2B': 'M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h8',
-  'Venituri recurente': 'M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3',
-  'Comenzi Shopify deja plasate': 'M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18M16 10a4 4 0 0 1-8 0',
-  'Vânzări viitoare (estimare)': 'M23 6l-9.5 9.5-5-5L1 18M17 6h6v6',
-};
-// One hue per category (label + icon carry the meaning; colour only helps
-// scanning). Shaded darker in the light theme via --icon-shade.
-const CAT_COLOR = {
-  'Salarii': '#6fa8f5', 'Taxe': '#b48cf2', 'Reclame Meta': '#f27fb2', 'Materiale (estimare)': '#f2a65a',
-  'Chirie & utilități': '#5fc9a8', 'Transport': '#e8c547', 'Cheltuieli variabile': '#a3b18a', 'Contabilitate': '#c9a27e',
-  'Abonamente': '#4dd0e1', 'Echipament': '#a1887f', 'Furnizori': '#81c784',
-  'Shopify · card': '#6fa8f5', 'Shopify · plăți anunțate': '#6fa8f5', 'Shopify · ramburs': '#81c784', 'Klarna': '#f27fb2',
-  'PayPal (sold PayPal)': '#4dd0e1', 'Facturi B2B': '#c9a27e', 'Venituri recurente': '#b48cf2',
-  'Comenzi Shopify deja plasate': '#81c784', 'Vânzări viitoare (estimare)': '#e8c547',
+// Full-colour icons (emoji) per category, as the user asked: easier to tell
+// apart than one-colour line icons.
+const CAT_EMOJI = {
+  'Salarii': '👥', 'Taxe': '🏛️', 'Reclame Meta': '📣', 'Restant': '⚠️', 'Materiale (estimare)': '🧵',
+  'Chirie & utilități': '🏠', 'Transport': '🚚', 'Cheltuieli variabile': '🏷️', 'Contabilitate': '🧾',
+  'Abonamente': '🔁', 'Echipament': '🖨️', 'Furnizori': '📦',
+  'Shopify · card': '💳', 'Shopify · plăți anunțate': '💳', 'Shopify · ramburs': '💵', 'Klarna': '🛍️',
+  'PayPal (sold PayPal)': '🅿️', 'Facturi B2B': '📄', 'Venituri recurente': '🐺',
+  'Comenzi Shopify deja plasate': '🛒', 'Vânzări viitoare (estimare)': '📈',
 };
 function catIcon(cat, tone) {
-  const p = CAT_ICON_PATHS[cat] || 'M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z';
-  return '<span class="cat-icon' + (tone ? ' ' + tone : '') + '" style="--c:' + (CAT_COLOR[cat] || 'var(--accent)') + '" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="' + p + '"/></svg></span>';
+  return '<span class="cat-icon' + (tone ? ' ' + tone : '') + '" aria-hidden="true">' + (CAT_EMOJI[cat] || '🔹') + '</span>';
 }
 
 const CASH_SUB_KEY = 'mys_cash_sub';
