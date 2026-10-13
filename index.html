@@ -1047,12 +1047,15 @@ function buildCashProjection(d, start, days) {
     }
     if (k === 0) for (const b of d.bills || []) if (b.due <= key) out.push({ ...b, bill: true, overdue: b.due < key });
     const meta = k > 0 ? d.metaDaily : 0;
-    const outSum = out.reduce((s, r) => s + r.amount, 0) + meta;
+    // Materials for future sales: a share of the forecast money (15% = what
+    // material purchases were of collected revenue, Jul–Sep 2026).
+    const materials = inForecast * (d.materialsShare || 0);
+    const outSum = out.reduce((s, r) => s + r.amount, 0) + meta + materials;
     // Regular income (Wolf & Badger) on its usual day of the month.
     const income = (d.recurringIncome || []).filter((r) => day.getDate() === Math.min(r.day, new Date(day.getFullYear(), day.getMonth() + 1, 0).getDate()));
     const inKnown = (knownByDay[key] || 0) + income.reduce((t, r) => t + r.amount, 0);
     bal += inKnown + inForecast - outSum;
-    rows.push({ day, key, inKnown, inForecast, forecast, income, out, meta, outSum, bal });
+    rows.push({ day, key, inKnown, inForecast, forecast, income, out, meta, materials, outSum, bal });
   }
   return rows;
 }
@@ -1137,7 +1140,8 @@ function renderCashData(root, d) {
   const in30 = knownIn30 + forecast30;
   const outItems = next30.flatMap((r) => r.out.map((o) => ({ ...o, day: r.day })));
   const meta30 = sum(next30, (r) => r.meta);
-  const out30 = sum(outItems) + meta30;
+  const materials30 = sum(next30, (r) => r.materials);
+  const out30 = sum(outItems) + meta30 + materials30;
   const must30 = sum(outItems.filter((o) => o.priority === 'must'));
   const bal30 = start + in30 - out30;
   const minRow = rows.reduce((a, r) => (r.bal < a.bal ? r : a), rows[0]);
@@ -1173,6 +1177,7 @@ function renderCashData(root, d) {
   const outByCat = {};
   for (const o of outItems) (outByCat[o.category] = outByCat[o.category] || []).push(o);
   const outLines = Object.entries(outByCat).sort((a, b) => sum(b[1]) - sum(a[1])).map(([c, xs]) => cashLine(c, xs.map((o) => o.name + ' ' + (o.estimate ? '~' : '') + fmtLei(o.amount) + ' (' + o.day.toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) + ')').join(' · '), sum(xs), '−')).join('') +
+    (materials30 ? cashLine('Materiale pentru vânzările viitoare', Math.round((d.materialsShare || 0) * 100) + '% din vânzările estimate (' + fmtLei(forecast30) + '); iul–sep materialele au fost 12–19% din încasări', materials30, '−') : '') +
     cashLine('Meta (reclame)', (d.meta && d.meta.budgetDaily ? 'bugete zilnice active acum: ' + d.meta.campaigns.map((c) => c.name + ' ' + fmtLei(c.daily)).join(' · ') + ' = ' + fmtLei(d.metaDaily) + '/zi (în ultimele 7 zile s-au cheltuit în medie ' + fmtLei(d.meta.spentDaily7) + '/zi)' : fmtLei(d.metaDaily) + '/zi (media ultimelor 7 zile)') + ' × ' + next30.filter((r) => r.meta).length + ' zile', meta30, '−');
   const mustItems = outItems.filter((o) => o.priority === 'must');
 
