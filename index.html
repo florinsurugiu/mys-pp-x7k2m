@@ -257,6 +257,21 @@
   .cash-card:hover { border-color: var(--accent); }
   .cash-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .cash-calc-link { font-size: 0.72rem; color: var(--accent); margin-top: 6px; }
+  .pay-group { border-top: 1px solid var(--border); padding: 12px 0 4px; }
+  .pay-group:first-of-type { border-top: none; padding-top: 4px; }
+  .pay-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; }
+  .pay-group.bad .pay-head { color: var(--bad); }
+  .pay-group.warn .pay-head { color: var(--warn); }
+  .pay-total { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .pay-sub { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-faint); font-weight: 700; margin: 10px 0 4px; }
+  ul.pay-list { list-style: none; margin: 0; padding: 0; }
+  .pay-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-bottom: 1px dashed var(--border); }
+  .pay-row:last-child { border-bottom: none; }
+  .pay-main { flex: 1; min-width: 0; }
+  .pay-name { font-size: 0.92rem; color: var(--text); overflow-wrap: anywhere; }
+  .pay-meta { font-size: 0.76rem; color: var(--text-dim); margin-top: 2px; }
+  .pay-amt { font-size: 1rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--text); }
+  .pay-tag { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.03em; padding: 1px 6px; border-radius: 20px; margin-left: 6px; background: color-mix(in srgb, var(--text-faint) 18%, transparent); color: var(--text-dim); font-weight: 700; white-space: nowrap; }
   .cash-due-date { width: 92px; flex: 0 0 auto; }
   #root-cash .item-hours { flex: 0 0 auto; white-space: nowrap; }
   #root-cash .item-title { min-width: 0; overflow-wrap: anywhere; }
@@ -1169,9 +1184,35 @@ function renderCashData(root, d) {
   if (sum(codUnshipped) > 3000) alerts.push(['warn', fmtLei(sum(codUnshipped)) + ' sunt blocați în ' + codUnshipped.length + (codUnshipped.length === 1 ? ' comandă ramburs neexpediată' : ' comenzi ramburs neexpediate') + '. Intră abia după ce pleacă coletele.']);
   if (recvCheck.length) alerts.push(['warn', recvCheck.length + (recvCheck.length === 1 ? ' factură B2B apare neîncasată' : ' facturi B2B apar neîncasate') + ' în SmartBill de peste ' + d.receivableFreshDays + ' de zile (' + fmtLei(sum(recvCheck)) + '). Marchează-le încasate în SmartBill sau cere banii; nu sunt în calcul.']);
 
-  const chip = (p) => '<span class="status-chip ' + CASH_PRIORITY[p][1] + '">' + CASH_PRIORITY[p][0] + '</span>';
-  const upcoming = [...outItems].sort((a, b) => b.amount - a.amount).map((o) => '<li class="item cash-due"><span class="item-sub cash-due-date">' + fmtDay(o.day) + '</span>' +
-    '<span class="item-title">' + o.name + chip(o.priority) + (o.bill ? '<span class="status-chip confirmat">' + (o.efactura ? 'e-Factura' : 'factură') + '</span>' : '') + (o.note ? '<div class="item-sub">' + o.note + '</div>' : '') + '</span><span class="item-hours">' + (o.estimate ? '~' : '') + fmtLei(o.amount) + '</span></li>').join('');
+  // "De plătit", grouped by when: what is already late first, then the next
+  // 7 days, the rest of this month and next month. Biggest amounts first.
+  const today0 = new Date(); today0.setHours(0, 0, 0, 0);
+  const weekEnd = new Date(today0); weekEnd.setDate(today0.getDate() + 7);
+  const monthEnd = new Date(today0.getFullYear(), today0.getMonth() + 1, 0);
+  const whenOf = (o) => (o.overdue ? 'now' : o.day < weekEnd ? 'week' : o.day <= monthEnd ? 'month' : 'later');
+  const payRow = (name, meta, amount, approx, tag) => '<li class="pay-row"><div class="pay-main"><div class="pay-name">' + name + (tag || '') + '</div>' +
+    (meta ? '<div class="pay-meta">' + meta + '</div>' : '') + '</div><div class="pay-amt">' + (approx ? '~' : '') + fmtLei(amount) + '</div></li>';
+  const dueText = (o) => (o.overdue ? 'era de plătit pe ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : fmtDay(o.day));
+  const tagOf = (o) => (o.priority === 'flex' ? '<span class="pay-tag">se poate amâna</span>' : '') + (o.estimate ? '<span class="pay-tag">estimare</span>' : '');
+  const payGroups = [
+    ['now', 'Restant · plătește acum', 'bad'],
+    ['week', 'Următoarele 7 zile', 'warn'],
+    ['month', 'Până pe ' + monthEnd.toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), ''],
+    ['later', 'Luna viitoare', ''],
+  ];
+  const overdue = (d.supplierOverdue || []).slice().sort((a, b) => b.amount - a.amount);
+  const payHtml = payGroups.map(([key, title, tone]) => {
+    const xs = outItems.filter((o) => whenOf(o) === key).sort((a, b) => b.amount - a.amount);
+    const check = key === 'now' ? overdue : [];
+    if (!xs.length && !check.length) return '';
+    return '<div class="pay-group ' + tone + '"><div class="pay-head"><span>' + title + '</span><span class="pay-total">' + fmtLei(sum(xs)) + '</span></div>' +
+      (xs.length ? '<ul class="pay-list">' + xs.map((o) => payRow(o.name, [dueText(o), o.category].filter(Boolean).join(' · '), o.amount, o.estimate, tagOf(o))).join('') + '</ul>' : '') +
+      (check.length ? '<div class="pay-sub">Facturi furnizori cu scadența trecută · ' + fmtLei(sum(check)) + ' · verifică dacă sunt plătite</div><ul class="pay-list">' +
+        check.map((o) => payRow(o.name, o.note + ' · scadentă ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }), o.amount)).join('') + '</ul>' : '') +
+      '</div>';
+  }).join('');
+  const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit</h2>' + (payHtml || '<div class="item-sub">Nimic programat.</div>') +
+    '<div class="item-sub" style="margin-top:10px">Pe lângă acestea, zilnic: reclame Meta ~' + fmtLei(d.metaDaily) + ' pe zi și materiale ~' + Math.round((d.materialsShare || 0) * 100) + '% din vânzări (incluse la „Iese · 30 zile”). Furnizorii cu scadența trecută nu sunt în calcul: e-Factura nu arată dacă i-ai plătit.</div></div>';
 
   // "Cum am calculat" -- every total broken into the amounts behind it.
   const byMethod = {};
@@ -1215,12 +1256,6 @@ function renderCashData(root, d) {
   const recvAll = [...recv].sort((a, b) => a.ageDays - b.ageDays);
   // Planned invoices are not issued yet, so the card title counts only real ones.
   const recvIssued = recvAll.filter((r) => !r.planned);
-  // Supplier invoices whose due date has passed in the last 30 days: e-Factura
-  // can't tell whether they were paid, so they are listed, not counted.
-  const overdue = (d.supplierOverdue || []).slice().sort((a, b) => b.amount - a.amount);
-  const overdueHtml = overdue.length ? '<div class="card" style="margin-top:16px"><h2>Facturi furnizori cu scadența trecută · ' + overdue.length + ' · ' + fmtLei(sum(overdue)) + '</h2><ul class="items">' +
-    overdue.map((o) => cashLine(o.name, o.note + ' · scadentă ' + new Date(o.due).toLocaleDateString('ro-RO'), o.amount)).join('') +
-    '</ul><div class="item-sub" style="margin-top:8px">Din ultimele 30 de zile. e-Factura nu spune dacă s-au plătit, așa că nu sunt în calcul. Verifică-le pe cele pe care nu le-ai plătit.</div></div>' : '';
   const recvCheckHtml = recvAll.length ? '<div class="card" style="margin-bottom:16px"><h2>Facturi B2B neplătite · ' + recvIssued.length + ' · ' + fmtLei(sum(recvIssued)) + (recvIssued.length < recvAll.length ? ' + ' + fmtLei(sum(recvAll) - sum(recvIssued)) + ' de emis' : '') + '</h2><ul class="items">' +
     recvAll.map((r) => cashLine(r.client + (r.planned ? '<span class="status-chip confirmat">de emis</span>' : '') + (r.counted ? '<span class="status-chip probabil">' + (r.expected <= horizon ? 'în calcul · 30 zile' : 'în grafic · după 30 zile') + '</span>' : '<span class="status-chip" style="background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)">de verificat</span>'),
       r.company + ' · ' + (r.planned ? 'factură de emis pe ' + new Date(r.date).toLocaleDateString('ro-RO') : r.invoice + ' · emisă ' + new Date(r.date).toLocaleDateString('ro-RO') + ' · ' + r.ageDays + ' zile') +
@@ -1234,13 +1269,12 @@ function renderCashData(root, d) {
       '<button type="button" class="stat-card cash-card" data-calc="calc-out"><div class="stat-label">Iese · 30 zile</div><div class="stat-value" style="color:var(--bad)">−' + fmtLei(out30) + '</div><div class="item-sub">' + fmtLei(must30) + ' obligatoriu</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-free"><div class="stat-label">Sold peste 30 zile</div><div class="stat-value" style="color:' + (bal30 >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(bal30) : '—') + '</div><div class="item-sub">pe ' + fmtDay(next30[next30.length - 1].day) + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
     '</div>' +
+    payCard +
     recvCheckHtml +
     '<div class="card" style="margin-bottom:16px"><h2>Cum am calculat</h2>' + calc + '</div>' +
     '<div class="card" style="margin-bottom:16px"><h2>Sold estimat · 8 săptămâni</h2>' + cashChart(rows, d.minBalance) +
       '<div class="item-sub" style="margin-top:8px">Cel mai jos: ' + fmtLei(minRow.bal) + ' pe ' + fmtDay(minRow.day) + '.</div></div>' +
-    '<div class="card"><h2>De plătit · 30 zile</h2><ul class="items">' + (upcoming || '<li class="item-sub">Nimic programat.</li>') + '</ul></div>' +
-    overdueHtml +
-    '<div class="card" style="margin-top:16px"><h2>Solduri' + (bals ? ' · actualizate ' + new Date(bals.updatedAt).toLocaleDateString('ro-RO') : '') + '</h2>' +
+    '<div class="card"><h2>Solduri' + (bals ? ' · actualizate ' + new Date(bals.updatedAt).toLocaleDateString('ro-RO') : '') + '</h2>' +
       '<form id="cash-bal" style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">' +
       [['ing', 'ING Bad Copy'], ['bt', 'BT Simplicated'], ['cash', 'Cash']].map(([k, l]) => '<label class="item-sub" style="display:flex;flex-direction:column;gap:4px">' + l + '<input name="' + k + '" type="number" inputmode="decimal" step="any" value="' + (bals ? bals[k] || 0 : '') + '" style="width:140px;padding:7px 9px;border-radius:8px;border:1px solid var(--border);background:var(--bg);color:var(--text)"></label>').join('') +
       '<button class="period-btn active" type="submit">Salvează</button>' +
