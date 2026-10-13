@@ -1201,19 +1201,17 @@ function renderCashData(root, d) {
   if (sum(codUnshipped) > 3000) alerts.push(['warn', fmtLei(sum(codUnshipped)) + ' sunt blocați în ' + codUnshipped.length + (codUnshipped.length === 1 ? ' comandă ramburs neexpediată' : ' comenzi ramburs neexpediate') + '. Intră abia după ce pleacă coletele.']);
   if (recvCheck.length) alerts.push(['warn', recvCheck.length + (recvCheck.length === 1 ? ' factură B2B apare neîncasată' : ' facturi B2B apar neîncasate') + ' în SmartBill de peste ' + d.receivableFreshDays + ' de zile (' + fmtLei(sum(recvCheck)) + '). Marchează-le încasate în SmartBill sau cere banii; nu sunt în calcul.']);
 
-  // "De plătit", grouped by when: what is already late first, then the next
-  // 7 days, the rest of this month and next month. Biggest amounts first.
+  // "De plătit", grouped by when: what is already late first, then the rest
+  // of this month and next month. Biggest amounts first.
   const today0 = new Date(); today0.setHours(0, 0, 0, 0);
-  const weekEnd = new Date(today0); weekEnd.setDate(today0.getDate() + 7);
   const monthEnd = new Date(today0.getFullYear(), today0.getMonth() + 1, 0);
-  const whenOf = (o) => (o.overdue ? 'now' : o.day < weekEnd ? 'week' : o.day <= monthEnd ? 'month' : 'later');
+  const whenOf = (o) => (o.overdue ? 'now' : o.day <= monthEnd ? 'month' : 'later');
   const payRow = (name, meta, amount, approx, tag) => '<li class="pay-row"><div class="pay-main"><div class="pay-name">' + name + (tag || '') + '</div>' +
     (meta ? '<div class="pay-meta">' + meta + '</div>' : '') + '</div><div class="pay-amt">' + (approx ? '~' : '') + fmtLei(amount) + '</div></li>';
   const dueText = (o) => (o.overdue ? 'era de plătit pe ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : fmtDay(o.day));
   const tagOf = (o) => (o.priority === 'flex' ? '<span class="pay-tag">se poate amâna</span>' : '') + (o.estimate ? '<span class="pay-tag">estimare</span>' : '');
   const payGroups = [
     ['now', 'Restant · plătește acum', 'bad'],
-    ['week', 'Următoarele 7 zile', 'warn'],
     ['month', 'Până pe ' + monthEnd.toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), ''],
     ['later', 'Luna viitoare', ''],
   ];
@@ -1230,7 +1228,7 @@ function renderCashData(root, d) {
   }).join('');
   // "Venituri": money expected in, grouped by when like "De plătit". Shopify
   // orders are summed per payment method so the list stays short.
-  const groupOfDay = (day) => (day < weekEnd ? 'week' : day <= monthEnd ? 'month' : 'later');
+  const groupOfDay = (day) => (day <= monthEnd ? 'month' : 'later');
   const lastDay = rows[rows.length - 1].day;
   const inItems = [];
   for (const i of d.incoming) {
@@ -1239,7 +1237,7 @@ function renderCashData(root, d) {
   }
   for (const r of recv) if (r.counted && r.expected) inItems.push({ name: r.client, meta: r.company + ' · ' + (r.planned ? 'factură de emis' : r.invoice) + ' · ' + fmtDay(new Date(r.expected)), day: new Date(r.expected), amount: r.amount, tag: r.planned ? '<span class="pay-tag">de emis</span>' : '' });
   for (const r of rows) for (const i of r.income) inItems.push({ name: i.name, meta: [fmtDay(r.day), i.note].filter(Boolean).join(' · '), day: r.day, amount: i.amount });
-  const inGroups = [['week', 'Următoarele 7 zile', 'good'], ['month', 'Până pe ' + monthEnd.toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), ''], ['later', 'Luna viitoare', '']];
+  const inGroups = [['month', 'Până pe ' + monthEnd.toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), ''], ['later', 'Luna viitoare', '']];
   const inHtml = inGroups.map(([key, title, tone]) => {
     const xs = inItems.filter((x) => groupOfDay(x.day) === key);
     if (!xs.length) return '';
