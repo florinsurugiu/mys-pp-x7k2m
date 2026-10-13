@@ -531,6 +531,11 @@ async function load() {
     if (res.ok) {
       cashEncCache = await res.json();
       metaParts.push({ label: 'Cashflow', iso: cashEncCache.generatedAt, freshMs: 2 * 60 * 60 * 1000 });
+      // Inputs of the cash report, each refreshed on its own schedule:
+      // ANAF e-Factura every 3 hours, SmartBill once a day.
+      const src = cashEncCache.sources || {};
+      if (src.anaf) metaParts.push({ label: 'ANAF', iso: src.anaf, freshMs: 6 * 60 * 60 * 1000 });
+      if (src.smartbill) metaParts.push({ label: 'SmartBill', iso: src.smartbill, freshMs: 26 * 60 * 60 * 1000 });
     }
     await renderCash();
   } catch (e) {
