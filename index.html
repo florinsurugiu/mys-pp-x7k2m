@@ -1113,9 +1113,10 @@ function buildCashProjection(d, start, days) {
         if ((d.bills || []).some((b) => b.replaces === r.name && b.month === month)) continue;
         out.push(r);
       }
-      for (const b of d.bills || []) if (b.due === key) out.push({ ...b, bill: true });
+      // payOn: the day the user plans to pay (taxes paid late on purpose).
+      for (const b of d.bills || []) if ((b.payOn || b.due) === key) out.push({ ...b, bill: true, overdue: b.due < todayKey });
     }
-    if (k === 0) for (const b of d.bills || []) if (b.due <= key) out.push({ ...b, bill: true, overdue: b.due < key });
+    if (k === 0) for (const b of d.bills || []) if ((b.payOn || b.due) <= key) out.push({ ...b, bill: true, overdue: b.due < key });
     const meta = k > 0 ? d.metaDaily : 0;
     // Materials for future sales: a share of the forecast money (15% = what
     // material purchases were of collected revenue, Jul–Sep 2026).
@@ -1235,12 +1236,12 @@ function renderCashData(root, d) {
   const block = (title, xs, opts) => !xs.length ? '' : '<section class="cat-block' + (opts && opts.tone ? ' ' + opts.tone : '') + '"><div class="cat-head"><span class="cat-name">' + title +
     '<span class="cat-count">' + xs.length + '</span></span><span class="cat-total">' + (opts && opts.sign || '') + fmtLei(sum(xs)) + '</span></div>' +
     (opts && opts.note ? '<div class="cat-note">' + opts.note + '</div>' : '') + '<ul class="pay-list">' + xs.map(row).join('') + '</ul></section>';
-  const metaOf = (o) => [o.estimate ? 'estimare' : '', o.priority === 'flex' ? 'se poate amâna' : ''].filter(Boolean).join(' · ');
+  const metaOf = (o) => [o.payOn ? 'scadent pe ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }) + ', amânat' : '', o.estimate ? 'estimare' : '', o.priority === 'flex' ? 'se poate amâna' : ''].filter(Boolean).join(' · ');
   const CAT_ORDER = ['Taxe', 'Salarii', 'Chirie & utilități', 'Furnizori', 'Contabilitate', 'Echipament', 'Abonamente', 'Cheltuieli variabile'];
   const byCatOut = {};
   for (const o of outItems.filter((x) => !x.overdue)) (byCatOut[o.category || 'Altele'] = byCatOut[o.category || 'Altele'] || []).push(o);
   const catNames = Object.keys(byCatOut).sort((x, y) => ((CAT_ORDER.indexOf(x) + 1) || 99) - ((CAT_ORDER.indexOf(y) + 1) || 99));
-  const lateItems = outItems.filter((x) => x.overdue).map((o) => ({ name: o.name, meta: [o.category, 'trebuia plătit pe ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), o.estimate ? 'de confirmat' : ''].filter(Boolean).join(' · '), day: new Date(o.due), late: true, amount: o.amount, approx: o.estimate }));
+  const lateItems = outItems.filter((x) => x.overdue).map((o) => ({ name: o.name, meta: [o.category, (o.due < dayKey(today0) ? 'trebuia plătit pe ' : 'scadent pe ') + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), o.payOn ? 'plătești pe ' + new Date(o.payOn).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }) : '', o.estimate ? 'estimare' : ''].filter(Boolean).join(' · '), day: new Date(o.due), late: true, amount: o.amount, approx: o.estimate }));
   const overdue = (d.supplierOverdue || []).slice().sort((x, y) => y.amount - x.amount)
     .map((o) => ({ name: o.name, meta: o.note.split(' · ')[0] + ' · verifică dacă e plătită', day: new Date(o.due), late: true, amount: o.amount }));
   // Upcoming payments in date order; the category is a label on each row
