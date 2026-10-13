@@ -455,6 +455,20 @@
   .cat-head .cat-icon { font-size: 13px; }
   .tot-name .cat-icon { font-size: 12px; }
   .tot-late { margin-left: 8px; font-size: 0.72rem; font-weight: 600; color: var(--bad); white-space: nowrap; padding: 1px 6px; border-radius: 20px; background: color-mix(in srgb, var(--bad) 14%, transparent); }
+  .ue-lines { list-style: none; margin: 0; padding: 0; }
+  .ue-line { display: grid; grid-template-columns: 1fr auto 64px; gap: 10px; padding: 6px 0; font-size: 0.86rem; color: var(--text-dim); border-bottom: 1px dashed var(--border); }
+  .ue-line.strong { color: var(--text); font-weight: 700; }
+  .ue-num, .ue-per { font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  .ue-per { color: var(--text-faint); font-size: 0.76rem; }
+  table.ue-table { width: 100%; border-collapse: collapse; font-size: 0.84rem; font-variant-numeric: tabular-nums; }
+  table.ue-table th { text-align: left; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-faint); font-weight: 700; padding: 6px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  table.ue-table td { padding: 7px 8px; border-bottom: 1px dashed var(--border); white-space: nowrap; vertical-align: top; }
+  .ue-pos { color: var(--good); font-weight: 700; } .ue-neg { color: var(--bad); font-weight: 700; }
+  .ue-chip { font-size: 0.68rem; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+  .ue-chip.ok { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); }
+  .ue-chip.warn { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn); }
+  .ue-chip.bad { background: color-mix(in srgb, var(--bad) 18%, transparent); color: var(--bad); }
+  #root-unit .tot-box { margin-bottom: 16px; }
 </style>
 </head>
 <body>
@@ -475,6 +489,7 @@
     <button class="tab-btn" data-tab="profit">Marketing</button>
     <button class="tab-btn" data-tab="pnl">P&amp;L</button>
     <button class="tab-btn" data-tab="cash">Cashflow</button>
+    <button class="tab-btn" data-tab="unit">Unit economics</button>
     <button class="tab-btn" data-tab="trends">Trends</button>
     <button class="tab-btn" data-tab="reco">Actions</button>
   </div>
@@ -500,6 +515,11 @@
   </div>
   <div class="tab-panel" id="panel-cash">
     <div id="root-cash">
+      <div class="loading">Se incarca datele...</div>
+    </div>
+  </div>
+  <div class="tab-panel" id="panel-unit">
+    <div id="root-unit">
       <div class="loading">Se incarca datele...</div>
     </div>
   </div>
@@ -1117,7 +1137,10 @@ async function renderCash() {
   const root = document.getElementById('root-cash');
   if (!cashEncCache) { root.innerHTML = '<div class="error">Datele de cash nu sunt publicate încă.</div>'; return; }
   const pass = lsGet(CASH_PASS_KEY);
-  if (!pass) return renderCashLogin(root);
+  if (!pass) {
+    document.getElementById('root-unit').innerHTML = '<div class="card"><div class="item-sub">Deschide întâi tab-ul Cashflow cu parola; datele sunt aceleași.</div></div>';
+    return renderCashLogin(root);
+  }
   try {
     cashDataCache = await decryptCash(cashEncCache, pass);
   } catch (e) {
@@ -1125,6 +1148,99 @@ async function renderCash() {
     return renderCashLogin(root, 'Parola nu e corectă.');
   }
   renderCashData(root, cashDataCache);
+  renderUnit(cashDataCache);
+}
+
+/** Unit economics: what is left from each leu sold online over the last 30
+ * days, the fixed costs it has to cover, the break-even sales and, per
+ * country, the sales-to-ads ratio (MER) needed to break even. Online shop
+ * only; B2B invoices come on top. All inputs are the cash report's real
+ * data; the few assumptions are named on the page. */
+function renderUnit(d) {
+  const root = document.getElementById('root-unit');
+  if (!d || !d.sales30) { root.innerHTML = '<div class="card"><div class="item-sub">Datele apar la următoarea actualizare a raportului de cash.</div></div>'; return; }
+  const sumv = (o) => Object.values(o || {}).reduce((a, b) => a + b, 0);
+  const S = d.sales30.total;
+  const ui = d.unitInputs || {};
+  const shipIntl = ui.intlShipPerOrder || 110;
+  // Money that really reaches the bank per leu sold: last month's bank
+  // inflow per channel vs the orders of the last 30 days (fees, couriers,
+  // refused COD parcels and refunds already taken out). PayPal: 96.5%.
+  const bm = d.sales30.byMethod || {};
+  const bankIn = d.inflowRate ? sumv(d.inflowRate.total) : 0;
+  const bankSales = (bm.card || 0) + (bm.cod || 0) + (bm.klarna || 0);
+  const realizedRatio = bankSales ? Math.min(1, (bankIn + (bm.paypal || 0) * 0.965) / (bankSales + (bm.paypal || 0))) : 0.95;
+  const vatOf = (x) => (x * 0.21) / 1.21;
+  const matShare = d.materialsShare || 0.15;
+  const rec = d.recurring || [];
+  const monthly = (pred) => rec.filter(pred).reduce((t, r) => t + r.amount, 0);
+  const returnsMonthly = monthly((r) => /retur/i.test(r.name));
+  const fixedParts = [
+    ['Salarii', monthly((r) => r.category === 'Salarii')],
+    ['Taxe pe salarii (BS + CAM)', ui.salaryTaxesMonthly || 0],
+    ['Chirie & utilități', monthly((r) => r.category === 'Chirie & utilități')],
+    ['Abonamente', monthly((r) => r.category === 'Abonamente' || (r.category === 'Cheltuieli variabile' && !/retur/i.test(r.name)))],
+    ['Contabilitate', monthly((r) => r.category === 'Contabilitate')],
+    ['Echipament', monthly((r) => r.category === 'Echipament')],
+  ];
+  const F = fixedParts.reduce((t, p) => t + p[1], 0);
+  const metaBy = d.metaSpend30ByCountry || {};
+  const ads = sumv(metaBy);
+  const countries = Object.entries(d.sales30.byCountry || {}).map(([c, x]) => {
+    const realized = x.revenue * realizedRatio;
+    const vat = vatOf(realized), mat = realized * matShare;
+    const ship = c === 'RO' ? 0 : x.orders * shipIntl;
+    const ret = S ? (returnsMonthly * x.revenue) / S : 0;
+    const cm1 = realized - vat - mat - ship - ret;
+    const spend = metaBy[c] || 0;
+    return { c, revenue: x.revenue, orders: x.orders, cm1, spend, contrib: cm1 - spend, merNow: spend ? x.revenue / spend : null, merNeed: cm1 > 0 ? x.revenue / cm1 : null };
+  });
+  for (const [c, spend] of Object.entries(metaBy)) if (!countries.some((x) => x.c === c)) countries.push({ c, revenue: 0, orders: 0, cm1: 0, spend, contrib: -spend, merNow: 0, merNeed: null });
+  countries.sort((a, b) => b.revenue - a.revenue || b.spend - a.spend);
+  const realized = S * realizedRatio;
+  const lines = [
+    ['Vânzări (cu TVA)', S],
+    ['Pierdut la încasare: comisioane, curieri, refuzuri, rambursări', -(S - realized)],
+    ['TVA', -vatOf(realized)],
+    ['Materiale (' + Math.round(matShare * 100) + '%)', -realized * matShare],
+    ['Transport internațional (' + shipIntl + ' lei/colet)', -countries.reduce((t, x) => t + (x.c === 'RO' ? 0 : x.orders * shipIntl), 0)],
+    ['Retururi', -returnsMonthly],
+  ];
+  const cm1 = lines.reduce((t, l) => t + l[1], 0);
+  const cm2 = cm1 - ads;
+  const result = cm2 - F;
+  const cm1Pct = S ? cm1 / S : 0, cm2Pct = S ? cm2 / S : 0;
+  const breakEven = cm2Pct > 0 ? F / cm2Pct : null;
+  const pct = (x) => Math.round(x * 100) + '%';
+  const per100 = (x) => (S ? Math.round((x / S) * 100) : 0);
+  const lineRow = (label, v, strong) => '<li class="ue-line' + (strong ? ' strong' : '') + '"><span>' + label + '</span><span class="ue-num">' + (v < 0 ? '−' : '') + fmtLei(Math.abs(v)) + '</span><span class="ue-per">' + (v < 0 ? '−' : '') + Math.abs(per100(v)) + ' / 100</span></li>';
+  const verdict = (x) => !x.revenue ? ['fără vânzări', 'bad'] : x.merNeed == null ? ['pierde la fiecare vânzare', 'bad'] : !x.spend ? ['fără reclame', 'ok'] : x.merNow >= x.merNeed * 1.5 ? ['profitabil', 'ok'] : x.merNow >= x.merNeed ? ['la limită', 'warn'] : ['pierde bani', 'bad'];
+  const countryRows = countries.filter((x) => x.revenue > 300 || x.spend > 0).map((x) => {
+    const [v, tone] = verdict(x);
+    return '<tr><td>' + x.c + '</td><td>' + fmtLei(x.revenue) + '<div class="item-sub">' + x.orders + ' com.</div></td><td>' + (x.spend ? fmtLei(x.spend) : '–') + '</td><td>' + (x.merNow ? x.merNow.toLocaleString('ro-RO', { maximumFractionDigits: 1 }) : '–') + '</td><td>' + (x.merNeed ? x.merNeed.toLocaleString('ro-RO', { maximumFractionDigits: 1 }) : '–') + '</td><td class="' + (x.contrib >= 0 ? 'ue-pos' : 'ue-neg') + '">' + (x.contrib < 0 ? '−' : '+') + fmtLei(Math.abs(x.contrib)) + '</td><td><span class="ue-chip ' + tone + '">' + v + '</span></td></tr>';
+  }).join('');
+  root.innerHTML =
+    '<div class="tot-box ' + (result >= 0 ? 'good' : 'bad') + '"><div class="tot-label">Rezultat lunar al magazinului online · ultimele 30 de zile</div><div class="tot-value">' + (result >= 0 ? '+' : '−') + fmtLei(Math.abs(result)) + '</div>' +
+      '<div class="item-sub">' + (result < 0 ? 'Îți lipsesc ~' + fmtLei(-result) + ' pe lună ca să fii pe 0. Facturile B2B (Merlins etc.) vin pe deasupra și acoperă o parte.' : 'Online-ul acoperă costurile fixe; B2B vine pe deasupra.') + '</div></div>' +
+    '<div class="stat-grid">' +
+      '<div class="stat-card"><div class="stat-label">Marjă înainte de reclame</div><div class="stat-value">' + pct(cm1Pct) + '</div><div class="item-sub">' + Math.round(cm1Pct * 100) + ' lei din 100 vânduți</div></div>' +
+      '<div class="stat-card"><div class="stat-label">Marjă după reclame</div><div class="stat-value" style="color:' + (cm2Pct > 0 ? 'var(--good)' : 'var(--bad)') + '">' + pct(cm2Pct) + '</div><div class="item-sub">reclame: ' + fmtLei(ads) + ' (' + pct(S ? ads / S : 0) + ')</div></div>' +
+      '<div class="stat-card"><div class="stat-label">Costuri fixe / lună</div><div class="stat-value">' + fmtLei(F) + '</div><div class="item-sub">salarii, chirie, abonamente…</div></div>' +
+      '<div class="stat-card"><div class="stat-label">Prag de rentabilitate</div><div class="stat-value">' + (breakEven ? fmtLei(breakEven) : '—') + '</div><div class="item-sub">vânzări online / lună · acum ' + fmtLei(S) + '</div></div>' +
+    '</div>' +
+    '<div class="card" style="margin-bottom:16px"><h2>Din fiecare 100 lei vânduți online</h2><ul class="ue-lines">' +
+      lines.map((l, i) => lineRow(l[0], l[1], i === 0)).join('') + lineRow('= Marjă înainte de reclame', cm1, true) + lineRow('Reclame Meta', -ads) + lineRow('= Marjă de contribuție', cm2, true) +
+      lineRow('Costuri fixe', -F) + lineRow('= Rezultat', result, true) + '</ul>' +
+      '<div class="item-sub" style="margin-top:8px">Încasat efectiv: ' + pct(realizedRatio) + ' din vânzări (banca în ' + (d.inflowRate ? d.inflowRate.month : '—') + ' față de comenzi). Doar magazinul online; fără impozitul pe profit/micro.</div></div>' +
+    '<div class="card" style="margin-bottom:16px"><h2>Pe țări · reclame vs vânzări reale</h2><div style="overflow-x:auto"><table class="ue-table"><thead><tr><th>Țară</th><th>Vânzări</th><th>Reclame</th><th>MER acum</th><th>MER de prag</th><th>Contribuție</th><th></th></tr></thead><tbody>' + countryRows + '</tbody></table></div>' +
+      '<div class="item-sub" style="margin-top:8px"><b>MER</b> = vânzări ÷ reclame. <b>MER de prag</b> = cât trebuie să vinzi pentru 1 leu în reclame ca să nu pierzi (după TVA, materiale, încasare și, în afara României, transportul de ' + shipIntl + ' lei/colet). Sub prag, campania pierde bani la fiecare vânzare.</div></div>' +
+    '<div class="card" style="margin-bottom:16px"><h2>Cum ajungi pe 0</h2><ul class="items">' +
+      (result < 0 ? [
+        'Mai multe vânzări la aceeași eficiență: <b>+' + fmtLei(cm2Pct > 0 ? -result / cm2Pct : 0) + '</b> vânzări online pe lună' + (cm2Pct > 0 ? '' : ' (nu ajută cât marja după reclame e ≤ 0)'),
+        'Sau tai costuri fixe cu <b>' + fmtLei(-result) + '</b> pe lună',
+        'Sau crești marja cu <b>' + (S ? (Math.round((-result / S) * 1000) / 10).toLocaleString('ro-RO') : 0) + ' puncte procentuale</b> (prețuri, mai puține refuzuri, transport mai ieftin, reclame mai eficiente)',
+      ] : ['Ești peste prag: fiecare 100 lei în plus vânduți aduc ~' + Math.round(cm2Pct * 100) + ' lei.']).map((t) => '<li class="item"><span class="item-title">' + t + '</span></li>').join('') + '</ul></div>' +
+    '<div class="card"><h2>Costuri fixe pe lună</h2><ul class="tot-parts">' + fixedParts.filter((p) => p[1] > 0).sort((a, b) => b[1] - a[1]).map((p) => '<li><div class="tot-row"><span class="tot-name">' + catIcon(p[0].startsWith('Taxe') ? 'Taxe' : p[0]) + '<span class="tot-txt">' + p[0] + '</span></span><span>' + fmtLei(p[1]) + '</span></div></li>').join('') + '</ul></div>';
 }
 
 function renderCashLogin(root, err) {
