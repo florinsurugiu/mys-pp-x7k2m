@@ -1074,8 +1074,8 @@ function cashBalances() {
  * contribution so the tab can show exactly what each total is made of:
  * known money (open Shopify orders by payout date, recent SmartBill B2B
  * invoices at 30 days), future sales at the last-28-day run rate (landing
- * after each method's payout delay; PayPal included (PayPal balance, not in the
- * account), recurring payments on their usual day of month, Meta daily. */
+ * after each method's payout delay; PayPal included, it sits in the PayPal
+ * balance, not in the bank statements), recurring payments on their usual day of month, Meta daily. */
 const CASH_NET = { cod: 0.95, card: 0.97, klarna: 0.95, paypal: 0.965 };
 // Unshipped COD orders still get cancelled or refused before they ship.
 const netOf = (i) => (i.method === 'cod' && !i.shipped ? 0.8 : CASH_NET[i.method] || 1);
