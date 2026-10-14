@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-14T20:39:45.466Z",
-  "planDate": "2026-10-14",
+  "generatedAt": "2026-10-14T23:29:54.997Z",
+  "planDate": "2026-10-15",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee",
     "[#235777] Pop Cola Classic Socks (3 pairs)",
@@ -196,7 +196,7 @@
         ]
       },
       {
-        "title": "03. T negru M (about you)",
+        "title": "03. T negru XL",
         "hours": 0.67,
         "tags": [
           "shopify",
@@ -263,22 +263,17 @@
         ]
       },
       {
-        "title": "01. T negru cusatura pe mijloc - S",
+        "title": "01. T negru M (about you)",
         "hours": 1.33,
         "tags": [
-          "shopify",
+          "wb",
           "buffer"
         ],
-        "orderName": "#235743, #235785",
+        "orderName": "#235743",
         "orderLinks": [
           {
             "name": "#235743",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
-            "cod": false
-          },
-          {
-            "name": "#235785",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192723931460",
             "cod": false
           }
         ]
@@ -930,6 +925,23 @@
       ]
     },
     {
+      "name": "T Negru L",
+      "orderName": "#235790",
+      "orderLinks": [
+        {
+          "name": "#235790",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11195290812740",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "Rochie Indian S",
       "orderName": "#235791",
       "orderLinks": [
@@ -948,16 +960,6 @@
     }
   ],
   "croitBuffer": [
-    {
-      "gid": "1219493417484954",
-      "name": "07. B rupta alba XS-S",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
     {
       "gid": "1219392024972597",
       "name": "Blugi barbati negri dungi M",
@@ -991,16 +993,6 @@
     {
       "gid": "1203699292375699",
       "name": "T alb S ",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1219066658821316",
-      "name": "T grey XXL",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
@@ -1060,22 +1052,16 @@
     }
   ],
   "backlog": {
-    "hours": 2,
+    "hours": 1.33,
     "items": [
       {
-        "orderName": null,
-        "title": "T grey XXL",
-        "category": "Tricou simplu",
-        "hours": 0.67
-      },
-      {
-        "orderName": "ds-aycz-554-404357116",
+        "orderName": "#235785",
         "title": "T negru L",
         "category": "Tricou simplu",
         "hours": 0.67
       },
       {
-        "orderName": "#235790",
+        "orderName": "ds-aycz-554-404357116",
         "title": "T negru L circus (printat)",
         "category": "Tricou simplu",
         "hours": 0.67
