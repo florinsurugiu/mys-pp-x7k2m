@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T21:59:31.769Z",
+  "generatedAt": "2026-10-14T01:07:06.756Z",
   "planDate": "2026-10-14",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee",
@@ -23,6 +23,14 @@
       "category": "Hanorac bumbac",
       "size": "M",
       "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/14994921226564",
+      "title": "Complex Minds Checkered Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_checkered_shirt_m1.jpg?v=1769631253",
+      "category": "Camasa lunga",
+      "size": "L",
+      "hours": 1.75
     },
     {
       "productId": "gid://shopify/Product/14947608396100",
@@ -81,6 +89,14 @@
       "hours": 2
     },
     {
+      "productId": "gid://shopify/Product/14994921226564",
+      "title": "Complex Minds Checkered Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_checkered_shirt_m1.jpg?v=1769631253",
+      "category": "Camasa lunga",
+      "size": "M",
+      "hours": 1.75
+    },
+    {
       "productId": "gid://shopify/Product/15412296745284",
       "title": "Offset Black Sweatpants",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
@@ -89,44 +105,28 @@
       "hours": 2
     },
     {
-      "productId": "gid://shopify/Product/8871129416004",
-      "title": "Oversized White Ribbon T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Pink-Ribbons-T-shirt1-mysimplicated.jpg?v=1769595237",
+      "productId": "gid://shopify/Product/8649111044420",
+      "title": "Black T-shirt Double Eye",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-t-shirt-double-eye-633014_433f8ad5-3a9e-48c5-9e65-f6e343155866.jpg?v=1770114609",
       "category": "Tricou simplu",
-      "size": "M",
+      "size": "XXL",
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/15576784240964",
-      "title": "MSPCT Patch Tee Faded Rose",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260617_210431_d3ec662e-1a77-4b1d-a9c3-d062f3980d6f.jpg?v=1786557943",
+      "productId": "gid://shopify/Product/15419157250372",
+      "title": "Vitamin Aqua MG Black Double Sleeve",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated662.jpg?v=1766854599",
+      "category": "Double sleeve",
+      "size": "XXL",
+      "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15003405582660",
+      "title": "Oversized White T-shirt Need Money for Porsche",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
       "category": "Tricou simplu",
-      "size": "M",
+      "size": "XXL",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/9435977810244",
-      "title": "Oversized Cotton Black T-shirt Circus",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_circus_tshirt1_38a6adc7-48fb-40f3-8305-270dc107f047.jpg?v=1769687674",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15499163468100",
-      "title": "Broken Strap Olive Top",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated051_4fcf3053-c16f-4ea8-a0bf-aaa8f71c2c9c.jpg?v=1773534435",
-      "category": "Top Spirit",
-      "size": "M",
-      "hours": 0.5
-    },
-    {
-      "productId": "gid://shopify/Product/15417811403076",
-      "title": "3-in-1 Layered Hoodie V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated547.jpg?v=1766695445",
-      "category": "Hanorac bumbac",
-      "size": "M",
-      "hours": 1
     }
   ],
   "felicia": {
@@ -383,33 +383,6 @@
       "leftover": false,
       "tags": [
         "wb"
-      ]
-    },
-    {
-      "name": "H negru Dept 2M + S",
-      "orderName": "#235725, #235784, #235786",
-      "orderLinks": [
-        {
-          "name": "#235725",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11164825944388",
-          "cod": false
-        },
-        {
-          "name": "#235784",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192240898372",
-          "cod": true
-        },
-        {
-          "name": "#235786",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192851530052",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 3,
-      "leftover": false,
-      "tags": [
-        "shopify"
       ]
     },
     {
@@ -683,6 +656,28 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H negru Dept S + M",
+      "orderName": "#235784, #235786",
+      "orderLinks": [
+        {
+          "name": "#235784",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192240898372",
+          "cod": true
+        },
+        {
+          "name": "#235786",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192851530052",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
