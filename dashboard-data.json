@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T17:04:31.666Z",
+  "generatedAt": "2026-10-14T20:39:45.466Z",
   "planDate": "2026-10-14",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee",
@@ -196,7 +196,7 @@
         ]
       },
       {
-        "title": "03. T negru XL",
+        "title": "03. T negru M (about you)",
         "hours": 0.67,
         "tags": [
           "shopify",
@@ -263,17 +263,22 @@
         ]
       },
       {
-        "title": "01. T negru M (about you)",
+        "title": "01. T negru cusatura pe mijloc - S",
         "hours": 1.33,
         "tags": [
-          "wb",
+          "shopify",
           "buffer"
         ],
-        "orderName": "#235743",
+        "orderName": "#235743, #235785",
         "orderLinks": [
           {
             "name": "#235743",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11171784655172",
+            "cod": false
+          },
+          {
+            "name": "#235785",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192723931460",
             "cod": false
           }
         ]
@@ -297,20 +302,6 @@
     ]
   },
   "croit": [
-    {
-      "name": "06. T negru cusatura pe mijloc - S",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-10-14",
-      "leftover": false,
-      "number": 6,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
     {
       "name": "11. H patch M + XL",
       "orderName": null,
@@ -939,23 +930,6 @@
       ]
     },
     {
-      "name": "T Negru L",
-      "orderName": "#235790",
-      "orderLinks": [
-        {
-          "name": "#235790",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11195290812740",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "Rochie Indian S",
       "orderName": "#235791",
       "orderLinks": [
@@ -1025,6 +999,16 @@
       ]
     },
     {
+      "gid": "1219066658821316",
+      "name": "T grey XXL",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
       "gid": "1219066658821324",
       "name": "T roz L",
       "orderName": null,
@@ -1076,16 +1060,22 @@
     }
   ],
   "backlog": {
-    "hours": 1.33,
+    "hours": 2,
     "items": [
       {
-        "orderName": "#235785",
-        "title": "T negru L",
+        "orderName": null,
+        "title": "T grey XXL",
         "category": "Tricou simplu",
         "hours": 0.67
       },
       {
         "orderName": "ds-aycz-554-404357116",
+        "title": "T negru L",
+        "category": "Tricou simplu",
+        "hours": 0.67
+      },
+      {
+        "orderName": "#235790",
         "title": "T negru L circus (printat)",
         "category": "Tricou simplu",
         "hours": 0.67
