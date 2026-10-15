@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T01:45:31.048Z",
+  "generatedAt": "2026-10-15T06:32:40.937Z",
   "planDate": "2026-10-15",
   "unmatchedProducts": [
     "[#235770] Midnight Essential Tee",
@@ -39,14 +39,6 @@
       "category": "Tricou simplu",
       "size": "XXL",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/14947608396100",
-      "title": "3-in-1 Layered Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_layered_hoodie_w1.jpg?v=1769601948",
-      "category": "Hanorac bumbac",
-      "size": "S",
-      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/15411830882628",
@@ -126,6 +118,14 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
       "category": "Tricou simplu",
       "size": "XXL",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15614948868420",
+      "title": "Reality Grey Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+      "category": "Tricou simplu",
+      "size": "XS",
       "hours": 0.6667
     }
   ],
@@ -558,6 +558,23 @@
       ]
     },
     {
+      "name": "H Layers V1 L",
+      "orderName": "#235793",
+      "orderLinks": [
+        {
+          "name": "#235793",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11198224400708",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "C Complex Rosu M",
       "orderName": "#235743",
       "orderLinks": [
@@ -953,6 +970,23 @@
       ],
       "category": "Rochie indian",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Tokyo M",
+      "orderName": "#235794",
+      "orderLinks": [
+        {
+          "name": "#235794",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11198290297156",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
