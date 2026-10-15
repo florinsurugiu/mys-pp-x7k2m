@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-15T20:16:26.172Z",
-  "planDate": "2026-10-15",
+  "generatedAt": "2026-10-15T23:07:13.326Z",
+  "planDate": "2026-10-16",
   "unmatchedProducts": [
     "[#235777] Pop Cola Classic Socks (3 pairs)",
     "[#235779] Bra Overlay Black Hoodie",
@@ -38,14 +38,6 @@
       "category": "Tricou simplu",
       "size": "XXL",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15588974428484",
-      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-      "category": "Camasa scurta",
-      "size": "XXL",
-      "hours": 1.4167
     },
     {
       "productId": "gid://shopify/Product/15411830882628",
@@ -125,6 +117,14 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-need-money-for-porsche-963850_875afb5f-3ff0-489d-a9d8-48f8532bdbb0.jpg?v=1770115519",
       "category": "Tricou simplu",
       "size": "XXL",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15614948868420",
+      "title": "Reality Grey Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260717_121204_5a618bd0-cf8f-4081-b165-f6723b12e8db.jpg?v=1786555540",
+      "category": "Tricou simplu",
+      "size": "XS",
       "hours": 0.6667
     }
   ],
@@ -429,8 +429,8 @@
       ]
     },
     {
-      "name": "P Drept MG S + XXL",
-      "orderName": "#235777, #235785",
+      "name": "P Drept MG S + XXL + M",
+      "orderName": "#235777, #235785, #235798",
       "orderLinks": [
         {
           "name": "#235777",
@@ -441,10 +441,15 @@
           "name": "#235785",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192723931460",
           "cod": false
+        },
+        {
+          "name": "#235798",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11200122782020",
+          "cod": false
         }
       ],
       "category": "Pantalon drept",
-      "hours": 4,
+      "hours": 6,
       "leftover": false,
       "tags": [
         "shopify"
@@ -614,17 +619,22 @@
       ]
     },
     {
-      "name": "C Blue S",
-      "orderName": "#235749",
+      "name": "C Blue S + XXL",
+      "orderName": "#235749, #235796",
       "orderLinks": [
         {
           "name": "#235749",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11173653578052",
           "cod": false
+        },
+        {
+          "name": "#235796",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11199878398276",
+          "cod": false
         }
       ],
       "category": "Camasa Unisex",
-      "hours": 1.5,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -767,17 +777,22 @@
       ]
     },
     {
-      "name": "C Bal scurta maro XS",
-      "orderName": "#235782",
+      "name": "C Bal scurta maro XS + XXL",
+      "orderName": "#235782, #235796",
       "orderLinks": [
         {
           "name": "#235782",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11191681974596",
           "cod": false
+        },
+        {
+          "name": "#235796",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11199878398276",
+          "cod": false
         }
       ],
       "category": "Camasa scurta",
-      "hours": 1.4167,
+      "hours": 2.8334,
       "leftover": false,
       "tags": [
         "shopify"
@@ -880,6 +895,23 @@
       ],
       "category": "Camasa lunga",
       "hours": 1.75,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru XXL",
+      "orderName": "#235797",
+      "orderLinks": [
+        {
+          "name": "#235797",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11200058949956",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
