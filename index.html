@@ -1305,7 +1305,9 @@ function buildCashProjection(d, start, days) {
         out.push(r);
       }
       // payOn: the day the user plans to pay (taxes paid late on purpose).
-      for (const b of d.bills || []) if ((b.payOn || b.due) === key) out.push({ ...b, bill: true, overdue: b.due < todayKey });
+      // A past-due bill the user plans to pay on a later day sits on that day
+      // (not under "plătește acum"), marked as late.
+      for (const b of d.bills || []) if ((b.payOn || b.due) === key) out.push({ ...b, bill: true, overdue: false, pastDue: b.due < todayKey });
     }
     if (k === 0) for (const b of d.bills || []) if ((b.payOn || b.due) <= key) out.push({ ...b, bill: true, overdue: b.due < key });
     const meta = k > 0 ? d.metaDaily : 0;
@@ -1438,7 +1440,7 @@ function renderCashData(root, d) {
       ? '<details class="cat-block' + (o.tone ? ' ' + o.tone : '') + '"' + (o.open ? ' open' : '') + '><summary class="cat-head">' + head + '</summary>' + body + '</details>'
       : '<section class="cat-block' + (o.tone ? ' ' + o.tone : '') + '"><div class="cat-head">' + head + '</div>' + body + '</section>';
   };
-  const metaOf = (o) => [o.payOn ? 'scadent pe ' + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }) + ', amânat' : '', o.estimate ? 'estimare' : '', o.priority === 'flex' ? 'se poate amâna' : ''].filter(Boolean).join(' · ');
+  const metaOf = (o) => [o.payOn ? (o.pastDue ? 'trebuia plătit pe ' : 'scadent pe ') + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }) + ', amânat' : '', o.estimate ? 'estimare' : '', o.priority === 'flex' ? 'se poate amâna' : ''].filter(Boolean).join(' · ');
   const CAT_ORDER = ['Taxe', 'Salarii', 'Chirie & utilități', 'Furnizori', 'Contabilitate', 'Echipament', 'Abonamente', 'Cheltuieli variabile'];
   const byCatOut = {};
   for (const o of outItems.filter((x) => !x.overdue)) (byCatOut[o.category || 'Altele'] = byCatOut[o.category || 'Altele'] || []).push(o);
@@ -1449,7 +1451,7 @@ function renderCashData(root, d) {
   // Upcoming payments in date order; the category is a label on each row
   // (the totals box above splits them by category).
   const upcomingOut = outItems.filter((x) => !x.overdue && x.amount > 0).sort((x, y) => x.day - y.day || y.amount - x.amount)
-    .map((o) => ({ name: o.name, cat: o.category, meta: metaOf(o), day: o.day, amount: o.amount, approx: o.estimate }));
+    .map((o) => ({ name: o.name, cat: o.category, meta: metaOf(o), day: o.day, late: !!o.pastDue, amount: o.amount, approx: o.estimate }));
   const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit</h2>' +
     block('Restant · plătește acum', lateItems.sort((x, y) => x.day - y.day), { tone: 'bad' }) +
     block('Următoarele 30 de zile · în ordinea datei', upcomingOut) +
