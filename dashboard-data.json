@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T12:02:43.877Z",
+  "generatedAt": "2026-10-15T16:52:49.348Z",
   "planDate": "2026-10-15",
   "unmatchedProducts": [
     "[#235777] Pop Cola Classic Socks (3 pairs)",
@@ -129,7 +129,7 @@
     }
   ],
   "felicia": {
-    "hours": 15,
+    "hours": 12.17,
     "capacity": 7.2,
     "items": [
       {
@@ -142,105 +142,14 @@
         ]
       },
       {
-        "title": "05. C sleeveless maro XXL",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "06. C fragmented V3 L",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T negru L",
+        "title": "01. T grey XXL",
         "hours": 0.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235790",
-        "orderLinks": [
-          {
-            "name": "#235790",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11195290812740",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. W Statue XL ",
-        "hours": 2.5,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235787",
-        "orderLinks": [
-          {
-            "name": "#235787",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192987844932",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. Jacket Denim Negru Dungi XL + XXL",
-        "hours": 8,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235766, #235773",
-        "orderLinks": [
-          {
-            "name": "#235766",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180688965956",
-            "cod": true
-          },
-          {
-            "name": "#235773",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 11.92,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "06. C Balenci lunga S",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T negru S, M",
-        "hours": 2,
         "tags": [
           "wb",
           "buffer"
         ],
-        "orderName": "#235785",
-        "orderLinks": [
-          {
-            "name": "#235785",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192723931460",
-            "cod": false
-          }
-        ]
+        "orderName": null,
+        "orderLinks": []
       },
       {
         "title": "02. W animal print S",
@@ -285,6 +194,98 @@
             "name": "#235776",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189150384452",
             "cod": true
+          }
+        ]
+      },
+      {
+        "title": "05. T Alb 2M + L",
+        "hours": 2,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235775, #235777",
+        "orderLinks": [
+          {
+            "name": "#235775",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11188087259460",
+            "cod": true
+          },
+          {
+            "name": "#235777",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189645836612",
+            "cod": true
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 7.25,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "06. C Balenci lunga S",
+        "hours": 1.42,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. T negru L",
+        "hours": 2,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235790, #235785",
+        "orderLinks": [
+          {
+            "name": "#235790",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11195290812740",
+            "cod": false
+          },
+          {
+            "name": "#235785",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192723931460",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. W Statue XL ",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235787",
+        "orderLinks": [
+          {
+            "name": "#235787",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192987844932",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. T Split Alb L + XL",
+        "hours": 1.33,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235777, #235788",
+        "orderLinks": [
+          {
+            "name": "#235777",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189645836612",
+            "cod": true
+          },
+          {
+            "name": "#235788",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11193004261700",
+            "cod": false
           }
         ]
       }
@@ -336,28 +337,6 @@
       ],
       "category": "Windbreaker",
       "hours": 5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "Jacket Denim Negru Dungi XL + XXL",
-      "orderName": "#235766, #235773",
-      "orderLinks": [
-        {
-          "name": "#235766",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11180688965956",
-          "cod": true
-        },
-        {
-          "name": "#235773",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
-          "cod": false
-        }
-      ],
-      "category": "Denim Jacket",
-      "hours": 8,
       "leftover": false,
       "tags": [
         "shopify"
@@ -705,6 +684,23 @@
         }
       ],
       "category": "Jeans",
+      "hours": 4,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Jacket Denim Negru Dungi XXL",
+      "orderName": "#235773",
+      "orderLinks": [
+        {
+          "name": "#235773",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11185727537476",
+          "cod": false
+        }
+      ],
+      "category": "Denim Jacket",
       "hours": 4,
       "leftover": false,
       "tags": [
