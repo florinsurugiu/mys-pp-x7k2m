@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bancă · cod de autorizare</title>
+<style>
+  :root { --bg: #14161a; --card: #1c1f25; --border: #2a2e36; --text: #eceef1; --dim: #9aa1ad; --accent: #5fc2c9; color-scheme: dark; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 40px 16px; }
+  .card { max-width: 560px; margin: 0 auto; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 22px 24px; }
+  h1 { font-size: 1.1rem; margin: 0 0 8px; }
+  p { color: var(--dim); margin: 0 0 14px; }
+  code { display: block; word-break: break-all; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-size: 0.95rem; }
+  button { margin-top: 12px; background: none; color: var(--accent); border: 1px solid var(--accent); border-radius: 8px; padding: 7px 14px; font: inherit; cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1 id="title">Cod de autorizare bancă</h1>
+  <p id="hint">Apasă „Copiază” și trimite codul lui Claude în chat.</p>
+  <code id="code"></code>
+  <button id="copy" type="button">Copiază</button>
+</div>
+<script>
+  // Enable Banking redirects here after the bank login. The code is useless
+  // without the app's private key, which never touches this page.
+  const q = new URLSearchParams(location.search);
+  const code = q.get('code');
+  const box = document.getElementById('code');
+  const state = q.get('state');
+  if (code) {
+    box.textContent = code;
+    if (state) document.getElementById('title').textContent = 'Cod de autorizare · ' + state.split('|')[0];
+  } else {
+    document.getElementById('title').textContent = q.get('error') ? 'Banca a refuzat logarea' : 'Nicio autorizare în curs';
+    document.getElementById('hint').textContent = q.get('error_description') || q.get('error') || 'Pagina primește codul după logarea la bancă.';
+    box.hidden = true;
+    document.getElementById('copy').hidden = true;
+  }
+  document.getElementById('copy').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(code); document.getElementById('copy').textContent = 'Copiat'; } catch (e) {}
+  });
+</script>
+</body>
+</html>
