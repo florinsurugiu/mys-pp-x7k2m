@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T01:27:57.780Z",
+  "generatedAt": "2026-10-16T06:18:33.790Z",
   "planDate": "2026-10-16",
   "unmatchedProducts": [
     "[#235777] Pop Cola Classic Socks (3 pairs)",
@@ -293,6 +293,20 @@
   },
   "croit": [
     {
+      "name": "T ivory M",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-10-16",
+      "leftover": false,
+      "number": null,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
       "name": "T mauve XXL",
       "orderName": null,
       "category": "Tricou simplu",
@@ -456,39 +470,17 @@
       ]
     },
     {
-      "name": "H Patch 2L",
-      "orderName": "#235777, #235778",
+      "name": "H Patch L",
+      "orderName": "#235777",
       "orderLinks": [
         {
           "name": "#235777",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189645836612",
           "cod": true
-        },
-        {
-          "name": "#235778",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189961654596",
-          "cod": true
         }
       ],
       "category": "Hanorac patchuri",
-      "hours": 6,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H negru L",
-      "orderName": "#235778",
-      "orderLinks": [
-        {
-          "name": "#235778",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189961654596",
-          "cod": true
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
