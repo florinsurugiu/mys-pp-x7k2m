@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T15:35:59.724Z",
+  "generatedAt": "2026-10-16T19:03:35.905Z",
   "planDate": "2026-10-16",
   "unmatchedProducts": [
     "[#235777] Pop Cola Classic Socks (3 pairs)",
@@ -30,14 +30,6 @@
       "category": "Camasa lunga",
       "size": "L",
       "hours": 1.75
-    },
-    {
-      "productId": "gid://shopify/Product/15573327249732",
-      "title": "Reality Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
-      "category": "Tricou simplu",
-      "size": "XXL",
-      "hours": 0.6667
     },
     {
       "productId": "gid://shopify/Product/15411830882628",
@@ -126,21 +118,20 @@
       "category": "Pantalon drept",
       "size": "M",
       "hours": 2
+    },
+    {
+      "productId": "gid://shopify/Product/15446025503044",
+      "title": "Retro Pop Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_retro_windbreaker_M1.jpg?v=1769543665",
+      "category": "Windbreaker",
+      "size": "L",
+      "hours": 2.5
     }
   ],
   "felicia": {
-    "hours": 11.83,
+    "hours": 11.17,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "05. T alb, negru M",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "01. W animal print S",
         "hours": 2.5,
@@ -226,18 +217,9 @@
     ]
   },
   "flori": {
-    "hours": 15.17,
+    "hours": 14.17,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "04. H Patchuri L (vreau dimensiuni la final)",
-        "hours": 1,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "01. H layers M (carouri rosii)",
         "hours": 1,
@@ -604,17 +586,22 @@
       ]
     },
     {
-      "name": "H Layers V1 L",
-      "orderName": "#235793",
+      "name": "H Layers V1 L + XXL",
+      "orderName": "#235793, #235802",
       "orderLinks": [
         {
           "name": "#235793",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11198224400708",
           "cod": true
+        },
+        {
+          "name": "#235802",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202068283716",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -784,12 +771,34 @@
       ]
     },
     {
-      "name": "T Negru XXL",
-      "orderName": "#235797",
+      "name": "T Negru 2XXL",
+      "orderName": "#235797, #235802",
       "orderLinks": [
         {
           "name": "#235797",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11200058949956",
+          "cod": false
+        },
+        {
+          "name": "#235802",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202068283716",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 1.3334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Gri XXL",
+      "orderName": "#235802",
+      "orderLinks": [
+        {
+          "name": "#235802",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202068283716",
           "cod": false
         }
       ],
