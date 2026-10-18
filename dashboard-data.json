@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T13:55:20.689Z",
+  "generatedAt": "2026-10-18T17:15:33.996Z",
   "planDate": "2026-10-19",
   "unmatchedProducts": [
     "[#235777] Pop Cola Classic Socks (3 pairs)",
@@ -130,24 +130,14 @@
     }
   ],
   "felicia": {
-    "hours": 7.67,
+    "hours": 14.5,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. W animal print S",
-        "hours": 2.5,
+        "title": "01. T negru S",
+        "hours": 2,
         "tags": [
           "wb",
-          "buffer"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "02. T negru S",
-        "hours": 1.33,
-        "tags": [
-          "shopify",
           "buffer"
         ],
         "orderName": "#235785, ds-aycz-554-404357116",
@@ -165,27 +155,22 @@
         ]
       },
       {
-        "title": "03. W 3rd eye M",
+        "title": "02. W animal print S",
         "hours": 2.5,
         "tags": [
-          "shopify"
+          "wb",
+          "buffer"
         ],
-        "orderName": "#235776",
-        "orderLinks": [
-          {
-            "name": "#235776",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189150384452",
-            "cod": true
-          }
-        ]
+        "orderName": null,
+        "orderLinks": []
       },
       {
-        "title": "04. T Split Alb L + XL",
-        "hours": 1.33,
+        "title": "03. P Drept MG 2S + XXL + M",
+        "hours": 8,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235777, #235788",
+        "orderName": "#235777, #235785, #235798, #235800",
         "orderLinks": [
           {
             "name": "#235777",
@@ -193,8 +178,38 @@
             "cod": true
           },
           {
-            "name": "#235788",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11193004261700",
+            "name": "#235785",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192723931460",
+            "cod": false
+          },
+          {
+            "name": "#235798",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11200122782020",
+            "cod": false
+          },
+          {
+            "name": "#235800",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11201629454660",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. T Alb M + 2L",
+        "hours": 2,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235777, #235803",
+        "orderLinks": [
+          {
+            "name": "#235777",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189645836612",
+            "cod": true
+          },
+          {
+            "name": "#235803",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202531328324",
             "cod": false
           }
         ]
@@ -202,7 +217,7 @@
     ]
   },
   "flori": {
-    "hours": 7.83,
+    "hours": 11.5,
     "capacity": 7.2,
     "items": [
       {
@@ -238,8 +253,8 @@
         ]
       },
       {
-        "title": "03. T grey XXL",
-        "hours": 1.33,
+        "title": "03. T negru L circus (printat)",
+        "hours": 0.67,
         "tags": [
           "shopify",
           "buffer"
@@ -270,12 +285,32 @@
         ]
       },
       {
-        "title": "05. T Alb M + 2L",
-        "hours": 2,
+        "title": "05. W 3rd eye M + L",
+        "hours": 5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235777, #235803",
+        "orderName": "#235776, #235808",
+        "orderLinks": [
+          {
+            "name": "#235776",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189150384452",
+            "cod": true
+          },
+          {
+            "name": "#235808",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206631948612",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "06. T Split Alb L + XL",
+        "hours": 1.33,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235777, #235788",
         "orderLinks": [
           {
             "name": "#235777",
@@ -283,8 +318,8 @@
             "cod": true
           },
           {
-            "name": "#235803",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202531328324",
+            "name": "#235788",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11193004261700",
             "cod": false
           }
         ]
@@ -397,17 +432,22 @@
       ]
     },
     {
-      "name": "W 3rd eye M",
-      "orderName": "#235776",
+      "name": "W 3rd eye M + L",
+      "orderName": "#235776, #235808",
       "orderLinks": [
         {
           "name": "#235776",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11189150384452",
           "cod": true
+        },
+        {
+          "name": "#235808",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206631948612",
+          "cod": true
         }
       ],
       "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -585,6 +625,84 @@
       ]
     },
     {
+      "name": "T Negru 2XXL + XL",
+      "orderName": "#235797, #235802, #235806",
+      "orderLinks": [
+        {
+          "name": "#235797",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11200058949956",
+          "cod": false
+        },
+        {
+          "name": "#235802",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202068283716",
+          "cod": false
+        },
+        {
+          "name": "#235806",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206575849796",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 2.0000999999999998,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Offwhite Soldout XL",
+      "orderName": "#235806",
+      "orderLinks": [
+        {
+          "name": "#235806",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206575849796",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Pop Mix XL",
+      "orderName": "#235807",
+      "orderLinks": [
+        {
+          "name": "#235807",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206587580740",
+          "cod": true
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 1.4167,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Statue XL",
+      "orderName": "#235807",
+      "orderLinks": [
+        {
+          "name": "#235807",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206587580740",
+          "cod": true
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Tiv Offwhite Miau M",
       "orderName": "#235755",
       "orderLinks": [
@@ -713,28 +831,6 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Negru 2XXL",
-      "orderName": "#235797, #235802",
-      "orderLinks": [
-        {
-          "name": "#235797",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11200058949956",
-          "cod": false
-        },
-        {
-          "name": "#235802",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202068283716",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
