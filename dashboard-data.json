@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:15:33.996Z",
+  "generatedAt": "2026-10-18T19:28:42.997Z",
   "planDate": "2026-10-19",
   "unmatchedProducts": [
     "[#235777] Pop Cola Classic Socks (3 pairs)",
@@ -327,36 +327,6 @@
     ]
   },
   "croit": [
-    {
-      "name": "03. C albastra XXL",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-10-18",
-      "leftover": true,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "leftover",
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "04. T mauve XXL",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-10-18",
-      "leftover": true,
-      "number": 4,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
-        "leftover",
-        "asana",
-        "predicted"
-      ]
-    },
     {
       "name": "05. T offwhite cu tiv M (fara buzunar si patch piept)",
       "orderName": null,
@@ -855,6 +825,26 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1219536254462119",
+      "name": "04. T mauve XXL",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219536254462111",
+      "name": "03. C albastra XXL",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1219392024972597",
       "name": "Blugi barbati negri dungi M",
