@@ -347,7 +347,9 @@
   .cash-calc[open] summary::before { transform: rotate(90deg); }
   .cash-calc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
   .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
-  @media (max-width: 640px) { .stat-grid { grid-template-columns: repeat(2, 1fr); } }
+  .stat-grid.cash-five { grid-template-columns: repeat(5, 1fr); }
+  @media (max-width: 900px) { .stat-grid.cash-five { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 640px) { .stat-grid, .stat-grid.cash-five { grid-template-columns: repeat(2, 1fr); } }
   .stat-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
   .stat-card[title] { cursor: help; }
   .stat-card[title] .stat-label { text-decoration: underline dotted var(--text-faint); text-underline-offset: 3px; }
@@ -1516,7 +1518,19 @@ function renderCashData(root, d) {
     cashLine('Meta (reclame)', (d.meta && d.meta.budgetDaily ? 'bugete zilnice active acum: ' + d.meta.campaigns.map((c) => c.name + ' ' + fmtLei(c.daily)).join(' · ') + ' = ' + fmtLei(d.metaDaily) + '/zi (în ultimele 7 zile s-au cheltuit în medie ' + fmtLei(d.meta.spentDaily7) + '/zi)' : fmtLei(d.metaDaily) + '/zi (media ultimelor 7 zile)') + ' × ' + next30.filter((r) => r.meta).length + ' zile', meta30, '−');
   const mustItems = outItems.filter((o) => o.priority === 'must');
 
+  // Tomorrow: orders and invoices expected to land tomorrow, plus the
+  // forecast for that day (same numbers as the projection row).
+  const tmr = rows[1];
+  const tmrIn = tmr.inKnown + tmr.inForecast;
+  const tmrByMethod = {};
+  for (const i of d.incoming) if (dayKey(new Date(Date.parse(i.expected))) === tmr.key) (tmrByMethod[i.method] = tmrByMethod[i.method] || []).push(i);
+  const tmrLines = Object.entries(tmrByMethod).map(([m, xs]) => cashLine(CASH_METHOD[m] + (m === 'payout' ? '' : ' · ' + xs.length + (xs.length === 1 ? ' comandă' : ' comenzi')), xs.map((i) => i.order + ' ' + fmtLei(i.amount)).join(' · ') + (CASH_NET[m] ? '<br>× ' + Math.round(CASH_NET[m] * 100) + '%' : ''), sum(xs, (i) => i.amount * netOf(i)), '+')).join('') +
+    (d.receivables || []).filter((r) => r.counted && dayKey(new Date(r.expected)) === tmr.key).map((r) => cashLine(r.client + ' · ' + r.company + ' ' + r.invoice, 'factură B2B, 30 zile de la emitere', r.amount, '+')).join('') +
+    tmr.income.map((r) => cashLine(r.name, r.note || '', r.amount, '+')).join('') +
+    Object.entries(tmr.forecast).map(([m, v]) => cashLine('Vânzări estimate · ' + CASH_METHOD[m], 'ritmul de încasare de luna trecută', v, '+')).join('');
+
   const calc =
+    cashDetails('Intră mâine', '+' + fmtLei(tmrIn), tmrLines || '<li class="item-sub">Nimic așteptat mâine.</li>', 'Ce ar trebui să intre în bancă pe ' + fmtDay(tmr.day) + ': comenzi plasate deja (card, Klarna, ramburs după livrare) și facturi B2B scadente' + (tmr.inForecast ? ', plus vânzări estimate' : '') + '.', 'calc-tmr') +
     cashDetails('În conturi', bals ? fmtLei(start) : '—', bals ? cashLine('ING Bad Copy', '', bals.ing || 0) + cashLine('BT Simplicated', '', bals.bt || 0) + cashLine('Cash', '', bals.cash || 0) : '', bals ? (bals.fromBank ? 'Din extrasele de cont: ' + bals.detail.map((b) => b.account + ' la ' + new Date(b.date).toLocaleDateString('ro-RO')).join(', ') + '. Cash: ce ai introdus tu.' : 'Introduse de tine pe ' + new Date(bals.updatedAt).toLocaleDateString('ro-RO') + '.') : 'Nu ai introdus soldurile.', 'calc-bal') +
     cashDetails('Intră · 30 zile', '+' + fmtLei(in30),
       '<li class="item-sub" style="font-weight:700">Sigur (comenzi și facturi existente): ' + fmtLei(knownIn30) + '</li>' + orderLines + recvLines + incomeLines +
@@ -1543,11 +1557,12 @@ function renderCashData(root, d) {
     '</ul><div class="item-sub" style="margin-top:8px">„În calcul”: emise în ultimele ' + d.receivableFreshDays + ' de zile, intră la „Intră · 30 zile” la 30 de zile de la emitere. „De verificat”: mai vechi, nu sunt în calcul. Când banii intră, marchează factura „încasată” în SmartBill și dispare de aici a doua zi.</div></details>' : '';
 
   root.innerHTML =
-    '<div class="stat-grid">' +
+    '<div class="stat-grid cash-five">' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-bal"><div class="stat-label">În conturi</div><div class="stat-value">' + (bals ? fmtLei(start) : '—') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-in"><div class="stat-label">Intră · 30 zile</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(in30) + '</div><div class="item-sub">' + fmtLei(knownIn30) + ' sigur</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-out"><div class="stat-label">Iese · 30 zile</div><div class="stat-value" style="color:var(--bad)">−' + fmtLei(out30) + '</div><div class="item-sub">' + fmtLei(must30) + ' obligatoriu</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-free"><div class="stat-label">Sold peste 30 zile</div><div class="stat-value" style="color:' + (bal30 >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(bal30) : '—') + '</div><div class="item-sub">pe ' + fmtDay(next30[next30.length - 1].day) + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
+      '<button type="button" class="stat-card cash-card" data-calc="calc-tmr"><div class="stat-label">Intră mâine</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(tmrIn) + '</div><div class="item-sub">' + fmtDay(tmr.day) + (tmr.inForecast ? ' · ' + fmtLei(tmr.inKnown) + ' sigur' : '') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
     '</div>' +
     '<div class="cash-sub" role="tablist">' + [['in', 'Venituri', '+' + fmtLei(in30)], ['out', 'Cheltuieli', '−' + fmtLei(out30)]].map(([k, l, t]) => '<button type="button" role="tab" class="cash-sub-btn" data-sub="' + k + '">' + l + '<span class="cash-sub-total">' + t + '</span></button>').join('') + '</div>' +
     '<div class="cash-pane" data-pane="in">' + inTotal + inCard + recvCheckHtml + '</div>' +
