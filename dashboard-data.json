@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T15:01:32.416Z",
+  "generatedAt": "2026-10-19T20:32:36.381Z",
   "planDate": "2026-10-19",
   "unmatchedProducts": [
     "[#235779] Bra Overlay Black Hoodie",
@@ -129,7 +129,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.5,
+    "hours": 7.33,
     "capacity": 7.2,
     "items": [
       {
@@ -143,19 +143,30 @@
         "orderLinks": []
       },
       {
-        "title": "02. T negru S",
-        "hours": 2,
+        "title": "02. H layers M (carouri rosii)",
+        "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235785, #235790",
+        "orderName": "#235793",
         "orderLinks": [
           {
-            "name": "#235785",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192723931460",
-            "cod": false
-          },
+            "name": "#235793",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11198224400708",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. T grey XXL",
+        "hours": 1.33,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235790",
+        "orderLinks": [
           {
             "name": "#235790",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11195290812740",
@@ -164,7 +175,7 @@
         ]
       },
       {
-        "title": "03. W Statue XL ",
+        "title": "04. W Statue XL ",
         "hours": 2.5,
         "tags": [
           "shopify",
@@ -178,26 +189,11 @@
             "cod": true
           }
         ]
-      },
-      {
-        "title": "04. C Gri Vitamin M",
-        "hours": 1.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235784",
-        "orderLinks": [
-          {
-            "name": "#235784",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192240898372",
-            "cod": true
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 11.42,
+    "hours": 12.08,
     "capacity": 7.2,
     "items": [
       {
@@ -237,7 +233,23 @@
         ]
       },
       {
-        "title": "01. H Fume M",
+        "title": "01. 03a. H fermoar negru S",
+        "hours": 1,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235784",
+        "orderLinks": [
+          {
+            "name": "#235784",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192240898372",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "02. H Fume M",
         "hours": 1,
         "tags": [
           "shopify",
@@ -253,30 +265,19 @@
         ]
       },
       {
-        "title": "02. H layers M (carouri rosii)",
-        "hours": 1,
+        "title": "03. T negru S",
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235793",
+        "orderName": "#235785, ds-aycz-554-404357116",
         "orderLinks": [
           {
-            "name": "#235793",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11198224400708",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. T negru L",
-        "hours": 0.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "ds-aycz-554-404357116",
-        "orderLinks": [
+            "name": "#235785",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192723931460",
+            "cod": false
+          },
           {
             "name": "ds-aycz-554-404357116",
             "url": null,
@@ -307,62 +308,6 @@
     ]
   },
   "croit": [
-    {
-      "name": "01. C Vitamin M ",
-      "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-10-19",
-      "leftover": false,
-      "number": 1,
-      "orderLinks": [],
-      "hours": 1.4167,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "02. H layers cam rosie XL",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-10-19",
-      "leftover": false,
-      "number": 2,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "03. H patch M",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-10-19",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "03a. H fermoar negru S",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-10-19",
-      "leftover": false,
-      "number": null,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
     {
       "name": "T offwhite M",
       "orderName": null,
@@ -411,28 +356,6 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H negru Dept S + M",
-      "orderName": "#235784, #235786",
-      "orderLinks": [
-        {
-          "name": "#235784",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192240898372",
-          "cod": true
-        },
-        {
-          "name": "#235786",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192851530052",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -577,6 +500,23 @@
       ],
       "category": "Camasa scurta",
       "hours": 2.8334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H negru Dept M",
+      "orderName": "#235786",
+      "orderLinks": [
+        {
+          "name": "#235786",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11192851530052",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
@@ -729,17 +669,22 @@
       ]
     },
     {
-      "name": "T Alb L",
-      "orderName": "#235803",
+      "name": "T Alb L + M",
+      "orderName": "#235803, #235812",
       "orderLinks": [
         {
           "name": "#235803",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202531328324",
           "cod": false
+        },
+        {
+          "name": "#235812",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11210005807428",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
@@ -798,6 +743,56 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1219626265453323",
+      "name": "06. Bra overlay hoodie XL (negru)",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219626265453320",
+      "name": "05. Jacheta blug dungi XXL",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219626265453316",
+      "name": "04. Blug negru dungi femei XL long ",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219536254462144",
+      "name": "03. H patch M",
+      "orderName": null,
+      "category": "Hanorac bumbac",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219626265453335",
+      "name": "01. C Vitamin M ",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1219536254462133",
       "name": "08. WB 3rd eye M",
