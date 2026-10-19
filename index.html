@@ -1271,7 +1271,8 @@ function cashBalances() {
  * balance, not in the bank statements), recurring payments on their usual day of month, Meta daily. */
 const CASH_NET = { cod: 0.95, card: 0.97, klarna: 0.95, paypal: 0.965 };
 // Unshipped COD orders still get cancelled or refused before they ship.
-const netOf = (i) => (i.method === 'cod' && !i.shipped ? 0.8 : CASH_NET[i.method] || 1);
+// A COD parcel Sameday already delivered pays in full; otherwise refusals and cancellations.
+const netOf = (i) => (i.delivered ? 1 : i.method === 'cod' && !i.shipped ? 0.8 : CASH_NET[i.method] || 1);
 const CASH_METHOD = { cod: 'Ramburs (Sameday)', card: 'Card (Shopify Payments)', klarna: 'Klarna', paypal: 'PayPal', payout: 'Payout Shopify anunțat' };
 function buildCashProjection(d, start, days) {
   const today = new Date(); today.setHours(0, 0, 0, 0);
@@ -1524,13 +1525,13 @@ function renderCashData(root, d) {
   const tmrIn = tmr.inKnown + tmr.inForecast;
   const tmrByMethod = {};
   for (const i of d.incoming) if (dayKey(new Date(Date.parse(i.expected))) === tmr.key) (tmrByMethod[i.method] = tmrByMethod[i.method] || []).push(i);
-  const tmrLines = Object.entries(tmrByMethod).map(([m, xs]) => cashLine(CASH_METHOD[m] + (m === 'payout' ? '' : ' · ' + xs.length + (xs.length === 1 ? ' comandă' : ' comenzi')), xs.map((i) => i.order + ' ' + fmtLei(i.amount)).join(' · ') + (CASH_NET[m] ? '<br>× ' + Math.round(CASH_NET[m] * 100) + '%' : ''), sum(xs, (i) => i.amount * netOf(i)), '+')).join('') +
+  const tmrLines = Object.entries(tmrByMethod).map(([m, xs]) => cashLine(CASH_METHOD[m] + (m === 'payout' ? '' : ' · ' + xs.length + (xs.length === 1 ? ' comandă' : ' comenzi')), xs.map((i) => i.order + ' ' + fmtLei(i.amount) + (i.delivered ? ' livrat ' + new Date(i.delivered).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : '')).join(' · ') + (xs.some((i) => !i.delivered) && CASH_NET[m] ? '<br>× ' + Math.round(CASH_NET[m] * 100) + '% (cele nelivrate)' : ''), sum(xs, (i) => i.amount * netOf(i)), '+')).join('') +
     (d.receivables || []).filter((r) => r.counted && dayKey(new Date(r.expected)) === tmr.key).map((r) => cashLine(r.client + ' · ' + r.company + ' ' + r.invoice, 'factură B2B, 30 zile de la emitere', r.amount, '+')).join('') +
     tmr.income.map((r) => cashLine(r.name, r.note || '', r.amount, '+')).join('') +
     Object.entries(tmr.forecast).map(([m, v]) => cashLine('Vânzări estimate · ' + CASH_METHOD[m], 'ritmul de încasare de luna trecută', v, '+')).join('');
 
   const calc =
-    cashDetails('Intră mâine', '+' + fmtLei(tmrIn), tmrLines || '<li class="item-sub">Nimic așteptat mâine.</li>', 'Ce ar trebui să intre în bancă pe ' + fmtDay(tmr.day) + ': comenzi plasate deja (card, Klarna, ramburs după livrare) și facturi B2B scadente' + (tmr.inForecast ? ', plus vânzări estimate' : '') + '.', 'calc-tmr') +
+    cashDetails('Intră mâine', '+' + fmtLei(tmrIn), tmrLines || '<li class="item-sub">Nimic așteptat mâine.</li>', 'Ce ar trebui să intre în bancă pe ' + fmtDay(tmr.day) + ': card (comenzi de acum 3 zile sau payout anunțat), Klarna (acum 8 zile), ramburs = coletele livrate cu succes de Sameday în ziua lucrătoare dinainte (din tracking-ul Sameday), facturi B2B scadente' + (tmr.inForecast ? ', plus vânzări estimate' : '') + '.', 'calc-tmr') +
     cashDetails('În conturi', bals ? fmtLei(start) : '—', bals ? cashLine('ING Bad Copy', '', bals.ing || 0) + cashLine('BT Simplicated', '', bals.bt || 0) + cashLine('Cash', '', bals.cash || 0) : '', bals ? (bals.fromBank ? 'Din extrasele de cont: ' + bals.detail.map((b) => b.account + ' la ' + new Date(b.date).toLocaleDateString('ro-RO')).join(', ') + '. Cash: ce ai introdus tu.' : 'Introduse de tine pe ' + new Date(bals.updatedAt).toLocaleDateString('ro-RO') + '.') : 'Nu ai introdus soldurile.', 'calc-bal') +
     cashDetails('Intră · 30 zile', '+' + fmtLei(in30),
       '<li class="item-sub" style="font-weight:700">Sigur (comenzi și facturi existente): ' + fmtLei(knownIn30) + '</li>' + orderLines + recvLines + incomeLines +
