@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T05:14:54.179Z",
+  "generatedAt": "2026-10-21T10:17:13.454Z",
   "planDate": "2026-10-21",
   "unmatchedProducts": [
     "[#235805] Bra Overlay Black Hoodie",
@@ -128,18 +128,9 @@
     }
   ],
   "felicia": {
-    "hours": 8.67,
+    "hours": 8.17,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "03. T cusatura negru L (DHL)",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "04. T negru XXL ",
         "hours": 0.67,
@@ -150,23 +141,16 @@
         ]
       },
       {
-        "title": "01. T offwhite M",
-        "hours": 1.33,
+        "title": "05. H patch M",
+        "hours": 1,
         "tags": [
-          "wb",
+          "leftover",
+          "asana",
           "buffer"
-        ],
-        "orderName": "#235814",
-        "orderLinks": [
-          {
-            "name": "#235814",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11211253580100",
-            "cod": false
-          }
         ]
       },
       {
-        "title": "02. W animal print S",
+        "title": "01. W animal print S",
         "hours": 2.5,
         "tags": [
           "wb",
@@ -176,7 +160,7 @@
         "orderLinks": []
       },
       {
-        "title": "03. H Fume M",
+        "title": "02. H Fume M",
         "hours": 1,
         "tags": [
           "shopify",
@@ -192,45 +176,48 @@
         ]
       },
       {
-        "title": "04. W Statue XL ",
-        "hours": 2.5,
+        "title": "03. H layers M (carouri rosii)",
+        "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235807",
+        "orderName": "#235802",
         "orderLinks": [
           {
-            "name": "#235807",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206587580740",
-            "cod": true
+            "name": "#235802",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202068283716",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. T grey XXL",
+        "hours": 2,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235802, #235814",
+        "orderLinks": [
+          {
+            "name": "#235802",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202068283716",
+            "cod": false
+          },
+          {
+            "name": "#235814",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11211253580100",
+            "cod": false
           }
         ]
       }
     ]
   },
   "flori": {
-    "hours": 8.83,
+    "hours": 8.25,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "01. C fragmented V3 (DHL)",
-        "hours": 1.42,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "02. T alb cusatura XL (DHL)",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "04. C Vitamin M",
         "hours": 1.42,
@@ -276,23 +263,7 @@
         ]
       },
       {
-        "title": "03. H layers M (carouri rosii)",
-        "hours": 1,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235802",
-        "orderLinks": [
-          {
-            "name": "#235802",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202068283716",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. T negru S",
+        "title": "03. T negru S",
         "hours": 1.33,
         "tags": [
           "shopify",
@@ -311,10 +282,40 @@
             "cod": false
           }
         ]
+      },
+      {
+        "title": "04. W Statue XL ",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235807",
+        "orderLinks": [
+          {
+            "name": "#235807",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206587580740",
+            "cod": true
+          }
+        ]
       }
     ]
   },
   "croit": [
+    {
+      "name": "0. H aria M (schimb #235762)",
+      "orderName": null,
+      "category": "Hanorac bumbac",
+      "dueOn": null,
+      "leftover": false,
+      "number": 0,
+      "orderLinks": [],
+      "hours": 1,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
     {
       "name": "C Bal scurta gri XL",
       "orderName": "#235792",
@@ -516,50 +517,6 @@
       ]
     },
     {
-      "name": "C maneci detasate maro inchis XL + 2M",
-      "orderName": "#235788, #235799, #235804",
-      "orderLinks": [
-        {
-          "name": "#235788",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11193004261700",
-          "cod": false
-        },
-        {
-          "name": "#235799",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11201348534596",
-          "cod": false
-        },
-        {
-          "name": "#235804",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11205148868932",
-          "cod": false
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 4.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Split Alb XL",
-      "orderName": "#235788",
-      "orderLinks": [
-        {
-          "name": "#235788",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11193004261700",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "P Grey L",
       "orderName": "#235790",
       "orderLinks": [
@@ -622,6 +579,28 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C maneci detasate maro inchis 2M",
+      "orderName": "#235799, #235804",
+      "orderLinks": [
+        {
+          "name": "#235799",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11201348534596",
+          "cod": false
+        },
+        {
+          "name": "#235804",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11205148868932",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -694,19 +673,43 @@
       "tags": [
         "shopify"
       ]
+    },
+    {
+      "name": "H negru Dept L",
+      "orderName": "#235816",
+      "orderLinks": [
+        {
+          "name": "#235816",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213737296196",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Gri Vitamin L",
+      "orderName": "#235816",
+      "orderLinks": [
+        {
+          "name": "#235816",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213737296196",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
     }
   ],
   "croitBuffer": [
-    {
-      "gid": "1219536254462144",
-      "name": "05. H patch M",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
     {
       "gid": "1219392024972597",
       "name": "Blugi barbati negri dungi M",
@@ -756,27 +759,10 @@
         "predicted",
         "asana"
       ]
-    },
-    {
-      "gid": "1218075096218267",
-      "name": "T negru L circus (printat)",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
     }
   ],
   "backlog": {
-    "hours": 0.67,
-    "items": [
-      {
-        "orderName": "#235802",
-        "title": "T negru L circus (printat)",
-        "category": "Tricou simplu",
-        "hours": 0.67
-      }
-    ]
+    "hours": 0,
+    "items": []
   }
 }
