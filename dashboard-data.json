@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-21T19:32:19.891Z",
-  "planDate": "2026-10-21",
+  "generatedAt": "2026-10-21T22:42:01.759Z",
+  "planDate": "2026-10-22",
   "unmatchedProducts": [
     "[#235805] Bra Overlay Black Hoodie",
     "Oversized Black T-Shirt With Heart Logo W"
@@ -297,29 +297,16 @@
   },
   "croit": [
     {
-      "name": "0. H aria M (schimb #235762)",
-      "orderName": null,
-      "category": "Hanorac bumbac",
-      "dueOn": "2026-10-21",
-      "leftover": false,
-      "number": 0,
-      "orderLinks": [],
-      "hours": 1,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
       "name": "03. C albastra XXL",
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-10-21",
-      "leftover": false,
+      "leftover": true,
       "number": 3,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -329,25 +316,12 @@
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-10-21",
-      "leftover": false,
+      "leftover": true,
       "number": 4,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "05. T alb M",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-10-21",
-      "leftover": false,
-      "number": 5,
-      "orderLinks": [],
-      "hours": 0.6667,
-      "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -357,11 +331,12 @@
       "orderName": null,
       "category": "Camasa scurta",
       "dueOn": "2026-10-21",
-      "leftover": false,
+      "leftover": true,
       "number": 7,
       "orderLinks": [],
       "hours": 1.4167,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -601,17 +576,22 @@
       ]
     },
     {
-      "name": "T Negru XL",
-      "orderName": "#235810",
+      "name": "T Negru XL + L",
+      "orderName": "#235810, #235818",
       "orderLinks": [
         {
           "name": "#235810",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11207114785092",
           "cod": false
+        },
+        {
+          "name": "#235818",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11215766421828",
+          "cod": false
         }
       ],
       "category": "Tricou fundite negre",
-      "hours": 2,
+      "hours": 4,
       "leftover": false,
       "tags": [
         "shopify"
@@ -670,6 +650,36 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1219692495536844",
+      "name": "0. H aria M (schimb #235762) lipseste glugile din carouri",
+      "orderName": null,
+      "category": "Hanorac bumbac",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219732390621445",
+      "name": "05. T alb M",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219732390774442",
+      "name": "06. WB tokyo M",
+      "orderName": null,
+      "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1219392024972597",
       "name": "Blugi barbati negri dungi M",
