@@ -297,6 +297,16 @@
   .date-chip { flex: 0 0 44px; height: 44px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg); display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1; }
   .date-chip b { font-size: 1.05rem; font-variant-numeric: tabular-nums; color: var(--text); }
   .date-chip span { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-dim); margin-top: 3px; }
+  /* Upcoming costs: an issued invoice (or a known amount) vs an estimate. */
+  .date-chip.inv { border-color: color-mix(in srgb, var(--accent) 60%, transparent); background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  .date-chip.inv b, .date-chip.inv span { color: var(--accent); }
+  .date-chip.est { border-style: dashed; background: transparent; }
+  .date-chip.est b { color: var(--text-dim); }
+  .pay-row.est .pay-amt { color: var(--text-dim); font-weight: 500; }
+  .kind-legend { display: inline-flex; align-items: center; gap: 5px; margin-right: 12px; }
+  .kind-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; border: 1px solid var(--border); }
+  .kind-legend i.inv { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 25%, transparent); }
+  .kind-legend i.est { border-style: dashed; border-color: var(--text-dim); }
   .date-chip.late { border-color: color-mix(in srgb, var(--bad) 60%, transparent); background: color-mix(in srgb, var(--bad) 10%, transparent); }
   .date-chip.late b, .date-chip.late span { color: var(--bad); }
   ul.tot-parts li { display: block; }
@@ -1433,11 +1443,11 @@ function renderCashData(root, d) {
   // date chip so "when" stays visible. Overdue payments come first.
   const today0 = new Date(); today0.setHours(0, 0, 0, 0);
   const shortMonth = (dd) => dd.toLocaleDateString('ro-RO', { month: 'short' }).replace('.', '');
-  const dateChip = (dd, late) => '<div class="date-chip' + (late ? ' late' : '') + '"><b>' + dd.getDate() + '</b><span>' + shortMonth(dd) + '</span></div>';
+  const dateChip = (dd, late, kind) => '<div class="date-chip' + (late ? ' late' : kind ? ' ' + kind : '') + '"><b>' + dd.getDate() + '</b><span>' + shortMonth(dd) + '</span></div>';
   // Which company (and bank) pays it, so nothing is paid from the wrong one.
   const payerTag = (p) => !p ? '' : p === 'Bad Copy' ? '<span class="payer payer-bc">Bad Copy · ING</span>'
     : p === 'Simplicated' ? '<span class="payer payer-s">Simplicated · BT</span>' : '<span class="payer payer-both">' + p + '</span>';
-  const row = (x) => '<li class="pay-row">' + dateChip(x.day, x.late) + (x.cat ? catIcon(x.cat, x.late ? 'bad' : '') : '') + '<div class="pay-main"><div class="pay-name">' + x.name + payerTag(x.payer) + '</div>' +
+  const row = (x) => '<li class="pay-row' + (x.kind && !x.late ? ' ' + x.kind : '') + '">' + dateChip(x.day, x.late, x.kind) + (x.cat ? catIcon(x.cat, x.late ? 'bad' : '') : '') + '<div class="pay-main"><div class="pay-name">' + x.name + payerTag(x.payer) + '</div>' +
     (x.meta ? '<div class="pay-meta">' + x.meta + '</div>' : '') + '</div><div class="pay-amt">' + (x.approx ? '~' : '') + fmtLei(x.amount) + '</div></li>';
   // A category block; collapsible ones show only the header (icon, count,
   // total) until tapped, which keeps the page short.
@@ -1461,10 +1471,10 @@ function renderCashData(root, d) {
   // Upcoming payments in date order; the category is a label on each row
   // (the totals box above splits them by category).
   const upcomingOut = outItems.filter((x) => !x.overdue && x.amount > 0).sort((x, y) => x.day - y.day || y.amount - x.amount)
-    .map((o) => ({ name: o.name, payer: o.payer, cat: o.category, meta: metaOf(o), day: o.day, late: !!o.pastDue, amount: o.amount, approx: o.estimate }));
+    .map((o) => ({ name: o.name, payer: o.payer, cat: o.category, meta: metaOf(o), day: o.day, late: !!o.pastDue, amount: o.amount, approx: o.estimate, kind: o.bill && !o.estimate ? 'inv' : 'est' }));
   const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit</h2>' +
     block('Restant · plătește acum', lateItems.sort((x, y) => x.day - y.day), { tone: 'bad' }) +
-    block('Următoarele 30 de zile · în ordinea datei', upcomingOut) +
+    block('Următoarele 30 de zile · în ordinea datei', upcomingOut, { note: '<span class="kind-legend"><i class="inv"></i>factură emisă / sumă știută</span><span class="kind-legend"><i class="est"></i>estimare (urmează)</span>' }) +
     block('Furnizori cu scadența trecută · de verificat', overdue.sort((x, y) => x.day - y.day), { tone: 'warn', collapsible: true, note: 'Nu sunt în calcul: e-Factura nu arată dacă i-ai plătit.' }) +
     '<div class="item-sub" style="margin-top:12px">Pe lângă acestea, zilnic: reclame Meta ~' + fmtLei(d.metaDaily) + ' pe zi și materiale ~' + Math.round((d.materialsShare || 0) * 100) + '% din vânzări.</div></div>';
 
