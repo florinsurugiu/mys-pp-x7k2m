@@ -303,10 +303,11 @@
   .date-chip.est { border-style: dashed; background: transparent; }
   .date-chip.est b { color: var(--text-dim); }
   .pay-row.est .pay-amt { color: var(--text-dim); font-weight: 500; }
-  .kind-legend { display: inline-flex; align-items: center; gap: 5px; margin: 0 6px 4px 0; padding: 3px 9px; border: 1px solid var(--border); border-radius: 999px; background: transparent; color: var(--text-dim); font: inherit; cursor: pointer; }
+  .kind-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .kind-legend { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; font-size: 0.9rem !important; font-weight: 600; border: 1px solid var(--border); border-radius: 999px; background: transparent; color: var(--text-dim); font: inherit; cursor: pointer; }
   .kind-legend.on { border-color: var(--text-dim); color: var(--text); background: color-mix(in srgb, var(--text-faint) 14%, transparent); }
   .kind-filter.only-inv .pay-row.est, .kind-filter.only-est .pay-row.inv { display: none; }
-  .kind-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; border: 1px solid var(--border); }
+  .kind-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; border: 1px solid var(--border); }
   .kind-legend i.inv { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 25%, transparent); }
   .kind-legend i.est { border-style: dashed; border-color: var(--text-dim); }
   .date-chip.late { border-color: color-mix(in srgb, var(--bad) 60%, transparent); background: color-mix(in srgb, var(--bad) 10%, transparent); }
@@ -1141,9 +1142,12 @@ document.addEventListener('click', (e) => {
   box.classList.remove('only-inv', 'only-est');
   if (k) box.classList.add('only-' + k);
   box.querySelectorAll('.kind-legend').forEach((b) => b.classList.toggle('on', b === btn));
-  const shown = [...box.querySelectorAll('.pay-row')].filter((r) => !k || r.classList.contains(k));
-  box.querySelector('.cat-count').textContent = shown.length;
-  box.querySelector('.cat-total').textContent = fmtLei(shown.reduce((a, r) => a + Number(r.dataset.amt || 0), 0));
+  box.querySelectorAll('.cat-block').forEach((blk) => {
+    const shown = [...blk.querySelectorAll('.pay-row')].filter((r) => !k || r.classList.contains(k));
+    blk.style.display = shown.length ? '' : 'none';
+    blk.querySelector('.cat-count').textContent = shown.length;
+    blk.querySelector('.cat-total').textContent = fmtLei(shown.reduce((a, r) => a + Number(r.dataset.amt || 0), 0));
+  });
 });
 function fmtLei(n) { return Math.round(n).toLocaleString('ro-RO') + ' lei'; }
 function dayKey(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
@@ -1472,7 +1476,6 @@ function renderCashData(root, d) {
     const o = opts || {};
     const head = '<span class="cat-name">' + (o.icon ? catIcon(o.icon) : '') + title + '<span class="cat-count">' + xs.length + '</span></span><span class="cat-total">' + (o.sign || '') + fmtLei(sum(xs)) + '</span>';
     const body = (o.note ? '<div class="cat-note">' + o.note + '</div>' : '') + '<ul class="pay-list">' + xs.map(row).join('') + '</ul>';
-    if (o.cls) return '<section class="cat-block ' + o.cls + '"><div class="cat-head">' + head + '</div>' + body + '</section>';
     return o.collapsible
       ? '<details class="cat-block' + (o.tone ? ' ' + o.tone : '') + '"' + (o.open ? ' open' : '') + '><summary class="cat-head">' + head + '</summary>' + body + '</details>'
       : '<section class="cat-block' + (o.tone ? ' ' + o.tone : '') + '"><div class="cat-head">' + head + '</div>' + body + '</section>';
@@ -1482,16 +1485,16 @@ function renderCashData(root, d) {
   const byCatOut = {};
   for (const o of outItems.filter((x) => !x.overdue)) (byCatOut[o.category || 'Altele'] = byCatOut[o.category || 'Altele'] || []).push(o);
   const catNames = Object.keys(byCatOut).sort((x, y) => ((CAT_ORDER.indexOf(x) + 1) || 99) - ((CAT_ORDER.indexOf(y) + 1) || 99));
-  const lateItems = outItems.filter((x) => x.overdue).map((o) => ({ name: o.name, payer: o.payer, cat: o.category, meta: [(o.due < dayKey(today0) ? 'trebuia plătit pe ' : 'scadent pe ') + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), o.payOn ? 'plătești pe ' + new Date(o.payOn).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }) : '', o.estimate ? 'estimare' : ''].filter(Boolean).join(' · '), day: new Date(o.due), late: true, amount: o.amount, approx: o.estimate }));
+  const lateItems = outItems.filter((x) => x.overdue).map((o) => ({ name: o.name, payer: o.payer, cat: o.category, meta: [(o.due < dayKey(today0) ? 'trebuia plătit pe ' : 'scadent pe ') + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), o.payOn ? 'plătești pe ' + new Date(o.payOn).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }) : '', o.estimate ? 'estimare' : ''].filter(Boolean).join(' · '), day: new Date(o.due), late: true, amount: o.amount, approx: o.estimate, kind: o.bill && !o.estimate ? 'inv' : 'est' }));
   const overdue = (d.supplierOverdue || []).slice().sort((x, y) => y.amount - x.amount)
-    .map((o) => ({ name: o.name, payer: o.payer, cat: 'Furnizori', meta: o.note.split(' · ')[0] + ' · verifică dacă e plătită', day: new Date(o.due), late: true, amount: o.amount }));
+    .map((o) => ({ name: o.name, payer: o.payer, cat: 'Furnizori', meta: o.note.split(' · ')[0] + ' · verifică dacă e plătită', day: new Date(o.due), late: true, amount: o.amount, kind: 'inv' }));
   // Upcoming payments in date order; the category is a label on each row
   // (the totals box above splits them by category).
   const upcomingOut = outItems.filter((x) => !x.overdue && x.amount > 0).sort((x, y) => x.day - y.day || y.amount - x.amount)
     .map((o) => ({ name: o.name, payer: o.payer, cat: o.category, meta: metaOf(o), day: o.day, late: !!o.pastDue, amount: o.amount, approx: o.estimate, kind: o.bill && !o.estimate ? 'inv' : 'est' }));
-  const payCard = '<div class="card" style="margin-bottom:16px"><h2>De plătit</h2>' +
+  const payCard = '<div class="card kind-filter" style="margin-bottom:16px"><div class="kind-bar"><button type="button" class="kind-legend on" data-kind="">Toate</button><button type="button" class="kind-legend" data-kind="inv"><i class="inv"></i>Facturi emise / sume știute</button><button type="button" class="kind-legend" data-kind="est"><i class="est"></i>Estimări (urmează)</button></div><h2>De plătit</h2>' +
     block('Restant · plătește acum', lateItems.sort((x, y) => x.day - y.day), { tone: 'bad' }) +
-    block('Următoarele 30 de zile · în ordinea datei', upcomingOut, { cls: 'kind-filter', note: '<button type="button" class="kind-legend on" data-kind="">toate</button><button type="button" class="kind-legend" data-kind="inv"><i class="inv"></i>facturi emise / sume știute</button><button type="button" class="kind-legend" data-kind="est"><i class="est"></i>estimări (urmează)</button>' }) +
+    block('Următoarele 30 de zile · în ordinea datei', upcomingOut) +
     block('Furnizori cu scadența trecută · de verificat', overdue.sort((x, y) => x.day - y.day), { tone: 'warn', collapsible: true, note: 'Nu sunt în calcul: e-Factura nu arată dacă i-ai plătit.' }) +
     '<div class="item-sub" style="margin-top:12px">Pe lângă acestea, zilnic: reclame Meta ~' + fmtLei(d.metaDaily) + ' pe zi și materiale ~' + Math.round((d.materialsShare || 0) * 100) + '% din vânzări.</div></div>';
 
