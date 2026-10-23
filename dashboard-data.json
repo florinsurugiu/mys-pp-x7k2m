@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:50:48.485Z",
-  "planDate": "2026-10-23",
+  "generatedAt": "2026-10-23T21:19:36.975Z",
+  "planDate": "2026-10-25",
   "unmatchedProducts": [
     "[#235805] Bra Overlay Black Hoodie",
     "[#235820] Bra Overlay Pink Hoodie V2",
@@ -107,32 +107,32 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/15412296745284",
-      "title": "Offset Black Sweatpants",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
-      "category": "Pantalon drept",
-      "size": "XS",
-      "hours": 2
-    },
-    {
-      "productId": "gid://shopify/Product/15412296745284",
-      "title": "Offset Black Sweatpants",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
-      "category": "Pantalon drept",
-      "size": "M",
-      "hours": 2
-    },
-    {
       "productId": "gid://shopify/Product/15440579035460",
       "title": "DEPT. BLACK HOODIE",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Dept-Hoodie-Black2.jpg?v=1769083167",
       "category": "Hanorac bumbac",
       "size": "M",
       "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/15412465041732",
+      "title": "Vitamin Aqua MG Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated186.jpg?v=1766267216",
+      "category": "Camasa Unisex",
+      "size": "L",
+      "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15417796133188",
+      "title": "3-in-1 Layered Hoodie V2",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated538.jpg?v=1766694549",
+      "category": "Hanorac bumbac",
+      "size": "XL",
+      "hours": 1
     }
   ],
   "felicia": {
-    "hours": 8.42,
+    "hours": 8,
     "capacity": 7.2,
     "items": [
       {
@@ -146,7 +146,23 @@
         "orderLinks": []
       },
       {
-        "title": "02. H layers M (carouri rosii)",
+        "title": "02. H bra negru XS",
+        "hours": 1,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235821",
+        "orderLinks": [
+          {
+            "name": "#235821",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11216647782724",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. H layers M (carouri rosii)",
         "hours": 1,
         "tags": [
           "shopify",
@@ -162,33 +178,23 @@
         ]
       },
       {
-        "title": "03. T offwhite XL",
-        "hours": 2,
+        "title": "04. T negru S",
+        "hours": 0.67,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235814, #235813, #235815",
+        "orderName": "#235813",
         "orderLinks": [
-          {
-            "name": "#235814",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11211253580100",
-            "cod": false
-          },
           {
             "name": "#235813",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11210486513988",
             "cod": false
-          },
-          {
-            "name": "#235815",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213373866308",
-            "cod": true
           }
         ]
       },
       {
-        "title": "04. T Offwhite Soldout XL",
+        "title": "05. T Offwhite Soldout XL",
         "hours": 1.5,
         "tags": [
           "shopify"
@@ -203,102 +209,7 @@
         ]
       },
       {
-        "title": "05. C Pop Mix XL",
-        "hours": 1.42,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235807",
-        "orderLinks": [
-          {
-            "name": "#235807",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206587580740",
-            "cod": true
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8.5,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "05. T grey XXL",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "06. H layers V1 XXL",
-        "hours": 1,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. H bra negru XS",
-        "hours": 1.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer",
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235821",
-        "orderLinks": [
-          {
-            "name": "#235821",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11216647782724",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "02. 02a. T negru XL - 2 buc. ",
-        "hours": 1.33,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235806, #235815",
-        "orderLinks": [
-          {
-            "name": "#235806",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206575849796",
-            "cod": true
-          },
-          {
-            "name": "#235815",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213373866308",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. W Statue XL ",
-        "hours": 2.5,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235807",
-        "orderLinks": [
-          {
-            "name": "#235807",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206587580740",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. T Gri XXL + M",
+        "title": "06. T Gri XXL + M",
         "hours": 1.33,
         "tags": [
           "shopify"
@@ -319,7 +230,157 @@
       }
     ]
   },
+  "flori": {
+    "hours": 8.25,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "04. T negru XXL",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "05. T grey XXL",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "06. H layers V1 XXL",
+        "hours": 1,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. 02a. T negru XL - 2 buc. ",
+        "hours": 2,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235806, #235815, #235814",
+        "orderLinks": [
+          {
+            "name": "#235806",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206575849796",
+            "cod": true
+          },
+          {
+            "name": "#235815",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213373866308",
+            "cod": true
+          },
+          {
+            "name": "#235814",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11211253580100",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. W Statue XL ",
+        "hours": 2.5,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235807",
+        "orderLinks": [
+          {
+            "name": "#235807",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206587580740",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. C Pop Mix XL",
+        "hours": 1.42,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235807",
+        "orderLinks": [
+          {
+            "name": "#235807",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206587580740",
+            "cod": true
+          }
+        ]
+      }
+    ]
+  },
   "croit": [
+    {
+      "name": "03. H layers M V2",
+      "orderName": null,
+      "category": "Hanorac bumbac",
+      "dueOn": "2026-10-23",
+      "leftover": true,
+      "number": 3,
+      "orderLinks": [],
+      "hours": 1,
+      "tags": [
+        "leftover",
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "04. T grey XXL",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-10-23",
+      "leftover": true,
+      "number": 4,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "leftover",
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "05. T negru midnight XXL",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-10-23",
+      "leftover": true,
+      "number": 5,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "leftover",
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "06. C complex minds XL (carouri rosii) ",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "dueOn": "2026-10-23",
+      "leftover": true,
+      "number": 6,
+      "orderLinks": [],
+      "hours": 1.4167,
+      "tags": [
+        "leftover",
+        "asana",
+        "predicted"
+      ]
+    },
     {
       "name": "T Offwhite Soldout XL",
       "orderName": "#235806",
@@ -456,6 +517,108 @@
       ],
       "category": "Windbreaker",
       "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Double Sleeve Negru MG Vitamin L",
+      "orderName": "#235826",
+      "orderLinks": [
+        {
+          "name": "#235826",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
+          "cod": true
+        }
+      ],
+      "category": "Double sleeve",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Double Sleeve Patch L",
+      "orderName": "#235826",
+      "orderLinks": [
+        {
+          "name": "#235826",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "P Drept MG M + L",
+      "orderName": "#235826",
+      "orderLinks": [
+        {
+          "name": "#235826",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
+          "cod": true
+        }
+      ],
+      "category": "Pantalon drept",
+      "hours": 4,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "P Drept print L + M",
+      "orderName": "#235826",
+      "orderLinks": [
+        {
+          "name": "#235826",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
+          "cod": true
+        }
+      ],
+      "category": "Pantalon drept",
+      "hours": 4,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H offwhite L",
+      "orderName": "#235826",
+      "orderLinks": [
+        {
+          "name": "#235826",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H Fume L",
+      "orderName": "#235826",
+      "orderLinks": [
+        {
+          "name": "#235826",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
@@ -621,6 +784,16 @@
     }
   ],
   "croitBuffer": [
+    {
+      "gid": "1219833708715332",
+      "name": "01. C raiat pop cola XL",
+      "orderName": null,
+      "category": "Camasa scurta",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
     {
       "gid": "1219732390774442",
       "name": "WB tokyo M",
