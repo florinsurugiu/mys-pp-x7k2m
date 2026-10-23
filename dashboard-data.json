@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T23:27:22.808Z",
+  "generatedAt": "2026-10-23T01:50:48.240Z",
   "planDate": "2026-10-23",
   "unmatchedProducts": [
     "[#235805] Bra Overlay Black Hoodie",
@@ -10,22 +10,6 @@
     "Oversized Black T-Shirt With Heart Logo W"
   ],
   "predictionIdeas": [
-    {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "S",
-      "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15499251745092",
-      "title": "Fracture Oversized Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated125_3009d002-7de1-4eea-8b0d-60a5bb7538e0.jpg?v=1773565936",
-      "category": "Tricou simplu",
-      "size": "L",
-      "hours": 0.6667
-    },
     {
       "productId": "gid://shopify/Product/15408429302084",
       "title": "DEPT. OFF-WHITE HOODIE",
@@ -49,22 +33,6 @@
       "category": "Hanorac patchuri",
       "size": "L",
       "hours": 3
-    },
-    {
-      "productId": "gid://shopify/Product/8825186812228",
-      "title": "Interchangable Patches Black Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
-      "category": "Hanorac patchuri",
-      "size": "XL",
-      "hours": 3
-    },
-    {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "M",
-      "hours": 1.5
     },
     {
       "productId": "gid://shopify/Product/15419494531396",
@@ -129,6 +97,38 @@
       "category": "Windbreaker",
       "size": "M",
       "hours": 2.5
+    },
+    {
+      "productId": "gid://shopify/Product/15421163340100",
+      "title": "Interchangable Patches Black Hoodie",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated806.jpg?v=1767032584",
+      "category": "Hanorac patchuri",
+      "size": "S",
+      "hours": 3
+    },
+    {
+      "productId": "gid://shopify/Product/15417912623428",
+      "title": "Overthink Club Brown T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Overthink-Club-Brown-T-Shirt1.jpg?v=1779920882",
+      "category": "Tricou simplu",
+      "size": "L",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15412296745284",
+      "title": "Offset Black Sweatpants",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
+      "category": "Pantalon drept",
+      "size": "XS",
+      "hours": 2
+    },
+    {
+      "productId": "gid://shopify/Product/15412296745284",
+      "title": "Offset Black Sweatpants",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated844.jpg?v=1767037504",
+      "category": "Pantalon drept",
+      "size": "M",
+      "hours": 2
     }
   ],
   "felicia": {
@@ -136,23 +136,23 @@
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. 02a. T negru XL - 2 buc. ",
+        "title": "01. T offwhite XL",
         "hours": 2,
         "tags": [
           "wb",
           "buffer"
         ],
-        "orderName": "#235802, #235814",
+        "orderName": "#235814, #235806",
         "orderLinks": [
-          {
-            "name": "#235802",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202068283716",
-            "cod": false
-          },
           {
             "name": "#235814",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11211253580100",
             "cod": false
+          },
+          {
+            "name": "#235806",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206575849796",
+            "cod": true
           }
         ]
       },
@@ -271,18 +271,18 @@
         ]
       },
       {
-        "title": "03. T negru XXL",
+        "title": "03. 02a. T negru XL - 2 buc. ",
         "hours": 2,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235806, #235813, #235815",
+        "orderName": "#235802, #235813, #235815",
         "orderLinks": [
           {
-            "name": "#235806",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11206575849796",
-            "cod": true
+            "name": "#235802",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11202068283716",
+            "cod": false
           },
           {
             "name": "#235813",
@@ -339,21 +339,6 @@
       "number": 4,
       "orderLinks": [],
       "hours": 1.4167,
-      "tags": [
-        "leftover",
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "06. T offwhite XL",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "dueOn": "2026-10-22",
-      "leftover": true,
-      "number": 6,
-      "orderLinks": [],
-      "hours": 0.6667,
       "tags": [
         "leftover",
         "asana",
@@ -662,6 +647,16 @@
       "name": "06. WB tokyo M",
       "orderName": null,
       "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219438126727755",
+      "name": "T offwhite M",
+      "orderName": null,
+      "category": "Tricou simplu",
       "tags": [
         "predicted",
         "asana"
