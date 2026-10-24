@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-24T19:04:38.241Z",
-  "planDate": "2026-10-26",
+  "generatedAt": "2026-10-24T21:34:27.294Z",
+  "planDate": "2026-10-25",
   "unmatchedProducts": [
     "[#235805] Bra Overlay Black Hoodie",
     "[#235820] Bra Overlay Pink Hoodie V2",
@@ -575,17 +575,22 @@
       ]
     },
     {
-      "name": "P Drept print L + M",
-      "orderName": "#235826",
+      "name": "P Drept print L + 2M",
+      "orderName": "#235826, #235831",
       "orderLinks": [
         {
           "name": "#235826",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
           "cod": true
+        },
+        {
+          "name": "#235831",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11221896724804",
+          "cod": true
         }
       ],
       "category": "Pantalon drept",
-      "hours": 4,
+      "hours": 6,
       "leftover": false,
       "tags": [
         "shopify"
@@ -654,6 +659,23 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H vintage M",
+      "orderName": "#235831",
+      "orderLinks": [
+        {
+          "name": "#235831",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11221896724804",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
