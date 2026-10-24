@@ -503,16 +503,16 @@
     <div class="meta-pills" id="meta"><span class="meta-pill">se incarca...</span></div>
   </header>
   <div class="tabs">
-    <button class="tab-btn active" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="overview">Overview</button>
     <button class="tab-btn" data-tab="production">Production</button>
     <button class="tab-btn" data-tab="profit">Marketing</button>
     <button class="tab-btn" data-tab="pnl">P&amp;L</button>
-    <button class="tab-btn" data-tab="cash">Cashflow</button>
+    <button class="tab-btn active" data-tab="cash">Cashflow</button>
     <button class="tab-btn" data-tab="unit">Unit economics</button>
     <button class="tab-btn" data-tab="trends">Trends</button>
     <button class="tab-btn" data-tab="reco">Actions</button>
   </div>
-  <div class="tab-panel active" id="panel-overview">
+  <div class="tab-panel" id="panel-overview">
     <div id="root-overview">
       <div class="loading">Se incarca datele...</div>
     </div>
@@ -532,7 +532,7 @@
       <div class="loading">Se incarca datele...</div>
     </div>
   </div>
-  <div class="tab-panel" id="panel-cash">
+  <div class="tab-panel active" id="panel-cash">
     <div id="root-cash">
       <div class="loading">Se incarca datele...</div>
     </div>
@@ -686,7 +686,7 @@ function initTabs() {
   });
   window.addEventListener('hashchange', () => activateTab(location.hash.slice(1), false));
   const initial = location.hash.slice(1);
-  if (!initial || !activateTab(initial, false)) activateTab('overview', false);
+  if (!initial || !activateTab(initial, false)) activateTab('cash', false);
 }
 
 function refreshDashboard() {
