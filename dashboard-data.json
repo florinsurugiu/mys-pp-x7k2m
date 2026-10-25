@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T12:30:27.243Z",
+  "generatedAt": "2026-10-25T16:45:44.050Z",
   "planDate": "2026-10-26",
   "unmatchedProducts": [
     "[#235805] Bra Overlay Black Hoodie",
@@ -811,17 +811,22 @@
       ]
     },
     {
-      "name": "W Retro S",
-      "orderName": "#235824",
+      "name": "W Retro S + L",
+      "orderName": "#235824, #235833",
       "orderLinks": [
         {
           "name": "#235824",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11217704059204",
           "cod": false
+        },
+        {
+          "name": "#235833",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11222873702724",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 5,
       "leftover": false,
       "tags": [
         "shopify"
