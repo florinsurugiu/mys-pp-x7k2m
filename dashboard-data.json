@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T06:57:56.277Z",
+  "generatedAt": "2026-10-25T12:30:27.243Z",
   "planDate": "2026-10-26",
   "unmatchedProducts": [
     "[#235805] Bra Overlay Black Hoodie",
@@ -50,14 +50,6 @@
       "category": "Windbreaker",
       "size": "M",
       "hours": 2.5
-    },
-    {
-      "productId": "gid://shopify/Product/15408429302084",
-      "title": "DEPT. OFF-WHITE HOODIE",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated051.jpg?v=1766195246",
-      "category": "Hanorac bumbac",
-      "size": "M",
-      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/15419494531396",
@@ -129,6 +121,14 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
       "category": "Tricou simplu",
       "size": "M",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15499251745092",
+      "title": "Fracture Oversized Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated125_3009d002-7de1-4eea-8b0d-60a5bb7538e0.jpg?v=1773565936",
+      "category": "Tricou simplu",
+      "size": "L",
       "hours": 0.6667
     }
   ],
@@ -597,17 +597,22 @@
       ]
     },
     {
-      "name": "H offwhite L",
-      "orderName": "#235826",
+      "name": "H offwhite L + M",
+      "orderName": "#235826, #235832",
       "orderLinks": [
         {
           "name": "#235826",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
           "cod": true
+        },
+        {
+          "name": "#235832",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11222681780548",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
