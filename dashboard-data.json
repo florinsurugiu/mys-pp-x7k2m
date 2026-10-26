@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T10:58:14.172Z",
+  "generatedAt": "2026-10-26T17:16:30.015Z",
   "planDate": "2026-10-26",
   "unmatchedProducts": [
     "[#235820] Bra Overlay Pink Hoodie V2",
@@ -8,9 +8,18 @@
     "[#235823] Dystopia Yellow Oversized Sweater",
     "[#235830] Dystopia Yellow Oversized Sweater",
     "[#235834] Dystopia Black Oversized Sweater",
+    "[#235837] Complex Minds Brown Checkered Shirt",
     "Short Sleeve Shirt And Bermuda Set With Faces Design - Recycled Fabric"
   ],
   "predictionIdeas": [
+    {
+      "productId": "gid://shopify/Product/15408429302084",
+      "title": "DEPT. OFF-WHITE HOODIE",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated051.jpg?v=1766195246",
+      "category": "Hanorac bumbac",
+      "size": "M",
+      "hours": 1
+    },
     {
       "productId": "gid://shopify/Product/8825186812228",
       "title": "Interchangable Patches Black Hoodie",
@@ -50,6 +59,14 @@
       "category": "Bluza inimioara / obsidian",
       "size": "L",
       "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/7837829071085",
+      "title": "Third Eye  Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
+      "category": "Windbreaker",
+      "size": "M",
+      "hours": 2.5
     },
     {
       "productId": "gid://shopify/Product/15421163340100",
@@ -114,55 +131,12 @@
       "category": "Tricou simplu",
       "size": "M",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15499251745092",
-      "title": "Fracture Oversized Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated125_3009d002-7de1-4eea-8b0d-60a5bb7538e0.jpg?v=1773565936",
-      "category": "Tricou simplu",
-      "size": "L",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15572095795524",
-      "title": "Fragmented Sleeves Shirt V3",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/fragmented-sleeves-shirt-v2_01_her-front.png?v=1792827275",
-      "category": "Camasa Unisex",
-      "size": "M",
-      "hours": 1.5
     }
   ],
   "felicia": {
-    "hours": 8.33,
+    "hours": 7.92,
     "capacity": 7.2,
     "items": [
-      {
-        "title": "02. H bra negru XS",
-        "hours": 1,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "02. Eticheta bermude in S",
-        "hours": 1.5,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "04. T offwhite XL",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
       {
         "title": "01. W animal print S",
         "hours": 2.5,
@@ -174,23 +148,76 @@
         "orderLinks": []
       },
       {
-        "title": "02. T offwhite M",
-        "hours": 1.33,
+        "title": "02. C Bal scurta maro XL",
+        "hours": 1.42,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235815",
+        "orderLinks": [
+          {
+            "name": "#235815",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213373866308",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. T negru L + fundite",
+        "hours": 4,
+        "tags": [
+          "shopify",
+          "predicted"
+        ],
+        "orderName": "#235815",
+        "orderLinks": [
+          {
+            "name": "#235815",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213373866308",
+            "cod": true
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 8.08,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "01. T negru midnight XXL",
+        "hours": 2,
+        "tags": [
+          "wb",
+          "buffer"
+        ],
+        "orderName": "#235815, #235814",
+        "orderLinks": [
+          {
+            "name": "#235815",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213373866308",
+            "cod": true
+          },
+          {
+            "name": "#235814",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11211253580100",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. H layers M V2",
+        "hours": 1,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235814, #235815",
+        "orderName": "#235814",
         "orderLinks": [
           {
             "name": "#235814",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11211253580100",
             "cod": false
-          },
-          {
-            "name": "#235815",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213373866308",
-            "cod": true
           }
         ]
       },
@@ -213,68 +240,38 @@
             "cod": true
           }
         ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8.58,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "03. W Statue XL ",
-        "hours": 2.5,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
       },
       {
-        "title": "04. C raiat pop cola XL",
-        "hours": 1.42,
+        "title": "04. C Complex Rosu XL",
+        "hours": 1.75,
         "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. H layers M V2",
-        "hours": 2,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer",
-          "shopify",
-          "buffer"
+          "shopify"
         ],
-        "orderName": "#235814",
+        "orderName": "#235815",
         "orderLinks": [
           {
-            "name": "#235814",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11211253580100",
-            "cod": false
+            "name": "#235815",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213373866308",
+            "cod": true
           }
         ]
       },
       {
-        "title": "02. T negru S",
-        "hours": 2.67,
+        "title": "05. Double Sleeve Patch M + L",
+        "hours": 2,
         "tags": [
-          "shopify",
-          "buffer",
-          "predicted"
+          "shopify"
         ],
-        "orderName": "#235813, #235815",
+        "orderName": "#235821, #235826",
         "orderLinks": [
           {
-            "name": "#235813",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11210486513988",
-            "cod": false
+            "name": "#235821",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11216647782724",
+            "cod": true
           },
           {
-            "name": "#235815",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11213373866308",
+            "name": "#235826",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
             "cod": true
           }
         ]
@@ -283,46 +280,85 @@
   },
   "croit": [
     {
-      "name": "04. T grey XXL",
+      "name": "01. T negru L + fundite",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-10-23",
-      "leftover": true,
-      "number": 4,
+      "dueOn": "2026-10-26",
+      "leftover": false,
+      "number": 1,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
-        "leftover",
         "asana",
         "predicted"
       ]
     },
     {
-      "name": "05. T negru midnight XXL",
+      "name": "02. T grey M",
       "orderName": null,
       "category": "Tricou simplu",
-      "dueOn": "2026-10-23",
-      "leftover": true,
+      "dueOn": "2026-10-26",
+      "leftover": false,
+      "number": 2,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "03. T offwhite tiv M",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-10-26",
+      "leftover": false,
+      "number": 3,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "05. H bra roz XS",
+      "orderName": null,
+      "category": "Hanorac bumbac",
+      "dueOn": "2026-10-26",
+      "leftover": false,
       "number": 5,
       "orderLinks": [],
-      "hours": 0.6667,
+      "hours": 1,
       "tags": [
-        "leftover",
         "asana",
         "predicted"
       ]
     },
     {
-      "name": "06. C complex minds XL (carouri rosii) ",
+      "name": "06. B rupta roz XS",
       "orderName": null,
-      "category": "Camasa scurta",
-      "dueOn": "2026-10-23",
-      "leftover": true,
+      "category": "Tricou simplu",
+      "dueOn": "2026-10-26",
+      "leftover": false,
       "number": 6,
       "orderLinks": [],
-      "hours": 1.4167,
+      "hours": 0.6667,
       "tags": [
-        "leftover",
+        "asana",
+        "predicted"
+      ]
+    },
+    {
+      "name": "07. T porto M",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "dueOn": "2026-10-26",
+      "leftover": false,
+      "number": 7,
+      "orderLinks": [],
+      "hours": 0.6667,
+      "tags": [
         "asana",
         "predicted"
       ]
@@ -423,23 +459,6 @@
       ]
     },
     {
-      "name": "W 3rd eye XS",
-      "orderName": "#235825",
-      "orderLinks": [
-        {
-          "name": "#235825",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11217945002308",
-          "cod": true
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "Double Sleeve Negru MG Vitamin L",
       "orderName": "#235826",
       "orderLinks": [
@@ -496,22 +515,17 @@
       ]
     },
     {
-      "name": "H offwhite L + M",
-      "orderName": "#235826, #235832",
+      "name": "H offwhite L",
+      "orderName": "#235826",
       "orderLinks": [
         {
           "name": "#235826",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
           "cod": true
-        },
-        {
-          "name": "#235832",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11222681780548",
-          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 2,
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
@@ -529,23 +543,6 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "C Gri Reversed S",
-      "orderName": "#235827",
-      "orderLinks": [
-        {
-          "name": "#235827",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219605487940",
-          "cod": true
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -597,6 +594,23 @@
       ],
       "category": "Windbreaker",
       "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Alb XL",
+      "orderName": "#235837",
+      "orderLinks": [
+        {
+          "name": "#235837",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226448331076",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
@@ -705,8 +719,8 @@
       ]
     },
     {
-      "name": "W Retro S + L",
-      "orderName": "#235824, #235833",
+      "name": "W Retro S + 2L",
+      "orderName": "#235824, #235833, #235836",
       "orderLinks": [
         {
           "name": "#235824",
@@ -717,10 +731,15 @@
           "name": "#235833",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11222873702724",
           "cod": false
+        },
+        {
+          "name": "#235836",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11225832423748",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 5,
+      "hours": 7.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -759,24 +778,41 @@
       "tags": [
         "shopify"
       ]
+    },
+    {
+      "name": "H negru M",
+      "orderName": "#235838",
+      "orderLinks": [
+        {
+          "name": "#235838",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226498007364",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
     }
   ],
   "croitBuffer": [
     {
-      "gid": "1219888290945979",
-      "name": "02. H Layers V1 - L",
+      "gid": "1219833708715356",
+      "name": "01. Overshirt man scurta brown XL",
       "orderName": null,
-      "category": "Hanorac bumbac",
+      "category": null,
       "tags": [
         "predicted",
         "asana"
       ]
     },
     {
-      "gid": "1219833708715336",
-      "name": "01. Obsidian S",
+      "gid": "1219493418366413",
+      "name": "T negru S",
       "orderName": null,
-      "category": null,
+      "category": "Tricou simplu",
       "tags": [
         "predicted",
         "asana"
@@ -827,6 +863,26 @@
       "name": "T porto S",
       "orderName": null,
       "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219066658821320",
+      "name": "T negru L",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219833708715336",
+      "name": "05. Obsidian S",
+      "orderName": null,
+      "category": null,
       "tags": [
         "predicted",
         "asana"
