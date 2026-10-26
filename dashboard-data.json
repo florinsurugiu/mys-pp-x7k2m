@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T17:16:30.015Z",
+  "generatedAt": "2026-10-26T21:40:50.314Z",
   "planDate": "2026-10-26",
   "unmatchedProducts": [
     "[#235820] Bra Overlay Pink Hoodie V2",
@@ -600,17 +600,22 @@
       ]
     },
     {
-      "name": "T Alb XL",
-      "orderName": "#235837",
+      "name": "T Alb XL + 2XS",
+      "orderName": "#235837, #235839",
       "orderLinks": [
         {
           "name": "#235837",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226448331076",
           "cod": true
+        },
+        {
+          "name": "#235839",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226769916228",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
