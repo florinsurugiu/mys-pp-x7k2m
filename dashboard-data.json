@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T18:12:13.047Z",
-  "planDate": "2026-10-27",
+  "generatedAt": "2026-10-27T22:22:37.016Z",
+  "planDate": "2026-10-28",
   "unmatchedProducts": [
     "[#235822] Dystopia Yellow Oversized Sweater",
     "[#235830] Dystopia Yellow Oversized Sweater",
@@ -277,39 +277,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-10-27",
-      "leftover": false,
+      "leftover": true,
       "number": 1,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "03. Set bermude + camasa faces L (DHL) - da-i done nu muta in croit",
-      "orderName": null,
-      "category": "Bermude",
-      "dueOn": "2026-10-27",
-      "leftover": false,
-      "number": 3,
-      "orderLinks": [],
-      "hours": 1.5,
-      "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "04. W tokyo L (da-i done nu muta in croit) ",
-      "orderName": null,
-      "category": "Windbreaker",
-      "dueOn": "2026-10-27",
-      "leftover": false,
-      "number": 4,
-      "orderLinks": [],
-      "hours": 2.5,
-      "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -319,25 +292,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-10-27",
-      "leftover": false,
+      "leftover": true,
       "number": 5,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
-        "asana",
-        "predicted"
-      ]
-    },
-    {
-      "name": "06. W gaia M",
-      "orderName": null,
-      "category": "Windbreaker",
-      "dueOn": "2026-10-27",
-      "leftover": false,
-      "number": 6,
-      "orderLinks": [],
-      "hours": 2.5,
-      "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -347,11 +307,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-10-27",
-      "leftover": false,
+      "leftover": true,
       "number": 7,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -361,11 +322,12 @@
       "orderName": null,
       "category": "Windbreaker",
       "dueOn": "2026-10-27",
-      "leftover": false,
+      "leftover": true,
       "number": 8,
       "orderLinks": [],
       "hours": 5,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -375,11 +337,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-10-27",
-      "leftover": false,
+      "leftover": true,
       "number": 9,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -568,6 +531,28 @@
       ]
     },
     {
+      "name": "H negru 2M",
+      "orderName": "#235838, #235848",
+      "orderLinks": [
+        {
+          "name": "#235838",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226498007364",
+          "cod": false
+        },
+        {
+          "name": "#235848",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "W Gaia M",
       "orderName": "#235841",
       "orderLinks": [
@@ -579,6 +564,23 @@
       ],
       "category": "Windbreaker",
       "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Offwhite Signal S",
+      "orderName": "#235848",
+      "orderLinks": [
+        {
+          "name": "#235848",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -602,8 +604,8 @@
       ]
     },
     {
-      "name": "W Retro 2L",
-      "orderName": "#235833, #235836",
+      "name": "W Retro 2L + XXL",
+      "orderName": "#235833, #235836, #235847",
       "orderLinks": [
         {
           "name": "#235833",
@@ -614,27 +616,15 @@
           "name": "#235836",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11225832423748",
           "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H negru M",
-      "orderName": "#235838",
-      "orderLinks": [
+        },
         {
-          "name": "#235838",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226498007364",
+          "name": "#235847",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229063512388",
           "cod": false
         }
       ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
+      "category": "Windbreaker",
+      "hours": 7.5,
       "leftover": false,
       "tags": [
         "shopify"
