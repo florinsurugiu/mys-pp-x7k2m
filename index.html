@@ -1149,7 +1149,7 @@ document.addEventListener('click', (e) => {
     blk.querySelector('.cat-total').textContent = fmtLei(shown.reduce((a, r) => a + Number(r.dataset.amt || 0), 0));
   });
 });
-function fmtLei(n) { return Math.round(n).toLocaleString('ro-RO') + ' lei'; }
+function fmtLei(n) { const r = Math.round(n * 100) / 100; return r.toLocaleString('ro-RO', Number.isInteger(r) ? {} : { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' lei'; }
 function dayKey(d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
 function fmtDay(d) { return d.toLocaleDateString('ro-RO', { weekday: 'short', day: 'numeric', month: 'short' }); }
 // Full-colour icons (emoji) per category, as the user asked: easier to tell
