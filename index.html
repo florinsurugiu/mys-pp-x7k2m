@@ -1498,7 +1498,9 @@ function payrollCard(d, bals) {
     (meta ? line('Meta pe card (estimare, ' + fmtLei(d.metaDaily) + '/zi)', -meta, null) : '') +
     pay.map((i) => line(i.name + ' · ' + fmtDay(i.day) + (i.estimate ? ' (estimare)' : ''), co(i.payer) === 'bc' ? -i.amount : null, co(i.payer) === 's' ? -i.amount : null)).join('') +
     line('<b>Rămâne, sigur</b>', left('bc', 0), left('s', 0), true) +
-    (maybeIn ? line('+ ' + groups[4][0], maybeIn, null) + line('<b>Rămâne, dacă se livrează</b>', left('bc', maybeIn), left('s', 0), true) : '') +
+    line('<b>Total ambele firme, sigur</b>', total(0), null, true) +
+    (maybeIn ? line('+ ' + groups[4][0], maybeIn, null) + line('<b>Rămâne, dacă intră și rambursul</b>', left('bc', maybeIn), left('s', 0), true) +
+      line('<b>Total ambele firme, dacă intră și rambursul</b>', total(maybeIn), null, true) : '') +
     '</tbody></table>';
   const move = left('s', 0) < 0 ? '<div class="item-sub" style="margin-top:8px">Pentru Simplicated trebuie mutați <b>' + fmtLei(-left('s', 0)) + '</b> din ING în BT (factură Simplicated → Bad Copy).</div>' : '';
   const detail = groups.filter((g) => g[1].length).map((g) => '<li class="item"><span class="item-title">' + g[0] + '<div class="item-sub">' +
@@ -1506,7 +1508,7 @@ function payrollCard(d, bals) {
     '</div></span><span class="item-hours">' + sign(sum(g[1])) + '</span></li>').join('');
   return { sure: total(0), maybe: maybeIn ? total(maybeIn) : null, end, html: '<div class="card payroll-card" id="calc-eom" style="margin-bottom:16px"><h2>Sold sfârșit de lună · salarii · ' + fmtDay(end) + verdict(total(0)) + '</h2>' +
     '<div class="item-sub" style="margin-bottom:10px">Cât rămâne în conturi pe ' + fmtDay(end) + ' (ultima zi lucrătoare a lunii), după salariile de la final de lună, din ce e acum în bancă plus ce intră până atunci. Fără taxe și furnizori' + (others.length ? ' (scadente până atunci: ' + fmtLei(sum(others)) + ', vezi Cheltuieli)' : '') + '.' +
-    (maybeIn ? ' Dacă se livrează la timp și coletele aflate pe drum: ' + (total(maybeIn) >= 0 ? 'rămân ' + fmtLei(total(maybeIn)) : 'lipsesc ' + fmtLei(-total(maybeIn))) + '.' : '') + '</div>' +
+    (maybeIn ? ' Dacă intră și rambursul pe coletele aflate pe drum: ' + (total(maybeIn) >= 0 ? 'rămân ' + fmtLei(total(maybeIn)) : 'lipsesc ' + fmtLei(-total(maybeIn))) + '.' : '') + '</div>' +
     table + move +
     '<details class="cash-calc" style="margin-top:10px"><summary><span class="item-title">Ce intră, pe comenzi</span><span class="item-hours"></span></summary><ul class="items" style="margin:8px 0 4px">' + detail + '</ul>' +
     '<div class="item-sub" style="margin:4px 0 8px">Sameday plătește rambursul în ziua lucrătoare de după livrare și își reține din el facturile restante. Cardul vine la 2 zile lucrătoare după comandă, Klarna lunea, pentru comenzile expediate cu cel puțin o săptămână înainte.</div></details></div>' };
@@ -1696,7 +1698,7 @@ function renderCashData(root, d) {
       '<button type="button" class="stat-card cash-card" data-calc="calc-in"><div class="stat-label">Intră · 30 zile</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(in30) + '</div><div class="item-sub">' + fmtLei(knownIn30) + ' sigur</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-out"><div class="stat-label">Iese · 30 zile</div><div class="stat-value" style="color:var(--bad)">−' + fmtLei(out30) + '</div><div class="item-sub">' + fmtLei(must30) + ' obligatoriu</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-free"><div class="stat-label">Sold peste 30 zile</div><div class="stat-value" style="color:' + (bal30 >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(bal30) : '—') + '</div><div class="item-sub">pe ' + fmtDay(next30[next30.length - 1].day) + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
-      '<button type="button" class="stat-card cash-card" data-calc="calc-eom"><div class="stat-label">Sold sfârșit de lună</div><div class="stat-value" style="color:' + (eom.sure >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + fmtLei(eom.sure) + '</div><div class="item-sub">' + fmtDay(eom.end) + ' · după salarii' + (eom.maybe != null ? ' · ' + fmtLei(eom.maybe) + ' dacă se livrează' : '') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
+      '<button type="button" class="stat-card cash-card" data-calc="calc-eom"><div class="stat-label">Sold sfârșit de lună</div><div class="stat-value" style="color:' + (eom.sure >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + fmtLei(eom.sure) + '</div><div class="item-sub">' + fmtDay(eom.end) + ' · ambele firme, după salarii</div>' + (eom.maybe != null ? '<div class="item-sub">cu ramburs: <b style="color:' + (eom.maybe >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + fmtLei(eom.maybe) + '</b></div>' : '') + '<div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-tmr"><div class="stat-label">Intră mâine</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(tmrIn) + '</div><div class="item-sub">' + fmtDay(tmr.day) + (tmr.inForecast ? ' · ' + fmtLei(tmr.inKnown) + ' sigur' : '') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
     '</div>' +
     eom.html.replace('<div class="card payroll-card"', '<div hidden class="card payroll-card"') +
