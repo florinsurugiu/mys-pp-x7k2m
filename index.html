@@ -346,6 +346,10 @@
   .cash-due-date { width: 92px; flex: 0 0 auto; }
   #root-cash .item-hours { flex: 0 0 auto; white-space: nowrap; }
   #root-cash .item-title { min-width: 0; overflow-wrap: anywhere; }
+  .payroll-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  .payroll-table th { text-align: right; font-weight: 500; color: var(--text-dim); font-size: 0.78rem; padding: 4px 0 6px 10px; }
+  .payroll-table td { padding: 5px 0 5px 10px; border-top: 1px solid var(--border); vertical-align: top; }
+  .payroll-table td:first-child { padding-left: 0; }
   .tabs { overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
   .tabs::-webkit-scrollbar { display: none; }
   .tabs .tab-btn { flex: 0 0 auto; }
@@ -364,7 +368,7 @@
   .cash-calc[open] summary::before { transform: rotate(90deg); }
   .cash-calc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
   .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
-  .stat-grid.cash-five { grid-template-columns: repeat(5, 1fr); }
+  .stat-grid.cash-five { grid-template-columns: repeat(6, 1fr); }
   @media (max-width: 900px) { .stat-grid.cash-five { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 640px) { .stat-grid, .stat-grid.cash-five { grid-template-columns: repeat(2, 1fr); } }
   .stat-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
@@ -1418,6 +1422,92 @@ function cashLine(label, sub, amount, sign) {
   return '<li class="item"><span class="item-title">' + label + (sub ? '<div class="item-sub">' + sub + '</div>' : '') + '</span><span class="item-hours">' + (amount == null ? '' : (sign || '') + fmtLei(amount)) + '</span></li>';
 }
 
+// "Ajung banii de salarii?": the next salary days, per company, with what is
+// in the bank now plus what lands before them. All shop money (card, Klarna,
+// Sameday COD) reaches ING (Bad Copy); BT (Simplicated) only gets transfers.
+function payrollCard(d, bals) {
+  const sum = (xs, f) => xs.reduce((s, x) => s + (f ? f(x) : x.amount), 0);
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  const nextOn = (dom) => {
+    for (let k = 0; k < 2; k++) {
+      const m = new Date(today.getFullYear(), today.getMonth() + k, 1);
+      const dim = new Date(m.getFullYear(), m.getMonth() + 1, 0).getDate();
+      const day = new Date(m.getFullYear(), m.getMonth(), Math.min(dom, dim));
+      if (day >= today) return day;
+    }
+    return null;
+  };
+  const monthOf = (day) => dayKey(day).slice(0, 7);
+  const items = [];
+  for (const r of d.recurring || []) {
+    if (r.category !== 'Salarii') continue;
+    const day = nextOn(r.day);
+    if (!day || (d.bills || []).some((b) => b.replaces === r.name && b.month === monthOf(day))) continue;
+    items.push({ name: r.name, amount: r.amount, payer: r.payer, day, estimate: r.estimate });
+  }
+  for (const b of d.bills || []) {
+    if (b.category !== 'Salarii' || !(b.amount > 0)) continue;
+    const day = new Date(b.due + 'T00:00:00');
+    if (day >= today) items.push({ name: b.name, amount: b.amount, payer: b.payer, day, estimate: b.estimate });
+  }
+  // The month's last working day (Friday when the month ends on a weekend);
+  // once it has passed, next month's.
+  const lastWorkday = (y, m) => { const x = new Date(y, m + 1, 0); while ([0, 6].includes(x.getDay())) x.setDate(x.getDate() - 1); return x; };
+  let end = lastWorkday(today.getFullYear(), today.getMonth());
+  if (end < today) end = lastWorkday(today.getFullYear(), today.getMonth() + 1);
+  const endKey = dayKey(end);
+  const from = new Date(end); from.setDate(end.getDate() - 6);
+  const monthEnd = new Date(end.getFullYear(), end.getMonth() + 1, 0);
+  const pay = items.filter((i) => i.day >= from && i.day <= monthEnd).sort((a, b) => a.day - b.day);
+  const first = pay.length ? pay[0].day : end;
+  const co = (p) => (p === 'Simplicated' ? 's' : 'bc');
+
+  // Money in before the last salary day (expected on or before it).
+  const inc = (d.incoming || []).filter((i) => i.expected <= endKey);
+  const groups = [
+    ['Ramburs încasat de Sameday, netransferat', inc.filter((i) => i.method === 'cod' && i.delivered && !i.withheld), true],
+    ['Factură Sameday reținută din ramburs', inc.filter((i) => i.withheld), true],
+    ['Plăți Shopify cu cardul', inc.filter((i) => i.method === 'card' || i.method === 'payout'), true],
+    ['Klarna', inc.filter((i) => i.method === 'klarna'), true],
+    // Shipped but not delivered: counted only "if delivered in time" (a parcel
+    // handed over by the day before reaches the client the next day).
+    ['Ramburs pe colete expediate, dacă se livrează la timp', (d.incoming || []).filter((i) => i.method === 'cod' && !i.delivered && i.shipped), false],
+  ];
+  const recv = (d.receivables || []).filter((r) => r.counted && r.expected && r.expected <= endKey);
+  const meta = (d.metaDaily || 0) * Math.max(0, Math.round((end - today) / 86400000));
+  const start = { bc: bals ? (bals.ing || 0) + (bals.cash || 0) : 0, s: bals ? bals.bt || 0 : 0 };
+  const sureIn = { bc: sum(groups.filter((g) => g[2]).flatMap((g) => g[1])) + sum(recv.filter((r) => r.company !== 'Simplicated')), s: sum(recv.filter((r) => r.company === 'Simplicated')) };
+  const maybeIn = sum(groups[4][1]);
+  const sal = { bc: sum(pay.filter((i) => co(i.payer) === 'bc')), s: sum(pay.filter((i) => co(i.payer) === 's')) };
+  const left = (k, extra) => start[k] + sureIn[k] + (k === 'bc' ? extra - meta : 0) - sal[k];
+  const total = (extra) => left('bc', extra) + left('s', 0);
+  const verdict = (v) => '<span class="status-chip" style="margin:0 0 0 8px;' + (v >= 0 ? 'background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)">ajung · rămân ' + fmtLei(v) : 'background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)">lipsesc ' + fmtLei(-v)) + '</span>';
+  const others = (d.bills || []).filter((b) => b.category !== 'Salarii' && b.amount > 0 && (b.payOn || b.due) <= endKey);
+  const td = (v, strong) => '<td style="text-align:right;white-space:nowrap' + (strong ? ';font-weight:600' : '') + '">' + (v == null ? '' : fmtLei(v)) + '</td>';
+  const line = (label, bc, s, strong) => '<tr><td>' + label + '</td>' + td(bc, strong) + td(s, strong) + '</tr>';
+  const sign = (v) => (v > 0 ? '+' : v < 0 ? '−' : '') + fmtLei(Math.abs(v)).replace(/^-/, '');
+  const table =
+    '<table class="payroll-table"><thead><tr><th></th><th>Bad Copy · ING</th><th>Simplicated · BT</th></tr></thead><tbody>' +
+    line('În cont acum' + (bals && bals.cash ? ' (cu cash)' : ''), start.bc, start.s) +
+    groups.slice(0, 4).filter((g) => g[1].length).map((g) => line(g[0], sum(g[1]), null)).join('') +
+    (recv.length ? line('Facturi B2B scadente până atunci', sum(recv.filter((r) => r.company !== 'Simplicated')) || null, sum(recv.filter((r) => r.company === 'Simplicated')) || null) : '') +
+    (meta ? line('Meta pe card (estimare, ' + fmtLei(d.metaDaily) + '/zi)', -meta, null) : '') +
+    pay.map((i) => line(i.name + ' · ' + fmtDay(i.day) + (i.estimate ? ' (estimare)' : ''), co(i.payer) === 'bc' ? -i.amount : null, co(i.payer) === 's' ? -i.amount : null)).join('') +
+    line('<b>Rămâne, sigur</b>', left('bc', 0), left('s', 0), true) +
+    (maybeIn ? line('+ ' + groups[4][0], maybeIn, null) + line('<b>Rămâne, dacă se livrează</b>', left('bc', maybeIn), left('s', 0), true) : '') +
+    '</tbody></table>';
+  const move = left('s', 0) < 0 ? '<div class="item-sub" style="margin-top:8px">Pentru Simplicated trebuie mutați <b>' + fmtLei(-left('s', 0)) + '</b> din ING în BT (factură Simplicated → Bad Copy).</div>' : '';
+  const detail = groups.filter((g) => g[1].length).map((g) => '<li class="item"><span class="item-title">' + g[0] + '<div class="item-sub">' +
+    g[1].map((i) => i.order + ' ' + fmtLei(i.amount) + (i.delivered && !i.withheld ? ' · livrat ' + new Date(i.delivered).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : i.status ? ' · ' + i.status : '') + (i.method === 'card' ? ' · înainte de comision' : '')).join('<br>') +
+    '</div></span><span class="item-hours">' + sign(sum(g[1])) + '</span></li>').join('');
+  return { sure: total(0), maybe: maybeIn ? total(maybeIn) : null, end, html: '<div class="card payroll-card" id="calc-eom" style="margin-bottom:16px"><h2>Sold sfârșit de lună · salarii · ' + fmtDay(end) + verdict(total(0)) + '</h2>' +
+    '<div class="item-sub" style="margin-bottom:10px">Cât rămâne în conturi pe ' + fmtDay(end) + ' (ultima zi lucrătoare a lunii), după salariile de la final de lună, din ce e acum în bancă plus ce intră până atunci. Fără taxe și furnizori' + (others.length ? ' (scadente până atunci: ' + fmtLei(sum(others)) + ', vezi Cheltuieli)' : '') + '.' +
+    (maybeIn ? ' Dacă se livrează la timp și coletele aflate pe drum: ' + (total(maybeIn) >= 0 ? 'rămân ' + fmtLei(total(maybeIn)) : 'lipsesc ' + fmtLei(-total(maybeIn))) + '.' : '') + '</div>' +
+    table + move +
+    '<details class="cash-calc" style="margin-top:10px"><summary><span class="item-title">Ce intră, pe comenzi</span><span class="item-hours"></span></summary><ul class="items" style="margin:8px 0 4px">' + detail + '</ul>' +
+    '<div class="item-sub" style="margin:4px 0 8px">Sameday plătește rambursul în ziua lucrătoare de după livrare și își reține din el facturile restante. Cardul vine la 2 zile lucrătoare după comandă, Klarna lunea, pentru comenzile expediate cu cel puțin o săptămână înainte.</div></details></div>' };
+}
+
 function renderCashData(root, d) {
   const sum = (xs, f) => xs.reduce((s, x) => s + (f ? f(x) : x.amount), 0);
   // Closing balances from the latest bank statements; a balance typed in this
@@ -1594,12 +1684,14 @@ function renderCashData(root, d) {
       (r.counted ? ' · așteptată ' + new Date(r.expected).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : ' · nu e în calcul'), r.amount)).join('') +
     '</ul><div class="item-sub" style="margin-top:8px">„În calcul”: emise în ultimele ' + d.receivableFreshDays + ' de zile, intră la „Intră · 30 zile” la 30 de zile de la emitere. „De verificat”: mai vechi, nu sunt în calcul. Când banii intră, marchează factura „încasată” în SmartBill și dispare de aici a doua zi.</div></details>' : '';
 
-  root.innerHTML =
+  const eom = payrollCard(d, bals);
+  root.innerHTML = eom.html +
     '<div class="stat-grid cash-five">' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-bal"><div class="stat-label">În conturi</div><div class="stat-value">' + (bals ? fmtLei(start) : '—') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-in"><div class="stat-label">Intră · 30 zile</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(in30) + '</div><div class="item-sub">' + fmtLei(knownIn30) + ' sigur</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-out"><div class="stat-label">Iese · 30 zile</div><div class="stat-value" style="color:var(--bad)">−' + fmtLei(out30) + '</div><div class="item-sub">' + fmtLei(must30) + ' obligatoriu</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-free"><div class="stat-label">Sold peste 30 zile</div><div class="stat-value" style="color:' + (bal30 >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + (bals ? fmtLei(bal30) : '—') + '</div><div class="item-sub">pe ' + fmtDay(next30[next30.length - 1].day) + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
+      '<button type="button" class="stat-card cash-card" data-calc="calc-eom"><div class="stat-label">Sold sfârșit de lună</div><div class="stat-value" style="color:' + (eom.sure >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + fmtLei(eom.sure) + '</div><div class="item-sub">' + fmtDay(eom.end) + ' · după salarii' + (eom.maybe != null ? ' · ' + fmtLei(eom.maybe) + ' dacă se livrează' : '') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-tmr"><div class="stat-label">Intră mâine</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(tmrIn) + '</div><div class="item-sub">' + fmtDay(tmr.day) + (tmr.inForecast ? ' · ' + fmtLei(tmr.inKnown) + ' sigur' : '') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
     '</div>' +
     '<div class="cash-sub" role="tablist">' + [['in', 'Venituri', '+' + fmtLei(in30)], ['out', 'Cheltuieli', '−' + fmtLei(out30)]].map(([k, l, t]) => '<button type="button" role="tab" class="cash-sub-btn" data-sub="' + k + '">' + l + '<span class="cash-sub-total">' + t + '</span></button>').join('') + '</div>' +
