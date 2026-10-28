@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-10-28T19:59:41.881Z",
+  "generatedAt": "2026-10-28T23:59:34.118Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.3508,
   "days": [
-    {
-      "date": "2026-09-28",
-      "revenue": 1954.7,
-      "cogs": 873.74,
-      "shipping": 83.3,
-      "adSpend": 563.71,
-      "grossProfit": 997.66,
-      "netProfit": 433.95,
-      "roas": 3.47,
-      "unknownCostUnits": 0
-    },
     {
       "date": "2026-09-29",
       "revenue": 1476,
@@ -337,28 +326,39 @@
     },
     {
       "date": "2026-10-28",
-      "revenue": 3367.76,
-      "cogs": 1572.98,
+      "revenue": 4279.36,
+      "cogs": 2105.06,
       "shipping": 166.6,
-      "adSpend": 423.57,
-      "grossProfit": 1628.18,
-      "netProfit": 1204.61,
-      "roas": 7.95,
+      "adSpend": 481.25,
+      "grossProfit": 2007.7,
+      "netProfit": 1526.45,
+      "roas": 8.89,
+      "unknownCostUnits": 0
+    },
+    {
+      "date": "2026-10-29",
+      "revenue": 0,
+      "cogs": 0,
+      "shipping": 0,
+      "adSpend": 22.47,
+      "grossProfit": 0,
+      "netProfit": -22.47,
+      "roas": 0,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 9185.83,
-      "purchases": 90,
-      "metaRoas": 4.624214
+      "spend": 9032.79,
+      "purchases": 88,
+      "metaRoas": 4.615442
     },
     {
       "name": "DE - Copy 2",
-      "spend": 533.42,
+      "spend": 547.92,
       "purchases": 2,
-      "metaRoas": 1.475775
+      "metaRoas": 1.436719
     }
   ],
   "months": {
@@ -373,14 +373,14 @@
       "lastDay": "2026-09-30"
     },
     "2026-10": {
-      "revenue": 53937.12,
-      "cogs": 28549.66,
+      "revenue": 54848.72,
+      "cogs": 29081.74,
       "shipping": 1915.9,
-      "adSpend": 14852.7,
-      "orders": 111,
+      "adSpend": 14932.85,
+      "orders": 113,
       "unknownCostUnits": 0,
       "firstDay": "2026-10-01",
-      "lastDay": "2026-10-28"
+      "lastDay": "2026-10-29"
     }
   }
 }
