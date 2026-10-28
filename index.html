@@ -368,9 +368,13 @@
   .cash-calc[open] summary::before { transform: rotate(90deg); }
   .cash-calc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
   .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
-  .stat-grid.cash-five { grid-template-columns: repeat(6, 1fr); }
-  @media (max-width: 900px) { .stat-grid.cash-five { grid-template-columns: repeat(3, 1fr); } }
-  @media (max-width: 640px) { .stat-grid, .stat-grid.cash-five { grid-template-columns: repeat(2, 1fr); } }
+  .stat-grid.cash-five { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
+  .stat-grid.cash-five .stat-card { padding: 11px 12px; min-width: 0; }
+  .stat-grid.cash-five .stat-label { font-size: 0.62rem; letter-spacing: 0.04em; }
+  .stat-grid.cash-five .stat-value { font-size: 1.08rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .stat-grid.cash-five .item-sub, .stat-grid.cash-five .cash-calc-link { font-size: 0.74rem; }
+  @media (max-width: 900px) { .stat-grid.cash-five { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 640px) { .stat-grid, .stat-grid.cash-five { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .stat-card { background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
   .stat-card[title] { cursor: help; }
   .stat-card[title] .stat-label { text-decoration: underline dotted var(--text-faint); text-underline-offset: 3px; }
@@ -1498,7 +1502,7 @@ function payrollCard(d, bals) {
     '</tbody></table>';
   const move = left('s', 0) < 0 ? '<div class="item-sub" style="margin-top:8px">Pentru Simplicated trebuie mutați <b>' + fmtLei(-left('s', 0)) + '</b> din ING în BT (factură Simplicated → Bad Copy).</div>' : '';
   const detail = groups.filter((g) => g[1].length).map((g) => '<li class="item"><span class="item-title">' + g[0] + '<div class="item-sub">' +
-    g[1].map((i) => i.order + ' ' + fmtLei(i.amount) + (i.delivered && !i.withheld ? ' · livrat ' + new Date(i.delivered).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : i.status ? ' · ' + i.status : '') + (i.method === 'card' ? ' · înainte de comision' : '')).join('<br>') +
+    g[1].map((i) => i.order + ' ' + fmtLei(i.amount) + (i.delivered && !i.withheld ? ' · livrat ' + new Date(i.delivered).toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }) : i.status ? ' · ' + i.status : '') + (i.method === 'card' && i.order.startsWith('#') ? ' · înainte de comision' : '')).join('<br>') +
     '</div></span><span class="item-hours">' + sign(sum(g[1])) + '</span></li>').join('');
   return { sure: total(0), maybe: maybeIn ? total(maybeIn) : null, end, html: '<div class="card payroll-card" id="calc-eom" style="margin-bottom:16px"><h2>Sold sfârșit de lună · salarii · ' + fmtDay(end) + verdict(total(0)) + '</h2>' +
     '<div class="item-sub" style="margin-bottom:10px">Cât rămâne în conturi pe ' + fmtDay(end) + ' (ultima zi lucrătoare a lunii), după salariile de la final de lună, din ce e acum în bancă plus ce intră până atunci. Fără taxe și furnizori' + (others.length ? ' (scadente până atunci: ' + fmtLei(sum(others)) + ', vezi Cheltuieli)' : '') + '.' +
@@ -1686,7 +1690,7 @@ function renderCashData(root, d) {
     '</ul><div class="item-sub" style="margin-top:8px">„În calcul”: emise în ultimele ' + d.receivableFreshDays + ' de zile, intră la „Intră · 30 zile” la 30 de zile de la emitere. „De verificat”: mai vechi, nu sunt în calcul. Când banii intră, marchează factura „încasată” în SmartBill și dispare de aici a doua zi.</div></details>' : '';
 
   const eom = payrollCard(d, bals);
-  root.innerHTML = eom.html +
+  root.innerHTML =
     '<div class="stat-grid cash-five">' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-bal"><div class="stat-label">În conturi</div><div class="stat-value">' + (bals ? fmtLei(start) : '—') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-in"><div class="stat-label">Intră · 30 zile</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(in30) + '</div><div class="item-sub">' + fmtLei(knownIn30) + ' sigur</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
@@ -1695,6 +1699,7 @@ function renderCashData(root, d) {
       '<button type="button" class="stat-card cash-card" data-calc="calc-eom"><div class="stat-label">Sold sfârșit de lună</div><div class="stat-value" style="color:' + (eom.sure >= 0 ? 'var(--good)' : 'var(--bad)') + '">' + fmtLei(eom.sure) + '</div><div class="item-sub">' + fmtDay(eom.end) + ' · după salarii' + (eom.maybe != null ? ' · ' + fmtLei(eom.maybe) + ' dacă se livrează' : '') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-tmr"><div class="stat-label">Intră mâine</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(tmrIn) + '</div><div class="item-sub">' + fmtDay(tmr.day) + (tmr.inForecast ? ' · ' + fmtLei(tmr.inKnown) + ' sigur' : '') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
     '</div>' +
+    eom.html.replace('<div class="card payroll-card"', '<div hidden class="card payroll-card"') +
     '<div class="cash-sub" role="tablist">' + [['in', 'Venituri', '+' + fmtLei(in30)], ['out', 'Cheltuieli', '−' + fmtLei(out30)]].map(([k, l, t]) => '<button type="button" role="tab" class="cash-sub-btn" data-sub="' + k + '">' + l + '<span class="cash-sub-total">' + t + '</span></button>').join('') + '</div>' +
     '<div class="cash-pane" data-pane="in">' + inTotal + inCard + recvCheckHtml + '</div>' +
     '<div class="cash-pane" data-pane="out">' + outTotal + payCard + '</div>' +
@@ -1720,6 +1725,8 @@ function renderCashData(root, d) {
   root.querySelectorAll('.cash-card').forEach((btn) => btn.addEventListener('click', () => {
     const det = document.getElementById(btn.dataset.calc);
     if (!det) return;
+    // The end-of-month section only shows after a click on its card.
+    if (det.classList.contains('payroll-card')) { det.hidden = !det.hidden; if (det.hidden) return; }
     det.open = true;
     det.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }));
