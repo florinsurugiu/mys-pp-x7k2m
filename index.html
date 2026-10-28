@@ -1578,9 +1578,10 @@ function renderCashData(root, d) {
   const lateItems = outItems.filter((x) => x.overdue).map((o) => ({ name: o.name, payer: o.payer, cat: o.category, meta: [(o.due < dayKey(today0) ? 'trebuia plătit pe ' : 'scadent pe ') + new Date(o.due).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }), o.payOn ? 'plătești pe ' + new Date(o.payOn).toLocaleDateString('ro-RO', { day: 'numeric', month: 'long' }) : '', o.estimate ? 'estimare' : ''].filter(Boolean).join(' · '), day: new Date(o.due), late: true, amount: o.amount, approx: o.estimate, kind: o.bill && !o.estimate ? 'inv' : 'est' }));
   const overdue = (d.supplierOverdue || []).slice().sort((x, y) => y.amount - x.amount)
     .map((o) => ({ name: o.name, payer: o.payer, cat: 'Furnizori', meta: o.note.split(' · ')[0] + ' · verifică dacă e plătită', day: new Date(o.due), late: true, amount: o.amount, kind: 'inv' }));
-  // Upcoming payments in date order; the category is a label on each row
+  // Upcoming payments in date order (same day: the older due date first, so
+  // August's tax orders come before September's); the category is a label on each row
   // (the totals box above splits them by category).
-  const upcomingOut = outItems.filter((x) => !x.overdue && x.amount > 0).sort((x, y) => x.day - y.day || y.amount - x.amount)
+  const upcomingOut = outItems.filter((x) => !x.overdue && x.amount > 0).sort((x, y) => x.day - y.day || (x.due || dayKey(x.day)).localeCompare(y.due || dayKey(y.day)) || y.amount - x.amount)
     .map((o) => ({ name: o.name, payer: o.payer, cat: o.category, meta: metaOf(o), day: o.day, late: !!o.pastDue, amount: o.amount, approx: o.estimate, kind: o.bill && !o.estimate ? 'inv' : 'est' }));
   const payCard = '<div class="card kind-filter" style="margin-bottom:16px"><div class="kind-bar"><button type="button" class="kind-legend on" data-kind="">Toate</button><button type="button" class="kind-legend" data-kind="inv"><i class="inv"></i>Restante</button><button type="button" class="kind-legend" data-kind="est"><i class="est"></i>Estimări</button></div><h2>De plătit</h2>' +
     block('Restant · plătește acum', lateItems.sort((x, y) => x.day - y.day), { tone: 'bad' }) +
