@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T07:45:42.826Z",
+  "generatedAt": "2026-10-28T14:43:12.943Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -271,13 +271,13 @@
     },
     {
       "date": "2026-10-22",
-      "revenue": 2802.46,
-      "cogs": 1542.63,
+      "revenue": 2539.26,
+      "cogs": 1360.66,
       "shipping": 83.3,
       "adSpend": 378.96,
-      "grossProfit": 1176.53,
-      "netProfit": 797.57,
-      "roas": 7.4,
+      "grossProfit": 1095.3,
+      "netProfit": 716.34,
+      "roas": 6.7,
       "unknownCostUnits": 0
     },
     {
@@ -329,34 +329,34 @@
       "revenue": 3322.2,
       "cogs": 2002.24,
       "shipping": 0,
-      "adSpend": 505.57,
+      "adSpend": 506.8,
       "grossProfit": 1319.96,
-      "netProfit": 814.39,
-      "roas": 6.57,
+      "netProfit": 813.16,
+      "roas": 6.56,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-10-28",
-      "revenue": 272.2,
-      "cogs": 181.97,
-      "shipping": 0,
-      "adSpend": 119.22,
-      "grossProfit": 90.23,
-      "netProfit": -28.99,
-      "roas": 2.28,
+      "revenue": 2122.03,
+      "cogs": 968.46,
+      "shipping": 83.3,
+      "adSpend": 281.03,
+      "grossProfit": 1070.27,
+      "netProfit": 789.24,
+      "roas": 7.55,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 8928.75,
-      "purchases": 85,
-      "metaRoas": 4.574594
+      "spend": 9071.14,
+      "purchases": 87,
+      "metaRoas": 4.577333
     },
     {
       "name": "DE - Copy 2",
-      "spend": 481.34,
+      "spend": 501.98,
       "purchases": null,
       "metaRoas": null
     }
@@ -373,11 +373,11 @@
       "lastDay": "2026-09-30"
     },
     "2026-10": {
-      "revenue": 51373.04,
-      "cogs": 27340.62,
-      "shipping": 1749.3,
-      "adSpend": 14541.62,
-      "orders": 103,
+      "revenue": 52959.67,
+      "cogs": 27945.14,
+      "shipping": 1832.6,
+      "adSpend": 14704.65,
+      "orders": 107,
       "unknownCostUnits": 0,
       "firstDay": "2026-10-01",
       "lastDay": "2026-10-28"
