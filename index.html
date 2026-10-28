@@ -346,6 +346,13 @@
   .cash-due-date { width: 92px; flex: 0 0 auto; }
   #root-cash .item-hours { flex: 0 0 auto; white-space: nowrap; }
   #root-cash .item-title { min-width: 0; overflow-wrap: anywhere; }
+  .tax-risk { margin-bottom: 12px; padding: 10px 14px; border-color: color-mix(in srgb, var(--bad) 40%, var(--border)); }
+  .tax-risk-head { display: flex; justify-content: space-between; gap: 10px; font-size: 0.82rem; font-weight: 600; color: var(--bad); margin-bottom: 4px; }
+  .tax-risk ul { list-style: none; margin: 0; padding: 0; }
+  .tax-risk li { display: grid; grid-template-columns: 1fr auto 4.2em; gap: 10px; font-size: 0.8rem; padding: 2px 0; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+  .tax-risk li span:nth-child(2), .tax-risk li span:nth-child(3) { text-align: right; }
+  .tax-risk li .old { color: var(--bad); }
+  .tax-risk-foot { font-size: 0.72rem; color: var(--text-faint); margin-top: 4px; }
   .payroll-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
   .payroll-table th { text-align: right; font-weight: 500; color: var(--text-dim); font-size: 0.78rem; padding: 4px 0 6px 10px; }
   .payroll-table td { padding: 5px 0 5px 10px; border-top: 1px solid var(--border); vertical-align: top; }
@@ -1516,9 +1523,16 @@ function payrollCard(d, bals) {
     '<div class="item-sub" style="margin:4px 0 8px">Sameday plătește rambursul în ziua lucrătoare de după livrare și își reține din el facturile restante. Cardul vine la 2 zile lucrătoare după comandă, Klarna lunea, pentru comenzile expediate cu cel puțin o săptămână înainte.</div></details></div>' };
 }
 
-function lateTaxHtml(alerts) {
-  const a = alerts.find((x) => x[1].startsWith('Taxe restante'));
-  return a ? '<div class="card" style="margin-bottom:12px;border-color:color-mix(in srgb,var(--bad) 45%,var(--border))"><div class="item-title" style="color:var(--bad);font-weight:600;margin-bottom:4px">Risc de poprire ANAF</div><div class="item-sub">' + a[1] + '</div></div>' : '';
+// Compact "Risc de poprire ANAF" banner: taxes past due, oldest first.
+function lateTaxHtml(d) {
+  const today = dayKey(new Date());
+  const late = (d.bills || []).filter((b) => b.category === 'Taxe' && b.amount > 0 && b.due < today).sort((a, b) => a.due.localeCompare(b.due));
+  if (!late.length) return '';
+  const days = (b) => Math.floor((Date.now() - Date.parse(b.due + 'T00:00:00')) / 86400000);
+  const short = (n) => n.split(' (')[0].split(' · ')[0];
+  return '<div class="card tax-risk"><div class="tax-risk-head"><span>Risc de poprire ANAF</span><b>' + fmtLei(late.reduce((s, b) => s + b.amount, 0)) + '</b></div>' +
+    '<ul>' + late.map((b) => '<li><span>' + short(b.name) + '</span><span>' + fmtLei(b.amount) + '</span><span class="' + (days(b) >= 30 ? 'old' : '') + '">' + days(b) + ' zile</span></li>').join('') + '</ul>' +
+    '<div class="tax-risk-foot">După scadență: somație în SPV, apoi poprire la 15 zile.</div></div>';
 }
 function renderCashData(root, d) {
   const sum = (xs, f) => xs.reduce((s, x) => s + (f ? f(x) : x.amount), 0);
@@ -1707,7 +1721,7 @@ function renderCashData(root, d) {
 
   const eom = payrollCard(d, bals);
   root.innerHTML =
-    (lateTaxHtml(alerts)) +
+    lateTaxHtml(d) +
     '<div class="stat-grid cash-five">' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-bal"><div class="stat-label">În conturi</div><div class="stat-value">' + (bals ? fmtLei(start) : '—') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
       '<button type="button" class="stat-card cash-card" data-calc="calc-in"><div class="stat-label">Intră · 30 zile</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(in30) + '</div><div class="item-sub">' + fmtLei(knownIn30) + ' sigur</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
