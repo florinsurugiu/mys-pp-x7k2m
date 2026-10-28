@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T22:27:49.636Z",
+  "generatedAt": "2026-10-28T01:42:45.152Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -18,13 +18,13 @@
     },
     {
       "date": "2026-09-29",
-      "revenue": 2425.6,
+      "revenue": 1476,
       "cogs": 1288.22,
       "shipping": 0,
       "adSpend": 670.79,
-      "grossProfit": 1137.38,
-      "netProfit": 466.59,
-      "roas": 3.62,
+      "grossProfit": 187.78,
+      "netProfit": -483.01,
+      "roas": 2.2,
       "unknownCostUnits": 0
     },
     {
@@ -329,41 +329,41 @@
       "revenue": 3322.2,
       "cogs": 2002.24,
       "shipping": 0,
-      "adSpend": 502.47,
+      "adSpend": 503.27,
       "grossProfit": 1319.96,
-      "netProfit": 817.49,
-      "roas": 6.61,
+      "netProfit": 816.69,
+      "roas": 6.6,
       "unknownCostUnits": 0
     },
     {
       "date": "2026-10-28",
-      "revenue": 0,
-      "cogs": 0,
+      "revenue": 272.2,
+      "cogs": 181.97,
       "shipping": 0,
-      "adSpend": 15.46,
-      "grossProfit": 0,
-      "netProfit": -15.46,
-      "roas": 0,
+      "adSpend": 43.06,
+      "grossProfit": 90.23,
+      "netProfit": 47.17,
+      "roas": 6.32,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 8841.41,
-      "purchases": 83,
-      "metaRoas": 4.53246
+      "spend": 8861.46,
+      "purchases": 85,
+      "metaRoas": 4.60933
     },
     {
       "name": "DE - Copy 2",
-      "spend": 461.82,
+      "spend": 470.16,
       "purchases": null,
       "metaRoas": null
     }
   ],
   "months": {
     "2026-09": {
-      "revenue": 69217.51,
+      "revenue": 68267.91,
       "cogs": 41321.46,
       "shipping": 4498.2,
       "adSpend": 19316.6,
@@ -373,11 +373,11 @@
       "lastDay": "2026-09-30"
     },
     "2026-10": {
-      "revenue": 51100.84,
-      "cogs": 27158.65,
+      "revenue": 51373.04,
+      "cogs": 27340.62,
       "shipping": 1749.3,
-      "adSpend": 14434.75,
-      "orders": 102,
+      "adSpend": 14463.16,
+      "orders": 103,
       "unknownCostUnits": 0,
       "firstDay": "2026-10-01",
       "lastDay": "2026-10-28"
