@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-10-28T14:26:13.208Z",
+  "generatedAt": "2026-10-28T19:49:13.825Z",
   "planDate": "2026-10-28",
   "unmatchedProducts": [
     "[#235834] Dystopia Black Oversized Sweater",
     "[#235837] Complex Minds Brown Checkered Shirt",
     "[#235843] Côte Bleue Short Sleeve Shirt",
     "[#235849] Dystopia Black Oversized Sweater",
+    "[#235858] Fragmented Sleeves Shirt B/W",
     "Short Sleeve Shirt And Bermuda Set With Faces Design - Recycled Fabric"
   ],
   "predictionIdeas": [
@@ -122,12 +123,12 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/15588974428484",
-      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-      "category": "Camasa scurta",
+      "productId": "gid://shopify/Product/14940919628100",
+      "title": "Midnight Essential Tee",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20261015_113657_b8fd00fb-ca69-4aae-9ef7-bc00df610d60.jpg?v=1792081408",
+      "category": "Tricou simplu",
       "size": "XXL",
-      "hours": 1.4167
+      "hours": 0.6667
     }
   ],
   "felicia": {
@@ -579,6 +580,28 @@
       ]
     },
     {
+      "name": "C Bal scurta maro 2 buc XL",
+      "orderName": "#235856, #235857",
+      "orderLinks": [
+        {
+          "name": "#235856",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230616682820",
+          "cod": false
+        },
+        {
+          "name": "#235857",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230651941188",
+          "cod": true
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 2.8334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T alb Superwoman S",
       "orderName": "#235829",
       "orderLinks": [
@@ -702,6 +725,23 @@
       ],
       "category": "Hanorac patchuri",
       "hours": 3,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H Aria M",
+      "orderName": "#235855",
+      "orderLinks": [
+        {
+          "name": "#235855",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230547902788",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
