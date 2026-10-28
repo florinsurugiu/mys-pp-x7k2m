@@ -347,12 +347,18 @@
   #root-cash .item-hours { flex: 0 0 auto; white-space: nowrap; }
   #root-cash .item-title { min-width: 0; overflow-wrap: anywhere; }
   .tax-risk { margin-bottom: 12px; padding: 10px 14px; border-color: color-mix(in srgb, var(--bad) 40%, var(--border)); }
-  .tax-risk-head { display: flex; justify-content: space-between; gap: 10px; font-size: 0.82rem; font-weight: 600; color: var(--bad); margin-bottom: 4px; }
-  .tax-risk ul { list-style: none; margin: 0; padding: 0; }
+  .tax-risk summary { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; cursor: pointer; list-style: none; font-size: 0.85rem; }
+  .tax-risk summary::-webkit-details-marker { display: none; }
+  .tax-risk summary::after { content: '▾'; margin-left: auto; color: var(--text-faint); }
+  .tax-risk[open] summary::after { content: '▴'; }
+  .tax-risk-title { font-weight: 600; color: var(--bad); }
+  .tax-risk summary b { color: var(--bad); font-variant-numeric: tabular-nums; }
+  .tax-risk-when { font-size: 0.78rem; color: var(--text-dim); }
+  .tax-risk ul { list-style: none; margin: 8px 0 0; padding: 0; }
   .tax-risk li { display: grid; grid-template-columns: 1fr auto 4.2em; gap: 10px; font-size: 0.8rem; padding: 2px 0; color: var(--text-dim); font-variant-numeric: tabular-nums; }
   .tax-risk li span:nth-child(2), .tax-risk li span:nth-child(3) { text-align: right; }
   .tax-risk li .old { color: var(--bad); }
-  .tax-risk-foot { font-size: 0.72rem; color: var(--text-faint); margin-top: 4px; }
+  .tax-risk-foot { font-size: 0.72rem; color: var(--text-faint); margin-top: 6px; }
   .payroll-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
   .payroll-table th { text-align: right; font-weight: 500; color: var(--text-dim); font-size: 0.78rem; padding: 4px 0 6px 10px; }
   .payroll-table td { padding: 5px 0 5px 10px; border-top: 1px solid var(--border); vertical-align: top; }
@@ -1523,16 +1529,22 @@ function payrollCard(d, bals) {
     '<div class="item-sub" style="margin:4px 0 8px">Sameday plătește rambursul în ziua lucrătoare de după livrare și își reține din el facturile restante. Cardul vine la 2 zile lucrătoare după comandă, Klarna lunea, pentru comenzile expediate cu cel puțin o săptămână înainte.</div></details></div>' };
 }
 
-// Compact "Risc de poprire ANAF" banner: taxes past due, oldest first.
+// "Risc de poprire ANAF": taxes past due, oldest first, in a dropdown. ANAF
+// sends somații around the 3rd–6th of the month (2026 history) and may
+// garnish the accounts 15 days after one is communicated.
 function lateTaxHtml(d) {
-  const today = dayKey(new Date());
+  const now = new Date(), today = dayKey(now);
   const late = (d.bills || []).filter((b) => b.category === 'Taxe' && b.amount > 0 && b.due < today).sort((a, b) => a.due.localeCompare(b.due));
   if (!late.length) return '';
   const days = (b) => Math.floor((Date.now() - Date.parse(b.due + 'T00:00:00')) / 86400000);
   const short = (n) => n.split(' (')[0].split(' · ')[0];
-  return '<div class="card tax-risk"><div class="tax-risk-head"><span>Risc de poprire ANAF</span><b>' + fmtLei(late.reduce((s, b) => s + b.amount, 0)) + '</b></div>' +
+  const somatie = new Date(now.getFullYear(), now.getMonth() + (now.getDate() > 6 ? 1 : 0), 6);
+  const poprire = new Date(somatie); poprire.setDate(somatie.getDate() + 15);
+  const dm = (x) => x.toLocaleDateString('ro-RO', { day: 'numeric', month: 'short' }).replace('.', '');
+  return '<details class="card tax-risk"><summary><span class="tax-risk-title">Risc de poprire ANAF</span><b>' + fmtLei(late.reduce((s, b) => s + b.amount, 0)) + '</b>' +
+    '<span class="tax-risk-when">poprire posibilă din ~' + dm(poprire) + '</span></summary>' +
     '<ul>' + late.map((b) => '<li><span>' + short(b.name) + '</span><span>' + fmtLei(b.amount) + '</span><span class="' + (days(b) >= 30 ? 'old' : '') + '">' + days(b) + ' zile</span></li>').join('') + '</ul>' +
-    '<div class="tax-risk-foot">După scadență: somație în SPV, apoi poprire la 15 zile.</div></div>';
+    '<div class="tax-risk-foot">Estimare: somație în SPV pe ~3–' + dm(somatie) + ' (ANAF le trimite la începutul lunii), apoi poprire posibilă după 15 zile. O plată sau o eșalonare înainte o oprește.</div></details>';
 }
 function renderCashData(root, d) {
   const sum = (xs, f) => xs.reduce((s, x) => s + (f ? f(x) : x.amount), 0);
