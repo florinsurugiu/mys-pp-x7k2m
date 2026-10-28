@@ -1,12 +1,13 @@
 {
-  "generatedAt": "2026-10-28T19:49:13.825Z",
-  "planDate": "2026-10-28",
+  "generatedAt": "2026-10-28T23:39:46.845Z",
+  "planDate": "2026-10-29",
   "unmatchedProducts": [
     "[#235834] Dystopia Black Oversized Sweater",
     "[#235837] Complex Minds Brown Checkered Shirt",
     "[#235843] Côte Bleue Short Sleeve Shirt",
     "[#235849] Dystopia Black Oversized Sweater",
     "[#235858] Fragmented Sleeves Shirt B/W",
+    "[#235860] Dystopia Black Oversized Sweater",
     "Short Sleeve Shirt And Bermuda Set With Faces Design - Recycled Fabric"
   ],
   "predictionIdeas": [
@@ -314,11 +315,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-10-28",
-      "leftover": false,
+      "leftover": true,
       "number": 1,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -328,11 +330,12 @@
       "orderName": null,
       "category": "Windbreaker",
       "dueOn": "2026-10-28",
-      "leftover": false,
+      "leftover": true,
       "number": 2,
       "orderLinks": [],
       "hours": 5,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -342,11 +345,12 @@
       "orderName": null,
       "category": "Tricou simplu",
       "dueOn": "2026-10-28",
-      "leftover": false,
+      "leftover": true,
       "number": 3,
       "orderLinks": [],
       "hours": 0.6667,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -356,11 +360,12 @@
       "orderName": null,
       "category": "Hanorac bumbac",
       "dueOn": "2026-10-28",
-      "leftover": false,
+      "leftover": true,
       "number": 6,
       "orderLinks": [],
       "hours": 1,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -370,11 +375,12 @@
       "orderName": null,
       "category": "Hanorac bumbac",
       "dueOn": "2026-10-28",
-      "leftover": false,
+      "leftover": true,
       "number": 7,
       "orderLinks": [],
       "hours": 1,
       "tags": [
+        "leftover",
         "asana",
         "predicted"
       ]
@@ -596,6 +602,40 @@
       ],
       "category": "Camasa scurta",
       "hours": 2.8334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "P Drept negru femei MG XS",
+      "orderName": "#235859",
+      "orderLinks": [
+        {
+          "name": "#235859",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231076516164",
+          "cod": true
+        }
+      ],
+      "category": "Pantalon drept",
+      "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "B Obsidian L",
+      "orderName": "#235860",
+      "orderLinks": [
+        {
+          "name": "#235860",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231207948612",
+          "cod": true
+        }
+      ],
+      "category": "Bluza inimioara / obsidian",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
