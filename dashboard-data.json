@@ -1,9 +1,8 @@
 {
-  "generatedAt": "2026-10-29T02:56:09.749Z",
+  "generatedAt": "2026-10-29T09:47:41.873Z",
   "planDate": "2026-10-29",
   "unmatchedProducts": [
     "[#235834] Dystopia Black Oversized Sweater",
-    "[#235837] Complex Minds Brown Checkered Shirt",
     "[#235843] Côte Bleue Short Sleeve Shirt",
     "[#235849] Dystopia Black Oversized Sweater",
     "[#235858] Fragmented Sleeves Shirt B/W",
@@ -50,6 +49,14 @@
       "category": "Hanorac bumbac",
       "size": "L",
       "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/9046564667716",
+      "title": "Oversized White T-shirt Superwoman",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-white-t-shirt-superwoman_01_her-back.jpg?v=1792867217",
+      "category": "Tricou simplu",
+      "size": "S",
+      "hours": 0.6667
     },
     {
       "productId": "gid://shopify/Product/15412465041732",
@@ -122,18 +129,10 @@
       "category": "Camasa Unisex",
       "size": "M",
       "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15573327249732",
-      "title": "Reality Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
-      "category": "Tricou simplu",
-      "size": "XXL",
-      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 9.67,
+    "hours": 9,
     "capacity": 7.2,
     "items": [
       {
@@ -147,61 +146,66 @@
         "orderLinks": []
       },
       {
-        "title": "02. H Fume L + XL",
-        "hours": 2,
+        "title": "02. H Fume L",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235826, #235842",
+        "orderName": "#235826",
         "orderLinks": [
           {
             "name": "#235826",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
             "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. Bluza Rupta 2L",
+        "hours": 3,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235844, #235851",
+        "orderLinks": [
+          {
+            "name": "#235844",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228455502148",
+            "cod": false
           },
           {
-            "name": "#235842",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228093612356",
+            "name": "#235851",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229940318532",
             "cod": true
           }
         ]
       },
       {
-        "title": "03. T Alb XL + 2XS + M",
-        "hours": 2.67,
+        "title": "04. Bluza rupta roz S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235837, #235839, #235840",
+        "orderName": "#235853",
         "orderLinks": [
           {
-            "name": "#235837",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226448331076",
+            "name": "#235853",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230213112132",
             "cod": true
-          },
-          {
-            "name": "#235839",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226769916228",
-            "cod": false
-          },
-          {
-            "name": "#235840",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11227236532548",
-            "cod": false
           }
         ]
       },
       {
-        "title": "04. W Gaia M",
-        "hours": 2.5,
+        "title": "05. T Offwhite Signal S",
+        "hours": 1.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235841",
+        "orderName": "#235848",
         "orderLinks": [
           {
-            "name": "#235841",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11227706065220",
+            "name": "#235848",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
             "cod": true
           }
         ]
@@ -209,7 +213,7 @@
     ]
   },
   "flori": {
-    "hours": 13,
+    "hours": 9,
     "capacity": 7.2,
     "items": [
       {
@@ -268,41 +272,16 @@
         ]
       },
       {
-        "title": "04. P Drept print 2L + M",
-        "hours": 6,
+        "title": "04. P Drept print L + M",
+        "hours": 4,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235826, #235842",
+        "orderName": "#235826",
         "orderLinks": [
           {
             "name": "#235826",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
-            "cod": true
-          },
-          {
-            "name": "#235842",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228093612356",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "05. H negru 2M",
-        "hours": 2,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235838, #235848",
-        "orderLinks": [
-          {
-            "name": "#235838",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226498007364",
-            "cod": false
-          },
-          {
-            "name": "#235848",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
             "cod": true
           }
         ]
@@ -420,110 +399,34 @@
       ]
     },
     {
-      "name": "P Drept print 2L + M",
-      "orderName": "#235826, #235842",
+      "name": "P Drept print L + M",
+      "orderName": "#235826",
       "orderLinks": [
         {
           "name": "#235826",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
-          "cod": true
-        },
-        {
-          "name": "#235842",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228093612356",
           "cod": true
         }
       ],
       "category": "Pantalon drept",
-      "hours": 6,
+      "hours": 4,
       "leftover": false,
       "tags": [
         "shopify"
       ]
     },
     {
-      "name": "H Fume L + XL",
-      "orderName": "#235826, #235842",
+      "name": "H Fume L",
+      "orderName": "#235826",
       "orderLinks": [
         {
           "name": "#235826",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
           "cod": true
-        },
-        {
-          "name": "#235842",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228093612356",
-          "cod": true
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 2,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Alb XL + 2XS + M",
-      "orderName": "#235837, #235839, #235840",
-      "orderLinks": [
-        {
-          "name": "#235837",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226448331076",
-          "cod": true
-        },
-        {
-          "name": "#235839",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226769916228",
-          "cod": false
-        },
-        {
-          "name": "#235840",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11227236532548",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 2.6668,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H negru 2M",
-      "orderName": "#235838, #235848",
-      "orderLinks": [
-        {
-          "name": "#235838",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11226498007364",
-          "cod": false
-        },
-        {
-          "name": "#235848",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
-          "cod": true
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 2,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "W Gaia M",
-      "orderName": "#235841",
-      "orderLinks": [
-        {
-          "name": "#235841",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11227706065220",
-          "cod": true
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
@@ -546,6 +449,23 @@
       ],
       "category": "Bluza inimioara / obsidian",
       "hours": 3,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H negru M",
+      "orderName": "#235848",
+      "orderLinks": [
+        {
+          "name": "#235848",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
@@ -642,25 +562,8 @@
       ]
     },
     {
-      "name": "T alb Superwoman S",
-      "orderName": "#235829",
-      "orderLinks": [
-        {
-          "name": "#235829",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219879657796",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "W Retro 2L + XXL",
-      "orderName": "#235833, #235836, #235847",
+      "name": "W Retro 2L + XXL + M",
+      "orderName": "#235833, #235836, #235847, #235862",
       "orderLinks": [
         {
           "name": "#235833",
@@ -676,27 +579,15 @@
           "name": "#235847",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229063512388",
           "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 7.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "W Pink M",
-      "orderName": "#235840",
-      "orderLinks": [
+        },
         {
-          "name": "#235840",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11227236532548",
+          "name": "#235862",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231804588356",
           "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 10,
       "leftover": false,
       "tags": [
         "shopify"
