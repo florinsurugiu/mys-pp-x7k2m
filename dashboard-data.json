@@ -1,12 +1,13 @@
 {
-  "generatedAt": "2026-10-29T16:27:19.502Z",
+  "generatedAt": "2026-10-29T21:22:30.924Z",
   "planDate": "2026-10-29",
   "unmatchedProducts": [
     "[#235834] Dystopia Black Oversized Sweater",
     "[#235843] Côte Bleue Short Sleeve Shirt",
     "[#235849] Dystopia Black Oversized Sweater",
     "[#235858] Fragmented Sleeves Shirt B/W",
-    "[#235860] Dystopia Black Oversized Sweater"
+    "[#235860] Dystopia Black Oversized Sweater",
+    "[#235868] Fragmented Sleeves Shirt Cream"
   ],
   "predictionIdeas": [
     {
@@ -131,7 +132,7 @@
     }
   ],
   "felicia": {
-    "hours": 8,
+    "hours": 15.17,
     "capacity": 7.2,
     "items": [
       {
@@ -145,17 +146,18 @@
         "orderLinks": []
       },
       {
-        "title": "02. Double Sleeve Patch L",
-        "hours": 1,
+        "title": "02. T negru S",
+        "hours": 0.67,
         "tags": [
-          "shopify"
+          "shopify",
+          "buffer"
         ],
-        "orderName": "#235826",
+        "orderName": "#235852",
         "orderLinks": [
           {
-            "name": "#235826",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
-            "cod": true
+            "name": "#235852",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230015029572",
+            "cod": false
           }
         ]
       },
@@ -175,31 +177,31 @@
         ]
       },
       {
-        "title": "04. H negru M",
-        "hours": 1,
+        "title": "04. W Retro 3L + M",
+        "hours": 10,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235848",
+        "orderName": "#235833, #235836, #235862, #235867",
         "orderLinks": [
           {
-            "name": "#235848",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "05. T Offwhite Signal S",
-        "hours": 1.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235848",
-        "orderLinks": [
+            "name": "#235833",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11222873702724",
+            "cod": false
+          },
           {
-            "name": "#235848",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
+            "name": "#235836",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11225832423748",
+            "cod": false
+          },
+          {
+            "name": "#235862",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231804588356",
+            "cod": false
+          },
+          {
+            "name": "#235867",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11232844677444",
             "cod": true
           }
         ]
@@ -207,7 +209,7 @@
     ]
   },
   "flori": {
-    "hours": 7.75,
+    "hours": 9.08,
     "capacity": 7.2,
     "items": [
       {
@@ -220,8 +222,8 @@
         ]
       },
       {
-        "title": "01. T negru S",
-        "hours": 1.33,
+        "title": "01. T negru L",
+        "hours": 0.67,
         "tags": [
           "shopify",
           "buffer"
@@ -266,21 +268,31 @@
         ]
       },
       {
-        "title": "04. Bluza Rupta 2L",
-        "hours": 3,
+        "title": "04. Double Sleeve Patch L",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235844, #235851",
+        "orderName": "#235826",
         "orderLinks": [
           {
-            "name": "#235844",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228455502148",
-            "cod": false
-          },
+            "name": "#235826",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "05. P Drept print L + M",
+        "hours": 4,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235826",
+        "orderLinks": [
           {
-            "name": "#235851",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229940318532",
+            "name": "#235826",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
             "cod": true
           }
         ]
@@ -449,6 +461,38 @@
       ]
     },
     {
+      "name": "W Retro 3L + M",
+      "orderName": "#235833, #235836, #235862, #235867",
+      "orderLinks": [
+        {
+          "name": "#235833",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11222873702724",
+          "cod": false
+        },
+        {
+          "name": "#235836",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11225832423748",
+          "cod": false
+        },
+        {
+          "name": "#235862",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231804588356",
+          "cod": false
+        },
+        {
+          "name": "#235867",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11232844677444",
+          "cod": true
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 10,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "Bluza Rupta 2L",
       "orderName": "#235844, #235851",
       "orderLinks": [
@@ -600,6 +644,23 @@
       ]
     },
     {
+      "name": "W Pink S",
+      "orderName": "#235866",
+      "orderLinks": [
+        {
+          "name": "#235866",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11232742867268",
+          "cod": true
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Mov M",
       "orderName": "ds-ayro-594-406974185",
       "orderLinks": [
@@ -611,33 +672,6 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "W Retro 2L + M",
-      "orderName": "#235833, #235836, #235862",
-      "orderLinks": [
-        {
-          "name": "#235833",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11222873702724",
-          "cod": false
-        },
-        {
-          "name": "#235836",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11225832423748",
-          "cod": false
-        },
-        {
-          "name": "#235862",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231804588356",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 7.5,
       "leftover": false,
       "tags": [
         "shopify"
