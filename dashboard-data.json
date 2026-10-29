@@ -1,13 +1,12 @@
 {
-  "generatedAt": "2026-10-29T09:47:41.873Z",
+  "generatedAt": "2026-10-29T16:27:19.502Z",
   "planDate": "2026-10-29",
   "unmatchedProducts": [
     "[#235834] Dystopia Black Oversized Sweater",
     "[#235843] Côte Bleue Short Sleeve Shirt",
     "[#235849] Dystopia Black Oversized Sweater",
     "[#235858] Fragmented Sleeves Shirt B/W",
-    "[#235860] Dystopia Black Oversized Sweater",
-    "Short Sleeve Shirt And Bermuda Set With Faces Design - Recycled Fabric"
+    "[#235860] Dystopia Black Oversized Sweater"
   ],
   "predictionIdeas": [
     {
@@ -132,7 +131,7 @@
     }
   ],
   "felicia": {
-    "hours": 9,
+    "hours": 8,
     "capacity": 7.2,
     "items": [
       {
@@ -144,102 +143,6 @@
         ],
         "orderName": null,
         "orderLinks": []
-      },
-      {
-        "title": "02. H Fume L",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235826",
-        "orderLinks": [
-          {
-            "name": "#235826",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. Bluza Rupta 2L",
-        "hours": 3,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235844, #235851",
-        "orderLinks": [
-          {
-            "name": "#235844",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228455502148",
-            "cod": false
-          },
-          {
-            "name": "#235851",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229940318532",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. Bluza rupta roz S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235853",
-        "orderLinks": [
-          {
-            "name": "#235853",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230213112132",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "05. T Offwhite Signal S",
-        "hours": 1.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235848",
-        "orderLinks": [
-          {
-            "name": "#235848",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
-            "cod": true
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 9,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "05. T offwhite M ",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T negru S",
-        "hours": 1.33,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235852",
-        "orderLinks": [
-          {
-            "name": "#235852",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230015029572",
-            "cod": false
-          }
-        ]
       },
       {
         "title": "02. Double Sleeve Patch L",
@@ -272,8 +175,84 @@
         ]
       },
       {
-        "title": "04. P Drept print L + M",
-        "hours": 4,
+        "title": "04. H negru M",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235848",
+        "orderLinks": [
+          {
+            "name": "#235848",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "05. T Offwhite Signal S",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235848",
+        "orderLinks": [
+          {
+            "name": "#235848",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229206675780",
+            "cod": true
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 7.75,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "05. T offwhite M ",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. T negru S",
+        "hours": 1.33,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235852",
+        "orderLinks": [
+          {
+            "name": "#235852",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230015029572",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. C gri Tigers XL",
+        "hours": 1.75,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3487291",
+        "orderLinks": [
+          {
+            "name": "WB#3487291",
+            "url": null,
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. H Fume L",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
@@ -282,6 +261,26 @@
           {
             "name": "#235826",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. Bluza Rupta 2L",
+        "hours": 3,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235844, #235851",
+        "orderLinks": [
+          {
+            "name": "#235844",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228455502148",
+            "cod": false
+          },
+          {
+            "name": "#235851",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229940318532",
             "cod": true
           }
         ]
@@ -362,6 +361,23 @@
         "leftover",
         "asana",
         "predicted"
+      ]
+    },
+    {
+      "name": "C gri Tigers XL",
+      "orderName": "WB#3487291",
+      "orderLinks": [
+        {
+          "name": "WB#3487291",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Camasa lunga",
+      "hours": 1.75,
+      "leftover": false,
+      "tags": [
+        "wb"
       ]
     },
     {
@@ -489,17 +505,22 @@
       ]
     },
     {
-      "name": "Bluza rupta roz S",
-      "orderName": "#235853",
+      "name": "Bluza rupta roz 2S",
+      "orderName": "#235853, #235865",
       "orderLinks": [
         {
           "name": "#235853",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230213112132",
           "cod": true
+        },
+        {
+          "name": "#235865",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11232550617412",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -562,8 +583,42 @@
       ]
     },
     {
-      "name": "W Retro 2L + XXL + M",
-      "orderName": "#235833, #235836, #235847, #235862",
+      "name": "T Negru XXL",
+      "orderName": "#235863",
+      "orderLinks": [
+        {
+          "name": "#235863",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231821660484",
+          "cod": true
+        }
+      ],
+      "category": "Tricou fundite negre",
+      "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Mov M",
+      "orderName": "ds-ayro-594-406974185",
+      "orderLinks": [
+        {
+          "name": "ds-ayro-594-406974185",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Retro 2L + M",
+      "orderName": "#235833, #235836, #235862",
       "orderLinks": [
         {
           "name": "#235833",
@@ -576,18 +631,13 @@
           "cod": false
         },
         {
-          "name": "#235847",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11229063512388",
-          "cod": false
-        },
-        {
           "name": "#235862",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231804588356",
           "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 10,
+      "hours": 7.5,
       "leftover": false,
       "tags": [
         "shopify"
