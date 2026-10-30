@@ -1,11 +1,13 @@
 {
-  "generatedAt": "2026-10-30T07:18:21.980Z",
+  "generatedAt": "2026-10-30T14:21:40.727Z",
   "planDate": "2026-10-30",
   "unmatchedProducts": [
     "[#235843] Côte Bleue Short Sleeve Shirt",
     "[#235858] Fragmented Sleeves Shirt B/W",
     "[#235860] Dystopia Black Oversized Sweater",
-    "[#235868] Fragmented Sleeves Shirt Cream"
+    "[#235868] Fragmented Sleeves Shirt Cream",
+    "[#235869] Dystopia Black Oversized Sweater",
+    "Short Sleeve Shirt In Mauve - Recycled Fabric"
   ],
   "predictionIdeas": [
     {
@@ -130,7 +132,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.5,
+    "hours": 8.83,
     "capacity": 7.2,
     "items": [
       {
@@ -142,6 +144,92 @@
         ],
         "orderName": null,
         "orderLinks": []
+      },
+      {
+        "title": "02. H Fume L",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235826",
+        "orderLinks": [
+          {
+            "name": "#235826",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. P Botanical XS + L",
+        "hours": 2.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235846, #235871",
+        "orderLinks": [
+          {
+            "name": "#235846",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228490170692",
+            "cod": false
+          },
+          {
+            "name": "#235871",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234015248708",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. C Bal scurta maro 2 buc XL",
+        "hours": 2.83,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235856, #235857",
+        "orderLinks": [
+          {
+            "name": "#235856",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230616682820",
+            "cod": false
+          },
+          {
+            "name": "#235857",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230651941188",
+            "cod": true
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 9,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "05. T offwhite M ",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. T negru S",
+        "hours": 1.33,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235852",
+        "orderLinks": [
+          {
+            "name": "#235852",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230015029572",
+            "cod": false
+          }
+        ]
       },
       {
         "title": "02. Double Sleeve Patch L",
@@ -174,69 +262,8 @@
         ]
       },
       {
-        "title": "04. P Drept negru femei MG XS",
-        "hours": 2,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235859",
-        "orderLinks": [
-          {
-            "name": "#235859",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231076516164",
-            "cod": true
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 7.58,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "05. T offwhite M ",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T negru S",
-        "hours": 1.33,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235852",
-        "orderLinks": [
-          {
-            "name": "#235852",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230015029572",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. C gri Tigers XL",
-        "hours": 1.75,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3487291",
-        "orderLinks": [
-          {
-            "name": "WB#3487291",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. H Fume L",
-        "hours": 1,
+        "title": "04. P Drept print L + M",
+        "hours": 4,
         "tags": [
           "shopify"
         ],
@@ -245,26 +272,6 @@
           {
             "name": "#235826",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. C Bal scurta maro 2 buc XL",
-        "hours": 2.83,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235856, #235857",
-        "orderLinks": [
-          {
-            "name": "#235856",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230616682820",
-            "cod": false
-          },
-          {
-            "name": "#235857",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230651941188",
             "cod": true
           }
         ]
@@ -348,23 +355,6 @@
       ]
     },
     {
-      "name": "C gri Tigers XL",
-      "orderName": "WB#3487291",
-      "orderLinks": [
-        {
-          "name": "WB#3487291",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Camasa lunga",
-      "hours": 1.75,
-      "leftover": false,
-      "tags": [
-        "wb"
-      ]
-    },
-    {
       "name": "Double Sleeve Patch L",
       "orderName": "#235826",
       "orderLinks": [
@@ -427,6 +417,28 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "P Botanical XS + L",
+      "orderName": "#235846, #235871",
+      "orderLinks": [
+        {
+          "name": "#235846",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228490170692",
+          "cod": false
+        },
+        {
+          "name": "#235871",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234015248708",
+          "cod": true
+        }
+      ],
+      "category": "Pantaloni lungi full print",
+      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -545,6 +557,23 @@
       ]
     },
     {
+      "name": "W Tokyo M",
+      "orderName": "#235872",
+      "orderLinks": [
+        {
+          "name": "#235872",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234222440772",
+          "cod": true
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Mov M",
       "orderName": "ds-ayro-594-406974185",
       "orderLinks": [
@@ -573,23 +602,6 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "P Botanical XS",
-      "orderName": "#235846",
-      "orderLinks": [
-        {
-          "name": "#235846",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228490170692",
-          "cod": false
-        }
-      ],
-      "category": "Pantaloni lungi full print",
-      "hours": 1.25,
       "leftover": false,
       "tags": [
         "shopify"
@@ -658,6 +670,23 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Statue M",
+      "orderName": "#235870",
+      "orderLinks": [
+        {
+          "name": "#235870",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11233678983492",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
