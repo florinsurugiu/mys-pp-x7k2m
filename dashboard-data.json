@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T02:32:04.324Z",
+  "generatedAt": "2026-10-31T08:49:07.866Z",
   "planDate": "2026-11-02",
   "unmatchedProducts": [
     "[#235843] Côte Bleue Short Sleeve Shirt",
@@ -8,6 +8,7 @@
     "[#235868] Fragmented Sleeves Shirt Cream",
     "[#235869] Dystopia Black Oversized Sweater",
     "[#235874] Spirit Grey Oversized T-Shirt",
+    "[#235875] Halloween Gift",
     "Short Sleeve Shirt In Mauve - Recycled Fabric"
   ],
   "predictionIdeas": [
@@ -133,7 +134,7 @@
     }
   ],
   "felicia": {
-    "hours": 12.67,
+    "hours": 12.33,
     "capacity": 7.2,
     "items": [
       {
@@ -148,7 +149,7 @@
       },
       {
         "title": "02. T negru S",
-        "hours": 0.67,
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
@@ -163,17 +164,17 @@
         ]
       },
       {
-        "title": "03. Double Sleeve Patch L",
-        "hours": 1,
+        "title": "03. W Beige L",
+        "hours": 2.5,
         "tags": [
-          "shopify"
+          "wb"
         ],
-        "orderName": "#235826",
+        "orderName": "WB#3488825",
         "orderLinks": [
           {
-            "name": "#235826",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
-            "cod": true
+            "name": "WB#3488825",
+            "url": null,
+            "cod": false
           }
         ]
       },
@@ -196,31 +197,11 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "05. P Botanical XS + L",
-        "hours": 2.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235846, #235871",
-        "orderLinks": [
-          {
-            "name": "#235846",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228490170692",
-            "cod": false
-          },
-          {
-            "name": "#235871",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234015248708",
-            "cod": true
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 11.08,
+    "hours": 9.08,
     "capacity": 7.2,
     "items": [
       {
@@ -233,38 +214,38 @@
         ]
       },
       {
-        "title": "01. T negru L",
+        "title": "01. T negru XXL",
         "hours": 0.67,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235852",
+        "orderName": "#235875",
         "orderLinks": [
           {
-            "name": "#235852",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230015029572",
+            "name": "#235875",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
             "cod": false
           }
         ]
       },
       {
-        "title": "02. W Beige L",
-        "hours": 2.5,
+        "title": "02. Pant gri Trousers S",
+        "hours": 1.25,
         "tags": [
           "wb"
         ],
-        "orderName": "WB#3488825",
+        "orderName": "WB#3488909",
         "orderLinks": [
           {
-            "name": "WB#3488825",
+            "name": "WB#3488909",
             "url": null,
             "cod": false
           }
         ]
       },
       {
-        "title": "03. H Fume L",
+        "title": "03. Double Sleeve Patch L",
         "hours": 1,
         "tags": [
           "shopify"
@@ -294,26 +275,36 @@
         ]
       },
       {
-        "title": "05. C Bal scurta maro 2 buc XL + L",
-        "hours": 4.25,
+        "title": "05. H Fume L",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235856, #235857, #235873",
+        "orderName": "#235826",
         "orderLinks": [
           {
-            "name": "#235856",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230616682820",
+            "name": "#235826",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11219259818308",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "06. P Botanical XS + L",
+        "hours": 2.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235846, #235871",
+        "orderLinks": [
+          {
+            "name": "#235846",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228490170692",
             "cod": false
           },
           {
-            "name": "#235857",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230651941188",
-            "cod": true
-          },
-          {
-            "name": "#235873",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234849423684",
+            "name": "#235871",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234015248708",
             "cod": true
           }
         ]
@@ -408,6 +399,23 @@
       ],
       "category": "Windbreaker",
       "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "wb"
+      ]
+    },
+    {
+      "name": "Pant gri Trousers S",
+      "orderName": "WB#3488909",
+      "orderLinks": [
+        {
+          "name": "WB#3488909",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Pantaloni lungi full print",
+      "hours": 1.25,
       "leftover": false,
       "tags": [
         "wb"
@@ -570,8 +578,8 @@
       ]
     },
     {
-      "name": "W Retro M + L",
-      "orderName": "#235862, #235867",
+      "name": "W Retro M + 2L",
+      "orderName": "#235862, #235867, #235875",
       "orderLinks": [
         {
           "name": "#235862",
@@ -582,10 +590,15 @@
           "name": "#235867",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11232844677444",
           "cod": true
+        },
+        {
+          "name": "#235875",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 5,
+      "hours": 7.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -860,16 +873,6 @@
     {
       "gid": "1218481540198823",
       "name": "T alb XXL",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1219925941522467",
-      "name": "T negru XXL",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
