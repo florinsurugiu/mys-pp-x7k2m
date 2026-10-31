@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T14:51:31.185Z",
+  "generatedAt": "2026-10-31T19:13:49.978Z",
   "planDate": "2026-11-02",
   "unmatchedProducts": [
     "[#235843] Côte Bleue Short Sleeve Shirt",
@@ -559,8 +559,8 @@
       ]
     },
     {
-      "name": "W Retro M + 2L",
-      "orderName": "#235862, #235867, #235875",
+      "name": "W Retro 2M + 2L",
+      "orderName": "#235862, #235867, #235875, #235880",
       "orderLinks": [
         {
           "name": "#235862",
@@ -576,10 +576,15 @@
           "name": "#235875",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
           "cod": false
+        },
+        {
+          "name": "#235880",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236680335684",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 7.5,
+      "hours": 10,
       "leftover": false,
       "tags": [
         "shopify"
@@ -603,17 +608,22 @@
       ]
     },
     {
-      "name": "W Pink S",
-      "orderName": "#235866",
+      "name": "W Pink S + XS",
+      "orderName": "#235866, #235879",
       "orderLinks": [
         {
           "name": "#235866",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11232742867268",
           "cod": true
+        },
+        {
+          "name": "#235879",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236655792452",
+          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 5,
       "leftover": false,
       "tags": [
         "shopify"
