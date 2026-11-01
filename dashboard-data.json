@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T19:31:21.245Z",
+  "generatedAt": "2026-11-01T23:00:36.870Z",
   "planDate": "2026-11-02",
   "unmatchedProducts": [
     "[#235843] Côte Bleue Short Sleeve Shirt",
@@ -592,17 +592,22 @@
       ]
     },
     {
-      "name": "T Negru XXL",
-      "orderName": "#235863",
+      "name": "T Negru XXL + M",
+      "orderName": "#235863, #235886",
       "orderLinks": [
         {
           "name": "#235863",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231821660484",
           "cod": true
+        },
+        {
+          "name": "#235886",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239110279492",
+          "cod": true
         }
       ],
       "category": "Tricou fundite negre",
-      "hours": 2,
+      "hours": 4,
       "leftover": false,
       "tags": [
         "shopify"
@@ -722,6 +727,23 @@
         {
           "name": "#235884",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11238070583620",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Alb M",
+      "orderName": "#235885",
+      "orderLinks": [
+        {
+          "name": "#235885",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11238933889348",
           "cod": true
         }
       ],
