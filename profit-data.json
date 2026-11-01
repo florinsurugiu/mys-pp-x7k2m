@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-11-01T19:53:46.739Z",
+  "generatedAt": "2026-11-01T23:22:33.816Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.3447,
   "days": [
-    {
-      "date": "2026-10-02",
-      "revenue": 2017.31,
-      "cogs": 1010.55,
-      "shipping": 83.3,
-      "adSpend": 621.05,
-      "grossProfit": 923.46,
-      "netProfit": 302.41,
-      "roas": 3.25,
-      "unknownCostUnits": 0
-    },
     {
       "date": "2026-10-03",
       "revenue": 2981.53,
@@ -337,28 +326,39 @@
     },
     {
       "date": "2026-11-01",
-      "revenue": 1038.58,
-      "cogs": 588,
+      "revenue": 1582.98,
+      "cogs": 812.06,
       "shipping": 83.3,
-      "adSpend": 482.25,
-      "grossProfit": 367.28,
-      "netProfit": -114.97,
-      "roas": 2.15,
+      "adSpend": 544.41,
+      "grossProfit": 687.62,
+      "netProfit": 143.21,
+      "roas": 2.91,
+      "unknownCostUnits": 0
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 0,
+      "cogs": 0,
+      "shipping": 0,
+      "adSpend": 19.83,
+      "grossProfit": 0,
+      "netProfit": -19.83,
+      "roas": 0,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 9541.25,
-      "purchases": 91,
-      "metaRoas": 4.425402
+      "spend": 9329.28,
+      "purchases": 87,
+      "metaRoas": 4.387277
     },
     {
       "name": "DE - Copy 2",
-      "spend": 842.49,
+      "spend": 856.27,
       "purchases": 3,
-      "metaRoas": 1.283258
+      "metaRoas": 1.262593
     }
   ],
   "months": {
@@ -373,14 +373,14 @@
       "lastDay": "2026-10-31"
     },
     "2026-11": {
-      "revenue": 1038.58,
-      "cogs": 588,
+      "revenue": 1582.98,
+      "cogs": 812.06,
       "shipping": 83.3,
-      "adSpend": 482.25,
-      "orders": 4,
+      "adSpend": 564.24,
+      "orders": 6,
       "unknownCostUnits": 0,
       "firstDay": "2026-11-01",
-      "lastDay": "2026-11-01"
+      "lastDay": "2026-11-02"
     }
   }
 }
