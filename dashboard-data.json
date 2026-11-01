@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T08:02:50.591Z",
+  "generatedAt": "2026-11-01T15:00:03.390Z",
   "planDate": "2026-11-02",
   "unmatchedProducts": [
     "[#235843] Côte Bleue Short Sleeve Shirt",
@@ -10,6 +10,7 @@
     "[#235874] Spirit Grey Oversized T-Shirt",
     "[#235875] Halloween Gift",
     "[#235876] Dystopia Black Oversized Sweater",
+    "[#235883] Complex Minds B/W Checkered Shirt",
     "Short Sleeve Shirt In Mauve - Recycled Fabric"
   ],
   "predictionIdeas": [
@@ -70,22 +71,6 @@
       "hours": 3
     },
     {
-      "productId": "gid://shopify/Product/15572095795524",
-      "title": "Fragmented Sleeves Shirt V3",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/fragmented-sleeves-shirt-v2_01_her-front.png?v=1792827275",
-      "category": "Camasa Unisex",
-      "size": "M",
-      "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15573327249732",
-      "title": "Reality Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
-      "category": "Tricou simplu",
-      "size": "XXL",
-      "hours": 0.6667
-    },
-    {
       "productId": "gid://shopify/Product/8877513113924",
       "title": "Black Hoodie Spirit",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated575_5da77184-16dc-4104-aa57-9769c0980707.jpg?v=1769623148",
@@ -129,6 +114,22 @@
       "productId": "gid://shopify/Product/15583492604228",
       "title": "MSPCT Patch Black Tee",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mspct-tshirt-women.jpg?v=1788293923",
+      "category": "Tricou simplu",
+      "size": "M",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/14996604289348",
+      "title": "Complex Minds Checkered Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_204524_0c3a6aa4-e4ff-44e6-84a1-515fc09722cf.jpg?v=1787777353",
+      "category": "Camasa Unisex",
+      "size": "M",
+      "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15636759511364",
+      "title": "Worldwide Oversized Off-White Tee",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260811_191405_9b4656a9-15ce-4240-84fc-7bd02042e69f-_1.jpg?v=1786555109",
       "category": "Tricou simplu",
       "size": "M",
       "hours": 0.6667
@@ -715,6 +716,23 @@
       ]
     },
     {
+      "name": "T Gri XL",
+      "orderName": "#235884",
+      "orderLinks": [
+        {
+          "name": "#235884",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11238070583620",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "H offwhite M",
       "orderName": "#235845",
       "orderLinks": [
@@ -817,17 +835,39 @@
       ]
     },
     {
-      "name": "T Negru 2L",
-      "orderName": "#235877",
+      "name": "T Negru 2L + M",
+      "orderName": "#235877, #235882",
       "orderLinks": [
         {
           "name": "#235877",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
           "cod": false
+        },
+        {
+          "name": "#235882",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 2.0000999999999998,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C maneci detasate maro inchis XL",
+      "orderName": "#235881",
+      "orderLinks": [
+        {
+          "name": "#235881",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237594661188",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
