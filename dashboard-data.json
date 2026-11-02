@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T09:53:38.110Z",
+  "generatedAt": "2026-11-02T20:14:40.007Z",
   "planDate": "2026-11-02",
   "unmatchedProducts": [
     "[#235858] Fragmented Sleeves Shirt B/W",
@@ -10,6 +10,8 @@
     "[#235875] Halloween Gift",
     "[#235876] Dystopia Black Oversized Sweater",
     "[#235883] Complex Minds B/W Checkered Shirt",
+    "[#235889] Fragmented Sleeves Shirt B/W",
+    "[#235891] Dystopia Black Oversized Sweater",
     "Short Sleeve Shirt In Mauve - Recycled Fabric"
   ],
   "predictionIdeas": [
@@ -110,14 +112,6 @@
       "hours": 1
     },
     {
-      "productId": "gid://shopify/Product/15589180244292",
-      "title": "Blue Stripes Oversized Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_122211-_1_0182a10e-28a0-4261-a557-064737d29d7e.jpg?v=1786556115",
-      "category": "Camasa Unisex",
-      "size": "S",
-      "hours": 1.5
-    },
-    {
       "productId": "gid://shopify/Product/8888098619716",
       "title": "Ivory T-shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_205443_79f01467-c4b8-41bc-842e-7caad7f75630.jpg?v=1787779168",
@@ -132,6 +126,14 @@
       "category": "Camasa scurta",
       "size": "S",
       "hours": 1.4167
+    },
+    {
+      "productId": "gid://shopify/Product/15499252695364",
+      "title": "Fragmented Sleeves Shirt V2",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
+      "category": "Camasa Unisex",
+      "size": "L",
+      "hours": 1.5
     }
   ],
   "felicia": {
@@ -486,14 +488,9 @@
       ]
     },
     {
-      "name": "C Bal scurta maro 2 buc XL + L",
-      "orderName": "#235856, #235857, #235873",
+      "name": "C Bal scurta maro XL + L",
+      "orderName": "#235857, #235873",
       "orderLinks": [
-        {
-          "name": "#235856",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230616682820",
-          "cod": false
-        },
         {
           "name": "#235857",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230651941188",
@@ -506,7 +503,7 @@
         }
       ],
       "category": "Camasa scurta",
-      "hours": 4.2501,
+      "hours": 2.8334,
       "leftover": false,
       "tags": [
         "shopify"
@@ -530,17 +527,22 @@
       ]
     },
     {
-      "name": "B Obsidian L",
-      "orderName": "#235860",
+      "name": "B Obsidian L + XXL",
+      "orderName": "#235860, #235892",
       "orderLinks": [
         {
           "name": "#235860",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231207948612",
           "cod": true
+        },
+        {
+          "name": "#235892",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11241013707076",
+          "cod": true
         }
       ],
       "category": "Bluza inimioara / obsidian",
-      "hours": 1.5,
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -754,6 +756,23 @@
       ]
     },
     {
+      "name": "T Albastru M",
+      "orderName": "#235888",
+      "orderLinks": [
+        {
+          "name": "#235888",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11240110883140",
+          "cod": true
+        }
+      ],
+      "category": "Tricou raiat",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "Bluza rupta roz S",
       "orderName": "#235865",
       "orderLinks": [
@@ -816,6 +835,23 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Blue M",
+      "orderName": "#235890",
+      "orderLinks": [
+        {
+          "name": "#235890",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11240478441796",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
