@@ -1,8 +1,7 @@
 {
-  "generatedAt": "2026-11-02T02:22:30.683Z",
+  "generatedAt": "2026-11-02T09:53:38.110Z",
   "planDate": "2026-11-02",
   "unmatchedProducts": [
-    "[#235843] Côte Bleue Short Sleeve Shirt",
     "[#235858] Fragmented Sleeves Shirt B/W",
     "[#235860] Dystopia Black Oversized Sweater",
     "[#235868] Fragmented Sleeves Shirt Cream",
@@ -47,12 +46,28 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/8825186812228",
-      "title": "Interchangable Patches Black Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
-      "category": "Hanorac patchuri",
-      "size": "L",
-      "hours": 3
+      "productId": "gid://shopify/Product/15573327249732",
+      "title": "Reality Grey Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
+      "category": "Tricou simplu",
+      "size": "XL",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15419494531396",
+      "title": "Aria Scarf Hoodie",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated784.jpg?v=1766876426",
+      "category": "Hanorac bumbac",
+      "size": "M",
+      "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/15573327249732",
+      "title": "Reality Grey Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
+      "category": "Tricou simplu",
+      "size": "XXL",
+      "hours": 0.6667
     },
     {
       "productId": "gid://shopify/Product/8877513113924",
@@ -117,22 +132,6 @@
       "category": "Camasa scurta",
       "size": "S",
       "hours": 1.4167
-    },
-    {
-      "productId": "gid://shopify/Product/8825186812228",
-      "title": "Interchangable Patches Black Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated526.jpg?v=1766693150",
-      "category": "Hanorac patchuri",
-      "size": "XL",
-      "hours": 3
-    },
-    {
-      "productId": "gid://shopify/Product/15499252695364",
-      "title": "Fragmented Sleeves Shirt V2",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_100316_6ed0fe52-3a55-458c-be32-68748ee7c06e.jpg?v=1786595292",
-      "category": "Camasa Unisex",
-      "size": "L",
-      "hours": 1.5
     }
   ],
   "felicia": {
@@ -218,7 +217,7 @@
     ]
   },
   "flori": {
-    "hours": 9.17,
+    "hours": 11.17,
     "capacity": 7.2,
     "items": [
       {
@@ -237,16 +236,16 @@
           "shopify",
           "buffer"
         ],
-        "orderName": "#235852, #235875",
+        "orderName": "#235875, #235877",
         "orderLinks": [
-          {
-            "name": "#235852",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230015029572",
-            "cod": false
-          },
           {
             "name": "#235875",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
+            "cod": false
+          },
+          {
+            "name": "#235877",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
             "cod": false
           }
         ]
@@ -267,12 +266,12 @@
         ]
       },
       {
-        "title": "03. P Drept MG M + L",
-        "hours": 4,
+        "title": "03. P Drept MG M + L + XL",
+        "hours": 6,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235826, #235877",
+        "orderName": "#235826, #235877, #235887",
         "orderLinks": [
           {
             "name": "#235826",
@@ -283,6 +282,11 @@
             "name": "#235877",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
             "cod": false
+          },
+          {
+            "name": "#235887",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
+            "cod": true
           }
         ]
       }
@@ -416,8 +420,8 @@
       ]
     },
     {
-      "name": "P Drept MG M + L",
-      "orderName": "#235826, #235877",
+      "name": "P Drept MG M + L + XL",
+      "orderName": "#235826, #235877, #235887",
       "orderLinks": [
         {
           "name": "#235826",
@@ -428,10 +432,15 @@
           "name": "#235877",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
           "cod": false
+        },
+        {
+          "name": "#235887",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
+          "cod": true
         }
       ],
       "category": "Pantalon drept",
-      "hours": 4,
+      "hours": 6,
       "leftover": false,
       "tags": [
         "shopify"
@@ -471,28 +480,6 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "P Botanical XS + L",
-      "orderName": "#235846, #235871",
-      "orderLinks": [
-        {
-          "name": "#235846",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228490170692",
-          "cod": false
-        },
-        {
-          "name": "#235871",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234015248708",
-          "cod": true
-        }
-      ],
-      "category": "Pantaloni lungi full print",
-      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -614,22 +601,34 @@
       ]
     },
     {
-      "name": "W Pink S + XS",
-      "orderName": "#235866, #235879",
+      "name": "W Pink S",
+      "orderName": "#235866",
       "orderLinks": [
         {
           "name": "#235866",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11232742867268",
           "cod": true
-        },
-        {
-          "name": "#235879",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236655792452",
-          "cod": false
         }
       ],
       "category": "Windbreaker",
-      "hours": 5,
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "P Botanical L",
+      "orderName": "#235871",
+      "orderLinks": [
+        {
+          "name": "#235871",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234015248708",
+          "cod": true
+        }
+      ],
+      "category": "Pantaloni lungi full print",
+      "hours": 1.25,
       "leftover": false,
       "tags": [
         "shopify"
@@ -721,23 +720,6 @@
       ]
     },
     {
-      "name": "T Gri XL",
-      "orderName": "#235884",
-      "orderLinks": [
-        {
-          "name": "#235884",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11238070583620",
-          "cod": true
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T Alb M",
       "orderName": "#235885",
       "orderLinks": [
@@ -755,68 +737,17 @@
       ]
     },
     {
-      "name": "H offwhite M",
-      "orderName": "#235845",
+      "name": "H Patch XL",
+      "orderName": "#235887",
       "orderLinks": [
         {
-          "name": "#235845",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228458877252",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "P Grey XS",
-      "orderName": "#235846",
-      "orderLinks": [
-        {
-          "name": "#235846",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11228490170692",
-          "cod": false
-        }
-      ],
-      "category": "Pantaloni lungi full print",
-      "hours": 1.25,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H Patch M",
-      "orderName": "#235854",
-      "orderLinks": [
-        {
-          "name": "#235854",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230298014020",
-          "cod": false
+          "name": "#235887",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
+          "cod": true
         }
       ],
       "category": "Hanorac patchuri",
       "hours": 3,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H Aria M",
-      "orderName": "#235855",
-      "orderLinks": [
-        {
-          "name": "#235855",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11230547902788",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
@@ -857,28 +788,6 @@
       ]
     },
     {
-      "name": "T Negru 2L + M",
-      "orderName": "#235877, #235882",
-      "orderLinks": [
-        {
-          "name": "#235877",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-          "cod": false
-        },
-        {
-          "name": "#235882",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 2.0000999999999998,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "C maneci detasate maro inchis XL",
       "orderName": "#235881",
       "orderLinks": [
@@ -890,6 +799,23 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru M",
+      "orderName": "#235882",
+      "orderLinks": [
+        {
+          "name": "#235882",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
