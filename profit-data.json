@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T02:29:29.860Z",
+  "generatedAt": "2026-11-03T10:03:51.967Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -271,13 +271,13 @@
     },
     {
       "date": "2026-10-28",
-      "revenue": 4279.36,
-      "cogs": 2105.06,
+      "revenue": 4007.16,
+      "cogs": 1923.09,
       "shipping": 166.6,
       "adSpend": 482.19,
-      "grossProfit": 2007.7,
-      "netProfit": 1525.51,
-      "roas": 8.87,
+      "grossProfit": 1917.47,
+      "netProfit": 1435.28,
+      "roas": 8.31,
       "unknownCostUnits": 0
     },
     {
@@ -329,55 +329,55 @@
       "revenue": 2692.18,
       "cogs": 1163.07,
       "shipping": 166.6,
-      "adSpend": 478.24,
+      "adSpend": 479.79,
       "grossProfit": 1362.51,
-      "netProfit": 884.27,
-      "roas": 5.63,
+      "netProfit": 882.72,
+      "roas": 5.61,
       "unknownCostUnits": 1
     },
     {
       "date": "2026-11-03",
-      "revenue": 408,
-      "cogs": 181.97,
-      "shipping": 0,
-      "adSpend": 34.71,
-      "grossProfit": 226.03,
-      "netProfit": 191.32,
-      "roas": 11.75,
+      "revenue": 1273.75,
+      "cogs": 545.91,
+      "shipping": 83.3,
+      "adSpend": 203.37,
+      "grossProfit": 644.54,
+      "netProfit": 441.17,
+      "roas": 6.26,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 9481.42,
+      "spend": 9639.23,
       "purchases": 91,
-      "metaRoas": 4.442981
+      "metaRoas": 4.370242
     },
     {
       "name": "DE - Copy 2",
-      "spend": 938.49,
+      "spend": 950.88,
       "purchases": 4,
-      "metaRoas": 1.464975
+      "metaRoas": 1.445886
     }
   ],
   "months": {
     "2026-10": {
-      "revenue": 62339.4,
-      "cogs": 33461.06,
+      "revenue": 62067.2,
+      "cogs": 33279.09,
       "shipping": 2082.5,
       "adSpend": 16045.48,
-      "orders": 129,
+      "orders": 128,
       "unknownCostUnits": 1,
       "firstDay": "2026-10-01",
       "lastDay": "2026-10-31"
     },
     "2026-11": {
-      "revenue": 4683.16,
-      "cogs": 2157.1,
-      "shipping": 249.9,
-      "adSpend": 1062.44,
-      "orders": 14,
+      "revenue": 5548.91,
+      "cogs": 2521.04,
+      "shipping": 333.2,
+      "adSpend": 1232.64,
+      "orders": 15,
       "unknownCostUnits": 1,
       "firstDay": "2026-11-01",
       "lastDay": "2026-11-03"
