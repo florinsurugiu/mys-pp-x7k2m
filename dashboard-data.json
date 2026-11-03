@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T17:43:11.031Z",
-  "planDate": "2026-11-03",
+  "generatedAt": "2026-11-03T22:34:21.138Z",
+  "planDate": "2026-11-04",
   "unmatchedProducts": [
     "[#235860] Dystopia Black Oversized Sweater",
     "[#235868] Fragmented Sleeves Shirt Cream",
@@ -15,6 +15,7 @@
     "[#235895] Fragmented Sleeves Shirt Cream",
     "[#235895] Complex Minds Brown Checkered Shirt",
     "[#235896] Pop Cola Socks (3 pairs)",
+    "[#235899] Dystopia Black Oversized Sweater",
     "Short Sleeve Shirt In Mauve - Recycled Fabric"
   ],
   "predictionIdeas": [
@@ -533,17 +534,22 @@
       ]
     },
     {
-      "name": "W Tokyo M",
-      "orderName": "#235872",
+      "name": "W Tokyo M + XS",
+      "orderName": "#235872, #235898",
       "orderLinks": [
         {
           "name": "#235872",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234222440772",
           "cod": true
+        },
+        {
+          "name": "#235898",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11242944856388",
+          "cod": true
         }
       ],
       "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 5,
       "leftover": false,
       "tags": [
         "shopify"
