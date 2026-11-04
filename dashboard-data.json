@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-04T17:56:25.231Z",
-  "planDate": "2026-11-04",
+  "generatedAt": "2026-11-04T23:34:16.553Z",
+  "planDate": "2026-11-05",
   "unmatchedProducts": [
     "[#235869] Dystopia Black Oversized Sweater",
     "[#235874] Spirit Grey Oversized T-Shirt",
@@ -578,6 +578,28 @@
       ]
     },
     {
+      "name": "T Negru M + XXL",
+      "orderName": "#235882, #235906",
+      "orderLinks": [
+        {
+          "name": "#235882",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
+          "cod": false
+        },
+        {
+          "name": "#235906",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245492306244",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 1.3334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Alb M",
       "orderName": "#235885",
       "orderLinks": [
@@ -747,23 +769,6 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Negru M",
-      "orderName": "#235882",
-      "orderLinks": [
-        {
-          "name": "#235882",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
