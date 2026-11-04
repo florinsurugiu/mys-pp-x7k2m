@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T09:56:42.611Z",
+  "generatedAt": "2026-11-04T17:56:25.231Z",
   "planDate": "2026-11-04",
   "unmatchedProducts": [
     "[#235869] Dystopia Black Oversized Sweater",
@@ -14,7 +14,8 @@
     "[#235899] Dystopia Black Oversized Sweater",
     "[#235900] Black Friday Gift",
     "[#235900] Dystopia Black Oversized Sweater",
-    "[#235901] Black Friday Gift",
+    "[#235904] Black Friday Gift",
+    "[#235904] Complex Minds B/W Checkered Shirt",
     "Short Sleeve Shirt In Mauve - Recycled Fabric"
   ],
   "predictionIdeas": [
@@ -577,28 +578,6 @@
       ]
     },
     {
-      "name": "T Negru 2M",
-      "orderName": "#235882, #235901",
-      "orderLinks": [
-        {
-          "name": "#235882",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
-          "cod": false
-        },
-        {
-          "name": "#235901",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11243867603268",
-          "cod": true
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 1.3334,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T Alb M",
       "orderName": "#235885",
       "orderLinks": [
@@ -633,17 +612,22 @@
       ]
     },
     {
-      "name": "H Patch XL",
-      "orderName": "#235887",
+      "name": "H Patch XL + XXL",
+      "orderName": "#235887, #235904",
       "orderLinks": [
         {
           "name": "#235887",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
           "cod": true
+        },
+        {
+          "name": "#235904",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245326205252",
+          "cod": true
         }
       ],
       "category": "Hanorac patchuri",
-      "hours": 3,
+      "hours": 6,
       "leftover": false,
       "tags": [
         "shopify"
@@ -701,6 +685,23 @@
       ]
     },
     {
+      "name": "H negru Dept S",
+      "orderName": "#235902",
+      "orderLinks": [
+        {
+          "name": "#235902",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11244390121796",
+          "cod": true
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "W Statue M",
       "orderName": "#235870",
       "orderLinks": [
@@ -752,12 +753,63 @@
       ]
     },
     {
+      "name": "T Negru M",
+      "orderName": "#235882",
+      "orderLinks": [
+        {
+          "name": "#235882",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Galben XS",
       "orderName": "#235896",
       "orderLinks": [
         {
           "name": "#235896",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11242016538948",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H offwhite M",
+      "orderName": "#235903",
+      "orderLinks": [
+        {
+          "name": "#235903",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245141262660",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru Superwoman XXL",
+      "orderName": "#235905",
+      "orderLinks": [
+        {
+          "name": "#235905",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245356810564",
           "cod": false
         }
       ],
