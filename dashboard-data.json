@@ -1,9 +1,7 @@
 {
-  "generatedAt": "2026-11-04T02:40:50.867Z",
+  "generatedAt": "2026-11-04T09:56:42.611Z",
   "planDate": "2026-11-04",
   "unmatchedProducts": [
-    "[#235860] Dystopia Black Oversized Sweater",
-    "[#235868] Fragmented Sleeves Shirt Cream",
     "[#235869] Dystopia Black Oversized Sweater",
     "[#235874] Spirit Grey Oversized T-Shirt",
     "[#235875] Black Friday Gift",
@@ -12,13 +10,22 @@
     "[#235889] Fragmented Sleeves Shirt B/W",
     "[#235891] Dystopia Black Oversized Sweater",
     "[#235893] Archive Pieces Longsleeve",
-    "[#235895] Fragmented Sleeves Shirt Cream",
-    "[#235895] Complex Minds Brown Checkered Shirt",
     "[#235896] Pop Cola Socks (3 pairs)",
     "[#235899] Dystopia Black Oversized Sweater",
+    "[#235900] Black Friday Gift",
+    "[#235900] Dystopia Black Oversized Sweater",
+    "[#235901] Black Friday Gift",
     "Short Sleeve Shirt In Mauve - Recycled Fabric"
   ],
   "predictionIdeas": [
+    {
+      "productId": "gid://shopify/Product/15421171990852",
+      "title": "Dystopia Pink Oversized Sweater",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated821.jpg?v=1767033677",
+      "category": "Hanorac bumbac",
+      "size": "S",
+      "hours": 1
+    },
     {
       "productId": "gid://shopify/Product/14969291276612",
       "title": "Not My Circus White T-shirt",
@@ -130,18 +137,10 @@
       "category": "Tricou simplu",
       "size": "XXL",
       "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/14982879248708",
-      "title": "Dystopia White Oversized Sweater",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dystopia-oversized-crew_01_her-front.png?v=1792827274",
-      "category": "Bluza inimioara / obsidian",
-      "size": "S",
-      "hours": 1.5
     }
   ],
   "felicia": {
-    "hours": 10.92,
+    "hours": 15,
     "capacity": 7.2,
     "items": [
       {
@@ -155,23 +154,7 @@
         "orderLinks": []
       },
       {
-        "title": "02. T negru XXL",
-        "hours": 0.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235877",
-        "orderLinks": [
-          {
-            "name": "#235877",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. W Beige L",
+        "title": "02. W Beige L",
         "hours": 2.5,
         "tags": [
           "wb"
@@ -182,102 +165,6 @@
             "name": "WB#3488825",
             "url": null,
             "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. Pant gri Trousers S",
-        "hours": 1.25,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3488909",
-        "orderLinks": [
-          {
-            "name": "WB#3488909",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "05. T Negru XXL + M",
-        "hours": 4,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235863, #235886",
-        "orderLinks": [
-          {
-            "name": "#235863",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231821660484",
-            "cod": true
-          },
-          {
-            "name": "#235886",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239110279492",
-            "cod": true
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 16.33,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "05. T offwhite M ",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T offwhite M",
-        "hours": 2.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235897, #235875, #235877",
-        "orderLinks": [
-          {
-            "name": "#235897",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11242270490948",
-            "cod": false
-          },
-          {
-            "name": "#235875",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
-            "cod": false
-          },
-          {
-            "name": "#235877",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. B Obsidian L + XXL",
-        "hours": 3,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235860, #235892",
-        "orderLinks": [
-          {
-            "name": "#235860",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231207948612",
-            "cod": true
-          },
-          {
-            "name": "#235892",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11241013707076",
-            "cod": true
           }
         ]
       },
@@ -308,6 +195,77 @@
             "name": "#235880",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236680335684",
             "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 7.75,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "05. T offwhite M ",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. T offwhite M",
+        "hours": 3.33,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235897, #235875, #235877",
+        "orderLinks": [
+          {
+            "name": "#235897",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11242270490948",
+            "cod": false
+          },
+          {
+            "name": "#235875",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
+            "cod": false
+          },
+          {
+            "name": "#235877",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. Pant gri Trousers S",
+        "hours": 1.25,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3488909",
+        "orderLinks": [
+          {
+            "name": "WB#3488909",
+            "url": null,
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. W Pink S",
+        "hours": 2.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235866",
+        "orderLinks": [
+          {
+            "name": "#235866",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11232742867268",
+            "cod": true
           }
         ]
       }
@@ -424,28 +382,6 @@
       ]
     },
     {
-      "name": "B Obsidian L + XXL",
-      "orderName": "#235860, #235892",
-      "orderLinks": [
-        {
-          "name": "#235860",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231207948612",
-          "cod": true
-        },
-        {
-          "name": "#235892",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11241013707076",
-          "cod": true
-        }
-      ],
-      "category": "Bluza inimioara / obsidian",
-      "hours": 3,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "W Retro 2M + 2L",
       "orderName": "#235862, #235867, #235875, #235880",
       "orderLinks": [
@@ -472,28 +408,6 @@
       ],
       "category": "Windbreaker",
       "hours": 10,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Negru XXL + M",
-      "orderName": "#235863, #235886",
-      "orderLinks": [
-        {
-          "name": "#235863",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11231821660484",
-          "cod": true
-        },
-        {
-          "name": "#235886",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239110279492",
-          "cod": true
-        }
-      ],
-      "category": "Tricou fundite negre",
-      "hours": 4,
       "leftover": false,
       "tags": [
         "shopify"
@@ -663,6 +577,28 @@
       ]
     },
     {
+      "name": "T Negru 2M",
+      "orderName": "#235882, #235901",
+      "orderLinks": [
+        {
+          "name": "#235882",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
+          "cod": false
+        },
+        {
+          "name": "#235901",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11243867603268",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 1.3334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "T Alb M",
       "orderName": "#235885",
       "orderLinks": [
@@ -674,6 +610,23 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru M",
+      "orderName": "#235886",
+      "orderLinks": [
+        {
+          "name": "#235886",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239110279492",
+          "cod": true
+        }
+      ],
+      "category": "Tricou fundite negre",
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -714,6 +667,23 @@
       ]
     },
     {
+      "name": "B Obsidian XXL",
+      "orderName": "#235892",
+      "orderLinks": [
+        {
+          "name": "#235892",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11241013707076",
+          "cod": true
+        }
+      ],
+      "category": "Bluza inimioara / obsidian",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "C Gri Reversed S",
       "orderName": "#235894",
       "orderLinks": [
@@ -725,23 +695,6 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "Bluza rupta roz S",
-      "orderName": "#235865",
-      "orderLinks": [
-        {
-          "name": "#235865",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11232550617412",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
@@ -799,23 +752,6 @@
       ]
     },
     {
-      "name": "T Negru M",
-      "orderName": "#235882",
-      "orderLinks": [
-        {
-          "name": "#235882",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T Galben XS",
       "orderName": "#235896",
       "orderLinks": [
@@ -827,23 +763,6 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H offwhite XL",
-      "orderName": "#235897",
-      "orderLinks": [
-        {
-          "name": "#235897",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11242270490948",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
