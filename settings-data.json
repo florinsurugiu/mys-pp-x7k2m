@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T18:07:50.170Z",
+  "generatedAt": "2026-11-04T23:38:56.396Z",
   "currency": "RON",
   "products": [
     {
@@ -705,6 +705,33 @@
       "costSource": "actual"
     },
     {
+      "productId": "gid://shopify/Product/7820305301741",
+      "title": "Flared Pants Graffiti",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4229.jpg?v=1770331917",
+      "category": "Colanti",
+      "hours": 1,
+      "cost": 106.42,
+      "costSource": "actual"
+    },
+    {
+      "productId": "gid://shopify/Product/7820332368109",
+      "title": "Flared Pants Green",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4230.jpg?v=1770331749",
+      "category": "Colanti",
+      "hours": 1,
+      "cost": 106.42,
+      "costSource": "actual"
+    },
+    {
+      "productId": "gid://shopify/Product/7820328403181",
+      "title": "Flared Pants Retro",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4231_6cb4b2d5-3597-4e6e-a976-ac823df74255.jpg?v=1770331868",
+      "category": "Colanti",
+      "hours": 1,
+      "cost": 106.42,
+      "costSource": "actual"
+    },
+    {
       "productId": "gid://shopify/Product/15419270693188",
       "title": "Blue Camo Denim Jacket",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated680.jpg?v=1766872579",
@@ -801,7 +828,7 @@
       "category": "Fusta PoCola",
       "hours": 0.5,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/15412278493508",
@@ -1044,7 +1071,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/14841676988740",
@@ -1053,7 +1080,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/15412527432004",
@@ -1605,6 +1632,15 @@
       "costSource": "actual"
     },
     {
+      "productId": "gid://shopify/Product/8888098619716",
+      "title": "Ivory T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260826_205443_79f01467-c4b8-41bc-842e-7caad7f75630.jpg?v=1787779168",
+      "category": "Tricou raiat",
+      "hours": 1,
+      "cost": 103.77,
+      "costSource": "actual"
+    },
+    {
       "productId": "gid://shopify/Product/15572067942724",
       "title": "Spray Blue Stripes Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260610_195216_6fcf4f99-fbab-499e-8e56-f9786b1f818d.jpg?v=1786558467",
@@ -1629,6 +1665,24 @@
       "category": "Tricou simplu",
       "hours": 0.6667,
       "cost": 170.92,
+      "costSource": "actual"
+    },
+    {
+      "productId": "gid://shopify/Product/7820250448109",
+      "title": "AER Black T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_aer_tshirt.jpg?v=1769644685",
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "cost": 103.77,
+      "costSource": "actual"
+    },
+    {
+      "productId": "gid://shopify/Product/7839115542765",
+      "title": "AER Black T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/aer-black-t-shirt-657675_49294a87-ec43-4293-801a-57837b4cb19a.jpg?v=1770114192",
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "cost": 103.77,
       "costSource": "actual"
     },
     {
