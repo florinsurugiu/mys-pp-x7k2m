@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T11:37:43.332Z",
+  "generatedAt": "2026-11-05T19:03:59.461Z",
   "planDate": "2026-11-05",
   "unmatchedProducts": [
     "[#235874] Spirit Grey Oversized T-Shirt",
@@ -16,6 +16,8 @@
     "[#235904] Black Friday Gift",
     "[#235904] Complex Minds B/W Checkered Shirt",
     "[#235907] Black Friday Gift",
+    "[#235911] Oversized Cotton White T-shirt Focus",
+    "[#235913] Black Hoodie Angel",
     "Short Sleeve Shirt In Mauve - Recycled Fabric"
   ],
   "predictionIdeas": [
@@ -141,7 +143,7 @@
     }
   ],
   "felicia": {
-    "hours": 10.08,
+    "hours": 7.92,
     "capacity": 7.2,
     "items": [
       {
@@ -156,21 +158,16 @@
       },
       {
         "title": "02. T negru L circus (printat)",
-        "hours": 1.33,
+        "hours": 0.67,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235877, #235875",
+        "orderName": "#235877",
         "orderLinks": [
           {
             "name": "#235877",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-            "cod": false
-          },
-          {
-            "name": "#235875",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
             "cod": false
           }
         ]
@@ -191,21 +188,31 @@
         ]
       },
       {
-        "title": "04. W Tokyo M + XS",
-        "hours": 5,
+        "title": "04. W Indian L",
+        "hours": 2.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235872, #235898",
+        "orderName": "#235873",
         "orderLinks": [
           {
-            "name": "#235872",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234222440772",
+            "name": "#235873",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234849423684",
             "cod": true
-          },
+          }
+        ]
+      },
+      {
+        "title": "05. H negru Pop L",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235876",
+        "orderLinks": [
           {
-            "name": "#235898",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11242944856388",
+            "name": "#235876",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236164108612",
             "cod": true
           }
         ]
@@ -213,7 +220,7 @@
     ]
   },
   "flori": {
-    "hours": 9.5,
+    "hours": 11.58,
     "capacity": 7.2,
     "items": [
       {
@@ -226,14 +233,19 @@
         ]
       },
       {
-        "title": "01. T negru L",
-        "hours": 1.33,
+        "title": "01. T negru S",
+        "hours": 2,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235877",
+        "orderName": "#235875, #235877",
         "orderLinks": [
+          {
+            "name": "#235875",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
+            "cod": false
+          },
           {
             "name": "#235877",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
@@ -269,6 +281,21 @@
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11233678983492",
             "cod": false
           },
+          {
+            "name": "#235873",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234849423684",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "04. C Bal scurta maro L",
+        "hours": 1.42,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235873",
+        "orderLinks": [
           {
             "name": "#235873",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234849423684",
@@ -411,28 +438,6 @@
       ]
     },
     {
-      "name": "W Tokyo M + XS",
-      "orderName": "#235872, #235898",
-      "orderLinks": [
-        {
-          "name": "#235872",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11234222440772",
-          "cod": true
-        },
-        {
-          "name": "#235898",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11242944856388",
-          "cod": true
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "W Indian L",
       "orderName": "#235873",
       "orderLinks": [
@@ -484,8 +489,8 @@
       ]
     },
     {
-      "name": "P Drept MG L + XL",
-      "orderName": "#235877, #235887",
+      "name": "P Drept MG L + XL + M + XS",
+      "orderName": "#235877, #235887, #235910, #235913",
       "orderLinks": [
         {
           "name": "#235877",
@@ -496,10 +501,20 @@
           "name": "#235887",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
           "cod": true
+        },
+        {
+          "name": "#235910",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11250576064836",
+          "cod": true
+        },
+        {
+          "name": "#235913",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254773416260",
+          "cod": false
         }
       ],
       "category": "Pantalon drept",
-      "hours": 4,
+      "hours": 8,
       "leftover": false,
       "tags": [
         "shopify"
@@ -657,17 +672,56 @@
       ]
     },
     {
-      "name": "H negru Dept S",
-      "orderName": "#235902",
+      "name": "W Tokyo XS",
+      "orderName": "#235898",
+      "orderLinks": [
+        {
+          "name": "#235898",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11242944856388",
+          "cod": true
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H negru Dept 2S",
+      "orderName": "#235902, #235913",
       "orderLinks": [
         {
           "name": "#235902",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11244390121796",
           "cod": true
+        },
+        {
+          "name": "#235913",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254773416260",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Gri Vitamin S",
+      "orderName": "#235912",
+      "orderLinks": [
+        {
+          "name": "#235912",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254548562244",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -792,6 +846,40 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Solar XXXL",
+      "orderName": "#235909",
+      "orderLinks": [
+        {
+          "name": "#235909",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11250512363844",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "P Drept negru femei MG S",
+      "orderName": "#235913",
+      "orderLinks": [
+        {
+          "name": "#235913",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254773416260",
+          "cod": false
+        }
+      ],
+      "category": "Pantalon drept",
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
