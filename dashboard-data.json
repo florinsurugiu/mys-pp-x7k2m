@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T19:03:59.461Z",
-  "planDate": "2026-11-05",
+  "generatedAt": "2026-11-06T00:09:23.527Z",
+  "planDate": "2026-11-06",
   "unmatchedProducts": [
     "[#235874] Spirit Grey Oversized T-Shirt",
     "[#235875] Black Friday Gift",
@@ -18,6 +18,8 @@
     "[#235907] Black Friday Gift",
     "[#235911] Oversized Cotton White T-shirt Focus",
     "[#235913] Black Hoodie Angel",
+    "[#235914] Black Friday Gift",
+    "[#235915] Dystopia Black Oversized Sweater",
     "Short Sleeve Shirt In Mauve - Recycled Fabric"
   ],
   "predictionIdeas": [
@@ -28,14 +30,6 @@
       "category": "Hanorac bumbac",
       "size": "S",
       "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/15573327249732",
-      "title": "Reality Grey Oversized T-Shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260728_104822_248299fc-a1a7-4b06-8cd9-dbf084d6a615.jpg?v=1786558170",
-      "category": "Tricou simplu",
-      "size": "XL",
-      "hours": 0.6667
     },
     {
       "productId": "gid://shopify/Product/15419494531396",
@@ -86,30 +80,6 @@
       "hours": 2.5
     },
     {
-      "productId": "gid://shopify/Product/15419153842500",
-      "title": "Offset Black Sweatpants",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated734.jpg?v=1766871341",
-      "category": "Pantalon drept",
-      "size": "M",
-      "hours": 2
-    },
-    {
-      "productId": "gid://shopify/Product/8978718327108",
-      "title": "Oversized Cotton White T-shirt Spirit",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicatet_tshirt_spirit.jpg?v=1769822867",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
-    },
-    {
-      "productId": "gid://shopify/Product/15590401605956",
-      "title": "MYSIMPLICATED® Brown Atelier Division Sleeveless",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260702_120446_12b5b28c-d728-4ca8-bdb2-a4b21e5fe9c7.jpg?v=1786555960",
-      "category": "Camasa scurta",
-      "size": "XXL",
-      "hours": 1.4167
-    },
-    {
       "productId": "gid://shopify/Product/15629712687428",
       "title": "777 Mauve Oversized T-Shirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260803_201901_8ee221dc-e5c0-45cf-8137-1cbddf92ce79-_1.jpg?v=1786555300",
@@ -140,6 +110,38 @@
       "category": "Tricou simplu",
       "size": "XXL",
       "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/14982879248708",
+      "title": "Dystopia White Oversized Sweater",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dystopia-oversized-crew_01_her-front.png?v=1792827274",
+      "category": "Bluza inimioara / obsidian",
+      "size": "S",
+      "hours": 1.5
+    },
+    {
+      "productId": "gid://shopify/Product/15419456225604",
+      "title": "Broken Stripes Denim Jacket",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated745.jpg?v=1766872341",
+      "category": "Denim Jacket",
+      "size": "XL",
+      "hours": 4
+    },
+    {
+      "productId": "gid://shopify/Product/15419161903428",
+      "title": "Blue Camo Jeans",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated732.jpg?v=1766871015",
+      "category": "Jeans",
+      "size": "XL (EU-44)",
+      "hours": 4
+    },
+    {
+      "productId": "gid://shopify/Product/15419270693188",
+      "title": "Blue Camo Denim Jacket",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated680.jpg?v=1766872579",
+      "category": "Denim Jacket",
+      "size": "XXL",
+      "hours": 4
     }
   ],
   "felicia": {
@@ -538,8 +540,8 @@
       ]
     },
     {
-      "name": "T Negru M + XXL",
-      "orderName": "#235882, #235906",
+      "name": "T Negru M + XXL + L",
+      "orderName": "#235882, #235906, #235914",
       "orderLinks": [
         {
           "name": "#235882",
@@ -550,10 +552,15 @@
           "name": "#235906",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245492306244",
           "cod": true
+        },
+        {
+          "name": "#235914",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254881681732",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
