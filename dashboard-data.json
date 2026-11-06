@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T14:56:41.812Z",
+  "generatedAt": "2026-11-06T20:48:52.788Z",
   "planDate": "2026-11-06",
   "unmatchedProducts": [
     "[#235875] Black Friday Gift",
@@ -18,6 +18,9 @@
     "[#235914] Black Friday Gift",
     "[#235915] Dystopia Black Oversized Sweater",
     "[#235916] Dystopia Black Oversized Sweater",
+    "[#235917] Black Friday Gift",
+    "[#235919] Third Eye Windbreaker",
+    "[#235920] Black Friday Gift",
     "Short Sleeve Shirt In Mauve - Recycled Fabric"
   ],
   "predictionIdeas": [
@@ -143,7 +146,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.25,
+    "hours": 7.42,
     "capacity": 7.2,
     "items": [
       {
@@ -173,22 +176,7 @@
         ]
       },
       {
-        "title": "03. W Beige L",
-        "hours": 2.5,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3488825",
-        "orderLinks": [
-          {
-            "name": "WB#3488825",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. Pant gri Trousers S",
+        "title": "03. Pant gri Trousers S",
         "hours": 1.25,
         "tags": [
           "wb"
@@ -203,29 +191,29 @@
         ]
       },
       {
-        "title": "05. T Alb 2M",
-        "hours": 1.33,
+        "title": "04. C maneci detasate maro inchis XL + L",
+        "hours": 3,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235885, #235907",
+        "orderName": "#235881, #235918",
         "orderLinks": [
           {
-            "name": "#235885",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11238933889348",
-            "cod": true
+            "name": "#235881",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237594661188",
+            "cod": false
           },
           {
-            "name": "#235907",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11246852538692",
-            "cod": false
+            "name": "#235918",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11261184672068",
+            "cod": true
           }
         ]
       }
     ]
   },
   "flori": {
-    "hours": 12.67,
+    "hours": 13.17,
     "capacity": 7.2,
     "items": [
       {
@@ -238,7 +226,22 @@
         ]
       },
       {
-        "title": "01. P Drept MG L + XL + XS",
+        "title": "01. W Beige L",
+        "hours": 2.5,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3488825",
+        "orderLinks": [
+          {
+            "name": "WB#3488825",
+            "url": null,
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. P Drept MG L + XL + XS",
         "hours": 6,
         "tags": [
           "shopify"
@@ -258,31 +261,6 @@
           {
             "name": "#235913",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254773416260",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. T Negru M + XXL + L",
-        "hours": 2,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235882, #235906, #235914",
-        "orderLinks": [
-          {
-            "name": "#235882",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
-            "cod": false
-          },
-          {
-            "name": "#235906",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245492306244",
-            "cod": true
-          },
-          {
-            "name": "#235914",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254881681732",
             "cod": false
           }
         ]
@@ -465,6 +443,28 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C maneci detasate maro inchis XL + L",
+      "orderName": "#235881, #235918",
+      "orderLinks": [
+        {
+          "name": "#235881",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237594661188",
+          "cod": false
+        },
+        {
+          "name": "#235918",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11261184672068",
+          "cod": true
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 3,
       "leftover": false,
       "tags": [
         "shopify"
@@ -688,23 +688,6 @@
       ]
     },
     {
-      "name": "C maneci detasate maro inchis XL",
-      "orderName": "#235881",
-      "orderLinks": [
-        {
-          "name": "#235881",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237594661188",
-          "cod": false
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T Galben XS",
       "orderName": "#235896",
       "orderLinks": [
@@ -818,6 +801,40 @@
       ],
       "category": "Tricou raiat",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Noa XL",
+      "orderName": "#235917",
+      "orderLinks": [
+        {
+          "name": "#235917",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11261171695940",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Double Sleeve Negru MG Vitamin M",
+      "orderName": "#235920",
+      "orderLinks": [
+        {
+          "name": "#235920",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11264068256068",
+          "cod": false
+        }
+      ],
+      "category": "Double sleeve",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
