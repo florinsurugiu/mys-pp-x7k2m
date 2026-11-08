@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T01:16:55.375Z",
+  "generatedAt": "2026-11-08T07:29:52.531Z",
   "planDate": "2026-11-09",
   "unmatchedProducts": [
     "[#235875] Black Friday Gift",
@@ -22,7 +22,9 @@
     "[#235919] Third Eye Windbreaker",
     "[#235920] Black Friday Gift",
     "[#235921] Dystopia Black Oversized Sweater",
-    "Short Sleeve Shirt In Mauve - Recycled Fabric"
+    "[#235922] Black Friday Gift",
+    "[#235922] Complex Minds B/W Hooded Zip Jacket",
+    "Oversized Black Cotton Dystopia Sweater W"
   ],
   "predictionIdeas": [
     {
@@ -147,7 +149,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.42,
+    "hours": 8.17,
     "capacity": 7.2,
     "items": [
       {
@@ -161,38 +163,7 @@
         "orderLinks": []
       },
       {
-        "title": "02. T negru L circus (printat)",
-        "hours": 0.67,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235877",
-        "orderLinks": [
-          {
-            "name": "#235877",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. Pant gri Trousers S",
-        "hours": 1.25,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3488909",
-        "orderLinks": [
-          {
-            "name": "WB#3488909",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. C maneci detasate maro inchis XL + L",
+        "title": "02. C maneci detasate maro inchis XL + L",
         "hours": 3,
         "tags": [
           "shopify"
@@ -210,11 +181,33 @@
             "cod": true
           }
         ]
+      },
+      {
+        "title": "03. T negru L circus (printat)",
+        "hours": 2.67,
+        "tags": [
+          "shopify",
+          "buffer",
+          "predicted"
+        ],
+        "orderName": "#235877, #235878",
+        "orderLinks": [
+          {
+            "name": "#235877",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
+            "cod": false
+          },
+          {
+            "name": "#235878",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236228268356",
+            "cod": true
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 13.17,
+    "hours": 8.67,
     "capacity": 7.2,
     "items": [
       {
@@ -227,16 +220,22 @@
         ]
       },
       {
-        "title": "01. W Beige L",
-        "hours": 2.5,
+        "title": "01. T negru S",
+        "hours": 2,
         "tags": [
-          "wb"
+          "shopify",
+          "buffer"
         ],
-        "orderName": "WB#3488825",
+        "orderName": "#235875, #235877",
         "orderLinks": [
           {
-            "name": "WB#3488825",
-            "url": null,
+            "name": "#235875",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
+            "cod": false
+          },
+          {
+            "name": "#235877",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
             "cod": false
           }
         ]
@@ -263,33 +262,6 @@
             "name": "#235913",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254773416260",
             "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. T negru S",
-        "hours": 4,
-        "tags": [
-          "shopify",
-          "buffer",
-          "predicted"
-        ],
-        "orderName": "#235875, #235877, #235878",
-        "orderLinks": [
-          {
-            "name": "#235875",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
-            "cod": false
-          },
-          {
-            "name": "#235877",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-            "cod": false
-          },
-          {
-            "name": "#235878",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236228268356",
-            "cod": true
           }
         ]
       }
@@ -369,40 +341,6 @@
         "leftover",
         "asana",
         "predicted"
-      ]
-    },
-    {
-      "name": "W Beige L",
-      "orderName": "WB#3488825",
-      "orderLinks": [
-        {
-          "name": "WB#3488825",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "wb"
-      ]
-    },
-    {
-      "name": "Pant gri Trousers S",
-      "orderName": "WB#3488909",
-      "orderLinks": [
-        {
-          "name": "WB#3488909",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Pantaloni lungi full print",
-      "hours": 1.25,
-      "leftover": false,
-      "tags": [
-        "wb"
       ]
     },
     {
