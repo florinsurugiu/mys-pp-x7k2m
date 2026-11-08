@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T07:29:52.531Z",
+  "generatedAt": "2026-11-08T14:29:19.317Z",
   "planDate": "2026-11-09",
   "unmatchedProducts": [
     "[#235875] Black Friday Gift",
@@ -140,16 +140,16 @@
       "hours": 1
     },
     {
-      "productId": "gid://shopify/Product/14969291276612",
-      "title": "Not My Circus White T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4210.jpg?v=1769823359",
-      "category": "Tricou simplu",
+      "productId": "gid://shopify/Product/7837829071085",
+      "title": "Third Eye  Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
+      "category": "Windbreaker",
       "size": "M",
-      "hours": 0.6667
+      "hours": 2.5
     }
   ],
   "felicia": {
-    "hours": 8.17,
+    "hours": 9.17,
     "capacity": 7.2,
     "items": [
       {
@@ -161,6 +161,78 @@
         ],
         "orderName": null,
         "orderLinks": []
+      },
+      {
+        "title": "02. T negru XXL",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235877",
+        "orderLinks": [
+          {
+            "name": "#235877",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. P Drept MG L + XL + XS",
+        "hours": 6,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235877, #235887, #235913",
+        "orderLinks": [
+          {
+            "name": "#235877",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
+            "cod": false
+          },
+          {
+            "name": "#235887",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
+            "cod": true
+          },
+          {
+            "name": "#235913",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254773416260",
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 8.67,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "05. T offwhite M ",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. H layers M (carouri rosii)",
+        "hours": 1,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235924",
+        "orderLinks": [
+          {
+            "name": "#235924",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+            "cod": false
+          }
+        ]
       },
       {
         "title": "02. C maneci detasate maro inchis XL + L",
@@ -183,50 +255,14 @@
         ]
       },
       {
-        "title": "03. T negru L circus (printat)",
-        "hours": 2.67,
+        "title": "03. T negru S",
+        "hours": 4,
         "tags": [
           "shopify",
           "buffer",
           "predicted"
         ],
-        "orderName": "#235877, #235878",
-        "orderLinks": [
-          {
-            "name": "#235877",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-            "cod": false
-          },
-          {
-            "name": "#235878",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236228268356",
-            "cod": true
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8.67,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "05. T offwhite M ",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T negru S",
-        "hours": 2,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235875, #235877",
+        "orderName": "#235875, #235877, #235878",
         "orderLinks": [
           {
             "name": "#235875",
@@ -237,31 +273,11 @@
             "name": "#235877",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
             "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. P Drept MG L + XL + XS",
-        "hours": 6,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235877, #235887, #235913",
-        "orderLinks": [
-          {
-            "name": "#235877",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-            "cod": false
           },
           {
-            "name": "#235887",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
+            "name": "#235878",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236228268356",
             "cod": true
-          },
-          {
-            "name": "#235913",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254773416260",
-            "cod": false
           }
         ]
       }
@@ -410,8 +426,8 @@
       ]
     },
     {
-      "name": "T Negru M + XXL + L",
-      "orderName": "#235882, #235906, #235914",
+      "name": "T Negru M + XXL + L + S",
+      "orderName": "#235882, #235906, #235914, #235924",
       "orderLinks": [
         {
           "name": "#235882",
@@ -427,18 +443,23 @@
           "name": "#235914",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254881681732",
           "cod": false
+        },
+        {
+          "name": "#235924",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 2.0000999999999998,
+      "hours": 2.6668,
       "leftover": false,
       "tags": [
         "shopify"
       ]
     },
     {
-      "name": "T Alb 2M",
-      "orderName": "#235885, #235907",
+      "name": "T Alb 2M + S",
+      "orderName": "#235885, #235907, #235924",
       "orderLinks": [
         {
           "name": "#235885",
@@ -449,27 +470,37 @@
           "name": "#235907",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11246852538692",
           "cod": false
+        },
+        {
+          "name": "#235924",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
       ]
     },
     {
-      "name": "T Negru M",
-      "orderName": "#235886",
+      "name": "T Negru M + S",
+      "orderName": "#235886, #235924",
       "orderLinks": [
         {
           "name": "#235886",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239110279492",
           "cod": true
+        },
+        {
+          "name": "#235924",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+          "cod": false
         }
       ],
       "category": "Tricou fundite negre",
-      "hours": 2,
+      "hours": 4,
       "leftover": false,
       "tags": [
         "shopify"
@@ -605,6 +636,28 @@
       ]
     },
     {
+      "name": "Double Sleeve Negru MG Vitamin 2M",
+      "orderName": "#235920, #235923",
+      "orderLinks": [
+        {
+          "name": "#235920",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11264068256068",
+          "cod": false
+        },
+        {
+          "name": "#235923",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11269636161860",
+          "cod": true
+        }
+      ],
+      "category": "Double sleeve",
+      "hours": 3,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "W Retro L + M",
       "orderName": "#235875, #235880",
       "orderLinks": [
@@ -644,17 +697,22 @@
       ]
     },
     {
-      "name": "H offwhite M",
-      "orderName": "#235903",
+      "name": "H offwhite M + S",
+      "orderName": "#235903, #235924",
       "orderLinks": [
         {
           "name": "#235903",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245141262660",
           "cod": false
+        },
+        {
+          "name": "#235924",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -678,17 +736,22 @@
       ]
     },
     {
-      "name": "T Gri M",
-      "orderName": "#235907",
+      "name": "T Gri M + S",
+      "orderName": "#235907, #235924",
       "orderLinks": [
         {
           "name": "#235907",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11246852538692",
           "cod": false
+        },
+        {
+          "name": "#235924",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+          "cod": false
         }
       ],
       "category": "Tricou simplu",
-      "hours": 0.6667,
+      "hours": 1.3334,
       "leftover": false,
       "tags": [
         "shopify"
@@ -763,17 +826,17 @@
       ]
     },
     {
-      "name": "Double Sleeve Negru MG Vitamin M",
-      "orderName": "#235920",
+      "name": "H vintage M",
+      "orderName": "#235924",
       "orderLinks": [
         {
-          "name": "#235920",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11264068256068",
+          "name": "#235924",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
           "cod": false
         }
       ],
-      "category": "Double sleeve",
-      "hours": 1.5,
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
@@ -796,16 +859,6 @@
       "name": "T offwhite M",
       "orderName": null,
       "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1219392011397009",
-      "name": "H layers M (carouri rosii)",
-      "orderName": null,
-      "category": "Hanorac bumbac",
       "tags": [
         "predicted",
         "asana"
