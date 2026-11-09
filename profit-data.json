@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T22:54:13.484Z",
+  "generatedAt": "2026-11-09T02:24:09.606Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -329,9 +329,9 @@
       "revenue": 3196.1,
       "cogs": 1341.45,
       "shipping": 0,
-      "adSpend": 654.35,
+      "adSpend": 654.56,
       "grossProfit": 1854.65,
-      "netProfit": 1200.3,
+      "netProfit": 1200.09,
       "roas": 4.88,
       "unknownCostUnits": 1
     },
@@ -340,9 +340,9 @@
       "revenue": 0,
       "cogs": 0,
       "shipping": 0,
-      "adSpend": 15.33,
+      "adSpend": 41.92,
       "grossProfit": 0,
-      "netProfit": -15.33,
+      "netProfit": -41.92,
       "roas": 0,
       "unknownCostUnits": 0
     }
@@ -350,15 +350,15 @@
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 10693.42,
+      "spend": 10717.02,
       "purchases": 99,
-      "metaRoas": 4.216141
+      "metaRoas": 4.206855
     },
     {
       "name": "DE - Copy 2",
-      "spend": 1492.45,
+      "spend": 1495.66,
       "purchases": 7,
-      "metaRoas": 1.736465
+      "metaRoas": 1.732745
     }
   ],
   "months": {
@@ -376,7 +376,7 @@
       "revenue": 19804.36,
       "cogs": 9411.7,
       "shipping": 749.7,
-      "adSpend": 4438.7,
+      "adSpend": 4465.51,
       "orders": 44,
       "unknownCostUnits": 9,
       "firstDay": "2026-11-01",
