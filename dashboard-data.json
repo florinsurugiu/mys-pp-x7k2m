@@ -1,12 +1,10 @@
 {
-  "generatedAt": "2026-11-09T02:06:10.760Z",
+  "generatedAt": "2026-11-09T09:55:24.636Z",
   "planDate": "2026-11-09",
   "unmatchedProducts": [
-    "[#235875] Black Friday Gift",
     "[#235883] Complex Minds B/W Checkered Shirt",
     "[#235889] Fragmented Sleeves Shirt B/W",
     "[#235891] Dystopia Black Oversized Sweater",
-    "[#235893] Archive Pieces Longsleeve",
     "[#235896] Pop Cola Socks (3 pairs)",
     "[#235899] Dystopia Black Oversized Sweater",
     "[#235900] Black Friday Gift",
@@ -18,8 +16,6 @@
     "[#235914] Black Friday Gift",
     "[#235915] Dystopia Black Oversized Sweater",
     "[#235916] Dystopia Black Oversized Sweater",
-    "[#235917] Black Friday Gift",
-    "[#235919] Third Eye Windbreaker",
     "[#235920] Black Friday Gift",
     "[#235921] Dystopia Black Oversized Sweater",
     "[#235922] Black Friday Gift",
@@ -108,6 +104,14 @@
       "hours": 2.5
     },
     {
+      "productId": "gid://shopify/Product/15446025503044",
+      "title": "Retro Pop Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_retro_windbreaker_M1.jpg?v=1769543665",
+      "category": "Windbreaker",
+      "size": "L",
+      "hours": 2.5
+    },
+    {
       "productId": "gid://shopify/Product/15419492892996",
       "title": "Broken Stripes Jeans",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated759.jpg?v=1766874542",
@@ -138,18 +142,10 @@
       "category": "Windbreaker",
       "size": "M",
       "hours": 2.5
-    },
-    {
-      "productId": "gid://shopify/Product/9436029976900",
-      "title": "Oversized Cotton White T-shirt Kindness",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
-      "category": "Tricou simplu",
-      "size": "M",
-      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 9.17,
+    "hours": 11.17,
     "capacity": 7.2,
     "items": [
       {
@@ -163,34 +159,38 @@
         "orderLinks": []
       },
       {
-        "title": "02. T negru XXL",
-        "hours": 0.67,
+        "title": "02. T Alb 2M + S",
+        "hours": 2,
         "tags": [
-          "shopify",
-          "buffer"
+          "shopify"
         ],
-        "orderName": "#235877",
+        "orderName": "#235885, #235907, #235924",
         "orderLinks": [
           {
-            "name": "#235877",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
+            "name": "#235885",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11238933889348",
+            "cod": true
+          },
+          {
+            "name": "#235907",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11246852538692",
+            "cod": false
+          },
+          {
+            "name": "#235924",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
             "cod": false
           }
         ]
       },
       {
-        "title": "03. P Drept MG L + XL + XS",
-        "hours": 6,
+        "title": "03. P Drept MG XL + XS",
+        "hours": 4,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235877, #235887, #235913",
+        "orderName": "#235887, #235913",
         "orderLinks": [
-          {
-            "name": "#235877",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-            "cod": false
-          },
           {
             "name": "#235887",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
@@ -202,11 +202,33 @@
             "cod": false
           }
         ]
+      },
+      {
+        "title": "04. T negru XXL",
+        "hours": 2.67,
+        "tags": [
+          "shopify",
+          "buffer",
+          "predicted"
+        ],
+        "orderName": "#235906, #235878",
+        "orderLinks": [
+          {
+            "name": "#235906",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245492306244",
+            "cod": true
+          },
+          {
+            "name": "#235878",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236228268356",
+            "cod": true
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.67,
+    "hours": 12.67,
     "capacity": 7.2,
     "items": [
       {
@@ -235,7 +257,33 @@
         ]
       },
       {
-        "title": "02. C maneci detasate maro inchis XL + L",
+        "title": "02. T negru S",
+        "hours": 2,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235882, #235905, #235914",
+        "orderLinks": [
+          {
+            "name": "#235882",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
+            "cod": false
+          },
+          {
+            "name": "#235905",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245356810564",
+            "cod": false
+          },
+          {
+            "name": "#235914",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254881681732",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. C maneci detasate maro inchis XL + L",
         "hours": 3,
         "tags": [
           "shopify"
@@ -255,28 +303,21 @@
         ]
       },
       {
-        "title": "03. T negru S",
-        "hours": 4,
+        "title": "04. H Patch XL + XXL",
+        "hours": 6,
         "tags": [
-          "shopify",
-          "buffer",
-          "predicted"
+          "shopify"
         ],
-        "orderName": "#235875, #235877, #235878",
+        "orderName": "#235887, #235904",
         "orderLinks": [
           {
-            "name": "#235875",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
-            "cod": false
+            "name": "#235887",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
+            "cod": true
           },
           {
-            "name": "#235877",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-            "cod": false
-          },
-          {
-            "name": "#235878",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236228268356",
+            "name": "#235904",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245326205252",
             "cod": true
           }
         ]
@@ -360,33 +401,6 @@
       ]
     },
     {
-      "name": "P Drept MG L + XL + XS",
-      "orderName": "#235877, #235887, #235913",
-      "orderLinks": [
-        {
-          "name": "#235877",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236178493764",
-          "cod": false
-        },
-        {
-          "name": "#235887",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
-          "cod": true
-        },
-        {
-          "name": "#235913",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254773416260",
-          "cod": false
-        }
-      ],
-      "category": "Pantalon drept",
-      "hours": 6,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T XL",
       "orderName": "#235878",
       "orderLinks": [
@@ -426,38 +440,6 @@
       ]
     },
     {
-      "name": "T Negru M + XXL + L + S",
-      "orderName": "#235882, #235906, #235914, #235924",
-      "orderLinks": [
-        {
-          "name": "#235882",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11237744968004",
-          "cod": false
-        },
-        {
-          "name": "#235906",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245492306244",
-          "cod": true
-        },
-        {
-          "name": "#235914",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254881681732",
-          "cod": false
-        },
-        {
-          "name": "#235924",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 2.6668,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T Alb 2M + S",
       "orderName": "#235885, #235907, #235924",
       "orderLinks": [
@@ -485,28 +467,6 @@
       ]
     },
     {
-      "name": "T Negru M + S",
-      "orderName": "#235886, #235924",
-      "orderLinks": [
-        {
-          "name": "#235886",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239110279492",
-          "cod": true
-        },
-        {
-          "name": "#235924",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
-          "cod": false
-        }
-      ],
-      "category": "Tricou fundite negre",
-      "hours": 4,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "H Patch XL + XXL",
       "orderName": "#235887, #235904",
       "orderLinks": [
@@ -523,6 +483,28 @@
       ],
       "category": "Hanorac patchuri",
       "hours": 6,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "P Drept MG XL + XS",
+      "orderName": "#235887, #235913",
+      "orderLinks": [
+        {
+          "name": "#235887",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11239816331588",
+          "cod": true
+        },
+        {
+          "name": "#235913",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254773416260",
+          "cod": false
+        }
+      ],
+      "category": "Pantalon drept",
+      "hours": 4,
       "leftover": false,
       "tags": [
         "shopify"
@@ -658,28 +640,6 @@
       ]
     },
     {
-      "name": "W Retro L + M",
-      "orderName": "#235875, #235880",
-      "orderLinks": [
-        {
-          "name": "#235875",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11235522707780",
-          "cod": false
-        },
-        {
-          "name": "#235880",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11236680335684",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "T Galben XS",
       "orderName": "#235896",
       "orderLinks": [
@@ -713,23 +673,6 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 2,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Negru Superwoman XXL",
-      "orderName": "#235905",
-      "orderLinks": [
-        {
-          "name": "#235905",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11245356810564",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
@@ -809,23 +752,6 @@
       ]
     },
     {
-      "name": "W Noa XL",
-      "orderName": "#235917",
-      "orderLinks": [
-        {
-          "name": "#235917",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11261171695940",
-          "cod": false
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "H vintage M",
       "orderName": "#235924",
       "orderLinks": [
@@ -837,6 +763,40 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru S",
+      "orderName": "#235924",
+      "orderLinks": [
+        {
+          "name": "#235924",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+          "cod": false
+        }
+      ],
+      "category": "Tricou fundite negre",
+      "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru S",
+      "orderName": "#235924",
+      "orderLinks": [
+        {
+          "name": "#235924",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
