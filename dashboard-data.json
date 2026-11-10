@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-10T18:37:03.006Z",
-  "planDate": "2026-11-10",
+  "generatedAt": "2026-11-10T23:45:52.185Z",
+  "planDate": "2026-11-11",
   "unmatchedProducts": [
     "[#235889] Fragmented Sleeves Shirt B/W",
     "[#235896] Pop Cola Socks (3 pairs)",
@@ -20,6 +20,7 @@
     "[#235922] Complex Minds B/W Hooded Zip Jacket",
     "[#235925] Lucky Pants (cotton fabric)",
     "[#235927] Complex Minds B/W Hooded Zip Jacket",
+    "[#235931] MY Black Zip Hoodie",
     "Beige Full-Print Dress W"
   ],
   "predictionIdeas": [
@@ -593,6 +594,23 @@
       ],
       "category": "Double sleeve",
       "hours": 4.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Negru L",
+      "orderName": "#235931",
+      "orderLinks": [
+        {
+          "name": "#235931",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11282236178756",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
