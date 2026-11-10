@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-11-09T20:41:04.472Z",
+  "generatedAt": "2026-11-10T02:57:04.429Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.343,
   "days": [
-    {
-      "date": "2026-10-10",
-      "revenue": 1716.55,
-      "cogs": 714.05,
-      "shipping": 166.6,
-      "adSpend": 597.72,
-      "grossProfit": 835.9,
-      "netProfit": 238.18,
-      "roas": 2.87,
-      "unknownCostUnits": 0
-    },
     {
       "date": "2026-10-11",
       "revenue": 566.4,
@@ -337,28 +326,39 @@
     },
     {
       "date": "2026-11-09",
-      "revenue": 0,
-      "cogs": 0,
+      "revenue": 948.82,
+      "cogs": 532.08,
+      "shipping": 83.3,
+      "adSpend": 513.89,
+      "grossProfit": 333.44,
+      "netProfit": -180.45,
+      "roas": 1.85,
+      "unknownCostUnits": 0
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 449,
+      "cogs": 181.97,
       "shipping": 0,
-      "adSpend": 473.02,
-      "grossProfit": 0,
-      "netProfit": -473.02,
-      "roas": 0,
+      "adSpend": 35.8,
+      "grossProfit": 267.03,
+      "netProfit": 231.23,
+      "roas": 12.54,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 11082.88,
-      "purchases": 99,
-      "metaRoas": 4.070039
+      "spend": 10883.64,
+      "purchases": 101,
+      "metaRoas": 4.233963
     },
     {
       "name": "DE - Copy 2",
-      "spend": 1570.47,
+      "spend": 1587.08,
       "purchases": 7,
-      "metaRoas": 1.651039
+      "metaRoas": 1.633753
     }
   ],
   "months": {
@@ -373,14 +373,14 @@
       "lastDay": "2026-10-31"
     },
     "2026-11": {
-      "revenue": 19445.26,
-      "cogs": 9243.56,
-      "shipping": 749.7,
-      "adSpend": 4902.26,
-      "orders": 43,
+      "revenue": 20843.08,
+      "cogs": 9957.61,
+      "shipping": 833,
+      "adSpend": 4978.93,
+      "orders": 46,
       "unknownCostUnits": 9,
       "firstDay": "2026-11-01",
-      "lastDay": "2026-11-09"
+      "lastDay": "2026-11-10"
     }
   }
 }
