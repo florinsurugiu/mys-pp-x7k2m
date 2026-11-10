@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-09T20:38:36.912Z",
-  "planDate": "2026-11-09",
+  "generatedAt": "2026-11-10T02:58:47.348Z",
+  "planDate": "2026-11-10",
   "unmatchedProducts": [
     "[#235883] Complex Minds B/W Checkered Shirt",
     "[#235889] Fragmented Sleeves Shirt B/W",
@@ -20,6 +20,8 @@
     "[#235921] Dystopia Black Oversized Sweater",
     "[#235922] Black Friday Gift",
     "[#235922] Complex Minds B/W Hooded Zip Jacket",
+    "[#235925] Lucky Pants (cotton fabric)",
+    "[#235927] Complex Minds B/W Hooded Zip Jacket",
     "Beige Full-Print Dress W"
   ],
   "predictionIdeas": [
@@ -30,14 +32,6 @@
       "category": "Camasa scurta",
       "size": "XL",
       "hours": 1.4167
-    },
-    {
-      "productId": "gid://shopify/Product/15421171990852",
-      "title": "Dystopia Pink Oversized Sweater",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated821.jpg?v=1767033677",
-      "category": "Hanorac bumbac",
-      "size": "S",
-      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/7837777559789",
@@ -88,14 +82,6 @@
       "hours": 1
     },
     {
-      "productId": "gid://shopify/Product/14982879248708",
-      "title": "Dystopia White Oversized Sweater",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dystopia-oversized-crew_01_her-front.png?v=1792827274",
-      "category": "Bluza inimioara / obsidian",
-      "size": "L",
-      "hours": 1.5
-    },
-    {
       "productId": "gid://shopify/Product/7837843849453",
       "title": "Pink DOER  Windbreaker",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
@@ -112,36 +98,52 @@
       "hours": 2.5
     },
     {
-      "productId": "gid://shopify/Product/15419492892996",
-      "title": "Broken Stripes Jeans",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated759.jpg?v=1766874542",
-      "category": "Jeans",
-      "size": "XL (EU-42)",
-      "hours": 4
-    },
-    {
-      "productId": "gid://shopify/Product/15419493482820",
-      "title": "Broken Stripes Denim Jacket",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated770.jpg?v=1766875051",
-      "category": "Denim Jacket",
-      "size": "XXL",
-      "hours": 4
-    },
-    {
-      "productId": "gid://shopify/Product/15419494531396",
-      "title": "Aria Scarf Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated784.jpg?v=1766876426",
-      "category": "Hanorac bumbac",
-      "size": "XL",
-      "hours": 1
-    },
-    {
       "productId": "gid://shopify/Product/7837829071085",
       "title": "Third Eye  Windbreaker",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_3rdeyek_w4_5534b71f-b768-4d86-9299-6794d671f642.jpg?v=1769815962",
       "category": "Windbreaker",
       "size": "M",
       "hours": 2.5
+    },
+    {
+      "productId": "gid://shopify/Product/9436029976900",
+      "title": "Oversized Cotton White T-shirt Kindness",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-cotton-white-t-shirt-kindness-247630_a2ce8b98-3a36-445f-ac3a-248873b4cf24.jpg?v=1770117356",
+      "category": "Tricou simplu",
+      "size": "M",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/15499249942852",
+      "title": "Split White Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/split-white-oversized-t-shirt-1_01_him-front.jpg?v=1792831305",
+      "category": "Tricou simplu",
+      "size": "L",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/14932056408388",
+      "title": "3-in-1 Layered Hoodie",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/3-in-1-layered-hoodie_01_him-front.jpg?v=1792826927",
+      "category": "Hanorac bumbac",
+      "size": "XL",
+      "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/8651674190148",
+      "title": "Black Hoodie Mushroom",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_mushrooms_hoodie.jpg?v=1769614342",
+      "category": "Hanorac bumbac",
+      "size": "L",
+      "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/15417912623428",
+      "title": "Overthink Club Brown T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/Overthink-Club-Brown-T-Shirt1.jpg?v=1779920882",
+      "category": "Tricou simplu",
+      "size": "L",
+      "hours": 0.6667
     }
   ],
   "felicia": {
@@ -797,6 +799,40 @@
       ],
       "category": "Tricou simplu",
       "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Bluza rupta roz S",
+      "orderName": "#235925",
+      "orderLinks": [
+        {
+          "name": "#235925",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11277618151748",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Bluza Rupta S",
+      "orderName": "#235926",
+      "orderLinks": [
+        {
+          "name": "#235926",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11277621100868",
+          "cod": false
+        }
+      ],
+      "category": "Bluza inimioara / obsidian",
+      "hours": 1.5,
       "leftover": false,
       "tags": [
         "shopify"
