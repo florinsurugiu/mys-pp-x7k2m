@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-12T16:52:46.057Z",
-  "planDate": "2026-11-12",
+  "generatedAt": "2026-11-12T22:40:33.854Z",
+  "planDate": "2026-11-13",
   "unmatchedProducts": [
     "[#235913] Black Hoodie Angel",
     "[#235920] Black Friday Gift",
@@ -137,7 +137,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.08,
+    "hours": 8.25,
     "capacity": 7.2,
     "items": [
       {
@@ -191,16 +191,16 @@
         ]
       },
       {
-        "title": "04. P Grey M",
-        "hours": 1.25,
+        "title": "04. C Snake L",
+        "hours": 1.42,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235934",
+        "orderName": "#235937",
         "orderLinks": [
           {
-            "name": "#235934",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11284778123588",
+            "name": "#235937",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11290765787460",
             "cod": true
           }
         ]
@@ -208,7 +208,7 @@
     ]
   },
   "flori": {
-    "hours": 8,
+    "hours": 8.25,
     "capacity": 7.2,
     "items": [
       {
@@ -297,17 +297,17 @@
         ]
       },
       {
-        "title": "05. H negru Dept S",
-        "hours": 1,
+        "title": "05. P Grey M",
+        "hours": 1.25,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235913",
+        "orderName": "#235934",
         "orderLinks": [
           {
-            "name": "#235913",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11254773416260",
-            "cod": false
+            "name": "#235934",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11284778123588",
+            "cod": true
           }
         ]
       }
@@ -494,6 +494,23 @@
       ],
       "category": "Pantaloni lungi full print",
       "hours": 1.25,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Snake L",
+      "orderName": "#235937",
+      "orderLinks": [
+        {
+          "name": "#235937",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11290765787460",
+          "cod": true
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 1.4167,
       "leftover": false,
       "tags": [
         "shopify"
