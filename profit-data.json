@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-11-12T17:04:05.850Z",
+  "generatedAt": "2026-11-12T22:42:59.535Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.3473,
   "days": [
-    {
-      "date": "2026-10-13",
-      "revenue": 2916.82,
-      "cogs": 1630.81,
-      "shipping": 166.6,
-      "adSpend": 651.68,
-      "grossProfit": 1119.41,
-      "netProfit": 467.73,
-      "roas": 4.48,
-      "unknownCostUnits": 0
-    },
     {
       "date": "2026-10-14",
       "revenue": 1488.93,
@@ -337,28 +326,39 @@
     },
     {
       "date": "2026-11-12",
-      "revenue": 2497.57,
-      "cogs": 891.99,
+      "revenue": 2855.57,
+      "cogs": 1062.91,
       "shipping": 83.3,
-      "adSpend": 224.8,
-      "grossProfit": 1522.28,
-      "netProfit": 1297.48,
-      "roas": 11.11,
+      "adSpend": 432.01,
+      "grossProfit": 1709.36,
+      "netProfit": 1277.35,
+      "roas": 6.61,
       "unknownCostUnits": 1
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 0,
+      "cogs": 0,
+      "shipping": 0,
+      "adSpend": 11.76,
+      "grossProfit": 0,
+      "netProfit": -11.76,
+      "roas": 0,
+      "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 11329.91,
-      "purchases": 101,
-      "metaRoas": 4.094968
+      "spend": 11202.54,
+      "purchases": 99,
+      "metaRoas": 4.066282
     },
     {
       "name": "DE - Copy 2",
-      "spend": 1823.48,
+      "spend": 1864.39,
       "purchases": 7,
-      "metaRoas": 1.423096
+      "metaRoas": 1.391872
     }
   ],
   "months": {
@@ -373,14 +373,14 @@
       "lastDay": "2026-10-31"
     },
     "2026-11": {
-      "revenue": 27124.3,
-      "cogs": 12612.13,
+      "revenue": 27482.3,
+      "cogs": 12783.05,
       "shipping": 916.3,
-      "adSpend": 6227.68,
-      "orders": 54,
+      "adSpend": 6446.65,
+      "orders": 55,
       "unknownCostUnits": 11,
       "firstDay": "2026-11-01",
-      "lastDay": "2026-11-12"
+      "lastDay": "2026-11-13"
     }
   }
 }
