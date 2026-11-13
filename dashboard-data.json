@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T18:10:09.470Z",
-  "planDate": "2026-11-13",
+  "generatedAt": "2026-11-13T23:39:28.725Z",
+  "planDate": "2026-11-16",
   "unmatchedProducts": [
     "[#235922] Black Friday Gift",
     "[#235922] Complex Minds B/W Hooded Zip Jacket",
@@ -23,14 +23,6 @@
       "hours": 0.6667
     },
     {
-      "productId": "gid://shopify/Product/15588974428484",
-      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260701_093650_de1a7c35-559c-4b69-a12b-e15a0200df37.jpg?v=1786556235",
-      "category": "Camasa scurta",
-      "size": "XL",
-      "hours": 1.4167
-    },
-    {
       "productId": "gid://shopify/Product/15411830882628",
       "title": "Vitamin Aqua MG Black Double Sleeve",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated066.jpg?v=1766225935",
@@ -49,7 +41,7 @@
     {
       "productId": "gid://shopify/Product/15417916752196",
       "title": "MG Black Straight Sweatpants",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated735.jpg?v=1766871485",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dept-black-hoodie_editorial-strada_81452d0a-ce0c-4807-850d-8c40a937cf51.jpg?v=1794307058",
       "category": "Pantalon drept",
       "size": "M",
       "hours": 2
@@ -73,7 +65,7 @@
     {
       "productId": "gid://shopify/Product/15417916752196",
       "title": "MG Black Straight Sweatpants",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated735.jpg?v=1766871485",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dept-black-hoodie_editorial-strada_81452d0a-ce0c-4807-850d-8c40a937cf51.jpg?v=1794307058",
       "category": "Pantalon drept",
       "size": "L",
       "hours": 2
@@ -133,10 +125,18 @@
       "category": "Rochie indian",
       "size": "S",
       "hours": 1
+    },
+    {
+      "productId": "gid://shopify/Product/15577328255300",
+      "title": "MYSIMPLICATED® Atelier Division Overshirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260618_211444_1_4cc0bd3d-98d3-4852-86ef-eb82079d49b9.jpg?v=1786594829",
+      "category": "Camasa scurta",
+      "size": "XL",
+      "hours": 1.4167
     }
   ],
   "felicia": {
-    "hours": 7.83,
+    "hours": 8.5,
     "capacity": 7.2,
     "items": [
       {
@@ -150,109 +150,7 @@
         "orderLinks": []
       },
       {
-        "title": "02. H layers M (carouri rosii)",
-        "hours": 1,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235924",
-        "orderLinks": [
-          {
-            "name": "#235924",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. T Alb S + M",
-        "hours": 1.33,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235924, #235934",
-        "orderLinks": [
-          {
-            "name": "#235924",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
-            "cod": false
-          },
-          {
-            "name": "#235934",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11284778123588",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. H offwhite S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235924",
-        "orderLinks": [
-          {
-            "name": "#235924",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "05. T Negru S",
-        "hours": 2,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235924",
-        "orderLinks": [
-          {
-            "name": "#235924",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
-            "cod": false
-          }
-        ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "05. T offwhite M ",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T offwhite M",
-        "hours": 1.33,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235936, #235924",
-        "orderLinks": [
-          {
-            "name": "#235936",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11285682323780",
-            "cod": false
-          },
-          {
-            "name": "#235924",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. T Gri S + L",
+        "title": "02. T Alb S + M",
         "hours": 1.33,
         "tags": [
           "shopify"
@@ -287,16 +185,16 @@
         ]
       },
       {
-        "title": "04. C Snake L",
+        "title": "04. C Bal scurta maro M",
         "hours": 1.42,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235937",
+        "orderName": "#235940",
         "orderLinks": [
           {
-            "name": "#235937",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11290765787460",
+            "name": "#235940",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11297407271236",
             "cod": true
           }
         ]
@@ -327,6 +225,117 @@
           {
             "name": "#235925",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11277618151748",
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 8.75,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "01. H offwhite S + M",
+        "hours": 1.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer",
+          "shopify"
+        ],
+        "orderName": "#235924",
+        "orderLinks": [
+          {
+            "name": "#235924",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. H layers M (carouri rosii)",
+        "hours": 1,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235924",
+        "orderLinks": [
+          {
+            "name": "#235924",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. T offwhite M",
+        "hours": 1.33,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235936, #235924",
+        "orderLinks": [
+          {
+            "name": "#235936",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11285682323780",
+            "cod": false
+          },
+          {
+            "name": "#235924",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. T Gri S + L",
+        "hours": 1.33,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235924, #235934",
+        "orderLinks": [
+          {
+            "name": "#235924",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+            "cod": false
+          },
+          {
+            "name": "#235934",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11284778123588",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "05. C Snake L",
+        "hours": 1.42,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235937",
+        "orderLinks": [
+          {
+            "name": "#235937",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11290765787460",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "06. T Negru S",
+        "hours": 2,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235924",
+        "orderLinks": [
+          {
+            "name": "#235924",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
             "cod": false
           }
         ]
@@ -488,6 +497,23 @@
       ]
     },
     {
+      "name": "C Bal scurta maro M",
+      "orderName": "#235940",
+      "orderLinks": [
+        {
+          "name": "#235940",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11297407271236",
+          "cod": true
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 1.4167,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
       "name": "H offwhite S",
       "orderName": "#235924",
       "orderLinks": [
@@ -613,6 +639,23 @@
         {
           "name": "#235938",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11293462888772",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Blue L",
+      "orderName": "#235942",
+      "orderLinks": [
+        {
+          "name": "#235942",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11297545257284",
           "cod": false
         }
       ],
