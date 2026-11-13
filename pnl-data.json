@@ -1,5 +1,5 @@
 {
-  "period": "Decembrie 2025 – August 2026",
+  "period": "Decembrie 2025 – Octombrie 2026",
   "entities": "SIMPLICATED SRL · BAD COPY SRL · CUSTOMISABLE SIMPLICATED SRL (consolidat)",
   "eurRate": 5.05,
   "rows": [
@@ -11,25 +11,27 @@
     { "month": "2026_05", "label": "Mai 2026", "d2c": 39741.0, "b2bProject": 7240.0, "b2bOther": 7500.0, "revenue": 54481.0, "cogs": 24042.65, "marketing": 18789.0, "salaries": 15864.0, "taxes": 14751.0, "other": 16671.35, "net": -37636.0, "klarnaMissing": false, "courierSameday": 3145 },
     { "month": "2026_06", "label": "Iun 2026", "d2c": 44182.06, "b2bProject": 115731.0, "b2bOther": 17958.0, "revenue": 177871.06, "cogs": 49799.26, "marketing": 16665.0, "salaries": 15879.0, "taxes": 37599.0, "other": 29883.74, "net": 28047.06, "klarnaMissing": false, "courierSameday": 3063, "paypal": 809.06 },
     { "month": "2026_07", "label": "Iul 2026", "d2c": 42577.51, "b2bProject": 0.0, "b2bOther": 12839.0, "revenue": 55416.51, "cogs": 12593.31, "marketing": 16385.0, "salaries": 22340.0, "taxes": 26039.0, "other": 21707.69, "net": -43649.49, "klarnaMissing": false, "courierSameday": 3455, "paypal": 319.51 },
-    { "month": "2026_08", "label": "Aug 2026", "d2c": 61161.02, "b2bProject": 0.0, "b2bOther": 12588.24, "revenue": 73749.26, "cogs": 11236.68, "marketing": 18861.5, "salaries": 6940.0, "taxes": 13902.0, "other": 16115.36, "net": 6693.72, "klarnaMissing": false, "courierSameday": 3277, "paypal": 10834.37 }
+    { "month": "2026_08", "label": "Aug 2026", "d2c": 61161.02, "b2bProject": 0.0, "b2bOther": 12588.24, "revenue": 73749.26, "cogs": 11236.68, "marketing": 18861.5, "salaries": 6940.0, "taxes": 13902.0, "other": 16115.36, "net": 6693.72, "klarnaMissing": false, "courierSameday": 3277, "paypal": 10834.37 },
+    { "month": "2026_09", "label": "Sep 2026", "d2c": 67904.43, "b2bProject": 0.0, "b2bOther": 13056.84, "revenue": 80961.27, "cogs": 9038.3, "marketing": 17843.32, "salaries": 4000.0, "taxes": 8847.0, "other": 20700.95, "net": 20531.7, "klarnaMissing": false, "courierSameday": 3754.83, "paypal": 6600.82, "klarnaFromBank": 1063.57, "b2bTemporary": 8618.83 },
+    { "month": "2026_10", "label": "Oct 2026", "d2c": 54572.45, "b2bProject": 0.0, "b2bOther": 23461.19, "revenue": 78033.64, "cogs": 19198.12, "marketing": 14269.68, "salaries": 12700.0, "taxes": 4898.0, "other": 20519.36, "net": 6448.48, "klarnaMissing": false, "courierSameday": 4601.95, "paypal": 3172.74, "b2bTemporary": 8618.85 }
   ],
-  "totals": { "d2c": 396368.25, "b2bProject": 419108.0, "b2bOther": 75666.24, "revenue": 891141.49, "cogs": 253785.84, "marketing": 138366.5, "salaries": 111992.0, "taxes": 159366.0, "other": 151575.91, "net": 69191.95 },
+  "totals": { "d2c": 518845.13, "b2bProject": 419108.0, "b2bOther": 112184.27, "revenue": 1050136.4, "cogs": 282022.26, "marketing": 170479.5, "salaries": 128692.0, "taxes": 173111.0, "other": 192796.51, "net": 96172.13 },
   "categoryBreakdown": [
-    { "name": "COGS (marfă/materiale, incl. proiecte)", "val": 253785.84 },
-    { "name": "Taxe (ANAF, TVA, CAS)", "val": 159366.0 },
-    { "name": "Salarii & echipă", "val": 111992.0 },
-    { "name": "Marketing (Meta+Google)", "val": 138366.5 },
-    { "name": "Neclasificat", "val": 43176.91 },
-    { "name": "Chirie & echipament", "val": 43074.66 },
-    { "name": "Personal (călătorii + cumpărături pe card firmă)", "val": 15552.0 },
-    { "name": "Contabilitate", "val": 20637.46 },
-    { "name": "Transport, curieri & deplasări business", "val": 36000.17 }
+    { "name": "COGS (marfă/materiale, incl. proiecte)", "val": 282022.26 },
+    { "name": "Taxe (ANAF, TVA, CAS)", "val": 173111.0 },
+    { "name": "Salarii & echipă", "val": 128692.0 },
+    { "name": "Marketing (Meta+Google)", "val": 170479.5 },
+    { "name": "Neclasificat", "val": 55634.31 },
+    { "name": "Chirie & echipament", "val": 53644.07 },
+    { "name": "Personal (călătorii + cumpărături pe card firmă)", "val": 16172.55 },
+    { "name": "Contabilitate", "val": 27477.02 },
+    { "name": "Transport, curieri & deplasări business", "val": 46733.56 }
   ],
   "projectCosts": {
     "ploom": { "revenue": 296137.0, "cost": 82598.0, "net": 213539.0 },
     "george": { "revenue": 122971.0, "cost": 32886.0, "net": 90085.0 }
   },
-  "withoutB2B": -234432.4,
+  "withoutB2B": -207451.9,
   "baseline": [
     { "name": "SIMPLICATED S.R.L.", "cif": "37019355", "rev2023": 172059, "net2023": -15956, "rev2024": 60021, "net2024": -97071 },
     { "name": "CUSTOMISABLE SIMPLICATED S.R.L.", "cif": "46370265", "rev2023": 878723, "net2023": 307742, "rev2024": 139352, "net2024": -183353 },
