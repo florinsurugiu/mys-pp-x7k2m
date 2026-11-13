@@ -3,7 +3,7 @@
   "entities": "SIMPLICATED SRL · BAD COPY SRL · CUSTOMISABLE SIMPLICATED SRL (consolidat)",
   "eurRate": 5.05,
   "rows": [
-    { "month": "2025_12", "label": "Dec 2025", "d2c": 36653.03, "b2bProject": 0.0, "b2bOther": 0.0, "revenue": 36653.03, "cogs": 28571.69, "marketing": 12651.0, "salaries": 11516.0, "taxes": 1560.0, "other": 19938.08, "net": -37583.74, "klarnaMissing": false, "paypal": 4542.03, "note": "Simplicated BT costs + Bad Copy invoices (W&B, Shopify, Google) added 2026-11-14; Bad Copy ING statement for Dec 2025 missing" },
+    { "month": "2025_12", "label": "Dec 2025", "d2c": 36653.03, "b2bProject": 0.0, "b2bOther": 5110.5, "revenue": 41763.53, "cogs": 36810.48, "marketing": 12651.0, "salaries": 18830.0, "taxes": 11307.0, "other": 33878.98, "net": -71713.93, "klarnaMissing": false, "paypal": 4542.03, "note": "Complete 2026-11-14 from Simplicated BT + Bad Copy ING RON/EUR statements and invoices; b2bOther = Make A Wish 1.309,50 + Fere Styling 726 + Alumanole 550 + W&B 2.525 (method)" },
     { "month": "2026_01", "label": "Ian 2026", "d2c": 40198.88, "b2bProject": 0.0, "b2bOther": 12682.0, "revenue": 52880.88, "cogs": 11071.02, "marketing": 12288.0, "salaries": 13730.0, "taxes": 9628.0, "other": 22240.98, "net": -20941.12, "klarnaMissing": false, "courierSameday": 1095, "paypal": 4705.88 },
     { "month": "2026_02", "label": "Feb 2026", "d2c": 44308.27, "b2bProject": 135473.0, "b2bOther": 5447.0, "revenue": 185228.27, "cogs": 74929.34, "marketing": 11041.0, "salaries": 14940.0, "taxes": 22198.0, "other": 16932.66, "net": 45186.27, "klarnaMissing": false, "courierSameday": 1929, "paypal": 1843.27 },
     { "month": "2026_03", "label": "Mar 2026", "d2c": 34864.48, "b2bProject": 0.0, "b2bOther": 3791.0, "revenue": 38654.48, "cogs": 26048.0, "marketing": 15861.0, "salaries": 4864.0, "taxes": 0.0, "other": 8498.0, "net": -16616.52, "klarnaMissing": false, "courierSameday": 2948, "paypal": 1978.91, "klarnaFromShopify": 1440.57, "costsFromSmartBill": { "cogs": 1803, "other": 3217 } },
@@ -15,23 +15,23 @@
     { "month": "2026_09", "label": "Sep 2026", "d2c": 67904.43, "b2bProject": 0.0, "b2bOther": 13056.84, "revenue": 80961.27, "cogs": 9038.3, "marketing": 17843.32, "salaries": 4000.0, "taxes": 8847.0, "other": 20700.95, "net": 20531.7, "klarnaMissing": false, "courierSameday": 3754.83, "paypal": 6600.82, "klarnaFromBank": 1063.57, "b2bTemporary": 8618.83 },
     { "month": "2026_10", "label": "Oct 2026", "d2c": 54572.45, "b2bProject": 0.0, "b2bOther": 23461.19, "revenue": 78033.64, "cogs": 19198.12, "marketing": 14269.68, "salaries": 12700.0, "taxes": 4898.0, "other": 20519.36, "net": 6448.48, "klarnaMissing": false, "courierSameday": 4601.95, "paypal": 3172.74, "b2bTemporary": 8618.85 }
   ],
-  "totals": { "d2c": 518845.13, "b2bProject": 419108.0, "b2bOther": 112184.27, "revenue": 1050136.4, "cogs": 301154.95, "marketing": 170479.5, "salaries": 140208.0, "taxes": 174671.0, "other": 212734.59, "net": 44025.36 },
+  "totals": { "d2c": 518845.13, "b2bProject": 419108.0, "b2bOther": 117294.77, "revenue": 1055246.9, "cogs": 309393.74, "marketing": 170479.5, "salaries": 147522.0, "taxes": 184418.0, "other": 226675.49, "net": 9895.17 },
   "categoryBreakdown": [
-    { "name": "COGS (marfă/materiale, incl. proiecte)", "val": 301154.95 },
-    { "name": "Taxe (ANAF, TVA, CAS)", "val": 174671.0 },
-    { "name": "Salarii & echipă", "val": 140208.0 },
+    { "name": "COGS (marfă/materiale, incl. proiecte)", "val": 309393.74 },
+    { "name": "Taxe (ANAF, TVA, CAS)", "val": 184418.0 },
+    { "name": "Salarii & echipă", "val": 147522.0 },
     { "name": "Marketing (Meta+Google)", "val": 170479.5 },
-    { "name": "Neclasificat", "val": 63199.5 },
-    { "name": "Chirie & echipament", "val": 65287.46 },
-    { "name": "Personal (călătorii + cumpărături pe card firmă)", "val": 16172.55 },
-    { "name": "Contabilitate", "val": 28206.52 },
-    { "name": "Transport, curieri & deplasări business", "val": 46733.56 }
+    { "name": "Neclasificat", "val": 67008.06 },
+    { "name": "Chirie & echipament", "val": 65466.02 },
+    { "name": "Personal (călătorii + cumpărături pe card firmă)", "val": 22332.71 },
+    { "name": "Contabilitate", "val": 30816.01 },
+    { "name": "Transport, curieri & deplasări business", "val": 47917.69 }
   ],
   "projectCosts": {
     "ploom": { "revenue": 296137.0, "cost": 82598.0, "net": 213539.0 },
     "george": { "revenue": 122971.0, "cost": 32886.0, "net": 90085.0 }
   },
-  "withoutB2B": -259598.6,
+  "withoutB2B": -293728.8,
   "baseline": [
     { "name": "SIMPLICATED S.R.L.", "cif": "37019355", "rev2023": 172059, "net2023": -15956, "rev2024": 60021, "net2024": -97071 },
     { "name": "CUSTOMISABLE SIMPLICATED S.R.L.", "cif": "46370265", "rev2023": 878723, "net2023": 307742, "rev2024": 139352, "net2024": -183353 },
