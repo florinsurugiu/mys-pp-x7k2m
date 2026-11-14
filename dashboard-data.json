@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T16:58:11.409Z",
+  "generatedAt": "2026-11-14T21:20:15.059Z",
   "planDate": "2026-11-16",
   "unmatchedProducts": [
     "[#235922] Black Friday Gift",
@@ -138,7 +138,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.17,
+    "hours": 8.42,
     "capacity": 7.2,
     "items": [
       {
@@ -153,17 +153,22 @@
       },
       {
         "title": "02. T negru L",
-        "hours": 0.67,
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235945",
+        "orderName": "#235945, #235936",
         "orderLinks": [
           {
             "name": "#235945",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300073570628",
             "cod": true
+          },
+          {
+            "name": "#235936",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11285682323780",
+            "cod": false
           }
         ]
       },
@@ -203,31 +208,21 @@
         ]
       },
       {
-        "title": "05. C Bal scurta maro M",
-        "hours": 1.42,
+        "title": "05. H vintage M + S",
+        "hours": 2,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235940",
-        "orderLinks": [
-          {
-            "name": "#235940",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11297407271236",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "06. H vintage M",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235924",
+        "orderName": "#235924, #235946",
         "orderLinks": [
           {
             "name": "#235924",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+            "cod": false
+          },
+          {
+            "name": "#235946",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
             "cod": false
           }
         ]
@@ -235,7 +230,7 @@
     ]
   },
   "flori": {
-    "hours": 8.42,
+    "hours": 8.17,
     "capacity": 7.2,
     "items": [
       {
@@ -273,19 +268,14 @@
         ]
       },
       {
-        "title": "03. T offwhite M",
-        "hours": 1.33,
+        "title": "03. T negru S",
+        "hours": 0.67,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235936, #235924",
+        "orderName": "#235924",
         "orderLinks": [
-          {
-            "name": "#235936",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11285682323780",
-            "cod": false
-          },
           {
             "name": "#235924",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
@@ -334,17 +324,17 @@
         ]
       },
       {
-        "title": "06. Bluza rupta roz S",
-        "hours": 1,
+        "title": "06. C Bal scurta maro M",
+        "hours": 1.42,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235925",
+        "orderName": "#235940",
         "orderLinks": [
           {
-            "name": "#235925",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11277618151748",
-            "cod": false
+            "name": "#235940",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11297407271236",
+            "cod": true
           }
         ]
       }
@@ -544,17 +534,22 @@
       ]
     },
     {
-      "name": "H vintage M",
-      "orderName": "#235924",
+      "name": "H vintage M + S",
+      "orderName": "#235924, #235946",
       "orderLinks": [
         {
           "name": "#235924",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
           "cod": false
+        },
+        {
+          "name": "#235946",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
+          "cod": false
         }
       ],
       "category": "Hanorac bumbac",
-      "hours": 1,
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
@@ -691,6 +686,23 @@
       ],
       "category": "Windbreaker",
       "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "H Layers V1 S",
+      "orderName": "#235946",
+      "orderLinks": [
+        {
+          "name": "#235946",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
