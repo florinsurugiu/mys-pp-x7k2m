@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T03:37:28.710Z",
+  "generatedAt": "2026-11-14T10:59:22.340Z",
   "planDate": "2026-11-16",
   "unmatchedProducts": [
     "[#235922] Black Friday Gift",
@@ -11,6 +11,7 @@
     "[#235933] Dystopia Yellow Oversized Sweater",
     "[#235935] MY Gloves",
     "[#235939] Côte Bleue Short Sleeve Shirt",
+    "[#235943] Black Friday Gift",
     "Beige Full-Print Dress W"
   ],
   "predictionIdeas": [
@@ -661,6 +662,23 @@
       ],
       "category": "Camasa Unisex",
       "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "W Noa M",
+      "orderName": "#235943",
+      "orderLinks": [
+        {
+          "name": "#235943",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11299483517252",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
       "leftover": false,
       "tags": [
         "shopify"
