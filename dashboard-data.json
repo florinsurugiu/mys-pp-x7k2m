@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T10:59:22.340Z",
+  "generatedAt": "2026-11-14T16:58:11.409Z",
   "planDate": "2026-11-16",
   "unmatchedProducts": [
     "[#235922] Black Friday Gift",
@@ -12,6 +12,7 @@
     "[#235935] MY Gloves",
     "[#235939] Côte Bleue Short Sleeve Shirt",
     "[#235943] Black Friday Gift",
+    "[#235945] Dystopia Black Oversized Sweater",
     "Beige Full-Print Dress W"
   ],
   "predictionIdeas": [
@@ -137,7 +138,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.5,
+    "hours": 8.17,
     "capacity": 7.2,
     "items": [
       {
@@ -151,7 +152,23 @@
         "orderLinks": []
       },
       {
-        "title": "02. T Alb S + M",
+        "title": "02. T negru L",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235945",
+        "orderLinks": [
+          {
+            "name": "#235945",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300073570628",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. T Gri S + L",
         "hours": 1.33,
         "tags": [
           "shopify"
@@ -171,7 +188,7 @@
         ]
       },
       {
-        "title": "03. P Grey M",
+        "title": "04. P Grey M",
         "hours": 1.25,
         "tags": [
           "shopify"
@@ -186,7 +203,7 @@
         ]
       },
       {
-        "title": "04. C Bal scurta maro M",
+        "title": "05. C Bal scurta maro M",
         "hours": 1.42,
         "tags": [
           "shopify"
@@ -201,7 +218,7 @@
         ]
       },
       {
-        "title": "05. H vintage M",
+        "title": "06. H vintage M",
         "hours": 1,
         "tags": [
           "shopify"
@@ -214,26 +231,11 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "06. Bluza rupta roz S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235925",
-        "orderLinks": [
-          {
-            "name": "#235925",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11277618151748",
-            "cod": false
-          }
-        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.75,
+    "hours": 8.42,
     "capacity": 7.2,
     "items": [
       {
@@ -292,12 +294,12 @@
         ]
       },
       {
-        "title": "04. T Gri S + L",
-        "hours": 1.33,
+        "title": "04. T Alb S + M + L",
+        "hours": 2,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235924, #235934",
+        "orderName": "#235924, #235934, #235945",
         "orderLinks": [
           {
             "name": "#235924",
@@ -307,6 +309,11 @@
           {
             "name": "#235934",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11284778123588",
+            "cod": true
+          },
+          {
+            "name": "#235945",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300073570628",
             "cod": true
           }
         ]
@@ -327,16 +334,16 @@
         ]
       },
       {
-        "title": "06. T Negru S",
-        "hours": 2,
+        "title": "06. Bluza rupta roz S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235924",
+        "orderName": "#235925",
         "orderLinks": [
           {
-            "name": "#235924",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11270162940228",
+            "name": "#235925",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11277618151748",
             "cod": false
           }
         ]
@@ -420,8 +427,8 @@
       ]
     },
     {
-      "name": "T Alb S + M",
-      "orderName": "#235924, #235934",
+      "name": "T Alb S + M + L",
+      "orderName": "#235924, #235934, #235945",
       "orderLinks": [
         {
           "name": "#235924",
@@ -432,10 +439,15 @@
           "name": "#235934",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11284778123588",
           "cod": true
+        },
+        {
+          "name": "#235945",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300073570628",
+          "cod": true
         }
       ],
       "category": "Tricou simplu",
-      "hours": 1.3334,
+      "hours": 2.0000999999999998,
       "leftover": false,
       "tags": [
         "shopify"
@@ -719,16 +731,6 @@
     {
       "gid": "1219541318459146",
       "name": "T porto S",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1219066658821320",
-      "name": "T negru L",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
