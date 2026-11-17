@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-11-16T16:58:09.958Z",
+  "generatedAt": "2026-11-17T00:46:45.389Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.3493,
   "days": [
-    {
-      "date": "2026-10-17",
-      "revenue": 271.2,
-      "cogs": 181.97,
-      "shipping": 0,
-      "adSpend": 404.09,
-      "grossProfit": 89.23,
-      "netProfit": -314.86,
-      "roas": 0.67,
-      "unknownCostUnits": 0
-    },
     {
       "date": "2026-10-18",
       "revenue": 1340,
@@ -340,19 +329,36 @@
       "revenue": 1560.3,
       "cogs": 906.78,
       "shipping": 0,
-      "adSpend": 330.05,
+      "adSpend": 472.88,
       "grossProfit": 653.52,
-      "netProfit": 323.47,
-      "roas": 4.73,
+      "netProfit": 180.64,
+      "roas": 3.3,
+      "unknownCostUnits": 0
+    },
+    {
+      "date": "2026-11-17",
+      "revenue": 0,
+      "cogs": 0,
+      "shipping": 0,
+      "adSpend": 23.16,
+      "grossProfit": 0,
+      "netProfit": -23.16,
+      "roas": 0,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 12338.16,
-      "purchases": 104,
-      "metaRoas": 3.817975
+      "spend": 12254.5,
+      "purchases": 103,
+      "metaRoas": 3.821905
+    },
+    {
+      "name": "RO Customizator",
+      "spend": 6.21,
+      "purchases": null,
+      "metaRoas": null
     }
   ],
   "months": {
@@ -370,11 +376,11 @@
       "revenue": 32619.2,
       "cogs": 15707.46,
       "shipping": 916.3,
-      "adSpend": 8434.72,
+      "adSpend": 8600.71,
       "orders": 66,
       "unknownCostUnits": 14,
       "firstDay": "2026-11-01",
-      "lastDay": "2026-11-16"
+      "lastDay": "2026-11-17"
     }
   }
 }
