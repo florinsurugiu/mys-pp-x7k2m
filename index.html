@@ -1235,7 +1235,8 @@ function renderUnit(d) {
   const monthly = (pred) => rec.filter(pred).reduce((t, r) => t + r.amount, 0);
   const returnsMonthly = monthly((r) => /retur/i.test(r.name));
   const fixedParts = [
-    ['Salarii', monthly((r) => r.category === 'Salarii')],
+    // + salaries paid outside the company accounts (unitEconomics.salariesOutsideCompanyMonthly, e.g. the part of Alexio's pay Florin sends personally).
+    ['Salarii', monthly((r) => r.category === 'Salarii') + (ui.salariesOutsideCompanyMonthly || 0)],
     ['Taxe pe salarii (BS + CAM)', ui.salaryTaxesMonthly || 0],
     ['Chirie & utilități', monthly((r) => r.category === 'Chirie & utilități')],
     ['Abonamente', monthly((r) => r.category === 'Abonamente' || (r.category === 'Cheltuieli variabile' && !/retur/i.test(r.name)))],
@@ -1863,9 +1864,9 @@ function renderProfitPeriod(root) {
     (sub ? '<div class="stat-sub">' + sub + '</div>' : '') + '</div>';
 
   const stats =
-    statCard('Profit net azi', fmtMoney(latest.netProfit), 'ROAS ' + (latest.roas ?? 'n/a'), latest.netProfit >= 0 ? 'good' : 'bad') +
+    statCard('Dupa productie si reclame · azi', fmtMoney(latest.netProfit), 'ROAS ' + (latest.roas ?? 'n/a'), latest.netProfit >= 0 ? 'good' : 'bad') +
     statCard('ROAS azi', latest.roas != null ? latest.roas.toFixed(2) + '&times;' : 'n/a', 'venit ' + fmtMoney(latest.revenue) + ' / cheltuit ' + fmtMoney(latest.adSpend)) +
-    statCard('Profit net (' + days.length + ' zile)', fmtMoney(totalNetProfit), null, totalNetProfit >= 0 ? 'good' : 'bad') +
+    statCard('Dupa productie si reclame (' + days.length + ' zile)', fmtMoney(totalNetProfit), null, totalNetProfit >= 0 ? 'good' : 'bad') +
     statCard('ROAS mediu (' + days.length + ' zile)', avgRoas != null ? avgRoas.toFixed(2) + '&times;' : 'n/a', 'venit total ' + fmtMoney(totalRevenue));
 
   const rows = [...days].reverse().map((d) => {
@@ -1877,7 +1878,7 @@ function renderProfitPeriod(root) {
         '<td data-label="Cost productie">' + fmtMoney(d.cogs) + '</td>' +
         '<td data-label="Transport">' + fmtMoney(d.shipping || 0) + '</td>' +
         '<td data-label="Cheltuit ads">' + fmtMoney(d.adSpend) + '</td>' +
-        '<td data-label="Profit net" class="' + (d.netProfit >= 0 ? '' : 'roas-bad') + '">' + fmtMoney(d.netProfit) + '</td>' +
+        '<td data-label="Dupa productie si reclame" class="' + (d.netProfit >= 0 ? '' : 'roas-bad') + '">' + fmtMoney(d.netProfit) + '</td>' +
         '<td data-label="ROAS" class="' + roasCls + '">' + (d.roas != null ? d.roas.toFixed(2) + '&times;' : 'n/a') + '</td>' +
       '</tr>'
     );
@@ -1891,19 +1892,20 @@ function renderProfitPeriod(root) {
       '<td data-label="Cost productie">' + fmtMoney(totalCogs) + '</td>' +
       '<td data-label="Transport">' + fmtMoney(totalShipping) + '</td>' +
       '<td data-label="Cheltuit ads">' + fmtMoney(totalSpend) + '</td>' +
-      '<td data-label="Profit net" class="' + (totalNetProfit >= 0 ? '' : 'roas-bad') + '">' + fmtMoney(totalNetProfit) + '</td>' +
+      '<td data-label="Dupa productie si reclame" class="' + (totalNetProfit >= 0 ? '' : 'roas-bad') + '">' + fmtMoney(totalNetProfit) + '</td>' +
       '<td data-label="ROAS" class="' + totalRoasCls + '">' + (avgRoas != null ? avgRoas.toFixed(2) + '&times;' : 'n/a') + '</td>' +
     '</tr>';
 
   root.innerHTML =
     '<div class="period-filter">' + filterBtns + '</div>' +
     '<div class="stat-grid">' + stats + '</div>' +
+    '<div class="item-sub" style="margin:0 0 12px">Venit (cu TVA) minus costul de productie al produselor (materiale + manopera, din Shopify), transport si reclame. Nu e profitul firmei: nu scade TVA-ul, chiria, taxele si restul costurilor fixe. Pentru rezultatul lunii vezi P&amp;L sau Prag de rentabilitate.</div>' +
     '<div class="card table-scroll" style="margin-bottom:12px"><table class="trend">' +
-      '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Transport</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
+      '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Transport</th><th>Cheltuit ads</th><th>Dupa productie si reclame</th><th>ROAS</th></tr></thead>' +
       '<tbody>' + totalsRow + '</tbody>' +
     '</table></div>' +
     '<div class="card table-scroll"><table class="trend">' +
-      '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Transport</th><th>Cheltuit ads</th><th>Profit net</th><th>ROAS</th></tr></thead>' +
+      '<thead><tr><th>Zi</th><th>Venit</th><th>Cost productie</th><th>Transport</th><th>Cheltuit ads</th><th>Dupa productie si reclame</th><th>ROAS</th></tr></thead>' +
       '<tbody>' + rows + '</tbody>' +
     '</table></div>' +
     campaignsSection(data.campaigns || [], data.lookbackDays);
@@ -1960,7 +1962,8 @@ function setPnlPeriod(months, root) {
  * controleaza. */
 // echipa curenta, RON/luna -- cifra reala data de utilizator, mai precisa
 // decat orice medie istorica (de actualizat manual daca se schimba echipa)
-const CURRENT_TEAM_SALARIES = { Felicia: 5000, Flori: 5000, Carl: 4500, Alexio: 8000 };
+// Carl: ~3.400 din pontaj (noiembrie 2026: 1.655 + 1.692), nu 4.500 (actualizat 18.11.2026).
+const CURRENT_TEAM_SALARIES = { Felicia: 5000, Flori: 5000, Carl: 3400, Alexio: 8000 };
 
 // taxe platite efectiv in luna curenta (August 2026) -- cifre reale din
 // ordinele de plata (Bad Copy: impozit pe profit 6.669 + TVA decont lunar
@@ -2272,7 +2275,7 @@ function computeRecommendations(prod, profit, pnl) {
     }
     if (negDays > 0) {
       items.push({
-        title: negDays + ' din ' + days.length + ' zile au fost pe pierdere neta',
+        title: negDays + ' din ' + days.length + ' zile au fost pe minus dupa productie si reclame',
         body: 'Vezi tab Profit &amp; ROAS pt zilele exacte -- cauta ce au avut diferit (spend mare, venit mic).',
       });
     }
@@ -2371,7 +2374,7 @@ function renderOverview(prod, profit, pnl, root) {
   if (profit && profit.days && profit.days.length) {
     const latest = profit.days[profit.days.length - 1];
     cards.push(statCard(
-      'Profit net azi',
+      'Dupa productie si reclame · azi',
       fmtMoney(latest.netProfit),
       'ROAS ' + (latest.roas ?? 'n/a') + ' &middot; venit ' + fmtMoney(latest.revenue),
       latest.netProfit >= 0 ? 'good' : 'bad'
