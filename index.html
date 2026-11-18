@@ -1367,9 +1367,9 @@ function buildCashProjection(d, start, days) {
       // payOn: the day the user plans to pay (taxes paid late on purpose).
       // A past-due bill the user plans to pay on a later day sits on that day
       // (not under "plătește acum"), marked as late.
-      for (const b of d.bills || []) if ((b.payOn || b.due) === key) out.push({ ...b, bill: true, overdue: false, pastDue: b.due < todayKey });
+      for (const b of d.bills || []) if (b.amount > 0 && (b.payOn || b.due) === key) out.push({ ...b, bill: true, overdue: false, pastDue: b.due < todayKey });
     }
-    if (k === 0) for (const b of d.bills || []) if ((b.payOn || b.due) <= key) out.push({ ...b, bill: true, overdue: b.due < key });
+    if (k === 0) for (const b of d.bills || []) if (b.amount > 0 && (b.payOn || b.due) <= key) out.push({ ...b, bill: true, overdue: b.due < key });
     const meta = k > 0 ? d.metaDaily : 0;
     // Materials for future sales: a share of the forecast money (15% = what
     // material purchases were of collected revenue, Jul–Sep 2026).
