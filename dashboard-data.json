@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T18:28:36.423Z",
-  "planDate": "2026-11-17",
+  "generatedAt": "2026-11-18T01:14:14.479Z",
+  "planDate": "2026-11-18",
   "unmatchedProducts": [
     "[#235947] Black Friday Gift",
     "[#235948] Black Friday Gift",
@@ -115,19 +115,19 @@
       "hours": 1
     },
     {
-      "productId": "gid://shopify/Product/15323911979332",
-      "title": "Oversized Black T-shirt Anxiety",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/black-oversized-t-shirt-anxiety.jpg?v=1770118393",
-      "category": "Tricou simplu",
-      "size": "XL",
-      "hours": 0.6667
+      "productId": "gid://shopify/Product/15631558508868",
+      "title": "Grey Denim Bermuda",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260805_204736_4ba48c85-c239-47e2-8f40-341e78fb1d5c-_1.jpg?v=1786555202",
+      "category": "Bermude",
+      "size": "S",
+      "hours": 1.5
     },
     {
-      "productId": "gid://shopify/Product/15614808850756",
-      "title": "Soldout Oversized Off-White Tee",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260626_000020_adf6788b-d5f1-4de4-b2f6-0545719773d5.jpg?v=1786555879",
-      "category": "Camasa Unisex",
-      "size": "XL",
+      "productId": "gid://shopify/Product/14810808090948",
+      "title": "Obsidian Phantom Crewneck",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/obsidian-phantom-crewneck_01_her-front.jpg?v=1792835999",
+      "category": "Bluza inimioara / obsidian",
+      "size": "S",
       "hours": 1.5
     }
   ],
@@ -146,7 +146,68 @@
         "orderLinks": []
       },
       {
-        "title": "02. H layers M (carouri rosii)",
+        "title": "02. C Complex Rosu L",
+        "hours": 1.75,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235948",
+        "orderLinks": [
+          {
+            "name": "#235948",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11302115180868",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "03. C maneci detasate maro inchis XS",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235947",
+        "orderLinks": [
+          {
+            "name": "#235947",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11301632016708",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. B rupta galbena XS-S",
+        "hours": 2,
+        "tags": [
+          "wb",
+          "predicted"
+        ],
+        "orderName": "WB#3508028",
+        "orderLinks": [
+          {
+            "name": "WB#3508028",
+            "url": null,
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 7.83,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "05. T offwhite M ",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. H layers M (carouri rosii)",
         "hours": 1,
         "tags": [
           "shopify",
@@ -162,38 +223,8 @@
         ]
       },
       {
-        "title": "03. C Complex Rosu L",
-        "hours": 1.75,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235948",
-        "orderLinks": [
-          {
-            "name": "#235948",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11302115180868",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. H vintage S",
+        "title": "02. H Layers V2 S",
         "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235946",
-        "orderLinks": [
-          {
-            "name": "#235946",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "05. C maneci detasate maro inchis XS",
-        "hours": 1.5,
         "tags": [
           "shopify"
         ],
@@ -205,24 +236,24 @@
             "cod": false
           }
         ]
-      }
-    ]
-  },
-  "flori": {
-    "hours": 7.67,
-    "capacity": 7.2,
-    "items": [
+      },
       {
-        "title": "05. T offwhite M ",
-        "hours": 0.67,
+        "title": "03. H Layers V1 XL",
+        "hours": 1,
         "tags": [
-          "leftover",
-          "asana",
-          "buffer"
+          "shopify"
+        ],
+        "orderName": "#235954",
+        "orderLinks": [
+          {
+            "name": "#235954",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11313369481540",
+            "cod": false
+          }
         ]
       },
       {
-        "title": "01. H negru S",
+        "title": "04. H negru S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -237,7 +268,7 @@
         ]
       },
       {
-        "title": "02. Double Sleeve Negru MG Vitamin M",
+        "title": "05. Double Sleeve Negru MG Vitamin M",
         "hours": 1.5,
         "tags": [
           "shopify"
@@ -252,47 +283,31 @@
         ]
       },
       {
-        "title": "03. H Layers V2 S",
+        "title": "06. T Gri M",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235957",
+        "orderLinks": [
+          {
+            "name": "#235957",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11317485732164",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "07. H vintage S",
         "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235947",
+        "orderName": "#235946",
         "orderLinks": [
           {
-            "name": "#235947",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11301632016708",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. Double Sleeve Roz ZN Vitamin M",
-        "hours": 1.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235950",
-        "orderLinks": [
-          {
-            "name": "#235950",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11304534016324",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "05. B rupta galbena XS-S",
-        "hours": 2,
-        "tags": [
-          "wb",
-          "predicted"
-        ],
-        "orderName": "WB#3508028",
-        "orderLinks": [
-          {
-            "name": "WB#3508028",
-            "url": null,
+            "name": "#235946",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
             "cod": false
           }
         ]
@@ -421,6 +436,23 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Gri M",
+      "orderName": "#235957",
+      "orderLinks": [
+        {
+          "name": "#235957",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11317485732164",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
