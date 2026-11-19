@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-19T13:57:53.760Z",
-  "planDate": "2026-11-19",
+  "generatedAt": "2026-11-19T22:05:40.604Z",
+  "planDate": "2026-11-20",
   "unmatchedProducts": [
     "[#235954] Oversized White T-shirt Doggo",
     "[#235954] Complex Minds Brown Checkered Shirt",
     "[#235966] Fragmented Sleeves Shirt B/W",
-    "Aria Scarf Hoodie W"
+    "Oversized Black Cotton Dystopia Sweater W"
   ],
   "predictionIdeas": [
     {
@@ -130,7 +130,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.33,
+    "hours": 7.5,
     "capacity": 7.2,
     "items": [
       {
@@ -142,6 +142,82 @@
         ],
         "orderName": null,
         "orderLinks": []
+      },
+      {
+        "title": "02. H layers M (carouri rosii)",
+        "hours": 1,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235946",
+        "orderLinks": [
+          {
+            "name": "#235946",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. Bermude mov And Set 2M",
+        "hours": 3,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3514350",
+        "orderLinks": [
+          {
+            "name": "WB#3514350",
+            "url": null,
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. H vintage S",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235946",
+        "orderLinks": [
+          {
+            "name": "#235946",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
+            "cod": false
+          }
+        ]
+      }
+    ]
+  },
+  "flori": {
+    "hours": 7.67,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "05. T offwhite M ",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. C mov And Set 2M",
+        "hours": 2.83,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3514350",
+        "orderLinks": [
+          {
+            "name": "WB#3514350",
+            "url": null,
+            "cod": false
+          }
+        ]
       },
       {
         "title": "02. Top struna negru S",
@@ -174,62 +250,22 @@
         ]
       },
       {
-        "title": "04. H vintage S",
-        "hours": 1,
+        "title": "04. T Gri XL",
+        "hours": 0.67,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235946",
+        "orderName": "#235974",
         "orderLinks": [
           {
-            "name": "#235946",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
-            "cod": false
+            "name": "#235974",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11328246219076",
+            "cod": true
           }
         ]
       },
       {
-        "title": "05. B rupta galbena XS-S",
-        "hours": 1.33,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      }
-    ]
-  },
-  "flori": {
-    "hours": 7.67,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "05. T offwhite M ",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. H layers M (carouri rosii)",
-        "hours": 1,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235946",
-        "orderLinks": [
-          {
-            "name": "#235946",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. H Layers V1 XL",
+        "title": "05. H Layers V1 XL",
         "hours": 1,
         "tags": [
           "shopify"
@@ -240,21 +276,6 @@
             "name": "#235954",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11313369481540",
             "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. W Statue 2S",
-        "hours": 5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235964",
-        "orderLinks": [
-          {
-            "name": "#235964",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11325667279172",
-            "cod": true
           }
         ]
       }
@@ -337,6 +358,40 @@
       ]
     },
     {
+      "name": "C mov And Set 2M",
+      "orderName": "WB#3514350",
+      "orderLinks": [
+        {
+          "name": "WB#3514350",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Camasa scurta",
+      "hours": 2.8334,
+      "leftover": false,
+      "tags": [
+        "wb"
+      ]
+    },
+    {
+      "name": "Bermude mov And Set 2M",
+      "orderName": "WB#3514350",
+      "orderLinks": [
+        {
+          "name": "WB#3514350",
+          "url": null,
+          "cod": false
+        }
+      ],
+      "category": "Bermude",
+      "hours": 3,
+      "leftover": false,
+      "tags": [
+        "wb"
+      ]
+    },
+    {
       "name": "W Statue 2S",
       "orderName": "#235964",
       "orderLinks": [
@@ -365,6 +420,23 @@
       ],
       "category": "Top Spirit",
       "hours": 0.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Gri XL",
+      "orderName": "#235974",
+      "orderLinks": [
+        {
+          "name": "#235974",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11328246219076",
+          "cod": true
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
