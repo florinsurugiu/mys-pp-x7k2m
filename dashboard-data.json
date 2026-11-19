@@ -1,12 +1,11 @@
 {
-  "generatedAt": "2026-11-19T04:34:47.112Z",
+  "generatedAt": "2026-11-19T13:57:53.760Z",
   "planDate": "2026-11-19",
   "unmatchedProducts": [
     "[#235954] Oversized White T-shirt Doggo",
     "[#235954] Complex Minds Brown Checkered Shirt",
-    "[#235961] Dystopia Black Oversized Sweater",
-    "[#235962] Black Hoodie 50% Human 50% Universe",
-    "Oversized Cotton Hoodie In Black With Interchangeable Patches W"
+    "[#235966] Fragmented Sleeves Shirt B/W",
+    "Aria Scarf Hoodie W"
   ],
   "predictionIdeas": [
     {
@@ -46,8 +45,24 @@
       "title": "MG Black Straight Sweatpants",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dept-black-hoodie_editorial-strada_81452d0a-ce0c-4807-850d-8c40a937cf51.jpg?v=1794307058",
       "category": "Pantalon drept",
+      "size": "M",
+      "hours": 2
+    },
+    {
+      "productId": "gid://shopify/Product/15417916752196",
+      "title": "MG Black Straight Sweatpants",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dept-black-hoodie_editorial-strada_81452d0a-ce0c-4807-850d-8c40a937cf51.jpg?v=1794307058",
+      "category": "Pantalon drept",
       "size": "L",
       "hours": 2
+    },
+    {
+      "productId": "gid://shopify/Product/15417841549636",
+      "title": "Reversed Club Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated561.jpg?v=1766696856",
+      "category": "Camasa Unisex",
+      "size": "S",
+      "hours": 1.5
     },
     {
       "productId": "gid://shopify/Product/15332271063364",
@@ -98,40 +113,24 @@
       "hours": 2.5
     },
     {
-      "productId": "gid://shopify/Product/15440579035460",
-      "title": "DEPT. BLACK HOODIE",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dept-black-hoodie-women_editorial-copenhaga-cafea.jpg?v=1794614536",
-      "category": "Hanorac bumbac",
-      "size": "S",
-      "hours": 1
+      "productId": "gid://shopify/Product/15446025503044",
+      "title": "Retro Pop Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_retro_windbreaker_M1.jpg?v=1769543665",
+      "category": "Windbreaker",
+      "size": "L",
+      "hours": 2.5
     },
     {
-      "productId": "gid://shopify/Product/15412640219460",
-      "title": "DEPT. OFF-WHITE HOODIE",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dept-off-white-hoodie_editorial-bicicleta.jpg?v=1794269767",
-      "category": "Hanorac bumbac",
-      "size": "S",
-      "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/15415428284740",
-      "title": "Vitamin Aqua ZN Pink Double Sleeve",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated324.jpg?v=1766438768",
-      "category": "Double sleeve",
-      "size": "S",
-      "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15416222613828",
-      "title": "Miau Miau Oversized Ivory T-shirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
-      "category": "Tricou simplu",
+      "productId": "gid://shopify/Product/15446025503044",
+      "title": "Retro Pop Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_retro_windbreaker_M1.jpg?v=1769543665",
+      "category": "Windbreaker",
       "size": "M",
-      "hours": 0.6667
+      "hours": 2.5
     }
   ],
   "felicia": {
-    "hours": 8,
+    "hours": 7.33,
     "capacity": 7.2,
     "items": [
       {
@@ -145,22 +144,37 @@
         "orderLinks": []
       },
       {
-        "title": "02. W Retro M",
-        "hours": 2.5,
+        "title": "02. Top struna negru S",
+        "hours": 0.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235960",
+        "orderName": "#235966",
         "orderLinks": [
           {
-            "name": "#235960",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11321104761156",
+            "name": "#235966",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11326646583620",
             "cod": true
           }
         ]
       },
       {
-        "title": "03. H vintage S",
+        "title": "03. P Drept print L",
+        "hours": 2,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235954",
+        "orderLinks": [
+          {
+            "name": "#235954",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11313369481540",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. H vintage S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -175,24 +189,18 @@
         ]
       },
       {
-        "title": "04. P Drept print L",
-        "hours": 2,
+        "title": "05. B rupta galbena XS-S",
+        "hours": 1.33,
         "tags": [
-          "shopify"
+          "predicted"
         ],
-        "orderName": "#235954",
-        "orderLinks": [
-          {
-            "name": "#235954",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11313369481540",
-            "cod": false
-          }
-        ]
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
   "flori": {
-    "hours": 7.83,
+    "hours": 7.67,
     "capacity": 7.2,
     "items": [
       {
@@ -221,22 +229,7 @@
         ]
       },
       {
-        "title": "02. H Layers V2 XXL",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235961",
-        "orderLinks": [
-          {
-            "name": "#235961",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11323987493188",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "03. H Layers V1 XL",
+        "title": "02. H Layers V1 XL",
         "hours": 1,
         "tags": [
           "shopify"
@@ -251,39 +244,17 @@
         ]
       },
       {
-        "title": "04. C Gri Reversed XXL",
-        "hours": 1.5,
+        "title": "03. W Statue 2S",
+        "hours": 5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235961",
+        "orderName": "#235964",
         "orderLinks": [
           {
-            "name": "#235961",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11323987493188",
+            "name": "#235964",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11325667279172",
             "cod": true
-          }
-        ]
-      },
-      {
-        "title": "05. T negru S",
-        "hours": 2.67,
-        "tags": [
-          "wb",
-          "buffer",
-          "predicted"
-        ],
-        "orderName": "#235963, WB#3508028",
-        "orderLinks": [
-          {
-            "name": "#235963",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11325214228804",
-            "cod": false
-          },
-          {
-            "name": "WB#3508028",
-            "url": null,
-            "cod": false
           }
         ]
       }
@@ -366,68 +337,34 @@
       ]
     },
     {
-      "name": "T Offwhite M",
-      "orderName": "WB#3508028",
+      "name": "W Statue 2S",
+      "orderName": "#235964",
       "orderLinks": [
         {
-          "name": "WB#3508028",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "wb"
-      ]
-    },
-    {
-      "name": "W Retro M",
-      "orderName": "#235960",
-      "orderLinks": [
-        {
-          "name": "#235960",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11321104761156",
+          "name": "#235964",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11325667279172",
           "cod": true
         }
       ],
       "category": "Windbreaker",
-      "hours": 2.5,
+      "hours": 5,
       "leftover": false,
       "tags": [
         "shopify"
       ]
     },
     {
-      "name": "C Gri Reversed XXL",
-      "orderName": "#235961",
+      "name": "Top struna negru S",
+      "orderName": "#235966",
       "orderLinks": [
         {
-          "name": "#235961",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11323987493188",
+          "name": "#235966",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11326646583620",
           "cod": true
         }
       ],
-      "category": "Camasa Unisex",
-      "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H Layers V2 XXL",
-      "orderName": "#235961",
-      "orderLinks": [
-        {
-          "name": "#235961",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11323987493188",
-          "cod": true
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
+      "category": "Top Spirit",
+      "hours": 0.5,
       "leftover": false,
       "tags": [
         "shopify"
@@ -483,23 +420,6 @@
       "tags": [
         "shopify"
       ]
-    },
-    {
-      "name": "C Blue L",
-      "orderName": "#235959",
-      "orderLinks": [
-        {
-          "name": "#235959",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11320245780804",
-          "cod": false
-        }
-      ],
-      "category": "Camasa Unisex",
-      "hours": 1.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
     }
   ],
   "croitBuffer": [
@@ -516,6 +436,16 @@
     {
       "gid": "1219438126727755",
       "name": "T offwhite M",
+      "orderName": null,
+      "category": "Tricou simplu",
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219493418366413",
+      "name": "T negru S",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
