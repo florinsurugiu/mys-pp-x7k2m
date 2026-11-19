@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T23:37:27.352Z",
+  "generatedAt": "2026-11-19T04:34:47.112Z",
   "planDate": "2026-11-19",
   "unmatchedProducts": [
     "[#235954] Oversized White T-shirt Doggo",
@@ -122,16 +122,16 @@
       "hours": 1.5
     },
     {
-      "productId": "gid://shopify/Product/15631558508868",
-      "title": "Grey Denim Bermuda",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/hf_20260805_204736_4ba48c85-c239-47e2-8f40-341e78fb1d5c-_1.jpg?v=1786555202",
-      "category": "Bermude",
-      "size": "S",
-      "hours": 1.5
+      "productId": "gid://shopify/Product/15416222613828",
+      "title": "Miau Miau Oversized Ivory T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated475.jpg?v=1766528986",
+      "category": "Tricou simplu",
+      "size": "M",
+      "hours": 0.6667
     }
   ],
   "felicia": {
-    "hours": 8.5,
+    "hours": 8,
     "capacity": 7.2,
     "items": [
       {
@@ -160,17 +160,17 @@
         ]
       },
       {
-        "title": "03. C Gri Reversed XXL",
-        "hours": 1.5,
+        "title": "03. H vintage S",
+        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235961",
+        "orderName": "#235946",
         "orderLinks": [
           {
-            "name": "#235961",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11323987493188",
-            "cod": true
+            "name": "#235946",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
+            "cod": false
           }
         ]
       },
@@ -192,7 +192,7 @@
     ]
   },
   "flori": {
-    "hours": 8.17,
+    "hours": 7.83,
     "capacity": 7.2,
     "items": [
       {
@@ -251,44 +251,35 @@
         ]
       },
       {
-        "title": "04. H vintage S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235946",
-        "orderLinks": [
-          {
-            "name": "#235946",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "05. C Blue L",
+        "title": "04. C Gri Reversed XXL",
         "hours": 1.5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235959",
+        "orderName": "#235961",
         "orderLinks": [
           {
-            "name": "#235959",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11320245780804",
-            "cod": false
+            "name": "#235961",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11323987493188",
+            "cod": true
           }
         ]
       },
       {
-        "title": "06. B rupta galbena XS-S",
-        "hours": 2,
+        "title": "05. T negru S",
+        "hours": 2.67,
         "tags": [
           "wb",
+          "buffer",
           "predicted"
         ],
-        "orderName": "WB#3508028",
+        "orderName": "#235963, WB#3508028",
         "orderLinks": [
+          {
+            "name": "#235963",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11325214228804",
+            "cod": false
+          },
           {
             "name": "WB#3508028",
             "url": null,
@@ -525,16 +516,6 @@
     {
       "gid": "1219438126727755",
       "name": "T offwhite M",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1219493418366413",
-      "name": "T negru S",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
