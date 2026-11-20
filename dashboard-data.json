@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T22:05:40.604Z",
+  "generatedAt": "2026-11-20T03:27:58.239Z",
   "planDate": "2026-11-20",
   "unmatchedProducts": [
     "[#235954] Oversized White T-shirt Doggo",
@@ -130,7 +130,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.5,
+    "hours": 11.83,
     "capacity": 7.2,
     "items": [
       {
@@ -144,17 +144,17 @@
         "orderLinks": []
       },
       {
-        "title": "02. H layers M (carouri rosii)",
-        "hours": 1,
+        "title": "02. T offwhite M",
+        "hours": 0.67,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235946",
+        "orderName": "#235975",
         "orderLinks": [
           {
-            "name": "#235946",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
+            "name": "#235975",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11329297514820",
             "cod": false
           }
         ]
@@ -175,24 +175,39 @@
         ]
       },
       {
-        "title": "04. H vintage S",
-        "hours": 1,
+        "title": "04. W Statue 2S",
+        "hours": 5,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235946",
+        "orderName": "#235964",
         "orderLinks": [
           {
-            "name": "#235946",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
-            "cod": false
+            "name": "#235964",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11325667279172",
+            "cod": true
+          }
+        ]
+      },
+      {
+        "title": "05. T Gri XL",
+        "hours": 0.67,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235974",
+        "orderLinks": [
+          {
+            "name": "#235974",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11328246219076",
+            "cod": true
           }
         ]
       }
     ]
   },
   "flori": {
-    "hours": 7.67,
+    "hours": 9,
     "capacity": 7.2,
     "items": [
       {
@@ -205,7 +220,38 @@
         ]
       },
       {
-        "title": "01. C mov And Set 2M",
+        "title": "01. H layers M (carouri rosii)",
+        "hours": 1,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235946",
+        "orderLinks": [
+          {
+            "name": "#235946",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. H Layers V1 XL",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235954",
+        "orderLinks": [
+          {
+            "name": "#235954",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11313369481540",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. C mov And Set 2M",
         "hours": 2.83,
         "tags": [
           "wb"
@@ -220,7 +266,7 @@
         ]
       },
       {
-        "title": "02. Top struna negru S",
+        "title": "04. Top struna negru S",
         "hours": 0.5,
         "tags": [
           "shopify"
@@ -235,7 +281,7 @@
         ]
       },
       {
-        "title": "03. P Drept print L",
+        "title": "05. P Drept print L",
         "hours": 2,
         "tags": [
           "shopify"
@@ -250,31 +296,16 @@
         ]
       },
       {
-        "title": "04. T Gri XL",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235974",
-        "orderLinks": [
-          {
-            "name": "#235974",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11328246219076",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "05. H Layers V1 XL",
+        "title": "06. H vintage S",
         "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235954",
+        "orderName": "#235946",
         "orderLinks": [
           {
-            "name": "#235954",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11313369481540",
+            "name": "#235946",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
             "cod": false
           }
         ]
@@ -500,16 +531,6 @@
       "name": "Blugi barbati negri dungi M",
       "orderName": null,
       "category": null,
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1219438126727755",
-      "name": "T offwhite M",
-      "orderName": null,
-      "category": "Tricou simplu",
       "tags": [
         "predicted",
         "asana"
