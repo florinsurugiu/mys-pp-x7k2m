@@ -1630,7 +1630,7 @@ function renderCashData(root, d) {
   // (the totals box above splits them by category).
   const upcomingOut = outItems.filter((x) => !x.overdue && x.amount > 0).sort((x, y) => x.day - y.day || (x.due || dayKey(x.day)).localeCompare(y.due || dayKey(y.day)) || y.amount - x.amount)
     .map((o) => ({ name: o.name, payer: o.payer, cat: o.category, meta: metaOf(o), day: o.day, late: !!o.pastDue, amount: o.amount, approx: o.estimate, kind: o.bill && !o.estimate ? 'inv' : 'est' }));
-  const payCard = '<div class="card kind-filter" style="margin-bottom:16px"><div class="kind-bar"><button type="button" class="kind-legend on" data-kind="">Toate</button><button type="button" class="kind-legend" data-kind="inv"><i class="inv"></i>Restante</button><button type="button" class="kind-legend" data-kind="est"><i class="est"></i>Estimări</button></div><h2>De plătit</h2>' +
+  const payCard = '<div class="card kind-filter" style="margin-bottom:16px"><div class="kind-bar"><button type="button" class="kind-legend" data-kind="inv"><i class="inv"></i>Restante</button><button type="button" class="kind-legend" data-kind="est"><i class="est"></i>Estimări</button><button type="button" class="kind-legend" data-kind="">Toate</button></div><h2>De plătit</h2>' +
     block('Restant · plătește acum', lateItems.sort((x, y) => x.day - y.day), { tone: 'bad' }) +
     block('Următoarele 30 de zile · în ordinea datei', upcomingOut) +
     block('Furnizori cu scadența trecută · de verificat', overdue.sort((x, y) => x.day - y.day), { tone: 'warn', collapsible: true, note: 'Nu sunt în calcul: e-Factura nu arată dacă i-ai plătit.' }) +
@@ -1744,7 +1744,7 @@ function renderCashData(root, d) {
       '<button type="button" class="stat-card cash-card" data-calc="calc-tmr"><div class="stat-label">Intră mâine</div><div class="stat-value" style="color:var(--good)">+' + fmtLei(tmrIn) + '</div><div class="item-sub">' + fmtDay(tmr.day) + (tmr.inForecast ? ' · ' + fmtLei(tmr.inKnown) + ' sigur' : '') + '</div><div class="cash-calc-link">vezi calculul ›</div></button>' +
     '</div>' +
     eom.html.replace('<div class="card payroll-card"', '<div hidden class="card payroll-card"') +
-    '<div class="cash-sub" role="tablist">' + [['in', 'Venituri', '+' + fmtLei(in30)], ['out', 'Cheltuieli', '−' + fmtLei(out30)]].map(([k, l, t]) => '<button type="button" role="tab" class="cash-sub-btn" data-sub="' + k + '">' + l + '<span class="cash-sub-total">' + t + '</span></button>').join('') + '</div>' +
+    '<div class="cash-sub" role="tablist">' + [['out', 'Cheltuieli', '−' + fmtLei(out30)], ['in', 'Venituri', '+' + fmtLei(in30)]].map(([k, l, t]) => '<button type="button" role="tab" class="cash-sub-btn" data-sub="' + k + '">' + l + '<span class="cash-sub-total">' + t + '</span></button>').join('') + '</div>' +
     '<div class="cash-pane" data-pane="in">' + inTotal + inCard + recvCheckHtml + '</div>' +
     '<div class="cash-pane" data-pane="out">' + outTotal + payCard + '</div>' +
     '<div class="card" style="margin-bottom:16px"><h2>Cum am calculat</h2>' + calc + '</div>' +
@@ -1765,7 +1765,9 @@ function renderCashData(root, d) {
     lsSet(CASH_SUB_KEY, k);
   };
   root.querySelectorAll('.cash-sub-btn').forEach((b) => b.addEventListener('click', () => showSub(b.dataset.sub)));
-  showSub(lsGet(CASH_SUB_KEY) === 'out' ? 'out' : 'in');
+  // Expenses first and by default; the issued-invoices filter ("Restante") is the default view.
+  showSub(lsGet(CASH_SUB_KEY) === 'in' ? 'in' : 'out');
+  root.querySelector('.kind-filter .kind-legend[data-kind="inv"]')?.click();
   root.querySelectorAll('.cash-card').forEach((btn) => btn.addEventListener('click', () => {
     const det = document.getElementById(btn.dataset.calc);
     if (!det) return;
