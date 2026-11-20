@@ -1,9 +1,7 @@
 {
-  "generatedAt": "2026-11-20T12:06:02.807Z",
+  "generatedAt": "2026-11-20T20:29:31.335Z",
   "planDate": "2026-11-20",
-  "unmatchedProducts": [
-    "Oversized Black Cotton Dystopia Sweater W"
-  ],
+  "unmatchedProducts": [],
   "predictionIdeas": [
     {
       "productId": "gid://shopify/Product/15421171990852",
@@ -127,34 +125,29 @@
     }
   ],
   "felicia": {
-    "hours": 7.5,
+    "hours": 7.17,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. C mov And Set 2M",
-        "hours": 2.83,
+        "title": "01. W animal print S",
+        "hours": 2.5,
         "tags": [
-          "wb"
+          "wb",
+          "buffer"
         ],
-        "orderName": "WB#3514350",
-        "orderLinks": [
-          {
-            "name": "WB#3514350",
-            "url": null,
-            "cod": false
-          }
-        ]
+        "orderName": null,
+        "orderLinks": []
       },
       {
-        "title": "02. Bermude mov And Set 2M",
-        "hours": 3,
+        "title": "02. Maiou roz Mysimplicated® Sleeveless M",
+        "hours": 0.5,
         "tags": [
           "wb"
         ],
-        "orderName": "WB#3514350",
+        "orderName": "WB#3515668",
         "orderLinks": [
           {
-            "name": "WB#3514350",
+            "name": "WB#3515668",
             "url": null,
             "cod": false
           }
@@ -189,11 +182,26 @@
             "cod": false
           }
         ]
+      },
+      {
+        "title": "05. W Retro M",
+        "hours": 2.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235977",
+        "orderLinks": [
+          {
+            "name": "#235977",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333271060804",
+            "cod": false
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 7.5,
+    "hours": 12,
     "capacity": 7.2,
     "items": [
       {
@@ -206,17 +214,7 @@
         ]
       },
       {
-        "title": "01. W animal print S",
-        "hours": 2.5,
-        "tags": [
-          "wb",
-          "buffer"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "02. H layers M (carouri rosii)",
+        "title": "01. H layers M (carouri rosii)",
         "hours": 1,
         "tags": [
           "shopify",
@@ -232,33 +230,23 @@
         ]
       },
       {
-        "title": "03. T Gri XL",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235974",
-        "orderLinks": [
-          {
-            "name": "#235974",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11328246219076",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "04. T offwhite M",
-        "hours": 2.67,
+        "title": "02. T offwhite M",
+        "hours": 3.33,
         "tags": [
           "shopify",
           "buffer",
           "predicted"
         ],
-        "orderName": "#235975, #235976",
+        "orderName": "#235975, #235977, #235976",
         "orderLinks": [
           {
             "name": "#235975",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11329297514820",
+            "cod": false
+          },
+          {
+            "name": "#235977",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333271060804",
             "cod": false
           },
           {
@@ -267,6 +255,33 @@
             "cod": false
           }
         ]
+      },
+      {
+        "title": "03. W Retro 2L",
+        "hours": 5,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      },
+      {
+        "title": "04. H negru spirit M",
+        "hours": 1,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      },
+      {
+        "title": "05. H patchuri M",
+        "hours": 1,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
       }
     ]
   },
@@ -347,54 +362,20 @@
       ]
     },
     {
-      "name": "C mov And Set 2M",
-      "orderName": "WB#3514350",
+      "name": "Maiou roz Mysimplicated® Sleeveless M",
+      "orderName": "WB#3515668",
       "orderLinks": [
         {
-          "name": "WB#3514350",
+          "name": "WB#3515668",
           "url": null,
           "cod": false
         }
       ],
-      "category": "Camasa scurta",
-      "hours": 2.8334,
+      "category": "Maiou",
+      "hours": 0.5,
       "leftover": false,
       "tags": [
         "wb"
-      ]
-    },
-    {
-      "name": "Bermude mov And Set 2M",
-      "orderName": "WB#3514350",
-      "orderLinks": [
-        {
-          "name": "WB#3514350",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Bermude",
-      "hours": 3,
-      "leftover": false,
-      "tags": [
-        "wb"
-      ]
-    },
-    {
-      "name": "T Gri XL",
-      "orderName": "#235974",
-      "orderLinks": [
-        {
-          "name": "#235974",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11328246219076",
-          "cod": true
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
       ]
     },
     {
@@ -447,6 +428,23 @@
       "tags": [
         "shopify"
       ]
+    },
+    {
+      "name": "W Retro M",
+      "orderName": "#235977",
+      "orderLinks": [
+        {
+          "name": "#235977",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333271060804",
+          "cod": false
+        }
+      ],
+      "category": "Windbreaker",
+      "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
     }
   ],
   "croitBuffer": [
@@ -455,16 +453,6 @@
       "name": "Blugi barbati negri dungi M",
       "orderName": null,
       "category": null,
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1219493418366413",
-      "name": "T negru S",
-      "orderName": null,
-      "category": "Tricou simplu",
       "tags": [
         "predicted",
         "asana"
