@@ -1163,10 +1163,11 @@ document.addEventListener('click', (e) => {
   const box = btn.closest('.kind-filter');
   const k = btn.dataset.kind;
   box.classList.remove('only-inv', 'only-est');
-  if (k) box.classList.add('only-' + k);
+  // "Restante" = only what is past due (the red block), whatever its kind.
+  if (k && k !== 'late') box.classList.add('only-' + k);
   box.querySelectorAll('.kind-legend').forEach((b) => b.classList.toggle('on', b === btn));
   box.querySelectorAll('.cat-block').forEach((blk) => {
-    const shown = [...blk.querySelectorAll('.pay-row')].filter((r) => !k || r.classList.contains(k));
+    const shown = k === 'late' ? (blk.classList.contains('bad') ? [...blk.querySelectorAll('.pay-row')] : []) : [...blk.querySelectorAll('.pay-row')].filter((r) => !k || r.classList.contains(k));
     blk.style.display = shown.length ? '' : 'none';
     blk.querySelector('.cat-count').textContent = shown.length;
     blk.querySelector('.cat-total').textContent = fmtLei(shown.reduce((a, r) => a + Number(r.dataset.amt || 0), 0));
@@ -1630,7 +1631,7 @@ function renderCashData(root, d) {
   // (the totals box above splits them by category).
   const upcomingOut = outItems.filter((x) => !x.overdue && x.amount > 0).sort((x, y) => x.day - y.day || (x.due || dayKey(x.day)).localeCompare(y.due || dayKey(y.day)) || y.amount - x.amount)
     .map((o) => ({ name: o.name, payer: o.payer, cat: o.category, meta: metaOf(o), day: o.day, late: !!o.pastDue, amount: o.amount, approx: o.estimate, kind: o.bill && !o.estimate ? 'inv' : 'est' }));
-  const payCard = '<div class="card kind-filter" style="margin-bottom:16px"><div class="kind-bar"><button type="button" class="kind-legend" data-kind="inv"><i class="inv"></i>Restante</button><button type="button" class="kind-legend" data-kind="est"><i class="est"></i>Estimări</button><button type="button" class="kind-legend" data-kind="">Toate</button></div><h2>De plătit</h2>' +
+  const payCard = '<div class="card kind-filter" style="margin-bottom:16px"><div class="kind-bar"><button type="button" class="kind-legend" data-kind="late"><i class="inv"></i>Restante</button><button type="button" class="kind-legend" data-kind="est"><i class="est"></i>Estimări</button><button type="button" class="kind-legend" data-kind="">Toate</button></div><h2>De plătit</h2>' +
     block('Restant · plătește acum', lateItems.sort((x, y) => x.day - y.day), { tone: 'bad' }) +
     block('Următoarele 30 de zile · în ordinea datei', upcomingOut) +
     block('Furnizori cu scadența trecută · de verificat', overdue.sort((x, y) => x.day - y.day), { tone: 'warn', collapsible: true, note: 'Nu sunt în calcul: e-Factura nu arată dacă i-ai plătit.' }) +
@@ -1767,7 +1768,7 @@ function renderCashData(root, d) {
   root.querySelectorAll('.cash-sub-btn').forEach((b) => b.addEventListener('click', () => showSub(b.dataset.sub)));
   // Expenses first and by default; the issued-invoices filter ("Restante") is the default view.
   showSub(lsGet(CASH_SUB_KEY) === 'in' ? 'in' : 'out');
-  root.querySelector('.kind-filter .kind-legend[data-kind="inv"]')?.click();
+  root.querySelector('.kind-filter .kind-legend[data-kind="late"]')?.click();
   root.querySelectorAll('.cash-card').forEach((btn) => btn.addEventListener('click', () => {
     const det = document.getElementById(btn.dataset.calc);
     if (!det) return;
