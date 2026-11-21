@@ -1,7 +1,9 @@
 {
-  "generatedAt": "2026-11-20T20:29:31.335Z",
-  "planDate": "2026-11-20",
-  "unmatchedProducts": [],
+  "generatedAt": "2026-11-21T01:42:17.112Z",
+  "planDate": "2026-11-23",
+  "unmatchedProducts": [
+    "[#235978] Black Friday Gift"
+  ],
   "predictionIdeas": [
     {
       "productId": "gid://shopify/Product/15421171990852",
@@ -18,14 +20,6 @@
       "category": "Double sleeve",
       "size": "M",
       "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15588974428484",
-      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/brown-atelier-division-overshirt_editorial-acoperis.jpg?v=1794269768",
-      "category": "Camasa scurta",
-      "size": "XL",
-      "hours": 1.4167
     },
     {
       "productId": "gid://shopify/Product/15412296745284",
@@ -116,6 +110,14 @@
       "hours": 1.5
     },
     {
+      "productId": "gid://shopify/Product/15588974428484",
+      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/brown-atelier-division-overshirt_editorial-acoperis.jpg?v=1794269768",
+      "category": "Camasa scurta",
+      "size": "XL",
+      "hours": 1.4167
+    },
+    {
       "productId": "gid://shopify/Product/7837843849453",
       "title": "Pink DOER  Windbreaker",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_pink_w4.jpg?v=1769815580",
@@ -125,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.17,
+    "hours": 7.83,
     "capacity": 7.2,
     "items": [
       {
@@ -139,7 +141,23 @@
         "orderLinks": []
       },
       {
-        "title": "02. Maiou roz Mysimplicated® Sleeveless M",
+        "title": "02. T offwhite M",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235975",
+        "orderLinks": [
+          {
+            "name": "#235975",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11329297514820",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. Maiou roz Mysimplicated® Sleeveless M",
         "hours": 0.5,
         "tags": [
           "wb"
@@ -154,7 +172,7 @@
         ]
       },
       {
-        "title": "03. H vintage S",
+        "title": "04. H vintage S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -169,7 +187,7 @@
         ]
       },
       {
-        "title": "04. T Alb XXL",
+        "title": "05. T Alb XXL",
         "hours": 0.67,
         "tags": [
           "shopify"
@@ -184,7 +202,7 @@
         ]
       },
       {
-        "title": "05. W Retro M",
+        "title": "06. W Retro M",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -201,7 +219,7 @@
     ]
   },
   "flori": {
-    "hours": 12,
+    "hours": 7.83,
     "capacity": 7.2,
     "items": [
       {
@@ -230,20 +248,45 @@
         ]
       },
       {
-        "title": "02. T offwhite M",
-        "hours": 3.33,
+        "title": "02. P Drept print S",
+        "hours": 2,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235978",
+        "orderLinks": [
+          {
+            "name": "#235978",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333510005060",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. C Complex Rosu S",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235978",
+        "orderLinks": [
+          {
+            "name": "#235978",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333510005060",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. T negru S",
+        "hours": 2.67,
         "tags": [
           "shopify",
           "buffer",
           "predicted"
         ],
-        "orderName": "#235975, #235977, #235976",
+        "orderName": "#235977, #235976",
         "orderLinks": [
-          {
-            "name": "#235975",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11329297514820",
-            "cod": false
-          },
           {
             "name": "#235977",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333271060804",
@@ -255,33 +298,6 @@
             "cod": false
           }
         ]
-      },
-      {
-        "title": "03. W Retro 2L",
-        "hours": 5,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "04. H negru spirit M",
-        "hours": 1,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "05. H patchuri M",
-        "hours": 1,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
       }
     ]
   },
@@ -441,6 +457,40 @@
       ],
       "category": "Windbreaker",
       "hours": 2.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Complex Rosu S",
+      "orderName": "#235978",
+      "orderLinks": [
+        {
+          "name": "#235978",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333510005060",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "P Drept print S",
+      "orderName": "#235978",
+      "orderLinks": [
+        {
+          "name": "#235978",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333510005060",
+          "cod": false
+        }
+      ],
+      "category": "Pantalon drept",
+      "hours": 2,
       "leftover": false,
       "tags": [
         "shopify"
