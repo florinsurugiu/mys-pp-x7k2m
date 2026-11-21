@@ -1,8 +1,10 @@
 {
-  "generatedAt": "2026-11-21T16:43:51.893Z",
+  "generatedAt": "2026-11-21T21:55:34.213Z",
   "planDate": "2026-11-23",
   "unmatchedProducts": [
-    "[#235978] Black Friday Gift"
+    "[#235978] Black Friday Gift",
+    "[#235982] Black Friday Gift",
+    "Aria Scarf Hoodie W"
   ],
   "predictionIdeas": [
     {
@@ -127,7 +129,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.5,
+    "hours": 9,
     "capacity": 7.2,
     "items": [
       {
@@ -162,22 +164,7 @@
         ]
       },
       {
-        "title": "03. Maiou roz Mysimplicated® Sleeveless M",
-        "hours": 0.5,
-        "tags": [
-          "wb"
-        ],
-        "orderName": "WB#3515668",
-        "orderLinks": [
-          {
-            "name": "WB#3515668",
-            "url": null,
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. H vintage S",
+        "title": "03. H vintage S",
         "hours": 1,
         "tags": [
           "shopify"
@@ -192,7 +179,7 @@
         ]
       },
       {
-        "title": "05. T Alb XXL",
+        "title": "04. T Alb XXL",
         "hours": 0.67,
         "tags": [
           "shopify"
@@ -207,7 +194,7 @@
         ]
       },
       {
-        "title": "06. W Retro M",
+        "title": "05. W Retro M",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -220,11 +207,26 @@
             "cod": false
           }
         ]
+      },
+      {
+        "title": "06. T Ivory XL",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235982",
+        "orderLinks": [
+          {
+            "name": "#235982",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11336050966852",
+            "cod": false
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.5,
+    "hours": 9,
     "capacity": 7.2,
     "items": [
       {
@@ -253,7 +255,22 @@
         ]
       },
       {
-        "title": "02. P Drept print S",
+        "title": "02. Maiou roz Mysimplicated® Sleeveless M",
+        "hours": 0.5,
+        "tags": [
+          "wb"
+        ],
+        "orderName": "WB#3515668",
+        "orderLinks": [
+          {
+            "name": "WB#3515668",
+            "url": null,
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. P Drept print S",
         "hours": 2,
         "tags": [
           "shopify"
@@ -268,7 +285,7 @@
         ]
       },
       {
-        "title": "03. C Complex Rosu S",
+        "title": "04. C Complex Rosu S",
         "hours": 1.5,
         "tags": [
           "shopify"
@@ -283,7 +300,7 @@
         ]
       },
       {
-        "title": "04. T negru S",
+        "title": "05. T negru S",
         "hours": 3.33,
         "tags": [
           "shopify",
@@ -501,6 +518,23 @@
       ],
       "category": "Pantalon drept",
       "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Ivory XL",
+      "orderName": "#235982",
+      "orderLinks": [
+        {
+          "name": "#235982",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11336050966852",
+          "cod": false
+        }
+      ],
+      "category": "Tricou raiat",
+      "hours": 1,
       "leftover": false,
       "tags": [
         "shopify"
