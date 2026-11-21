@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T01:42:17.112Z",
+  "generatedAt": "2026-11-21T08:50:49.997Z",
   "planDate": "2026-11-23",
   "unmatchedProducts": [
     "[#235978] Black Friday Gift"
@@ -127,7 +127,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.83,
+    "hours": 8.5,
     "capacity": 7.2,
     "items": [
       {
@@ -141,14 +141,19 @@
         "orderLinks": []
       },
       {
-        "title": "02. T offwhite M",
-        "hours": 0.67,
+        "title": "02. T negru L",
+        "hours": 1.33,
         "tags": [
           "shopify",
           "buffer"
         ],
-        "orderName": "#235975",
+        "orderName": "#235979, #235975",
         "orderLinks": [
+          {
+            "name": "#235979",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11334024626500",
+            "cod": false
+          },
           {
             "name": "#235975",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11329297514820",
@@ -219,7 +224,7 @@
     ]
   },
   "flori": {
-    "hours": 7.83,
+    "hours": 8.5,
     "capacity": 7.2,
     "items": [
       {
@@ -279,17 +284,22 @@
       },
       {
         "title": "04. T negru S",
-        "hours": 2.67,
+        "hours": 3.33,
         "tags": [
           "shopify",
           "buffer",
           "predicted"
         ],
-        "orderName": "#235977, #235976",
+        "orderName": "#235977, #235979, #235976",
         "orderLinks": [
           {
             "name": "#235977",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333271060804",
+            "cod": false
+          },
+          {
+            "name": "#235979",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11334024626500",
             "cod": false
           },
           {
@@ -539,28 +549,8 @@
       ]
     },
     {
-      "gid": "1219066658821320",
-      "name": "T negru L",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
       "gid": "1218481540198823",
       "name": "T alb XXL",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1219925941522467",
-      "name": "T negru XXL",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
