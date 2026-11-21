@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-11-20T19:15:15.431Z",
+  "generatedAt": "2026-11-21T00:53:38.872Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
   "fxRate": 5.3493,
   "days": [
-    {
-      "date": "2026-10-21",
-      "revenue": 2265.6,
-      "cogs": 1232.1,
-      "shipping": 0,
-      "adSpend": 392.8,
-      "grossProfit": 1033.5,
-      "netProfit": 640.7,
-      "roas": 5.77,
-      "unknownCostUnits": 0
-    },
     {
       "date": "2026-10-22",
       "revenue": 2044.86,
@@ -337,26 +326,37 @@
     },
     {
       "date": "2026-11-20",
-      "revenue": 1520.55,
-      "cogs": 678.69,
+      "revenue": 2451.98,
+      "cogs": 1028.8,
+      "shipping": 83.3,
+      "adSpend": 401.25,
+      "grossProfit": 1339.88,
+      "netProfit": 938.63,
+      "roas": 6.11,
+      "unknownCostUnits": 1
+    },
+    {
+      "date": "2026-11-21",
+      "revenue": 0,
+      "cogs": 0,
       "shipping": 0,
-      "adSpend": 322.35,
-      "grossProfit": 841.86,
-      "netProfit": 519.51,
-      "roas": 4.72,
+      "adSpend": 20.01,
+      "grossProfit": 0,
+      "netProfit": -20.01,
+      "roas": 0,
       "unknownCostUnits": 0
     }
   ],
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 12854.8,
-      "purchases": 110,
-      "metaRoas": 3.940314
+      "spend": 12625.31,
+      "purchases": 108,
+      "metaRoas": 3.876344
     },
     {
       "name": "RO Customizator",
-      "spend": 212.9,
+      "spend": 224.78,
       "purchases": null,
       "metaRoas": null
     }
@@ -373,14 +373,14 @@
       "lastDay": "2026-10-31"
     },
     "2026-11": {
-      "revenue": 40121.65,
-      "cogs": 19436.87,
-      "shipping": 916.3,
-      "adSpend": 10334.1,
-      "orders": 79,
-      "unknownCostUnits": 14,
+      "revenue": 41053.08,
+      "cogs": 19786.98,
+      "shipping": 999.6,
+      "adSpend": 10433.01,
+      "orders": 80,
+      "unknownCostUnits": 15,
       "firstDay": "2026-11-01",
-      "lastDay": "2026-11-20"
+      "lastDay": "2026-11-21"
     }
   }
 }
