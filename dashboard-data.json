@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T03:12:14.882Z",
+  "generatedAt": "2026-11-23T13:05:54.018Z",
   "planDate": "2026-11-23",
   "unmatchedProducts": [
     "[#235978] Black Friday Gift",
@@ -129,7 +129,7 @@
     }
   ],
   "felicia": {
-    "hours": 9,
+    "hours": 7.67,
     "capacity": 7.2,
     "items": [
       {
@@ -143,58 +143,7 @@
         "orderLinks": []
       },
       {
-        "title": "02. T negru L",
-        "hours": 1.33,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235979, #235975",
-        "orderLinks": [
-          {
-            "name": "#235979",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11334024626500",
-            "cod": false
-          },
-          {
-            "name": "#235975",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11329297514820",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. H vintage S",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235946",
-        "orderLinks": [
-          {
-            "name": "#235946",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. T Alb XXL",
-        "hours": 0.67,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235976",
-        "orderLinks": [
-          {
-            "name": "#235976",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11331198419268",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "05. W Retro M",
+        "title": "02. W Retro M",
         "hours": 2.5,
         "tags": [
           "shopify"
@@ -209,16 +158,23 @@
         ]
       },
       {
-        "title": "06. T Ivory XL",
-        "hours": 1,
+        "title": "03. T negru XXL",
+        "hours": 2.67,
         "tags": [
-          "shopify"
+          "shopify",
+          "buffer",
+          "predicted"
         ],
-        "orderName": "#235982",
+        "orderName": "#235979, #235977",
         "orderLinks": [
           {
-            "name": "#235982",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11336050966852",
+            "name": "#235979",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11334024626500",
+            "cod": false
+          },
+          {
+            "name": "#235977",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333271060804",
             "cod": false
           }
         ]
@@ -226,7 +182,7 @@
     ]
   },
   "flori": {
-    "hours": 9,
+    "hours": 7.83,
     "capacity": 7.2,
     "items": [
       {
@@ -255,22 +211,38 @@
         ]
       },
       {
-        "title": "02. Maiou roz Mysimplicated® Sleeveless M",
-        "hours": 0.5,
+        "title": "02. T negru L",
+        "hours": 0.67,
         "tags": [
-          "wb"
+          "shopify",
+          "buffer"
         ],
-        "orderName": "WB#3515668",
+        "orderName": "#235979",
         "orderLinks": [
           {
-            "name": "WB#3515668",
-            "url": null,
+            "name": "#235979",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11334024626500",
             "cod": false
           }
         ]
       },
       {
-        "title": "03. P Drept print S",
+        "title": "03. H vintage S",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235946",
+        "orderLinks": [
+          {
+            "name": "#235946",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. P Drept print S",
         "hours": 2,
         "tags": [
           "shopify"
@@ -285,7 +257,7 @@
         ]
       },
       {
-        "title": "04. C Complex Rosu S",
+        "title": "05. C Complex Rosu S",
         "hours": 1.5,
         "tags": [
           "shopify"
@@ -300,28 +272,16 @@
         ]
       },
       {
-        "title": "05. T negru S",
-        "hours": 3.33,
+        "title": "06. T Ivory XL",
+        "hours": 1,
         "tags": [
-          "shopify",
-          "buffer",
-          "predicted"
+          "shopify"
         ],
-        "orderName": "#235977, #235979, #235976",
+        "orderName": "#235982",
         "orderLinks": [
           {
-            "name": "#235977",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11333271060804",
-            "cod": false
-          },
-          {
-            "name": "#235979",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11334024626500",
-            "cod": false
-          },
-          {
-            "name": "#235976",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11331198419268",
+            "name": "#235982",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11336050966852",
             "cod": false
           }
         ]
@@ -405,23 +365,6 @@
       ]
     },
     {
-      "name": "Maiou roz Mysimplicated® Sleeveless M",
-      "orderName": "WB#3515668",
-      "orderLinks": [
-        {
-          "name": "WB#3515668",
-          "url": null,
-          "cod": false
-        }
-      ],
-      "category": "Maiou",
-      "hours": 0.5,
-      "leftover": false,
-      "tags": [
-        "wb"
-      ]
-    },
-    {
       "name": "H vintage S",
       "orderName": "#235946",
       "orderLinks": [
@@ -433,40 +376,6 @@
       ],
       "category": "Hanorac bumbac",
       "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Alb XXL",
-      "orderName": "#235976",
-      "orderLinks": [
-        {
-          "name": "#235976",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11331198419268",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Gri XXL",
-      "orderName": "#235976",
-      "orderLinks": [
-        {
-          "name": "#235976",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11331198419268",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
@@ -547,6 +456,16 @@
       "name": "Blugi barbati negri dungi M",
       "orderName": null,
       "category": null,
+      "tags": [
+        "predicted",
+        "asana"
+      ]
+    },
+    {
+      "gid": "1219438126727755",
+      "name": "T offwhite M",
+      "orderName": null,
+      "category": "Tricou simplu",
       "tags": [
         "predicted",
         "asana"
