@@ -1,8 +1,10 @@
 {
-  "generatedAt": "2026-11-24T10:49:49.789Z",
+  "generatedAt": "2026-11-24T21:05:45.155Z",
   "planDate": "2026-11-24",
   "unmatchedProducts": [
     "[#235982] Black Friday Gift",
+    "[#235991] MY Gloves",
+    "[#235992] Dystopia Black Oversized Sweater",
     "Aria Scarf Hoodie W"
   ],
   "predictionIdeas": [
@@ -128,7 +130,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.83,
+    "hours": 6.5,
     "capacity": 7.2,
     "items": [
       {
@@ -142,7 +144,63 @@
         "orderLinks": []
       },
       {
-        "title": "02. H layers M (carouri rosii)",
+        "title": "02. T Ivory XL",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235982",
+        "orderLinks": [
+          {
+            "name": "#235982",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11336050966852",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. T negru XXL",
+        "hours": 2,
+        "tags": [
+          "shopify",
+          "buffer",
+          "predicted"
+        ],
+        "orderName": "#235987",
+        "orderLinks": [
+          {
+            "name": "#235987",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11346480103748",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. H patchuri M",
+        "hours": 1,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      }
+    ]
+  },
+  "flori": {
+    "hours": 11.33,
+    "capacity": 7.2,
+    "items": [
+      {
+        "title": "05. T offwhite M ",
+        "hours": 0.67,
+        "tags": [
+          "leftover",
+          "asana",
+          "buffer"
+        ]
+      },
+      {
+        "title": "01. H layers M (carouri rosii)",
         "hours": 1,
         "tags": [
           "shopify",
@@ -153,6 +211,22 @@
           {
             "name": "#235946",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11300774904132",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "02. T negru S",
+        "hours": 1.33,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#235979",
+        "orderLinks": [
+          {
+            "name": "#235979",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11334024626500",
             "cod": false
           }
         ]
@@ -173,81 +247,37 @@
         ]
       },
       {
-        "title": "04. B rupta galbena XS-S",
+        "title": "04. T Alb XL + XXL",
         "hours": 1.33,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "05. H negru spirit M",
-        "hours": 1,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "06. H patchuri M",
-        "hours": 1,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      }
-    ]
-  },
-  "flori": {
-    "hours": 8,
-    "capacity": 7.2,
-    "items": [
-      {
-        "title": "05. T offwhite M ",
-        "hours": 0.67,
-        "tags": [
-          "leftover",
-          "asana",
-          "buffer"
-        ]
-      },
-      {
-        "title": "01. T negru S",
-        "hours": 1.33,
-        "tags": [
-          "shopify",
-          "buffer"
-        ],
-        "orderName": "#235979",
-        "orderLinks": [
-          {
-            "name": "#235979",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11334024626500",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "02. T Ivory XL",
-        "hours": 1,
         "tags": [
           "shopify"
         ],
-        "orderName": "#235982",
+        "orderName": "#235987, #235990",
         "orderLinks": [
           {
-            "name": "#235982",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11336050966852",
+            "name": "#235987",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11346480103748",
+            "cod": false
+          },
+          {
+            "name": "#235990",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11348750893380",
             "cod": false
           }
         ]
       },
       {
-        "title": "03. W Retro 2L",
+        "title": "05. W Retro 2L",
         "hours": 5,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      },
+      {
+        "title": "06. H negru spirit M",
+        "hours": 1,
         "tags": [
           "predicted"
         ],
@@ -365,6 +395,28 @@
       "tags": [
         "shopify"
       ]
+    },
+    {
+      "name": "T Alb XL + XXL",
+      "orderName": "#235987, #235990",
+      "orderLinks": [
+        {
+          "name": "#235987",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11346480103748",
+          "cod": false
+        },
+        {
+          "name": "#235990",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11348750893380",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 1.3334,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
     }
   ],
   "croitBuffer": [
@@ -421,16 +473,6 @@
     {
       "gid": "1218481540198823",
       "name": "T alb XXL",
-      "orderName": null,
-      "category": "Tricou simplu",
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1219925941522467",
-      "name": "T negru XXL",
       "orderName": null,
       "category": "Tricou simplu",
       "tags": [
