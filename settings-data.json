@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T07:43:01.371Z",
+  "generatedAt": "2026-11-24T19:14:16.124Z",
   "currency": "RON",
   "products": [
     {
@@ -737,8 +737,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated066.jpg?v=1766225935",
       "category": "Double sleeve",
       "hours": 1.5,
-      "cost": 181.97,
-      "costSource": "actual"
+      "cost": null,
+      "costSource": "unknown"
     },
     {
       "productId": "gid://shopify/Product/15419157250372",
@@ -746,8 +746,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated662.jpg?v=1766854599",
       "category": "Double sleeve",
       "hours": 1.5,
-      "cost": 181.97,
-      "costSource": "actual"
+      "cost": null,
+      "costSource": "unknown"
     },
     {
       "productId": "gid://shopify/Product/15415428284740",
@@ -755,8 +755,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated324.jpg?v=1766438768",
       "category": "Double sleeve",
       "hours": 1.5,
-      "cost": 181.97,
-      "costSource": "actual"
+      "cost": null,
+      "costSource": "unknown"
     },
     {
       "productId": "gid://shopify/Product/15412260503876",
@@ -792,7 +792,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/14947608396100",
@@ -801,7 +801,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/15417796133188",
@@ -810,7 +810,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/15417811403076",
@@ -819,7 +819,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/14953435627844",
@@ -846,7 +846,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/8651674190148",
@@ -855,7 +855,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/8877513113924",
@@ -864,7 +864,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/14798693368132",
@@ -882,7 +882,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/15417710117188",
@@ -900,7 +900,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/15414933061956",
@@ -909,7 +909,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/15417920848196",
@@ -918,7 +918,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/15408429302084",
@@ -936,7 +936,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/15417924157764",
@@ -999,7 +999,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/9676236030276",
@@ -1053,7 +1053,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/9680747495748",
@@ -1062,7 +1062,7 @@
       "category": "Hanorac bumbac",
       "hours": 1,
       "cost": 181.97,
-      "costSource": "actual"
+      "costSource": "estimated"
     },
     {
       "productId": "gid://shopify/Product/8825186812228",
@@ -1070,8 +1070,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/interchangable-patches-black-hoodie_editorial-islanda.jpg?v=1794269768",
       "category": "Hanorac patchuri",
       "hours": 3,
-      "cost": 181.97,
-      "costSource": "actual"
+      "cost": null,
+      "costSource": "unknown"
     },
     {
       "productId": "gid://shopify/Product/15421163340100",
@@ -1079,8 +1079,8 @@
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated806.jpg?v=1767032584",
       "category": "Hanorac patchuri",
       "hours": 3,
-      "cost": 181.97,
-      "costSource": "actual"
+      "cost": null,
+      "costSource": "unknown"
     },
     {
       "productId": "gid://shopify/Product/15419161903428",
