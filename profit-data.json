@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T23:49:22.161Z",
+  "generatedAt": "2026-11-24T07:43:01.371Z",
   "lookbackDays": 30,
   "currency": "RON",
   "adAccountCurrency": "EUR",
@@ -329,9 +329,9 @@
       "revenue": 239,
       "cogs": 0,
       "shipping": 0,
-      "adSpend": 378.02,
+      "adSpend": 379.89,
       "grossProfit": 239,
-      "netProfit": -139.02,
+      "netProfit": -140.89,
       "roas": 0.63,
       "unknownCostUnits": 2
     },
@@ -340,9 +340,9 @@
       "revenue": 0,
       "cogs": 0,
       "shipping": 0,
-      "adSpend": 19.9,
+      "adSpend": 85.2,
       "grossProfit": 0,
-      "netProfit": -19.9,
+      "netProfit": -85.2,
       "roas": 0,
       "unknownCostUnits": 0
     }
@@ -350,9 +350,9 @@
   "campaigns": [
     {
       "name": "RO 26  march",
-      "spend": 12873.41,
+      "spend": 12940.59,
       "purchases": 102,
-      "metaRoas": 3.352844
+      "metaRoas": 3.33544
     }
   ],
   "months": {
@@ -370,7 +370,7 @@
       "revenue": 41108.13,
       "cogs": 20760.46,
       "shipping": 1082.9,
-      "adSpend": 11750.48,
+      "adSpend": 11817.66,
       "orders": 85,
       "unknownCostUnits": 18,
       "firstDay": "2026-11-01",
