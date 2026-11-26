@@ -1,15 +1,11 @@
 {
-  "generatedAt": "2026-11-26T05:23:01.030Z",
+  "generatedAt": "2026-11-26T15:41:05.691Z",
   "planDate": "2026-11-26",
   "unmatchedProducts": [
-    "[#235991] MY Gloves",
-    "[#235993] Black Friday Gift",
-    "[#235994] Complex Minds B/W Checkered Shirt",
-    "[#235994] Miyamoto Oversized White T-shirt",
     "[#235996] Atelier Grey Oversized T-Shirt",
-    "[#235997] Black Friday Gift",
-    "[#235997] AER Flared Pants",
-    "Water Repellent Windbreaker Statue Design W"
+    "[#235999] MY Gloves",
+    "[#236000] Custom Oversized T-Shirt",
+    "Aria Scarf Hoodie W"
   ],
   "predictionIdeas": [
     {
@@ -77,6 +73,14 @@
       "hours": 1.5
     },
     {
+      "productId": "gid://shopify/Product/15419494531396",
+      "title": "Aria Scarf Hoodie",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated784.jpg?v=1766876426",
+      "category": "Hanorac bumbac",
+      "size": "M",
+      "hours": 1
+    },
+    {
       "productId": "gid://shopify/Product/15588974428484",
       "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
       "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/brown-atelier-division-overshirt_editorial-acoperis.jpg?v=1794269768",
@@ -123,18 +127,10 @@
       "category": "Double sleeve",
       "size": "S",
       "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15446018425156",
-      "title": "Gaia Windbreaker",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_gaia_windbreaker_W2_d491b49b-0712-42dc-a50f-5533bc0cfbf4.jpg?v=1769542676",
-      "category": "Windbreaker",
-      "size": "M",
-      "hours": 2.5
     }
   ],
   "felicia": {
-    "hours": 7.17,
+    "hours": 7.5,
     "capacity": 7.2,
     "items": [
       {
@@ -148,52 +144,8 @@
         "orderLinks": []
       },
       {
-        "title": "02. T Alb XXL + M",
-        "hours": 1.33,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235990, #235997",
-        "orderLinks": [
-          {
-            "name": "#235990",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11348750893380",
-            "cod": false
-          },
-          {
-            "name": "#235997",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11352618369348",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. H Aria M",
-        "hours": 1,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235993",
-        "orderLinks": [
-          {
-            "name": "#235993",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11351144956228",
-            "cod": false
-          }
-        ]
-      },
-      {
-        "title": "04. B rupta galbena XS-S",
-        "hours": 1.33,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
-      },
-      {
-        "title": "05. H patchuri M",
-        "hours": 1,
+        "title": "02. W Retro 2L",
+        "hours": 5,
         "tags": [
           "predicted"
         ],
@@ -203,7 +155,7 @@
     ]
   },
   "flori": {
-    "hours": 12.17,
+    "hours": 8,
     "capacity": 7.2,
     "items": [
       {
@@ -216,22 +168,7 @@
         ]
       },
       {
-        "title": "01. W Statue S",
-        "hours": 2.5,
-        "tags": [
-          "shopify"
-        ],
-        "orderName": "#235995",
-        "orderLinks": [
-          {
-            "name": "#235995",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11352137957700",
-            "cod": true
-          }
-        ]
-      },
-      {
-        "title": "02. H negru Dept M",
+        "title": "01. H negru Dept M",
         "hours": 1,
         "tags": [
           "shopify"
@@ -246,7 +183,7 @@
         ]
       },
       {
-        "title": "03. P Drept negru femei MG XS",
+        "title": "02. P Drept negru femei MG XS",
         "hours": 2,
         "tags": [
           "shopify"
@@ -261,6 +198,21 @@
         ]
       },
       {
+        "title": "03. Double Sleeve Patch M",
+        "hours": 1,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#235999",
+        "orderLinks": [
+          {
+            "name": "#235999",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11355039826244",
+            "cod": false
+          }
+        ]
+      },
+      {
         "title": "04. H negru spirit M",
         "hours": 1,
         "tags": [
@@ -270,8 +222,17 @@
         "orderLinks": []
       },
       {
-        "title": "05. W Retro 2L",
-        "hours": 5,
+        "title": "05. B rupta galbena XS-S",
+        "hours": 1.33,
+        "tags": [
+          "predicted"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      },
+      {
+        "title": "06. H patchuri M",
+        "hours": 1,
         "tags": [
           "predicted"
         ],
@@ -357,62 +318,6 @@
       ]
     },
     {
-      "name": "W Statue S",
-      "orderName": "#235995",
-      "orderLinks": [
-        {
-          "name": "#235995",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11352137957700",
-          "cod": true
-        }
-      ],
-      "category": "Windbreaker",
-      "hours": 2.5,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "T Alb XXL + M",
-      "orderName": "#235990, #235997",
-      "orderLinks": [
-        {
-          "name": "#235990",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11348750893380",
-          "cod": false
-        },
-        {
-          "name": "#235997",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11352618369348",
-          "cod": false
-        }
-      ],
-      "category": "Tricou simplu",
-      "hours": 1.3334,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
-      "name": "H Aria M",
-      "orderName": "#235993",
-      "orderLinks": [
-        {
-          "name": "#235993",
-          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11351144956228",
-          "cod": false
-        }
-      ],
-      "category": "Hanorac bumbac",
-      "hours": 1,
-      "leftover": false,
-      "tags": [
-        "shopify"
-      ]
-    },
-    {
       "name": "P Drept negru femei MG XS",
       "orderName": "#235996",
       "orderLinks": [
@@ -436,6 +341,23 @@
         {
           "name": "#235996",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11352261919044",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Double Sleeve Patch M",
+      "orderName": "#235999",
+      "orderLinks": [
+        {
+          "name": "#235999",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11355039826244",
           "cod": false
         }
       ],
