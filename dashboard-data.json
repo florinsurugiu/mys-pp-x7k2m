@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-27T00:04:14.468Z",
+  "generatedAt": "2026-11-27T08:15:09.381Z",
   "planDate": "2026-11-27",
   "unmatchedProducts": [
     "[#235996] Atelier Grey Oversized T-Shirt",
     "[#235999] MY Gloves",
     "[#236000] Custom Oversized T-Shirt",
-    "Aria Scarf Hoodie W"
+    "Oversized Pink Cotton Dystopia Sweater W"
   ],
   "predictionIdeas": [
     {
@@ -130,7 +130,7 @@
     }
   ],
   "felicia": {
-    "hours": 7.5,
+    "hours": 8.17,
     "capacity": 7.2,
     "items": [
       {
@@ -144,7 +144,23 @@
         "orderLinks": []
       },
       {
-        "title": "02. W Retro 2L",
+        "title": "02. T offwhite M",
+        "hours": 0.67,
+        "tags": [
+          "shopify",
+          "buffer"
+        ],
+        "orderName": "#236001",
+        "orderLinks": [
+          {
+            "name": "#236001",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11358601904452",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. W Retro 2L",
         "hours": 5,
         "tags": [
           "predicted"
@@ -375,16 +391,6 @@
       "name": "Blugi barbati negri dungi M",
       "orderName": null,
       "category": null,
-      "tags": [
-        "predicted",
-        "asana"
-      ]
-    },
-    {
-      "gid": "1219438126727755",
-      "name": "T offwhite M",
-      "orderName": null,
-      "category": "Tricou simplu",
       "tags": [
         "predicted",
         "asana"
