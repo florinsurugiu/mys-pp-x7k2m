@@ -1,13 +1,12 @@
 {
-  "generatedAt": "2026-11-28T09:23:01.026Z",
+  "generatedAt": "2026-11-28T17:45:16.049Z",
   "planDate": "2026-11-30",
   "unmatchedProducts": [
     "[#236000] Custom Oversized T-Shirt",
     "[#236002] Dystopia Yellow Oversized Sweater",
     "[#236004] Bra Overlay Black Hoodie",
     "[#236005] Black Friday Gift",
-    "Aria Scarf Hoodie W",
-    "Spirit Grey Oversized T-Shirt"
+    "Aria Scarf Hoodie W"
   ],
   "predictionIdeas": [
     {
@@ -132,7 +131,7 @@
     }
   ],
   "felicia": {
-    "hours": 8.5,
+    "hours": 7.33,
     "capacity": 7.2,
     "items": [
       {
@@ -146,27 +145,70 @@
         "orderLinks": []
       },
       {
-        "title": "02. W Retro 2L",
-        "hours": 5,
+        "title": "02. T Alb XL",
+        "hours": 0.67,
         "tags": [
-          "predicted"
+          "shopify"
         ],
-        "orderName": null,
-        "orderLinks": []
+        "orderName": "#236006",
+        "orderLinks": [
+          {
+            "name": "#236006",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11367147667780",
+            "cod": false
+          }
+        ]
       },
       {
-        "title": "03. H negru spirit M",
-        "hours": 1,
+        "title": "03. T Split Alb L",
+        "hours": 0.67,
         "tags": [
+          "shopify"
+        ],
+        "orderName": "#236007",
+        "orderLinks": [
+          {
+            "name": "#236007",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11368769225028",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "04. C Gri Reversed L",
+        "hours": 1.5,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#236007",
+        "orderLinks": [
+          {
+            "name": "#236007",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11368769225028",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "05. B rupta galbena XS-S",
+        "hours": 2,
+        "tags": [
+          "shopify",
           "predicted"
         ],
-        "orderName": null,
-        "orderLinks": []
+        "orderName": "#236001",
+        "orderLinks": [
+          {
+            "name": "#236001",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11358601904452",
+            "cod": false
+          }
+        ]
       }
     ]
   },
   "flori": {
-    "hours": 8.67,
+    "hours": 7.67,
     "capacity": 7.2,
     "items": [
       {
@@ -194,45 +236,24 @@
         ]
       },
       {
-        "title": "02. P Drept print L",
-        "hours": 2,
+        "title": "02. P Drept print L + M",
+        "hours": 4,
         "tags": [
           "shopify"
         ],
-        "orderName": "#236005",
+        "orderName": "#236005, #236006",
         "orderLinks": [
           {
             "name": "#236005",
             "url": "https://admin.shopify.com/store/simplicatedhh/orders/11365170381124",
             "cod": false
-          }
-        ]
-      },
-      {
-        "title": "03. T offwhite M",
-        "hours": 2,
-        "tags": [
-          "shopify",
-          "buffer",
-          "predicted"
-        ],
-        "orderName": "#236001",
-        "orderLinks": [
+          },
           {
-            "name": "#236001",
-            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11358601904452",
+            "name": "#236006",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11367147667780",
             "cod": false
           }
         ]
-      },
-      {
-        "title": "04. H patchuri M",
-        "hours": 1,
-        "tags": [
-          "predicted"
-        ],
-        "orderName": null,
-        "orderLinks": []
       }
     ]
   },
@@ -330,17 +351,90 @@
       ]
     },
     {
-      "name": "P Drept print L",
-      "orderName": "#236005",
+      "name": "P Drept print L + M",
+      "orderName": "#236005, #236006",
       "orderLinks": [
         {
           "name": "#236005",
           "url": "https://admin.shopify.com/store/simplicatedhh/orders/11365170381124",
           "cod": false
+        },
+        {
+          "name": "#236006",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11367147667780",
+          "cod": false
         }
       ],
       "category": "Pantalon drept",
-      "hours": 2,
+      "hours": 4,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Alb XL",
+      "orderName": "#236006",
+      "orderLinks": [
+        {
+          "name": "#236006",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11367147667780",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "Double Sleeve Patch XL",
+      "orderName": "#236006",
+      "orderLinks": [
+        {
+          "name": "#236006",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11367147667780",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac bumbac",
+      "hours": 1,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "C Gri Reversed L",
+      "orderName": "#236007",
+      "orderLinks": [
+        {
+          "name": "#236007",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11368769225028",
+          "cod": false
+        }
+      ],
+      "category": "Camasa Unisex",
+      "hours": 1.5,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "T Split Alb L",
+      "orderName": "#236007",
+      "orderLinks": [
+        {
+          "name": "#236007",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11368769225028",
+          "cod": false
+        }
+      ],
+      "category": "Tricou simplu",
+      "hours": 0.6667,
       "leftover": false,
       "tags": [
         "shopify"
