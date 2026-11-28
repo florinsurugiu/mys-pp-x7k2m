@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-27T18:16:01.519Z",
-  "planDate": "2026-11-27",
+  "generatedAt": "2026-11-28T01:30:24.554Z",
+  "planDate": "2026-11-30",
   "unmatchedProducts": [
     "[#236000] Custom Oversized T-Shirt",
     "[#236002] Dystopia Yellow Oversized Sweater",
     "[#236004] Bra Overlay Black Hoodie",
-    "Aria Scarf Hoodie W",
-    "Oversized White T-Shirt With Need Money For Porsche Design"
+    "[#236005] Black Friday Gift",
+    "Spirit Grey Oversized T-Shirt"
   ],
   "predictionIdeas": [
     {
@@ -16,14 +16,6 @@
       "category": "Double sleeve",
       "size": "M",
       "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15421171990852",
-      "title": "Dystopia Pink Oversized Sweater",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated821.jpg?v=1767033677",
-      "category": "Hanorac bumbac",
-      "size": "S",
-      "hours": 1
     },
     {
       "productId": "gid://shopify/Product/14940919628100",
@@ -42,36 +34,12 @@
       "hours": 2.5
     },
     {
-      "productId": "gid://shopify/Product/14982879248708",
-      "title": "Dystopia White Oversized Sweater",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dystopia-white-oversized-sweater_editorial-trepte.jpg?v=1794269768",
-      "category": "Bluza inimioara / obsidian",
-      "size": "S",
-      "hours": 1.5
-    },
-    {
-      "productId": "gid://shopify/Product/15419494531396",
-      "title": "Aria Scarf Hoodie",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated784.jpg?v=1766876426",
+      "productId": "gid://shopify/Product/15421171990852",
+      "title": "Dystopia Pink Oversized Sweater",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated821.jpg?v=1767033677",
       "category": "Hanorac bumbac",
-      "size": "M",
+      "size": "S",
       "hours": 1
-    },
-    {
-      "productId": "gid://shopify/Product/15588974428484",
-      "title": "MYSIMPLICATED® Brown Atelier Division Overshirt",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/brown-atelier-division-overshirt_editorial-acoperis.jpg?v=1794269768",
-      "category": "Camasa scurta",
-      "size": "XL",
-      "hours": 1.4167
-    },
-    {
-      "productId": "gid://shopify/Product/15412701823300",
-      "title": "Vitamin Aqua MG Sweatpants",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated238.jpg?v=1766274882",
-      "category": "Pantalon drept",
-      "size": "XS",
-      "hours": 2
     },
     {
       "productId": "gid://shopify/Product/7837843849453",
@@ -122,20 +90,62 @@
       "hours": 1.5
     },
     {
-      "productId": "gid://shopify/Product/14982879248708",
-      "title": "Dystopia White Oversized Sweater",
-      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/dystopia-white-oversized-sweater_editorial-trepte.jpg?v=1794269768",
-      "category": "Bluza inimioara / obsidian",
+      "productId": "gid://shopify/Product/15332271063364",
+      "title": "Retro Pop Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_retro_windbreaker.jpg?v=1771580253",
+      "category": "Windbreaker",
+      "size": "M",
+      "hours": 2.5
+    },
+    {
+      "productId": "gid://shopify/Product/15455881298244",
+      "title": "Oversized Black Ribbon T-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/oversized-black-ribbon-t-shirt_01_her-front_0bc9d6ae-267f-4dfb-9062-f4a84ae7c577.jpg?v=1795357082",
+      "category": "Tricou fundite negre",
+      "size": "XXL",
+      "hours": 2
+    },
+    {
+      "productId": "gid://shopify/Product/15630103970116",
+      "title": "777 Mauve Oversized T-Shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/1hf_20260804_091046_eb491f35-b1c6-41bb-babc-a4f45c9e4cf5.jpg?v=1786555250",
+      "category": "Tricou simplu",
+      "size": "M",
+      "hours": 0.6667
+    },
+    {
+      "productId": "gid://shopify/Product/7820482511085",
+      "title": "Botanical Pants (recycled fabric)",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated4226.jpg?v=1770331665",
+      "category": "Pantaloni lungi full print",
       "size": "L",
-      "hours": 1.5
+      "hours": 1.25
+    },
+    {
+      "productId": "gid://shopify/Product/7820555223277",
+      "title": "Tokyo DOER  Windbreaker",
+      "image": "https://cdn.shopify.com/s/files/1/0615/2536/0877/files/mysimplicated_windbreaker_tokyo2.jpg?v=1769644461",
+      "category": "Windbreaker",
+      "size": "M",
+      "hours": 2.5
     }
   ],
   "felicia": {
-    "hours": 6,
+    "hours": 8.5,
     "capacity": 7.2,
     "items": [
       {
-        "title": "01. W Retro 2L",
+        "title": "01. W animal print S",
+        "hours": 2.5,
+        "tags": [
+          "wb",
+          "buffer"
+        ],
+        "orderName": null,
+        "orderLinks": []
+      },
+      {
+        "title": "02. W Retro 2L",
         "hours": 5,
         "tags": [
           "predicted"
@@ -144,7 +154,7 @@
         "orderLinks": []
       },
       {
-        "title": "02. H negru spirit M",
+        "title": "03. H negru spirit M",
         "hours": 1,
         "tags": [
           "predicted"
@@ -155,7 +165,7 @@
     ]
   },
   "flori": {
-    "hours": 6.17,
+    "hours": 8.67,
     "capacity": 7.2,
     "items": [
       {
@@ -168,17 +178,37 @@
         ]
       },
       {
-        "title": "01. W animal print S",
-        "hours": 2.5,
+        "title": "01. H Patch L",
+        "hours": 3,
         "tags": [
-          "wb",
-          "buffer"
+          "shopify"
         ],
-        "orderName": null,
-        "orderLinks": []
+        "orderName": "#236005",
+        "orderLinks": [
+          {
+            "name": "#236005",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11365170381124",
+            "cod": false
+          }
+        ]
       },
       {
-        "title": "02. T offwhite M",
+        "title": "02. P Drept print L",
+        "hours": 2,
+        "tags": [
+          "shopify"
+        ],
+        "orderName": "#236005",
+        "orderLinks": [
+          {
+            "name": "#236005",
+            "url": "https://admin.shopify.com/store/simplicatedhh/orders/11365170381124",
+            "cod": false
+          }
+        ]
+      },
+      {
+        "title": "03. T offwhite M",
         "hours": 2,
         "tags": [
           "shopify",
@@ -195,7 +225,7 @@
         ]
       },
       {
-        "title": "03. H patchuri M",
+        "title": "04. H patchuri M",
         "hours": 1,
         "tags": [
           "predicted"
@@ -279,6 +309,40 @@
         "leftover",
         "asana",
         "predicted"
+      ]
+    },
+    {
+      "name": "H Patch L",
+      "orderName": "#236005",
+      "orderLinks": [
+        {
+          "name": "#236005",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11365170381124",
+          "cod": false
+        }
+      ],
+      "category": "Hanorac patchuri",
+      "hours": 3,
+      "leftover": false,
+      "tags": [
+        "shopify"
+      ]
+    },
+    {
+      "name": "P Drept print L",
+      "orderName": "#236005",
+      "orderLinks": [
+        {
+          "name": "#236005",
+          "url": "https://admin.shopify.com/store/simplicatedhh/orders/11365170381124",
+          "cod": false
+        }
+      ],
+      "category": "Pantalon drept",
+      "hours": 2,
+      "leftover": false,
+      "tags": [
+        "shopify"
       ]
     }
   ],
